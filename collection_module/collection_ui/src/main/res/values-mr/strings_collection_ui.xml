@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_send_reminder"><![CDATA[Whatsapp वर QR आणि पेमेंट लिंकसह रिमाईंडर पाठवा]]></string>
+    <string name="title_payment_options">ग्राहक पेमेंट पर्यायांमधून त्यांच्या पसंतीचा पर्याय निवडून पेमेंट करू शकतात</string>
+    <string name="title_auto_ledger">पेमेंट करणे यशस्वी झाल्यावर व्यवहारामध्ये ते आपोआप जोडले जाईल</string>
+</resources>

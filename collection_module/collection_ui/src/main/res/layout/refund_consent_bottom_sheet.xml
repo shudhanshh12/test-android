@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top">
+
+    <ImageView
+        android:id="@+id/ivTitle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_refund"
+        android:visibility="visible"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Are you sure you want to\nrefund the amount to customer?"
+        android:textAppearance="@style/TextAppearance.OKCTheme.Subtitle1"
+        app:layout_constraintBottom_toTopOf="@id/tvMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Amount will reflect in customers origin account within\n5-7 working days."
+        android:textAppearance="@style/TextAppearance.OKCTheme.Caption2"
+        app:layout_constraintBottom_toTopOf="@id/vwDividerBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/vwDividerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/grey300"
+        app:layout_constraintBottom_toTopOf="@id/mbCancel"/>
+
+    <ImageView
+        android:id="@+id/ivLoading"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:translationZ="3dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/mbRefund"
+        app:layout_constraintEnd_toEndOf="@id/mbRefund"
+        app:layout_constraintStart_toStartOf="@id/mbRefund"
+        app:layout_constraintTop_toTopOf="@id/mbRefund"
+        app:srcCompat="@drawable/payment_ic_loader" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbCancel"
+        style="@style/OKC.Button.Light.Solid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mbRefund"
+        android:text="@string/cancel"
+        app:cornerRadius="24dp"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+        android:textColor="@color/grey900"
+        app:strokeColor="@color/green_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbRefund"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primary_dark"
+        android:text="@string/refund"
+        app:cornerRadius="24dp"
+        app:iconGravity="textStart"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+        app:layout_constraintStart_toEndOf="@id/mbCancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/black_25" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

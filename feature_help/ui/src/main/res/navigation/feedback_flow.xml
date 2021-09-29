@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# Feedback Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feedback_flow"
+    app:startDestination="@id/feedback_screen">
+
+    <fragment
+        android:id="@+id/feedback_screen"
+        android:name="tech.okcredit.feedback.feedback.FeedbackFragment"
+        android:label="FeedbackScreen"
+        tools:layout="@layout/feedback_fragment">
+
+    </fragment>
+
+</navigation>

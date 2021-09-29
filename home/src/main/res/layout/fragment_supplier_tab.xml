@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clCustomerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:id="@+id/rvCustomer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/empty_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:constraint_referenced_ids="ic_image,title" />
+
+    <ImageView
+        android:id="@+id/ic_image"
+        android:layout_width="360dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_supplier_carousels"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_image"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/supplier_learn_more_title"
+        android:textAppearance="?textAppearanceSubtitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_image" />
+
+
+    <ImageView
+        android:id="@+id/ic_know_more_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="82dp"
+        android:src="@drawable/ic_help_green"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="?colorPrimary" />
+
+    <TextView
+        android:id="@+id/learn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:gravity="center_vertical"
+        android:text="@string/learn_more"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceButton"
+        android:textColor="?colorPrimary"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/ic_know_more_supplier"
+        app:layout_constraintTop_toTopOf="@+id/ic_know_more_supplier"
+        tools:visibility="visible" />
+
+    <tech.okcredit.home.ui.supplier_tab.view.NestedScrollableHost
+        android:id="@+id/nsh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".25">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/payables_onboarding_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </tech.okcredit.home.ui.supplier_tab.view.NestedScrollableHost>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nsh"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabMaxWidth="24dp"
+        app:tabPaddingEnd="4dp"
+        app:tabPaddingStart="4dp" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/payables_onboarding_ui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="nsh, page_indicator" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.LinearLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layoutName="Settings Fragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:theme="@style/LightActionBarTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/bold"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_8dp"
+                android:text="@string/account_settings_title"
+                android:textColor="@color/grey900"
+                android:textSize="18sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/tv_language"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_profile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_2dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_profile_settings"
+                android:drawablePadding="@dimen/_16dp"
+                android:drawableTint="@color/green_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_16dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:text="@string/profile_title"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vwUpiOptions"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height_dimension"
+                android:layout_marginStart="@dimen/grid_7"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_profile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUpiOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/ic_bank_green"
+                android:drawablePadding="@dimen/_16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_16dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:text="Upi Options"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vwUpiOptions" />
+
+            <View
+                android:id="@+id/profile_divider"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height_dimension"
+                android:layout_marginStart="@dimen/grid_7"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvUpiOptions" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_change_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_icon_change_phone"
+                android:drawablePadding="@dimen/_16dp"
+                android:drawableTint="@color/green_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_16dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:text="@string/change_number"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_divider" />
+
+            <View
+                android:id="@+id/change_number_divider"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height_dimension"
+                android:layout_marginStart="@dimen/grid_7"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_change_number" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_2dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_language"
+                android:drawablePadding="@dimen/_16dp"
+                android:drawableTint="@color/green_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_16dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:text="@string/app_language"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/change_number_divider" />
+
+            <TextView
+                android:id="@+id/activeLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textColor="?colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_language"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_language"
+                tools:text="Tamil" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/tv_enable_fingerprint"
+                app:layout_constraintTop_toTopOf="@id/tv_update_password" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_update_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_8dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="@dimen/_16dp"
+                android:drawableTint="@color/green_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_16dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:text="@string/change_security_pin"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_language" />
+
+            <View
+                android:id="@+id/update_password_divider"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height_dimension"
+                android:layout_marginStart="@dimen/grid_7"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_update_password" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_app_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_app_lock_settings"
+                android:drawablePadding="@dimen/_16dp"
+                android:drawableTint="@color/green_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_16dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:text="@string/security_app_lock"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintEnd_toStartOf="@id/switch_app_lock"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/update_password_divider" />
+
+            <Switch
+                android:id="@+id/switch_app_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:clickable="false"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_app_lock"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_app_lock" />
+
+            <View
+                android:id="@+id/applock_divider"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height_dimension"
+                android:layout_marginStart="@dimen/grid_7"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_app_lock" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_payment_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_payment_password_settings"
+                android:drawablePadding="@dimen/_16dp"
+                android:drawableTint="@color/green_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_16dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:text="@string/disable_payment_password"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintEnd_toStartOf="@id/switch_payment_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/applock_divider" />
+
+            <Switch
+                android:id="@+id/switch_payment_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:clickable="false"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_payment_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_payment_password" />
+
+            <View
+                android:id="@+id/payment_divider"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height_dimension"
+                android:layout_marginStart="@dimen/grid_7"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_payment_password" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_enable_fingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_icon_fingerprint"
+                android:drawablePadding="@dimen/_16dp"
+                android:drawableTint="@color/green_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_16dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:text="@string/fingerprint_unlock"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintEnd_toStartOf="@id/swFingerPrint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/payment_divider" />
+
+            <Switch
+                android:id="@+id/swFingerPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:clickable="false"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_enable_fingerprint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_enable_fingerprint" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_security_pin_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="tv_app_lock, switch_app_lock, tv_payment_password, switch_payment_password, tv_enable_fingerprint, swFingerPrint, payment_divider, applock_divider, update_password_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/tv_signout"
+                app:layout_constraintTop_toTopOf="@id/tv_signout_all" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_signout_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_8dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_signout_all_device"
+                android:drawablePadding="@dimen/_16dp"
+                android:drawableTint="@color/green_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_16dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:text="@string/logout_from_all_devices"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_enable_fingerprint" />
+
+            <View
+                android:id="@+id/signout_all_divider"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height_dimension"
+                android:layout_marginStart="@dimen/grid_7"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_signout_all" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_signout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_power_green"
+                android:drawablePadding="@dimen/_16dp"
+                android:drawableTint="@color/red_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_16dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:text="@string/logout"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textColor="@color/red_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/signout_all_divider" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</in.okcredit.shared.performance.layout_perf.LinearLayoutTracker>

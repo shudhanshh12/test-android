@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top"
+    android:paddingBottom="@dimen/_16dp">
+
+    <TextView
+        android:id="@+id/discount_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/customer_add_txn_discount_details"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey300"
+        app:layout_constraintTop_toBottomOf="@+id/discount_details"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="@string/credit"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/discount_details"
+        app:layout_constraintTop_toBottomOf="@+id/view15" />
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/discount"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/credit"
+        app:layout_constraintTop_toBottomOf="@+id/credit" />
+
+    <TextView
+        android:id="@+id/credit_amounnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceButton"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/credit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/credit"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="59" />
+
+    <TextView
+        android:id="@+id/discount_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceButton"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/discount"
+        app:layout_constraintEnd_toEndOf="@+id/credit_amounnt"
+        app:layout_constraintTop_toTopOf="@+id/discount"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="9" />
+
+    <TextView
+        android:id="@+id/new_amount_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/customer_add_txn_net_amount"
+        android:textAppearance="?textAppearanceButton"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/discount"
+        app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey300"
+        app:layout_constraintTop_toBottomOf="@+id/discount_amount"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <TextView
+        android:id="@+id/net_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceSubtitle1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/new_amount_txt"
+        app:layout_constraintEnd_toEndOf="@+id/discount_amount"
+        app:layout_constraintTop_toTopOf="@+id/new_amount_txt"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

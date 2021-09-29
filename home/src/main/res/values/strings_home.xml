@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rate_us">Rate us 5 star</string>
+    <string name="enter_name_amount">Add your new customers easily!</string>
+    <string name="tap_on_mike_amp_speak">Tap on Mike &amp; Speak</string>
+    <string name="incorrect_amount">= Incorrect Amount</string>
+    <string name="are_you_sure_you_want_to_remove_this">Are you sure you want to remove this?</string>
+    <string name="you_can_add_it_again_from_the_menu_bar">You can add It again from the Menu bar.</string>
+    <string name="yes_add_later">Yes &amp; Add later</string>
+    <string name="quick_add_card">Quick Add Card</string>
+    <string name="error_select_customer">Please select customer</string>
+    <string name="error_add_amount">Please add amount</string>
+    <string name="error_invalid_amount">Amount must be greater than 0</string>
+    <string name="quick_add_success">Transaction added successfully</string>
+    <string name="quick_add_failure">Could not add transaction. Please try again</string>
+    <string name="quick_add_customer_failure">Could not add customer. Please try again</string>
+
+    <string name="ledger">Ledger</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="t_004_biz_health_header_title">Customer Dashboard</string>
+    <string name="t_004_biz_health_header_subtitle">Keep a track of total credit and payment</string>
+    <string name="t_004_biz_health_balance_section_cta_show_more">Show More</string>
+    <string name="t_004_biz_health_time_cadence_bottom_sheet_title">Select Days</string>
+    <string name="t_004_biz_health_snackbar_desc_no_internet">No Internet Connection</string>
+    <string name="t_004_biz_health_snackbar_cta">REFRESH</string>
+    <string name="t_004_biz_health_something_went_wrong">Sorry, we are facing a technical problem. Please try again after some time.</string>
+    <string name="dashboard_collection_defaulters_title_append">\u0020(%d)</string>
+    <string name="dashboard_education_primary">Find summary dashboard here!</string>
+    <string name="dashboard_education_secondary">See summary of total credit pending and payments received.</string>
+    <string name="add_transaction_shortcut_to_home_screen_title">Add to Home Screen</string>
+    <string name="add_transaction_shortcut_to_home_screen_subtitle">Now, add transaction on any customer in just 2 clicks</string>
+    <string name="add_transaction_shortcut_to_home_screen_cta">Yes, Add Shortcut</string>
+    <string name="user_migration_tooltip_string">Upload PDF of your account statements on OkCredit from the other existing online/ digital bahi-khata apps in your phone.</string>
+    <string name="add_customer_nudge">Add customer, transaction records etc. Your records will not be shared with any agency.</string>
+    <string name="fingerprint_unlock">Fingerprint Unlock</string>
+    <string name="app_security_pin">App Security PIN</string>
+    <string name="fingerprint_set">Fingerprint Set</string>
+    <string name="app_security_pin_updated">App Security PIN Updated</string>
+    <string name="app_fingerprint_lock_enabled">Fingerprint Enabled</string>
+    <string name="set_security_pin">Set Security PIN</string>
+    <string name="set_security_pin_msg">Please set Security PIN</string>
+
+    <string name="okcredit_promises">OkCredit Promises</string>
+    <string name="read_more">Read More</string>
+    <string name="what_okcredit_assures_you_about">OkCredit assures that without your consent,</string>
+    <string name="we_do_not"><![CDATA[🚫We do not]]></string>
+    <string name="account_info_desc">share your account information.</string>
+    <string name="bank_account_info_desc">share your bank account/financial information.</string>
+    <string name="edit_delete_info_desc">Delete or edit your information.</string>
+    <string name="security_common_ledger_heading">You and other party can maintain the ledger independently or together!</string>
+    <string name="common_accounting_heading">Common Accounting</string>
+    <string name="common_accounting_desc"><![CDATA[You both can add/edit & delete transactions.]]></string>
+    <string name="blocking_heading">Blocking</string>
+    <string name="blocking_desc">You both can maintain private account by blocking others.</string>
+    <string name="transactional_sms_heading">Transactional SMS</string>
+    <string name="transactional_sms_desc">We send SMS updates of all transactions recorded. Change from settings on customer page</string>
+    <string name="reports_heading">Reports &amp; reminders</string>
+    <string name="reports_desc">You can send SMS or whatsapp updates to other party</string>
+    <string name="customer_review">I lost my phone while travelling in a train and was worried about losing my data. After 15 days, I logged in again and was able to get the exact data even after 15 days and did not loose a single entry. Thanks to OkCredit!</string>
+    <string name="review_customer_name">Santosh Kumar, Patna</string>
+    <string name="okcredit_member_since">Using OkCredit Since 2 years</string>
+    <string name="no_data_loss">Scared of data loss?</string>
+    <string name="data_loss_desc">Your account information is saved online, linked to your mobile number</string>
+    <string name="lost_phone">Lost phone</string>
+    <string name="deleted_application">Deleted\nApplication</string>
+    <string name="formatted_phone">Formatted\nphone</string>
+    <string name="msg_download_and_restore">Your account information is saved online, linked to your mobile number.</string>
+    <string name="still_not_satisfied">Still not Satisfied?</string>
+    <string name="msg_download_info">Download all the Account Information for Self</string>
+    <string name="account_backup">Account backup</string>
+    <string name="full_security_protection">Full Security &amp; protection!</string>
+    <string name="security_payment_password">Payment password</string>
+    <string name="security_app_lock_desc">Protect your account data &amp; access</string>
+    <string name="security_payment_password_desc">Allow access to only trusted people</string>
+    <string name="security_query_post_script">PS : OkCredit is available for help 24x7 on Whatsapp!\n<b><u>Click here</u></b> to ask a query</string>
+    <string name="read_privacy_terms">Read <a href='https://www.okcredit.in/privacy'>Privacy Policy</a> and  <a href='https://www.okcredit.in/terms'>Terms of service</a> to understand more about OkCredit</string>
+    <string name="donot_worry">Don’t Worry!</string>
+    <string name="download_app"><b>Download</b> OkCredit App</string>
+    <string name="login_credentials"><b>Login</b> with registered mobile number</string>
+    <string name="data_restored">Data will be <b>Restored!</b></string>
+    <string name="download_account_info">Easily download Account Information</string>
+    <string name="check_password_settings">Check Password Settings</string>
+    <string name="know_more_title">Know more about OkCredit</string>
+
+    <string name="heading_data_use">Does OkCredit use my data?</string>
+    <string name="description_privacy_data_use">OkCredit doesn\'t use or misuse any user\'s data. We only observe patterns to make your experience better on OkCredit App.</string>
+    <string name="heading_privacy_data_sharing">Does OkCredit share my data with anyone?</string>
+    <string name="description_privacy_data_sharing">No. Without your approval, OkCredit doesn\'t share your data with any government, non-government official or agency.</string>
+    <string name="heading_privacy_data_online">Why is my data kept online?</string>
+    <string name="description_privacy_data_online">Your data is kept online so that if your phone is lost or damaged, you can recover data in your new phone.</string>
+    <string name="heading_privacy_data_visibility">Can someone see my data in the internet?</string>
+    <string name="description_privacy_data_visibility">Never. To keep your data safe, OkCredit uses the best technologies and without your approval, data isn\'t visible to anyone but you.</string>
+
+    <string name="change_language_to_eng"><![CDATA[Do you want to change language to<br/>%1$s  <action><b><font color=#0574e3><u>Yes, change now</u></font></b></action>]]></string>
+
+    <plurals name="number_of_customers">
+        <item quantity="one">%1$d Customer</item>
+        <item quantity="other">%1$d Customers</item>
+    </plurals>
+    <plurals name="number_of_suppliers">
+        <item quantity="one">%1$d Supplier</item>
+        <item quantity="other">%1$d Suppliers</item>
+    </plurals>
+
+    <string name="msg_bulk_reminder">An SMS or WhatsApp collection reminder will be sent to below customer for online payment</string>
+    <string name="title_bulk_reminder">Send a collection reminder</string>
+    <string name="msg_select_customer_for_reminder">Please select customers to send collection reminder</string>
+    <string name="menu">Menu</string>
+
+    <string name="payables_onboarding_carousel_string_1">Record Transactions Done With Your Supplier</string>
+    <string name="payables_onboarding_carousel_string_2">Make Online Payments</string>
+    <string name="payables_onboarding_carousel_string_3">Chat With Suppliers</string>
+    <string name="payables_onboarding_carousel_string_video">How It Works?</string>
+    <string name="ce_home_notif_unsynced_activity">Unsynced activity</string>
+    <string name="ce_home_list_sub_txt_unable_to_add_customer">Unable to add customer!</string>
+
+
+    <string name="balance_zero">Balance ₹%s</string>
+    <string name="payment_made_to_custom_qr">Payment made by %s will be added to the ledger.</string>
+    <string name="bank_details_requested">Bank Details Requested</string>
+    <string name="ce_home_empt_state_text">Accounting in your pocket. Start your digital ledger by adding a customer.</string>
+    <string name="ce_home_notif_cta_sync_now">Retry</string>
+    <string name="collection_link">Collection link</string>
+
+    <string name="t_001_daily_remind_entry_pt_title">Daily Reminders</string>
+    <string name="t_001_daily_remind_due_since">Due • Since %1sd</string>
+    <string name="t_001_daily_remind_entry_pt_subtitle">Send payment reminders in one go</string>
+
+    <string name="t002_networked_reminder_h1">Payment Request</string>
+    <string name="t002_networked_reminder_subtext"> is requesting payment</string>
+    <string name="t002_networked_reminder_due">Balance Due</string>
+    <string name="t002_networked_reminder_last_payment">Last Payment: ₹%1$s (%2$s)</string>
+    <string name="t002_networked_reminder_pay_now">Pay Now</string>
+    <string name="t002_networked_reminder_amount">₹%1$s </string>
+
+    <string name="t_001_pre_nw_onboarding_edu_cust_tab">Click here to move to customer section</string>
+    <string name="t_001_pre_nw_onboarding_edu_supp_tab">Click here to move to supplier section</string>
+    <string name="t_001_help_call_customer_care">Call Customer Care</string>
+    <string name="t_001_help_chat_and_faq">Chat and FAQs</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="payments">Payments</string>
+    <string name="t_001_addrel_first_time_txt">Start your digital ledger by adding a customer.</string>
+    <string name="t_001_addrel_cta_add_manually">Add Manually</string>
+    <string name="t_001_addrel_cta_add_from_contacts">Add from contacts</string>
+    <string name="t_002_payments_dashboard_menu_title">Payments</string>
+    <string name="t_001_bottom_navigation_help">Help</string>
+
+    <string name="content_description_home_bottom_nav_ledger" translatable="false">home_bottom_nav_ledger</string>
+    <string name="content_description_home_bottom_nav_payments" translatable="false">home_bottom_nav_payments</string>
+    <string name="content_description_home_bottom_nav_dashboard" translatable="false">home_bottom_nav_dashboard</string>
+    <string name="content_description_home_bottom_nav_help" translatable="false">home_bottom_nav_help</string>
+    <string name="content_description_home_bottom_nav_menu" translatable="false">home_bottom_nav_menu</string>
+
+    <string name="select_supplier">Select Supplier</string>
+</resources>

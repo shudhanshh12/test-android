@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Login Languages Colours-->
+    <color name="lang_english">#e53935</color>
+    <color name="lang_hindi">#1e88e5</color>
+    <color name="lang_marathi">#3949ab</color>
+    <color name="lang_hinglish">#00897b</color>
+    <color name="lang_gujrati">#43a047</color>
+    <color name="lang_tamil">#f4511e</color>
+    <color name="lang_telegu">#5e35b1</color>
+    <color name="lang_punjabi">#d81b60</color>
+    <color name="lang_malayalam">#8e24aa</color>
+    <color name="lang_kannada">#757575</color>
+    <color name="lang_bangla">#6d4c41</color>
+
+    <!--Login Languages Light Colours-->
+    <color name="lang_english_light">#ffe6e6</color>
+    <color name="lang_hindi_light">#e6f4ff</color>
+    <color name="lang_marathi_light">#e9f0ff</color>
+    <color name="lang_hinglish_light">#def9f9</color>
+    <color name="lang_gujrati_light">#e5f6eb</color>
+    <color name="lang_tamil_light">#fdf8dc</color>
+    <color name="lang_telegu_light">#f0e6ff</color>
+    <color name="lang_punjabi_light">#ffe6f0</color>
+    <color name="lang_malayalam_light">#fce6ff</color>
+    <color name="lang_kannada_light">#f4f4f4</color>
+    <color name="lang_bangla_light">#f5e2dc</color>
+
+</resources>

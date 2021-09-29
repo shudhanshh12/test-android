@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ipl_title">OkPL 2021: खेळा &amp; जिंका</string>
+    <string name="todays_game">आजचा गेम</string>
+    <string name="leaderboard">लीडरबोर्ड</string>
+    <string name="sunday_game">साप्ताहिक ड्रॉ</string>
+    <string-array name="ipl_tabs">
+        <item>@string/todays_game</item>
+        <item>@string/leaderboard</item>
+        <item>@string/sunday_game</item>
+    </string-array>
+    <string name="welcome_to_ipl_2020">OkPL 2021 मध्ये आपले स्वागत आहे</string>
+    <string name="ipl_description">₹1000 पर्यंत जिंका फक्त ॲपवर रहा &amp; काही प्रश्नांची उत्तरे द्या आणि आपले बक्षीस मिळवा</string>
+    <string name="let_s_play">चला खेळूया</string>
+    <string name="live">● लाईव्ह</string>
+    <string name="complete_questions">साऱ्या पायऱ्या पूर्ण करा:</string>
+    <string name="points">आजचा स्कोअर</string>
+    <string name="game_rules">खेळाचे नियम</string>
+    <string name="vs">वि.</string>
+    <string name="select">निवडलेले</string>
+    <string name="guess_winner">आपल्या अंदाजानुसार आज जिंकणारी टीम निवडा</string>
+    <string name="guess_winner_batsman">आपल्या अंदाजानुसार या मॅचमध्ये सर्वात जास्त रन्स काढणारा बॅट्समन निवडा</string>
+    <string name="guess_winner_bowler">आपल्या अंदाजानुसार या मॅचमध्ये सर्वात जास्त विकेट्स घेणारा बॉलर निवडा</string>
+    <string name="winning_team_guess">निवडलेली टीम</string>
+    <string name="best_batsman_guess">निवडलेला बॅट्समन</string>
+    <string name="best_bowler_guess">निवडलेला बॉलर</string>
+    <string name="prediction_meter">पोल मीटर</string>
+    <string name="ipl_progress">%1$s%%</string>
+    <string name="ipl_select_match_rules">1. खेळात भाग घेण्यासाठी: टीम निवडा -&gt; बॅट्समन निवडा -&gt; बॉलर निवडा -&gt; OkPL गेम 1 च्या दरम्यान विचारल्या जाणाऱ्या बूस्टर प्रश्नाची वाट बघा.\n2. मॅच स्कोअर = [30 (पहिल्या 3 प्रश्नांचे उत्तर देण्यासाठी) + बॅट्समनच्या रन्स + (बॉलरच्या विकेट x 20) रन्स + 50 रन्स (जर आपली टीम जिंकली तर)] x बूस्टर गुणक(बूस्टर प्रश्नाचे उत्तर देण्यासाठी)\n\nप्रत्येक मॅचचे भाग्यवान 1000 विजेते ₹100 पर्यंत बक्षिसे जिंकतील.\n<b>सूचना: OkPL गेमच्या दरम्यान विचारल्या गेलेल्या प्रश्नांची उत्तरे दिल्यावर आपला स्कोअर वाढेल. तर मग, उत्तर द्यायला विसरू नका.</b></string>
+    <string name="ipl_game_rules">1. खेळात भाग घेण्यासाठी: टीम निवडा -&gt; बॅट्समन निवडा -&gt; बॉलर निवडा -&gt; OkPL गेम 1 च्या दरम्यान विचारल्या जाणाऱ्या बूस्टर प्रश्नाची वाट बघा.\n2. आजचा स्कोअर = [30 (पहिल्या 3 प्रश्नांचे उत्तर देण्यासाठी) + बॅट्समनच्या रन्स + (बॉलरच्या विकेट x 20) रन्स + 50 रन्स (जर आपली टीम जिंकली तर)] x बूस्टर गुणक(बूस्टर प्रश्नाचे उत्तर देण्यासाठी)\n\nप्रत्येक मॅचचे भाग्यवान 1000 विजेते ₹100 पर्यंत बक्षिसे जिंकतील.\n<b>सूचना: OkPL गेमच्या दरम्यान विचारल्या गेलेल्या प्रश्नांची उत्तरे दिल्यावर आपला स्कोअर वाढेल. तर मग, उत्तर द्यायला विसरू नका.</b></string>
+    <string name="terms_and_conditions"><a href="">अटी आणि नियम</a></string>
+    <string name="title_booster_task">आपला बूस्टर टास्क</string>
+    <string name="title_first_booster_task">पहिला बूस्टर टास्क</string>
+    <string name="title_second_booster_task">दुसरा बूस्टर टास्क</string>
+    <string name="complete_first_booster">आजच्या गेम स्क्रीनवर दाखवला जाणारा या आठवड्याचा पहिला बूस्टर टास्क पूर्ण करा</string>
+    <string name="complete_second_booster">आजच्या गेम स्क्रीनवर दाखवला जाणारा या आठवड्याचा दुसरा बूस्टर टास्क पूर्ण करा</string>
+    <string name="ends_today">आज समाप्त होत आहे</string>
+    <string name="completed_first_booster">अभिनंदन! \nआपण आपला पहिला बूस्टर टास्क पूर्ण केला आहे</string>
+    <string name="completed_second_booster">अभिनंदन! \nआपण आपला दुसरा बूस्टर टास्क पूर्ण केला आहे</string>
+    <string name="completed_third_booster">व्वा!\nआपण गेल्या 7 दिवसांत %s रन्स मिळवले आहेत</string>
+    <string name="complete_runs_tip">टिप: आपला स्कोअर अधिक चांगला बनवण्यासाठी गेमच्या शेवटी मिस्ट्री रन्स गोळा करत रहा!</string>
+    <string name="body_qualified_for_draw">अभिनंदन!\nआपण साप्ताहिक लकी ड्रॉसाठी पात्र आहात.</string>
+    <string name="lucky_draw_available_on">%s वर उपलब्ध</string>
+    <string name="start">सुरु</string>
+    <string name="mystery_reward_title">टॅप करा &amp; मिस्ट्री रन्स गोळा करा</string>
+    <string name="mystery_welcome_reward_title">ही आहे आपल्यासाठी स्वागतपर भेट !!</string>
+    <string name="ipl_reward_title">अभिनंदन!! स्क्रॅच करा &amp; लकी ड्रॉची बक्षिसे जिंका!!!</string>
+    <string name="sunday_game_rules">1. या आठवड्यात OkPL मॅचेसच्या दरम्यान विचारल्या जाणाऱ्या कमीत कमी %d बूस्टर प्रश्नांची उत्तरे द्या -&gt; या आठवड्यात %d रन्स काढा\n2. रविवारी दुपारी 3 ते शनिवारी रात्री 11:59 पर्यंत हा आठवडा चालेल\n3. साप्ताहिक ड्रॉ दार रविवारी दुपारी 12 वाजता घोषित केला जाईल\n4. साप्ताहिक ड्रॉ चे स्कोअर मॅचच्या एक तासानंतर अपडेट केले जातील\n\nदर रविवारी, गेम खेळणारे 500 यूजर्स ₹1000 पर्यंतची बक्षिसे मिळवतील.\n<b>सूचना: जास्तीत जास्त बूस्टर प्रश्नांची उत्तरे देऊन जिंकण्याची संधी मिळवा</b></string>
+    <!--
+         As a developer, you should always supply "one" and "other"
+         strings. Your translators will know which strings are actually
+         needed for their language. Always include %d in "one" because
+         translators will need to use %d for languages where "one"
+         doesn't mean 1 (as explained above).
+    -->
+    <plurals name="ends_in">
+        <item quantity="one">%d दिवसात समाप्त</item>
+        <item quantity="other">%d दिवसांत समाप्त</item>
+    </plurals>
+    <plurals name="runs_away">
+        <item quantity="one">हा टास्क पूर्ण करण्यासाठी आपल्याला केवळ %d रन्स पाहिजेत</item>
+        <item quantity="other">हा टास्क पूर्ण करण्यासाठी आपल्याला केवळ %s रन्स पाहिजेत</item>
+    </plurals>
+    <string name="leader_board_game_rules">\u2022जिंकणारे पहिले 10 खेळाडू ₹15,000 ची 2.5 ग्रॅमची सोन्याची नाणी जिंकतील\n\u2022पुढचे 25 खेळाडू ₹10,000 ची हमखास बक्षिसे जिंकतील\n\u2022यानंतरचे 500 खेळाडू OkCredit जर्सी जिंकतील\n\u2022पुढचे 500 खेळाडू दिल्ली कॅपिटल्स टीमद्वारे स्वाक्षरी केलेल्या मिनी बॅट्स जिंकतील\n\u2022मॅचच्या एक तासानंतर लीडरबोर्ड अपडेट केला जाईल\\n\n<b>सूचना: लीडरबोर्डवर सर्वात वरती झळकण्यासाठी दररोज खेळा आणि OkPL मॅचच्या दरम्यान विचारल्या जाणाऱ्या बूस्टर प्रश्नांची उत्तरे द्या</b></string>
+    <string name="label_total_points">टूर्नामेंट स्कोअर</string>
+    <string name="label_money_earned">जिंकलेली बक्षिसाची रक्कम</string>
+    <string name="msg_rank_motivation">जर आपण OkPL मॅचच्या वेळेदरम्यान टास्क पूर्ण कराल, तर सोन्याचे नाणे जिंकण्याची आपली शक्यता %d%% ने वाढेल</string>
+    <string name="title_gold_prize">सोन्याचे नाणे जिंकणारे विजेते</string>
+    <string name="title_cash_prize_10k">₹10,000 चे रोख बक्षीस जिंकणारे विजेते</string>
+    <string name="title_cash_prize_5k">₹5,000 चे रोख बक्षीस जिंकणारे विजेते</string>
+    <string name="title_cash_prize_2_5k">₹2,500 चे रोख बक्षीस जिंकणारे विजेते</string>
+    <string name="title_cash_prize_1_5k">₹1,500 चे रोख बक्षीस जिंकणारे विजेते</string>
+    <string name="title_cash_prize_1k">₹1,000 चे रोख बक्षीस जिंकणारे विजेते</string>
+    <string name="title_prize_t_shirts">टी-शर्ट जिंकण्याच्या शर्यतीत</string>
+    <string name="title_prize_mini_bats">मिनी बॅट जिंकण्याच्या शर्यतीत</string>
+    <string name="score">स्कोअर: %d</string>
+    <string name="rank_with_prefix">#%d</string>
+    <string name="self_name">%s (आपण)</string>
+    <string name="team_vs_team">%1$s वि. %2$s</string>
+    <plurals name="runs">
+        <item quantity="one">रन %1$s</item>
+        <item quantity="other">रन्स %1$s</item>
+    </plurals>
+    <plurals name="balls">
+        <item quantity="one">बॉल %1$s</item>
+        <item quantity="other">बॉल्स %1$s</item>
+    </plurals>
+    <string name="batsman_score">%1$s | %2$s</string>
+    <plurals name="wickets">
+        <item quantity="one">विकेट %1$s</item>
+        <item quantity="other">विकेट्स %1$s</item>
+    </plurals>
+    <string name="overs">ओव्हर्स %1$s.%2$s</string>
+    <string name="bowler_score">%1$s | %2$s</string>
+    <string name="team_score">%1$s-%2$s (%3$s.%4$s)</string>
+    <string name="your_guess">(आपली टीम)</string>
+    <string name="prediction_value">%1$s - %2$s%%</string>
+    <string name="no_active_matches">आज मॅच नाही</string>
+    <string name="match_load_error">चालू मॅचेस लोड करू शकत नाही. कृपया पुन्हा प्रयत्न करा</string>
+    <string name="score_no_internet">चालू स्कोअर अपडेट मिळवण्यासाठी कृपया इंटरनेट कनेक्ट करा</string>
+    <string name="you_have_won">अभिनंदन! आपण जिंकलात</string>
+    <string name="better_luck_next_time">काही हरकत नाही! कदाचित पुढच्या वेळेस आपण जिंकू शकाल</string>
+    <string name="ends_in">%1$s मध्ये समाप्त</string>
+    <string name="expired">बाद झाले</string>
+    <string name="congs_point">अभिनंदन!\nआपल्याला X3 स्कोअर गुणक मिळाले</string>
+    <plurals name="days">
+        <item quantity="one">%1$sदिवस</item>
+        <item quantity="other">%1$sदिवस</item>
+    </plurals>
+    <string name="hours">%1$sवा</string>
+    <string name="minutes">%1$sमि</string>
+    <string name="seconds">%1$sसे</string>
+    <string name="win_status">%1$s जिंकले. आपण %2$s एक्स्ट्रा रन्स मिळवले</string>
+    <string name="lose_status">%1$s जिंकले. उद्या पुन्हा प्रयत्न करा</string>
+    <string name="congratulations">अभिनंदन!!!</string>
+    <string name="earned_rewards">मिळवलेली बक्षिसे</string>
+    <string name="t_shirt_details">OkCredit जर्सी</string>
+    <string name="bat_details">दिल्ली कॅपिटल्स टीमद्वारे स्वाक्षरी केलेल्या मिनी बॅट्स</string>
+    <string name="show_more">अधिक दाखवा</string>
+    <string name="scratch_hint">बक्षीस बघण्यासाठी मागेपुढे स्क्रॅच करा</string>
+    <string name="play_game">गेम खेळा</string>
+    <string name="nice_choice">उत्तम निवड</string>
+    <string name="points_placeholder">%1$s रन्स</string>
+    <string name="runs_placeholder">%1$s पॉइंट्स</string>
+    <string name="reward_claim_failure">बक्षीस घेऊ शकलो नाही. कृपया पुन्हा प्रयत्न करा</string>
+    <string name="label_your_booster_task">आपला बूस्टर टास्क</string>
+    <string name="booster_available_in">आपले बूस्टर टास्क उपलब्ध होईल</string>
+    <string name="formatted_multiplier">%dX</string>
+    <string name="booster_success_multiplier">व्वा!\nआपला आजचा गेम स्कोअर %d ने गुणला जाईल</string>
+    <string name="booster_question_formatted">%1$s आणि\nआपला स्कोअर होईल <b>%2$sX</b></string>
+    <string name="hint_your_answer">आपले उत्तर</string>
+    <string name="success">यशस्वी झाले!</string>
+    <string name="message_business_location_success">व्यवसायाचे लोकेशन जोडणे यशस्वी झाले</string>
+    <string name="message_business_name_success">व्यवसायाचे नाव जोडणे यशस्वी झाले</string>
+    <string name="message_business_type_success">व्यवसायाचा प्रकार जोडणे यशस्वी झाले</string>
+    <string name="message_business_category_success">व्यवसायाची कॅटेगरी जोडणे यशस्वी झाले</string>
+    <string name="message_merchant_name_success">व्यापाऱ्याचे नाव जोडणे यशस्वी झाले</string>
+    <string name="message_merchant_email_success">व्यापाऱ्याचा ईमेल जोडणे यशस्वी झाले</string>
+    <string name="message_merchant_about_success">व्यवसायाबद्दल माहिती जोडणे यशस्वी झाले</string>
+    <string name="message_add_customer_success">ग्राहक जोडणे यशस्वी झाले</string>
+    <string name="rewards">बक्षिसे</string>
+    <string name="play_booster_video">कसे ते दाखवा</string>
+    <string name="today_game_prize">चला जिंकू या आजचा गेम!</string>
+    <string name="week_score">आठवड्याचा\nस्कोअर</string>
+    <string name="win_10k">दर रविवारी जिंका ₹1000 पर्यंत!</string>
+    <string name="sunday_game_rules_title">चला जिंकू या साप्ताहिक ड्रॉ!</string>
+    <string name="leader_board_game_rules_title">लीडरबोर्ड टॉपर्स जिंकतील…</string>
+    <string name="status_bowling">● बॉलिंग करत आहे</string>
+    <string name="status_not_bowling">बॉलिंग करत नाही</string>
+    <string name="status_yet_to_bowl">बॉलिंग बाकी</string>
+    <string name="status_yet_to_bat">बॅटिंग बाकी</string>
+    <string name="status_batting">● बॅटिंग करत आहे</string>
+    <string name="status_bowled">बॉलिंग झाली</string>
+    <string name="status_caught_and_bowled">कॅच आऊट</string>
+    <string name="status_caught">कॅच</string>
+    <string name="status_out">आऊट</string>
+    <string name="status_hit_wicket">हिट विकेट</string>
+    <string name="status_lbw">एलबीडब्ल्यू</string>
+    <string name="status_retired_hurt">जखमी होऊन परत</string>
+    <string name="status_run_out">रन आऊट</string>
+    <string name="status_stumped">स्टम्प आऊट</string>
+    <string name="status_tea">चहा</string>
+    <string name="status_lunch">जेवण</string>
+    <string name="status_2nd_innings">इनिंग ब्रेक</string>
+    <string name="status_rain">पाऊस</string>
+    <string name="status_bad_light">खराब प्रकाश</string>
+    <string name="status_interrupted">व्यत्यय</string>
+    <string name="status_drinks">पेय</string>
+    <string name="status_delayed">उशीर</string>
+    <string name="status_super_over">सुपर ओव्हर</string>
+    <string name="status_day_over">दिवस समाप्त</string>
+    <string name="status_match_over">मॅच समाप्त</string>
+    <string name="status_nil"></string>
+    <string name="weekly_draw_coming_soon">OkPL साप्ताहिक पारितोषिकांच्या स्क्रीनवर आपले स्वागत आहे! आपली साप्ताहिक ड्रॉ ची प्रगती जाणून घेण्यासाठी आम्हाला पुन्हा 20 सप्टेंबर, दुपारी 3:00 नंतर भेट द्या. पहिला OkPL साप्ताहिक ड्रॉ होईल रविवार, 26 सप्टेम्बर, दुपारी 12:00 वाजता.\n\nटूर्नामेंटच्या दरम्यान ₹51 लाखांची बक्षिसे जिंका\n\nसाप्ताहिक ड्रॉसाठी नियम\n1. या आठवड्यात OkPL मॅचेसच्या दरम्यान विचारल्या जाणाऱ्या कमीत कमी 2 प्रश्नांची उत्तरे द्या (रविवारी दुपारी 3 ते शनिवारी रात्री 11:59 पर्यंत हा आठवडा चालेल)\n2. या आठवड्यात 1000 रन्स काढा आणि साप्ताहिक ड्रॉसाठी पात्र व्हा</string>
+    <string name="leaderboard_coming_soon">सुरु होत आहे\nसोमवार, 21 सप्टेंबर, रात्री 12:00 वाजता\n\nटूर्नामेंटच्या दरम्यान ₹51 लाखांची बक्षिसे जिंका\n\nपहिल्या 10 विजेत्यांना मिळतील 2.5 ग्रॅमची सोन्याची नाणी\n\nपुढील 1025 खेळाडूंना मिळतील हमखास बक्षिसे</string>
+    <string name="today_lucky_draw">अभिनंदन!\nआपण आजच्या लकी ड्रॉसाठी पात्र आहात</string>
+    <string name="today_lucky_draw_available">मॅचच्या शेवटी उपलब्ध</string>
+    <string name="add_address_hint">‘%1$s’ पाठवण्यासाठी पत्ता आवश्यक.</string>
+    <string name="add_address"><u>पत्ता जोडा</u></string>
+    <string name="confirm_address"><u>पत्ता कन्फर्म करा</u></string>
+    <string name="correct_address_hint"><u>सध्याच्या व्यवसायाच्या पत्त्यावर पाठवले जाईल.</u></string>
+    <string name="contact_us_whatsapp"><u>आमच्याशी WhatsApp वर संपर्क साधा</u></string>
+    <string name="contact_us_inapp_chat"><u>इन-ॲप चॅट</u></string>
+    <string name="whatsapp_your_address">आपला पत्ता WhatsApp करा</string>
+    <string name="or">किंवा</string>
+    <string name="whatsapp_message_deliver_price">मी %1$s जिंकलो आहे. कृपया मला ते खालील पत्त्यावर पाठवा %2$s</string>
+    <string name="whatsapp_message_send_address">माझा पत्ता पुढीप्रमाणे</string>
+    <string name="mini_bat">मिनी-बॅट</string>
+    <string name="t_shirt">टी-शर्ट</string>
+    <string name="series_name">%1$s | मॅच %2$s</string>
+    <string name="please_come_back">आजच्या मॅचमध्ये आपण भाग घेऊ शकत नाही. कृपया, उद्या पुन्हा खेळा.</string>
+    <string name="game_rules_tool_tip">स्कोअरचा हिशोब पुढील प्रमाणे केला जाईल.\nआजचा स्कोअर = [30 (पहिल्या 3 प्रश्नांची उत्तरे देण्यासाठी) + बॅट्समनच्या रन्स + (बोलरच्या विकेट्स x %1$s) रन + %2$s रन (जर आपली टीम जिंकली तर)] x बूस्टर गुणक (बूस्टर प्रश्नाचे उत्तर देण्यासाठी)</string>
+    <string name="claim_in_progress">प्रक्रिया चालू आहे…कृपया थांबा</string>
+    <string name="add_your_payment_details">आपल्या बक्षिसावर हक्क सांगण्यासाठी कृपया आपले पेमेंट डिटेल्स जोडा</string>
+    <string name="booster_pending">आपल्या बक्षिसावर हक्क सांगण्यासाठी कृपया आपले पेमेंट डिटेल्स जोडा</string>
+    <plurals name="booster_pending">
+        <item quantity="one">कृपया थांबा. आम्ही आपली माहिती प्रोसेस करत आहोत. बूस्टर %1$s मिनिटामध्ये पूर्ण होईल</item>
+        <item quantity="other">कृपया थांबा. आम्ही आपली माहिती प्रोसेस करत आहोत. बूस्टर %1$s मिनिटांमध्ये पूर्ण होईल</item>
+    </plurals>
+    <string name="match_title">%s वि. %s- मॅच %d</string>
+    <string name="play_okpl">\nOkPL खेळा, ₹51लाखांपर्यंत जिंका</string>
+    <string name="show_all_players">सारे खेळाडू दाखवा</string>
+    <string name="coming_soon_leaderboard"><![CDATA[सुरु होत आहे <br/><b>रविवार, 11 एप्रिल, (रात्री) 12:00 वाजता</b><br/><br/><b><font color=#1c873b>जिंका बक्षिसे ₹51 लाखांची</font></b><br/><b>या टूर्नामेंटच्या दरम्यान</b><br/><br/>पहिल्या 10 विजेत्यांना मिळतील<b>2.5 ग्रॅमची सोन्याची नाणी</b><br/><br/><b>त्या पुढील 500 खेळाडूंना मिळतील</b> हमखास बक्षिसे]]></string>
+    <string name="coming_soon_weekly"><![CDATA[सुरु होत आहे<br/><b>रविवार, 18 एप्रिल, (रात्री) 3:00 वाजता</b><br/><br/> पहिला साप्ताहिक ड्रॉ होईल<br/><b>रविवार, 18 एप्रिल 2021, दुपारी 12:00 वाजता<br/><br/><font color=#1c873b>जिंका बक्षिसे ₹51 लाखांची</font></b><br/><b>या टूर्नामेंटच्या दरम्यान</b><br/><br/><b>या आठवड्यात 2 टास्क पूर्ण करा आणि साप्ताहिक ड्रॉमध्ये भाग घेण्यासाठी आवश्यक 1000 रन मिळवा</b>]]></string>
+    <string name="coming_soon_todasygame"><![CDATA[सुरु होत आहे<br/><b>शुक्रवार, 9 एप्रिल, (रात्री) 12:00 वाजता</b><br/><br/><b><font color=#1c873b>जिंका बक्षिसे ₹51 लाखांची</font></b><br/><b>या टूर्नामेंटच्या दरम्यान</b><br/><br/><b>OkPL मॅचबद्दल </b><br/>विचारल्या गेलेल्या 3 सोप्या प्रश्नांची उत्तरे द्या<b>आणि एक टास्क करा</b>]]></string>
+    <string name="todays_tab_tool_tip">\n\nही आपली दैनिक गेमची जागा आहे</string>
+    <string name="server_error"><![CDATA[काही तरी चूक झाली. <font color=#0574e3><u>पुन्हा प्रयत्न करा</u></font>]]></string>
+    <string name="network_error"><![CDATA[खराब नेटवर्क. <font color=#0574e3><u>पुन्हा प्रयत्न करा</u></font>]]></string>
+    <string name="weekly_tool_tip">\n\nमागच्या 7 दिवसांमध्ये आपण जे रन्स काढले आहेत\nत्यांच्या आधारावर\nसाप्ताहिक लकी ड्रॉ काढला जाईल</string>
+    <string name="leaderboard_tool_tip">\n\nदररोज काढलेले रन्स इथे\nजोडले &amp; रँक केले जातील\nज्याच्या आधारावर\n <b>सोन्याच्या नाण्यांची अंतिम बक्षिसे &amp; इतर रोख बक्षिसे ठरवली जातील</b></string>
+    <string name="contact_added">नंबर जोडणे यशस्वी</string>
+    <string name="do_booster">%1$s बूस्टर टास्क बाकी </string>
+    <plurals name="runs_away_weekly">
+        <item quantity="one">%s रन्स दूर</item>
+        <item quantity="other">%s रन्स दूर</item>
+    </plurals>
+    <string name="complete_booster">या आठवड्या दरम्यान कोणतेही %1$s बूस्टर टास्क पूर्ण करा</string>
+    <string name="make_weekly_score">दर आठवड्यात कमीत कमी %1$s रन बनवा</string>
+    <string name="horray">अभिनंदन!</string>
+    <string name="booster_completed">आपण या आठवड्यातील बूस्टर टास्क पूर्ण केले आहेत.</string>
+    <string name="booster_completed_score">आपण %1$s रन्स बनवले आहेत</string>
+    <string name="sunday_draw_qualified">अभिनंदन!\nआपण साप्ताहिक ड्रॉसाठी पात्र आहात.</string>
+    <string name="sunday_draw_availability">येत्या रविवारी %1$s वाजता उपलब्ध होईल</string>
+    <string name="each_week">दर आठवड्यात</string>
+    <string name="rules_answer_any">कोणत्याही %1$s बूस्टर प्रश्नांची उत्तरे द्या</string>
+    <string name="rules_weekly_score">%1$s रन बनवा</string>
+    <string name="rules_weekly_available">रविवारी %1$s वाजता उपलब्ध होईल</string>
+    <string name="how_to_play_okpl">OkPL कसे खेळावे?</string>
+    <string name="got_3x_mutipler">अभिनंदन!\nआपल्याला %d पॉईंट गुणक मिळाले</string>
+    <string name="play_again">जास्त मॅचेस खेळा \nजास्त बक्षिसे जिंकण्याची संधी मिळवा</string>
+    <string name="answer_3_question">IPL संबंधी 3 प्रश्नांची उत्तरे द्या</string>
+    <string name="before_match">मॅच सुरु होण्यापूर्वी</string>
+    <string name="answer_1_booster">1 बूस्टर प्रश्नाचे उत्तर द्या</string>
+    <string name="during_ipl">IPL मॅचच्या दरम्यान</string>
+    <string name="after_ipl">IPL मॅचनंतर</string>
+    <string name="lucky_100">भाग्यवान 1000 जिंकतील ₹100 पर्यंत</string>
+    <string name="welcome_gift">₹51 लाखांची बक्षिसे जिंकण्यासाठी नियमितपणे खेळा!</string>
+    <string name="play_again_this_week">साप्ताहिक जिंकण्यासाठी\nपुन्हा खेळा.</string>
+    <string name="keep_going">खेळत रहा!</string>
+    <string name="complete_one_motes_task">या आठवड्यात एक आणखी बूस्टर टास्क पूर्ण करा.</string>
+    <string name="rules_leaderboard_top_players">प्रथम 10 खेळाडू जिंकतील 2.5 ग्रॅमची \nसोन्याची नाणी</string>
+    <string name="rules_leaderboard_next_25_player">पुढील 25 खेळाडू जिंकतील\n₹10,000 पर्यंतची रोख बक्षिसे</string>
+    <string name="rules_leaderboard_next_1000_player">पुढील 1000 खेळाडू जिंकतील OkCredit ची ब्रँडेड बक्षिसे</string>
+    <string name="rules_leaderboard_note">• सर्व बक्षिसे IPLच्या शेवटी अंतिम स्कोअरच्या आधारे दिली जातील\n• अधिक स्कोअर बनवण्यासाठी IPL च्या दरम्यान सर्व बूस्टर टास्क पूर्ण करा</string>
+    <string name="rules_leaderboard_top_players_new">पहिले 10 विजेते जिंकतील\n₹15,000 ची सोन्याची नाणी</string>
+    <string name="rules_leaderboard_next_500_player">पुढील 500 खेळाडू जिंकतील\nOkCredit टी-शर्ट्स</string>
+    <string name="before_match_ends">मॅच संपण्यापूर्वी</string>
+    <string name="lucky_2500">भाग्यवान 2500 जिंकतील ₹100 पर्यंत</string>
+    <string name="weekly_draw_upto_1000">2,000 खेळाडू जिंकतील ₹1,000 पर्यंत</string>
+    <string name="coming_soon_leaderboard_new"><![CDATA[सुरु होत आहे <br/><b>रविवार, 11 एप्रिल, (रात्री) 12:00 वाजता</b><br/><br/><b><font color=#1c873b>जिंका बक्षिसे ₹51 लाखांची</font></b><br/><b>या टूर्नामेंटच्या दरम्यान</b><br/><br/>पहिल्या 10 विजेत्यांना मिळतील<b>₹15,000 ची सोन्याची नाणी</b><br/><br/><b>त्या पुढील 525 खेळाडूंना मिळतील</b> हमखास बक्षिसे]]></string>
+    <string name="coming_soon_todasygame_new"><![CDATA[सुरु होत आहे<br/><b>शुक्रवार, 9 एप्रिल, (रात्री) 12:00 वाजता</b><br/><br/><b><font color=#1c873b>जिंका बक्षिसे ₹51 लाखांची</font></b><br/><b>या टूर्नामेंटच्या दरम्यान</b><br/><br/><b>OkPL मॅचबद्दल </b><br/>विचारल्या गेलेल्या 3 सोप्या प्रश्नांची उत्तरे द्या<b>आणि एक टास्क करा</b>]]></string>
+    <string name="coming_soon_weekly_new"><![CDATA[सुरु होत आहे<br/><b>रविवार, 18 एप्रिल, (रात्री) 3:00 वाजता</b><br/><br/> पहिला साप्ताहिक ड्रॉ होईल<br/><b>रविवार, 18 एप्रिल 2021, दुपारी 12:00 वाजता<br/><br/><font color=#1c873b>जिंका बक्षिसे ₹51 लाखांची</font></b><br/><b>या टूर्नामेंटच्या दरम्यान</b><br/><br/><b>या आठवड्यात 2 टास्क पूर्ण करा आणि साप्ताहिक ड्रॉमध्ये भाग घेण्यासाठी आवश्यक 1000 रन मिळवा</b>]]></string>
+</resources>

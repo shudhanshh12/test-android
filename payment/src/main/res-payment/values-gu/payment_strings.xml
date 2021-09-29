@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="payable_amount">ચુકવણી ની રકમ</string>
+    <string name="please_check_or_edit_final_payable_amount">કૃપા કરીને અંતિમ ચુકવણી ની રકમ તપાસો અથવા સુધારો</string>
+    <string name="rupee_text">₹</string>
+    <string name="juspay_pay_securely">સુરક્ષિત ચુકવણી કરો</string>
+    <string name="juspay_enter_amount_to_pay">ચુકવણી માટે રકમ દાખલ કરો</string>
+    <string name="juspay_payment_successful">ચુકવણી સફળ</string>
+    <string name="juspay_no_internet_connection">ઇનેટરનેટ જોડાણ નથી</string>
+    <string name="juspay_something_went_wrong">કંઈક ખોટું છે કૃપા કરી ફરી પ્રયાસ કરો</string>
+    <string name="juspay_please_fill_correct_amount">કૃપા કરીને સાચી રકમ ભરો</string>
+</resources>

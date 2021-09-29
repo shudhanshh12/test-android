@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_destination_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/circular_border_on_top"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    tools:visibility="visible">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancel"
+        style="@style/OKC.Button.Dark.Outline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:minWidth="128dp"
+        android:text="@string/customer_txn_alert_deny"
+        android:textColor="@color/grey900"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/accept"
+        app:layout_constraintEnd_toStartOf="@+id/accept"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/accept"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/grey400"
+        tools:visibility="visible" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/accept"
+        style="@style/OKC.Button.Dark.Outline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:backgroundTint="@color/green_primary"
+        android:elevation="0dp"
+        android:minWidth="128dp"
+        android:text="@string/customer_txn_alert_allow"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancel"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        app:strokeColor="@color/green_primary"
+        tools:text="Block"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/profilepic"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_black_24dp"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:textAppearance="?textAppearanceSubtitle1"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/profilepic"
+        app:layout_constraintStart_toStartOf="@+id/profilepic"
+        app:layout_constraintTop_toBottomOf="@+id/profilepic"
+        tools:text="kfmvkfbkgbmgbmgbglkbmb"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textAppearance="?textAppearanceCaption2"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="flvmvkbmbgb"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="?textAppearanceBody2"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        tools:visibility="gone" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/grey300"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:visibility="gone" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/permission_taking_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="view10,message,phone,name,profilepic, accept,cancel " />
+
+    <ImageView
+        android:id="@+id/permission_pic"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_check_circle_border"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/permission_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAppearance="?textAppearanceHeadline5"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/permission_content"
+        app:layout_constraintStart_toStartOf="@+id/permission_content"
+        app:layout_constraintTop_toBottomOf="@+id/permission_pic"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/permission_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:gravity="center"
+        android:paddingBottom="24dp"
+        android:text="@string/you_can_change_this_decision_in_the_future_by_going_to_profile_section"
+        android:textAppearance="?textAppearanceCaption"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/permission_heading"
+        tools:visibility="visible" />
+
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/grey300"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/permission_content"
+        tools:visibility="visible" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/permission_result_done"
+        style="@style/OKC.Button.Dark.Outline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/green_primary"
+        android:elevation="0dp"
+        android:minWidth="128dp"
+        android:text="@string/done"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view11"
+        app:strokeColor="@color/green_primary"
+        tools:text="Done"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/permission_result_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="permission_content,permission_heading, permission_pic, permission_result_done, view11" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

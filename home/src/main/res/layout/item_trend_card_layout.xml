@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="9dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/card_vertical_guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/card_vertical_guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/feedback_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        app:constraint_referenced_ids="was_this_useful_textview, thumb_up_imageview, thumb_down_imageview, placeholder_margin_view" />
+
+    <View
+        android:id="@+id/trends_card_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_white_corner_radius_8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_margin_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/trend_imageview"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/card_vertical_guideline_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/trend_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="5sp"
+        android:textColor="@color/grey800"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/card_vertical_guideline_end"
+        app:layout_constraintStart_toEndOf="@+id/trend_imageview"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Credit Given" />
+
+    <TextView
+        android:id="@+id/trend_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:lineSpacingExtra="5sp"
+        android:textColor="@color/grey600"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/card_vertical_guideline_end"
+        app:layout_constraintStart_toEndOf="@+id/trend_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/trend_title"
+        tools:text="₹0 given in last 7 days. 25 May - 31 May was ₹100." />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trend_description" />
+
+    <TextView
+        android:id="@+id/was_this_useful_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:lineSpacingExtra="5sp"
+        android:textColor="@color/grey700"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/card_vertical_guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:text="Was this useful?" />
+
+    <ImageView
+        android:id="@+id/thumb_up_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/was_this_useful_textview"
+        app:layout_constraintStart_toEndOf="@+id/was_this_useful_textview"
+        app:layout_constraintTop_toTopOf="@+id/was_this_useful_textview"
+        tools:src="@drawable/ic_thumb_up" />
+
+
+    <ImageView
+        android:id="@+id/thumb_down_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/thumb_up_imageview"
+        app:layout_constraintStart_toEndOf="@+id/thumb_up_imageview"
+        app:layout_constraintTop_toTopOf="@+id/thumb_up_imageview"
+        tools:src="@drawable/ic_thumb_down" />
+
+    <View
+        android:id="@+id/placeholder_margin_view"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_vertical_guideline_end"
+        app:layout_constraintStart_toStartOf="@+id/card_vertical_guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/was_this_useful_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:clipChildren="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/supplier_image"
+            android:layout_width="match_parent"
+            android:layout_height="320dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_6"
+            android:background="#99000000">
+
+            <TextView
+                android:id="@+id/supplier_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/grid_2"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textColor="@color/white"
+                tools:text="Supplier Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_below="@+id/supplier_image">
+
+            <ImageView
+                android:id="@+id/call_supplier"
+                android:layout_width="@dimen/grid_5"
+                android:layout_height="@dimen/grid_5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/grid_2"
+                android:background="@drawable/circular_green_lite_filled_background"
+                android:padding="@dimen/grid_1"
+                app:srcCompat="@drawable/ic_call" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pay_online"
+                style="@style/OKC.Button.Light.Outline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/grid_2"
+                android:layout_marginEnd="@dimen/grid_2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/pay_online"
+                android:textAllCaps="false"
+                app:cornerRadius="24dp"
+                app:strokeColor="@color/green_primary"
+                tools:text="Pay Online" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

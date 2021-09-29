@@ -1,0 +1,67 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "69d3837aa5e8706fd9f925878e90763f",
+    "entities": [
+      {
+        "tableName": "CustomerAdditionalInfo",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`customer_id` TEXT NOT NULL, `collectionContextualEnabled` INTEGER NOT NULL, `txnIdForCollectionTrigger` TEXT, `txnCountOnPaymentIntentTrigger` INTEGER NOT NULL, `businessId` TEXT NOT NULL, PRIMARY KEY(`customer_id`))",
+        "fields": [
+          {
+            "fieldPath": "customer_id",
+            "columnName": "customer_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "collectionContextualEnabled",
+            "columnName": "collectionContextualEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "txnIdForCollectionTrigger",
+            "columnName": "txnIdForCollectionTrigger",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "txnCountOnPaymentIntentTrigger",
+            "columnName": "txnCountOnPaymentIntentTrigger",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "businessId",
+            "columnName": "businessId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "customer_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_CustomerAdditionalInfo_businessId",
+            "unique": false,
+            "columnNames": [
+              "businessId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_CustomerAdditionalInfo_businessId` ON `${TABLE_NAME}` (`businessId`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '69d3837aa5e8706fd9f925878e90763f')"
+    ]
+  }
+}

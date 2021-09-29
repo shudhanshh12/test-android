@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/circular_border_on_top"
+    android:divider="@drawable/ic_divder_drawable"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/upload_pdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="24dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/upload_pdfs"
+        android:textAppearance="?textAppearanceBody2"
+        app:drawableStartCompat="@drawable/ic_icon_pdf"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/upload_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/upload_image"
+        android:textAppearance="?textAppearanceBody2"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_icon_image" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/camera"
+        android:textAppearance="?textAppearanceBody2"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_icon_add_photo" />
+
+</LinearLayout>

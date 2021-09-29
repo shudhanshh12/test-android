@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/move_to_supplier_flow"
+    app:startDestination="@id/moveToSupplierScreen">
+
+    <fragment
+        android:id="@+id/moveToSupplierScreen"
+        android:name="in.okcredit.frontend.ui.migrate_to_supplier.MoveToSupplierFragment"
+        android:label="MoveToSupplierScreen" />
+</navigation>

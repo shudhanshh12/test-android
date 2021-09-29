@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">मेनूमधून आपली बक्षिसे मिळवण्यासाठी आपला बँक अकाऊंट सेटअप करा</string>
+    <string name="you_won_feature">तुम्ही %1$s जिंकलात</string>
+    <string name="visit_feature">%1$s पहा</string>
+    <string name="claim_in_progress">प्रक्रिया चालू आहे…कृपया थांबा</string>
+    <string name="scratch_view_hint">बक्षीस बघण्यासाठी स्क्रॅच करा</string>
+    <string name="enter_bank_details_description">या बक्षिसाचा लाभ घेण्यासाठी आपल्या बँक अकाऊंटचा तपशील लिहा.</string>
+    <string name="please_solve_this_issue">कृपया ही समस्या सोडवा</string>
+    <string name="earned_due_to_activation">व्यवहार जोडण्यासाठी मिळवले.</string>
+    <string name="better_luck_next_time">काही हरकत नाही! \nकदाचित पुढच्या वेळेस आपण जिंकू शकाल</string>
+    <string name="something_went_wrong_in_claiming_rewards">क्षमा करा, काही तरी तांत्रिक बिघाड झाला आहे. कृपया, थोड्यावेळाने पुन्हा प्रयत्न करा.</string>
+    <string name="congratulations_tell_them_add_bank_details">अभिनंदन!!! बक्षीस मिळवण्यासाठी बँक अकाऊंट सेटअप करा.</string>
+    <string name="reward_on_hold">बक्षिसे रोखून धरण्यात आली आहेत</string>
+    <string name="error_budged_limit_exceeded">काही तांत्रिक समस्येमुळे आपले बक्षीस रोखून धरण्यात आले आहे. आमची टीम ही समस्या लवकरच सोडवेल. कृपया 3 दिवसांनंतर बक्षीस ताब्यात घ्या.</string>
+    <string name="you_won_10">तुम्ही जिंकलात</string>
+    <string name="hurray">अभिनंदन!</string>
+    <string name="oops">ओह्ह!</string>
+    <string name="rewarded_on_06_nov_02_38pm">06 नोव्हें, दुपारी 02:38 वाजता बक्षीस मिळाले</string>
+    <string name="earned_for_adding_transactions_records">व्यवहार जोडण्यासाठी मिळवले.</string>
+    <string name="setup_bank_account_to_get_reward">बक्षीस मिळवण्यासाठी बँक अकाऊंट सेटअप करा.</string>
+    <string name="step_1_how_does_it_works_roa">वेगवेगळ्या दिवशी ग्राहक आणि कमीतकमी 2 व्यवहार जोडा.</string>
+    <string name="step_2_how_does_it_works_roa">आपली बक्षिसे आपल्याला बक्षीस विभागामध्ये दिसतील.</string>
+    <string name="error_description_bank_valid">हा बँक अकाऊंट किंवा UPI दुसऱ्या यूजरच्या नावावर आधीपासूनच अस्तित्वात आहे. कृपया योग्य तपशील शेअर करा किंवा इतर अकाऊंटचा वापर करा.</string>
+    <string name="upi_inactive_error_msg">आपला बँक अकाऊंट ॲक्टिव्ह नाही. कृपया आपला बँक अकाऊंट पुन्हा ॲक्टिव्ह करा किंवा दुसरा अकाऊंट वापरा.</string>
+    <string name="payout_daily_limit_reached_error_msg">बक्षिसे क्लेम करण्याची आजची सीमा संपली. कृपया उद्या पुन्हा क्लेम करा.</string>
+    <string name="reward_update">बक्षिसाबद्दल सूचना</string>
+    <string name="please_try_again_later">कृपया थोड्या वेळानंतर पुन्हा प्रयत्न करा</string>
+    <string name="payment_update">पेमेंट अपडेट</string>
+    <string name="close">बंद</string>
+    <string name="processing_state">प्रोसेस होत आहे…</string>
+    <string name="bank_service_unavail">बँक सेवा बंद आहे</string>
+    <string name="bank_service_unavil_error_msg">आपली बँक सध्या पेमेंट प्रोसेस करू शकत नाही. कृपया, काही तासांनंतर पुन्हा प्रयत्न करा.</string>
+    <string name="we_are_processing_your_reward">आपले बक्षीस प्रोसेस करत आहोत. कृपया 3 दिवसांच्या आत परत तपासा.</string>
+    <string name="edit_bank_details">बँक तपशील दुरुस्त करा</string>
+    <string name="please_try_again">कृपया पुन्हा प्रयत्न करा</string>
+</resources>

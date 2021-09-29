@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# Main Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_flow"
+    app:startDestination="@id/liveSaleScreen">
+
+    <fragment
+        android:id="@+id/liveSaleScreen"
+        android:name="in.okcredit.frontend.ui.live_sales.LiveSalesFragment"
+        android:label="HomeScreen"
+        tools:layout="@layout/customer_fragment">
+
+    </fragment>
+
+</navigation>

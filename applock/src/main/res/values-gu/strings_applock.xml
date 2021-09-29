@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_otp">OTP લખો</string>
+    <string name="otp_sent_message">અમે તમારા ફોન નંબર %1$s પર OTP ની સાથે SMS મોકલ્યો છે</string>
+    <string name="otp_incorrect">OTP ખોટો છે</string>
+    <string name="otp_expired">OTP સમાપ્ત થઈ ગયો છે</string>
+    <string name="resend_otp"><u>OTP ફરી મોકલો </u></string>
+    <string name="forgot_pin"><u>પિન ભૂલી ગયા છો</u></string>
+    <string name="confirm_otp">ફરીવાર એજ OTP લખો</string>
+    <string name="set_a_4_digit_pin">4 અંકનો પિન સેટ કરો</string>
+    <string name="confirm_pin">ફરીવાર એજ પિન લખો</string>
+    <string name="incorrect_pin">પિન ખોટો છે. કૃપા કરીને ફરી પ્રયત્ન કરો.</string>
+    <string name="enter_security_pin">સુરક્ષા પિન લખો</string>
+    <string name="security_setup_description">તમારા ગ્રાહકોની વિગતો અને વ્યવહારના ડેટા સુરક્ષિત રાખવા માટે, તમારી ઍપ માટે સુરક્ષા પિન સેટ કરો</string>
+    <string name="security_update_description">અમે પાસવર્ડને 4 અંકવાળા પિન પર અપડેટ કર્યો છે, તમારા હાલના પાસવર્ડના પ્રથમ 4 અંક લખો</string>
+    <string name="confirm_fingerprint">ફરીવાર ફિંગરપ્રિન્ટ આપો</string>
+    <string name="use_fingerprint">ફિંગરપ્રિન્ટ વાપરો</string>
+    <string name="confirm_fingerprint_description">સુરક્ષાના કારણે ફરીવાર ફિંગરપ્રિન્ટ આપો</string>
+    <string name="use_pin">પિન વાપરો</string>
+    <string name="four_digit_security_pin">4 અંકનો સુરક્ષા પિન </string>
+</resources>

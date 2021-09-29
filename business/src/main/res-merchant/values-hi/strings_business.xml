@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">प्रोफाइल में सुधार करें</string>
+    <string name="t_001_multi_acc_title_new_biz">नया बिज़नेस बनायें</string>
+    <string name="t_001_multi_acc_input_biz_name">बिज़नेस/ दुकान का नाम</string>
+    <string name="t_001_multi_acc_net_bal">कुल बैलेंस:</string>
+    <string name="t_001_multi_acc_net_bal_due">उधार</string>
+    <string name="t_001_multi_acc_net_bal_advance">जमा हुई राशि</string>
+    <string name="t_001_multi_acc_title_select_biz">बिज़नेस चुनें</string>
+    <string name="t_001_multi_acc_msg_biz_added">नया बिज़नेस बन गया</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">बिज़नेस नहीं बना पायें। बिज़नेस बनाने की अधिकतम सीमा समाप्त हो गयी है।</string>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:elevation="5dp"
+    android:layout_gravity="bottom"
+    android:focusable="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toLeftOf="@+id/buttonContainer"
+        android:layout_toStartOf="@+id/buttonContainer"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="54dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:tint="@color/grey600"
+                app:srcCompat="@drawable/ic_call_solid"
+                android:layout_gravity="center_vertical" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="@color/grey900"
+                    android:maxLength="15"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:inputType="phone"
+                    android:hint="@string/save_customer_mobile"
+                    android:imeOptions="actionDone" />
+
+                <TextView
+                    android:id="@+id/error_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_phone"
+                    android:layout_toStartOf="@+id/counter_phone"
+                    android:layout_toLeftOf="@+id/counter_phone"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="gone"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/red_primary"
+                    tools:text="Error is here"
+                    tools:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/counter_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_phone"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/red_primary"
+                    tools:text="0/10"
+                    tools:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/import_contact_bottom_container"
+                android:layout_width="24dp"
+                android:layout_height="54dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                android:tint="@color/grey600"
+                app:srcCompat="@drawable/ic_baseline_contacts"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/phone_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/white"
+            app:fabCustomSize="54dp"
+            app:elevation="2dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            app:backgroundTint="?colorPrimary"
+            app:srcCompat="@drawable/ic_check"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/loader"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:visibility="gone"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="27dp">
+
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">ਆਪਣੇ ਇਨਾਮ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਮੀਨੂ ਤੋਂ ਆਪਣੇ ਬੈਂਕ ਖਾਤੇ ਨੂੰ ਸੈੱਟ ਅੱਪ ਕਰੋ</string>
+    <string name="you_won_feature">ਤੁਸੀਂ %1$s ਜਿੱਤਿਆ ਹੈ</string>
+    <string name="visit_feature">ਦੇਖੋ %1$s</string>
+    <string name="claim_in_progress">ਪ੍ਰਕਿਰਿਆ ਕਰ ਰਿਹਾ ਹੈ…ਕਿਰਪਾ ਕਰਕੇ ਉਡੀਕ ਕਰੋ</string>
+    <string name="scratch_view_hint">ਇਨਾਮ ਦੇਖਣ ਲਈ ਸਕਰੈਚ ਕਰੋ</string>
+    <string name="enter_bank_details_description">ਇਸ ਕੈਸ਼ਬੈਕ ਦਾ ਲਾਭ ਲੈਣ ਲਈ ਬੈਂਕ ਖਾਤੇ ਦੇ ਵੇਰਵੇ ਦਾਖਲ ਕਰੋ।</string>
+    <string name="please_solve_this_issue">ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਸਮੱਸਆ ਦਾ ਹੱਲ ਕਰੋ</string>
+    <string name="earned_due_to_activation">ਲੈਣ ਦੇਣ ਜੋੜਨ ਲਈ ਮਿਲਿਆ।</string>
+    <string name="better_luck_next_time">ਕੋਈ ਗੱਲ ਨਹੀਂ! ਅਗਲੀ ਵਾਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="something_went_wrong_in_claiming_rewards">ਮਾਫ਼ ਕਰਨਾ, ਕੁੱਝ ਤਕਨੀਕੀ ਸਮੱਸਿਆ ਆ ਗਈ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਕੁੱਝ ਸਮੇਂ ਬਾਅਦ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="congratulations_tell_them_add_bank_details">ਵਧਾਈ ਹੋਵੇ!!! ਇਨਾਮ ਲੈਣ ਲਈ ਬੈਂਕ ਖਾਤਾ ਸੈੱਟਅੱਪ ਕਰੋ।</string>
+    <string name="reward_on_hold">ਇਨਾਮ ਰੋਕ ਦਿੱਤਾ ਗਿਆ ਹੈ</string>
+    <string name="error_budged_limit_exceeded">ਤਕਨੀਕੀ ਸਮਸਿਆ ਦੇ ਕਾਰਨ ਤੁਹਾਡਾ ਇਨਾਮ ਰੋਕਿਆ ਹੋਇਆ ਹੈ। ਸਾਡੀ ਟੀਮ ਜਲਦੀ ਹੀ ਮਸਲੇ ਦਾ ਹੱਲ ਕਰੇਗੀ। ਕਿਰਪਾ ਕਰਕੇ 3 ਦਿਨਾਂ ਵਿੱਚ ਦੁਬਾਰਾ ਕਲੇਮ ਕਰੋ।</string>
+    <string name="you_won_10">you won 10</string>
+    <string name="hurray">ਆਹਾ!</string>
+    <string name="oops">ਓ ਹੋ!</string>
+    <string name="rewarded_on_06_nov_02_38pm">06 ਨਵੰਬਰ, ਦੁਪਿਹਰ 02:38 ਤੇ ਇਨਾਮ ਮਿਲਿਆ</string>
+    <string name="earned_for_adding_transactions_records">ਲੈਣ ਦੇਣ ਜੋੜਨ ਲਈ ਮਿਲਿਆ।</string>
+    <string name="setup_bank_account_to_get_reward">ਇਨਾਮ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਬੈਂਕ ਖਾਤਾ ਸੈੱਟਅੱਪ ਕਰੋ।</string>
+    <string name="step_1_how_does_it_works_roa">ਵੱਖ ਵੱਖ ਦਿਨ ਗ੍ਰਾਹਕ ਅਤੇ ਘੱਟੋ ਘੱਟ 2 ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ ਜੋੜੋ।</string>
+    <string name="step_2_how_does_it_works_roa">ਤੁਸੀਂ ਆਪਣੇ ਉਪਹਾਰ ਇਨਾਮ ਵਿਭਾਗ ਵਿੱਚ ਦੇਖ ਸਕਦੇ ਹੋ।</string>
+    <string name="error_description_bank_valid">ਇਹ ਬੈਂਕ ਖਾਤਾ ਜਾਂ UPI ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਕਿਸੇ ਹੋਰ ਉਪਭੋਗਤਾ ਵਲੋਂ ਦਰਜ਼ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਸਹੀ ਵੇਰਵੇ ਜਮ੍ਹਾਂ ਕਰੋ ਜਾਂ ਕੋਈ ਹੋਰ ਖਾਤਾ ਵਰਤੋ।</string>
+    <string name="upi_inactive_error_msg">ਤੁਹਾਡਾ ਬੈਂਕ ਖਾਤਾ ਹੁਣ ਐਕਟਿਵ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਕੋਈ ਹੋਰ ਖਾਤਾ ਵਰਤੋ ਜਾਂ ਆਪਣੇ ਖਾਤੇ ਨੂੰ ਦੁਬਾਰਾ ਐਕਟਿਵ ਕਰੋ।</string>
+    <string name="payout_daily_limit_reached_error_msg">ਤੁਸੀਂ ਅੱਜ ਲਈ ਇਨਾਮ ਕਲੇਮ ਕਰਨ ਦੀ ਸੀਮਾ ਨੂੰ ਪਾਰ ਕਰ ਚੁੱਕੇ ਹੋ। ਕਿਰਪਾ ਕਰਕੇ ਕੱਲ ਦੁਬਾਰਾ ਕਲੇਮ ਕਰੋ।</string>
+    <string name="reward_update">ਇਨਾਮ ਅਪਡੇਟ</string>
+    <string name="please_try_again_later">ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="payment_update">ਭੁਗਤਾਨ ਅਪਡੇਟ</string>
+    <string name="close">ਬੰਦ ਕਰੋ</string>
+    <string name="processing_state">ਪ੍ਰੋਸੈਸ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="bank_service_unavail">ਬੈਂਕ ਸੇਵਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ</string>
+    <string name="bank_service_unavil_error_msg">ਤੁਹਾਡਾ ਬੈਂਕ ਇਸ ਸਮੇਂ ਭੁਗਤਾਨ ਦੀ ਬੇਨਤੀ \'ਤੇ ਕਾਰਵਾਈ ਨਹੀਂ ਕਰ ਰਿਹਾ। ਕਿਰਪਾ ਕਰਕੇ ਕੁਝ ਘੰਟਿਆਂ ਬਾਅਦ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="we_are_processing_your_reward">ਅਸੀਂ ਤੁਹਾਡੇ ਇਨਾਮ ਦੀ ਪ੍ਰਕਿਰਿਆ ਕਰ ਰਹੇ ਹਾਂ। ਕਿਰਪਾ ਕਰਕੇ 3 ਦਿਨਾਂ ਵਿੱਚ ਦੁਬਾਰਾ ਚੈੱਕ ਕਰੋ।</string>
+    <string name="edit_bank_details">ਬੈਂਕ ਵੇਰਵੇ ਐਡਿਟ ਕਰੋ</string>
+    <string name="please_try_again">ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+</resources>

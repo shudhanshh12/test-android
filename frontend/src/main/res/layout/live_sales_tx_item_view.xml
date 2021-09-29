@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    tool:ignore="RtlHardcoded"
+    tool:layout_height="wrap_content"
+    tool:layout_width="match_parent"
+    android:background="@color/white"
+    tool:parentTag="android.widget.FrameLayout">
+
+    <include
+        android:id="@+id/tx_container"
+        layout="@layout/transaction_item_live_sale" />
+</merge>

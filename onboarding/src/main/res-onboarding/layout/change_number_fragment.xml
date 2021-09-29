@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="?attr/homeAsUpIndicator">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/change_number"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="@color/grey800" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_view_old_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/forward_arrow"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/container"
+                app:srcCompat="@drawable/number_change_pic_1" />
+
+            <TextView
+                android:id="@+id/old_number_tv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="@string/old_number"
+                android:textAppearance="?textAppearanceSubtitle2"
+                app:layout_constraintEnd_toEndOf="@+id/image_view_old_number"
+                app:layout_constraintStart_toStartOf="@+id/image_view_old_number"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_old_number"
+                tools:text="lkdckmsdcksdckmksc jnc nj cbn bdcnbsdjchb" />
+
+
+            <ImageView
+                android:id="@+id/forward_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24dp"
+                android:layout_marginEnd="@dimen/_24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_view_old_number"
+                app:layout_constraintEnd_toEndOf="@id/image_view_new_number"
+                app:layout_constraintEnd_toStartOf="@+id/image_view_new_number"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/image_view_old_number"
+                app:layout_constraintTop_toTopOf="@id/container"
+                app:srcCompat="@drawable/ic_arrow_forward" />
+
+            <ImageView
+                android:id="@+id/image_view_new_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/container"
+                app:layout_constraintStart_toEndOf="@+id/forward_arrow"
+                app:layout_constraintTop_toTopOf="@id/container"
+                app:srcCompat="@drawable/number_change_pic_1" />
+
+            <TextView
+                android:id="@+id/new_number_tv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="@string/new_number_caps"
+                android:textAppearance="?textAppearanceSubtitle2"
+                app:layout_constraintEnd_toEndOf="@+id/image_view_new_number"
+                app:layout_constraintStart_toStartOf="@+id/image_view_new_number"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_new_number"
+                tools:text="lkdckmsdcksdckmksc jnc nj cbn bdcnbsdjchb" />
+
+            <TextView
+                android:id="@+id/enter_new_mobile_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="42dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/enter_your_new_mobile_number"
+                android:textAppearance="?textAppearanceHeadline4"
+                app:layout_constraintBottom_toTopOf="@id/etNumberChange"
+                app:layout_constraintEnd_toEndOf="@id/container"
+                app:layout_constraintStart_toStartOf="@id/container"
+                app:layout_constraintTop_toBottomOf="@id/old_number_tv"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNumberChange"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="24dp"
+                android:drawableStart="@drawable/ic_filled_phone"
+                android:drawablePadding="12dp"
+                android:hint="@string/new_number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintBottom_toBottomOf="@id/container"
+                app:layout_constraintEnd_toEndOf="@id/container"
+                app:layout_constraintStart_toStartOf="@id/container" />
+
+
+            <ImageButton
+                android:id="@+id/clSubmit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                app:layout_constraintBottom_toBottomOf="@id/etNumberChange"
+                app:layout_constraintEnd_toEndOf="@id/container"
+                app:layout_constraintTop_toTopOf="@id/etNumberChange"
+                app:srcCompat="@drawable/ic_circle_filled_chevron" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/etNumberChange"
+                app:layout_constraintEnd_toEndOf="@id/container"
+                app:layout_constraintStart_toEndOf="@id/etNumberChange"
+                app:layout_constraintTop_toTopOf="@id/etNumberChange"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/error_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/merchant_already_exists"
+                android:textColor="@color/error_red"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/container"
+                app:layout_constraintStart_toStartOf="@id/container"
+                app:layout_constraintTop_toBottomOf="@id/etNumberChange"
+                tools:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

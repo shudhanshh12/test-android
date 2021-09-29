@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_otp">OTP ਲਿਖੋ</string>
+    <string name="otp_sent_message">ਅਸੀਂ ਤੁਹਾਡੇ ਫੋਨ ਨੰਬਰ %1$s ਤੇ OTP ਦੇ ਨਾਲ ਇੱਕ SMS ਭੇਜਿਆ ਹੈ</string>
+    <string name="otp_incorrect">OTP ਗਲਤ ਹੈ</string>
+    <string name="otp_expired">OTP ਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਗਈ ਹੈ</string>
+    <string name="resend_otp"><u>OTP ਦੁਬਾਰਾ ਭੇਜੋ</u></string>
+    <string name="forgot_pin"><u>ਪਿੰਨ ਭੁੱਲ ਗਏ</u></string>
+    <string name="confirm_otp">OTP ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="set_a_4_digit_pin">4-ਅੰਕ ਦਾ ਪਿੰਨ ਸੈਟ ਕਰੋ</string>
+    <string name="confirm_pin">ਪਿੰਨ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="incorrect_pin">ਪਿੰਨ ਗ਼ਲਤ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="enter_security_pin">ਸੁਰੱਖਿਆ ਪਿੰਨ ਦਰਜ਼ ਕਰੋ</string>
+    <string name="security_setup_description">ਆਪਣੇ ਗ੍ਰਾਹਕਾਂ ਦੀ ਜਾਣਕਾਰੀ ਅਤੇ ਲੈਣ-ਦੇਣ ਦੇ ਵੇਰਵੇ ਸੁਰੱਖਿਅਤ ਰੱਖਣ ਲਈ, ਆਪਣੇ ਐਪ ਦੇ ਲਈ ਸੁਰੱਖਿਆ ਪਿੰਨ ਸੈੱਟ ਕਰੋ</string>
+    <string name="security_update_description">ਅਸੀਂ ਪਾਸਵਰਡ ਨੂੰ 4-ਅੰਕ ਵਾਲੇ ਪਿੰਨ ਵਿੱਚ ਤਬਦੀਲ ਕੀਤਾ ਹੈ, ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਪਾਸਵਰਡ ਦੇ ਪਹਿਲੇ 4-ਅੰਕ ਦਰਜ਼ ਕਰੋ</string>
+    <string name="confirm_fingerprint">ਦੁਬਾਰਾ ਫਿੰਗਰਪ੍ਰਿੰਟ ਲਗਾਓ</string>
+    <string name="use_fingerprint">ਫਿੰਗਰਪ੍ਰਿੰਟ ਵਰਤੋ</string>
+    <string name="confirm_fingerprint_description">ਸੁਰੱਖਿਆ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਫਿੰਗਰ ਪ੍ਰਿੰਟ ਲਗਾਓ</string>
+    <string name="use_pin">ਪਿੰਨ ਦੀ ਵਰਤੋਂ ਕਰੋ</string>
+    <string name="four_digit_security_pin">4 ਅੰਕਾਂ ਦਾ ਸੁਰੱਖਿਆ ਪਿੰਨ </string>
+</resources>

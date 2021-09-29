@@ -1,0 +1,91 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'CASH_COUNTER_URL', "\"https://account.staging.okcredit.in/cashCounter\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'CASH_COUNTER_URL', "\"https://account.alpha.okcredit.in/cashCounter\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'CASH_COUNTER_URL', "\"https://account.okcredit.in/cashCounter\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-web-features.pro'
+        }
+
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-web-features.pro'
+        }
+    }
+
+    kapt {
+        correctErrorTypes = true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation androidX.appcompact
+    testImplementation 'junit:junit:4.12'
+
+    // Modules
+    implementation project(':base')
+    implementation project(':shared')
+    implementation project(':auth')
+    implementation project(':analytics')
+    implementation project(':business:contract')
+
+    // Dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    //Rx
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    implementation androidX.constraintLayout
+
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+}

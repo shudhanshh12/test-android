@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    revision="1"
+    name="MVI Screen"
+    description="Creates classes for mvi screen"
+    minApi="16"
+    minBuildApi="8">
+    
+    <category value="Fragment" />
+    
+    <dependency name="android-support-v4" revision="8" />
+    
+    <parameter
+      id="featureName"
+      name="Feature Name"
+      type="string"
+      constraints="class|nonempty|unique"
+      default="Blank"
+      help="The name of the screen to create" />
+
+    <parameter
+        id="includeEpoxy"
+        name="Include Epoxy"
+        type="boolean"
+        default="false"
+        help="Generate epoxy controller and model views" />
+    
+    <thumbs>
+        <thumb>template_okc_screen.png</thumb>
+    </thumbs>
+    
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+    
+</template>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_otp">OTP ని నమోదు చేయండి</string>
+    <string name="otp_sent_message">మేము మీ ఫోన్ నంబర్ %1$s కు OTP తో SMS పంపాము</string>
+    <string name="otp_incorrect">OTP సరికాదు</string>
+    <string name="otp_expired">OTP గడువు ముగిసింది</string>
+    <string name="resend_otp"><u>OTP ని తిరిగి పంపండి</u></string>
+    <string name="forgot_pin"><u>పిన్ మర్చిపోయారా</u></string>
+    <string name="confirm_otp">OTP ని నిర్ధారించండి</string>
+    <string name="set_a_4_digit_pin">4-అంకెల పిన్ సెట్ చేయండి</string>
+    <string name="confirm_pin">పిన్ నిర్ధారించండి</string>
+    <string name="incorrect_pin">తప్పు పిన్. దయచేసి మళ్ళీ ప్రయత్నించండి.</string>
+    <string name="enter_security_pin">సెక్యూరిటీ పిన్ నమోదు చేయండి</string>
+    <string name="security_setup_description">మీ కస్టమర్ వివరాలు మరియు లావాదేవీల డేటా యొక్క భద్రతను నిర్ధారించడానికి, మీ యాప్ కోసం సెక్యూరిటీ పిన్ సెట్ చేయండి</string>
+    <string name="security_update_description">మేము పాస్‌వర్డ్‌ను 4-అంకెల పిన్‌కు నవీకరించాము, మీ ప్రస్తుత పాస్‌వర్డ్ యొక్క మొదటి 4-అంకెలను నమోదు చేయండి</string>
+    <string name="confirm_fingerprint">వేలిముద్రను నిర్ధారించండి</string>
+    <string name="use_fingerprint">వేలిముద్రను ఉపయోగించండి</string>
+    <string name="confirm_fingerprint_description">భద్రత కోసం దయచేసి మీ వేలిముద్రను నిర్ధారించండి</string>
+    <string name="use_pin">పిన్ ఉపయోగించండి</string>
+    <string name="four_digit_security_pin">4-అంకెల భద్రతా పిన్ </string>
+</resources>

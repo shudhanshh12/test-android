@@ -1,0 +1,21 @@
+<resources>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_sent_message">We’ve sent an SMS with OTP to your phone number %1$s</string>
+    <string name="otp_incorrect">OTP incorrect</string>
+    <string name="otp_expired">OTP expired</string>
+    <string name="resend_otp"><u>Resend OTP</u></string>
+    <string name="forgot_pin"><u>Forgot PIN</u></string>
+    <string name="confirm_otp">Confirm OTP</string>
+    <string name="set_a_4_digit_pin">Set a 4-digit PIN</string>
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="incorrect_pin">Incorrect PIN. Please try again.</string>
+    <string name="enter_security_pin">Enter Security PIN</string>
+    <string name="security_setup_description">To ensure safety of your customer details and transactional data, set security PIN for your app</string>
+    <string name="security_update_description">We have updated the password to 4-digit pin, enter the first 4-digits of your current password</string>
+    <string name="confirm_fingerprint">Confirm Fingerprint</string>
+    <string name="use_fingerprint">Use Fingerprint</string>
+    <string name="confirm_fingerprint_description">For security please confirm your Fingerprint</string>
+    <string name="use_pin">Use Pin</string>
+    <string name="four_digit_security_pin">4-Digit Security PIN </string>
+
+</resources>

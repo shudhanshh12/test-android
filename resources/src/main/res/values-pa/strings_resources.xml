@@ -1,0 +1,1557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress LongLine -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyQuotes">
+    <string name="txn_invalid_amount">ਨਾ-ਮੰਨਣਯੋਗ ਰਕਮ</string>
+    <string name="txn_incorrect_password">ਗ਼ਲਤ ਪਾਸਵਰਡ</string>
+    <string name="txn_credit_title">ਉਧਾਰ ਦਿੱਤਾ</string>
+    <string name="txn_payment_title">ਜਮ੍ਹਾਂ ਕੀਤਾ</string>
+    <string name="ok">ਠੀਕ ਹੈ</string>
+    <string name="balance">ਬਕਾਇਆ</string>
+    <string name="advance">ਐਡਵਾਂਸ</string>
+    <string name="home_customer_advance">ਐਡਵਾਂਸ</string>
+    <string name="password">ਪਾਸਵਰਡ</string>
+    <string name="help">ਸਵਾਲ-ਜਵਾਬ</string>
+    <string name="tx_credit">ਉਧਾਰ ਦਿੱਤਾ</string>
+    <string name="tx_payment">ਜਮ੍ਹਾਂ ਕੀਤਾ</string>
+    <string name="done">ਹੋ ਗਿਆ</string>
+    <string name="try_again">ਦੋਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="mobile">ਮੋਬਾਇਲ</string>
+    <string name="customers">ਗਾਹਕ</string>
+    <string name="no_tx">ਅਜੇ ਤੱਕ ਕੋਈ ਲੈਣ-ਦੇਣ ਨਹੀਂ</string>
+    <string name="err_default">ਤਕਨੀਕੀ ਸਮੱਸਿਆ। ਦੋਬਾਰਾ ਕੋਸ਼ਿਸ ਕਰੋ।.</string>
+    <string name="err_network">ਇੰਜ ਜਾਪਦਾ ਹੈ ਕਿ ਇੰਟਰਨੈੱਟ ਕਨੈਕਸ਼ਨ ਵਿੱਚ ਕੋਈ ਸਮੱਸਿਆ ਹੈ</string>
+    <string name="login_enter_password">ਪਾਸਵਰਡ ਭਰੋ</string>
+    <string name="register_verify_mobile_title">ਮੋਬਾਇਲ ਨੰਬਰ ਦੀ ਤਸਦੀਕ</string>
+    <string name="register_password_msg">Minimum 6 digits</string>
+    <string name="register_err_incorrect_otp">ਗ਼ਲਤ OTP</string>
+    <string name="search_customers">ਖੋਜੋ</string>
+    <string name="customer_not_found">ਨਾਮ ਦਾ ਕੋਈ ਗਾਹਕ ਨਹੀਂ <![CDATA[<b>%1$s</b>]]></string>
+    <string name="add_customer">ਗਾਹਕ ਜੋੜੋ</string>
+    <string name="paid_today">ਅੱਜ</string>
+    <string name="paid_yesterday">ਕੱਲ੍ਹ</string>
+    <string name="logout">ਸਾਈਨ ਆਊਟ ਕਰੋ</string>
+    <string name="about">ਜਾਣ-ਪਛਾਣ</string>
+    <string name="save_customer_mobile">ਮੋਬਾਇਲ (ਵਿਕਲਪਕ)</string>
+    <string name="err_mobile_conflict">%1$s ਨਾਂ ਦਾ ਗਾਹਕ ਨਾਲ ਪਹਿਲਾਂ ਹੀ ਰਜਿਸਟਰਡ ਹੈ</string>
+    <string name="err_mobile_conflict_default">ਕਿਸੇ ਹੋਰ ਗਾਹਕ ਨਾਲ ਪਹਿਲਾਂ ਹੀ ਸੇਵ ਹੈ</string>
+    <string name="txn_add_payment_btn">ਭੁਗਤਾਨ\nਸਵੀਕਾਰ ਕਰੋ</string>
+    <string name="txn_add_credit_btn">ਕ੍ਰੈਡਿਟ\nਦਿਓ</string>
+    <string name="delete">ਮਿਟਾਓ</string>
+    <string name="payment_amount">ਅਦਾਇਗੀ ਰਾਸ਼ੀ</string>
+    <string name="account">ਖਾਤਾ</string>
+    <string name="account_settings_title">ਸੈਟਿੰਗਸ</string>
+    <string name="account_statement">ਖਾਤੇ ਦੀ ਸਟੇਟਮੈਂਟ</string>
+    <string name="download_backup">ਬੈਕਅਪ ਡਾਉਨਲੋਡ ਕਰੋ</string>
+    <string name="logout_from_all_devices">ਸਾਰੇ ਫੋਨਾਂ ਤੋਂ ਸਾਈਨ ਆਊਟ ਕਰੋ</string>
+    <string name="today">ਅੱਜ</string>
+    <string name="yesterday">ਕੱਲ੍ਹ</string>
+    <string name="account_report_loading">ਰਿਪੋਰਟ ਤਿਆਰ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ </string>
+    <string name="account_reminder">ਰੀਮਾਂਈਂਡਰ</string>
+    <string name="account_language">ਭਾਸ਼ਾ</string>
+    <string name="account_profile">ਪ੍ਰੋਫਾਈਲ</string>
+    <string name="account_incorrect_password">ਗ਼ਲਤ ਪਾਸਵਰਡ, ਦੋਬਾਰਾ ਕੋਸ਼ਿਸ ਕਰੋ</string>
+    <string name="account_report_download_started">ਡਾਊਨਲੋਡ ਸ਼ੁਰੂ ਹੋ ਗਿਆ, ਉਨਤੀ ਲਈ ਸੰਦੇਸ਼ ਚੈੱਕ ਕਰੋ</string>
+    <string name="update_password_failed">ਪਾਸਵਰਡ ਅਪਡੇਟ ਅਸਫਲ ਰਿਹਾ, ਦੋਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="logout_failed">\"ਲੌਗ ਆਊਟ ਅਸਫਲ ਰਿਹਾ, ਦੋਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ। \"</string>
+    <string name="report_generation_failed">ਰਿਪੋਰਟ ਬਣਾਉਣ ਵਿੱਚ ਤਕਨੀਕੀ ਸਮੱਸਿਆ ਆਈ। ਦੋਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="update_password">ਪਾਸਵਰਡ ਬਦਲੋ</string>
+    <string name="err_invalid_password">ਨਾ-ਮੰਨਣਯੋਗ ਪਾਸਵਰਡ (ਘੱਟੋ ਘੱਟ 6 ਅੱਖਰਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ)</string>
+    <string name="confirm_logout">ਸਾਇਨ ਆਉਟ ਦੀ ਤਸਦੀਕ ਕਰੋ?</string>
+    <string name="help_screen_action_title">ਜਾਣਕਾਰੀ</string>
+    <string name="help_whatsapp">ਸਾਨੂੰ WhatsApp ਕਰੋ</string>
+    <string name="help_whatsapp_msg">ਮੈਂ OKCREDIT ਦੇ ਬਾਰੇ ਕੁਝ ਪੁੱਛਣਾ ਚਾਹੁੰਦਾ ਹਾਂ</string>
+    <string name="language_english">English</string>
+    <string name="language_hindi">ਹਿੰਦੀ</string>
+    <string name="language_punjabi">ਪੰਜਾਬੀ</string>
+    <string name="reminder_on">ਚਾਲੂ</string>
+    <string name="reminder_off">ਬੰਦ</string>
+    <string name="reminder_action_bar">ਰੀਮਾਂਈਂਡਰ ਸੈਟਿੰਗਸ</string>
+    <string name="share">ਦੋਸਤਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="whatsapp_not_installed">WhatsApp ਮੌਜੂਦ ਨਹੀਂ</string>
+    <string name="reset_pwd_msg">OTP ਮੋਬਾਈਲ ਵੈਰਈਫ਼ੀਕੇਸ਼ਨ ਲਈ ਹੈ</string>
+    <string name="reset_pwd_set_new_pwd">ਨਵਾਂ ਪਾਸਵਰਡ ਰੱਖੋ</string>
+    <string name="forgot_pwd">ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ</string>
+    <string name="share_title">ਆਪਣੇ ਦੋਸਤਾਂ ਅਤੇ ਪਰਿਵਾਰ ਨੂੰ ਦੱਸੋ!</string>
+    <string name="share_msg">ਉਧਾਰ ਦਾ ਸਾਰਾ ਹਿਸਾਬ ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚ - ਪਲੇ ਸਟੋਰ ਤੋਂ OkCredit ਮੁਫ਼ਤ ਵਿੱਚ ਹੁਣੇ ਡਾਊਨਲੋਡ ਕਰੋ @</string>
+    <string name="share_on_whatsapp">Whatsapp ਤੇ ਸ਼ੇਅਰ ਕਰੋ</string>
+    <string name="share_link_on_whatsapp">WhatsApp ’ਤੇ ਲਿੰਕ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="share_apk_on_whatsapp">WhatsApp ’ਤੇ apk ਸਾਂਝੀ ਕਰੋ</string>
+    <string name="reset_pwd_title">ਪਾਸਵਰਡ ਬਦਲੋ</string>
+    <string name="reset_pwd_success">ਪਾਸਵਰਡ ਬਦਲਿਆ ਗਿਆ</string>
+    <string name="custpr_add_mobile">ਮੋਬਾਇਲ ਨੰਬਰ ਜੋੜੋ</string>
+    <string name="profile_title">ਪ੍ਰੋਫਾਈਲ</string>
+    <string name="delcst_msg_settlement">\"ਗਾਹਕ ਦਾ ਬਕਾਇਆ 0 ਨਹੀਂ ਹੈ। ਗਾਹਕ ਹਟਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਹਿਸਾਬ ਬਰਾਬਰ ਕਰੋ। \"</string>
+    <string name="delcst_msg">ਗ੍ਰਾਹਕ ਨੂੰ ਤੁਹਾਡੇ ਖਾਤੇ ਤੋਂ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਗ੍ਰਾਹਕ ਅਜੇ ਵੀ ਆਪਣੇ ਵੱਲੋ SMS ਵਿੱਚ ਸਾਰੇ ਰਿਕਾਰਡ ਦੇਖ ਸਕੇਗਾ।</string>
+    <string name="delcst_msg_no_mobile">ਇਸ ਗਾਹਕ ਨੂੰ ਸਥਾਈ ਰੂਪ ਵਿੱਚ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ ਅਤੇ ਇਸਨੂੰ ਦੋਬਾਰਾ ਜੋੜਨਾ ਅਸੰਭਵ ਹੈ</string>
+    <string name="delcst_settlement_label_credit">%1$s ਦਾ ਉਧਾਰ ਜੋੜੋ</string>
+    <string name="delcst_settlement_label_payment">%1$s ਦਾ ਭੁਗਤਾਨ ਜਮ੍ਹਾਂ ਕਰੋ</string>
+    <string name="reset_pwd_otp_expired">OTP ਦਾ ਸਮਾਂ ਸੀਮਾ ਖਤਮ ਹੋ ਗਈ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਦੋਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="home_sort_name">ਨਾਮ</string>
+    <string name="home_sort_balance">ਰਕਮ</string>
+    <string name="home_sort_recent">ਸਮਾਂ</string>
+    <string name="autoverifying">OTP ਸਵੈ-ਪੁਸ਼ਟੀ</string>
+    <string name="checking_otp"> OTP ਜਾਂਚ ਰਿਹਾ ਹੈ</string>
+    <string name="verification_success">ਪੁਸ਼ਟੀ ਸਫਲ ਰਹੀ</string>
+    <string name="add_first_cst_title">ਆਪਣਾ ਪਹਿਲਾ ਗਾਹਕ ਜੋੜੋ</string>
+    <string name="add_first_cst_desc">ਨਵੇਂ ਗਾਹਕ ਨੂੰ ਆਪਣੇ ਖਾਤੇ ਵਿਚ ਜੋੜਣ ਲਈ ਹੇਠਾਂ ਬਟਨ ਨੂੰ ਕਲਿਕ ਕਰੋ</string>
+    <string name="old_balance_title_credit">ਪੁਰਾਣਾ ਕ੍ਰੈਡਿਟ ਬਕਾਇਆ</string>
+    <string name="old_balance_title_payment">ਪੁਰਾਣਾ ਕ੍ਰੈਡਿਟ ਬਕਾਇਆ</string>
+    <string name="write_contacts_permission_msg">OkCredit ਨੂੰ ਆਪਣੇ ਫੋਨ ਦੀ ਸੰਪਰਕ ਸੂਚੀ ਵਿਚ ਜੋੜਣ ਲਈ ਸਹੀ ਸੰਪਰਕਾਂ ਦੀ ਆਗਿਆ ਦਿਓ।</string>
+    <string name="payment_reminder">ਪੇਮੈਂਟ ਰੀਮਾਂਈਂਡਰ</string>
+    <string name="verified_by_okc">OkCredit ਪ੍ਰਮਾਣਿਤ</string>
+    <string name="in_app_lang_desc">OkCredit ਤੁਹਾਡੀ ਚੁਣੀ ਹਈ ਭਾਸ਼ਾ ਵਿੱਚ ਚੱਲੇਗਾ</string>
+    <string name="credit_delete_desc">ਕ੍ਰੈਡਿਟ ਹਟਾਓ</string>
+    <string name="payment_delete_desc">ਭੁਗਤਾਨ ਹਟਾਓ</string>
+    <string name="del_credit_msg">ਇਹ ਕ੍ਰੈਡਿਟ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ ਤੇ ਗ੍ਰਾਹਕ ਨੂੰ SMS ਭੇਜ ਦਿੱਤਾ ਜਾਵੇਗਾ</string>
+    <string name="del_payment_msg">ਇਹ ਭੁਗਤਾਨ ਹਟ ਜਾਵੇਗਾ ਤੇ ਗ੍ਰਾਹਕ ਨੂੰ SMS ਭੇਜ ਦਿੱਤਾ ਜਾਵੇਗਾ</string>
+    <string name="account_security">ਸੁਰੱਖਿਆ</string>
+    <string name="security_app_lock">ਐੱਪ-ਲੌਕ</string>
+    <string name="app_lock_enabled">ਐੱਪ-ਲੌਕ ਚਾਲੂ</string>
+    <string name="app_lock_disabled">ਐੱਪ-ਲੌਕ ਬੰਦ</string>
+    <string name="app_lock_enable">ਲਗਾਉਣ ਲਈ ਕਲਿਕ ਕਰੋ</string>
+    <string name="app_lock_disable">ਹਟਾਉਣ ਲਈ ਕਲਿਕ ਕਰੋ</string>
+    <string name="enable_app_lock">ਐੱਪ-ਲੌਕ ਲਗਾਓ</string>
+    <string name="disable_app_lock">ਐੱਪ-ਲੌਕ ਹਟਾਓ</string>
+    <string name="app_lock_desc_msg">ਐੱਪ-ਲੌਕ ਨਾਲ ਆਪਣੇ ਖਾਤੇ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ</string>
+    <string name="draw_unlock_pattern">ਅਨਲੌਕ ਪੈਟਰਨ ਬਣਾਓ</string>
+    <string name="unlock_phone">ਫੋਨ ਪਾਸਵਰਡ ਨਾਲ OkCredit ਨੂੰ ਅਨਲਾਕ ਕਰੋ</string>
+    <string name="draw_patern_again">ਦੋਬਾਰਾ ਪੈਟਰਨ ਬਣਾ ਕੇ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="set_pattern">ਪੈਟਰਨ ਬਣਾਓ</string>
+    <string name="confirm_pattern">ਪੈਟਰਨ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="incorrect_pattern">ਗਲਤ ਪੈਟਰਨ</string>
+    <string name="invalid_pattern">ਘੱਟੋ-ਘੱਟ 4 ਡੋਟ ਜੋੜੋ</string>
+    <string name="pattern_mismatch">ਦੋਵੇਂ ਪੈਟਰਨ ਮੈਚ ਨਹੀਂ ਹੋਏ</string>
+    <string name="pattern_verified">ਪੈਟਰਨ ਦੀ ਪੁਸ਼ਟੀ ਹੋਈ</string>
+    <string name="forgot_pattern">ਪੈਟਰਨ ਭੁੱਲ ਗਏ?</string>
+    <string name="pattern_disable_sign_in_msg">ਐੱਪ-ਲੌਕ ਨੂੰ ਹਟਾਉਣ ਲਈ ਆਪਣੇ OkCredit ਖਾਤੇ ਦੇ ਪਾਸਵਰਡ ਨਾਲ ਸਾਇਨ ਇਨ ਕਰੋ।</string>
+    <string name="due">ਉਧਾਰ</string>
+    <string name="home_customer_due">ਉਧਾਰ</string>
+    <string name="reminder_noti_title">ਬਕਾਇਆ ਅਪਡੇਟ ਕਰੋ</string>
+    <string name="no_internet_title">ਇੰਟਰਨੈੱਟ ਜਰੂਰੀ ਹੈ</string>
+    <string name="no_internet_msg">ਟਾਸਕ ਲਈ ਇੰਟਰਨੈੱਟ ਜਰੂਰੀ ਹੈ। ਕਿਰਪਾ ਕਰ ਕੇ ਇੰਟਰਨੈੱਟ ਨਾਲ ਜੁੜਣ ਤੋਂ ਬਾਅਦ ਦੋਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="report_loading_msg">ਰਿਪੋਰਟ ਤਿਆਰ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…</string>
+    <string name="home_no_internet_msg">ਆਫਲਾਈਨ</string>
+    <string name="other_options">ਹੋਰ ਵਿਕਲਪ</string>
+    <string name="thanks_in_advance">ਪਹਿਲਾਂ ਤੋਂ ਧੰਨਵਾਦ! 😊</string>
+    <string name="share_okcredit_app">ਆਪਣੇ ਕਾਰੋਬਾਰੀ ਦੋਸਤਾਂ ਨਾਲ OkCredit ਨੂੰ ਸ਼ੇਅਰ ਕਰੋ। </string>
+    <string name="submit_feedback">ਜਮ੍ਹਾਂ ਕਰੋ</string>
+    <string name="payment_reminder_by">ਭੁਗਤਾਨ ਲਈ ਰੀਮਾਂਈਂਡਰ</string>
+    <string name="payment_reminder_amount">ਰਕਮ</string>
+    <string name="payment_reminder_check_details">ਵੇਰਵਿਆਂ ਦੀ ਜਾਂਚ ਕਰੋ</string>
+    <string name="sms_delivered">SMS ਭੇਜ ਦਿੱਤਾ ਹੈ</string>
+    <string name="language_malayalam">ਮਲਿਆਲਮ</string>
+    <string name="gallery">ਗੈਲਰੀ</string>
+    <string name="camera">ਕੈਮਰਾ</string>
+    <string name="import_phone_contact_title">ਸੰਪਰਕ ਤੋਂ ਚੁਣੋ</string>
+    <string name="import_phone_contact_desc">ਫੋਨਬੁੱਕ ਤੋਂ ਗਾਹਕ ਜੋੜਣ ਲਈ ਸੰਪਰਕ ਰੀਡ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="contacts">ਸੰਪਰਕ</string>
+    <string name="add">ਜੋੜੋ</string>
+    <string name="address">ਪਤਾ</string>
+    <string name="name_should_not">ਅੱਖਰ ਸੀਮਾ - 500</string>
+    <string name="address_should_not">ਪਤੇ ਵਿਚ 150 ਤੋਂ ਜ਼ਿਆਦਾ ਅੱਖਰ ਨਹੀਂ ਹੋ ਸਕਦੇ</string>
+    <string name="invalid_phone">ਮੰਨਣਯੋਗ 10 ਅੰਕਾਂ ਦਾ ਮੋਬਾਈਲ ਨੰਬਰ ਭਰੋ</string>
+    <string name="where_do_you_want_choose_from">ਫੋਟੋ ਕਿੱਥੋਂ ਚੁਣਨਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
+    <string name="privacy_policy">ਗੁਪਤਤਾ ਨੀਤੀ</string>
+    <string name="delete_cus"> ਗਾਹਕ ਹਟਾਓ</string>
+    <string name="custpr_add_address">ਪਤਾ ਜੋੜੋ</string>
+    <string name="invalid_name">ਨਾ-ਮੰਨਣਯੋਗ ਨਾਂ</string>
+    <string name="invalid_address">ਨਾ-ਮੰਨਣਯੋਗ ਪਤਾ</string>
+    <string name="invalid_mobile">ਨਾ-ਮੰਨਣਯੋਗ ਮੋਬਾਈਲ ਨੰਬਰ</string>
+    <string name="hinglish">ਹਿੰਗਲਿਸ਼</string>
+    <string name="dismiss">ਹਟਾਓ</string>
+    <string name="txn_synced">ਸਿੰਕ ਹੋ ਗਿਆ</string>
+    <string name="txn_sync_now">ਸਿੰਕ ਕਰੋ</string>
+    <string name="touch_again_exit">ਬਾਹਰ ਆਉਣ ਲਈ ਦੁਬਾਰਾ ਛੂਹੋ</string>
+    <string name="send">ਭੇਜੋ</string>
+    <string name="whatsapp_page_description">OkCredit ਤੁਹਾਨੂੰ ਜਰੂਰੀ ਜਾਣਕਾਰੀ %1$s ਤੇ WhatsApp ਤੇ ਭੇਜੇਗਾ</string>
+    <string name="whatsapp_page_title">WhatsApp ਤੇ ਅੱਪਡੇਟ ਪ੍ਰਾਪਤ ਕਰੋ</string>
+    <string name="yes_please_send">ਹਾਂ,ਭੇਜੋ</string>
+    <string name="no_don_t_send">ਨਹੀਂ,ਨਾ ਭੇਜੋ</string>
+    <string name="crop_image">ਫੋਟੋ ਦਾ ਆਕਾਰ ਛੋਟਾ-ਵੱਡਾ ਕਰੋ</string>
+    <string name="business_card_share_text">ਕਾਰੋਬਾਰੀ ਪੁੱਛਗਿੱਛ ਲਈ, ਕਿਰਪਾ ਸਾਡਾ ਬਿਜਨਸ ਕਾਰਡ ਰੱਖੋ</string>
+    <string name="email">ਈਮੇਲ</string>
+    <string name="about_should_not">ਬਾਰੇ ਵਿੱਚ 500 ਅੱਖਰ ਤੋਂ ਵੱਧ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ</string>
+    <string name="email_should_not">ਈਮੇਲ ਵਿੱਚ 40 ਤੋਂ ਵੱਧ ਅੱਖਰ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ</string>
+    <string name="invalid_email">ਗਲਤ ਈਮੇਲ</string>
+    <string name="contact_person">ਸੰਪਰਕ ਵਿਅਕਤੀ ਦਾ ਨਾਂ</string>
+    <string name="call">ਕਾਲ</string>
+    <string name="add_payment">ਪੇਮੇਂਟ ਜੋੜੋ</string>
+    <string name="add_credit">ਕ੍ਰੈਡਿਟ ਜੋੜੋ</string>
+    <string name="add_note_optional">ਨੋਟ ਜੋੜੋ (ਵਿਕਲਪਿਕ)</string>
+    <string name="permission_bottomsheet_title">OkCredit ਨੂੰ ਆਪਣੇ ਫੋਟੋ ਲੋਡ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ </string>
+    <string name="permission_bottomsheet_desc">ਇਸ ਸੁਵਿਧਾ ਦਾ ਉਪਯੋਗ ਕਰਨ ਲਈ ਕੈਮਰਾ ਅਤੇ ਗੈਲਰੀ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="allow">ਇਜਾਜਤ ਦਿਓ</string>
+    <string name="txn_camera_gallery_permission_msg">ਇਸ ਸੁਵਿਧਾ ਦਾ ਉਪਯੋਗ ਕਰਨ ਲਈ ਕੈਮਰਾ ਅਤੇ ਗੈਲਰੀ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="photo_added">ਫੋਟੋ ਜੋੜਿਆ ਗਿਆ</string>
+    <string name="now_you_may_accept_payment_without_password_confirmation_to_enable_payment">ਪੇਮੈਂਟ ਪਾਸਵਰਡ ਹਟਾਉਣ ਲਈ ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ। ਅੱਗੇ ਤੁਸੀਂ ਬਿਨਾ ਪਾਸਵਰਡ ਦੇ ਪੇਮੇਂਟ ਜੋੜ ਸਕਦੇ ਹੋ। ਦੋਬਾਰਾ ਪੇਮੇਂਟ ਪਾਸਵਰਡ ਚਾਲੂ ਕਰਨ ਲਈ ਸੁਰੱਖਿਆ ਸੈਟਿੰਗ ਵਿਚ ਜਾਓ।</string>
+    <string name="call_permission_denied">ਗਾਹਕ ਨੂੰ ਫੋਨ ਕਰਨ ਲਈ ਕਾਲ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="password_enabled">ਪਾਸਵਰਡ ਚਾਲੂ</string>
+    <string name="password_disabled">ਪਾਸਵਰਡ ਬੰਦ</string>
+    <string name="disable">ਬੰਦ ਕਰੋ</string>
+    <string name="enable">ਚਾਲੂ ਕਰੋ</string>
+    <string name="for_addn_payment">ਪੇਮੇਂਟ ਪਾਸਵਰਡ ਚਾਲੂ ਹੋਣ ਤੇ ਕੋਈ ਹੋਰ ਬਿਨਾ ਪਾਸਵਰਡ ਦੇ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿਚ ਭੁਗਤਾਨ ਨਹੀਂ ਜੋੜ ਸਕਦਾ </string>
+    <string name="disable_payment_password">ਪੇਮੇਂਟ ਪਾਸਵਰਡ</string>
+    <string name="payment_password_protects">ਪੇਮੇਂਟ ਪਾਸਵਰਡ ਲੱਗੇ ਹੋਣ ਦੇ ਬਾਅਦ ਕੋਈ ਹੋਰ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿਚ ਭੁਗਤਾਨ ਨਹੀਂ ਜੋੜ ਪਵੇਗਾ। ਇਸ ਨੂੰ ਬੰਦ ਕਰਨ ਲਈ ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ।</string>
+    <string name="download">ਡਾਊਨਲੋਡ ਕਰੋ</string>
+    <string name="download_and_share">ਡਾਊਨਲੋਡ ਕਰੋ &amp; ਸ਼ੇਅਰ ਕਰੋ</string>
+    <string name="download_complete">ਡਾਊਨਲੋਡ ਪੂਰਾ ਹੋਇਆ</string>
+    <string name="backup_downloaded_and_saved">ਬੈਕਅਪ ਡਾਊਨਲੋਡ ਅਤੇ ਸੇਵ ਹੋਇਆ</string>
+    <string name="downloading_please_wait">ਡਾਊਨਲੋਡ ਹੋ ਰਿਹਾ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ਇੰਤਜ਼ਾਰ ਕਰੋ..</string>
+    <string name="downloading_backup_please_wait">ਰਿਪੋਰਟ ਡਾਊਨਲੋਡ ਹੋ ਰਹੀ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ਇੰਤਜ਼ਾਰ ਕਰੋ..</string>
+    <string name="net_balance">ਕੁੱਲ ਬਕਾਇਆ</string>
+    <string name="tx_payments">ਭੁਗਤਾਨ</string>
+    <string name="tx_credits">ਕ੍ਰੈਡਿਟ</string>
+    <string name="credit_details">ਕ੍ਰੈਡਿਟ ਦਾ ਵੇਰਵਾ</string>
+    <string name="deleted_on">ਮਿਟਾਇਆ</string>
+    <string name="payment_details">ਆਦਾਇਗੀ ਦੇ ਵੇਰਵੇ</string>
+    <string name="sms_from_phone">ਆਪਣੇ ਫੋਨ ਤੋਂ SMS ਭੇਜੋ</string>
+    <string name="your_transactions_with_customer_name_is_safe_and_secure"><![CDATA[<b>%1$s</b>]]> ਦੇ ਨਾਲ ਤੁਹਾਡੇ ਸਾਰੇ ਲੇਣ-ਦੇਣ ਸੁਰੱਖਿਅਤ ਹਨ।</string>
+    <string name="credit_deleted">ਕ੍ਰੈਡਿਟ ਮਿਟਾ ਕਰ ਦਿੱਤਾ ਗਿਆ</string>
+    <string name="payment_deleted">ਭੁਗਤਾਨ ਹਟਾ ਦਿੱਤਾ ਗਿਆ</string>
+    <string name="delete_credit">ਕ੍ਰੈਡਿਟ ਹਟਾਓ</string>
+    <string name="delete_payment">ਭੁਗਤਾਨ ਹਟਾਓ</string>
+    <string name="last_payment">ਆਖ਼ਿਰੀ ਭੁਗਤਾਨ</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="sms">SMS</string>
+    <string name="credit_amount">ਕ੍ਰੈਡਿਟ ਦੀ ਰਕਮ</string>
+    <string name="to_send_free_sms_for_each_transaction_with_customer_name_add_phone_number"><![CDATA[<b>%1$s</b>]]> ਦਾ ਮੋਬਾਇਲ ਜੋੜੋ ਤੇ ਹਰ ਲੈਣ-ਦੇਣ ਦਾ SMS ਅਲਰਟ ਭੇਜੋ</string>
+    <string name="remind_via">ਯਾਦ ਕਰਾਓ</string>
+    <string name="reminder_credit">%1$s ਨੇ %2$s ਦਾ ਕ੍ਰੈਡਿਟ ਜੋੜਿਆ। ਬਕਾਇਆ: %3$s. ਚੈੱਕ ਵੇਰਵਾ %4$s</string>
+    <string name="reminder_payment">%1$s ਨੇ %2$s । ਬਕਾਇਆ: %3$s. ਵੇਰਵੇ ਚੈੱਕ ਕਰੋ %4$s</string>
+    <string name="cancel">ਰੱਦ ਕਰੋ।</string>
+    <string name="confirm">ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="added_on_date">%1$s ਜੋੜਿਆ ਗਿਆ</string>
+    <string name="billed_on_date">%1$s ’ਤੇ ਬਿੱਲ ਭੇਜਿਆ ਗਿਆ</string>
+    <string name="load_settled_entries">ਪੁਰਾਣੇ ਦਿਖਾਓ</string>
+    <string name="transaction_sms">ਟ੍ਰਾਂਜੈਕਸ਼ਨ SMS</string>
+    <string name="sms_language">SMS ਭਾਸ਼ਾ</string>
+    <string name="switch_off">ਬੰਦ ਕਰੋ</string>
+    <string name="switch_on">ਚਾਲੂ ਕਰੋ</string>
+    <string name="after_switching_off"><![CDATA[<b>“SMS”</b> ਵਿਕਲਪ ਬੰਦ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਇਸ <b>ਗ੍ਰਾਹਕ</b> ਨੂੰ ਕੋਈ ਟ੍ਰਾਂਜੈਕਸ਼ਨ SMS ਨਹੀਂ ਭੇਜਿਆ ਜਾਵੇਗਾ]]></string>
+    <string name="select_sms_language">ਇਸ ਗ੍ਰਾਹਕ ਲਈ SMS ਭਾਸ਼ਾ ਚੁਣੋ</string>
+    <string name="language_marathi">ਮਰਾਠੀ</string>
+    <string name="data_privacy">ਡੇਟਾ ਗੁਪਤਤਾ</string>
+    <string name="all_transactions_with_your">ਤੁਹਾਡੇ ਗਾਹਕਾਂ ਦੇ ਸਾਰੇ ਲੈਣ-ਦੇਣ ਚੁਸਤ ਅਤੇ ਸੁਰੱਖਿਅਤ ਹਨ. ਹੋਰ ਜਾਣਨ ਲਈ ਕਲਿਕ ਕਰੋ</string>
+    <string name="okcredit_is_fully_committed_to_the_security">OkCredit ਤੁਹਾਡੇ ਡੇਟਾ ਦੀ ਸੁਰੱਖਿਆ ਲਈ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸਮਰਪਿਤ ਹੈ!</string>
+    <string name="why_my_data">ਮੇਰਾ ਡੇਟਾ ਆਨਲਾਈਨ ਕਿਉਂ ਹੈ?</string>
+    <string name="so_that_sms_from_server_can_be_sent">ਤਾਂਕਿ, ਹਰ ਟ੍ਰਾਂਜੈਕਸ਼ਨ \'ਤੇ ਸਰਵਰ ਤੋਂ ਗ੍ਰਾਹਕ ਨੂੰ SMS ਭੇਜਿਆ ਜਾ ਸਕੇ।</string>
+    <string name="so_that_your_data_may_be_recovered_when_the_phone">ਤਾਂਕਿ, ਜਦੋਂ ਤੁਹਾਡਾ ਫ਼ੋਨ ਗੁਆਚ ਜਾਵੇ ਜਾਂ ਖਰਾਬ ਹੋ ਜਾਵੇ, ਤੇ ਤੁਹਾਡਾ ਡੇਟਾ ਵਾਪਸ ਆ ਸਕੇ</string>
+    <string name="is_my_data_shared_with">ਕੀ ਮੇਰਾ ਡੇਟਾ ਕਿਸੇ ਹੋਰ ਵਿਅਕਤੀ ਜਾਂ ਸੰਸਥਾ ਨਾਲ ਸਾਂਝਾ ਕੀਤਾ ਗਿਆ ਹੈ?</string>
+    <string name="no_we_do_not">ਨਹੀਂ, OkCredit ਤੁਹਾਡਾ ਡਾਟਾ ਕਿਸੇ ਨਾਲ ਸਾਂਝਾ ਨਹੀਂ ਕਰਦਾ। ਅਸੀਂ ਇਸ ਨੂੰ ਤੁਹਾਡੇ ਨਾਲ OkCredit ਦੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵਰਤਦੇ ਹਾਂ।</string>
+    <string name="click_to_know_more"><![CDATA[ਨਿੱਜਤਾ ਨੀਤੀ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ <<font color=\'#2b752e\'><b>ਕਲਿਕ</b></font> ਕਰੋ]]></string>
+    <string name="register_via_whatsapp">WhatsApp ਦੁਆਰਾ ਰਜਿਸਟਰ ਕਰੋ</string>
+    <string name="retry">ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="verification_successful">ਪੁਸ਼ਟੀ ਸਫਲ ਰਹੀ</string>
+    <string name="start_switching_on"><![CDATA[ਇਸ <b>ਗ੍ਰਾਹਕ</b> ਲਈ <b>"SMS"</b> ਸ਼ੁਰੂ ਕਰੋ]]></string>
+    <string name="collections">ਕਲੈਕਸ਼ਨ</string>
+    <string name="upi_id">UPI ID</string>
+    <string name="fees_and_settlement"><![CDATA[ਫੀਸ ਅਤੇ ਭੁਗਤਾਨ]]></string>
+    <string name="send_payment_link">ਭੁਗਤਾਨ ਲਿੰਕ ਭੇਜੋ</string>
+    <string name="online_payment">ਆਨਲਾਈਨ ਭੁਗਤਾਨ</string>
+    <string name="online_payment_transaction">ਆਨਲਾਈਨ ਟ੍ਰਾਂਜੈਕਸ਼ਨ</string>
+    <string name="invalid_upi">UPI ਅਵੈਧ ਹੈ</string>
+    <string name="enter_upi_hint">UPI ID ਦਰਜ ਕਰੋ</string>
+    <string name="setup_collection">ਵਸੂਲੀ ਲਈ ਸੈੱਟ-ਅੱਪ ਕਰੋ</string>
+    <string name="upi_conflict_message">ਇਹ UPI ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਹੋਰ ਵਪਾਰੀ ਨਾਲ ਰਜਿਸਟਰ ਹੈ</string>
+    <string name="customer_reminder">ਗ੍ਰਾਹਕ ਰੀਮਾਂਈਂਡਰ</string>
+    <string name="self_reminder">ਸਵੈ ਰੀਮਾਂਈਂਡਰ</string>
+    <string name="self_reminder_after_selected_date">ਚੁਣੀ ਹੋਈ ਤਾਰੀਖ ਦੇ ਬਾਅਦ ਸਵੈ ਰੀਮਾਂਈਂਡਰ</string>
+    <string name="auto_reminder_on_5th_of_every_month">ਹਰ ਮਹੀਨੇ ਦੀ 5 ਤਾਰੀਖ ਨੂੰ ਸਵੈ ਰੀਮਾਂਈਂਡਰ</string>
+    <string name="account_reminders">ਰੀਮਾਂਈਂਡਰ</string>
+    <string name="self_reminder_days">ਸਵੈ ਰੀਮਾਂਈਂਡਰ ਦਿਨ</string>
+    <string name="get_reminded_on_selected_day_after_credit_given_to_customers">ਗਾਹਕ ਨੂੰ ਉਧਾਰ ਦੇਣ ਤੋਂ ਚੁਣੀ ਹੋਈ ਤਾਰੀਖ ਦੇ ਬਾਅਦ ਤੁਹਾਨੂੰ ਰੀਮਾਂਈਂਡਰ ਕੀਤਾ ਜਾਵੇਗਾ</string>
+    <string name="_07_days">%1$s ਦਿਨ</string>
+    <string name="reminder_notification_title_1">%1$s ਦੀ ਉਧਾਰ ਤਾਰੀਖ ਅੱਜ</string>
+    <string name="reminder_notification_title_2">%1$s + %2$s ਹੋਰ ਦੀ ਉਧਾਰ ਤਾਰੀਖ ਅੱਜ</string>
+    <string name="language_tamil">ਤਾਮਿਲ</string>
+    <string name="language_telugu">ਤੇਲੂਗੂ</string>
+    <string name="language_bengali">ਬੰਗਾਲੀ</string>
+    <string name="language_gujarati">ਗੁਜਰਾਤੀ</string>
+    <string name="language_kannada">ਕੰਨੜ</string>
+    <string name="update_upi">UPI ਅਪਡੇਟ ਕਰੋ</string>
+    <string name="amount">ਰਕਮ</string>
+    <string name="now_you_can_collect_payment_online_in_okcredit_setup_upi_and_start_collecting">ਹੁਣ ਉਧਾਰ ਦੀ ਵਸੂਲੀ ਆਨਲਾਈਨ ਕਰੋ। UPI ਜੋੜੋ ਅਤੇ ਵਸੂਲੀ ਸ਼ੁਰੂ ਕਰੋ</string>
+    <string name="not_now">ਹੁਣ ਨਹੀਂ</string>
+    <string name="select_method_to_send_link">ਲਿੰਕ ਭੇਜਣ ਦਾ ਤਰੀਕਾ ਚੁਣੋ</string>
+    <string name="reminders_on">ਨੂੰ ਰੀਮਾਂਈਂਡਰ</string>
+    <string name="namaste_welcome_to_okcredit">OkCredit ਵਿੱਚ ਜੀ ਆਇਆ ਨੂੰ!</string>
+    <string name="made_in">Made with \u2665 in India</string>
+    <string name="select_your_app_language">ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ</string>
+    <string name="mobile_number">ਮੋਬਾਇਲ ਨੰਬਰ</string>
+    <string name="are_you_on_whatsapp_n_we_ll_reach_you_there">ਕੀ ਤੁਸੀਂ WhatsApp ਚਲਾਉਂਦੇ ਹੋ?\n</string>
+    <string name="allow_us_to_communicate">ਸਾਨੂੰ %1$s ਤੇ WhatsApp ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ। ਅਗਲੇ ਸਫ਼ੇ ਤੇ ਜਾਣਕਾਰੀ ਨਾ ਬਦਲੋ।</string>
+    <string name="allow_us_to_communicate_short">ਸਾਨੂੰ %1$s ਤੇ WhatsApp ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ।</string>
+    <string name="customer_name">ਗਾਹਕ ਦਾ ਨਾਂ</string>
+    <string name="skip">ਛੱਡੋ</string>
+    <string name="name_your_business">ਆਪਣੇ ਕਾਰੋਬਾਰ ਦਾ ਨਾਂ ਰੱਖੋ</string>
+    <string name="your_customer_will">ਤੁਹਾਡੇ ਗ੍ਰਾਹਕ ਨੂੰ ਇਸ ਨਾਮ ਤੋਂ SMS ਭੇਜਿਆ ਜਾਏਗਾ</string>
+    <string name="setup_profile">ਪ੍ਰੋਫਾਈਲ ਬਣਾਓ</string>
+    <string name="camera_permission_denied">ਕਿਰਪਾ ਕਰਕੇ ਕੈਮਰੇ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="storage_permission_denied">ਕਿਰਪਾ ਤਸਵੀਰ ਜੋੜਣ ਲਈ ਸਟੋਰੇਜ ਅਨੁਮਤੀ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="_0_transaction_fee">0% ਲੇਣ ਦੇਣ ਫੀਸ</string>
+    <string name="view_customer">ਗਾਹਕ ਦੇਖੋ</string>
+    <string name="err_mobile_conflict_v2">“%1$s” ਪਹਿਲਾਂ ਹੀ “%2$s ਨਾਂ ਤੋਂ ਗਾਹਕ ਲਿਸਟ ਵਿਚ ਹੈ”</string>
+    <string name="didn_t_get_otp">OTP ਨਹੀਂ ਆਇਆ?</string>
+    <string name="resend">ਦੋਬਾਰਾ ਭੇਜੋ</string>
+    <string name="please_be_patient">ਕਿਰਪਾ ਕਰਕੇ ਧੀਰਜ ਰੱਖੋ</string>
+    <string name="your_otp_will_be_delivered">OTP ਜਲਦੀ ਹੀ %1$s ਨੰਬਰ ਤੇ ਭੇਜਿਆ ਜਾਏਗਾ</string>
+    <string name="contact_list">ਸੰਪਰਕ ਸੂਚੀ</string>
+    <string name="new_customer">ਨਵਾਂ ਗਾਹਕ</string>
+    <string name="transaction_fee_n_perc">%1$s ਲੈਣ- ਦੇਣ ਫੀਸ</string>
+    <string name="set_password">ਪਾਸਵਰਡ ਸੈਟ ਕਰੋ</string>
+    <string name="one_transactions_unsynced">1 ਲੈਣ- ਦੇਣ ਸਿੰਕ ਨਹੀਂ ਹੋਇਆ</string>
+    <string name="n_transactions_unsynced">%1$d ਲੈਣ- ਦੇਣ ਸਿੰਕ ਨਹੀਂ ਹੋਇਆ</string>
+    <string name="how_to_add_a_new_customer">ਨਵਾਂ ਗਾਹਕ ਕਿਵੇਂ ਜੋੜਿਆ ਜਾਏ?</string>
+    <string name="click_on_add_customer_button_below_to_add_a_new_customer">ਇੱਕ ਨਵਾਂ ਗਾਹਕ ਜੋੜਨ ਲਈ ਹੇਠਾਂ \"ਗਾਹਕ ਜੋੜੋ\" ਬਟਨ ਤੇ ਕਲਿੱਕ ਕਰੋ</string>
+    <string name="please_update">ਕਿਰਪਾ ਕਰਕੇ ਸਾਡੀ ਨਵੀਂ ਸੁਰੱਖਿਆ ਵਿਸ਼ੇਸ਼ਤਾ ਅਪਡੇਟ ਕਰੋ. ਘੱਟੋ-ਘੱਟ 6-ਅੰਕ ਵਾਲੇ ਪਾਸਵਰਡ ਰੱਖੋ.</string>
+    <string name="you_are_safe_with">ਤੁਸੀਂ OkCredit ਨਾਲ ਸੁਰੱਖਿਅਤ ਹੋ</string>
+    <string name="online_transactions">ਆਨਲਾਈਨ ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ</string>
+    <string name="rewards">ਇਨਾਮ</string>
+    <string name="please_be_patient_we_are_verifying_your_upi">ਕ੍ਰਿਪਾ ਕਰਕੇ ਧੀਰਜ ਰੱਖੋ। ਅਸੀਂ ਤੁਹਾਡੀ UPI ਦੀ ਪੁਸ਼ਟੀ ਕਰ ਰਹੇ ਹਾਂ</string>
+    <string name="scan_qr">QR ਨੂੰ ਸਕੈਨ ਕਰੋ</string>
+    <string name="camera_permission_denied_qr">ਕਿਰਪਾ ਕਰਕੇ QR ਕੋਡ ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ ਕੈਮਰਾ ਖੋਲਣ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="allow_camera_access_to_scan_qr">QR ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ ਕੈਮਰਾ ਵਰਤਣ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="cashfree_tag">ਕੈਸ਼ ਫ੍ਰੀ ਦੁਆਰਾ ਭੁਗਤਾਨ ਕਰੋ \n (ਕੈਸ਼ਫ੍ਰੀ @ ਯੈਸਬੈਂਕ)</string>
+    <string name="to_mobile">To: %1$s</string>
+    <string name="collect_online">ਆਨਲਾਈਨ ਇਕੱਠਾ ਕਰੋ</string>
+    <string name="reward_range">\"ਆਨਲਾਈਨ ਕੁਲੈਕਸ਼ਨ ਸੈਟਅੱਪ ਰਾਹੀਂ ₹10 - ₹100 ਵਿਚਾਲੇ ਜਿੱਤੋ ।\"</string>
+    <string name="collection_got_easier">ਕਲੈਕਸ਼ਨ ਸੌਖੀ ਹੋ ਗਈ</string>
+    <string name="add_upi_id_and_collect_due_online">ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਇਕੱਤਰ ਕਰਨ ਲਈ UPI ID/ਬੈਂਕ ਖਾਤੇ ਨੂੰ ਸ਼ਾਮਲ ਕਰੋ।</string>
+    <string name="due_as_on">ਇਸ ਸਮੇਂ ਬਕਾਇਆ ਹੈ : %1$s</string>
+    <string name="total_rewards">ਕੁੱਲ ਇਨਾਮ</string>
+    <string name="referral_reward_track_referred_merchants">ਆਪਣੇ ਇਨਾਮ ਅਤੇ ਸੱਦੇ ਦੇਖੋ</string>
+    <string name="you_won">ਤੁਸੀਂ %1$s ਜਿੱਤਿਆ ਹੈ</string>
+    <string name="claim_reward">ਇਨਾਮ ਦਾ ਦਾਅਵਾ ਕਰੋ</string>
+    <string name="rewards_money_credited_72_hours">ਇਨਾਮੀ ਰਾਸ਼ੀ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਜਮ੍ਹਾਂ ਕੀਤੀ ਜਾਵੇਗੀ</string>
+    <string name="tap_and_scratch_for_reward">ਇਨਾਮ ਲਈ ਸਕਰੈਚ ਕਰੋ</string>
+    <string name="enter_bank_details_to_redeem_cashback">ਇਸ ਕੈਸ਼ਬੈਕ ਦਾ ਲਾਭ ਲੈਣ ਲਈ ਬੈਂਕ ਖਾਤੇ ਦੇ ਵੇਰਵੇ ਦਾਖਲ ਕਰੋ। ਇੱਥੇ ਕਲਿੱਕ ਕਰੋ।</string>
+    <string name="you_won_cashback_amount">ਤੁਸੀਂ ₹%1$d ਕੈਸ਼ਬੈਕ ਜਿੱਤ ਲਿਆ ਹੈ</string>
+    <string name="you_won_cashback">ਤੁਸੀਂ ਕੈਸ਼ਬੈਕ ਜਿਤਿਆ ਹੈ</string>
+    <string name="better_luck_next_time">ਕੋਈ ਗੱਲ ਨਹੀਂ! ਅਗਲੀ ਵਾਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="claiming">ਕਿਰਪਾ ਕਰ ਕੇ ਇੰਤਜ਼ਾਰ ਕਰੋ…</string>
+    <string name="update_upi_text">ਤੁਸੀਂ ਆਪਣੀ UPI ID ਨੂੰ ਅਪਡੇਟ ਕਰ ਰਹੇ ਹੋ। ਕਲੈਕਸ਼ਨ ਦੀ ਰਕਮ ਨੂੰ ਅਪਡੇਟ ਕੀਤੀ UPI ID ਵਿੱਚ ਜਮ੍ਹਾ ਕੀਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="update_account_text_kyc">ਵਾਪਿਸ ਆਈ ਹੋਈ ਰਕਮ ਅਪਡੇਟ ਕੀਤੇ ਖਾਤੇ ਵਿੱਚ ਜਮ੍ਹਾਂ ਕੀਤੀ ਜਾਏਗੀ। ਆਪਣੇ ਖਾਤੇ ਨੂੰ ਅਪਡੇਟ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਤੁਹਾਨੂੰ KYC ਨੂੰ ਦੁਬਾਰਾ ਕਰਵਾਉਣੀ ਪਵੇਗੀ।</string>
+    <string name="okcredit_values_time_and_money">OkCredit ਸਾਰੇ ਉਪਭੋਗਤਾਵਾਂ ਦੇ ਸਮੇਂਅਤੇ ਪੈਸੇ ਦੀ ਕਦਰ ਕਰਦਾ ਹੈ। ਅਸੀਂ ਤੁਹਾਡੀ ਕਲੈਕਸ਼ਨ ਨੂੰ ਸਮੇਂ ਸਿਰ ਕਰਾਉਣ ਲਈ ਅਤੇ ਇਸ ਤਰ੍ਹਾਂ ਕਰਨ ਵਿਚ ਕਿਸੇ ਕਿਸਮ ਦੇ ਖਰਚੇ ਨੂੰ ਬਚਾਉਣ ਲਈ ਸਮਰਪਿਤ ਹਾਂ।</string>
+    <string name="send_collection_link_on_whatsapp">ਕੁਲੈਕਸ਼ਨ ਲਿੰਕ ਨੂੰ WhatsApp ‘ਤੇ ਭੇਜੋ</string>
+    <string name="get_paid_on_time">ਸਮੇਂ ਸਿਰ ਭੁਗਤਾਨ ਪ੍ਰਾਪਤ ਕਰੋ</string>
+    <string name="tell_your_friends">ਆਪਣੇ ਦੋਸਤਾਂ ਨੂੰ ਦੱਸੋ</string>
+    <string name="go_to_rewards">ਇਨਾਮ ਵਿੱਚ ਜਾਓ</string>
+    <string name="enter_bank_details">ਬੈਂਕ ਵੇਰਵੇ ਜੋੜੋ</string>
+    <string name="share_reward_text_v2">ਮੈਂ OkCredit ਦੇ ਨਾਲ %1$s ਜਿੱਤਿਆ! ਹੁਣ ਫੋਨ ਤੇ ਸਾਰੇ ਰੋਜ਼ਾਨਾ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਕਰੋ - OkCredit ਇੰਸਟਾਲ ਕਰੋ ਮੁਫ਼ਤ @ %2$s</string>
+    <string name="upi_decode_error">UPI ਆਈਡੀ ਗਲਤ ਹੈ</string>
+    <string name="you_may_call">ਤੁਸੀਂ ਗਾਹਕ ਨੂੰ ਇੱਥੇ ਸਿਰਫ ਕਾਲ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ ਵੇਰਵੇ ਦੀ ਚਰਚਾ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="note_tutorial">ਤੁਸੀਂ ਇਸ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਬਾਰੇ ਨੋਟਸ ਜੋੜ ਸਕਦੇ ਹੋ। ਗ੍ਰਾਹਕ ਉਸ ਦਿਨ ਦੇ ਟ੍ਰਾਂਜੈਕਸ਼ਨ SMS ਦੇ ਲਿੰਕ ‘ਤੇ ਕਲਿਕ ਕਰਕੇ ਨੋਟਸ ਦੇਖ ਸਕਦੇ ਹਨ।</string>
+    <string name="check_all_your_accounting">ਆਪਣੇ ਸਾਰੇ ਲੇਖਾ ਖਾਤਿਆਂ ਨੂੰ ਇੱਕ ਜਗ੍ਹਾ ‘ਤੇ ਰੱਖੋ ਅਤੇ PDF ਫਾਰਮੈਟ ਵਿੱਚ ਡਾਊਨਲੋਡ ਕਰੋ ..</string>
+    <string name="check_now">ਹੁਣ ਚੈੱਕ ਕਰੋ</string>
+    <string name="supplier_not_found"><![CDATA["<b>%1$s</b>" ਨਾਮ ਨਾਲ ਕੋਈ ਸਪਲਾਇਰ ਨਹੀਂ ਮਿਲਿਆ""]]></string>
+    <string name="permission_title">"ਆਗਿਆ ਪ੍ਰਦਾਨ ਕਰੋ"</string>
+    <string name="permission_needed">"ਕਿਰਪਾ ਕਰਕੇ ਸੈਟਿੰਗਸ ‘ਤੇ ਜਾ ਕੇ ਇਸ ਵੇਰਵੇ ਲਈ ਆਗਿਆ ਪ੍ਰਦਾਨ ਕਰੋ "</string>
+    <string name="add_supplier">"ਵਿਕ੍ਰੇਤਾ ਜੋੜੋ "</string>
+    <string name="supplier_name">"ਵਿਕ੍ਰੇਤਾ ਦਾ ਨਾਮ "</string>
+    <string name="search_or_add">"ਲੱਭੋ ਜਾਂ ਜੋੜੋ "</string>
+    <string name="new_count">"%1$s ਨਵਾਂ "</string>
+    <string name="supplier_txn_take_credit_btn">ਉਧਾਰ ਦਿੱਤਾ</string>
+    <string name="supplier_txn_give_payment_btn">ਜਮ੍ਹਾਂ ਕੀਤਾ</string>
+    <string name="give_payment">"ਭੁਗਤਾਨ ਦਿਓ "</string>
+    <string name="take_credit">"ਕ੍ਰੈਡਿਟ ਲਓ "</string>
+    <string name="call_permission_denied_supplier">"ਵਿਕ੍ਰੇਤਾ ਨੂੰ ਕਾਲ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ "</string>
+    <string name="err_mobile_conflict_suppliers">"“%1$s” ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਤੁਹਾਡੀ ਵਿਕ੍ਰੇਤਾ ਸੂਚੀ ਵਿਚ ਮੌਜੂਦ ਹੈ ਜਿਸਦਾ ਨਾਮ ਹੈ “%2$s”"</string>
+    <string name="delete_supplier">"ਵਿਕ੍ਰੇਤਾ ਹਟਾਓ "</string>
+    <string name="delcst_supplier_msg_settlement">"ਹਟਾਉਣ ਲਈ ਵਿਕ੍ਰੇਤਾ ਬੈਲੇਂਸ 0 ਕਰੋ "</string>
+    <string name="delcst_supplier_msg">"ਵਿਕ੍ਰੇਤਾ ਅਜੇ ਵੀ ਪੁਰਾਣੇ SMS ਦੇਖ ਸਕੇਗਾ"</string>
+    <string name="delcst_supplier_msg_no_mobile">"ਵਿਕ੍ਰੇਤਾ ਦਾ ਡੇਟਾ ਪੂਰੀ ਤਰ੍ਹਾਂ ਮਿਟ ਜਾਏਗਾ "</string>
+    <string name="err_cyclick_conflict_customer">"“%1$s” ਪਹਿਲਾਂ ਹੀ “%2$s ਨਾਂ ਤੋਂ ਗਾਹਕ ਲਿਸਟ ਵਿਚ ਹੈ”"</string>
+    <string name="err_cyclick_conflict_supplier">"“%1$s” ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਤੁਹਾਡੀ ਗ੍ਰਾਹਕ ਸੂਚੀ ਵਿਚ ਮੌਜੂਦ ਹੈ ਜਿਸਦਾ ਨਾਮ ਹੈ “%2$s”"</string>
+    <string name="notification_delivered">"ਸੂਚਨਾ ਚਲੀ ਗਈ"</string>
+    <string name="view_supplier">"ਵਿਕ੍ਰੇਤਾ ਦੇਖੋ "</string>
+    <string name="transaction_notification">"ਟ੍ਰਾਂਸੈਕਸ਼ਨ ਸੂਚਨਾ  "</string>
+    <string name="notification_language">"ਸੂਚਨਾਵਾਂ ਦੀ ਭਾਸ਼ਾ "</string>
+    <string name="empty_supplier">"ਹੁਣ ਤੁਸੀਂ ਵਿਕ੍ਰੇਤਾਵਾਂ ਤੋਂ ਲਿਆ ਉਧਾਰ ਦਰਜ ਕਰ ਸਕਦੇ ਹੋ "</string>
+    <string name="open_app_setting">"ਸੈਟਿੰਗਸ"</string>
+    <string name="import_phone_contact_desc_suppliers">"ਫੋਨ ਪੁਸਤਕ ਤੋਂ ਸਿੱਧੇ ਨਵੇਂ ਸਪਲਾਇਰ ਸ਼ਾਮਲ ਕਰੋ"</string>
+    <string name="customer">"ਗਾਹਕ"</string>
+    <string name="app_update_available">ਐਪ ਅਪਡੇਟ ਉਪਲਬਧ ਹੈ</string>
+    <string name="update">ਅਪਡੇਟ</string>
+    <string name="app_under_construction">ਐਪ ਨਿਰਮਾਣ ਅਧੀਨ ਹੈ</string>
+    <string name="sorry_for_the_inconvenience_caused">ਕਿਸੇ ਵੀ ਹੋਣ ਵਾਲੀ ਪ੍ਰੇਸ਼ਾਨੀ ਲਈ ਮੁਆਫ ਕਰਨਾ, ਕਿਰਪਾ ਕਰਕੇ ਸਬਰ ਰੱਖੋ, ਐਪ ਜਲਦੀ ਹੀ ਸ਼ੁਰੂ ਹੋ ਜਾਵੇਗੀ</string>
+    <string name="all_your_data_is_safe_with_okcredit">ਤੁਹਾਡਾ ਡਾਟਾ OkCredit ਨਾਲ ਸੁਰੱਖਿਅਤ ਹੈ। ਅਸੀਂ ਤੁਹਾਨੂੰ ਸਾਡੀ ਐਪ ਤੇ ਅਨੰਦਮਈ ਤਜਰਬਾ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ ਸਮਰਪਿਤ ਹਾਂ</string>
+    <string name="contact_info">ਸੰਪਰਕ ਜਾਣਕਾਰੀ</string>
+    <string name="communication">ਸਮਚਾਰ</string>
+    <string name="got_it">ਸਮਝ ਗਏ</string>
+    <string name="verified_user">ਪ੍ਰਮਾਣਿਤ ਉਪਭੋਗਤਾ</string>
+    <string name="cannot_edit">ਇਹ ਵਪਾਰੀ OkCredit ‘ਤੇ ਪਹਿਲਾਂ ਹੀ ਰਜਿਸਟਰਡ ਹੈ। ਤੁਹਾਨੂੰ ਉਸ ਦੇ ਨਾਂ ਅਤੇ ਪ੍ਰੋਫਾਈਲ ਤਸਵੀਰ ਨੂੰ ਹੀ ਬਦਲਣ ਦੀ ਆਗਿਆ ਹੈ।</string>
+    <string name="keep_your_phone_connected_to_internet">ਆਪਣੇ ਫੋਨ ਨੂੰ ਇੰਟਰਨੈਟ ਨਾਲ ਜੋੜੇ ਰੱਖੋ</string>
+    <string name="downloading_update">ਅਪਡੇਟ ਡਾਊਨਲੋਡ ਕਰਦੇ ਹੋਏ</string>
+    <string name="send_reminder">ਰੀਮਾਈਂਡਰ ਭੇਜੋ</string>
+    <string name="by_contiuing_terms_privacy"><![CDATA[ਜਾਰੀ ਰੱਖ ਕੇ, ਤੁਸੀਂ OkCredit ਅਤੇ ਭੁਗਤਾਨ ਪ੍ਰਦਾਤਾ ਦੇ ਭੁਗਤਾਨ <font color=\'#0076f8\'><a href=“http://okcredit.in/terms”>ਨਿਯਮ ਅਤੇ ਗੋਪਨੀਯਤਾ ਨੀਤੀ ਨੂੰ ਸਵੀਕਾਰ ਕਰਦੇ ਹੋ</a></font>]]></string>
+    <string name="supplier_i_dont_know">ਮੈਨੂੰ ਨਹੀਂ ਪਤਾ</string>
+    <string name="bank_account">ਬੈਂਕ ਖਾਤਾ</string>
+    <string name="_0_collection_fee">0% ਫੀਸ</string>
+    <string name="rupee_symbol">₹ </string>
+    <string name="update_bank">ਬੈਂਕ ਖਾਤਾ ਅਪਡੇਟ ਕਰੋ</string>
+    <string name="update_bank_text">ਤੁਸੀਂ ਆਪਣੇ ਬੈਂਕ ਖਾਤੇ ਨੂੰ ਅਪਡੇਟ ਕਰਨ ਜਾ ਰਹੇ ਹੋ. ਉਗਰਾਹੀ ਦੀ ਰਕਮ ਅਪਡੇਟ ਕੀਤੇ ਬੈਂਕ ਖਾਤੇ ਵਿੱਚ ਜਮ੍ਹਾਂ ਕੀਤੀ ਜਾਏਗੀ.</string>
+    <string name="scan_qr_or_add_bank">QR ਸਕੈਨ ਕਰੋ ਜਾਂ ਬੈਂਕ ਖਾਤਾ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="send_payment_reminder">ਪੇਮੈਂਟ ਰੀਮਾਈਂਡਰ ਭੇਜੋ</string>
+    <string name="no_transaction_fee_for_upi_payments_collect_instently_v2">ਭੁਗਤਾਨ ਲਈ ਕੋਈ ਫੀਸ ਨਹੀਂ। ਤੁਰੰਤ ਇਕੱਤਰ ਕਰੋ</string>
+    <string name="how_to_collect_due_online_via_upi_v2">ਆਨਲਾਈਨ ਬਕਾਇਆ ਕਿਵੇਂ ਇਕੱਤਰ ਕਰਨਾ ਹੈ?</string>
+    <string name="account_number">ਖਾਤਾ ਨੰਬਰ</string>
+    <string name="enter_name_ifsc_account_number">ਨਾਮ, ਆਈਐਫਐਸਸੀ ਅਤੇ ਖਾਤਾ ਨੰਬਰ ਦਰਜ ਕਰੋ</string>
+    <string name="scan_qr_or_enter_upi_id">QR ਸਕੈਨ ਕਰੋ ਜਾਂ UPI ਆਈਡੀ ਦਰਜ ਕਰੋ</string>
+    <string name="ifsc">ਆਈਐਫਐਸਸੀ</string>
+    <string name="confirm_details">ਵੇਰਵਿਆਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="okcredit_will_transact_1_to_verify_the_account">OkCredit ਖਾਤੇ ਦੀ ਤਸਦੀਕ ਕਰਨ ਲਈ ₹1 ਦਾ ਲੈਣ-ਦੇਣ ਕਰੇਗਾ</string>
+    <string name="edit_details">ਵੇਰਵਾ ਸੋਧੋ</string>
+    <string name="update_account">ਖਾਤਾ ਅਪਡੇਟ ਕਰੋ</string>
+    <string name="add_bank_account_slide1">ਨਮਸਕਾਰ ਗਾਹਕ,\n ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਬੈਂਕ ਦਾ ਖਾਤਾ ਨੰਬਰ ਦੱਸੋ</string>
+    <string name="add_bank_account_slide2">ਬਹੁਤ ਵਧੀਆ,\n ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਬੈਂਕ ਦਾ ਆਈਐਫਐਸਸੀ ਕੋਡ ਦੱਸੋ</string>
+    <string name="add_bank_account_slide3">ਬਸ ਪਹੁੰਚਣ ਵਾਲੇ ਹਾਂ!\n ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਬੈਂਕ ਖਾਤੇ ਅਨੁਸਾਰ ਆਪਣਾ ਨਾਮ ਦੱਸੋ</string>
+    <string name="oops_your_ifsc_do_not">ਓਹੋ! ਤੁਹਾਡਾ ਆਈਐਫਐਸਸੀ ਬੈਂਕ ਖਾਤੇ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾ ਰਿਹਾ</string>
+    <string name="please_check_and_rectify_the_same">ਕਿਰਪਾ ਕਰਕੇ ਉਸੀ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਸੁਧਾਰ ਕਰੋ</string>
+    <string name="confirm_and_proceed">ਪੁਸ਼ਟੀ ਕਰੋ ਅਤੇ ਅੱਗੇ ਵਧੋ</string>
+    <string name="add_number">ਨੰਬਰ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="hurrey_account_linked_successfully">ਆਹਾ! ਅਕਾਉਂਟ ਸਫਲਤਾਪੂਰਵਕ ਲਿੰਕ ਹੋ ਗਿਆ ਹੈ</string>
+    <string name="ask_customer_to_scan_qr_and_pay_online">ਗ੍ਰਾਹਕਾਂ ਨੂੰ QR ਸਕੈਨ ਕਰਨ ਅਤੇ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰਨ ਲਈ ਕਹੋ</string>
+    <string name="invalid_account_number">ਓਹੋ ਤੁਹਾਡਾ ਖਾਤਾ ਨੰਬਰ ਅਵੈਧ ਹੈ</string>
+    <string name="invalid_ifsc_code">ਓਹੋ  ਤੁਹਾਡਾ ਆਈਐਫਐਸਸੀ ਕੋਡ ਅਵੈਧ ਹੈ</string>
+    <string name="invalid_account_name">ਓਹੋ ਤੁਹਾਡੇ ਖਾਤੇ ਦਾ ਨਾਮ ਅਵੈਧ ਹੈ</string>
+    <string name="invalid_account_or_ifsc">ਓਹੋ ਤੁਹਾਡਾ ਖਾਤਾ ਨੰਬਰ ਜਾਂ ਆਈਐਫਐਸਸੀ ਕੋਡ ਅਵੈਧ ਹੈ</string>
+    <string name="invalid_ifsc">ਅਵੈਧ ਆਈਐਫਐਸਸੀ ਕੋਡ</string>
+    <string name="payment_failed">ਭੁਗਤਾਨ ਅਸਫਲ</string>
+    <string name="settlement_pending">ਸੈਟਲਮੈਂਟ ਬਾਕੀ ਹੈ</string>
+    <string name="refund_successful">ਰਿਫੰਡ ਹੋ ਗਿਆ</string>
+    <string name="refund_initiated">ਰਿਫੰਡ ਪ੍ਰਕਿਰਿਆ ਸ਼ੁਰੂ ਹੋ ਗਈ ਹੈ</string>
+    <string name="paid_to">ਨੂੰ</string>
+    <string name="credit_failed">ਉਧਾਰ ਅਸਫਲ</string>
+    <string name="credit_cycle">ਉਧਾਰ ਚੱਕਰ</string>
+    <string name="get_collection_help">ਮੇਰੇ ਕੋਲ ਸੰਗ੍ਰਿਹ ਨਾਲ ਸੰਬੰਧਿਤ ਇੱਕ ਪ੍ਰਸ਼ਨ ਹੈ %1$s</string>
+    <string name="due_on">ਇਸ ਤੇ ਇਕੱਤਰ ਕਰੋ</string>
+    <string name="due_on_new"><![CDATA[<b>%1$s</b> ਨੂੰ ਇਕੱਤਰ ਕਰੋ]]></string>
+    <string name="automated_reminder">ਆਟੋਮੈਟਿਕ ਰੀਮਾਈਂਡਰ</string>
+    <string name="automated_reminder_subtitle">ਕੀ ਤੁਸੀਂ ਯਕੀਨਨ ਬੰਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ? ਨਿਰਧਾਰਤ ਮਿਤੀ ਤੇ ਕਿਸੇ ਵੀ ਗਾਹਕ ਨੂੰ ਕੋਈ ਰੀਮਾਈਂਡਰ SMS ਨਹੀਂ ਭੇਜਿਆ ਜਾਵੇਗਾ</string>
+    <string name="self_Reminder_subtitle">ਕੀ ਤੁਸੀਂ ਯਕੀਨਨ ਬੰਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ? ਤੁਹਾਨੂੰ ਬਕਾਇਆ ਦੇ ਸੰਬੰਧ ਵਿੱਚ OkCredit ਤੋਂ ਕੋਈ ਸੂਚਨਾ ਪ੍ਰਾਪਤ ਨਹੀਂ ਹੋਏਗੀ</string>
+    <string name="credit_cycle_subtitle">ਤੁਸੀਂ ਆਪਣੇ ਸਾਰੇ ਗਾਹਕਾਂ ਲਈ ਕ੍ਰੈਡਿਟ ਚੱਕਰ ਸੈਟ ਕਰਨ ਜਾ ਰਹੇ ਹੋ ਜਿਸ ਵਿੱਚ ਜਿਨਾਂ ਨੂੰ ਤੁਸੀਂ ਸੈੱਟ ਕੀਤਾ ਹੈ ਉਹ ਵੀ ਸ਼ਾਮਲ ਹਨ</string>
+    <string name="set">ਸੈੱਟ</string>
+    <string name="days">ਦਿਨ</string>
+    <string name="change_number">ਨੰਬਰ ਬਦਲੋ</string>
+    <string name="change_number_line_1">ਨੰਬਰ ਬਦਲਣਾ ਤੁਹਾਡੇ ਸਾਰੇ ਡੇਟਾ ਦਾ ਪ੍ਰਵਾਸ ਨਵੇਂ ਨੰਬਰ ਤੇਂ ਕਰ ਦੇਵੇਗਾ.</string>
+    <string name="change_number_line_2">ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਤੁਸੀਂ ਨਵੇਂ ਨੰਬਰ ਤੇ SMS ਪ੍ਰਾਪਤ ਕਰਨ ਦੇ ਯੋਗ ਹੋ।</string>
+    <string name="change_number_line_3">ਉਪਭੋਗਤਾ ਦੀ ਤਸਦੀਕ ਕਰਨ ਲਈ ਮੌਜੂਦਾ ਨੰਬਰ \'ਤੇ ਇੱਕ OTP ਭੇਜਿਆ ਜਾਵੇਗਾ।</string>
+    <string name="enter_your_new_mobile_number">ਆਪਣਾ ਨਵਾਂ ਮੋਬਾਈਲ ਨੰਬਰ ਦਰਜ ਕਰੋ</string>
+    <string name="new_number">ਨਵਾਂ ਨੰਬਰ</string>
+    <string name="verify_and_change">ਜਾਂਚ ਕਰੋ ਅਤੇ ਬਦਲੋ</string>
+    <string name="you_are_about_to_change_your_number_from">ਤੁਸੀਂ ਇਸ ਤੋਂ ਆਪਣਾ ਨੰਬਰ ਬਦਲਣ ਜਾ ਰਹੇ ਹੋ</string>
+    <string name="to"> ਤੋਂ </string>
+    <string name="migration_successful">ਪਰਵਾਸ ਸਫਲ!</string>
+    <string name="merchant_already_exists">ਵਪਾਰੀ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ</string>
+    <string name="confirm_number_change_line3">ਉਪਭੋਗਤਾ ਦੀ ਵੈਰਈਫ਼ੀਕੇਸ਼ਨ ਲਈ OTP <![CDATA[<b>%1$s</b>]]> ਤੇ ਭੇਜਿਆ ਜਾਏਗਾ</string>
+    <string name="title_business_name">ਕਾਰੋਬਾਰ ਦਾ ਨਾਮ</string>
+    <string name="enter_business_name">"ਆਪਣੇ ਕਾਰੋਬਾਰ ਦਾ ਨਾਮ ਦਰਜ ਕਰੋ"</string>
+    <string name="enter_business_name_box">"ਤੁਹਾਡੇ ਵਪਾਰ ਦਾ ਨਾਮ"</string>
+    <string name="enter_business_name_note">ਪ੍ਰੋਫਾਈਲ ਨਾਮ ਤੁਹਾਡੇ ਗ੍ਰਾਹਕਾਂ ਨੂੰ ਦਿਖਾਈ ਦੇਵੇਗਾ.</string>
+    <string name="enter_mobile_number">"ਆਪਣਾ ਮੋਬਾਈਲ ਨੰਬਰ ਦਰਜ ਕਰੋ"</string>
+    <string name="title_category">ਸ਼੍ਰੇਣੀ</string>
+    <string name="enter_category">"ਆਪਣੀ ਵਪਾਰਕ ਸ਼੍ਰੇਣੀ ਚੁਣੋ"</string>
+    <string name="enter_location">"ਆਪਣਾ ਮੌਜੂਦਾ ਸਥਾਨ ਸੈੱਟ ਕਰੋ"</string>
+    <string name="enter_location_box">"ਆਪਣਾ ਪਤਾ ਦਰਜ ਕਰੋ"</string>
+    <string name="enter_about_business">"ਆਪਣੇ ਕਾਰੋਬਾਰ ਬਾਰੇ ਦਰਜ ਕਰੋ"</string>
+    <string name="enter_about_business_box">"ਤੁਹਾਡੇ ਕਾਰੋਬਾਰ ਬਾਰੇ"</string>
+    <string name="enter_email">"ਆਪਣੀ ਈਮੇਲ ਆਈਡੀ ਦਰਜ ਕਰੋ"</string>
+    <string name="enter_email_box">"ਤੁਹਾਡਾ ਈਮੇਲ ਆਈਡੀ"</string>
+    <string name="enter_person_name">"ਸੰਪਰਕ ਵਿਅਕਤੀ ਦਾ ਨਾਮ ਦਰਜ ਕਰੋ"</string>
+    <string name="enter_person_name_box">"ਸੰਪਰਕ ਵਿਅਕਤੀ ਦਾ ਨਾਂ"</string>
+    <string name="title_category_info">ਹੋਰ ਜਾਣਕਾਰੀ</string>
+    <string name="enter_other_category_name">"ਹੋਰ ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ"</string>
+    <string name="enter_other_category_name_box">"ਹੋਰ ਸ਼੍ਰੇਣੀ"</string>
+    <string name="other_info_title">ਈਮੇਲ, ਇਸਦੇ ਬਾਰੇ, ਨਾਮ</string>
+    <string name="title_business_card">ਵਪਾਰਕ ਕਾਰਡ</string>
+    <string name="share_business_card">ਆਪਣਾ ਵਪਾਰਕ ਕਾਰਡ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="confirm_delete">"ਮਿਟਾਉਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ"</string>
+    <string name="new_supplier">"ਨਵਾਂ ਸਪਲਾਇਰ"</string>
+    <string name="category_name_limit">ਬਾਰੇ ਵਿੱਚ 500 ਅੱਖਰ ਤੋਂ ਵੱਧ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ</string>
+    <string name="added_by">%1$s ਦੁਆਰਾ ਜੋੜਿਆ ਗਿਆ</string>
+    <string name="deleted_by">%1$s ਦੁਆਰਾ ਮਿਟਾਇਆ ਗਿਆ</string>
+    <string name="now_record_credit_taken">ਹੁਣ, ਸਪਲਾਇਰਾਂ ਤੋਂ ਲਏ ਗਏ ਕ੍ਰੈਡਿਟ ਰਿਕਾਰਡ ਕਰੋ</string>
+    <string name="email_already_exit">ਇਹ ਈਮੇਲ ਪਹਿਲਾਂ ਹੀ ਲਿਆ ਜਾ ਚੁੱਕਾ ਹੈ</string>
+    <string name="watch_tutorial">ਟਿਊਟੋਰਿਯਲ ਵੇਖੋ</string>
+    <string name="map_business">ਆਪਣੇ ਕਾਰੋਬਾਰ ਨੂੰ ਮੈਪ ਕਰੋ</string>
+    <string name="allow_map_location">ਨਕਸ਼ੇ \'ਤੇ ਆਪਣੇ ਕਾਰੋਬਾਰ ਨੂੰ ਪ੍ਰਦਰਸ਼ਤ ਕਰਨ ਲਈ ਸਥਾਨ ਸੇਵਾ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="business_location">ਵਪਾਰ ਦਾ ਸਥਾਨ</string>
+    <string name="business_location_secondary">ਆਪਣੀ ਦੁਕਾਨ ਦੇ ਸਥਾਨ ਨੂੰ\nਗਾਹਕਾਂ ਲਈ ਦਿਖਣਯੋਗ ਬਣਾਓ ਅਤੇ ਜਿਆਦਾ ਵਪਾਰ ਕਰੋ</string>
+    <string name="ask_later">ਬਾਅਦ ਵਿੱਚ ਪੁੱਛੋ</string>
+    <string name="location_set_successfully">ਵਪਾਰ ਦੇ ਸਥਾਨ\nਨੂੰ ਸਫਲਤਾਪੂਰਕ ਜੋੜਿਆ ਗਿਆ</string>
+    <string name="change_number_tv_3">ਉਪਭੋਗਤਾ ਦੀ ਵੈਰਈਫ਼ੀਕੇਸ਼ਨ ਲਈ OTP <![CDATA[<b>%1$s</b>]]> ਤੇ ਭੇਜਿਆ ਜਾਏਗਾ।</string>
+    <string name="your_otp_will_be_delivered_bold">ਤੁਹਾਡਾ OTP ਜਲਦ ਹੀ <![CDATA[<b>%1$s</b>]]> ਤੇ ਭੇਜ ਦਿੱਤਾ ਜਾਵੇਗਾ</string>
+    <string name="verify_mobile">ਮੋਬਾਇਲ ਨੰਬਰ ਦੀ ਤਸਦੀਕ</string>
+    <string name="old_number">ਪੁਰਾਣਾ ਨੰਬਰ</string>
+    <string name="merchant">ਵਪਾਰੀ</string>
+    <string name="add_note">Add Note</string>
+    <string name="new_number_caps">ਨਵਾਂ ਨੰਬਰ</string>
+    <string name="title_location_not_found">ਸਥਾਨ ਨਹੀਂ ਮਿਲਿਆ</string>
+    <string name="location_not_found_map">ਜ਼ਿਕਰ ਕੀਤਾ ਸਥਾਨ ਨਕਸ਼ੇ \'ਤੇ ਨਹੀਂ ਮਿਲਿਆ ਹੈ</string>
+    <string name="set_map_location">ਮੈਪ \'ਤੇ ਸਥਾਨ ਸੈੱਟ ਕਰੋ</string>
+    <string name="contact_not_found"><![CDATA[<b>%1$s</b>]]> ਨਾਲ ਕੋਈ ਸੰਪਰਕ ਨਹੀਂ ਮਿਲਿਆ</string>
+    <string name="suppliers">ਸਪਲਾਇਰ</string>
+    <string name="didnt_understand">Didn\'t understand, please repeat</string>
+    <string name="add_bills">Add Bills</string>
+    <string name="notes">NOTES</string>
+    <string name="add_more">Add More</string>
+    <string name="listening">Listening…</string>
+    <string name="you_will_be_signed_out_from_all_other_devices">ਤੁਹਾਨੂੰ ਹੋਰ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਤੋਂ ਸਾਈਨ ਆਉਟ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ</string>
+    <string name="select_reminder_type">ਰੀਮਾਈਂਡਰ ਦੀ ਕਿਸਮ ਚੁਣੋ</string>
+    <string name="always_use_whatsapp">ਹਮੇਸ਼ਾਂ WhatsApp ਦੀ ਵਰਤੋਂ ਕਰੋ</string>
+    <string name="always_use_sms">ਹਮੇਸ਼ਾਂ SMS ਦੀ ਵਰਤੋਂ ਕਰੋ</string>
+    <string name="send_statement_to_customer">ਗਾਹਕ ਨੂੰ ਸਟੇਟਮੈਂਟ ਭੇਜੋ</string>
+    <string name="add_customer_number_to_send">ਰੀਮਾਈਂਡਰ ਭੇਜਣ ਲਈ ਗ੍ਰਾਹਕ ਦਾ ਨੰਬਰ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="add_customer_number_to_call">ਕਾਲ ਕਰਨ ਲਈ ਗਾਹਕ ਨੰਬਰ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="balance_in_advance_no_reminder">ਪਹਿਲਾਂ ਹੀ ਲੇਖਾ ਕਰੋ, ਕੋਈ ਰੀਮਾਈਂਡਰ ਨਹੀਂ ਭੇਜਣਾ</string>
+    <string name="more_send_options">ਭੇਜਣ ਦੇ ਹੋਰ ਵਿਕਲਪਾਂ ਲਈ ਲੰਮੇ ਸਮੇਂ ਲਈ ਦਬਾਓ</string>
+    <string name="new_text">ਨਵਾਂ</string>
+    <string name="total_livesales_online_collection">ਕੁੱਲ ਆਨਲਾਈਨ ਸੰਗ੍ਰਹਿ:</string>
+    <string name="live_sale_tuto_desc_2">ਕਿਸੇ ਵੀ ਗ੍ਰਾਹਕ ਤੋਂ ਬਿਨਾਂ ਕਿਸੇ ਟ੍ਰਾਂਜ਼ੈਕਸ਼ਨ ਫੀਸ ਦੇ ਸਿੱਧੇ ਆਪਣੇ ਬੈਂਕ ਖਾਤੇ ਵਿੱਚ ਪੈਸਾ ਪ੍ਰਾਪਤ ਕਰੋ</string>
+    <string name="live_sale_tuto_title_2">ਕੋਈ ਭੁਗਤਾਨ ਇਕੱਠਾ ਕਰੋ</string>
+    <string name="live_sale_tuto_title_1">ਲਿੰਕ ਰਾਹੀਂ ਭੁਗਤਾਨ ਦਾ ਵੇਰਵਾ</string>
+    <string name="live_sale_tuto_desc_1">ਲਿੰਕ ਪੇ/ QR ਦੁਆਰਾ ਆਪਣੇ ਸਾਰੇ ਭੁਗਤਾਨਾਂ ਦਾ ਟਰੈਕ ਇੱਕ ਜਗ੍ਹਾ ਤੇ ਰੱਖੋ!</string>
+    <string name="all_your_qr_payments_will_appear_here">ਤੁਹਾਡੇ ਸਾਰੇ QR ਨਾਲ ਹੋਏ ਭੁਗਤਾਨ ਇੱਥੇ ਦਿਖਣਗੇ</string>
+    <string name="syncing_your_data">ਤੁਹਾਡਾ ਡਾਟਾ ਡਾਉਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ</string>
+    <string name="syncing_paused">ਸਿੰਕਿੰਗ ਰੋਕੀ ਗਈ</string>
+    <string name="syncing_failed">ਸਿੰਕਿੰਗ ਅਸਫਲ</string>
+    <string name="please_connect_internet">ਜਾਰੀ ਰੱਖਣ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਇੰਟਰਨੈਟ ਨਾਲ ਕਨੈਕਟ ਕਰੋ.</string>
+    <string name="please_click_connect_internet">ਜਾਰੀ ਰੱਖਣ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਰੀਟ੍ਰਾਏ ਬਟਨ ਤੇ ਕਲਿਕ ਕਰੋ.</string>
+    <string name="processing_your_data">ਇਸ ਵਿਚ 5 ਮਿੰਟ ਲੱਗ ਸਕਦੇ ਹਨ. ਕ੍ਰਿਪਾ ਕਰਕੇ ਇੰਤਜ਼ਾਰ ਕਰੋ…</string>
+    <string name="restart_sync">ਸਿੰਕ ਰੀਸਟਾਰਟ ਕਰੋ</string>
+    <string name="yes">ਹਾਂ</string>
+    <string name="no">ਨਹੀਂ</string>
+    <string name="name">ਨਾਮ</string>
+    <string name="name_required">ਨਾਮ (ਲੋੜੀਂਦਾ)</string>
+    <string name="phonebook_contacts">ਫੋਨਬੁੱਕ ਵਿਚੋਂ ਚੁਣੋ</string>
+    <string name="mobile_number_optional">ਮੋਬਾਈਲ ਨੰਬਰ - <i>ਵਿਕਲਪਿਕ</i></string>
+    <string name="bills">BILLS</string>
+    <string name="all_transactions">All Transactions</string>
+    <string name="welcome">ਸਵਾਗਤ ਹੈ</string>
+    <string name="next">ਅਗਲਾ</string>
+    <string name="welcome_banner_title_1">ਡਿਜੀਟਲ ਬਹੀ-ਖਾਤਾ</string>
+    <string name="welcome_banner_sub_title_1">ਆਪਣੇ ਪੁਰਾਣੇ ਬਹੀ-ਖਾਤਿਆਂ ਤੋਂ ਛੁਟਕਾਰਾ ਪਾਓ. ਨਵੇਂ ਡਿਜੀਟਲ ਅਤੇ ਸਦਾ ਲਈ ਬਹੀ-ਖਾਤਿਆਂ ਦੀ ਚੋਣ ਕਰੋ</string>
+    <string name="welcome_banner_title_2">ਸਾਰੀ ਅਕਾਉਂਟਿੰਗ ਫੋਨ ਵਿੱਚ</string>
+    <string name="welcome_banner_title_v2_2">ਸਮੇਂ ਉੱਤੇ ਸੰਗ੍ਰਹਿ</string>
+    <string name="welcome_banner_sub_title_2">ਆਪਣੀ ਸਾਰੀ ਅਕਾਉਂਟਿੰਗ ਨੂੰ ਡਿਜੀਟਲ ਰੂਪ ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਅਤੇ ਸਾਂਭਿਆ ਰੱਖੋ. ਕਿਤੇ ਵੀ, ਕਦੇ ਵੀ ਐਕਸੈਸ ਕਰੋ</string>
+    <string name="welcome_banner_sub_title_v2_2">ਘਰ ਘਰ ਜਾ ਕੇ ਕਲੈਕਸ਼ਨ ਕਰਨ ਦੀ ਚਿੰਤਾ ਭੁੱਲੋ, ਪੇਮੈਂਟ ਪ੍ਰਾਪਤ ਕਰਨ ਅਤੇ ਸਮਾਂ ਬਚਾਉਣ ਲਈ ਪੇਮੈਂਟ ਰਿਮਾਈਂਡਰ ਵਰਤੋ!</string>
+    <string name="welcome_banner_title_3">100% ਸੁਰੱਖਿਅਤ ਅਤੇ ਸਾਂਭਿਆ</string>
+    <string name="welcome_banner_title_v2_3">ਉੱਤਮ ਗਾਹਕ ਸਬੰਧ</string>
+    <string name="welcome_banner_sub_title_3">ਡਾਟੇ ਨੂੰ ਗੁਆਉਣ ਦਾ ਕੋਈ ਤਣਾਅ ਨਹੀਂ। ਆਪਣੇ ਸਾਰੇ ਲੇਖਾ ਨੂੰ ਸਦਾ ਲਈ, ਸੁਰੱਖਿਅਤ ਅਤੇ ਸੰਭਾਲ ਕੇ ਰੱਖੋ</string>
+    <string name="welcome_banner_sub_title_v2_3">ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਦੇ ਅਪਡੇਟ ਗਾਹਕਾਂ ਨੂੰ ਭੇਜੋ ਅਤੇ ਪਾਰਦਰਸ਼ੀ ਅਤੇ ਖੁਸ਼ ਮੇਲ ਕਾਇਮ ਰੱਖੋ।</string>
+    <string name="welcome_banner_title_4">ਸਮੇਂ ਸਿਰ ਬਕਾਇਆ ਇਕੱਠਾ ਕਰੋ</string>
+    <string name="welcome_banner_sub_title_4">ਬਿਨਾਂ ਕਿਸੇ ਜਲਦਬਾਜ਼ੀ ਦੇ ਅਤੇ ਬਿਨਾਂ ਘਰ-ਘਰ ਜਾ ਕੇ ਸਮੇਂ ਸਿਰ ਬਕਾਇਆ ਇਕੱਤਰ ਕਰੋ</string>
+    <string name="welcome_banner_sub_title_v2_4">ਅਨੇਕ ਯੰਤਰਾਂ ਉੱਤੇ ਚਲਾਓ, ਐਪ ਲਾਕ ਸੈੱਟ ਕਰੋ। ਡਾਟਾ ਗੁਆਚਣ ਦੇ ਡਰ ਤੋਂ ਬਿਨਾਂ ਬੈਕਅਪ ਡਾਉਨਲੋਡ ਕਰੋ</string>
+    <string name="record_credit_new_customer">ਗਾਹਕ ਕ੍ਰੈਡਿਟ ਲੈਣ-ਦੇਣ ਨੂੰ ਰਿਕਾਰਡ ਕਰੋ. ਇੱਕ ਨਵਾਂ ਗਾਹਕ ਜੋੜ ਕੇ ਅਰੰਭ ਕਰੋ.</string>
+    <string name="otp_will_be_sent">ਇੱਕ OTP ਉਪਭੋਗਤਾ ਦੀ ਤਸਦੀਕ ਕਰਨ ਲਈ ਦੱਸੇ ਗਏ ਮੋਬਾਈਲ ਨੰਬਰ ਤੇ ਭੇਜਿਆ ਜਾਵੇਗਾ</string>
+    <string name="auto_read_mobile_error">ਅਵੈਧ ਮੋਬਾਈਲ ਨੰਬਰ. ਕਿਰਪਾ ਕਰਕੇ ਸਹੀ ਨੰਬਰ ਦਰਜ ਕਰੋ.</string>
+    <string name="share_with_family">ਆਪਣੇ ਦੋਸਤਾਂ ਅਤੇ ਪਰਿਵਾਰ ਨਾਲ ਸਾਂਝਾ ਕਰੋ!</string>
+    <string name="win_referrral_amount">ਹਰੇਕ ਵੈਧ ਰੈਫਰਲ ਤੇ ₹61 ਤੱਕ ਜਿੱਤੋ.</string>
+    <string name="share_earn">ਸਾਂਝਾ ਕਰੋ ਅਤੇ ਕਮਾਓ</string>
+    <string name="share_feedback">ਫੀਡਬੈਕ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="how_satisfied_are_you_with_okcredit">OkCredit ਤੋਂ ਤੁਸੀਂ ਕਿੰਨੇ ਸੰਤੁਸ਼ਟ ਹੋ?</string>
+    <string name="add_comment">ਟਿੱਪਣੀ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="rate_us_playstore">ਪਲੇ ਸਟੋਰ \'ਤੇ 5 ਸਟਾਰ ਰੇਟ ਕਰੋ</string>
+    <string name="hated_it">ਬਿਲਕੁਲ ਪਸੰਦ ਨਹੀਂ ਆਇਆ!</string>
+    <string name="did_not_like_it">ਪਸੰਦ ਨਹੀਂ ਆਇਆ!</string>
+    <string name="loved_it">ਬਹੁਤ ਪਸੰਦ ਆਇਆ!</string>
+    <string name="date">Date</string>
+    <string name="liked_it">ਇਸ ਨੂੰ ਪਸੰਦ ਕੀਤਾ!</string>
+    <string name="enjoyedit">ਇਸ ਦਾ ਅਨੰਦ ਲਿਆ!</string>
+    <string name="add_business_photo_and_card">ਵਪਾਰਕ ਖਾਤੇ ਵਿੱਚ ਫੋਟੋ ਜੋੜੋ!</string>
+    <string name="add_now">Add now</string>
+    <string name="keep_your_account_safe">Keep your account safe!</string>
+    <string name="setup_app_lock">Set up app lock</string>
+    <string name="add_address_for_business">Add address for business cards!</string>
+    <string name="link_your_payment_method">ਆਪਣਾ ਖਾਤਾ OkCredit ਨਾਲ ਲਿੰਕ ਕਰੋ ਅਤੇ ਬਿਨਾਂ ਕਿਸੇ ਖਰਚੇ ਤੋਂ ਸਿੱਧੇ ਹੀ ਆਪਣੇ ਖਾਤੇ ਵਿੱਚ ਪੈਸੇ ਪਾਓ।</string>
+    <string name="add_your_paytm_wallet">ਆਪਣਾ Paytm ਵਾਲਿਟ ਐਡ ਕਰੋ</string>
+    <string name="add_bank_account">ਬੈਂਕ ਖਾਤਾ ਅਪਡੇਟ ਕਰੋ</string>
+    <string name="upi_holder_name">UPI ਧਾਰਕ ਦਾ ਨਾਮ</string>
+    <string name="common_ledger_text_customer">ਇਹ ਤੁਹਾਡੇ ਗ੍ਰਾਹਕ ਨਾਲ ਸਾਂਝਾ ਖਾਤਾ ਹੈ। ਤੁਹਾਡਾ ਗ੍ਰਾਹਕ ਵੀ OkCredit ਵਰਤ ਰਿਹਾ ਹੈ ਅਤੇ ਉਹ ਇਸ ਖਾਤੇ ਦਾ ਲੈਣ-ਦੇਣ ਦੇਖ, ਜੋੜ ਅਤੇ ਹਟਾ ਸਕਦਾ ਹੈ।</string>
+    <string name="import_contacts">ਸੰਪਰਕ ਤੋਂ ਚੁਣੋ</string>
+    <string name="verifying">ਜਾਂਚ ਰਿਹਾ…</string>
+    <string name="added_by_v2">ਦੁਆਰਾ ਜੋੜਿਆ ਗਿਆ <![CDATA[<b>%1$s</b>]]></string>
+    <string name="deleted_by_v2">ਦੁਆਰਾ ਹਟਾਇਆ ਗਿਆ<![CDATA[<b>%1$s</b>]]></string>
+    <string name="security_update">ਸਿਕਿਉਰਿਟੀ ਅੱਪਡੇਟ</string>
+    <string name="now_unlock_okcredit">ਹੁਣ ਆਪਣੇ ਮੌਜੂਦਾ ਫੋਨ ਲੌਕ ਨਾਲ OkCredit ਨੂੰ ਅਨਲੌਕ ਕਰੋ</string>
+    <string name="enable_security">ਸਿਕਿਉਰਿਟੀ ਨੂੰ ਸਮਰੱਥ ਬਣਾਓ</string>
+    <string name="skip_security">ਸਿਕਿਉਰਿਟੀ ਨੂੰ ਸਕਿੱਪ ਕਰੋ</string>
+    <string name="secure_app">ਆਪਣੀ ਐਪ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ</string>
+    <string name="use_existing_screen_lock">OkCredit ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਆਪਣੇ ਮੌਜੂਦਾ ਸਕਰੀਨ ਲੌਕ ਦੀ ਵਰਤੋਂ ਕਰੋ</string>
+    <string name="lock_okcredit">OkCredit ਨੂੰ ਲੌਕ ਕਰੋ</string>
+    <string name="unlock_okcredit">OkCredit ਨੂੰ ਅਨਲੌਕ ਕਰੋ</string>
+    <string name="confirm_screen_lock">ਆਪਣੇ ਸਕਰੀਨ ਲੌਕ ਪਾਸਵਰਡ, ਪਿੰਨ ਜਾਂ ਪੈਟਰਨ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="too_may_wrong_attempts">ਬਹੁਤ ਸਾਰੇ ਯਤਨ। ਕੁਝ ਦੇਰ ਬਾਅਦ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="raise_concern">ਮੁੱਦੇ ਉਠਾਓ</string>
+    <string name="know_more_text_2"><![CDATA[<b>Credit</b>]]> ਜਾਂ <![CDATA[<b>Payment</b>]]> ਨੂੰ ਡਿਲੀਟ ਕਰ ਸਕਦਾ ਹੈ।</string>
+    <string name="know_more_text_1"><![CDATA[<b>Credit</b>]]> ਜਾਂ<![CDATA[<b>Payment</b>]]> ਨੂੰ ਸ਼ਾਮਲ ਕਰ ਸਕਦਾ ਹੈ।</string>
+    <string name="cannot_delete_customer_transaction"><![CDATA[ਤੁਸੀਂ ਗਾਹਕ ਰਾਹੀਂ ਜੋੜੀ ਗਈ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਨੂੰ ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ। <u><font color=\'#0076f8\'>ਹੋਰ ਜਾਣੋ</font></u>]]></string>
+    <string name="single_list_cannot_delete_customer_transaction"><![CDATA[ਤੁਸੀਂ ਸੰਪਰਕ ਦੁਆਰਾ ਜੋੜੀ ਗਈ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਨੂੰ ਡਿਲੀਟ ਨਹੀਂ ਕਰ ਸਕਦੇ ਹੋ। <u><font color=\'#0076f8\'>ਹੋਰ ਜਾਣੋ</font></u>]]></string>
+    <string name="cannot_delete_supplier_transaction"><![CDATA[ਤੁਸੀਂ ਸਪਲਾਇਰ ਰਾਹੀਂ ਜੋੜੀ ਗਈ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਨੂੰ ਮਿਟਾ ਨਹੀਂ ਸਕਦੇ। <u><font color=\'#0076f8\'>ਹੋਰ ਜਾਣੋ</font></u>]]></string>
+    <string name="why_common_khata">ਸਾਂਝਾ ਖਾਤਾ ਹੀ ਕਿਉਂ?</string>
+    <string name="common_khata_explaination">ਦੋਵੇਂ OkCredit ਐਪ ਦੀ ਵਰਤੋਂ ਕਰ ਰਹੇ ਹਨ। ਇਸ ਲਈ, ਇੱਕੋਂ ਖਾਤਾ ਵਰਤਣਾ ਸਮਝਦਾਰੀ ਹੈ।</string>
+    <string name="feedback_submitted">ਫੀਡਬੈਕ ਸਬਮਿਟ ਕੀਤੀ ਗਈ</string>
+    <string name="common_ledger_text_customer_know_more"><![CDATA[ਗਾਹਕ ਨਾਲ ਸਾਂਝਾ ਖਾਤਾ। <u><font color=\'#0076f8\'>ਹੋਰ ਜਾਣੋ</font></u>]]></string>
+    <string name="single_list_common_ledger_text_contact_know_more"><![CDATA[ਸੰਪਰਕ ਦੇ ਨਾਲ ਆਮ ਖਾਤਾ। <u><font color=\'#0076f8\'>ਹੋਰ ਜਾਣੋ</font></u>]]></string>
+    <string name="common_ledger_text_supplier_know_more"><![CDATA[ਸਪਲਾਇਰ ਨਾਲ ਸਾਂਝਾ ਖਾਤਾ। <u><font color=\'#0076f8\'>ਹੋਰ ਜਾਣੋ</font></u>]]></string>
+    <string name="transaction_id">ਟ੍ਰਾਂਜੈਕਸ਼ਨ ID</string>
+    <string name="select_reminder_date">ਰੀਮਾਈਂਡਰ ਦੀ ਤਰੀਕ ਚੁਣੋ</string>
+    <string name="balance_advance">ਬਕਾਇਆ ਪੇਸ਼ਗੀ</string>
+    <string name="customer_balance_advance">ਬਕਾਇਆ ਪੇਸ਼ਗੀ</string>
+    <string name="balance_due">ਬਕਾਇਆ</string>
+    <string name="customer_balance_due">ਬਕਾਇਆ</string>
+    <string name="request_payment">ਬੇਨਤੀ ਭੁਗਤਾਨ</string>
+    <string name="change_reminder_date">ਰੀਮਾਈਂਡਰ ਦੀ ਤਰੀਕ</string>
+    <string name="due_info_sms_sent">SMS ਭੁਗਤਾਨ ਦੀ ਬੇਨਤੀ ਭੇਜੀ ਗਈ ਹੈ।</string>
+    <string name="due_Date">ਅਦਾਇਗੀ ਤਾਰੀਖ</string>
+    <string name="automatic_sms">ਆਟੋਮੈਟਿਕ SMS ਭੇਜਿਆ ਜਾਏਗਾ।</string>
+    <string name="upcoming_due">ਕਲੈਕਸ਼ਨ ਦੀ ਦੇਣਦਾਰੀ</string>
+    <string name="latest">ਸਮਾਂ</string>
+    <string name="due_crossed">ਮੁਅੱਤਲ ਕਲੈਕਸ਼ਨ</string>
+    <string name="due_today">ਅੱਜ ਇਕੱਤਰ ਕਰੋ</string>
+    <string name="pending_collection">ਭੁਗਤਾਨ ਬਾਕੀ %1$s</string>
+    <string name="collect_on">%1$s ਨੂੰ ਇਕੱਤਰ ਕਰੋ</string>
+    <string name="clear">ਸਾਫ</string>
+    <string name="apply">ਲਾਗੂ ਕਰੋ</string>
+    <string name="set_due_date">ਕਲੈਕਸ਼ਨ ਮਿਤੀ</string>
+    <string name="filter">ਫਿਲਟਰ</string>
+    <string name="filters_active">ਫਿਲਟਰ ਐਕਟਿਵ</string>
+    <string name="clear_filters">ਫਿਲਟਰ ਸਾਫ਼ ਕਰੋ</string>
+    <string name="send_sms_request">SMS ਬੇਨਤੀ ਭੇਜੋ</string>
+    <string name="send_whatsapp_request">WhatsApp ਬੇਨਤੀ ਭੇਜੋ</string>
+    <string name="call_customer">ਗਾਹਕ ਨੂੰ ਕਾਲ ਕਰੋ</string>
+    <string name="day_ago">ਦਿਨ ਪਹਿਲਾਂ</string>
+    <string name="days_ago">ਦਿਨ ਪਹਿਲਾਂ</string>
+    <string name="month_ago">ਮਹੀਨਾ ਪਹਿਲਾਂ</string>
+    <string name="months_Ago">ਮਹੀਨੋ ਪਹਿਲਾਂ</string>
+    <string name="add_phone_number">ਫੋਨ ਨੰਬਰ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="your_name">ਤੁਹਾਡਾ ਨਾਮ</string>
+    <string name="enter_your_name">ਆਪਣਾ ਨਾਮ ਦਰਜ਼ ਕਰੋ</string>
+    <string name="name_will_be_displayed">ਤੁਹਾਡੇ ਗ੍ਰਾਹਕ ਨੂੰ ਭੇਜੀ ਗਈ ਹਰੇਕ ਟ੍ਰਾਂਜੈਕਸ਼ਨ SMS \'ਤੇ ਤੁਹਾਡੇ ਨਾਮ ਨੂੰ ਪ੍ਰਦਰਸ਼ਿਤ ਕੀਤਾ ਜਾਏਗਾ</string>
+    <string name="collection">ਸੰਗ੍ਰਹਿ</string>
+    <string name="scan_and_pay_via_qr">ਗ੍ਰਾਹਕ ਨੂੰ ਸਕੈਨ ਕਰਕੇ QR ਰਾਹੀਂ ਭੁਗਤਾਨ ਕਰਨ ਲਈ ਕਹੋ</string>
+    <string name="get_money_to_your_bank">(ਸਿੱਧੇ ਆਪਣੇ ਬੈਂਕ ਵਿੱਚ ਪੈਸੇ ਪ੍ਰਾਪਤ ਕਰੋ)</string>
+    <string name="online_history">ਆਨਲਾਈਨ ਇਤਿਹਾਸ</string>
+    <string name="cash_history">ਨਕਦ ਇਤਿਹਾਸ</string>
+    <string name="offline_payment">ਓਫ਼ਲੀਨੇ ਭੁਗਤਾਨ</string>
+    <string name="no_collection_history">ਕੋਈ ਸੰਗ੍ਰਿਹ ਇਤਿਹਾਸ ਨਹੀਂ</string>
+    <string name="delete_account">ਖਾਤਾ ਮਿਟਾਓ</string>
+    <string name="generating_qr_code">ਤੁਹਾਡਾ QR ਕੋਡ ਬਣ ਰਿਹਾ ਹੈ</string>
+    <string name="note_hint_credit">ਇਹ ਕਿਸ ਵਾਸਤੇ ਹੈ? (ਵਿਕਲਪਿਕ)</string>
+    <string name="note_hint_payment">ਵੇਰਵਾ ਸ਼ਾਮਲ ਕਰੋ (ਵਿਕਲਪਿਕ)</string>
+    <string name="total_credit">ਕੁਲ ਉਧਾਰ</string>
+    <string name="no_results_found">ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ ਮਿਲਿਆ</string>
+    <string name="set_due_date_for_faster_payment_collection">ਤੇਜ਼ੀ ਨਾਲ ਭੁਗਤਾਨ ਸੰਗ੍ਰਹਿ ਲਈ ਨਿਰਧਾਰਤ ਮਿਤੀ ਨਿਰਧਾਰਤ ਕਰੋ.</string>
+    <string name="clear_filter">ਫਿਲਟਰ ਸਾਫ਼ ਕਰੋ</string>
+    <string name="sort_by">ਦੇ ਨਾਲ ਕ੍ਰਮਬੱਧ</string>
+    <string name="show_only">ਕਲੈਕਸ਼ਨ ਮਿਤੀ</string>
+    <string name="reminder_date">ਰੀਮਾਈਂਡਰ ਦੀ ਤਰੀਕ</string>
+    <string name="new_filter_options">ਨਵਾਂ ਫਿਲਟਰ ਵਿਕਲਪ ਵੇਖੋ</string>
+    <string name="take">ਲਓ</string>
+    <string name="give">ਦਿਓ</string>
+    <string name="credit">ਉਧਾਰ ਦਿੱਤਾ</string>
+    <string name="payment">ਜਮ੍ਹਾਂ ਕੀਤਾ</string>
+    <string name="how_common_ledger_works">ਕਾਮਨ ਲੇਜਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ</string>
+    <string name="can_the_other_user_delete_my_transactions">ਕੀ ਦੂਸਰਾ ਉਪਭੋਗਤਾ ਮੇਰੇ ਲੈਣ-ਦੇਣ ਨੂੰ ਮਿਟਾ ਸਕਦਾ ਹੈ?</string>
+    <string name="no_only_the_person">ਨਹੀਂ, ਸਿਰਫ ਉਹ ਵਿਅਕਤੀ ਜਿਸ ਨੇ ਸੌਦੇ ਨੂੰ ਜੋੜਿਆ ਸੀ / ਲੈਣ-ਦੇਣ ਨੂੰ ਮਿਟਾਉਣ / ਸੋਧਣ ਦੀ ਆਗਿਆ ਹੈ.</string>
+    <string name="submit_text">ਜਮ੍ਹਾਂ ਕਰੋ</string>
+    <string name="payment_reminder_text">%2$s ਤੋਂ ₹%1$s ਭੁਗਤਾਨ ਬਕਾਇਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਜਲਦੀ ਤੋਂ ਜਲਦੀ ਭੁਗਤਾਨ ਕਰੋ। ਵੇਰਵੇ ਦੇਖੋ %3$s</string>
+    <string name="payment_reminder_text_without_account_url">%2$s ਨੂੰ ₹%1$s ਦਾ ਭੁਗਤਾਨ ਬਾਕੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਛੇਤੀ ਤੋਂ ਛੇਤੀ ਭੁਗਤਾਨ ਕਰੋ।.</string>
+    <string name="write_your_feedback_here">ਆਪਣੀ ਪੁਸ਼ਟੀ ਸੂਚਨਾ ਇੱਥੇ ਲਿਖੋ</string>
+    <string name="inapp_paytm_description">0% ਟ੍ਰਾਸੈਕਸ਼ਨ ਫੀਸ ਦੇ ਨਾਲ ਬਕਾਇਆ ਆਨਲਾਈਨ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ Paytm ਵਾਲੈਟ ਜੋੜੋ।</string>
+    <string name="inapp_upi_description">0% ਟ੍ਰਾਸੈਕਸ਼ਨ ਫੀਸ ਦੇ ਨਾਲ ਬਕਾਇਆ ਆਨਲਾਈਨ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ UPI ID ਜੋੜੋ।</string>
+    <string name="inapp_bank_description">0% ਟ੍ਰਾਸੈਕਸ਼ਨ ਫੀਸ ਦੇ ਨਾਲ ਬਕਾਇਆ ਆਨਲਾਈਨ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ Airtel / Paytm ਬੈਂਕ ਜੋੜੋ।</string>
+    <string name="earn_reward_of">₹100 ਤੱਕ ਦੇ ਇਨਾਮ ਕਮਾਓ</string>
+    <string name="request_or_their_bank_upi_details_to_make_online_payment">ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰਨ ਲਈ %s ਨੂੰ ਉਹਨਾਂ ਦੇ ਬੈਂਕ/UPI ID ਲਈ ਬੇਨਤੀ ਕਰੋ</string>
+    <string name="add_payment_method_request">ਬੇਨਤੀ ਕਰੋ</string>
+    <string name="add_upi_id">UPI ID ਜੋੜੋ</string>
+    <string name="add_wallet">ਵਾਲੈਟ ਜੋੜੋ</string>
+    <string name="add_another">ਹੋਰ ਜੋੜੋ</string>
+    <string name="setup_collection_to_get_money">ਆਪਣੇ ਬੈਂਕ ਖਾਤੇ ਵਿੱਚ ਪੈਸੇ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਸ੍ਰਗਹਿ ਕਾਇਮ ਕਰੋ</string>
+    <string name="text_new">ਨਵਾਂ</string>
+    <string name="hurray">ਆਹਾ!</string>
+    <string name="earned_for_making_online_payment">ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰਨ ਲਈ ਕਮਾਈ ਗਈ</string>
+    <string name="enable_for_referring_merchant">OkCredit \'ਤੇ ਭੁਗਤਾਨ ਸੈਟ ਅਪ ਕਰਨ ਲਈ \nਵਪਾਰੀਆਂ ਨੂੰ ਸੱਦਾ ਦੇ ਕੇ ਕਮਾਇਆ ਗਿਆ</string>
+    <string name="earned_for_opting">%1$s ਚੁਣਨ ਲਈ ਕਮਾਏ</string>
+    <string name="paid_on">%1$s ਨੂੰ ਇਨਾਮ ਦਿੱਤਾ ਗਿਆ</string>
+    <string name="scratched_on">%1$s ਤੇ ਸਕਰੈਚ ਕੀਤਾ</string>
+    <string name="online_collection">ਆਨਲਾਈਨ ਸੰਗ੍ਰਹਿ</string>
+    <string name="collection_to_earn_reward">₹100 ਤੱਕ ਰਿਵਾਰਡ ਕਮਾਓਣ ਲਈ ਕੁਲੈਕਸ਼ਨ ਸੈੱਟ-ਅੱਪ ਕਰੋ</string>
+    <string name="whatsapp_mini_statement">Whatsapp ਤੇ ਮਿੰਨੀ ਸਟੇਟਮੈਂਟ</string>
+    <string name="whatsapp_monthly_statement">Whatsapp te ਮਹੀਨਾਵਾਰੀ ਸਟੇਟਮੈਂਟ</string>
+    <string name="transaction_sms_info">ਤੁਸੀਂ ਜੋ ਵੀ ਜੋੜੋਗੇ, ਤੁਹਾਡਾ ਗ੍ਰਾਹਕ ਹਰੇਕ ਅਦਾਇਗੀ ਦਾ SMS ਪ੍ਰਾਪਤ ਕਰੇਗਾ।</string>
+    <string name="online_collections">ਆਨਲਾਈਨ ਸੰਗ੍ਰਹਿ</string>
+    <string name="refferal">ਹਵਾਲਾ</string>
+    <string name="share_and_earn">ਸਾਂਝਾ ਕਰੋ ਅਤੇ ਕਮਾਓ</string>
+    <string name="crossed" comment="crossed">ਕਰੋਸਡ</string>
+    <string name="cannot_select_past_date">ਬੀਤੀ ਤਾਰੀਕ ਦੀ ਚੋਣ ਨਹੀਂ ਕਰ ਸਕਦਾ</string>
+    <string name="cannot_select_current_date">ਮੌਜੂਦਾ ਮਿਤੀ ਦੀ ਚੋਣ ਨਹੀਂ ਹੋਈ</string>
+    <string name="give_credit_of_100_rs">\“100 ਰੁ. ਕ੍ਰੈਡਿਟ\”</string>
+    <string name="to_accept_payment_say">ਭੁਗਤਾਨ ਸਵੀਕਾਰ ਕਰਨ ਲਈ‚ ਆਖੋ</string>
+    <string name="accept_payment_of_100_rs">\“100 ਰੁ. ਭੁਗਤਾਨ\”</string>
+    <string name="add_transaction_with_voice">ਆਵਾਜ਼ ਨਾਲ ਲੈਣ-ਦੇਣ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="to_give_credit_say">ਕਰੈਡਿਟ ਦੇਣ ਲਈ‚ ਆਖੋ</string>
+    <string name="sorry_the_process_was_interrupted_click_below_to_start_again">ਅਫਸੋਸ‚ ਪੑਕਿਰਿਆ ਵਿਚ ਰੁਕਾਵਟ ਪੈਦਾ ਹੋਈ। ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਹੇਠਾਂ ਕਲਿੱਕ ਕਰੋ।</string>
+    <string name="listening_mic">ਸੁਣਿਆ ਜਾ ਰਿਹਾ ਹੈ</string>
+    <string name="no_match_found">ਕੋਈ ਮੇਲ ਨਹੀਂ ਲੱਭਾ</string>
+    <string name="hello">ਹੈਲੋ!</string>
+    <string name="added_on">ਜੋੜਿਆ ਜਾ ਰਿਹਾ ਹੈ</string>
+    <string name="added_on_new"><![CDATA[<b>%1$s</b> ਨੂੰ ਜੋੜਿਆ]]></string>
+    <string name="step">ਕਦਮ</string>
+    <string name="steps_to_add_customer">ਇਕ ਗਾਹਕ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨ ਲਈ ਕਦਮ</string>
+    <string name="how_to_add_customer_step1">\"ਗਾਹਕ ਜੋੜੋ\" ਬਟਨ ਦਬਾਓ</string>
+    <string name="how_to_add_customer_step2">ਗਾਹਕ ਦਾ ਨਾਮ ਜੋੜੋ</string>
+    <string name="how_to_add_customer_step3">ਗਾਹਕ ਦਾ ਮੋਬਾਇਲ ਨੰਬਰ ਜੋੜੋ</string>
+    <string name="we_recommend_payment_address">ਅਸੀਂ ਤੁਹਾਡੇ ਭੁਗਤਾਨ ਪਤੇ ਦੀ ਸਿਫਾਰਸ਼ ਤੁਹਾਡੇ ਪੰਜੀਕਰਨ ਵੇਰਵਿਆਂ ਦੇ ਆਧਾਰ ’ਤੇ ਕਰਦੇ ਹਾਂ.</string>
+    <string name="contact_us"><![CDATA[<u>ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ</u>]]></string>
+    <string name="error_msg_for_paymetn_refund">\"ਤਰੁੱਟੀ: ਭੁਗਤਾਨ ਪੂਰਾ ਨਹੀਂ ਕਰ ਸਕਦੀ। ਰਾਸ਼ੀ 5-7 ਕੰਮਕਾਜੀ ਦਿਨਾਂ ਵਿਚ ਤੁਹਾਡੇ ਗਾਹਕ ਨੂੰ ਮੋੜ ਦਿੱਤੀ ਜਾਵੇਗੀ। \".</string>
+    <string name="error_msg_for_payment_failed">\"ਤਰੁੱਟੀ: ਭੁਗਤਾਨ ਪੂਰਾ ਨਹੀਂ ਕਰ ਸਕਦੀ। ਕਿਰਪਾ ਕਰ ਕੇ ਇਕ ਵੈਧ ਭੁਗਤਾਨ ਪਤਾ ਪੑਦਾਨ ਕਰੋ। \"</string>
+    <string name="payment_refunded">ਭੁਗਤਾਨ ਵਾਪਸ ਕਰ ਦਿੱਤਾ ਗਿਆ</string>
+    <string name="how_does_this_work">ਇਹ ਕਿਸ ਤਰਾਂ ਕੰਮ ਕਰਦਾ ਹੈ?</string>
+    <string name="share_okcredit">OkCredit ਸ਼ੇਅਰ ਕਰੋ</string>
+    <string name="referral_step_1_title_V1">@string/share_okcredit</string>
+    <string name="referral_step_1_description_V1">ਇਕ ਉਦਯੋਗਪਤੀ ਨਾਲ OkCredit ਐਪ ਸਾਂਝੀ ਕਰੋ</string>
+    <string name="referral_step_2_title_V1">ਡਾਊਨਲੋਡ ਕੀਤਾ ਹੋਇਆ ਹਾਸਲ ਕਰੋ</string>
+    <string name="referral_step_2_description_V1">ਉਸ ਉਦਯੋਗਪਤੀ ਨੂੰ ਐਪ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਆਖੋ</string>
+    <string name="referral_step_3_title_V1">ਰਿਵਾਰਡ ਕਮਾਓ</string>
+    <string name="referral_step_3_description_V1" comment="example: Get ₹50 on every successful install upto ₹250"> %2$s ਹਰੇਕ ਸਫਲਤਾਪੂਰਵਕ ਸਥਾਪਨਾ ’ਤੇ %1$s ਹਾਸਲ ਕਰੋ</string>
+    <string name="referral_step_1_title_V2">OkCredit ਡਾਉਨਲੋਡ ਅਤੇ ਸ਼ੇਅਰ ਕਰੋ</string>
+    <string name="referral_step_1_description_V2">ਦੁਕਾਨਦਾਰ ਨਾਲ ਲਿੰਕ ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਐਪ \'ਤੇ ਰਜਿਸਟਰ ਕਰਾਓ</string>
+    <string name="referral_step_2_title_V2">ਐਪ ਦੀ ਵਰਤੋਂ ਕਰੋ</string>
+    <string name="referral_step_2_description_V2">ਤੁਸੀਂ ਅਤੇ ਤੁਹਾਡਾ ਦੋਸਤ ਦੋਵੇਂ 50/- ਰੁ. ਕਮਾ ਸਕਦੇ ਹੋ ਜੇ ਉਹ ਰਜਿਸਟਰ ਹੁੰਦਾ ਹੈ ਅਤੇ ਐਪ ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ</string>
+    <string name="referral_step_3_title_V2">ਪੈਸੇ ਕਮਾਓ</string>
+    <string name="referral_step_3_description_V2">ਹੋਰ ਦੁਕਾਨਦਾਰਾਂ ਨੂੰ ਸੱਦਾ ਦੇ ਕੇ ਤੁਸੀਂ Rs. 250/- ਕਮਾ ਸਕਦੇ ਹੋ</string>
+    <string name="share_app" maxLength="20">ਐਪ ਨੂੰ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="referral_share_content" comment="Download OKCredit from this link and help me earn Rs.30. https://this.is.for.link">ਇਸ ਲਿੰਕ ਤੋਂ OkCredit ਡਾਉਨਲੋਡ ਕਰੋ ਅਤੇ Rs%1$s. %2$s ਤੱਕ ਕਮਾਓ</string>
+    <string name="help_detail">ਸਹਾਇਤਾ ਵੇਰਵੇ</string>
+    <string name="thanks_for_the_feedback">ਪੑਤੀਕਿੑਆ ਦੇ ਲਈ ਧੰਨਵਾਦ!</string>
+    <string name="your_pin_will_be_delivered_bold">\"ਤੁਹਾਡਾ 6 ਅੰਕਾਂ ਵਾਲਾ ਪਿੰਨ ਛੇਤੀ ਹੀ <![CDATA[<b>%1$s</b>]]> ’ਤੇ ਡਿਲਿਵਰ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ। \"</string>
+    <string name="register_err_incorrect_pin">ਗਲਤ ਪਿੰਨ</string>
+    <string name="didn_t_get_pin">ਪਿੰਨ ਹਾਸਲ ਨਹੀਂ ਕੀਤਾ?</string>
+    <string name="pin_will_be_sent">\"ਤੁਹਾਡਾ 6 ਅੰਕਾਂ ਵਾਲਾ ਪਿੰਨ ਦਾਖਲ ਕੀਤੇ ਗਏ ਮੋਬਾਈਲ ਨੰਬਰ ’ਤੇ ਭੇਜ ਦਿੱਤਾ ਜਾਵੇਗਾ। \"</string>
+    <string name="also_have_business">ਜੇਕਰ ਤੁਹਾਡਾ ਵੀ ਇਕ ਵਪਾਰ ਹੈ‚ ਤਾਂ ਹੁਣੇ OkCredit ਇੰਸਟਾਲ ਕਰੋ <![CDATA[%1$s]]></string>
+    <string name="was_the_content_helpful" comment="Help details screen bottom">ਕੀ ਇਹ ਸਾਮੱਗਰੀ ਸਹਾਇਤਾ ਕਰਨ ਵਾਲੀ ਸੀ?</string>
+    <string name="watch_video_for_more_details">ਹੋਰ ਵੇਰਵਿਆਂ ਲਈ ਵੀਡੀਓ ਦੇਖੋ:</string>
+    <string name="payment_incomplete">ਭੁਗਤਾਨ ਅਧੂਰਾ</string>
+    <string name="credit_incomplete">ਉਧਾਰ ਅਧੂਰਾ ਹੈ</string>
+    <string name="contact_us_v2">ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ</string>
+    <string name="to_collect_payment_online">ਆਨਲਾਈਨ ਰਕਮ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ %1$s</string>
+    <string name="back">ਵਾਪਸ</string>
+    <string name="supplier_subtext_1">ਹੁਣ ਤੁਸੀਂ OkCredit ’ਤੇ ਆਪਣੇ ਸਪਲਾਇਰ ਦੇ ਵਹੀ ਖਾਤੇ ਨੂੰ ਵੀ ਬਰਕਰਾਰ ਰੱਖ ਸਕਦੇ ਹੋ।</string>
+    <string name="supplier_subtext_2">ਤੁਹਾਡੇ ਕੋਲ ਮੌਜੂਦਾ ਸਪਲਾਇਰ ਹਨ। ਹੁਣ OkCredit ’ਤੇ ਆਪਣੇ ਸਪਲਾਇਰਾਂ ਦੀ ਐਂਟਰੀ 
+ਲਈ ਸੂਚਨਾ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="you_can_add_payment">ਤੁਸੀਂ ਉਧਾਰ/ਭੁਗਤਾਨ ਐਂਟਰੀ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ.</string>
+    <string name="supplier_education_2">"ਤੁਹਾਨੂੰ ਗ੍ਰਾਹਕ ਵਜੋਂ ਸ਼ਾਮਿਲ ਕੀਤਾ ਹੈ। ਹੁਣ ਤੁਸੀਂ OkCredit ਐਪ ’ਤੇ ਸਪਲਾਇਰਾਂ ਦੀ ਐਂਟਰੀ ਨੂੰ 
+ਚੈੱਕ ਕਰ ਸਕਦੇ ਹੋ। \n \n \n\n\""</string>
+    <string name="money_transfer">ਮਨੀ ਟਾਂੑਸਫਰ</string>
+    <string name="customers_ko_offers">ਗਾਹਕਾਂ ਨੂੰ ਪੇਸ਼ਕਸ਼ਾਂ ਭੇਜੋ!</string>
+    <string name="whatsapp_us">ਸਾਨੂੰ WhatsApp ਕਰੋ</string>
+    <string name="email_us">ਸਾਨੂ ਈਮੇਲ ਕਰੋ</string>
+    <string name="send_email">ਈਮੇਲ ਭੇਜੋ…</string>
+    <string name="please_provide_feedback">ਕਿਰਪਾ ਕਰ ਕੇ ਪੑਤੀਕਿੑਆ ਪੑਦਾਨ ਕਰੋ!</string>
+    <string name="now_send_payment_reminder">ਹੁਣ ਪੇਮੈਂਟ ਲਿੰਕ ਭੇਜੋ ਜਾਂ ਫਿਰ ਗਾਹਕ ਨੂੰ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਦੇ ਲਈ QR ਸਕੈਨ ਲਈ ਕਹੋ</string>
+    <string name="money_succesfully_transferred">ਤੁਹਾਡੇ ਖਾਤੇ ਵਿਚ ਪੈਸੇ ਦਾ ਤਬਾਦਲਾ ਸਫਲਤਾਪੂਰਵਕ ਹੋ ਗਿਆ ਹੈ</string>
+    <string name="total_online_collection">ਕੁੱਲ ਆਨਲਾਈਨ ਕੁਲੈਕਸ਼ਨ</string>
+    <string name="total_offline_collection">ਕੁੱਲ ਆਫਲਾਈਨ ਕੁਲੈਕਸ਼ਨ</string>
+    <string name="offline_slash_online_collection">ਆਨਲਾਈਨ/ਆਫਲਾਈਨ ਕੁਲੈਕਸ਼ਨ</string>
+    <string name="defaulters">ਡਿਫਾਲਟਰ</string>
+    <string name="customers_not_made_payment">ਇਹਨਾਂ ਗਾਹਕਾਂ ਨੇ ਆਸ ਕੀਤੇ ਜਾਂਦੇ ਕਰੈਡਿਟ ਸਾਈਕਲ ਦੇ ਅੰਦਰ ਕੋਈ ਭੁਗਤਾਨ ਨਹੀਂ ਕੀਤਾ ਹੈ</string>
+    <string name="last_seven_days">ਆਖਰੀ 7 ਦਿਨ</string>
+    <string name="last_thirty_days">ਆਖਰੀ 30 ਦਿਨ</string>
+    <string name="total_credit_given">ਦਿੱਤਾ ਗਿਆ ਕੁੱਲ ਕਰੈਡਿਟ</string>
+    <string name="home_delivery">ਘਰ ’ਤੇ ਡਿਲਿਵਰੀ</string>
+    <string name="tell_your_customers">ਆਪਣੇ ਗਾਹਕਾਂ ਨੂੰ ਦੱਸੋ</string>
+    <string name="earned_for_opting_survey_response">ਸਰਵੇ ਜਵਾਬ ਦੇ ਕੇ ਕਮਾਈ ਕਰੋ</string>
+    <string name="deny_to_add_transaction">ਲੈਣ-ਦੇਣ ਜਮਾ ਕਰਨ ਤੋਂ ਇਨਕਾਰ ਕਰ ਦਿਓ</string>
+    <string name="customer_permission">ਗਾਹਕ ਮਨਜ਼ੂਰੀ</string>
+    <string name="transaction_edit_permission">ਲੈਣ-ਦੇਣ ਜਮਾ ਕਰਨ ਲਈ ਮਨਜ਼ੂਰੀ %1$s ਵੱਲੋਂ ਅਸਮਰੱਥ ਬਣਾ ਦਿੱਤੀ ਗਈ ਹੈ</string>
+    <string name="link_pay">ਲਿੰਕ ਪੇ</string>
+    <string name="collect_any_payment_online">ਕੋਈ ਵੀ ਭੁਗਤਾਨ ਆਨਲਾਈਨ ਇਕੱਠਾ ਕਰੋ</string>
+    <string name="share_payment_link_to_connect">ਕਿਸੇ ਵੀ ਗਾਹਕ ਤੋਂ ਭੁਗਤਾਨ ਇਕੱਠਾ ਕਰਨ ਅਤੇ ਟਰੈਕ ਕਰਨ ਲਈ ਭੁਗਤਾਨ ਲਿੰਕ ਨੂੰ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="ask_customer_to_pay_online">ਲਿੰਕ/QR ਰਾਹੀਂ ਗ੍ਰਾਹਕ ਨੂੰ ਆਨਲਾਈਨ ਅਦਾਇਗੀ ਕਰਨ ਲਈ ਕਹੋ</string>
+    <string name="kyc_set_reminder_text">ਸੀਮਾ ਸਮਾਪਤ! ਕੱਲ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="online_collection_ratio">ਆਨਲਾਈਨ ਕੁਲੈਕਸ਼ਨ ਅਨੁਪਾਤ</string>
+    <string name="share_payment_link">ਲਿੰਕ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="no_txn_available">ਚੁਣੇ ਗਏ ਸਮੇਂ ਅੰਦਰ ਕੋਈ ਵੀ ਲੈਣ-ਦੇਣ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ</string>
+    <string name="pay_via_okcredit">OkCredit ਰਾਹੀਂ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="share_app_via">ਓਕੇਕਰੈਡਿਟ ਰਾਹੀਂ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="earn_more_rewards">ਹੋਰ ਇਨਾਮ ਕਮਾਓ</string>
+    <string name="add_transaction">ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="notify_this_person">ਇਸ ਵਿਅਕਤੀ ਨੂੰ ਸੂਚਿਤ ਕਰੋ</string>
+    <string name="numeric_1">1</string>
+    <string name="numeric_2">2</string>
+    <string name="numeric_3">3</string>
+    <string name="rewards_step_1_title">@string/add_customer</string>
+    <string name="rewards_step_1_subtitle">ਗਾਹਕ ਸ਼ਾਮਲ ਕਰੋ ਜਿਸਦਾ ਖਾਤਾ ਤੁਸੀਂ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ</string>
+    <string name="rewards_step_2_title">@string/add_transaction</string>
+    <string name="rewards_step_2_subtitle">ਉਸ ਗਾਹਕ ਦਾ ਕ੍ਰੈਡਿਟ ਜਾਂ ਭੁਗਤਾਨ ਰਿਕਾਰਡ ਕਰੋ ਅਤੇ ₹25 ਕਮਾਓ</string>
+    <string name="rewards_title">₹25 ਜਿੱਤੋ</string>
+    <string name="add_customer_rewards_title">@string/how_does_this_work</string>
+    <string name="add_customer_rewards_subtitle">₹25 ਕਮਾਉਣ ਲਈ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਵਾਲੇ ਗ੍ਰਾਹਕ ਨੂੰ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="add_transaction_rewards_subtitle">₹25 ਕਮਾਉਣ ਲਈ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="add_transaction_rewards_title">ਵਧੀਆ! ਹੁਣ ਜਿੱਤਣ ਲਈ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="edit_mobile">ਮੋਬਾਈਲ ਐਡਿਟ ਕਰੋ</string>
+    <string name="collect_due_from">%1$s ਤੋਂ ਕੈਲੰਡਰ ਬਕਾਇਆ ਹੈ</string>
+    <string name="to_quickly_add_customers_from_contacts">ਸੰਪਰਕਾਂ ਤੋਂ ਗਾਹਕਾਂ ਨੂੰ ਤੇਜ਼ੀ ਨਾਲ ਸ਼ਾਮਲ ਕਰਨ ਲਈ</string>
+    <string name="notify_later">ਅਗਲੇ %1$s ਘੰਟਿਆਂ ਬਾਅਦ ਸੂਚਿਤ ਕਰੋ</string>
+    <string name="total_earnings">ਕੁੱਲ ਕਮਾਈ</string>
+    <string name="merchant_notified">ਉਪਭੋਗਤਾ ਨੂੰ ਸੂਚਿਤ ਕੀਤਾ ਗਿਆ ਸੀ</string>
+    <string name="notify_merchant_error">ਉਪਭੋਗਤਾ ਨੂੰ ਸੂਚਿਤ ਨਹੀਂ ਕਰ ਸਕੇ। ਕਿਰਪਾ ਮੁੜ ਕੋਸ਼ਿਸ ਕਰੋ</string>
+    <string name="notify_merchant_success">ਉਪਭੋਗਤਾ ਨੂੰ ਸੂਚਿਤ ਕੀਤਾ ਗਿਆ ਹੈ</string>
+    <string name="rupee_placeholder">₹%1$s</string>
+    <string name="unclaimed_rewards">₹%1$s ਬਿਨਾ ਕਲੇਮ</string>
+    <string name="second_reward_transaction_title">ਬੱਲੇ! ₹ 25 ਜਿੱਤੋ</string>
+    <string name="second_reward_transaction_subtitle">ਇਨਾਮ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਇੱਕ ਹੋਰ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="pending_rewards">ਇਨਾਮ ਬਕਾਇਆ</string>
+    <string name="merchant_already_notified">24 ਘੰਟਿਆਂ ਬਾਅਦ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="close">ਬੰਦ ਕਰੋ</string>
+    <string name="transaction_disabled">ਲੈਣ-ਦੇਣ ਜਮਾ ਕਰਨ ਦੀ ਮਨਜ਼ੂਰੀ ਤੁਹਾਡੇ ਵੱਲੋਂ ਅਸਮਰੱਥ ਬਣਾ ਦਿੱਤੀ ਗਈ ਹੈ.</string>
+    <string name="common_ledger_transaction_restriction">%1$s ਵੱਲੋਂ ਪਾਬੰਦੀ ਕਾਰਨ ਤੁਸੀਂ ਇਸ ਸਪਲਾਇਰ ਨੂੰ ਡਿਲੀਟ ਕਰਨ ਤੋਂ ਅਸਮਰੱਥ ਹੋ</string>
+    <string name="block">ਬਲਾਕ ਕਰੋ</string>
+    <string name="unblock">ਅਨਬਲਾਕ ਕਰੋ</string>
+    <string name="block_customer">ਗਾਹਕ ਨੂੰ ਬਲਾਕ ਕਰੋ</string>
+    <string name="block_customer_description">ਕਿਰਪਾ ਕਰ ਕੇ ਇਸ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਤੁਸੀਂ ਉੱਪਰ ਦਿੱਤੇ ਗਾਹਕ ਨੂੰ ਬਲਾਕ ਕਰ ਰਹੇ ਹੋ। ਬਲਾਕ ਕੀਤੇ ਗਏ ਗਾਹਕ ਦੀ ਬਕਾਇਆ ਰਾਸ਼ੀ ਨੈੱਟ ਬੈਲੇਂਸ ਵਿਚ ਜਮਾ ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ।</string>
+    <string name="unblock_customer">ਗਾਹਕ ਨੂੰ ਅਨਬਲਾਕ ਕਰੋ</string>
+    <string name="unblock_customer_description">ਕਿਰਪਾ ਕਰ ਕੇ ਇਸ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਤੁਸੀਂ ਉੱਪਰ ਦਿੱਤੇ ਗਾਹਕ ਨੂੰ ਅਨਬਲਾਕ ਕਰ ਰਹੇ ਹੋ। ਅਨਬਲਾਕ ਕੀਤੇ ਗਏ ਗਾਹਕ ਦੀ ਬਕਾਇਆ ਰਾਸ਼ੀ ਨੈੱਟ ਬੈਲੇਂਸ ਵਿਚ ਜਮਾ ਕੀਤੀ ਜਾਵੇਗੀ।</string>
+    <string name="block_supplier">ਬਲਾਕ ਸਪਲਾਇਰ</string>
+    <string name="block_supplier_description">ਕਿਰਪਾ ਕਰ ਕੇ ਇਸ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਤੁਸੀਂ ਉੱਪਰ ਦਿੱਤੇ ਸਪਲਾਇਰ ਨੂੰ ਬਲਾਕ ਕਰ ਰਹੇ ਹੋ। ਬਲਾਕ ਕੀਤੇ ਗਏ ਸਪਲਾਇਰ ਦੀ ਬਕਾਇਆ ਰਾਸ਼ੀ ਨੈੱਟ ਬੈਲੇਂਸ ਵਿਚ ਜਮਾ ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ।</string>
+    <string name="unblock_supplier">ਅਨਬਲਾਕ ਸਪਲਾਇਰ</string>
+    <string name="unblock_supplier_description">ਕਿਰਪਾ ਕਰ ਕੇ ਇਸ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਤੁਸੀਂ ਉੱਪਰ ਦਿੱਤੇ ਸਪਲਾਇਰ ਨੂੰ ਅਨਬਲਾਕ ਕਰ ਰਹੇ ਹੋ। ਅਨਬਲਾਕ ਕੀਤੇ ਗਏ ਸਪਲਾਇਰ ਦੀ ਬਕਾਇਆ ਰਾਸ਼ੀ ਨੈੱਟ ਬੈਲੇਂਸ ਵਿਚ ਜਮਾ ਕੀਤੀ ਜਾਵੇਗੀ।</string>
+    <string name="blocked_by_customer">ਤੁਹਾਨੂੰ ਗਾਹਕ ਵੱਲੋਂ ਬਲਾਕ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ</string>
+    <string name="blocked_by_customer_description">ਬਲਾਕ ਕੀਤਾ ਹੋਇਆ ਗਾਹਕ ਲੈਣ-ਦੇਣ ਨੂੰ ਜਮਾ/ਐਡਿਟ ਨਹੀਂ ਕਰ ਸਕਦਾ ਅਤੇ ਬਕਾਇਆ ਰਾਸ਼ੀ ਤੁਹਾਡੇ ਨੈੱਟ ਬੈਲੇਂਸ ਵਿਚ ਜਮਾ ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ।</string>
+    <string name="blocked_by_supplier">ਤੁਹਾਨੂੰ ਸਪਲਾਇਰ ਵੱਲੋਂ ਬਲਾਕ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ</string>
+    <string name="blocked_by_supplier_description">ਬਲਾਕ ਕੀਤਾ ਹੋਇਆ ਸਪਲਾਇਰ ਲੈਣ-ਦੇਣ ਨੂੰ ਜਮਾ/ਐਡਿਟ ਨਹੀਂ ਕਰ ਸਕਦਾ ਅਤੇ ਬਕਾਇਆ ਰਾਸ਼ੀ ਤੁਹਾਡੇ ਨੈੱਟ ਬੈਲੇਂਸ ਵਿਚ ਜਮਾ ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ।</string>
+    <string name="blocked_customer">ਤੁਸੀਂ ਇਸ ਗਾਹਕ ਨੂੰ ਬਲਾਕ ਕੀਤਾ ਹੋਇਆ ਹੈ</string>
+    <string name="blocked_customer_description">ਬਲਾਕ ਕੀਤਾ ਹੋਇਆ ਗਾਹਕ ਲੈਣ-ਦੇਣ ਨੂੰ ਜਮਾ/ਐਡਿਟ ਨਹੀਂ ਕਰ ਸਕਦਾ ਅਤੇ ਅੱਪਡੇਟਸ ਹਾਸਲ ਨਹੀਂ ਕਰੇਗਾ।</string>
+    <string name="blocked_supplier">ਤੁਸੀਂ ਇਸ ਸਪਲਾਇਰ ਨੂੰ ਬਲਾਕ ਕੀਤਾ ਹੋਇਆ ਹੈ</string>
+    <string name="blocked_supplier_description">ਬਲਾਕ ਕੀਤਾ ਹੋਇਆ ਸਪਲਾਇਰ ਲੈਣ-ਦੇਣ ਨੂੰ ਜਮਾ/ਐਡਿਟ ਨਹੀਂ ਕਰ ਸਕਦਾ ਅਤੇ ਅੱਪਡੇਟਸ ਹਾਸਲ ਨਹੀਂ ਕਰੇਗਾ ।</string>
+    <string name="call_supplier">ਸਪਲਾਇਰ ਨੂੰ ਕਾਲ ਕਰੋ</string>
+    <string name="processing_payment">ਭੁਗਤਾਨ ਦੀ ਪ੍ਰਕਿਰਿਆ ਹੋ ਰਹੀ ਹੈ</string>
+    <string name="processing_transaction">ਭੁਗਤਾਨ ਹੋ ਰਿਹਾ ਹੈ</string>
+    <string name="supplier_payment_failed">ਭੁਗਤਾਨ ਅਸਫਲ</string>
+    <string name="processing_tx_description">ਅਸੀਂ ਤੁਹਾਡੇ ਭੁਗਤਾਨ ਤੇ ਕਾਰਵਾਈ ਕਰ ਰਹੇ ਹਾਂ, ਕਿਰਪਾ ਕਰਕੇ ਇੰਤਜ਼ਾਰ ਕਰੋ।</string>
+    <string name="supplier_payment_pending">ਜੇ ਪੈਸੇ ਕੱਟੇ ਜਾਂਦੇ ਹਨ ਤਾਂ ਅਗਲੇ 3-7 ਦਿਨਾਂ ਦੇ ਅੰਦਰ ਵਾਪਿਸ ਕਰ ਦਿੱਤੇ ਜਾਣਗੇ</string>
+    <string name="credit_added">ਕਰੈਡਿਟ ਜਮਾ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ</string>
+    <string name="payment_added">ਅਦਾਇਗੀ ਜਮਾ ਕਰ ਦਿੱਤੀ ਗਈ ਹੈ</string>
+    <string name="bill_on">%1$s ’ਤੇ ਬਿੱਲ ਭੇਜਿਆ ਗਿਆ</string>
+    <string name="supplier_add_number"><![CDATA[ਹਰੇਕ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਲਈ ਮੁਫਤ SMS ਭੇਜਣ ਲਈ %1$s ਮੋਬਾਇਲ ਨੰਬਰ ਜੋੜੋ। <u><font color=\'#0076f8\'>ਨੰਬਰ ਜੋੜੋ</font></u>]]></string>
+    <string name="supplier_share_app"><![CDATA[ਇਸ ਖਾਤੇ ਨੂੰ ਆਸਾਨੀ ਨਾਲ ਚਲਾਉਣ ਲਈ ਆਪਣੇ ਸਪਲਾਇਰ ਨੂੰ OkCredit ਡਾਉਨਲੋਡ ਕਰਨ ਲਈ ਕਹੋ। <u><font color=\'#0076f8\'>ਸ਼ੇਅਰ ਕਰੋ</font></u>]]></string>
+    <string name="app_promotion_link">"ਮੈਂ ਸਾਡੇ ਵਿਚਲੀਆਂ ਸਾਰੀਆਂ ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ ਨੂੰ ਰਿਕਾਰਡ ਕਰਨ ਲਈ OkCredit ਐਪ ਵਰਤ ਰਿਹਾ ਹਾਂ, ਵੇਰਵੇ ਚੈੱਕ ਕਰਨ ਲਈ ਐਪ ਹੁਣੇ ਡਾਉਨਲੋਡ ਕਰੋ। ਆਪਣੇ ਗ੍ਰਾਹਕਾਂ ਨੂੰ ਮੁਫਤ SMS ਭੇਜੋ http://onelink.to/9vu8v3"</string>
+    <string name="share_report">ਰਿਪੋਰਟ ਸ਼ੇਅਰ ਕਰੋ</string>
+    <string name="processing_amount">ਰਕਮ ਉੱਤੇ ਕਾਰਵਾਈ ਹੋ ਰਹੀ</string>
+    <string name="insurance">ਬੀਮਾ</string>
+    <string name="mobile_prepaid_recharge">ਮੋਬਾਈਲ ਦਾ ਪੀੑਪੇਡ ਰੀਚਾਰਜ</string>
+    <string name="mobile_recharge_sms">ਮੋਬਾਈਲ ਰੀਚਾਰਜ SMS</string>
+    <string name="money_transfer_sms">ਮਨੀ ਟ੍ਰਾਂਸਫਰ SMS</string>
+    <string name="lending_sme">ਲੈਂਡਿੰਗ SME</string>
+    <string name="kyc">KYC</string>
+    <string name="protect_your_family">ਆਪਣੀ ਅਤੇ ਆਪਣੇ ਪਰਿਵਾਰ ਦੀ ਰੱਖਿਆ ਕਰੋ।</string>
+    <string name="okcredit_ab_aapki_wealth">OkCredit ਹੁਣ ਤੁਹਾਡੇ ਧੰਨ ਦੇ ਨਾਲ-ਨਾਲ ਤੁਹਾਡੀ ਸਿਹਤ ਦੀ ਵੀ ਦੇਖਭਾਲ ਕਰੇਗਾ।</string>
+    <string name="yes_i_need">ਹਾਂ‚ ਮੈਨੂੰ ਲੋੜ ਹੈ।</string>
+    <string name="provide_feedback">ਫੀਡਬੈਕ ਦਿਓ</string>
+    <string name="feedback">ਫੀਡਬੈਕ</string>
+    <string name="this_is_suggested">ਇਹ ਭੁਗਤਾਨ ਪਤਾ OkCredit ਨਾਲ ਤੁਹਾਡੀ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਜਾਣਕਾਰੀ ਦੇ ਆਧਾਰ ਤੇ ਸੁਝਾਇਆ ਹੋਇਆ ਹੈ। %1$s</string>
+    <string name="know_more">ਹੋਰ ਜਾਣੋ</string>
+    <string name="how_we_predict_your_address">ਅਸੀਂ ਤੁਹਾਡਾ ਭੁਗਤਾਨ ਪਤਾ ਕਿਵੇਂ ਸਿਫਾਰਿਸ਼ ਕਰਦੇ ਹਾਂ?</string>
+    <string name="how_we_predict_desc">ਅਸੀਂ ਤੁਹਾਡਾ ਭੁਗਤਾਨ ਪਤਾ ਤੁਹਾਡੀ OkCredit ਨਾਲ ਸ਼ੇਅਰ ਕੀਤੀ ਜਾਣਕਾਰੀ ਦੇ ਆਧਾਰ ਤੇ ਸਿਫਾਰਿਸ਼ ਕਰਦੇ ਹਾਂ।</string>
+    <string name="what_can_you_do">ਤੁਸੀਂ ਸਿਫਾਰਸ਼ੀ ਪਤੇ ਨਾਲ ਕੀ ਕਰ ਸਕਦੇ ਹੋ?</string>
+    <string name="what_can_you_do_desc">ਇਹ ਪੇਮੈਂਟ ਪਤਾ ਜੋੜ ਕੇ, ਤੁਸੀਂ ਇਸ ਪਤੇ ਉੱਤੇ ਆਪਣੇ ਗ੍ਰਾਹਕਾਂ ਤੋਂ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਪ੍ਰਾਪਤ ਕਰਨੀ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="add_bank">ਬੈਂਕ ਜੋੜੋ</string>
+    <string name="business_type">ਬਿਜ਼ਨੈੱਸ ਕਿਸਮ</string>
+    <string name="select_your_business_type">ਆਪਣੀ ਬਿਜ਼ਨੈੱਸ ਕਿਸਮ ਚੁਣੋ</string>
+    <string name="popular_text">ਮਸ਼ਹੂਰ</string>
+    <string name="others">ਹੋਰ</string>
+    <string name="select_category">ਸ਼੍ਰੇਣੀ ਚੁਣੋ</string>
+    <string name="search">ਲੱਭੋ</string>
+    <string name="category_search_text">ਸ਼੍ਰੇਣੀ ਚੁਣੋ ਜਾਂ ਲੱਭੋ</string>
+    <string name="add_category">ਸ਼੍ਰੇਣੀ ਜੋੜੋ</string>
+    <string name="category_empty_text" comment="You can add “Painter” as a new category">ਤੁਸੀਂ ਬਤੋਰ ਨਵੀਂ ਸ਼੍ਰੇਣੀ <![CDATA[<b>%1$s</b>]]> ਜੋੜ ਸਕਦੇ ਹੋ</string>
+    <string name="kyc_rick_high"><![CDATA[UPI ਦੀ ਰੋਜ਼ਾਨਾ ਇਕੱਤਰ ਕਰਨ ਦੀ ਸੀਮਾ ਪੂਰੀ ਹੋ ਗਈ ਹੈ। ਆਪਣੀ\nਸੀਮਾ ਵਧਾਉਣ ਲਈ<u><font color=\'#0574e3\'> KYC ਸ਼ੁਰੂ ਕਰੋ</font></u>]]></string>
+    <string name="kyc_rick_low"><![CDATA[ਸੀਮਾ ਪੂਰੀ ਹੋ ਗਈ! ਤੁਸੀਂ UPI ਤੇ ₹50 ਹਜ਼ਾਰ ਅਤੇ ਨਾਨ UPI ਤੇ ਰੋਜ਼ਾਨਾ ₹20 ਹਜ਼ਾਰ ਇਕੱਤਰ ਕਰ ਸਕਦੇ ਹੋ। ਵਧੇਰੇ ਭੁਗਤਾਨ ਵਿਕਲਪਾਂ ਅਤੇ ਉੱਚ ਸੀਮਾਵਾਂ ਨੂੰ ਅਨਲੌਕ ਕਰਨ ਲਈ <u><font color=\'#0574e3\'> KYC ਸ਼ੁਰੂ ਕਰੋ </font></u>]]></string>
+    <string name="kyc_rick_none"><![CDATA[ਸੀਮਾ ਸਮਾਪਤ! ਤੁਸੀਂ ਰੋਜ਼ਾਨਾ UPI ਤੇ ₹1ਲੱਖ ਅਤੇ ਨਾਨ UPI ਤੇ ₹1ਲੱਖ ਇਕੱਠਾ ਕਰ ਸਕਦੇ ਹੋ। ਤੁਹਾਡੇ ਗ੍ਰਾਹਕ ਕੱਲ ਤੋਂ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰਨਾ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹਨ।]]></string>
+    <string name="show_qr_code">QR ਕੋਡ ਦਿਖਾਓ</string>
+    <string name="share_link_pay">ਲਿੰਕ ਪੇ ਸ਼ੇਅਰ ਕਰੋ</string>
+    <string name="scan_and_pay_via_upi">UPI ਰਾਹੀਂ ਸਕੈਨ ਅਤੇ ਅਦਾ ਕਰੋ</string>
+    <string name="scan_and_pay_via_upi_any_upi_app">ਕੋਈ ਵੀ UPI APP ਦਾ ਉਪਯੋਗ ਕਰਦੇ ਹੋਏ ਸਕੈਨ ਅਤੇ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="send_payment_link_with_ease">ਭੁਗਤਾਨ ਲਿੰਕ ਭੇਜੋ ਅਤੇ ਅਸਾਨੀ ਨਾਲ ਕਿਸੇ ਵੀ ਗਾਹਕ ਤੋਂ ਪੈਸੇ ਵਸੂਲੋ।</string>
+    <string name="required_to_accept_online_payments">ਆਪਣੇ ਗ੍ਰਾਹਕਾਂ ਤੋਂ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਸਵੀਕਾਰ ਕਰਨ ਲਈ ਲੋੜੀਂਦਾ ਹੈ</string>
+    <string name="ifsc_code">IFSC ਕੋਡ</string>
+    <string name="add_bank_details">ਬੈਂਕ ਵੇਰਵੇ ਜੋੜੋ</string>
+    <string name="upi_added_successfully">UPI ID ਸਫਲਤਾਪੂਰਵਕ ਜੋੜੀ ਗਈ</string>
+    <string name="bank_account_added_successfully">ਬੈਂਕ ਖਾਤਾ ਸਫਲਤਾਪੂਰਵਕ ਜੋੜਿਆ ਗਿਆ</string>
+    <string name="move_to_supplier">ਸਪਲਾਇਰ ਵਿੱਚ ਤਬਦੀਲ ਹੋਵੋ</string>
+    <string name="please_confirm_moving_customer">ਕਿਰਪਾ ਕਰਕੇ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਤੁਸੀਂ ਉੱਪਰ ਦਿੱਤੇ ਗਾਹਕ ਨੂੰ ਸਪਲਾਇਰ ਵਿੱਚ ਤਬਦੀਲ ਕਰ ਰਹੇ ਹੋ।</string>
+    <string name="how_does_it_work">ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ?</string>
+    <string name="move_to_supplier_step_1">ਕ੍ਰੈਡਿਟ ਐਂਟਰੀਆਂ ਭੁਗਤਾਨ ਐਂਟਰੀਆਂ ਬਣ ਜਾਣਗੀਆਂ</string>
+    <string name="move_to_supplier_step_2">ਭੁਗਤਾਨ ਐਂਟਰੀਆਂ ਕ੍ਰੈਡਿਟ ਐਂਟਰੀਆਂ ਬਣ ਜਾਣਗੀਆਂ</string>
+    <string name="move_to_supplier_step_3">ਦੇਣਦਾਰੀ ਅਡਵਾਂਸ ਬਣ ਜਾਵੇਗੀ</string>
+    <string name="discount_deleted">ਛੂਟ ਮਿਟਾਈ ਗਈ</string>
+    <string name="discount_added">ਛੂਟ ਜੋੜ ਦਿੱਤੀ ਗਈ</string>
+    <string name="delete_discount">ਛੂਟ ਮਿਟਾਓ</string>
+    <string name="discounts_offered">ਛੂਟਾਂ ਪੇਸ਼ ਕੀਤੀਆਂ</string>
+    <string name="discount_offered">ਛੂਟ ਪੇਸ਼ ਕੀਤੀ</string>
+    <string name="add_discount">ਛੂਟ ਜੋੜੋ</string>
+    <string name="give_discount_education_primary_text">ਗਾਹਕਾਂ ਨੂੰ ਛੂਟ ਪੇਸ਼ ਕਰੋ!</string>
+    <string name="give_discount_education_secondary_text"><![CDATA[ਛੋਟ ਗਾਹਕਾਂ ਨੂੰ ਬਕਾਏ ਅਦਾ ਕਰਨ ਅਤੇ ਇਨ੍ਹਾਂ ਮੁਸ਼ਕਲ ਸਮਿਆਂ ਦੌਰਾਨ ਅਸਾਨੀ ਨਾਲ ਵਾਪਿਸ ਅਦਾ ਕਰਨ ਲਈ ਉਤਸ਼ਾਹਤ ਕਰਦੀ ਹੈ!]]></string>
+    <string name="customer_menu_education_primary_text">ਹੋਰ ਪੇਸ਼ ਕਰ ਕਰੇ</string>
+    <string name="customer_menu_education_secondary_text">ਮਦਦਗਾਰ ਵਿਕਲਪ ਜਿਵੇਂ ਛੂਟ ਅਤੇ ਕਿ QR ਇੱਥੇ ਲੱਭੋ!</string>
+    <string name="note_will_be_sent_with_sms_update_of_discount">ਛੂਟ ਦੇ SMS ਨਾਲ ਟਿੱਪਣੀ ਭੇਜੀ ਜਾਏਗੀ!</string>
+    <string name="discount_sms_update_sent">ਛੂਟ SMS ਅਪਡੇਟ ਭੇਜਿਆ</string>
+    <string name="del_discount_msg">SMS ਅਪਡੇਟ ਮਿਟਾਈ ਗਈ ਛੂਟ ਲਈ ਭੇਜਿਆ ਜਾਵੇਗਾ</string>
+    <string name="internet_required">ਇੰਟਰਨੈੱਟ ਜਰੂਰੀ ਹੈ</string>
+    <string name="please_connect_to_internet_and_try_again">ਟਾਸਕ ਲਈ ਇੰਟਰਨੈੱਟ ਜਰੂਰੀ ਹੈ। ਕਿਰਪਾ ਕਰ ਕੇ ਇੰਟਰਨੈੱਟ ਨਾਲ ਜੁੜਣ ਤੋਂ ਬਾਅਦ ਦੋਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="give_discount">ਛੂਟ ਦਿਓ</string>
+    <string name="need_help">ਮਦਦ ਦੀ ਲੋੜ ਹੈ?</string>
+    <string name="made_in_india">Made with  \u2665 in India</string>
+    <string name="side_menu_version">ਵਰਜਨ v%1$s (%2$s) %3$s</string>
+    <string name="add_expense">ਖਰਚਾ ਜੋੜੋ</string>
+    <string name="expense_manager">ਖਰਚਾ ਪ੍ਰਬੰਧਕ</string>
+    <string name="type_of_expense">ਖਰਚੇ ਦੀ ਕਿਸਮ</string>
+    <string name="last_month">ਪਿਛਲਾ ਮਹੀਨਾ</string>
+    <string name="this_month">ਇਹ ਮਹੀਨਾ</string>
+    <string name="last_7_days">ਆਖਰੀ 7 ਦਿਨ</string>
+    <string name="all">ਸਾਰੇ</string>
+    <string name="total_expense">ਕੁੱਲ ਖਰਚੇ</string>
+    <string name="add_amount">ਰਕਮ ਜੋੜੋ</string>
+    <string name="new_expense">ਨਵਾਂ ਖਰਚਾ</string>
+    <string name="delete_expense">ਖ਼ਰਚ ਮਿਟਾਓ</string>
+    <string name="deleted">ਮਿਟਾਇਆ ਗਿਆ</string>
+    <string name="delete_expense_description">ਤੁਸੀਂ ਇਸ ਖਰਚੇ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ ਤੁਸੀਂ ਨਿਸ਼ਚਿਤ ਹੋ?</string>
+    <string name="expense_education_1_primary">ਯਾਦ ਨਹੀਂ ਤੁਸੀਂ ਕੱਲ੍ਹ ਕਿੱਥੇ &amp; ਕਿੰਨਾਂ ਖਰਚਾ ਕੀਤਾ?</string>
+    <string name="expense_education_1_secondary">OkCredit ਉੱਤੇ ਆਪਣੇ ਸਾਰੇ ਖਰਚੇ ਜੋੜੋ &amp; ਪ੍ਰਬੰਧਨ ਕਰੋ!</string>
+    <string name="expense_education_2_primary">ਬਿਜ਼ਨੈੱਸ ਖਰਚੇ ਪ੍ਰਬੰਧਨ ਕਰੋ</string>
+    <string name="expense_education_2_secondary">ਤੁਸੀਂ ਆਪਣਾ ਪੈਸਾ ਕਿੱਥੇ ਖਰਚਿਆ ਹੈ, ਉਸ ਨੂੰ ਧਿਆਨ ਵਿੱਚ ਰੱਖਣ ਲਈ ਉਸ ਨੂੰ OkCredit ਤੇ ਜੋੜੋ &amp; ਟਰੈਕ ਕਰੋ</string>
+    <string name="record_mananage_expense">ਰਿਕਾਰਡ &amp; ਪ੍ਰਬੰਧਨ ਕਰੋ, ਵਪਾਰ &amp; \nਨਿੱਜੀ ਖਰਚੇ</string>
+    <string name="no_internet_connection">ਆਫਲਾਈਨ</string>
+    <string name="please_check_network_setting">ਕਿਰਪਾ ਆਪਣੀਆਂ ਨੈੱਟਵਰਕ ਸੈਟਿੰਗਾਂ ਚੈੱਕ ਕਰੋ &amp; ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ!</string>
+    <string name="expense_card_description">ਬਿਜ਼ਨੈੱਸ ਖਰਚੇ ਰਿਕਾਰਡ &amp; ਟ੍ਰੈਕ ਕਰੋ!</string>
+    <string name="manage_expenses">ਖਰਚੇ ਪ੍ਰਬੰਧਨ ਕਰੋ</string>
+    <string name="add_expense_description">ਖਰਚੇ ਦੀ ਰਕਮ ਜੋੜੋ (ਖਰਚਾ)</string>
+    <string name="weekly_report">ਹਫਤਾਵਾਰ ਰਿਪੋਰਟ</string>
+    <string name="daily_report">ਰੋਜਾਨਾ ਰਿਪੋਰਟ</string>
+    <string name="weekly_report_notification_content" comment="example: Net Balance Due $23">ਨੈੱਟ ਬੈਲੇਂਸ %1$s %2$s</string>
+    <string name="mark_as_read">ਪੜਿਆ ਵਜੋਂ ਮਾਰਕ ਕਰੋ</string>
+    <string name="credit_colon">ਕ੍ਰੈਡਿਟ:</string>
+    <string name="payment_colon">ਭੁਗਤਾਨ:</string>
+    <string name="net_balance_column">ਨੈੱਟ ਬੈਲੇਂਸ:</string>
+    <string name="syncing_your_account">ਤੁਹਾਡੇ ਅਕਾਉਂਟ ਸਿੰਕ ਹੋ ਰਿਹਾ</string>
+    <string name="select_the_app_to_be_shared_on">ਜਿੱਥੇ ਸ਼ੇਅਰ ਕਰਨਾ ਹੈ ਐਪ ਚੁਣੋ</string>
+    <string name="select_the_whatsapp_to_share">ਸ਼ੇਅਰ ਕਰਨ ਲਈ WhatsApp ਐਪ ਚੁਣੋ</string>
+    <string name="add_customer_start_transacting">ਆਪਣੇ ਗਾਹਕ ਨੂੰ ਜੋੜੋ ਅਤੇ ਲੈਣ-ਦੇਣ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ। ਸਾਰੀਆਂ ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ 100% ਸੁਰੱਖਿਅਤ &amp; ਮਹਿਫੂਜ਼ ਹਨ।</string>
+    <string name="unable_to_share_report">ਰਿਪੋਰਟ ਸ਼ੇਅਰ ਕਰਨ ਵਿੱਚ ਅਸਮਰਥ</string>
+    <string name="collection_date_passed">%1$s ਤੋਂ ਲੈ ਕੇ</string>
+    <string name="pending_collection_date_passed">%1$s ਤੋਂ ਭੁਗਤਾਨ ਬਾਕੀ</string>
+    <string name="five_days">5 ਦਿਨ</string>
+    <string name="ten_days">10 ਦਿਨ</string>
+    <string name="fiftenn_days">15 ਦਿਨ</string>
+    <string name="thirty_days">30 ਦਿਨ</string>
+    <string name="sms_reminder_will_be_sent_to_your_customer_on_selected_collection_date">SMS ਰਿਮਾਇੰਡਰ ਚੁਣੀ ਗਈ ਕਲੈਕਸ਼ਨ ਮਿਤੀ ਨੂੰ ਤੁਹਾਡੇ ਗ੍ਰਾਹਕਾਂ ਨੂੰ ਭੇਜਿਆ ਜਾਵੇਗਾ</string>
+    <string name="sms_reminder_will_be_sent_to_your_customer_on_selected_reminder_date">SMS ਰੀਮਾਈਂਡਰ ਚੁਣੀ ਗਈ ਰਿਮਾਈਂਡਰ ਤਰੀਕ ਨੂੰ ਤੁਹਾਡੇ ਗ੍ਰਾਹਕ ਨੂੰ ਭੇਜਿਆ ਜਾਵੇਗਾ</string>
+    <string name="collect">ਇਕੱਤਰ ਕਰੋ</string>
+    <string name="pending">ਮੁਅੱਤਲ</string>
+    <string name="upcoming">ਆਉਣ ਵਾਲਾ</string>
+    <string name="reminder_date_education">ਰੀਮਾਈਂਡਰ ਦੀ ਤਰੀਕ ਸੈਟ ਕਰੋ ਅਤੇ ਗ੍ਰਾਹਕਾਂ ਨੂੰ ਆਟੋਮੈੈਟਿਕ SMS ਰਾਹੀਂ ਭੁਗਤਾਨ ਲਈ ਰੀਮਾਈਂਡਰ ਭੇਜੋ</string>
+    <string name="remind_education">ਹੋਰ ਰਿਮਾਇੰਡਰ ਕਿਸਮਾਂ ਦੀ ਚੋਣ ਕਰਨ ਲਈ ਲੰਬਾ ਪ੍ਰੈਸ ਕਰੋ</string>
+    <string name="remind">ਰਿਮਾਇੰਡ</string>
+    <string name="collection_due">ਕਲੈਕਸ਼ਨ ਦੀ ਦੇਣਦਾਰੀ</string>
+    <string name="selected_due_date_title">SMS ਰਿਮਾਇੰਡਰ <b>%1$s</b> ਨੂੰ ਗ੍ਰਾਹਕ ਨੂੰ ਭੇਜਿਆ ਜਾਵੇਗਾ।</string>
+    <string name="moving_to_supplier">ਸਪਲਾਇਰ ਵਿੱਚ ਤਬਦੀਲ ਹੋ ਰਹੇ ਹੋ</string>
+    <string name="please_don_t_move_away_from_this_screen">*ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਸਕ੍ਰੀਨ ਤੋਂ ਦੂਰ ਨਾ ਜਾਓ</string>
+    <string name="moving_successful">ਮੂਵ ਕਰਨਾ ਸਫਲ ਹੋਇਆ</string>
+    <string name="view_account">ਖਾਤਾ ਦੇਖੋ</string>
+    <string name="moving_failed">ਮੂਵ ਕਰਨਾ ਵਿਫਲ ਹੋਇਆ!</string>
+    <string name="home">ਹੋਮ</string>
+    <string name="already_in_customer_list">ਇਹ ਨੰਬਰ ਪਹਿਲਾਂ ਹੀ ਤੁਹਾਡੀ ਗਾਹਕ ਸੂਚੀ ਵਿੱਚ ਹੈ। ਤੁਸੀਂ ਗਾਹਕ ਨੂੰ ਦੇਖ ਜਾਂ ਸਪਲਾਇਰ ਵਿੱਚ ਤਬਦੀਲ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="cannot_add_as_supplier">ਸਪਲਾਇਰ ਵਜੋਂ ਨਹੀਂ ਜੋੜ ਸਕਦੇ</string>
+    <string name="deleted_customer_add_supplier">ਇਸ ਨੰਬਰ ਨੂੰ ਪਿਛਲੀ ਵਾਰ ਇੱਕ ਗਾਹਕ ਵਜੋਂ ਜੋੜਿਆ ਗਿਆ ਸੀ, ਕੀ ਤੁਹਾਨੂੰ ਯਕੀਨ ਹੈ ਕਿ ਤੁਸੀਂ ਗਾਹਕ ਨੂੰ ਇੱਕ ਸਪਲਾਇਰ ਵਜੋਂ ਜੋੜਣਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
+    <string name="migration_error">ਤੁਸੀਂ ਇਸ ਗਾਹਕ ਨੂੰ ਮਾਇਗ੍ਰੇਟ ਨਹੀਂ ਕਰ ਸਕਦੇ ਹੋ ਕਿਉਂਕਿ ਤੁਸੀਂ ਇਸ ਰਿਲੇਸ਼ਨਸ਼ਿਪ ਦੇ ਕ੍ਰਿਏਟਰ ਨਹੀਂ ਹੋ।</string>
+    <string name="_1">1</string>
+    <string name="cyclic_account_error">ਤੁਸੀਂ ਇਸ ਗਾਹਕ ਨੂੰ ਮਾਇਗ੍ਰੇਟ ਨਹੀਂ ਕਰ ਸਕਦੇ ਹੋ ਕਿਉਂਕਿ ਇਹ ਵਿਅਕਤੀ ਪਹਿਲਾਂ ਹੀ ਤੁਹਾਡੀ ਸਪਲਾਇਰ ਸੂਚੀ ਵਿੱਚ ਮੌਜੂਦ ਹੈ।</string>
+    <string name="pay_online">ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="send_to">ਇਸ ਨੂੰ ਭੇਜੋ:</string>
+    <string name="proceed">ਅੱਗੇ ਵਧੋ</string>
+    <string name="change_account">ਖਾਤਾ ਬਦਲੋ</string>
+    <string name="upi_added_succesfully">UPI ID ਸਫਲਤਾਪੂਰਵਕ ਜੋੜੀ ਗਈ</string>
+    <string name="bank_added_succesfully">ਬੈਂਕ ਖਾਤਾ ਸਫਲਤਾਪੂਰਵਕ ਜੋੜਿਆ ਗਿਆ</string>
+    <string name="pay_online_education_text">"UPI, ਡੈਬਿਟ ਕਾਰਡ, ਨੈਟ ਬੈਂਕਿੰਗ ਅਤੇ ਵਾਲਿਟ ਰਾਹੀਂ ਆਨਲਾਈਨ ਪੈਸੇ ਭੇਜੋ। ਭੁਗਤਾਨ ਦੇ ਬਿਹਤਰ ਤਜ਼ਰਬੇ ਦਾ ਅਨੰਦ ਲਓ।"</string>
+    <string name="single_list_pay_online_education_text">"ਹੁਣ ਤੁਸੀਂ ਆਪਣੇ ਸਪਲਾਇਰ ਨੂੰ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰ ਸਕਦੇ ਹੋ।\n ਬੈਂਕ ਖਾਤੇ/UPI ਨੂੰ ਜੋੜ ਕੇ ਭੁਗਤਾਨ ਕਰੋ"</string>
+    <string name="add_supplier_details_to_pay">ਭੁਗਤਾਨ ਕਰਨ ਲਈ ਸਪਲਾਇਰ ਦੇ %1$s ਵੇਰਵਿਆਂ ਨੂੰ ਜੋੜੋ</string>
+    <string name="upi">UPI</string>
+    <string name="supplier_tab_education">ਤੁਸੀਂ ਆਪਣੇ ਸਪਲਾਇਰਾਂ ਨੂੰ ਜੋੜਣਾ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹੋ, ਚਾਹੇ ਓਹ OkCredit ਤੇ ਨਹੀਂ ਹਨ</string>
+    <string name="interent_error">ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਉਪਲਬਧ ਨਹੀਂ ਹੈ, ਆਪਣੀ ਨੈਟਵਰਕ ਸੈਟਿੰਗਸ ਦੀ ਜਾਂਚ ਕਰੋ।</string>
+    <string name="go_back">ਵਾਪਸ ਜਾਓ</string>
+    <string name="feedback_qstn">ਬਹੁਤ ਵਧੀਆ! ਉਮੀਦ ਹੈ ਕਿ ਅਸੀਂ ਤੁਹਾਡੇ ਸਵਾਲ ਦਾ ਸਪਸ਼ਟ ਜਵਾਬ ਦਿੱਤਾ ਹੈ। ਕੀ ਤੁਹਾਡੇ ਕੋਈ ਵੀ ਹੋਰ ਸਵਾਲ ਹਨ?</string>
+    <string name="manual_chat">ਏਜੰਟ ਨਾਲ ਚੈਟ ਕਰੋ</string>
+    <string name="chat_with_us">ਸਾਡੇ ਨਾਲ ਚੈਟ ਕਰੋ</string>
+    <string name="help_chat">ਮਦਦ ਚੈਟ</string>
+    <string name="chat_input_hint">ਇੱਕ ਸੰਦੇਸ਼ ਲਿੱਖੋ</string>
+    <string name="yes_inapp_chat">ਹਾਂ / ਵਾਪਸ ਜਾਓ</string>
+    <string name="no_inapp_chat">ਨਹੀਂ / ਚੈਟ ਤੋਂ ਬਾਹਰ ਆਓ</string>
+    <string name="heart_emoji">"\u2665"</string>
+    <string name="initial_message">ਹੈਲੋ! ਸਾਨੂੰ ਤੁਹਾਡੀ ਮਦਦ ਕਰਨ ਵਿੱਚ ਖੁਸ਼ੀ ਹੋਵੇਗੀ। ਕਿਰਪਾ ਕਰਕੇ ਤੁਹਾਡੇ ਸਵਾਲ ਨਾਲ ਸਬੰਧਤ ਹੇਠਾਂ ਦਿੱਤੀ ਸੂਚੀ ਤੋਂ ਵਿਸ਼ੇ ਦੀ ਚੋਣ ਕਰੋ।</string>
+    <string name="start_accepting_online_collection"><![CDATA[0% ਫੀਸ ਦੇ ਨਾਲ ਗ੍ਰਾਹਕਾਂ ਤੋਂ 100% ਸੁਰੱਖਿਅਤ ਅਤੇ ਮਹਿਫੂਜ਼ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਕਲੈਕਸ਼ਨਾਂ ਦੀ ਸਥਾਪਨਾ ਕਰੋ।]]></string>
+    <string name="scan_and_pay">UPI ਰਾਹੀਂ ਸਕੈਨ ਅਤੇ ਅਦਾ ਕਰੋ</string>
+    <string name="compatible_with">ਇਸ ਨਾਲ ਅਨੁਕੂਲ:</string>
+    <string name="save">ਸੇਵ ਕਰੋ</string>
+    <string name="bank_details">ਬੈਂਕ ਦੇ ਵੇਰਵੇ</string>
+    <string name="to_accept_online_collections">ਕਿਰਪਾ ਕਰਕੇ ਸਿੱਧਾ ਆਪਣੇ ਬੈਂਕ ਖਾਤੇ ਵਿੱਚ ਆਪਣੇ ਗ੍ਰਾਹਕਾਂ ਤੋਂ ਆਨਲਾਈਨ ਕਲੈਕਸ਼ਨ ਸਵੀਕਾਰ ਕਰਨ ਲਈ ਆਪਣਾ %1$s ਦਰਜ ਕਰੋ।</string>
+    <string name="sales">ਵਿਕਰੀ</string>
+    <string name="cash_sales">ਨਕਦੀ ਵਿਕਰੀ</string>
+    <string name="new_sale">ਨਵੀਂ ਵਿਕਰੀ</string>
+    <string name="rupees">₹%1$s</string>
+    <string name="total_sales">ਕੁੱਲ ਵਿਕਰੀ</string>
+    <string name="sales_detail">ਵਿਕਰੀ ਦੇ ਵੇਰਵੇ</string>
+    <string name="phone_number">ਫੋਨ ਨੰਬਰ</string>
+    <string name="note">ਨੋਟ</string>
+    <string name="delete_sale">ਵਿਕਰੀ ਡਿਲੀਟ ਕਰੋ</string>
+    <string name="add_sales">ਵਿਕਰੀ ਜੋੜੋ</string>
+    <string name="add_sale">ਵਿਕਰੀ ਜੋੜੋ</string>
+    <string name="billing_name">ਬਿਲਿੰਗ ਨਾਮ</string>
+    <string name="sale_note_hint">ਆਇਟਮ ਦੇ ਵੇਰਵੇ ਜਿਵੇਂ ਕਿ ਦੁੱਧ, ਆਟਾ ਆਦਿ</string>
+    <string name="delete_sale_description">ਕੀ ਤੁਹਾਨੂੰ ਯਕੀਨ ਹੈ ਕਿ ਤੁਸੀਂ ਵਿਕਰੀ ਐਂਟਰੀ ਨੂੰ ਡਿਲੀਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
+    <string name="sale_education_primary">ਕੀ ਤੁਸੀਂ ਦਿਨ ਭਰ ਵਿਕੇ\nਸਮਾਨ ਦਾ ਹਿਸਾਬ ਪੇਪਰ ਤੇ ਰੱਖਦੇ ਹੋ?</string>
+    <string name="sale_education_secondary">ਹੁਣ \nOkCredit ਤੇ ਰੋਜ਼ ਦੀ ਵਿਕਰੀ ਰਿਕਾਰਡ ਕਰੋ ਅਤੇ ਅਸਾਨੀ ਨਾਲ ਮੁਨਾਫਿਆਂ ਨੂੰ ਟ੍ਰੈਕ ਕਰੋ।</string>
+    <string name="record_sales">OkCredit ਤੇ ਆਪਣੀ ਵਿਕਰੀ ਨੂੰ ਰਿਕਾਰਡ ਕਰੋ \nਅਤੇ ਮੁਨਾਫਿਆਂ ਦਾ ਰਿਕਾਰਡ ਰੱਖੋ</string>
+    <string name="add_total_amount">ਕੁੱਲ ਰਕਮ ਜੋੜੋ</string>
+    <string name="add_sale_amount">ਵਿਕਰੀ ਦੀ ਰਕਮ ਜੋੜੋ</string>
+    <string name="add_bill_total">ਬਿਲ ਦਾ ਜੋੜ ਜੋੜੋ</string>
+    <string name="add_expense_education_primary">ਇੱਥੇ ਖਰਚਿਆਂ ਨੂੰ ਰਿਕਾਰਡ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ!</string>
+    <string name="add_expense_education_secondary">ਜਿਵੇਂ ਕਿ ਬਿਜਲੀ ਦੇ ਬਿੱਲ, ਰਖਰਖਾਵ,\nਤਨਖਾਹਾਂ, ਡਿਲਿਵਰੀ ਸ਼ੁਲਕ ਆਦਿ।</string>
+    <string name="contact_details">ਸੰਪਰਕ ਵੇਰਵੇ</string>
+    <string name="select_a_contact">ਸੰਪਰਕ ਚੁਣੋ</string>
+    <string name="add_items_to_bill">ਬਿਲ ਵਿੱਚ ਆਇਟਮਾਂ ਨੂੰ ਜੋੜੋ</string>
+    <string name="rate">ਰੇਟ ਕਰੋ</string>
+    <string name="add_item">ਆਇਟਮ ਜੋੜੋ</string>
+    <string name="update_item">ਆਇਟਮ ਅਪਡੇਟ ਕਰੋ</string>
+    <string name="total">ਕੁਲ ਸੰਗ੍ਰਹਿ</string>
+    <string name="item">ਆਇਟਮ</string>
+    <string name="qty">ਮਾਤਰਾ</string>
+    <string name="select_items">ਆਇਟਮਾਂ ਚੁਣੋ</string>
+    <string name="set_rate">ਰੇਟ ਕਰੋ : ₹%1$s</string>
+    <string name="bill_total">ਬਿਲ ਦਾ ਜੋੜ | ₹%1$s</string>
+    <string name="bill_total_string">ਬਿਲ ਦਾ ਜੋੜ</string>
+    <string name="items_and_qty">%1$s ਆਇਟਮਾਂ। %2$s ਮਾਤਰਾ</string>
+    <string name="name_and_rate">ਨਾਮ ਅਤੇ ਰੇਟ</string>
+    <string name="add_new_item">ਨਵੀਂ ਆਇਟਮ ਜੋੜੋ</string>
+    <string name="tap_to_add_rate">ਰੇਟ ਜੋੜਣ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="invalid_rate">ਅਵਾਜਬ ਰੇਟ</string>
+    <string name="invalid_quantity">ਗਲਤ</string>
+    <string name="item_name_max_count">ਅਧਿ ਗਿਣਤੀ 60/60</string>
+    <string name="item_name_already_exist">ਆਇਟਮ ਨਾਮ ਪਹਿਲਾਂ ਤੋਂ ਮੌਜੂਦ ਹੈ!</string>
+    <string name="bill_summary">ਬਿਲ ਦਾ ਸਾਰਾਂਸ਼</string>
+    <string name="why_to_use">ਉਪਯੋਗ ਕਿਉਂ ਕਰੀਏ?</string>
+    <string name="expense_info_text">ਆਪਣੇ ਕਾਰੋਬਾਰ ਦੇ ਖਰਚਿਆਂ ਨੂੰ ਇੱਕੋ ਸਥਾਨ ਤੇ ਨੋਟ ਕਰੋ</string>
+    <string name="expense_info_description">ਖਰਚਿਆਂ ਦਾ ਹਿਸਾਬ \nਕਦੋਂ ਤਕ ਪੇਪਰ ਤੇ ਰੱਖੋਗੇ?</string>
+    <string name="sales_info_text">ਪੇਪਰ ਜਾਂ ਮੋਬਾਈਲ \nਤੇ ਵਿਕਰੀ ਨੂੰ ਰਿਕਾਰਡ ਕਰਨਾ ਹੈ?</string>
+    <string name="share_bill_text" comment="Manage business udhar khata on mobile \n https://play.google.com/store/apps/details?id=in.okcredit.merchant">ਸਾਡੇ ਨਾਲ ਤੁਹਾਡੀ ਖਰੀਦ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਤੁਹਾਡਾ ਬਿਲ ਉੱਪਰ ਦਿੱਤਾ ਗਿਆ ਹੈ। \nਬਿਲ ਦਾ ਜੋੜ: ₹%1$s \n%2$s \nhttps://play.google.com/store/apps/details?id=in.okcredit.merchant    </string>
+    <string name="start_adding_cash_sales">ਨਕਦੀ ਵਿਕਰੀ ਨੂੰ ਜੋੜਣਾ ਸ਼ੁਰੂ ਕਰੋ</string>
+    <string name="start_making_bill">ਬਿਲ ਬਣਾਉਣਾ ਸ਼ੁਰੂ ਕਰੋ</string>
+    <string name="make_your_first_bill">ਆਪਣਾ ਪਹਿਲਾ ਬਿਲ ਬਣਾਓ</string>
+    <string name="sales_billing_info_text">Whatsapp \nਤੇ ਬਿਲ ਬਣਾਓ &amp; ਅਤੇ ਸ਼ੇਅਰ ਕਰੋ!</string>
+    <string name="sales_billing_info_text_ab">ਹੁਣ ਬਿਲ ਬਣਾਓ ਮੋਬਾਈਲ ਤੇ \nਅਤੇ ਸ਼ੇਅਰ ਕਰੋ!</string>
+    <string name="bill_no_results_found">ਕੋਈ ਸਿੱਟੇ ਨਹੀਂ ਮਿਲੇ!</string>
+    <string name="bill_tap_to_add">ਨਵੀਂ ਆਇਟਮ ਬਣਾਉਣ ਲਈ ਜੋੜੋ ਤੇ ਟੈਪ ਕਰੋ</string>
+    <string name="err_loading_page">ਪੇਜ ਨੂੰ ਲੋਡ ਕਰਨ ਵਿੱਚ ਤਰੁਟੀ ਹੋਈ! ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।.</string>
+    <string name="change">ਬਦਲੋ</string>
+    <string name="confirm_bank_details">ਬੈਂਕ ਦੇ ਵੇਰਵਿਆਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="confirm_upi_details">UPI ID ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="invalid_payment_address">ਓਹ ਗਲਤ ਵੇਰਵੇ! ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚ ਕਰੋ</string>
+    <string name="scan_any_qr_code_to_add_upi">ਬੱਸ ਆਪਣੇ ਸਟੋਰ ਦਾ QR ਕੋਡ ਸਕੈਨ ਕਰੋ ਅਤੇ ਇਹ ਆਪਣੇ ਆਪ ਹੀ ਤੁਹਾਡੀ UPI ID ਵਜੋਂ ਸੈਟ ਹੋ ਜਾਵੇਗਾ।</string>
+    <string name="accept_online_collection_via_link"><![CDATA[0% ਫੀਸ ਦੇ ਨਾਲ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਦੀ ਸਥਾਪਨਾ ਕਰੋ ਅਤੇ ਰਿਮਾਇੰਡਰ ਵਿੱਚ ਗ੍ਰਾਹਕ ਨਾਲ ਸੁਰੱਖਿਅਤ ਅਤੇ ਮਹਿਫੂਜ਼ ਭੁਗਤਾਨ ਲਿੰਕਾਂ ਨੂੰ ਸ਼ੇਅਰ ਕਰੋ।]]></string>
+    <string name="dont_ask_again">ਫੇਰ ਤੋਂ ਨਾ ਪੁੱਛੋ</string>
+    <string name="setup_later">ਬਾਅਦ ਵਿੱਚ ਸਥਾਪਨਾ ਕਰੋ</string>
+    <string name="setup_now">ਹੁਣੇ ਸਥਾਪਨਾ ਕਰੋ</string>
+    <string name="click_to_add_your_upi_and_bank"><![CDATA[ਆਪਣੀ UPI ID/ ਬੈਂਕ ਖਾਤੇ ਨੂੰ ਲਿੰਕ ਕਰਨ ਅਤੇ ਮਹਿਫੂਜ਼ ਭੁਗਤਾਨ ਲਿੰਕ ਦੇ ਨਾਲ ਆਨਲਾਈਨ ਬਕਾਇਆਂ ਨੂੰ ਇਕੱਤਰ ਕਰਨ ਲਈ ਕਲਿੱਕ ਕਰੋ।]]></string>
+    <string name="linked_successfully">ਸਫਲਤਾਪੂਰਕ ਲਿੰਕ ਕੀਤਾ ਗਿਆ</string>
+    <string name="learn_more">ਹੋਰ ਜਾਣੋ</string>
+    <string name="supplier_learn_more_title">ਇੱਥੇ ਆਪਣੇ ਸਾਰੇ ਸਪਲਾਈਰ ਜੋੜੋ ਅਤੇ ਸੋਖਿਆਂ ਤੁਹਾਡੇ ਦੁਆਰਾ ਕੀਤੀ ਵੇਚ/ ਖਰੀਦ ਨੂੰ ਰਿਕਾਰਡ ਕਰਕੇ ਸਮਾਂ ਬਚਾਓ।</string>
+    <string name="deleted_italic">ਡਿਲੀਟ ਕੀਤਾ\u0020</string>
+    <string name="recharge_sms_tell_your_customers">ਆਪਣੇ ਗ੍ਰਾਹਕਾਂ ਨੂੰ ਦੱਸੋ</string>
+    <string name="send_free_sms_and_tell_your_customers_abrecharge_sms_out_your_prepaid_recharge_service">ਫ੍ਰੀ SMS ਭੇਜੋ ਅਤੇ ਆਪਣੀ\nਪ੍ਰੀਪੇਡ ਰੀਚਾਰਜ ਸੇਵਾ ਬਾਰੇ ਆਪਣੇ ਗ੍ਰਾਹਕਾਂ ਨੂੰ ਦੱਸੋ</string>
+    <string name="send_free_sms_and_tell_your_customers_money_transfer_sms_out_your_prepaid_recharge_service">ਫ੍ਰੀ SMS ਭੇਜੋ ਅਤੇ ਆਪਣੀ\nਮਨੀ ਟ੍ਰਾਂਸਫਰ ਸੇਵਾ ਬਾਰੇ ਆਪਣੇ ਗ੍ਰਾਹਕਾਂ ਨੂੰ ਦੱਸੋ</string>
+    <string name="sms_in_app_not_now">ਹੁਣ ਨਹੀਂ</string>
+    <string name="sms_in_app_tell_now">ਹੁਣੇ ਦੱਸੋ</string>
+    <string name="manage_supplier"><![CDATA[ਸਪਲਾਈਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਿਵੇਂ ਕਰਨਾ ਹੈ ਸਿੱਖੋ <u><font color=\'#0574e3\'>ਇੱਥੇ ਕਲਿੱਕ ਕਰੋ</font></u>]]></string>
+    <string name="supplier_screen_learn_more_center">ਤੁਹਾਡੇ ਸਪਲਾਈਰਾਂ ਨਾਲ ਹੋਈ ਵੇਚ / ਖਰੀਦ ਨੂੰ ਰਿਕਾਰਡ ਕਰਕੇ ਬਿਨਾਂ ਤਣਾਅ ਰਹੋ।</string>
+    <string name="seller">ਵਿਕਰੇਤਾ</string>
+    <string name="merchant_added_your">%1$s ਨੇ ਤੁਹਾਨੂੰ ਇੱਕ ਗਾਹਕ ਵਜੋਂ ਜੋੜਿਆ ਹੈ। ਹੁਣ ਆਪਣੀਆਂ ਸਾਰੀਆਂ ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ ਦਾ ਰਿਕਾਰਡ ਰੱਖੋ ਅਤੇ ਮਹਿਫੂਜ਼ ਤਰੀਕੇ ਨਾਲ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰੋ।</string>
+    <string name="now_you_can_securely">ਸੁਰੱਖਿਅਤ ਅਤੇ ਮਹਿਫੂਜ਼ ਤਰੀਕੇ ਨਾਲ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰਨ ਲਈ ਇੱਥੇ ਕਲਿੱਕ ਕਰੋ।</string>
+    <string name="add_seller">ਵਿਕਰੇਤਾ ਨੂੰ ਜੋੜੋ</string>
+    <string name="add_mobile">ਮੋਬਾਈਲ ਜੋੜੋ</string>
+    <string name="to_send_reminder">ਰਿਮਾਈਂਡਰ ਭੇਜਣ ਲਈ, ਕਿਰਪਾ ਗਾਹਕ ਦਾ ਮੋਬਾਈਲ ਨੰਬਰ ਜੋੜੋ।</string>
+    <string name="to_send_chat">ਚੈਟ ਭੇਜਣ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਗਾਹਕ ਦਾ ਫੋਨ ਨੰਬਰ ਜੋੜੋ।</string>
+    <string name="to_call_add_customer_number">ਕਾਲ ਕਰਨ ਲਈ, ਗਾਹਕ ਦਾ ਮੋਬਾਈਲ ਨੰਬਰ ਜੋੜੋ।</string>
+    <string name="please_add_customer_number">ਕਿਰਪਾ ਗਾਹਕ ਦਾ ਮੋਬਾਈਲ ਨੰਬਰ ਜੋੜੋ।</string>
+    <string name="please_add_customer_new_number_to_update">ਅਪਡੇਟ ਕਰਨ ਲਈ ਕਿਰਪਾ ਗਾਹਕ ਦਾ ਨਵਾਂ ਨੰਬਰ ਜੋੜੋ।</string>
+    <string name="edit_amount">ਰਕਮ ਨੂੰ ਸੋਧੋ</string>
+    <string name="add_new_amount_here">ਇੱਥੇ ਨਵੀਂ ਰਕਮ ਜੋੜੋ!</string>
+    <string name="edited_on">%1$s ਤੇ ਸੰਪਾਦਨ ਕੀਤਾ ਗਿਆ</string>
+    <string name="edited_to">ਇਸ ਵਿੱਚ ਸੰਪਾਦਨ ਕੀਤਾ</string>
+    <string name="added_wrong_amount">ਗਲਤ ਰਕਮ ਜੋੜੀ?</string>
+    <string name="you_can_now_edit_txns">ਤੁਸੀਂ ਹੁਣ ਜੋੜੀਆਂ ਗਈਆਂ ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ ਦਾ ਸੰਪਾਦਨ ਕਰ ਅਤੇ ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਵੇਰਵਾ ਪੰਨੇ ਤੋਂ ਇਤਿਹਾਸ ਸੰਪਾਦਨ ਕਰੋ ਨੂੰ ਦੇਖ ਸਕਦੇ ਹੋ!</string>
+    <string name="edit_transaction">ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਦਾ ਸੰਪਾਦਨ ਕਰੋ</string>
+    <string name="edited">ਸੰਪਾਦਨ ਕੀਤਾ ਗਿਆ</string>
+    <string name="chat_with_customer">ਗਾਹਕ ਦੇ ਨਾਲ ਚੈਟ ਕਰੋ</string>
+    <string name="chat_send_invite"><![CDATA[ਅਸਾਨੀ ਨਾਲ ਚੈਟ ਕਰਨ ਲਈ, okCredit ਐਪ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰਨ ਲਈ %1$s ਨੂੰ ਕਹੋ। <u><font color=\'#0574e3\'>ਹੁਣੇ ਸੱਦਾ ਦਿਓ</font></u>]]></string>
+    <string name="chat_education">"ਹੁਣ ਤੁਸੀਂ OkCredit ਐਪ ਤੇ ਆਪਣੇ ਵਪਾਰੀ ਦੇ ਨਾਲ ਚੈਟ ਕਰ ਸਕਦੇ ਹੋ।  "</string>
+    <string name="add_number_of_user_for_chat">ਕਿਰਪਾ ਕਰਕੇ ਉਪਭੋਗਤਾ ਦੇ ਨਾਮ ਤੇ ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਚੈਟਿੰਗ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਮੋਬਾਈਲ ਨੰਬਰ ਨੂੰ ਜੋੜੋ</string>
+    <string name="messages">ਸੰਦੇਸ਼</string>
+    <string name="supplier_screen_transaction_cta_credit">ਉਧਾਰ ਦਿੱਤਾ</string>
+    <string name="supplier_screen_transaction_cta_payment">ਜਮ੍ਹਾਂ ਕੀਤਾ</string>
+    <string name="in_app_help_chat_ended">%1$s ਚੈਟ ਛੱਡ ਦਿੱਤੀ, ਚੈਟ ਖਤਮ ਹੋਈ</string>
+    <string name="in_app_help_title">ਗ੍ਰਾਹਕ ਸਹਾਇਤਾ (%1$s)</string>
+    <string name="help_contact_us_screen_title">ਏਜੰਟ ਨਾਲ ਚੈਟ ਕਰੋ</string>
+    <string name="help_contact_us_screen_label">OkCredit</string>
+    <string name="date_range">ਮਿਤੀ ਦੀ ਰੇਂਜ</string>
+    <string name="customer_statement">ਗਾਹਕ ਦੀ ਸਟੇਟਮੈਂਟ</string>
+    <string name="discount">ਛੋਟ</string>
+    <string name="online_transaction">ਆਨਲਾਈਨ ਟ੍ਰਾਂਜੈਕਸ਼ਨ</string>
+    <string name="current_balance">ਵਰਤਮਾਨ ਬਕਾਇਆ</string>
+    <string name="customer_txn_alert_deny">ਇਨਕਾਰ ਕਰੋ</string>
+    <string name="customer_txn_alert_allow">ਇਜਾਜਤ ਦਿਓ</string>
+    <string name="buyer_txn_alert_credit"><![CDATA[%1$s ਨੇ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ <font color=\'#d93025\'>₹%2$s</font> ਕ੍ਰੈਡਿਟ ਨੂੰ ਜੋੜਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਉਪਭੋਗਤਾ ਨੂੰ ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ ਜੋੜਣ ਦੀ ਆਗਿਆ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ?]]></string>
+    <string name="buyer_txn_alert_payment"><![CDATA[%1$s ਨੇ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ <font color=\'#1c873b\'>₹%2$s</font> ਭੁਗਤਾਨ ਨੂੰ ਜੋੜਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਸ ਉਪਭੋਗਤਾ ਨੂੰ ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ ਜੋੜਣ ਦੀ ਆਗਿਆ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ?]]></string>
+    <string name="unreadchat_messages">"%1$s ਬਿਨਾਂ ਪੜ੍ਹੇ ਸੰਦੇਸ਼"</string>
+    <string name="whats_app_link_promotion">ਮੈਂ ਸਾਡੇ ਵਿੱਚ ਸਾਰੀਆਂ ਕ੍ਰੈਡਿਟ ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ ਨੂੰ ਰਿਕਾਰਡ ਕਰਨ ਲਈ OkCredit ਐਪ ਦਾ ਉਪਯੋਗ ਕਰ ਰਿਹਾ ਹਾਂ, ਵੇਰਵਿਆਂ ਦੀ ਜਾਂਚ ਕਰਨ ਲਈ ਐਪ ਨੂੰ ਹੁਣੇ ਡਾਉਨਲੋਡ ਕਰੋ। https://qi1jw.app.link/LxEZzzcBL7</string>
+    <string name="install">ਇੰਸਟਾਲ ਕਰੋ</string>
+    <string name="downloading">ਡਾਉਨਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="update_now">ਹੁਣੇ ਅਪਡੇਟ ਕਰੋ</string>
+    <string name="update_started_background">ਅਪਡੇਟ ਪਿਛੋਕੜ ਵਿੱਚ ਸ਼ੁਰੂ ਹੋ ਗਈ ਹੈ</string>
+    <string name="update_cancelled">ਅਪਡੇਟ ਰੱਦ ਕੀਤੀ ਗਈ/ਵਿਫਲ ਹੋਈ</string>
+    <string name="tap_for_details" comment="https://okcredit.atlassian.net/browse/TP-591" documentation="Jira Ticket here https://okcredit.atlassian.net/browse/TP-591">ਵੇਰਵਿਆਂ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="view_profile" comment="https://okcredit.atlassian.net/browse/CE-46">ਪ੍ਰੋਫਾਈਲ ਦੇਖੋ</string>
+    <string name="please_enter_amount_greater_than_zero">ਕਿਰਪਾ ਕਰਕੇ ਸਿਫਰ ਤੋਂ ਵੱਡੀ ਰਕਮ ਦਰਜ ਕਰੋ</string>
+    <string name="credit_edited">ਕ੍ਰੈਡਿਟ ਦਾ ਸੰਪਾਦਨ ਕੀਤਾ ਗਿਆ</string>
+    <string name="payment_edited">ਭੁਗਤਾਨ ਦਾ ਸੰਪਾਦਨ ਕੀਤਾ ਗਿਆ</string>
+    <string name="phone_number_added_successfully">ਫੋਨ ਨੰਬਰ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਜੋੜਿਆ ਗਿਆ</string>
+    <string name="amount_should_not_be_empty">ਰਕਮ ਖਾਲੀ ਨਹੀਂ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ</string>
+    <string name="content_text">ਕਿਰਪਾ ਕਰਕੇ Okcredit ਅਨੁਭਵ ਵਿੱਚ ਸੁਧਾਰ ਲਿਆਉਣ ਲਈ ਸੁਝਾਅ ਦਿਓ</string>
+    <string name="customer_pay_online">ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="chat_text_new">ਨਵਾਂ</string>
+    <string name="bill_text_new">ਨਵਾਂ</string>
+    <string name="supplier_subtext_3">ਤੁਸੀਂ %2$s ਨੂੰ ₹%1$s ਦਾ ਭੁਗਤਾਨ ਕਰੋਗੇ। ਹੁਣ \'ਪੂਰਤੀਕਰਤਾ\' ਖੰਡ ਦੇ ਅੰਦਰ ਆਪਣੇ ਸਾਰੇ ਪੂਰਤੀਕਰਤਾਵਾਂ ਨੂੰ ਦੇਖੋ ਅਤੇ ਜੋੜੋ।</string>
+    <string name="supplier_subtext_4">ਤੁਸੀਂ %2$s ਤੋਂ ₹%1$s ਪ੍ਰਾਪਤ ਕਰੋਗੇ।ਹੁਣ ਆਪਣੇ ਸਾਰੇ ਸਪਲਾਇਰ ਨੂੰ \'\ ਸਪਲਾਇਰ \' ਸੈਕਸ਼ਨ ਦੇ ਅੰਦਰ ਦੇਖੋ ਅਤੇ ਸ਼ਾਮਲ ਕਰੋ</string>
+    <string name="home_tab_supplier_section">ਸਪਲਾਇਰ ਸੈਕਸ਼ਨ</string>
+    <string name="you_can_change_this_decision_in_the_future_by_going_to_profile_section"><![CDATA[ਤੁਸੀਂ ਭਵਿੱਖ ਵਿੱਚ ਇਸ ਅਨੁਮਤੀ ਨੂੰ ਬਦਲ ਵੀ ਸਕਦੇ ਹੋ। ਅਨੁਮਤੀ ਨੂੰ
+ਬਦਲਣ ਲਈ ਗ੍ਰਾਹਕ ਦੇ ਨਾਮ ਤੇ ਕਲਿੱਕ ਕਰੋ - \'ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਨੂੰ ਜੋੜਣ ਤੋਂ ਇਨਕਾਰ ਕਰੋ\' ਤੇ ਜਾਓ]]></string>
+    <string name="permission_denied">ਅਨੁਮਤੀ ਤੋਂ ਇਨਕਾਰ ਕੀਤਾ ਗਿਆ</string>
+    <string name="permission_given">ਅਨੁਮਤੀ ਦਿੱਤੀ ਗਈ</string>
+    <string name="invite_customer">%1$s ਨੂੰ ਸੱਦਾ ਦਿਓ</string>
+    <string name="home_supplier_tab_new">ਨਵਾਂ</string>
+    <string name="customer_add_txn_discount">ਛੋਟ</string>
+    <string name="now_you_can_chat_with_your_contacts_on_okcredit">%1$s ਨੂੰ \‘Hi\’ ਕਹੋ</string>
+    <string name="supplier_statement">ਪੂਰਤੀਕਰਤਾ ਦੀ ਸਟੇਟਮੈਂਟ</string>
+    <string name="single_list_transaction_disabled">ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਨੂੰ ਜੋੜਣ ਲਈ ਆਗਿਆ ਨੂੰ %1$s ਦੁਆਰਾ ਅਯੋਗ ਕੀਤਾ ਗਿਆ ਹੈ।.</string>
+    <string name="percentage_completed">%1$s ਪੂਰਾ ਹੋ ਗਿਆ</string>
+    <string name="completed">ਪੂਰਾ ਹੋ ਗਿਆ</string>
+    <string name="customer_add_txn_discount_details">ਛੂਟ ਦੇ ਵੇਰਵੇ</string>
+    <string name="customer_add_txn_net_amount">ਕੁੱਲ ਰਕਮ</string>
+    <string name="change_details">ਵੇਰਵੇ ਬਦਲੋ</string>
+    <string name="select_date_range">ਨਿਰਧਾਰਿਤ ਮਿਤੀ ਚੁਣੋ</string>
+    <string name="from">ਤੋਂ</string>
+    <string name="To">ਤੱਕ</string>
+    <string name="save_expense">ਖਰਚਿਆਂ ਨੂੰ ਸੇਵ ਕਰੋ</string>
+    <string name="expense_audio_url">https://storage.googleapis.com/new_initiatives_files/expense.m4a</string>
+    <string name="expense_feedback_description">Expense manager ਬਾਰੇ ਆਪਣੇ ਕੀਮਤੀ ਸੁਝਾਅ ਦਿਓ</string>
+    <string name="expense_info_text_v3">ਸਾਰੇ ਖਰਚਿਆਂ ਦਾ ਪ੍ਰਬੰਧ ਇੱਕ ਜਗ੍ਹਾ \'ਤੇ ਕਰਕੇ ਸਮਾਂ ਬਚਾਓ ਅਤੇ ਸੰਖੇਪ ਦੇਖੋ</string>
+    <string name="expense_info_description_v3_img_1">ਆਪਣੇ ਕਾਰੋਬਾਰ ਦੀ ਲਾਗਤ ਨੂੰ ਟਰੈਕ ਕਰੋ \nਅਤੇ ਖਰਚਿਆਂ ਨੂੰ ਮੈਨੇਜ ਕਰੋ! </string>
+    <string name="expense_info_description_v3_img_2">ਆਪਣੇ ਕਾਰੋਬਾਰ ਦੇ ਖਰਚਿਆਂ ਦਾ ਰਿਕਾਰਡ ਰੱਖੋ ਜਿਵੇਂ \nਦੁਕਾਨ ਦਾ ਕਿਰਾਇਆ, ਸਾਂਭ-ਸੰਭਾਲ ਆਦਿ</string>
+    <string name="expense_info_description_v3_img_3">ਆਪਣੇ ਨਿੱਜੀ ਖਰਚਿਆਂ ਦੇ ਰਿਕਾਰਡ ਰੱਖੋ ਜਿਵੇਂ \nਸਕੂਲ ਦੀ ਫੀਸ, ਡਾਕਟਰੀ ਖ਼ਰਚੇ ਆਦਿ</string>
+    <string name="expense_info_description_v3_img_4">ਆਪਣੇ ਮਹੀਨਾਵਾਰ ਖਰਚਿਆਂ ਦਾ ਹਿਸਾਬ ਕਿਤਾਬ ਰੱਖੋ \nਅਤੇ ਕਾਰੋਬਾਰੀ ਲਾਗਤਾਂ ਬਾਰੇ ਵੀ ਜਾਣਕਾਰੀ ਰੱਖੋ!</string>
+    <string name="discount_greater_than_amounnt">ਰਕਮ ਤੋਂ ਵੱਧ ਛੂਟ</string>
+    <string-array name="default_expense_types">
+        <item>ਕਿਰਾਇਆ ਅਦਾ ਕੀਤਾ</item>
+        <item>ਕਰਮਚਾਰੀ ਦੀ ਤਨਖਾਹ</item>
+        <item>ਪੈਟਰੋਲ</item>
+        <item>ਦੁੱਧ</item>
+        <item>ਸਬਜ਼ੀਆਂ</item>
+        <item>ਬਿਜਲੀ ਦਾ ਬਿੱਲ</item>
+    </string-array>
+    <string name="passbook">ਪਾਸਬੁੱਕ</string>
+    <string name="no_sms_permission_available">ਸੈਟਿੰਗ ਵਿੱਚੋਂ SMS ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="passbook_onboarding_url">https://account.staging.okcredit.in/passBookOnboarding</string>
+    <string name="app_name">ਪਾਸਬੁੱਕ</string>
+    <string name="suggested">"ਸੁਝਾਅ"</string>
+    <string name="credit_added_with_amount">"ਕ੍ਰੈਡਿਟ ਰਕਮ ਦੇ ਨਾਲ ਜੋੜਿਆ ₹%1$d"</string>
+    <string name="payment_added_with_amount">"ਪੇਮੈਂਟ ਰਕਮ ਦੇ ਨਾਲ ਜੋੜਿਆ ₹%1$d"</string>
+    <string name="bills_education">ਬਿੱਲ</string>
+    <string name="bills_education_details"><![CDATA[ਸਕੈਨ ਕਰੋ ਅਤੇ ਇਕੋ ਜਗ੍ਹਾ ਸਾਰੇ ਬਿੱਲਾਂ ਦੀ ਸੰਭਾਲ ਕਰੋ! ਹੁਣੇ ਵਾਪਿਸ ਜਾਓ ਅਤੇ ਬਿੱਲ ਲੱਭੋ ਅਸਾਨੀ ਨਾਲ।]]></string>
+    <string name="discount_internet_error">ਛੂਟ ਜੋੜਨ ਲਈ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਦੀ ਲੋੜ ਹੈ</string>
+    <string name="pay_online_to">ਇਹਨਾ ਨੂੰ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="add_user_bank_account">%1$s ਦਾ ਬੈਂਕ ਖਾਤਾ ਜੋੜੋ</string>
+    <string name="add_user_upi_id">%1$s ਦੀ UPI ਆਈਡੀ ਜੋੜੋ</string>
+    <string name="total_sales_on">ਕੁਲ ਵਿਕਰੀ |%1$s</string>
+    <string name="item_description">ਆਈਟਮ ਦਾ ਵੇਰਵਾ</string>
+    <string name="tap_to_add">ਜੋੜਨ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="tap_to_edit">ਬਦਲਾਅ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="new_bill">ਨਵਾਂ ਬਿੱਲ</string>
+    <string name="bill_introductory_text">ਬਿੱਲ ਤਿਆਰ ਕਰਨ ਲਈ ਆਇਟਮਾਂ ਦੇ ਵੇਰਵੇ ਜਾਂ ਬਿੱਲ ਦੀ ਰਕਮ ਜੋੜੋ\n\n ਸ਼ੇਅਰ ਕਰਨ ਤੋਂ ਪਹਿਲੇ ਅਗਲੇ ਪੇਜ ਤੇ ਆਪਣੇ ਗ੍ਰਾਹਕ ਦਾ ਨਾਮ &amp; ਆਪਣੇ ਵੇਰਵੇ ਜੋੜ ਸਕਦੇ ਹੋ!</string>
+    <string name="add_item_description_rate">ਆਇਟਮ ਦੇ ਵੇਰਵੇ &amp; ਕੀਮਤ ਜੋੜੋ</string>
+    <string name="new_item">ਨਵੀਂ ਆਇਟਮ</string>
+    <string name="save_bill">ਬਿੱਲ ਸੇਵ ਕਰੋ</string>
+    <string name="item_list">ਆਇਟਮਾਂ ਦੀ ਸੂਚੀ</string>
+    <string name="failed_to_save">ਸੇਵ ਕਰਨ ਵਿੱਚ ਅਸਫਲ</string>
+    <string name="saving_transaction">ਲੈਣ-ਦੇਣ ਸੇਵ ਹੋ ਰਹੇ ਹਨ</string>
+    <string name="unable_to_delete_customer_balance_not_zero">ਗਾਹਕ ਨੂੰ ਨਹੀਂ ਮਿਟਾ ਸਕੇ।\nਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="help_support">ਮਦਦ &amp; ਸਹਾਇਤਾ</string>
+    <string name="change_pin">ਸੁਰੱਖਿਆ ਪਿੰਨ ਬਦਲੋ</string>
+    <string name="app_language">ਐਪ ਦੀ ਭਾਸ਼ਾ</string>
+    <string name="customer_report_take">ਜਮ੍ਹਾਂ ਕੀਤਾ</string>
+    <string name="customer_report_give">ਉਧਾਰ ਦਿੱਤਾ</string>
+    <string name="about_okcredit">OkCredit ਦੇ ਬਾਰੇ</string>
+    <string name="privacy_security"><![CDATA[ਗੋਪਨੀਅਤਾ ਨੀਤੀ ਅਤੇ ਸੁਰੱਖਿਆ]]></string>
+    <string name="test_web_view">ਵੈਬ ਵਿਊ ਟੈਸਟ ਕਰੋ</string>
+    <string name="how_to_use_okcredit">OkCredit ਦਾ ਇਸਤੇਮਾਲ ਕਿਵੇਂ ਕਰੀਏ?</string>
+    <string name="customer_khata">ਗ੍ਰਾਹਕ ਦਾ ਖਾਤਾ</string>
+    <string name="t_004_biz_health_account_lagtime_info">1 ਸਕਿੰਟ ਪਹਿਲੇ ਅਪਡੇਟ ਹੋਇਆ</string>
+    <string name="you_give">ਤੁਸੀਂ ਦਿੱਤਾ</string>
+    <string name="you_get">ਤੁਹਾਨੂੰ ਮਿਲਿਆ</string>
+    <string name="supplier_khata">ਵਿਕ੍ਰੇਤਾ ਦਾ ਖਾਤਾ</string>
+    <string name="change_security_pin">ਸੁਰੱਖਿਆ ਪਿੰਨ ਬਦਲੋ</string>
+    <string name="set_security_pin">ਸੁਰੱਖਿਆ ਪਿੰਨ ਸੈੱਟ ਕਰੋ</string>
+    <string name="set_pin">ਪਿੰਨ ਸੈੱਟ ਕਰੋ</string>
+    <string name="set_security_pin_secondary">ਆਪਣੇ OkCredit ਐਪ ਵਿੱਚ ਸੁਰੱਖਿਆ ਦੀ ਇੱਕ ਪਰਤ ਸ਼ਾਮਿਲ ਕੀਤੀ ਹੈ। ਡਾਟਾ ਐਂਟਰੀ ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਣ ਲਈ 4 ਅੰਕਾਂ ਦਾ ਪਿੰਨ ਸੈਟਅੱਪ ਕਰੋ</string>
+    <string name="set_new_pin">ਨਵਾਂ ਪਿੰਨ ਸੈੱਟ ਕਰੋ</string>
+    <string name="add_transaction_nudge">ਲੈਣਦੇਣ ਜੋੜਨ ਲਈ ਕ੍ਰੈਡਿਟ ਜਾਂ ਭੁਗਤਾਨ ਦੀ ਚੋਣ ਕਰੋ</string>
+    <string name="your_transactions_with_customer_name_is_private_nudge_experiment"><![CDATA[<b>%1$s</b>]]> ਦੇ ਨਾਲ ਤੁਹਾਡੇ ਸਾਰੇ ਲੇਣ-ਦੇਣ 100%% ਸੁਰੱਖਿਅਤ ਹਨ।.</string>
+    <string name="steps_how_it_works_reward_on_activation"><![CDATA[<ul><li>ਵੱਖ ਵੱਖ ਦਿਨ ਗ੍ਰਾਹਕ ਅਤੇ ਘੱਟੋ ਘੱਟ 2 ਟ੍ਰਾਂਜੈਕਸ਼ਨਾਂ ਨੂੰ ਸ਼ਾਮਿਲ ਕਰੋ।</li><li> ਤੁਹਾਡੇ ਉਪਹਾਰ ਇਨਾਮ ਵਿਭਾਗ ਵਿੱਚ ਪ੍ਰਦਰਸ਼ਿਤ ਕੀਤੇ ਜਾਣਗੇ।</li></ul>]]></string>
+    <string name="online_payments">ਆਨਲਾਈਨ ਪੇਮੈਂਟਸ</string>
+    <string name="qr_education_share">ਗ੍ਰਾਹਕਾਂ ਤੋਂ ਭੁਗਤਾਨ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਆਪਣੇ ਯੂਨੀਕ OkCredit QR ਕੋਡ ਨੂੰ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="qr_education_online_collection">QR ਕੋਡ ਦੁਆਰਾ ਹਰ ਰੋਜ, ਹਰ ਹਫ਼ਤੇ ਜਾਂ ਹਰ ਮਹੀਨੇ ਜਮਾਂ ਕੀਤੇ ਗਏ ਪੇਮੈਂਟ ਨੂੰ ਟ੍ਰੈਕ ਕਰੋ।</string>
+    <string name="qr_education_menu">ਆਪਣੇ ਬੈਂਕ ਖਾਤੇ/ UPI ਵੇਰਵਿਆਂ ਨੂੰ ਇੱਥੇ ਅਪਡੇਟ ਕਰੋ।</string>
+    <string name="send_qr">QR ਭੇਜੋ</string>
+    <string name="link_payment">ਲਿੰਕ ਭੁਗਤਾਨ</string>
+    <string name="qr_payment">QR ਭੁਗਤਾਨ</string>
+    <string name="add_to_khata">ਖਾਤੇ ਵਿੱਚ ਜੋੜੋ</string>
+    <string name="added_in_khata">ਖਾਤੇ ਵਿੱਚ ਜੋੜਿਆ</string>
+    <string name="refunded">ਰੀਫੰਡਿਡ</string>
+    <string name="processing">ਪ੍ਰੋਸੈਸ ਹੋ ਰਿਹਾ ਹੈ</string>
+    <string name="paid_by">ਦੁਆਰਾ ਭੁਗਤਾਨ ਕੀਤਾ ਗਿਆ</string>
+    <string name="transaction_details">ਲੈਣ-ਦੇਣ ਦਾ ਵੇਰਵਾ</string>
+    <string name="last_3_months">ਪਿਛਲੇ 3 ਮਹੀਨੇ</string>
+    <string name="overall">ਸਮੁੱਚਾ</string>
+    <string name="select_customer">ਗ੍ਰਾਹਕ ਚੁਣੋ</string>
+    <string name="success">ਸਫ਼ਲ</string>
+    <string name="received_amount">₹%1$s ਮਿਲੇ</string>
+    <string name="successfully_added">ਸਫ਼ਲਤਾ ਪੂਰਵਕ ਜੋੜਿਆ ਗਿਆ</string>
+    <string name="add_to_khata_description">ਕਿਰਪਾ ਕਰਕੇ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਤੁਸੀਂ %2$s ਦੇ ਖਾਤੇ ਵਿੱਚ ₹%1$s ਭੁਗਤਾਨ ਸ਼ਾਮਿਲ ਕਰ ਰਹੇ ਹੋ</string>
+    <string name="add_destination_whats_app_not_installed">Whatsapp ਮੌਜੂਦ ਨਹੀਂ ਹੈ।</string>
+    <string name="add_destination_request_text_whatsapp">ਮੈਂ ਤੁਹਾਨੂੰ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹਾਂ, \n\n ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ UPI ਪਤਾ ਜਾਂ ਬੈਂਕ ਖਾਤਾ (ਬੈਂਕ ਖਾਤਾ + IFSC ਕੋਡ) ਸਾਂਝਾ ਕਰੋ, \n ਤੁਸੀਂ ਆਪਣੇ ਭੁਗਤਾਨ ਦੇ ਵੇਰਵਿਆਂ ਨੂੰ OkCredit ਐਪ ਵਿੱਚ ਵੀ ਸੈੱਟ ਕਰ ਸਕਦੇ ਹੋ। \n\nhttps://okcredit.onelink.me/3Akq/922402d1</string>
+    <string name="request_for_details">ਵੇਰਵਿਆਂ ਲਈ ਬੇਨਤੀ ਕਰੋ</string>
+    <string name="date_range_placeholder">%1$s-%2$s</string>
+    <string name="app_security_pin">ਐਪ ਸੁਰੱਖਿਆ ਪਿੰਨ</string>
+    <string name="credit_deleted_on">ਕ੍ਰੈਡਿਟ ਮਿਟਾ ਕਰ ਦਿੱਤਾ ਗਿਆ%1$s</string>
+    <string name="payment_deleted_on">ਭੁਗਤਾਨ ਹਟਾ ਦਿੱਤਾ ਗਿਆ%1$s</string>
+    <string name="credit_on">ਕ੍ਰੈਡਿਟ%1$s</string>
+    <string name="payment_on">ਭੁਗਤਾਨ%1$s</string>
+    <string name="discount_deleted_on">ਛੂਟ ਮਿਟਾਈ ਗਈ%1$s</string>
+    <string name="discount_offered_on">ਛੂਟ%1$s</string>
+    <string name="credit_edited_on">ਕ੍ਰੈਡਿਟ ਦਾ ਸੰਪਾਦਨ ਕੀਤਾ ਗਿਆ%1$s</string>
+    <string name="payment_edited_on">ਭੁਗਤਾਨ ਦਾ ਸੰਪਾਦਨ ਕੀਤਾ ਗਿਆ%1$s</string>
+    <string name="on">\u0020ਨੂੰ</string>
+    <string name="businessName_credibility_variants_default">%1$s ਕਾਰੋਬਾਰ ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਆਪਣੇ ਨਾਮ ਨਾਲ ਰਜਿਸਟਰ ਹੋ ਚੁੱਕੇ ਹਨ</string>
+    <string name="businessName_credibility_variants1"> ਪਿਛਲੇ %1$s ਤੋਂ, %1$s+ ਕਾਰੋਬਾਰਾਂ ਨੇ ਆਪਣੇ ਨਾਮ ਨਾਲ ਰਜਿਸਟਰ ਕੀਤਾ ਹੈ</string>
+    <string name="businessName_credibility_variants2"> %1$s ਤੋਂ %1$s ਕਾਰੋਬਾਰਾ ਹੁਣ OkCredit ਤੇ ਮੌਜੂਦ ਹਨ</string>
+    <string name="businessName_credibility_variants3"> ਪਿਛਲੇ %1$s ਤੋਂ, %1$s ਤੋਂ %1$s+ ਕਾਰੋਬਾਰ ਰਜਿਸਟਰ ਕਰ ਚੁੱਕੇ ਹਨ</string>
+    <string name="setup_collection_nudge_payment_side">ਆਪਣੀ ਪੇਮੈਂਟ ਅਸਾਨ &amp; ਪਰੇਸ਼ਾਨੀ ਮੁਕਤ ਬਣਾਉਣ ਲਈ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਦਾ ਇਸਤੇਮਾਲ ਕਰੋ। </string>
+    <string name="setup_collection_nudge_credit_side">ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਸੈੱਟਅੱਪ ਕਰੋ</string>
+    <string name="setup_collection_description">ਆਪਣੇ ਗ੍ਰਾਹਕਾਂ ਨੂੰ ਪੇਮੈਂਟ ਦਾ ਲਿੰਕ ਭੇਜ ਕੇ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਨੂੰ ਸਵੀਕਾਰ ਕਰੋ। 0% ਫੀਸ &amp; ਅਤੇ ਕੋਈ ਗੁਪਤ ਖਰਚੇ ਨਹੀਂ।</string>
+    <string name="setup_online_payments">ਆਨਲਾਈਨ ਪੇਮੈਂਟਸ ਸੈੱਟਅੱਪ ਕਰੋ</string>
+    <string name="payment_pending">ਭੁਗਤਾਨ ਬਾਕੀ</string>
+    <string name="payment_pending_description_update">%2$s ਦੇ ਅਨੁਸਾਰ ₹%1$s ਦੀ ਪੇਮੈਂਟ ਬਾਕੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਰੀਮਾਈਂਡਰ ਦੀ ਤਰੀਕ ਨੂੰ ਅਪਡੇਟ ਕਰੋ ਜਾਂ ਇੱਕ ਰੀਮਾਈਂਡਰ ਭੇਜੋ।</string>
+    <string name="payment_pending_description_collection">%2$s ਦੇ ਅਨੁਸਾਰ ₹%1$s ਦਾ ਪੇਮੈਂਟ ਬਾਕੀ ਹੈ। ਆਸਾਨ ਪੇਮੈਂਟ ਲਈ ਆਨਲਾਈਨ ਪੇਮੈਂਟਸ ਸੈਟ ਅਪ ਕਰੋ ਜਾਂ ਰੀਮਾਈਂਡਰ ਭੇਜੋ।</string>
+    <string name="skip_and_remind">ਛੱਡ ਦਿਓ &amp; ਰੀਮਾਈਂਡਰ ਭੇਜੋ</string>
+    <string name="skip_and_send">ਛੱਡ ਦਿਓ &amp; ਭੇਜੋ</string>
+    <string name="please_add_supplier_number">ਕਿਰਪਾ ਸਪਲਾਇਰ ਦਾ ਮੋਬਾਈਲ ਨੰਬਰ ਜੋੜੋ।</string>
+    <plurals name="credit_plural">
+        <item quantity="one">%1$s ਉਧਾਰ</item>
+        <item quantity="other">%1$s ਉਧਾਰ</item>
+    </plurals>
+    <plurals name="payment_plural">
+        <item quantity="one">%1$s ਭੁਗਤਾਨ</item>
+        <item quantity="other">%1$s ਭੁਗਤਾਨ</item>
+    </plurals>
+    <string name="secured">ਸੁਰੱਖਿਅਤ</string>
+    <string name="data_protected">ਸਲਾਮਤ</string>
+    <string name="data_private">ਗੁਪਤ</string>
+    <string name="safe_trusted">ਸੁਰੱਖਿਅਤ &amp; ਭਰੋਸੇਮੰਦ</string>
+    <string name="err_default_with_error_code">%1$s ਤਕਨੀਕੀ ਸਮੱਸਿਆ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ ਕਰੋ।</string>
+    <string name="complete_kyc">KYC ਪੂਰਾ ਕਰੋ</string>
+    <string name="complete_kyc_description">UPI ਵਿਕਲਪਾਂ ਦੇ ਨਾਲ ਨੈਟ ਬੈਂਕਿੰਗ ਅਤੇ ਡੈਬਿਟ ਕਾਰਡ ਨੂੰ ਅਨਲੌਕ ਕਰੋ। ਇੱਕ ਦਿਨ ਵਿੱਚ ₹2 ਲੱਖ ਤੱਕ ਟ੍ਰਾਂਸਫਰ ਕਰੋ।</string>
+    <string name="kyc_pending">KYC ਹੋਣੀ ਬਾਕੀ ਹੈ</string>
+    <string name="kyc_pending_description">ਤੁਹਾਨੂੰ 48 ਘੰਟਿਆਂ ਵਿੱਚ ਸੂਚਿਤ ਕੀਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="kyc_failed">KYC ਅਸਫਲ</string>
+    <string name="kyc_failed_description">ਜਮ੍ਹਾ ਕੀਤੇ ਗਏ ਦਸਤਾਵੇਜ਼ ਸਾਡੇ ਕੁਝ ਮਾਪਦੰਡਾਂ ਨੂੰ ਪੂਰਾ ਨਹੀਂ ਕਰਦੇ ਹਨ।\n\n
+ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਅਤੇ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਦਸਤਾਵੇਜ਼ਾਂ ਤੇ ਨਾਮ ਇੱਕੋ ਹੈ, ਅਤੇ ਅਪਲੋਡ ਕੀਤੀਆਂ ਫੋਟੋਆਂ ਨੂੰ ਪੜ੍ਹਨਾ ਅਸਾਨ ਹੈ।</string>
+    <string name="kyc_success">KYC ਸਫ਼ਲ</string>
+    <string name="kyc_success_description"><![CDATA[ਕੁਲੈਕਸ਼ਨ ਅਤੇ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਦੀ ਸੀਮਾ <font color=\'#1c873b\'>₹2 ਲੱਖ</font> ਪ੍ਰਤੀ ਦਿਨ ਤੱਕ ਵਧਾਈ ਗਈ।]]></string>
+    <string name="kyc_success_credit_card_info"><![CDATA[\n\nਤੁਸੀਂ 0% ਚਾਰਜ \'ਤੇ ਭੁਗਤਾਨ ਕਰਨ ਲਈ ਆਪਣੇ <font color=\'#1c873b\'>ਕ੍ਰੈਡਿਟ ਕਾਰਡ</font> ਦੀ ਵਰਤੋਂ ਵੀ ਕਰ ਸਕਦੇ ਹੋ।]]></string>
+    <string name="start_kyc">KYC ਸ਼ੁਰੂ ਕਰੋ</string>
+    <string name="redo_kyc">ਦੋਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="kyc_limit_reached">ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਦੀ ਸੀਮਾ ਪੂਰੀ ਹੋਈ!</string>
+    <string name="kyc_limit_reached_low_risk_kyc_not_done">ਤੁਸੀਂ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਲਈ ਰੋਜ਼ਾਨਾ ਦੀ ਵੱਧ ਤੋਂ ਵੱਧ ਰਕਮ ਪ੍ਰਾਪਤ ਕਰ ਲਈ ਹੈ। ਤੁਸੀਂ 24 ਘੰਟਿਆਂ ਬਾਅਦ ਦੁਬਾਰਾ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਜਾਰੀ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="kyc_limit_reached_high_risk_kyc_not_done">ਰੋਜ਼ਾਨਾ 2 ਲੱਖ ਰੁਪਏ ਤੱਕ ਇਕੱਤਰ ਕਰਨ ਲਈ ਹੁਣੇ KYC ਨੂੰ ਪੂਰਾ ਕਰੋ</string>
+    <string name="kyc_limit_reached_kyc_done">ਤੁਸੀਂ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਲਈ ਰੋਜ਼ਾਨਾ ਦੀ ਵੱਧ ਤੋਂ ਵੱਧ ਰਕਮ ਪ੍ਰਾਪਤ ਕਰ ਲਈ ਹੈ। ਤੁਸੀਂ 24 ਘੰਟਿਆਂ ਬਾਅਦ ਦੁਬਾਰਾ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਜਾਰੀ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="kyc_limit_reached_low_risk_kyc_status_pending">ਤੁਸੀਂ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਲਈ ਰੋਜ਼ਾਨਾ ਦੀ ਵੱਧ ਤੋਂ ਵੱਧ ਰਕਮ ਪ੍ਰਾਪਤ ਕਰ ਲਈ ਹੈ। ਤੁਸੀਂ 24 ਘੰਟਿਆਂ ਬਾਅਦ ਦੁਬਾਰਾ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਜਾਰੀ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="kyc_limit_reached_high_risk_kyc_status_pending">ਸੀਮਾ ਵਧਾਉਣ ਲਈ ਤੁਹਾਡਾ KYC ਸਾਡੇ ਕੋਲ ਬਾਕੀ ਹੈ। ਅਸੀਂ ਤੁਹਾਡੇ ਨਾਲ 48 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਇੱਕ ਅਪਡੇਟ ਸਾਂਝੀ ਕਰਾਂਗੇ।</string>
+    <string name="kyc_banner_description">ਆਪਣੇ ਗ੍ਰਾਹਕ ਲਈ ਵਧੇਰੇ ਭੁਗਤਾਨ ਵਿਕਲਪਾਂ ਨੂੰ ਅਨਲੌਕ ਕਰੋ ਅਤੇ ਰੋਜ਼ਾਨਾ 2 ਲੱਖ ਰੁਪਏ ਤੱਕ ਦਾ ਭੁਗਤਾਨ ਇਕੱਤਰ ਕਰੋ।</string>
+    <string name="kyc_information_banner">KYC ਕਰੋ ਅਤੇ ਰੋਜ਼ਾਨਾ ₹%s ਤੱਕ ਟ੍ਰਾਂਸਫਰ ਕਰੋ।</string>
+    <string name="kyc_information_banner_credit_card_text">ਕ੍ਰੈਡਿਟ ਕਾਰਡ ਭੁਗਤਾਨ ਵਿਕਲਪ ਨੂੰ ਵੀ ਅਨਲੌਕ ਕਰੋ।</string>
+    <string name="kyc_increase_payment_limit">ਭੁਗਤਾਨ ਦੀ ਸੀਮਾ ਵਧਾਓ</string>
+    <string name="kyc_status_not_set">KYC ਪੂਰਾ ਕਰੋ</string>
+    <string name="kyc_status_pending">KYC ਸਥਿਤੀ - ਬਾਕੀ</string>
+    <string name="kyc_status_complete">KYC ਸਥਿਤੀ - ਵੈਰੀਫਾਈਡ</string>
+    <string name="kyc_status_failed">KYC ਸਥਿਤੀ - ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="collection_info_graphic_title_1">ਪੈਸੇ 3X ਤੇਜ਼ੀ ਨਾਲ ਵਾਪਿਸ ਪ੍ਰਾਪਤ ਕਰੋ!</string>
+    <string name="collection_info_graphic_title_2">ਇੱਕ ਸਮਾਰਟ ਵਪਾਰੀ ਬਣੋ</string>
+    <string name="collection_info_graphic_title_3">OkCredit ਤੇ ਇਕੱਤਰ ਕਰਨਾ ਅਰੰਭ ਕਰੋ</string>
+    <string name="collection_info_graphic_description_1">ਸਿੱਧੇ ਬੈਂਕ ਖਾਤੇ ਵਿੱਚ ਪੈਸੇ ਪ੍ਰਾਪਤ ਕਰੋ 0% ਫੀਸ &amp; ਕੋਈ ਲੁਕਿਆ ਹੋਇਆ ਖਰਚ ਨਹੀਂ</string>
+    <string name="collection_info_graphic_description_2">ਫੋਨ ਤੇ QR ਦਿਖਾਓ, SMS/Whatsapp ਤੇ ਕਿ QR ਸਾਂਝਾ ਕਰੋ ਜਾਂ ਭੁਗਤਾਨ ਦਾ ਲਿੰਕ ਭੇਜੋ</string>
+    <string name="collection_info_graphic_description_3">ਸਮੇਂ ਸਿਰ ਭੁਗਤਾਨ ਇਕੱਤਰ ਕਰੋ, ਇਕ ਜਗ੍ਹਾ \'ਤੇ ਸੁਲ੍ਹਾ ਕਰੋ ਅਤੇ ਕਾਰੋਬਾਰ ਵਿਚ ਨਕਦ ਦੇ ਪ੍ਰਵਾਹ ਨੂੰ ਵਧਾਓ</string>
+    <string name="collection_testimonial_name_1">ਸ਼ਿਆਮ ਕਨੌਜੀਆ</string>
+    <string name="collection_testimonial_bio_1">ਮਾਲਕ, ਰਾਮ ਸ਼ਿਆਮ ਟੈਲੀਕਾਮ </string>
+    <string name="collection_testimonial_msg_1">ਮੇਰੇ ਗ੍ਰਾਹਕ ਮੈਨੂੰ ਪੁੱਛਦੇ ਸਨ ਕਿ ਕੀ ਉਹ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਕਰ ਸਕਦੇ ਹਨ। ਮੈਂ QR ਦਾ ਇਸਤੇਮਾਲ ਨਹੀਂ ਕਰ ਰਿਹਾ ਸੀ ਕਿਉਂਕਿ ਭੁਗਤਾਨ ਅਕਾਊਂਟ ਵਿੱਚ ਦੇਰੀ ਨਾਲ ਆਉਂਦਾ ਸੀ &amp; ਇਸਦੀ ਫੀਸ ਵੀ ਸੀ। ਹੁਣ ਮੈਂ ਫੋਨ \'ਤੇ OkC ਦਾ QR ਦਿਖਾਉਂਦਾ ਹਾਂ &amp; ਮੇਰੇ ਖਾਤੇ ਨਾਲ ਇੱਕ ਜਗ੍ਹਾ \'ਤੇ ਭੁਗਤਾਨ ਬਾਰੇ ਸਾਰੇ ਅਪਡੇਟਾਂ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹਾਂ।</string>
+    <string name="collection_testimonial_profile_pic_1">https://storage.googleapis.com/okcredit-public/testimonial_images/shyam.png</string>
+    <string name="collection_testimonial_name_2">ਦਿਨੇਸ਼ ਵਰਮਾ</string>
+    <string name="collection_testimonial_bio_2">ਮਾਲਕ, ਦਿਨੇਸ਼ ਜਨਰਲ ਸਟੋਰ</string>
+    <string name="collection_testimonial_msg_2">ਮੈਂ ਗ੍ਰਾਹਕਾਂ ਨੂੰ ਉਧਾਰ ਦਿੰਦਾ ਹਾਂ ਅਤੇ ਤਾਲਾਬੰਦੀ ਕਾਰਨ, ਲੋਕ ਦੁਕਾਨਦਾਰੀ&amp; ਭੁਗਤਾਨ ਕਰਨ ਨਹੀਂ ਆਉਣਾ ਚਾਹੁੰਦੇ ਸਨ, ਪਰ ਹੁਣ ਮੈਂ ਉਨ੍ਹਾਂ ਨੂੰ ਭੁਗਤਾਨ ਦਾ ਲਿੰਕ ਭੇਜਦਾ ਹਾਂ &amp; ਉਹ ਜੋ ਵੀ ਮਾਧਿਅਮ ਤੋਂ ਪਸੰਦ ਕਰਦੇ ਹਨ, ਆਨਲਾਈਨ ਅਦਾ ਕਰਦੇ ਹਨ। ਮੈਂ ਤੇਜ਼ੀ ਨਾਲ ਭੁਗਤਾਨ ਇਕੱਠਾ ਕਰ ਸਕਦਾ ਹਾਂ।</string>
+    <string name="collection_testimonial_profile_pic_2">https://storage.googleapis.com/okcredit-public/testimonial_images/dinesh.png</string>
+    <string name="collection_testimonial_name_3">ਸੌਰਭ</string>
+    <string name="collection_testimonial_bio_3">ਮਾਲਕ, ਮੈਡੀਕੋਜ਼ ਇੰਡੀਆ</string>
+    <string name="collection_testimonial_msg_3">ਮੈਂ ਆਪਣੇ ਗ੍ਰਾਹਕਾਂ ਨੂੰ ਹੋਮ ਡਲਿਵਰੀ ਦੀ ਆਫਰ ਕਰਦਾ ਹਾਂ, ਉਹ ਮੈਸੇਜ \'ਤੇ ਦਵਾਈ ਮੰਗਵਾਉਂਦੇ ਹਨ &amp; ਮੈਂ ਉਨ੍ਹਾਂ ਨਾਲ QR ਕੋਡ ਸਾਂਝਾ ਕਰਦਾ ਹਾਂ, ਉਹ ਆਨਲਾਈਨ ਅਦਾ ਕਰਦੇ ਹਨ। ਉਨ੍ਹਾਂ ਨੂੰ ਭਰੋਸਾ ਹੈ ਕਿ ਪੈਸੇ ਮੇਰੇ ਕੋਲ ਆਉਣਗੇ ਅਤੇ ਕੋਈ ਸਟਾਫ ਦੀ ਦੁਰਵਰਤੋਂ ਨਹੀਂ ਹੋਵੇਗੀ। </string>
+    <string name="collection_testimonial_profile_pic_3">https://storage.googleapis.com/okcredit-public/testimonial_images/saurabh.png</string>
+    <string name="collection_testimonial_name_4">ਰਾਜੂ ਜੈਸਵਾਲ</string>
+    <string name="collection_testimonial_bio_4">ਸਟਾਫ, ਵਰਧਮਾਨ ਫੈਸ਼ਨ ਵੀਅਰ</string>
+    <string name="collection_testimonial_msg_4">ਅਸੀਂ ਪਹਿਲਾਂ ਸਿਰਫ ਨਕਦੀ ਸਵੀਕਾਰ ਕਰਦੇ ਸੀ, ਪਰ ਹੁਣ ਜਦੋਂ ਅਸੀਂ ਆਨਲਾਈਨ ਪੈਸਾ ਸਵੀਕਾਰ ਕਰਦੇ ਹਾਂ, ਅਸੀਂ ਵਿਕਰੀ ਵਿੱਚ ਵਾਧਾ ਵੇਖਿਆ ਹੈ, ਵਫ਼ਾਦਾਰ ਗ੍ਰਾਹਕ ਅਧਾਰ ਵਿੱਚ ਵਾਧਾ ਅਤੇ ਗਾਹਕਾਂ ਦੇ ਬਕਾਏ ਵੀ ਤੇਜ਼ੀ ਨਾਲ ਵਾਪਿਸ ਹੁੰਦੇ ਹਨ।</string>
+    <string name="collection_testimonial_profile_pic_4">https://storage.googleapis.com/okcredit-public/testimonial_images/raju.png</string>
+    <string name="collection_date_added">ਇਕੱਤਰ ਕਰਨ ਦੀ ਮਿਤੀ ਸ਼ਾਮਿਲ ਕੀਤੀ ਗਈ</string>
+    <string name="collection_date_added_description">ਪੇਮੈਂਟ ਇਕੱਤਰ ਕਰਨ ਦੀ ਮਿਤੀ ਨੂੰ ਤੁਹਾਡੇ ਗ੍ਰਾਹਕ ਨੂੰ ਇੱਕ SMS ਰੀਮਾਈਂਡਰ ਭੇਜਿਆ ਜਾਵੇਗਾ</string>
+    <string name="collection_date">ਕਲੈਕਸ਼ਨ ਮਿਤੀ</string>
+    <string name="edit">ਸੋਧ ਕਰੋ</string>
+    <string name="credit_added_new"><![CDATA[<b>\u20B9%1$s</b> ਉਧਾਰ ਜੋੜਿਆ]]></string>
+    <string name="payment_added_new"><![CDATA[<b>\u20B9%1$s</b> ਭੁਗਤਾਨ ਜੋੜਿਆ]]></string>
+    <string name="payment_deleted_new"><![CDATA[<b>\u20B9%1$s</b> ਭੁਗਤਾਨ ਹਟਾਇਆ ਗਿਆ]]></string>
+    <string name="credit_deleted_new"><![CDATA[<b>\u20B9%1$s</b> ਉਧਾਰ ਹਟਾਇਆ ਗਿਆ]]></string>
+    <string name="payment_edited_new"><![CDATA[<b>\u20B9%1$s</b> ਭੁਗਤਾਨ ਸੋਧਿਆ ਗਿਆ]]></string>
+    <string name="credit_edited_new"><![CDATA[<b>\u20B9%1$s</b> ਉਧਾਰ ਸੋਧਿਆ ਗਿਆ]]></string>
+    <string name="discount_offered_new"><![CDATA[<b>\u20B9%1$s</b> ਛੂਟ ਦੀ ਆਫਰ]]></string>
+    <string name="discount_deleted_new"><![CDATA[<b>\u20B9%1$s</b> ਛੂਟ ਹਟਾਈ ਗਈ]]></string>
+    <plurals name="credit_added_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> ਨੂੰ ਉਧਾਰ ਜੋੜਿਆ ਗਿਆ<b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> ਭੁਗਤਾਨ ਜੋੜਿਆ ਗਿਆ <b>%2$s</b>]]></item>
+    </plurals>
+    <plurals name="payment_added_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> ਨੂੰ ਭੁਗਤਾਨ ਜੋੜਿਆ ਗਿਆ<b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> ਭੁਗਤਾਨ ਜੋੜਿਆ ਗਿਆ <b>%2$s</b>]]></item>
+    </plurals>
+    <plurals name="credit_deleted_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> ਨੂੰ ਉਧਾਰ ਹਟਾਇਆ ਗਿਆ<b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> ਉਧਾਰ ਹਟਾਇਆ ਗਿਆ<b>%2$s</b>]]></item>
+    </plurals>
+    <plurals name="payment_deleted_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> ਨੂੰ ਭੁਗਤਾਨ ਹਟਾਇਆ ਗਿਆ<b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> ਭੁਗਤਾਨ ਹਟਾਇਆ ਗਿਆ<b>%2$s</b>]]></item>
+    </plurals>
+    <plurals name="credit_edited_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> ਨੂੰ ਉਧਾਰ ਸੋਧਿਆ ਗਿਆ <b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> ਉਧਾਰ ਸੋਧਿਆ ਗਿਆ <b>%2$s</b>]]></item>
+    </plurals>
+    <plurals name="payment_edited_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> ਨੂੰ ਭੁਗਤਾਨ ਸੋਧਿਆ ਗਿਆ <b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> ਭੁਗਤਾਨ ਸੋਧਿਆ ਗਿਆ <b>%2$s</b>]]></item>
+    </plurals>
+    <plurals name="discount_offered_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> ਨੂੰ ਛੂਟ ਜੋੜੀ ਗਈ<b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> ਛੂਟ ਜੋੜੀ ਗਈ <b>%2$s</b>]]></item>
+    </plurals>
+    <plurals name="discount_deleted_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> ਨੂੰ ਛੂਟ ਹਟਾਈ ਗਈ<b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> ਛੂਟ ਹਟਾਈ ਗਈ <b>%2$s</b>]]></item>
+    </plurals>
+    <plurals name="processing_amount_new">
+        <item quantity="one">ਰਕਮ ਉੱਤੇ ਕਾਰਵਾਈ ਹੋ ਰਹੀ</item>
+        <item quantity="other">ਰਕਮ ਉੱਤੇ ਕਾਰਵਾਈ ਹੋ ਰਹੀ</item>
+    </plurals>
+    <plurals name="pending_day">
+        <item quantity="one">%1$s ਦਿਨ ਤੋਂ ਭੁਗਤਾਨ ਬਾਕੀ</item>
+        <item quantity="other">%1$s ਦਿਨਾਂ ਤੋਂ ਭੁਗਤਾਨ ਬਾਕੀ</item>
+    </plurals>
+    <plurals name="pending_month">
+        <item quantity="one">%1$s ਮਹੀਨੇ ਤੋਂ ਭੁਗਤਾਨ ਬਾਕੀ</item>
+        <item quantity="other">%1$s ਮਹੀਨਿਆਂ ਤੋਂ ਭੁਗਤਾਨ ਬਾਕੀ</item>
+    </plurals>
+    <string name="sync_status">ਸਿੰਕ ਸਟੇਟਸ</string>
+    <string name="quick_add_customer_failure">ਗਾਹਕ ਨੂੰ ਨਹੀਂ ਜੋੜ ਸਕੇ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="quick_add_failure">ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਨੂੰ ਨਹੀਂ ਜੋੜ ਸਕੇ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="change_language_to"><![CDATA[ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਐਪ ਦੀ ਭਾਸ਼ਾ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ? <action><b><font color=#0574e3><u> ਹਾਂ, ਹੁਣੇ ਬਦਲੋ</u></font></b></action>]]></string>
+    <string name="payment_edit_amount_proceed">ਅੱਗੇ ਵਧੋ</string>
+    <string name="payment_edit_amount_send_to">ਇਸ ਨੂੰ ਭੇਜੋ:</string>
+    <string name="payment_edit_amount_paid_to">ਭੁਗਤਾਨ ਕੀਤਾ:</string>
+    <string name="payment_enter_amount_to_pay">ਭੁਗਤਾਨ ਕਰਨ ਲਈ ਰਕਮ ਦਰਜ ਕਰੋ</string>
+    <string name="payment_edit_amount_rupee_symbol">₹ </string>
+    <string name="payment_edit_amount_rupee">₹%s</string>
+    <string name="payment_put_a_valid_amount">ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਯੋਗ ਰਕਮ ਦਰਜ ਕਰੋ</string>
+    <string name="payment_put_a_valid_amount_greater_than_1">ਘੱਟੋ ਘੱਟ ਰਕਮ ₹1!</string>
+    <string name="not_able_to_tag_customer">ਅਸੀਂ ਉਸ ਸਮੇਂ ਗਾਹਕ ਨੂੰ ਟੈਗ ਕਰਨ ਦੇ ਯੋਗ ਨਹੀਂ ਸੀ । ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ ਕਰੋ!</string>
+    <string name="settlement_blocked_reason">ਤੁਹਾਡਾ ਪੈਸਾ Okcredit ਦੇ ਨਾਲ ਹੈ, ਪੈਸੇ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਵੈਧ ਬੈਂਕ ਵੇਰਵੇ ਸ਼ਾਮਿਲ ਕਰੋ।</string>
+    <string name="payment_refund_reason_payout_initiated">ਅਸੀਂ ਸੈਟਲਮੈਂਟ ਦੀ ਪ੍ਰਕਿਰਿਆ ਆਰੰਭ ਕੀਤੀ ਹੈ। ਇਸ ਵਿੱਚ 2 ਦਿਨ ਲੱਗ ਸਕਦੇ ਹਨ</string>
+    <string name="payment_refund_initiated">ਭੁਗਤਾਨ ਪੂਰਾ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਰਕਮ ਤੁਹਾਡੇ ਬੈਂਕ ਖਾਤੇ ਵਿੱਚ 5-7 ਵਪਾਰਕ ਦਿਨਾਂ ਵਿੱਚ ਵਾਪਸ ਕਰ ਦਿੱਤੀ ਜਾਏਗੀ।</string>
+    <string name="settlement_blocked_due_to_bank_offline">ਤੁਹਾਡੇ ਬੈਂਕ ਖਾਤਾ ਸਿਸਟਮ ਆਫਲਾਈਨ ਹਨ। ਅਸੀਂ ਆਪਣੇ ਆਪ ਸੈਟਲਮੈਂਟ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਹੇ ਹਾਂ।</string>
+    <string name="settlement_blocked_due_to_bank_issue_try_after_24_hrs">ਤੁਹਾਡੇ ਬੈਂਕ ਖਾਤਾ ਸਿਸਟਮ ਵਿੱਚ ਇੱਕ ਸਮੱਸਿਆ ਹੈ। ਅਸੀਂ 24 ਘੰਟਿਆਂ ਬਾਅਦ ਆਪਣੇ ਆਪ ਸੈਟਲਮੈਂਟ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਾਂਗੇ।</string>
+    <string name="saved_on_device">ਡਿਵਾਈਸ ਵਿੱਚ ਸੇਵ ਕੀਤਾ ਗਿਆ</string>
+    <string name="online_backup_is_done">ਆਨਲਾਈਨ ਬੈਕਅੱਪ ਪੂਰਾ ਹੋਇਆ</string>
+    <string name="please_solve_this_issue">ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਸਮੱਸਆ ਦਾ ਹੱਲ ਕਰੋ</string>
+    <string name="bank_service_unavail">ਬੈਂਕ ਸੇਵਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ</string>
+    <string name="bank_service_unavil_error_msg">ਤੁਹਾਡਾ ਬੈਂਕ ਇਸ ਸਮੇਂ ਭੁਗਤਾਨ ਦੀ ਬੇਨਤੀ \'ਤੇ ਕਾਰਵਾਈ ਨਹੀਂ ਕਰ ਰਿਹਾ। ਕਿਰਪਾ ਕਰਕੇ ਕੁਝ ਘੰਟਿਆਂ ਬਾਅਦ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="reward_update">ਇਨਾਮ ਅਪਡੇਟ</string>
+    <string name="please_try_again_later">ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="we_are_processing_your_reward">ਅਸੀਂ ਤੁਹਾਡੇ ਇਨਾਮ ਦੀ ਪ੍ਰਕਿਰਿਆ ਕਰ ਰਹੇ ਹਾਂ। ਕਿਰਪਾ ਕਰਕੇ 3 ਦਿਨਾਂ ਵਿੱਚ ਦੁਬਾਰਾ ਚੈੱਕ ਕਰੋ।</string>
+    <string name="error_description_bank_valid">ਇਹ ਬੈਂਕ ਖਾਤਾ ਜਾਂ UPI ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਕਿਸੇ ਹੋਰ ਉਪਭੋਗਤਾ ਵਲੋਂ ਦਰਜ਼ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਸਹੀ ਵੇਰਵੇ ਜਮ੍ਹਾਂ ਕਰੋ ਜਾਂ ਕੋਈ ਹੋਰ ਖਾਤਾ ਵਰਤੋ।</string>
+    <string name="upi_inactive_error_msg">ਤੁਹਾਡਾ ਬੈਂਕ ਖਾਤਾ ਹੁਣ ਐਕਟਿਵ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਕੋਈ ਹੋਰ ਖਾਤਾ ਵਰਤੋ ਜਾਂ ਆਪਣੇ ਖਾਤੇ ਨੂੰ ਦੁਬਾਰਾ ਐਕਟਿਵ ਕਰੋ।</string>
+    <string name="payout_daily_limit_reached_error_msg">ਤੁਸੀਂ ਅੱਜ ਲਈ ਇਨਾਮ ਕਲੇਮ ਕਰਨ ਦੀ ਸੀਮਾ ਨੂੰ ਪਾਰ ਕਰ ਚੁੱਕੇ ਹੋ। ਕਿਰਪਾ ਕਰਕੇ ਕੱਲ ਦੁਬਾਰਾ ਕਲੇਮ ਕਰੋ।</string>
+    <string name="amount_credit_in_48_hours">ਇਨਾਮੀ ਰਾਸ਼ੀ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਜਮ੍ਹਾਂ ਕੀਤੀ ਜਾਵੇਗੀ</string>
+    <string name="edit_bank_details">ਬੈਂਕ ਵੇਰਵੇ ਐਡਿਟ ਕਰੋ</string>
+    <string name="please_try_again">ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="reward_on_hold">ਇਨਾਮ ਰੋਕ ਦਿੱਤਾ ਗਿਆ ਹੈ</string>
+    <string name="processing_state">ਪ੍ਰੋਸੈਸ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="add_bank_details_alert">ਤੁਹਾਨੂੰ ਆਪਣੇ ਗ੍ਰਾਹਕ ਤੋਂ ₹%s ਦੀ ਅਦਾਇਗੀ ਮਿਲੀ ਹੈ,</string>
+    <string name="no_bank_account_added">ਕੋਈ ਬੈਂਕ ਖਾਤਾ ਸ਼ਾਮਿਲ ਨਹੀਂ ਕੀਤਾ ਗਿਆ</string>
+    <string name="settlement_blocked">ਸੈਟਲਮੈਂਟ ਰੋਕਿਆ ਗਿਆ</string>
+    <string name="your_money_is_with_okcredit">ਤੁਹਾਡਾ ਪੈਸਾ Okcredit ਨਾਲ ਹੈ,\n</string>
+    <string name="to_receive_money">ਪੈਸਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ</string>
+    <string name="refund_failed_please_try_again">ਰਿਫੰਡ ਅਸਫਲ! ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ ਕਰੋ</string>
+    <string name="refund">ਰਿਫੰਡ</string>
+    <string name="refund_already_initiated">ਰਿਫੰਡ ਪ੍ਰਕਿਰਿਆ ਪਹਿਲਾਂ ਹੀ ਅਰੰਭ ਕੀਤੀ ਗਈ ਹੈ!</string>
+    <string name="refund_to_customer">ਗ੍ਰਾਹਕ ਨੂੰ ਰਿਫੰਡ</string>
+    <string name="add_bank_details_tooltip">ਰਿਫੰਡ ਲੈਣ ਵਾਲੇ ਦਾ ਖਾਤਾ ਬੰਦ ਹੈ \n ਕਿਰਪਾ ਕਰਕੇ ਬੈਂਕ ਨਾਲ ਸੰਪਰਕ ਕਰੋ</string>
+    <string name="added_by_qr"> QR ਭੁਗਤਾਨ ਦੁਆਰਾ ਜਮਾ ਕੀਤਾ</string>
+    <string name="added_by_online">ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਦੁਆਰਾ ਜਮ੍ਹਾ ਕੀਤਾ ਗਿਆ</string>
+    <string name="added_by_link">ਲਿੰਕ ਭੁਗਤਾਨ ਦੁਆਰਾ ਜਮਾ ਕੀਤਾ</string>
+    <string name="blind_pay_choose_payment_option">ਇੱਕ ਵਿਕਲਪ ਚੁਣੋ</string>
+    <string name="ease_pay_header">ਇਜ਼ੀ ਪੇਅ</string>
+    <string name="ease_pay_sub_header">ਮੋਬਾਈਲ ਨੰਬਰ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਪੈਸੇ ਭੇਜੋ</string>
+    <string name="others_header_supplier">ਬੈਂਕ ਵੇਰਵੇ ਦਰਜ਼ ਕਰੋ</string>
+    <string name="others_pay_sub_header">ਬੈਂਕ ਖਾਤਾ/UPI ਦੇ ਵੇਰਵੇ ਲੋੜੀਂਦੇ ਹਨ</string>
+    <string name="blind_pay_make_payment">ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="blind_pay_education_header">ਬੈਂਕ ਵੇਰਵੇ ਨਹੀਂ ਹਨ?</string>
+    <string name="blind_pay_education_sub_header">ਕੋਈ ਸਮੱਸਿਆ ਨਹੀ। ਅਸੀਂ ਇਸ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰਾਂਗੇ।</string>
+    <string name="blind_pay_education_deposit_header">ਜਮ੍ਹਾਂ ਰਕਮ</string>
+    <string name="blind_pay_education_deposit_sub_header_supplier">ਰਕਮ OkCredit ਦੇ ਕੋਲ ਰਹੇਗੀ ਜਦੋਂ ਤੱਕ ਸਪਲਾਇਰ ਇਸਦਾ ਕਲੇਮ ਨਹੀਂ ਕਰਦਾ।</string>
+    <string name="blind_pay_education_deposit_sub_header_customer">ਰਕਮ OkCredit ਦੇ ਕੋਲ ਰਹੇਗੀ ਜਦੋਂ ਤੱਕ ਗ੍ਰਾਹਕ ਇਸਦਾ ਕਲੇਮ ਨਹੀਂ ਕਰਦਾ।</string>
+    <string name="blind_pay_education_refund_header">ਰਿਫੰਡ</string>
+    <string name="blind_pay_education_refund_sub_header_customer">ਜੇ ਗ੍ਰਾਹਕ ਰਕਮ ਕਲੇਮ ਨਹੀਂ ਕਰਦਾ, ਤਾਂ ਇਹ 24 ਘੰਟਿਆਂ ਬਾਅਦ ਤੁਹਾਨੂੰ ਵਾਪਸ ਕਰ ਦਿੱਤੀ ਜਾਵੇਗੀ।</string>
+    <string name="blind_pay_education_refund_sub_header_supplier">ਜੇ ਸਪਲਾਇਰ ਰਕਮ ਕਲੇਮ ਨਹੀਂ ਕਰਦਾ, ਤਾਂ ਇਹ 24 ਘੰਟਿਆਂ ਬਾਅਦ ਤੁਹਾਨੂੰ ਵਾਪਸ ਕਰ ਦਿੱਤੀ ਜਾਵੇਗੀ।</string>
+    <string name="blind_pay_education_receiver_header_customer">ਭੁਗਤਾਨ ਲੈਣ ਦਾ ਤਰੀਕਾ</string>
+    <string name="blind_pay_education_receiver_header_supplier">ਭੁਗਤਾਨ ਲੈਣ ਦਾ ਤਰੀਕਾ</string>
+    <string name="blind_pay_education_receiver_sub_header_supplier">ਸਪਲਾਇਰ ਇੱਕ SMS ਭੁਗਤਾਨ ਲਿੰਕ ਪ੍ਰਾਪਤ ਕਰੇਗਾ। ਬੈਂਕ ਅਕਾਉਂਟ/ UPI ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਭੁਗਤਾਨ ਦਾ ਕਲੇਮ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ। </string>
+    <string name="blind_pay_education_receiver_sub_header_customer">ਗ੍ਰਾਹਕ ਇੱਕ SMS ਭੁਗਤਾਨ ਲਿੰਕ ਪ੍ਰਾਪਤ ਕਰੇਗਾ। ਬੈਂਕ ਅਕਾਉਂਟ/ UPI ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਭੁਗਤਾਨ ਦਾ ਕਲੇਮ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ। </string>
+    <string name="blind_pay_education_settlement_header">ਤਤਕਾਲ ਸੈਟਲਮੈਂਟ</string>
+    <string name="blind_pay_education_settlement_sub_header_customer">ਕਲੇਮ ਕੀਤਾ ਪੈਸਾ 4 ਘੰਟੇ ਦੇ ਅੰਦਰ-ਅੰਦਰ ਗ੍ਰਾਹਕ ਦੇ ਖਾਤੇ ਵਿਚ ਜਮ੍ਹਾ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="blind_pay_education_settlement_sub_header_supplier">ਕਲੇਮ ਕੀਤਾ ਪੈਸਾ 4 ਘੰਟੇ ਦੇ ਅੰਦਰ-ਅੰਦਰ ਸਪਲਾਇਰ ਦੇ ਖਾਤੇ ਵਿਚ ਜਮ੍ਹਾ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="blind_pay_max_limit_education">ਅਧਿਕਤਮ ਸੀਮਾ: ₹ %s ਰੋਜ਼ਾਨਾ</string>
+    <string name="blind_pay_payment_processing_supplier">ਸਪਲਾਇਰ ਦੁਆਰਾ ਪੈਸੇ ਕਲੇਮ ਕਰਨ ਤੋਂ ਬਾਅਦ ਭੁਗਤਾਨ ਦੀ ਸਥਿਤੀ ਨੂੰ ਅਪਡੇਟ ਕੀਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="blind_pay_payment_processing_customer">ਗ੍ਰਾਹਕ ਦੁਆਰਾ ਪੈਸੇ ਕਲੇਮ ਕਰਨ ਤੋਂ ਬਾਅਦ ਭੁਗਤਾਨ ਦੀ ਸਥਿਤੀ ਨੂੰ ਅਪਡੇਟ ਕੀਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="blind_pay_payment_failed_supplier">ਸਪਲਾਇਰ ਨੇ ਭੁਗਤਾਨ ਕਲੇਮ ਨਹੀਂ ਕੀਤਾ।</string>
+    <string name="blind_pay_payment_failed_customer">ਗ੍ਰਾਹਕ ਨੇ ਭੁਗਤਾਨ ਕਲੇਮ ਨਹੀਂ ਕੀਤਾ।</string>
+    <string name="referral_msg_to_setup_payment">ਵਪਾਰੀਆਂ ਨੂੰ ਭੁਗਤਾਨ ਸੈੱਟਅਪ ਲਈ ਸੱਦਾ ਦਿਓ ₹500 ਤੱਕ ਕਮਾਉ</string>
+    <string name="invite_earn_header_title">ਸੱਦਾ ਦਿਓ &amp; ਕਮਾਓ</string>
+    <string name="invite_earn_card_heading">₹500 ਤੱਕ ਕਮਾਉ</string>
+    <string name="invite_earn_card_subheading">ਤੁਹਾਡੀ ਤਰਾਂ OkCredit ਤੇ ਭੁਗਤਾਨ ਸੈੱਟਅੱਪ\n ਕਰਕੇ
+ਕੁਲੈਕਸ਼ਨ ਕਰਨ ਲਈ \n ਵਪਾਰੀਆਂ ਨੂੰ &amp;
+ਸੱਦਾ ਦਿਓ ਅਤੇ ਪੈਸੇ ਕਮਾਉ!</string>
+    <string name="earned_money_will_reflect_in_rewards">ਕਮਾਏ ਗਏ ਪੈਸੇ ਇਨਾਮ ਵਿੱਚ ਦਿਖਣਗੇ</string>
+    <string name="invite_earn_cta_text">ਹੁਣੇ ਸੱਦਾ ਦਿਓ</string>
+    <string name="invite_earn_step_1_text"><b>ਲਿੰਕ ਸ਼ੇਅਰ ਕਰੋ</b>\nਵਪਾਰੀ ਨੂੰ ਮੈਸੇਜ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੇ ਟੈਪ ਕਰਕੇ &amp; OkCredit\' ਤੇ ਆਨਲਾਈਨ ਪੇਮੈਂਟ ਸੈਟ ਅਪ ਕਰਨ ਲਈ ਕਹੋ।</string>
+    <string name="invite_earn_text"><b> ਇਕੱਤਰ ਕਰਨ ਲਈ ਕਹੋ</b>\nਗ੍ਰਾਹਕ ਦੇ ਪੇਜ ਤੋਂ \ \"QR ਦਿਖਾਓ\" ਜਾਂ \"ਰਿਮਾਈਂਡ ਕਰਵਾਓ\" ਤੇ ਕਲਿਕ ਕਰਕੇ OkCredit ਦੁਆਰਾ ਭੁਗਤਾਨ ਦੀ ਬੇਨਤੀ ਕਰੋ</string>
+    <string name="invite_earn_step_3_text"><b>ਇਨਾਮ ਜਿੱਤੋ</b>\nਵਪਾਰੀ ਦਾ ਪਹਿਲਾ ਭੁਗਤਾਨ ਵੈਰੀਫਾਈ ਹੋਣ ਤੇ ਤੁਸੀਂ ₹50 ਜਿੱਤੋਗੇ।</string>
+    <string name="invite">ਸੱਦਾ ਦਿਓ</string>
+    <string name="select_from_the_list_and_invite">ਸੂਚੀ ਵਿਚੋਂ ਚੁਣੋ ਅਤੇ ਸੱਦਾ ਦਿਓ</string>
+    <string name="earned_amount">₹%s</string>
+    <string name="total_rewards_earned">ਇਨਾਮ ਦੀ ਕੁੱਲ ਰਕਮ</string>
+    <string name="invite_earn_share_list_subtext">ਸੱਦਾ ਦਿਓ &amp; ਕਮਾਓ ₹%s</string>
+    <string name="you_will_earn_rewards_when_referred_merchant_sets_up_payments_and_receive_their_1st_payment_through_okcredit">ਤੁਸੀਂ ਇਨਾਮ ਪ੍ਰਾਪਤ ਕਰੋਗੇ ਜਦੋਂ ਬੁਲਾਏ ਗਏ ਵਪਾਰੀ ਭੁਗਤਾਨ ਸੈਟ ਅਪ ਕਰਦੇ ਹਨ ਅਤੇ OkCredit ਦੁਆਰਾ ਉਨ੍ਹਾਂ ਦੀ ਪਹਿਲੀ ਅਦਾਇਗੀ ਪ੍ਰਾਪਤ ਕਰਦੇ ਹਨ।</string>
+    <string name="invite_earn_share_list_subtext_1">ਲਿੰਕ ਸ਼ੇਅਰ ਹੋ ਗਿਆ</string>
+    <string name="invite_earn_share_list_subtext_2">ਭੁਗਤਾਨ ਸੈੱਟਅੱਪ ਪੂਰਾ ਹੋਇਆ</string>
+    <string name="invite_earn_share_list_subtext_4">ਤੁਹਾਨੂੰ ਇੱਕ ਇਨਾਮ ਮਿਲਿਆ ਹੈ!</string>
+    <string name="invite_earn_share_list_subtext_3">ਇਨਾਮ ਦੇਖੋ!</string>
+    <string name="customer_add_bank_request_single">%1s ਨੇ ਤੁਹਾਨੂੰ ਆਨਲਾਈਨ ਅਦਾਇਗੀ ਕਰਨ ਲਈ ਬੈਂਕ ਵੇਰਵਿਆਂ ਦੀ ਬੇਨਤੀ ਕੀਤੀ ਹੈ</string>
+    <string name="customer_add_bank_request_two">%1s ਨੇ ਅਤੇ %2s ਤੁਹਾਨੂੰ ਆਨਲਾਈਨ ਅਦਾਇਗੀ ਕਰਨ ਲਈ ਬੈਂਕ ਵੇਰਵਿਆਂ ਦੀ ਬੇਨਤੀ ਕੀਤੀ ਹੈ</string>
+    <string name="customer_add_bank_request_multiple">%1s ਨੇ ਅਤੇ %2d ਤੁਹਾਨੂੰ ਆਨਲਾਈਨ ਅਦਾਇਗੀ ਕਰਨ ਲਈ ਬੈਂਕ ਵੇਰਵਿਆਂ ਦੀ ਬੇਨਤੀ ਕੀਤੀ ਹੈ</string>
+    <!-- Add offline customers -->
+    <string name="offline_cus_customer_profile_drawer_immutable_to">%s ਨੂੰ</string>
+    <string name="offline_cus_customer_profile_drawer_immutable_desc">ਗ੍ਰਾਹਕ ਜੋੜਨ ਵਿੱਚ ਅਸਮਰੱਥ,%s ਗ੍ਰਾਹਕ/ਸਪਲਾਇਰ ਵਜੋਂ ਪਹਿਲਾਂ ਹੀ ਰਜਿਸਟਰਡ %s</string>
+    <string name="offline_cus_customer_profile_drawer_dirty_desc">QR ਬਣਾਉਣ ਵਿੱਚ ਅਸਮਰੱਥ, ਖਾਤਾ ਸਿੰਕ ਨਹੀਂ ਕੀਤਾ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਦੀ ਜਾਂਚ ਕਰੋ।</string>
+    <!-- Add offline customers -->
+    <string name="ref_online_payment_customerlist_background">ਸੱਦਾ ਦਿਓ ਅਤੇ ₹50 ਕਮਾਓ, ਜਦੋਂ ਗ੍ਰਾਹਕ ਆਪਣੀ ਪਹਿਲੀ ਅਦਾਇਗੀ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ।</string>
+    <string name="ref_online_payment_customerlist_text_2">ਸੱਦਾ ਭੇਜਿਆ ਗਿਆ ਹੈ, ਤੁਸੀਂ ਹੋਰ ਸੱਦੇ ਭੇਜ ਸਕਦੇ ਹੋ ਜਾਂ ਉਨ੍ਹਾਂ ਨੂੰ ਦੁਬਾਰਾ ਯਾਦ ਕਰਾ ਸਕਦੇ ਹੋ।</string>
+    <string name="ref_online_payment_customerlist_text_3">ਪੇਮੈਂਟ ਸੈਟ ਅਪ ਕੀਤਾ ਗਿਆ ਹੈ, ਉਨ੍ਹਾਂ ਨੂੰ OkCredit ਦੁਆਰਾ ਪੇਮੈਂਟ ਸਵੀਕਾਰ ਕਰਨ ਲਈ ਕਹੋ।</string>
+    <string name="ref_online_payment_customerlist_text_4">ਤੁਸੀਂ %s ਨੂੰ ਬੁਲਾਉਣ ਲਈ ₹50 ਦੀ ਕਮਾਈ ਕੀਤੀ ਹੈ, ਜਾਓ ਇਨਾਮ ਦੇਖੋ।</string>
+    <string name="ref_online_payment_customerlist_cta_1">ਹੋਰ ਜਾਣੋ</string>
+    <string name="ref_online_payment_customerlist_cta_3">ਸਟੇਟਸ ਚੈੱਕ ਕਰੋ</string>
+    <string name="ref_online_payment_customerlist_cta_4">ਇਨਾਮ ਚੈੱਕ ਕਰੋ</string>
+    <string name="other_merchants">ਹੋਰ ਵਪਾਰੀ</string>
+    <string name="loading">ਕ੍ਰਿਪਾ ਕਰਕੇ ਉਡੀਕ ਕਰੋ…</string>
+    <string name="loading_failed">ਅਸਫਲ ਹੋਇਆ!</string>
+    <string name="my_bills">ਮੇਰੇ ਬਿੱਲ</string>
+    <string name="error_msg_for_payment_refund_supplier">ਭੁਗਤਾਨ ਪੂਰਾ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਰਕਮ ਤੁਹਾਡੇ ਬੈਂਕ ਖਾਤੇ ਵਿੱਚ 5-7 ਵਪਾਰਕ ਦਿਨਾਂ ਵਿੱਚ ਵਾਪਸ ਕਰ ਦਿੱਤੀ ਜਾਏਗੀ।</string>
+    <string name="customer_need_help">ਮਦਦ ਦੀ ਲੋੜ ਹੈ</string>
+    <!--    Customer support-->
+    <string name="t_002_24X7help_banner_whatsapp_label">%1$s ਚੈਟ ਸਹਿਯੋਗ %2$s</string>
+    <string name="t_002_24X7help_banner_call_label">%1$s ਫੋਨ ਸਹਿਯੋਗ %2$s</string>
+    <string name="t_002_i_need_help">ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ, ਮੈਂਨੂੰ ਮੇਰੇ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਲਈ ਸਹਾਇਤਾ ਚਾਹੀਦੀ ਹੈ\n</string>
+    <string name="t_002_amount">ਰਕਮ</string>
+    <string name="t_002_payment_time">ਭੁਗਤਾਨ ਦਾ ਸਮਾਂ</string>
+    <string name="t_002_txn_id">ਟ੍ਰਾਂਜੈਕਸ਼ਨ ਆਈ ਡੀ</string>
+    <string name="t_002_status">ਸਟੇਟਸ</string>
+    <string name="t_002_i_need_help_generic">ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ, ਮੇਰਾ ਆਨਲਾਈਨ ਪੇਮੈਂਟਸ ਸੰਬੰਧੀ ਇੱਕ ਪ੍ਰਸ਼ਨ ਹੈ</string>
+    <string name="t_002_24X7help_helpbox_CTA">ਸਹਾਇਤਾ ਚਾਹੀਦੀ ਹੈ? ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ</string>
+    <string name="t_002_24X7help_helpbox_choice_label">ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ</string>
+    <string name="t_002_24X7help_helpbox_choice_label_op1">ਕਾਲ</string>
+    <string name="t_002_24X7help_helpbox_choice_label_op2">WhatsApp</string>
+    <string name="t_002_24X7help_exit_nudge_heading">ਆਨਲਾਈਨ ਪੇਮੈਂਟਸ ਲਈ ਸਹਾਇਤਾ ਚਾਹੀਦੀ ਹੈ?</string>
+    <string name="t_002_24X7help_exit_nudge_body">ਅਸੀਂ ਤੁਹਾਡੀ ਸਹਾਇਤਾ ਲਈ ਤਿਆਰ ਹਾਂ</string>
+    <string name="t_002_24X7help_exit_nudge_callCTA">ਸਾਨੂੰ ਫੋਨ ਕਰੋ %1$s</string>
+    <string name="t_002_24X7help_exit_nudge_chatCTA">ਸਾਨੂੰ WhatsApp ਕਰੋ %1$s</string>
+    <string name="SU2_Cashback_Discovery_body_1">ਰਿਮਾਈਂਡਰ ਲਿੰਕ ਦੁਆਰਾ ਪੇਮੈਂਟ ਕਰਕੇ ਗ੍ਰਾਹਕ OkCredit ਤੋਂ ਕੈਸ਼ ਬੈਕ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦੇ ਹਨ!</string>
+    <string name="SU2_Cashback_Discovery_body_2">ਤੁਹਾਨੂੰ ਰਿਮਾਈਂਡਰ ਲਿੰਕ ਦੁਆਰਾ ਪੇਮੈਂਟ ਕਰਨ ਤੇ %1$s ਨੂੰ OkCredit ਦੁਆਰਾ ਕੈਸ਼ਬੈਕ ਮਿਲਿਆ ਹੈ</string>
+    <string name="SU2_Cashback_Discovery_body_3">ਕੈਸ਼ਬੈਕ</string>
+    <string name="t_003_cashback_banner_reminder_qr">UPI ਪੇਮੈਂਟ ਤੇ ਕੈਸ਼ਬੈਕ ਪਾਓ!!</string>
+    <!--Bulk reminder -->
+    <string name="t_001_daily_remind_ab_title">ਰੋਜ਼ਾਨਾ ਰੀਮਾਈਂਡਰ</string>
+    <string name="t_001_daily_remind_selected_count">%1s ਚੁਣਿਆ</string>
+    <string name="t_001_daily_remind_total_dues">ਕੁੱਲ ਬਕਾਇਆ</string>
+    <string name="t_001_daily_remind_pending_for_days">%1s+ ਦਿਨਾਂ ਤੋਂ ਬਾਕੀ</string>
+    <string name="t_001_daily_remind_cust_count">%1s ਗ੍ਰਾਹਕ</string>
+    <string name="t_001_daily_remind_accordian_cust">(%1s) ਗ੍ਰਾਹਕ</string>
+    <string name="t_001_daily_remind_accordian_select_all">ਸਾਰਾ ਚੁਣੋ</string>
+    <string name="t_001_daily_remind_last_reminder">ਆਖਰੀ ਭੇਜਿਆ ਰੀਮਾਈਂਡਰ • %1sਮਹੀਨੇ ਪਹਿਲਾਂ</string>
+    <string name="t_001_daily_remind_last_reminder_months">ਆਖਰੀ ਭੇਜਿਆ ਰੀਮਾਈਂਡਰ • %1sਮਹੀਨੇ ਪਹਿਲਾਂ</string>
+    <string name="t_001_daily_remind_last_reminder_years">ਆਖਰੀ ਭੇਜਿਆ ਰੀਮਾਈਂਡਰ • %1sਸਾਲ ਪਹਿਲਾਂ</string>
+    <string name="t_001_daily_remind_cust_sent_popup_title">%1s ਰਿਮਾਈਂਡਰ ਭੇਜੇ ਗਏ</string>
+    <string name="t_001_daily_remind_cta_ok">ਠੀਕ ਹੈ</string>
+    <string name="t_001_daily_remind_cust_sent_popup_subtitle">ਜਲਦੀ ਬਕਾਇਆ ਇਕੱਤਰ ਕਰਨ ਲਈ ਨਿਯਮਿਤ ਤੌਰ ਤੇ ਰਿਮਾਈਂਡਰ ਭੇਜੋ।</string>
+    <string name="t_001_daily_remind_last_reminder_never">ਆਖਰੀ ਭੇਜਿਆ ਰੀਮਾਈਂਡਰ • ਕਦੀ ਵੀ ਨਹੀਂ</string>
+    <string name="t_001_daily_remind_last_reminder_today">ਆਖਰੀ ਭੇਜਿਆ ਰੀਮਾਈਂਡਰ • ਅੱਜ</string>
+    <string name="t_001_daily_remind_cust_due_since">ਬਕਾਇਆ • %1s ਦਿਨਾਂ ਤੋਂ</string>
+    <string name="t_001_daily_remind_cust_due_since_months">ਬਕਾਇਆ • %1sਮਹੀਨੇ ਤੋਂ</string>
+    <string name="t_001_daily_remind_cust_due_since_years">ਬਕਾਇਆ • %1sਸਾਲ ਤੋਂ</string>
+    <string name="t_001_daily_remind_cust_due_since_today">ਬਕਾਇਆ • ਅੱਜ ਤੋਂ</string>
+    <string name="t_001_daily_remind_cust_due_since_error">ਉਧਾਰ</string>
+    <string name="t_001_daily_remind_empty_state_title">ਮੁਬਾਰਕ ਹੋਵੇ!</string>
+    <string name="t_001_daily_remind_empty_state_subtitle">ਤੁਸੀਂ ਰਿਮਾਈਂਡਰ ਸਫਲਤਾਪੂਰਵਕ ਭੇਜਿਆ। ਅਸਾਨੀ ਨਾਲ ਬਕਾਇਆ ਇਕੱਤਰ ਕਰਨ ਲਈ ਰੋਜ਼ਾਨਾ ਰਿਮਾਈਂਡਰ ਭੇਜਦੇ ਰਹੋ।</string>
+    <string name="t_001_daily_remind_default_reminder_type_wa">WhatsApp</string>
+    <string name="t_001_daily_remind_default_reminder_type_sms">SMS</string>
+    <string name="t_001_daily_remind_accordian_sent_today">ਅੱਜ ਭੇਜਿਆ (%1s)</string>
+    <string name="t_001_daily_remind_default_reminder_type_no_internet_err">ਆਫਲਾਈਨ</string>
+    <string name="t_001_daily_remind_todays_reminder_send_no_internet_err">ਆਫਲਾਈਨ</string>
+    <string name="t_001_daily_remind_sent_reminder_count">%1s/%2s ਰਿਮਾਈਂਡਰ ਭੇਜਿਆ ਗਿਆ</string>
+    <string name="t_001_daily_remind_cust_sending_popup_title">ਉਨ੍ਹਾਂ ਨੂੰ ਭੇਜ ਰਿਹਾ ਹੈ..\.</string>
+    <string name="t_001_daily_remind_default_reminder_popup_title">ਰੀਮਾਈਂਡਰ ਦੀ ਕਿਸਮ</string>
+    <string name="t_001_daily_remind_error_something_went_wong">ਕੁਝ ਗ਼ਲਤ ਹੋਇਆ ਹੈ, 507</string>
+    <string name="t_001_multi_acc_cta_new_biz">ਨਵਾਂ ਕਾਰੋਬਾਰ ਤਿਆਰ ਕਰੋ</string>
+
+    <string name="win_25">₹%1$s ਕਮਾਉ</string>
+    <string name="add_a_transaction_to_the_customer_to_nearn_25">₹25 ਕਮਾਉਣ ਲਈ ਗ੍ਰਾਹਕ ਦੀ ਟ੍ਰਾਂਜੈਕਸ਼ਨ\nਸ਼ਾਮਿਲ ਕਰੋ।</string>
+    <string name="step_1_how_does_it_works">ਡਿਜਿਟਲ ਖਾਤੇ ਦਾ ਰਿਕਾਰਡ ਰੱਖਣ ਲਈ ਗ੍ਰਾਹਕ ਜੋੜੋ।</string>
+    <string name="step_2_how_does_it_works">ਉਸ ਗ੍ਰਾਹਕ ਦੇ ਉਧਾਰ/ਭੁਗਤਾਨ ਦਾ ਰਿਕਾਰਡ ਰੱਖੋ</string>
+</resources>

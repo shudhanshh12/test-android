@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    app:layoutName="Rewards Dialog"
+    android:background="@color/opaque_background_2"
+    android:clickable="true"
+    android:focusable="true"
+    tool:theme="@style/AppTheme">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/end_guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/view_group_for_unscratched_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="iv_cancel,white_background,image_view,win_amount,scratch_view_group"/>
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_clear" />
+
+    <TextView
+        android:id="@+id/hurrey_tv"
+        style="@style/OKC.TextAppearance.Headline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_7_half"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:text="@string/hurray"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/white_background"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cancel"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tool:visibility="visible" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/white_background"
+        android:layout_width="@dimen/claim_rewards_card_size"
+        android:layout_height="@dimen/claim_rewards_card_size"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_white_rounded"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:constraint_referenced_ids="image_view, win_amount"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hurrey_tv"
+        app:layout_constraintVertical_bias="0" />
+
+    <com.anupkumarpanwar.scratchview.ScratchView
+        android:id="@+id/scratch_view"
+        android:layout_width="@dimen/claim_rewards_card_size"
+        android:layout_height="@dimen/claim_rewards_card_size"
+        android:elevation="@dimen/_16dp"
+        android:padding="16dp"
+        android:translationZ="@dimen/_16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/white_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/white_background"
+        app:overlay_image="@drawable/gift"
+        android:visibility="gone"
+        app:tile_mode="CLAMP" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:src="@drawable/ic_reward_giftbox"
+        app:layout_constraintLeft_toLeftOf="@+id/white_background"
+        app:layout_constraintRight_toRightOf="@+id/white_background"
+        app:layout_constraintTop_toTopOf="@+id/white_background" />
+
+    <TextView
+        android:id="@+id/win_amount"
+        style="@style/OKC.TextAppearance.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_16dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/grey900"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/white_background"
+        app:layout_constraintEnd_toEndOf="@+id/image_view"
+        app:layout_constraintStart_toStartOf="@+id/image_view"
+        tool:text="@string/you_won_10"
+        tool:visibility="visible" />
+
+    <TextView
+        android:id="@+id/caption_credit_in_48_hours"
+        style="@style/TextAppearance.OKCTheme.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rewards_money_credited_72_hours"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        tool:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/white_background" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/scratch_view_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tool:visibility="gone"
+        app:constraint_referenced_ids="scratch_view,scratch_view_hint" />
+
+    <TextView
+        android:id="@+id/scratch_view_hint"
+        style="@style/TextAppearance.OKCTheme.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/scratch_view_hint"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/white_background" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/enter_bank_details_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tool:visibility="gone"
+        app:constraint_referenced_ids="enter_bank_details_btn,enter_bank_details_description" />
+
+    <TextView
+        android:id="@+id/enter_bank_details_description"
+        style="@style/TextAppearance.OKCTheme.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/enter_bank_details_description"
+        android:textColor="@color/orange_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/white_background" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tool:visibility="gone"
+        app:constraint_referenced_ids="progress_bar,progress_hint" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
+        android:indeterminateTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/progress_hint"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/white_background" />
+
+    <TextView
+        android:id="@+id/progress_hint"
+        style="@style/TextAppearance.OKCTheme.Caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/claim_in_progress"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/progress_bar"
+        app:layout_constraintTop_toBottomOf="@id/white_background" />
+
+    <TextView
+        android:id="@+id/paid_on"
+        style="@style/OKC.TextAppearance.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_3"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        tool:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/tv_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caption_credit_in_48_hours"
+        tool:text="@string/rewarded_on_06_nov_02_38pm" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        style="@style/OKC.TextAppearance.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        tool:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paid_on"
+        tool:text="@string/earned_for_adding_transactions_records" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/error_solve_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tool:visibility="visible"
+        app:constraint_referenced_ids="tv_solveIssue,error_description,tv_editBankDetail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_solveIssue"
+        style="@style/OKC.TextAppearance.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawablePadding="8dp"
+        android:text="@string/please_solve_this_issue"
+        android:textColor="@color/red_primary"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:drawableStartCompat="@drawable/ic_error_outline_24_px"
+        app:layout_constraintBottom_toTopOf="@+id/error_description"
+        app:layout_constraintEnd_toEndOf="@+id/tv_description"
+        app:layout_constraintStart_toStartOf="@+id/tv_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+    <TextView
+        android:id="@+id/error_description"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_1"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:gravity="center"
+        android:text="@string/error_description_bank_valid"
+        android:textColor="@color/red_lite_1"
+        app:layout_constraintBottom_toTopOf="@id/tv_editBankDetail"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_solveIssue" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tv_editBankDetail"
+        style="@style/OKC.Button.Dark.Outline.Small.white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_2"
+        android:text="@string/edit_bank_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/error_description" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/go_to_rewards_button"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:icon="@drawable/ic_icon_reward"
+        app:iconGravity="textStart"
+        app:iconPadding="6dp"
+        android:text="@string/go_to_rewards"
+        android:visibility="gone"
+        tool:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/cta_btn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cta_btn"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:text="@string/tell_your_friends"
+        android:visibility="gone"
+        tool:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/enter_bank_details_btn"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        app:icon="@drawable/ic_icon_bank"
+        app:iconGravity="textStart"
+        app:iconPadding="6dp"
+        android:text="@string/enter_bank_details"
+        android:visibility="gone"
+        tool:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

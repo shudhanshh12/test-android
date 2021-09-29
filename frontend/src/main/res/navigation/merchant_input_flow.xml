@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/merchantinput_flow"
+    app:startDestination="@id/merchantinput_screen">
+
+    <fragment
+        android:id="@+id/merchantinput_screen"
+        android:name="in.okcredit.frontend.ui.merchant_profile.merchantinput.MerchantInputFragment"
+        android:label="MerchantInputScreen"
+        tools:layout="@layout/merchant_profile_input">
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/merchant_address_confirmation_in_app_popup"
+        android:name="tech.okcredit.home.dialogs.MerchantAddressConfirmationBottomSheetDialog"
+        android:label="Merchant Address Confirmation In App Popup"
+        tools:layout="@layout/merchant_address_confirmation_bottom_sheet" />
+
+</navigation>

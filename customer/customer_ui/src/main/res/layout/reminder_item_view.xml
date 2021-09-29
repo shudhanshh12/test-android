@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/last_reminder_send_time"
+        style="@style/OKC.TextAppearance.Body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:drawableStart="@drawable/ic_bell"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:text="@string/t_001_daily_remind_last_reminder"
+        android:textColor="@color/grey600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cb_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:src="@drawable/circle_filled_white_grey_stroke"
+        app:layout_constraintBottom_toBottomOf="@id/last_reminder_send_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/last_reminder_send_time" />
+
+    <ImageView
+        android:id="@+id/customer_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:background="@drawable/ic_person_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/last_reminder_send_time" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/customer_name"
+        style="@style/OKC.TextAppearance.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="2dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/t_001_daily_remind_last_reminder"
+        android:textColor="@color/grey900"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toTopOf="@id/balance_due"
+        app:layout_constraintEnd_toStartOf="@+id/reminder_mode"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/customer_profile"
+        app:layout_constraintTop_toTopOf="@id/customer_profile"
+        tool:text="Saket Ddakjbjkdajbadjkjadbgkjadgkjdajkdakgdkahjgdhjkag" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/balance_due"
+        style="@style/OKC.TextAppearance.Body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:gravity="center_vertical"
+        android:text="@string/t_001_daily_remind_last_reminder"
+        android:textColor="@color/red_primary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/customer_profile"
+        app:layout_constraintStart_toEndOf="@id/customer_profile"
+        app:layout_constraintTop_toBottomOf="@id/customer_name"
+        tool:text="$15000" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/due_since"
+        style="@style/OKC.TextAppearance.Body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:gravity="center_vertical"
+        android:text="@string/t_001_daily_remind_cust_due_since"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="@id/balance_due"
+        app:layout_constraintStart_toEndOf="@id/balance_due"
+        app:layout_constraintTop_toTopOf="@id/balance_due" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reminder_mode"
+        style="@style/OKC.TextAppearance.Body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:drawableStart="@drawable/ic_icon_whatsapp"
+        android:drawableEnd="@drawable/ic_arrow_down_black"
+        android:drawablePadding="4dp"
+        android:padding="6dp"
+        android:drawableTint="@color/grey600"
+        android:gravity="center_vertical"
+        android:text="@string/t_001_daily_remind_default_reminder_type_wa"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey300"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/last_reminder_send_time" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_otp">OTP ನಮೂದಿಸಿ</string>
+    <string name="otp_sent_message">ನಿಮ್ಮ ಫೋನ್‌ ನಂಬರ್‌ಗೆ SMS ನಲ್ಲಿ ನಾವು OTP ಕಳುಹಿಸಿದ್ದೇವೆ %1$s</string>
+    <string name="otp_incorrect">OTP ತಪ್ಪಾಗಿದೆ</string>
+    <string name="otp_expired">OTP ಅವಧಿ ಮೀರಿದೆ</string>
+    <string name="resend_otp"><u>OTP ಮರುಕಳುಹಿಸಿ</u></string>
+    <string name="forgot_pin"><u>PIN ಮರೆತಿರುವಿರಾ</u></string>
+    <string name="confirm_otp">OTP ದೃಢೀಕರಿಸಿ</string>
+    <string name="set_a_4_digit_pin">4-ಡಿಜಿಟ್ PIN ಸೆಟ್ ಮಾಡಿ</string>
+    <string name="confirm_pin">PIN ದೃಢೀಕರಿಸಿ</string>
+    <string name="incorrect_pin">ತಪ್ಪಾದ PIN. ದಯವಿಟ್ಟು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="enter_security_pin">ಸೆಕ್ಯುರಿಟಿ PIN ನಮೂದಿಸಿ</string>
+    <string name="security_setup_description">ನಿಮ್ಮ ಗ್ರಾಹಕರ ವಿವರಗಳು ಮತ್ತು ವಹಿವಾಟು ಡೇಟಾದ ಸುರಕ್ಷತೆಯನ್ನು ಖಾತ್ರಿಗೊಳಿಸಲು, ನಿಮ್ಮ ಆ್ಯಪ್‌ಗಾಗಿ PIN ಸೆಟ್ ಮಾಡಿ</string>
+    <string name="security_update_description">ನಾವು ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು 4-ಡಿಜಿಟ್ ಪಿನ್‌ಗೆ ಅಪ್‌ಡೇಟ್ ಮಾಡಿದ್ದೇವೆ, ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಪಾಸ್‌ವರ್ಡ್‌ನ ಮೊದಲ 4-ಡಿಜಿಟ್‌ಗಳನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="confirm_fingerprint">ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ದೃಢೀಕರಿಸಿ</string>
+    <string name="use_fingerprint">ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಬಳಸಿ</string>
+    <string name="confirm_fingerprint_description">ಸೆಕ್ಯುರಿಟಿಗಾಗಿ ದಯವಿಟ್ಟು ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ದೃಢೀಕರಿಸಿ</string>
+    <string name="use_pin">PIN ಬಳಸಿ</string>
+    <string name="four_digit_security_pin">4-ಅಂಕೆಯ ಭದ್ರತಾ PIN </string>
+</resources>

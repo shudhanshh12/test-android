@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_transaction_cashback_message">Get \u20B9%d cashback on your first payment of atleast \u20B9%d</string>
+    <string name="repeated_transaction_cashback_message">Get upto \u20B9%d cashback on a minimum payment of \u20B9%d</string>
+</resources>

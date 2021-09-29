@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="file_name">File Name</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="upload_pdfs">Upload PDFs</string>
+    <string name="customers_count">%1$s Customers Found</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="amount">Amount</string>
+    <string name="submit">Submit</string>
+    <string name="percentage_status">%1$s %</string>
+    <string name="uploading">Uploading</string>
+    <string name="failed_text">Failed</string>
+    <string name="completed_text">Completed</string>
+    <string name="no_network">No Network</string>
+    <string name="add_more_files">Add More Files</string>
+    <string name="amount_input">%1$s</string>
+    <string name="last_transaction_date">Last Transaction Date</string>
+    <string name="pdf_not_found">File not found in phone</string>
+    <string name="file_parsing_error">Error happened while reading the file. Please try adding a valid file</string>
+    <string name="open_pdf"><u>Open pdf</u></string>
+    <string name="error_please_add_customer_name">Please add the customer name</string>
+    <string name="please_add_phone_number">Please add the phone number</string>
+    <string name="please_select_date">Please Select the date</string>
+    <string name="please_add_the_amount">Please add the amount</string>
+    <string name="please_add_valid_phone_number">Please add valid phone number</string>
+    <string name="amount_greater_than_0">Amount must be greater than 0</string>
+    <string name="please_select_atleast_one_customer">Please select atleast one customer</string>
+    <string name="phone_error">Please add the valid phone number</string>
+    <string name="error_message_solve_issue_before_adding">Can\'t add customer please solve the error</string>
+    <string name="not_able_to_read_file">Not able to read file</string>
+    <string name="please_try_adding_vaild_file">Please try to add a valid file.</string>
+    <string name="no_pdf_files_found">No PDF files found</string>
+    <string name="please_download_account_statement_from_the_other_digital_bahi_khata_apps_in_your_phone_and_check_here_again">Please download account statement from the other digital Bahi-Khata apps in your phone and check here again.</string>
+</resources>

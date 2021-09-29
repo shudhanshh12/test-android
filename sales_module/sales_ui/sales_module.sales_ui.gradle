@@ -1,0 +1,111 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "kotlin-kapt"
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BILLING_WEB_URL', "\"https://account.staging.okcredit.in/sales/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BILLING_WEB_URL', "\"https://account.alpha.okcredit.in/sales\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BILLING_WEB_URL', "\"https://account.okcredit.in/sales\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':business:contract')
+    implementation project(':contacts:contract')
+    implementation project(':base')
+    implementation project(':ab')
+    implementation project(':shared')
+    implementation project(':analytics')
+    implementation project(':app:app_contract')
+    implementation project(':resources')
+    implementation project(':sales_module:sales_sdk')
+    implementation project(':communication')
+    implementation project(':auth')
+
+    implementation navigation.fragment
+    implementation navigation.ui
+    implementation arch.lifecycle
+
+    // Views
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+    annotationProcessor view.epoxyProcessor
+    implementation view.youtubePlayer
+    implementation view.lottie
+    implementation view.gridlayout
+
+    // Image
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+    implementation imageDeps.textDrawable
+
+    //androidX
+    implementation androidX.ktx
+    implementation androidX.constraintLayout
+
+    // Dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    //Rx
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    // kotlin
+    implementation utility.kotlin
+
+    // Utility
+    implementation utility.jodaTime
+
+    //test
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockk
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockWebServer
+    testImplementation firebase.firebaseCrashlytics
+}

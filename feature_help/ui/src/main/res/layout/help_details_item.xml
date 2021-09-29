@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/spacing_12"
+    android:background="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/total_amount_container"
+        android:layout_width="@dimen/spacing_24"
+        android:layout_height="@dimen/spacing_24"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        app:cardBackgroundColor="@color/green_primary"
+        app:cardCornerRadius="@dimen/spacing_12"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_4dp"
+            android:paddingStart="@dimen/_8dp"
+            android:paddingTop="@dimen/_2dp"
+            android:paddingEnd="@dimen/_8dp"
+            android:paddingBottom="@dimen/_2dp"
+            android:textAlignment="center"
+            android:textAppearance="?textAppearanceSubtitle2"
+            android:textColor="@color/white"
+            tool:text="1" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_detail_text"
+        android:layout_width="@dimen/view_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/grey900"
+        app:layout_constraintBottom_toTopOf="@+id/iv_instruction_Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/total_amount_container"
+        app:layout_constraintTop_toTopOf="@id/total_amount_container"
+        tool:text="text view" />
+
+    <ImageView
+        android:id="@+id/iv_instruction_Image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_drawable"
+        app:layout_constraintEnd_toEndOf="@+id/tv_detail_text"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

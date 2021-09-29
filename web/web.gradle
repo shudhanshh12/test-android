@@ -1,0 +1,110 @@
+apply plugin: 'com.android.library'
+apply plugin: "kotlin-android"
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-web.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-web.pro'
+        }
+    }
+
+    kapt {
+        correctErrorTypes = true
+    }
+
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':resources')
+    implementation project(':backend:contract')
+    implementation project(':analytics')
+    implementation project(':business:contract')
+    implementation project(':contacts:contract')
+    implementation project(':communication')
+    implementation project(':shared')
+    implementation project(':ab')
+    implementation project(':web:contract')
+    implementation project(':app:app_contract')
+    implementation project(':device')
+    implementation project(':dynamicview:contract')
+
+    implementation androidX.webkit
+    implementation androidX.browser
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+    implementation androidX.appcompact
+    implementation navigation.fragment
+    implementation navigation.ui
+    implementation navigation.uiKtx
+    implementation navigation.fragmentKtx
+    implementation androidX.ktx
+
+    implementation utility.kotlin
+    implementation utility.coroutines
+    implementation dagger.core
+
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation rx.java
+    implementation rx.android
+    implementation rx.binding
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation unitTest.robolectric
+    testImplementation firebase.remoteConfig
+}

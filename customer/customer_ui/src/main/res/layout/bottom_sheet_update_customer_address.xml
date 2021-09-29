@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top"
+    android:paddingBottom="@dimen/grid_2">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/OKC.TextAppearance.Subtitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/grid_2"
+        android:text="@string/t_003_staff_collection_add_address_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="407dp"
+        android:layout_height="1dp"
+        android:background="@color/grey50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/t_003_staff_collection_add_address_body"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/grey700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_top" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_answer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_2"
+        app:boxStrokeColor="?colorPrimary"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toStartOf="@+id/button_submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_submit"
+        app:startIconDrawable="@drawable/ic_location_line">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/start_typing"
+            android:inputType="textShortMessage"
+            android:textAppearance="@style/OKC.TextAppearance.Body2" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:contentDescription="@string/save"
+        android:src="@drawable/ic_check"
+        app:fabCustomSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBody" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

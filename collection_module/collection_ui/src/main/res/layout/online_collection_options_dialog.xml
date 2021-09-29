@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top">
+
+    <ImageView
+        android:id="@+id/iv_online_collection"
+        android:layout_width="40dp"
+        android:layout_height="56dp"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingBottom="@dimen/grid_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_statement"
+        app:tint="@color/grey900" />
+
+    <TextView
+        android:id="@+id/tv_online_collection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingBottom="@dimen/grid_2"
+        android:text="@string/online_collection_statement"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_online_collection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_online_collection"
+        app:layout_constraintTop_toTopOf="@+id/iv_online_collection"
+        tools:text="Online Collection Statement" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_online_collection"
+        app:layout_constraintTop_toBottomOf="@+id/iv_online_collection"
+        tools:layout_editor_absoluteX="3dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_share_qr"
+        android:layout_width="40dp"
+        android:layout_height="56dp"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingBottom="@dimen/grid_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:srcCompat="@drawable/ic_share"
+        app:tint="@color/grey900" />
+
+    <TextView
+        android:id="@+id/tv_share_qr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingBottom="@dimen/grid_2"
+        android:text="@string/share_qr_and_link"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_share_qr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_share_qr"
+        app:layout_constraintTop_toTopOf="@+id/iv_share_qr"
+        tools:text="Share QR" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_share_qr"
+        app:layout_constraintTop_toBottomOf="@+id/iv_share_qr"
+        tools:layout_editor_absoluteX="3dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_save_qr"
+        android:layout_width="40dp"
+        android:layout_height="56dp"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingBottom="@dimen/grid_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@drawable/ic_save"
+        app:tint="@color/grey900" />
+
+    <TextView
+        android:id="@+id/tv_save_qr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingBottom="@dimen/grid_2"
+        android:text="@string/save_qr"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_save_qr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_save_qr"
+        app:layout_constraintTop_toTopOf="@+id/iv_save_qr"
+        tools:text="Save QR" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_save_qr"
+        app:layout_constraintTop_toBottomOf="@+id/iv_save_qr"
+        tools:layout_editor_absoluteX="3dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_update_account"
+        android:layout_width="40dp"
+        android:layout_height="56dp"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingBottom="@dimen/grid_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:srcCompat="@drawable/ic_upi_icon"
+        app:tint="@color/grey900" />
+
+    <TextView
+        android:id="@+id/tv_update_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingBottom="@dimen/grid_2"
+        android:text="@string/update_account_bank_or_upi"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_update_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_update_account"
+        app:layout_constraintTop_toTopOf="@+id/iv_update_account"
+        tools:text="Update Account (UPI / Bank) " />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_update_account"
+        app:layout_constraintTop_toBottomOf="@+id/iv_update_account"
+        tools:layout_editor_absoluteX="3dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_delete_account"
+        android:layout_width="40dp"
+        android:layout_height="56dp"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingBottom="@dimen/grid_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:srcCompat="@drawable/ic_delete_outline"
+        app:tint="@color/red_primary" />
+
+    <TextView
+        android:id="@+id/tv_delete_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingBottom="@dimen/grid_2"
+        android:text="@string/delete_account"
+        android:textColor="@color/red_primary"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_delete_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_delete_account"
+        app:layout_constraintTop_toTopOf="@+id/iv_delete_account"
+        tools:text="Delete Account" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

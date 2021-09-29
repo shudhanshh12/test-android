@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    app:layoutName="Share Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/know_more_fragment"
+        android:name="tech.okcredit.android.referral.ui.know_more.ReferralKnowMoreFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_height="150dp" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/know_more_fragment"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/start_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/_16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/end_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/_16dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:indeterminateOnly="true"
+                android:progressDrawable="@drawable/progress_bar"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/know_more_fragment"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/share_okcredit_app_to_everyone_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_referral_screen_svg_part1"
+                app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/know_more_fragment" />
+
+            <TextView
+                android:id="@+id/share_okcredit_app_to_everyone_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/share_okcredit_app_to_everyone"
+                android:textAppearance="@style/OKC.TextAppearance.Subtitle3.Tall"
+                app:layout_constraintBottom_toBottomOf="@+id/share_okcredit_app_to_everyone_image"
+                app:layout_constraintEnd_toStartOf="@id/share_okcredit_app_to_everyone_image"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toTopOf="@id/share_okcredit_app_to_everyone_image" />
+
+            <ImageView
+                android:id="@+id/ask_your_invites_install_app_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:src="@drawable/ic_referral_graphics_svg_part2"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toBottomOf="@id/share_okcredit_app_to_everyone_image" />
+
+            <TextView
+                android:id="@+id/ask_your_invites_install_app_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ask_your_invites_to_install_the_app"
+                android:textAppearance="@style/OKC.TextAppearance.Subtitle3.Tall"
+                app:layout_constraintBottom_toBottomOf="@+id/ask_your_invites_install_app_image"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintStart_toEndOf="@+id/ask_your_invites_install_app_image"
+                app:layout_constraintTop_toTopOf="@id/ask_your_invites_install_app_image" />
+
+            <ImageView
+                android:id="@+id/money_credited_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_referral_graphics_svg_part3"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@+id/money_credited_text"
+                app:layout_constraintTop_toBottomOf="@id/ask_your_invites_install_app_image" />
+
+            <TextView
+                android:id="@+id/money_credited_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/money_will_be_ncredited_for_every_ninstallation"
+                android:textAppearance="@style/OKC.TextAppearance.Subtitle3.Tall"
+                app:layout_constraintBottom_toBottomOf="@id/money_credited_image"
+                app:layout_constraintEnd_toStartOf="@id/money_credited_image"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toTopOf="@id/money_credited_image" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/gradiant_bg"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/view_nudge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="30dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_hand_share"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/link_share_whatsapp"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/link_share_whatsapp"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="@dimen/spacing_32"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:text="@string/invite_and_earn_cta"
+        app:layout_constraintWidth_percent="0.70"
+        app:icon="@drawable/ic_whatsapp"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

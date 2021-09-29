@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/rootView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="?colorPrimary"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:id="@+id/tv_add_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableStart="@drawable/ic_add_customer"
+            android:drawablePadding="@dimen/spacing_12"
+            android:drawableTint="@color/white"
+            android:gravity="center"
+            android:text="@string/add_customer"
+            android:textAllCaps="true"
+            android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold" />
+
+
+        <View
+            android:id="@+id/viewShine"
+            android:layout_width="150dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="-100dp"
+            android:background="@drawable/shine_effect"
+            android:rotation="120" />
+
+    </com.google.android.material.card.MaterialCardView>
+</merge>

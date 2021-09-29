@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:theme="@style/Base.OKCTheme">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:text="@string/t_001_multi_acc_title_new_biz"
+        android:textAppearance="?textAppearanceHeadline6"
+        android:textColor="@color/grey900"
+        app:layout_constraintBottom_toTopOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:background="@color/grey300"
+        app:layout_constraintBottom_toTopOf="@id/layout_business_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_business_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:hint="@string/t_001_multi_acc_input_biz_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fb_add_business"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/ic_store">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_business_name"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_add_business"
+        style="@style/OKC.FAB"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:enabled="false"
+        android:tint="@color/white"
+        app:backgroundTint="@color/grey400"
+        app:elevation="0dp"
+        app:fabCustomSize="48dp"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_business_name"
+        app:srcCompat="@drawable/ic_next_confirm_2" />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:indeterminateTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/layout_business_name"
+        app:layout_constraintTop_toTopOf="@+id/divider" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/grp_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="title,divider, layout_business_name,fb_add_business, loader" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/grp_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="img_success_tick,tv_success" />
+
+    <ImageView
+        android:id="@+id/img_success_tick"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="@dimen/_24dp"
+        android:src="@drawable/ic_tick_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/green_primary"
+        android:gravity="center"
+        android:text="@string/t_001_multi_acc_msg_biz_added"
+        android:textAppearance="?textAppearanceHeadline5"
+        android:textColor="@color/grey900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_success_tick" />
+</androidx.constraintlayout.widget.ConstraintLayout>

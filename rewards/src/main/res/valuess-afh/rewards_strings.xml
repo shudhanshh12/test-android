@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">Menu se apne inaam prapt karne ke liye apna bank account set up karein</string>
+    <string name="you_won_feature">Apne%1$s jeeta hai </string>
+    <string name="visit_feature">%1$s dekhein</string>
+    <string name="claim_in_progress">Process kar rahe hain…Kripaya pratiksha karein</string>
+    <string name="scratch_view_hint">Reward dekhne ke liye scratch karein</string>
+    <string name="enter_bank_details_description">Is cashback ka labh uthane ke liye apne bank account details likhein.</string>
+    <string name="please_solve_this_issue">Kripaya is samasya ko sulajhayein</string>
+    <string name="earned_due_to_activation">Transaction jodne ke liye mila.</string>
+    <string name="better_luck_next_time">Koi baat nahi! \nShayad aap agli baar jeet jaayein</string>
+    <string name="something_went_wrong_in_claiming_rewards">Kshama karein, kuch takaniki samasya aa gayi hai. Kripaya thodi der baad fir se koshish karein.</string>
+    <string name="congratulations_tell_them_add_bank_details">Badhaai ho!!! Inaam lene ke liye bank account setup karein.</string>
+    <string name="reward_on_hold">Inaam rok diye gaye hain</string>
+    <string name="error_budged_limit_exceeded">Kuch takniki samasya ke karan aapka reward rok diya gaya hai. Hamaari team jald hi samasya suljhayegi. Kripaya 3 dinon me phir se inaam lein.</string>
+    <string name="you_won_10">you won 10</string>
+    <string name="hurray">Hurray!</string>
+    <string name="oops">Ohh!</string>
+    <string name="rewarded_on_06_nov_02_38pm">06 Nov, dopahar 02:38 baje inaam mila</string>
+    <string name="earned_for_adding_transactions_records">Transaction jodne ke liye mila.</string>
+    <string name="setup_bank_account_to_get_reward">Inaam prapt karne ke liye bank account setup karein.</string>
+    <string name="step_1_how_does_it_works_roa">Alag-alag dino par grahak aur kam se kam 2 transaction jodein.</string>
+    <string name="step_2_how_does_it_works_roa">Aap apne gifts Inaam vibhag me dekh payenge.</string>
+    <string name="error_description_bank_valid">Yeh bank account ya UPI kisi anya user ke naam per pahle se hi maujud hai. Kripya sahi details share karein, ya kisi anya account ka istemaal karein.</string>
+    <string name="upi_inactive_error_msg">Aapka bank account active nahi hai. Kripaya apna bank account active karein ya dusre account ka istemaal karein.</string>
+    <string name="payout_daily_limit_reached_error_msg">Reward claim karne ki aaj ki seema samapt hui. Krupaya, kal fir se claim karein.</string>
+    <string name="reward_update">Reward ka Update</string>
+    <string name="please_try_again_later">Kripaya baad me dobara koshish karein</string>
+    <string name="payment_update">Payment Update</string>
+    <string name="close">Close</string>
+    <string name="processing_state">Process ho raha hai…</string>
+    <string name="bank_service_unavail">Bank service band hai</string>
+    <string name="bank_service_unavil_error_msg">Aapka bank abhi payment process nahi kar pa raha hai. Kripaya kuchh ghanton ke baad dobara koshish karein.</string>
+    <string name="we_are_processing_your_reward">Hum aapka reward process kar rahe hain. Kripaya 3 dinon me phir se check karein.</string>
+    <string name="edit_bank_details">Bank details sahi karein</string>
+    <string name="please_try_again">Kripaya dobara koshish karein</string>
+</resources>

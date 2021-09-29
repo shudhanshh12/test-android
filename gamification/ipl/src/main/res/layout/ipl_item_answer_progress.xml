@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/cvTaskProgressRoot"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    app:elevation="24dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/OKC.TextAppearance.Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/complete_questions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPercentage"
+            style="@style/OKC.TextAppearance.Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/green_ada"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+            app:layout_constraintStart_toEndOf="@+id/tvTitle"
+            app:layout_constraintTop_toTopOf="@+id/tvTitle"
+            tools:text="75%" />
+
+        <TextView
+            android:id="@+id/ivTick1"
+            style="@style/OKC.TextAppearance.Subtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <View
+            android:id="@+id/viewProgress1"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:background="@drawable/bg_no_dash"
+            android:layerType="software"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTick1"
+            app:layout_constraintEnd_toStartOf="@+id/ivTick2"
+            app:layout_constraintStart_toEndOf="@+id/ivTick1"
+            app:layout_constraintTop_toTopOf="@+id/ivTick1" />
+
+        <TextView
+            android:id="@+id/ivTick2"
+            style="@style/OKC.TextAppearance.Subtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivTick3"
+            app:layout_constraintStart_toStartOf="@+id/ivTick1"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <View
+            android:id="@+id/viewProgress2"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:background="@drawable/bg_no_dash"
+            android:layerType="software"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTick1"
+            app:layout_constraintEnd_toStartOf="@+id/ivTick3"
+            app:layout_constraintStart_toEndOf="@+id/ivTick2"
+            app:layout_constraintTop_toTopOf="@+id/ivTick2" />
+
+        <TextView
+            android:id="@+id/ivTick3"
+            style="@style/OKC.TextAppearance.Subtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivTick4"
+            app:layout_constraintStart_toStartOf="@+id/ivTick2"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <View
+            android:id="@+id/viewProgress3"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:background="@drawable/bg_dash"
+            android:layerType="software"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTick3"
+            app:layout_constraintEnd_toStartOf="@+id/ivTick4"
+            app:layout_constraintStart_toEndOf="@+id/ivTick3"
+            app:layout_constraintTop_toTopOf="@+id/ivTick3" />
+
+        <TextView
+            android:id="@+id/ivTick4"
+            style="@style/OKC.TextAppearance.Subtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guildeEnd"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guildeEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <View
+            android:id="@+id/viewLiteGreenBg"
+            android:background="@color/green_lite"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guildeEnd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideCenter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/tvPoint"
+            style="@style/OKC.TextAppearance.Caption1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/points"
+            app:layout_constraintBottom_toBottomOf="@+id/guideCenter"
+            app:layout_constraintEnd_toEndOf="@+id/viewLiteGreenBg"
+            app:layout_constraintStart_toStartOf="@+id/viewLiteGreenBg" />
+
+        <TextView
+            android:id="@+id/tvPointsValue"
+            style="@style/OKC.TextAppearance.Headline5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/viewLiteGreenBg"
+            app:layout_constraintStart_toStartOf="@+id/viewLiteGreenBg"
+            app:layout_constraintTop_toBottomOf="@+id/guideCenter"
+            tools:text="162" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

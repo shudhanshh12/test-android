@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:theme="@style/Base.OKCTheme"
+    app:cardCornerRadius="@dimen/default_card_radius"
+    app:cardElevation="@dimen/default_card_elevation"
+    app:cardPreventCornerOverlap="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/list_preferred_item_height">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="8dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="8dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/topGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <ImageView
+            android:id="@+id/displayPictureImageView"
+            android:layout_width="@dimen/display_picture_size"
+            android:layout_height="@dimen/display_picture_size"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toTopOf="@id/topGuideline"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            style="@style/TextAppearance.OKCTheme.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@id/mobileTextView"
+            app:layout_constraintEnd_toStartOf="@id/pendingRewardAmountTextView"
+            app:layout_constraintStart_toEndOf="@id/displayPictureImageView"
+            app:layout_constraintTop_toTopOf="@id/topGuideline"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Baburao Ganpatrao Apte" />
+
+        <TextView
+            android:id="@+id/mobileTextView"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/displayPictureImageView"
+            app:layout_constraintEnd_toStartOf="@id/pendingRewardAmountTextView"
+            app:layout_constraintStart_toEndOf="@id/displayPictureImageView"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView"
+            tools:text="8881212" />
+
+        <TextView
+            android:id="@+id/pendingRewardAmountTextView"
+            style="@style/TextAppearance.OKCTheme.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            app:layout_constraintBottom_toTopOf="@id/pendingRewardTextView"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toTopOf="@id/topGuideline"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Rs. 50" />
+
+        <TextView
+            android:id="@+id/pendingRewardTextView"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/pending_rewards"
+            app:layout_constraintBottom_toBottomOf="@id/displayPictureImageView"
+            app:layout_constraintEnd_toEndOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@id/pendingRewardAmountTextView" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/pendingRewardViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="pendingRewardAmountTextView,pendingRewardTextView"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/grey300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/displayPictureImageView"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/moreRewardsTextView"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:text="@string/earn_more_rewards"
+            android:textColor="?colorLight"
+            app:drawableEndCompat="@drawable/ic_arrow_down_black_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <View
+            android:id="@+id/moreRewardsBox"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@id/moreRewardsTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/moreRewardsTextView" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/collapsedViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="moreRewardsTextView,moreRewardsBox,divider" />
+
+        <include
+            android:id="@+id/nextRewardLayout"
+            layout="@layout/layout_next_reward"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/moreRewardsBox" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notifyButton"
+            style="@style/OKC.Button.Dark.Solid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green_dark"
+            android:gravity="start|center_vertical"
+            android:text="@string/notify_this_person"
+            app:drawableEndCompat="@drawable/ic_long_arrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nextRewardLayout" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notifyDisabledButton"
+            style="@style/OKC.Button.Dark.Solid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grey400"
+            android:enabled="false"
+            android:textColor="@color/white"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notifyButton"
+            tools:text="Notify next in 24:00 hours" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/closeTextView"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:text="@string/close"
+            android:textColor="?colorLight"
+            app:drawableEndCompat="@drawable/ic_arrow_up_black_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notifyDisabledButton" />
+
+        <View
+            android:id="@+id/closeBox"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@id/closeTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/closeTextView" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/expandedViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="nextRewardLayout,closeTextView,closeBox" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

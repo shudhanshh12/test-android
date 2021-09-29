@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/applockv2_flow"
+    app:startDestination="@id/change_pin_screen">
+
+    <fragment
+        android:id="@+id/change_pin_screen"
+        android:name="tech.okcredit.applock.changePin.ChangeSecurityPinFragment"
+        android:label="ChangeSecurityPinScreen"
+        tools:layout="@layout/change_security_pin">
+        <deepLink app:uri="@string/changepin_screen_deeplink" />
+        <action
+            android:id="@+id/action_changePin_screen_to_set_pin_screen"
+            app:destination="@id/set_pin_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/set_pin_screen"
+        android:name="tech.okcredit.applock.pinLock.PinLockFragment"
+        android:label="PinLockScreen"
+        tools:layout="@layout/set_pin_fragment">
+        <deepLink app:uri="@string/pinlock_screen_deeplink" />
+        <argument
+            android:name="Source"
+            android:defaultValue="ChangePinOtpScreen"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/enter_pin_screen"
+        android:name="tech.okcredit.applock.enterPin.EnterPinFragment"
+        android:label="EnterPinScreen"
+        tools:layout="@layout/enter_pin_fragment">
+        <deepLink app:uri="@string/enterpin_screen_deeplink" />
+    </fragment>
+
+</navigation>

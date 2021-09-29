@@ -1,0 +1,236 @@
+[
+  {
+    "target": "home_banner",
+    "component": {
+      "version": "v1alpha",
+      "kind": "Banner",
+      "metadata": {
+        "name": "OnlineMedicines",
+        "feature": "order_meds",
+        "lang": "en"
+      },
+      "event_handlers": {
+        "view": [
+          {
+            "action": "track",
+            "event": "View Banner",
+            "properties": {
+              "debug": "true"
+            }
+          }
+        ],
+        "click": [
+          {
+            "action": "navigate",
+            "url": "https://google.co.in"
+          },
+          {
+            "action": "track",
+            "event": "Click Banner",
+            "properties": {
+              "debug": "true"
+            }
+          }
+        ]
+      },
+      "title": "Online Medicines",
+      "subtitle": "Now you can get online medicines online",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/okcredit-6cb68.appspot.com/o/link_pay.webp?alt=media&token=13001152-7a9d-4a97-9186-5e23020920f6"
+    }
+  },
+  {
+    "target": "home_side_navigation",
+    "component": {
+      "version": "v1alpha",
+      "kind": "VerticalList",
+      "metadata": {
+        "name": "Online Medicines",
+        "feature": "order_meds",
+        "lang": "en"
+      },
+      "event_handlers": {
+        "view": [
+          {
+            "action": "track",
+            "event": "View Home Side Navigation",
+            "properties": {
+              "debug": "true"
+            }
+          }
+        ],
+        "click": [
+          {
+            "action": "navigate",
+            "url": "https://google.co.in"
+          },
+          {
+            "action": "track",
+            "event": "Click Home Side Navigation",
+            "properties": {
+              "debug": "true"
+            }
+          }
+        ]
+      },
+      "title": "Medicines",
+      "icon": "https://cdn0.iconfinder.com/data/icons/health-icons-rounded/110/Medicine-2-512.png"
+    }
+  },
+  {
+    "target": "home_toolbar_featured_action",
+    "component": {
+      "version": "v1alpha",
+      "kind": "Toolbar",
+      "metadata": {
+        "name": "Online Medicines",
+        "feature": "order_meds",
+        "lang": "en"
+      },
+      "event_handlers": {
+        "view": [
+          {
+            "action": "track",
+            "event": "View Toolbar",
+            "properties": {
+              "debug": "true"
+            }
+          }
+        ],
+        "click": [
+          {
+            "action": "navigate",
+            "url": "https://google.co.in"
+          },
+          {
+            "action": "track",
+            "event": "Click Home Toolbar",
+            "properties": {
+              "debug": "true"
+            }
+          }
+        ]
+      },
+      "icon": "https://cdn0.iconfinder.com/data/icons/health-icons-rounded/110/Medicine-2-512.png"
+    }
+  },
+  {
+    "target": "dashboard",
+    "component": {
+      "kind": "vertical_list",
+      "version": "v1alpha",
+      "metadata": {},
+      "items": [
+        {
+          "kind": "advertisement",
+          "version": "v1alpha",
+          "metadata": {},
+          "event_handlers": {
+            "view": [
+              {
+                "action": "track",
+                "event": "Entry Point Viewed",
+                "properties": {
+                  "source": "Dashboard",
+                  "type": "advertisement"
+                }
+              }
+            ],
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://google.co.in"
+              },
+              {
+                "action": "track",
+                "event": "Entry Point Clicked",
+                "properties": {
+                  "source": "Dashboard",
+                  "type": "advertisement"
+                }
+              }
+            ]
+          },
+          "icon": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ic_account_balance%404x.webp",
+          "title": "Complete KYC",
+          "subtitle": "Increase your individual & monthly transaction limit",
+          "button_text": "Start KYC",
+          "image": "https://picsum.photos/148"
+        },
+        {
+          "kind": "summary_card",
+          "version": "v1alpha",
+          "metadata": {
+            "name": "net_balance"
+          },
+          "event_handlers": {
+            "view": [
+              {
+                "action": "track",
+                "event": "Entry Point Viewed",
+                "properties": {
+                  "source": "Dashboard",
+                  "type": "net_balance"
+                }
+              }
+            ],
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://google.co.in"
+              },
+              {
+                "action": "track",
+                "event": "Entry Point Clicked",
+                "properties": {
+                  "source": "Dashboard",
+                  "type": "net_balance"
+                }
+              }
+            ]
+          },
+          "icon": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ic_account_balance%404x.webp",
+          "title": "Ledger",
+          "subtitle": "Net Balance",
+          "icon2": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ic_share%404x.webp"
+        },
+        {
+          "kind": "summary_card",
+          "version": "v1alpha",
+          "metadata": {
+            "name": "collection",
+            "duration": 1
+          },
+          "event_handlers": {
+            "view": [
+              {
+                "action": "track",
+                "event": "Entry Point Viewed",
+                "properties": {
+                  "source": "Dashboard",
+                  "type": "collection"
+                }
+              }
+            ],
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://google.co.in"
+              },
+              {
+                "action": "track",
+                "event": "Entry Point Clicked",
+                "properties": {
+                  "source": "Dashboard",
+                  "type": "collection"
+                }
+              }
+            ]
+          },
+          "icon": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ic_account_balance%404x.webp",
+          "title": "Collection",
+          "icon2": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ic_share%404x.webp"
+        }
+      ]
+    }
+  }
+]

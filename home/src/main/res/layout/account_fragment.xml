@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    app:layoutName="Account Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSubSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingStart="@dimen/_8dp"
+                    android:text="@string/account"
+                    android:textAllCaps="false"
+                    android:textAppearance="?textAppearanceSubtitle1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/contextual_help"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <tech.okcredit.help.contextual_help.ContextualHelpMenuView
+                    android:id="@+id/contextual_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:background="?android:selectableItemBackgroundBorderless"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:visibility="visible" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/last_updated_at_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="last_updated_at,last_updated_at_container"/>
+    <View
+        android:id="@+id/last_updated_at_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/indigo_lite_1"
+        app:layout_constraintBottom_toBottomOf="@+id/last_updated_at"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <TextView
+        android:id="@+id/last_updated_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:lineSpacingExtra="5sp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:textColor="@color/grey900"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:text="@string/t_004_biz_health_account_lagtime_info"
+        android:drawableStart="@drawable/ic_info_grey900"
+        android:drawablePadding="6dp"
+        app:layout_constraintStart_toStartOf="@+id/last_updated_at_container"
+        app:layout_constraintTop_toBottomOf="@id/appbar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        android:layout_marginTop="@dimen/spacing_chat_view_item"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/_8dp"
+        app:layout_constraintTop_toBottomOf="@id/last_updated_at">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_12">
+
+            <ImageView
+                android:id="@+id/iv_customer_khata"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_ledger"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/green_primary" />
+
+            <TextView
+                android:id="@+id/tv_customer_khata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/customer_khata"
+                android:textAppearance="?textAppearanceSubtitle1"
+                app:layout_constraintStart_toStartOf="@+id/iv_customer_khata"
+                app:layout_constraintTop_toBottomOf="@id/iv_customer_khata"
+                tools:text="Customer khata" />
+
+            <ImageView
+                android:id="@+id/iv_customer_count"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_person_placeholder"
+                app:layout_constraintStart_toStartOf="@+id/tv_customer_khata"
+                app:layout_constraintTop_toBottomOf="@id/tv_customer_khata"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_customer_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textAppearance="?textAppearanceCaption2"
+                app:drawableTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_customer_count"
+                app:layout_constraintStart_toEndOf="@id/iv_customer_count"
+                app:layout_constraintTop_toTopOf="@id/iv_customer_count"
+                tools:text="4 Customers" />
+
+            <TextView
+                android:id="@+id/tv_net_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/net_balance"
+                android:textAppearance="?textAppearanceCaption2"
+                android:textColor="@color/grey600"
+                app:layout_constraintStart_toEndOf="@id/iv_customer_khata"
+                app:layout_constraintTop_toTopOf="@id/iv_customer_khata"
+                tools:text="Net Balance" />
+
+            <TextView
+                android:id="@+id/tv_value_customer_khata"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end|center_vertical"
+                android:text="@string/customer_khata"
+                android:textAppearance="?textAppearanceSubtitle1"
+                android:textColor="@color/red_primary"
+                app:layout_constraintBottom_toBottomOf="@id/tv_customer_khata"
+                app:layout_constraintEnd_toEndOf="@id/iv_arrow_right"
+                app:layout_constraintStart_toEndOf="@id/tv_customer_khata"
+                app:layout_constraintTop_toTopOf="@id/tv_customer_khata"
+                tools:text="₹15000" />
+
+            <TextView
+                android:id="@+id/tv_customer_khata_adv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_give"
+                android:textAppearance="?textAppearanceCaption2"
+                android:textColor="@color/grey600"
+                app:layout_constraintBottom_toBottomOf="@id/tv_customer_count"
+                app:layout_constraintEnd_toEndOf="@id/iv_arrow_right"
+                app:layout_constraintTop_toTopOf="@id/tv_customer_count"
+                tools:text="You Give" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/grey600" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        android:layout_marginTop="@dimen/spacing_chat_view_item"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/_8dp"
+        app:layout_constraintTop_toBottomOf="@id/card_customer">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_12">
+
+            <ImageView
+                android:id="@+id/iv_supplier_khata"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_icon_delivery_truck"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/green_primary" />
+
+            <TextView
+                android:id="@+id/tv_supplier_khata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/supplier_khata"
+                android:textAppearance="?textAppearanceSubtitle1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_supplier_khata"
+                tools:text="Supplier khata" />
+
+            <ImageView
+                android:id="@+id/iv_supplier_count"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_person_placeholder"
+                app:layout_constraintStart_toStartOf="@+id/tv_supplier_khata"
+                app:layout_constraintTop_toBottomOf="@id/tv_supplier_khata"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_supplier_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textAppearance="?textAppearanceCaption2"
+                app:drawableTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_supplier_count"
+                app:layout_constraintStart_toEndOf="@id/iv_supplier_count"
+                app:layout_constraintTop_toTopOf="@id/iv_supplier_count"
+                tools:text="4 Suppliers" />
+
+            <TextView
+                android:id="@+id/tv_supplier_net_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/net_balance"
+                android:textAppearance="?textAppearanceCaption2"
+                android:textColor="@color/grey600"
+                app:layout_constraintStart_toEndOf="@id/iv_supplier_khata"
+                app:layout_constraintTop_toTopOf="@id/iv_supplier_khata"
+                tools:text="Net Balance" />
+
+            <TextView
+                android:id="@+id/tv_supplier_khata_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?textAppearanceSubtitle1"
+                android:textColor="@color/green_primary"
+                app:layout_constraintBottom_toBottomOf="@id/tv_supplier_khata"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="end|center_vertical"
+                app:layout_constraintStart_toEndOf="@id/tv_supplier_khata"
+                app:layout_constraintTop_toTopOf="@id/tv_supplier_khata"
+                tools:text="₹15000" />
+
+            <TextView
+                android:id="@+id/tv_supplier_khata_adv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_give"
+                android:textAppearance="?textAppearanceCaption2"
+                android:textColor="@color/grey600"
+                app:layout_constraintBottom_toBottomOf="@id/tv_supplier_count"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_supplier_count"
+                tools:text="You Give" />
+
+            <ImageView
+                android:id="@+id/iv_supplier_arrow_right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/grey600" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        android:layout_marginTop="@dimen/spacing_chat_view_item"
+        android:background="?selectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/_8dp"
+        app:layout_constraintTop_toBottomOf="@id/card_supplier">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_12">
+
+            <ImageView
+                android:id="@+id/iv_download"
+                android:layout_width="@dimen/_24dp"
+                android:layout_height="@dimen/_24dp"
+                android:src="@drawable/ic_icon_download"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/green_primary" />
+
+            <TextView
+                android:id="@+id/tv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:text="@string/download_backup"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_download"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/download_backup" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_web_lib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        android:layout_marginTop="@dimen/spacing_chat_view_item"
+        android:background="?selectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/_8dp"
+        app:layout_constraintTop_toBottomOf="@id/card_download">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_12">
+
+            <ImageView
+                android:id="@+id/iv_web_lib"
+                android:layout_width="@dimen/_24dp"
+                android:layout_height="@dimen/_24dp"
+                android:src="@drawable/ic_lock"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/green_primary" />
+
+            <TextView
+                android:id="@+id/tv_webview_lib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:text="Test Web View"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_web_lib"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText"
+                tools:text="Test Web View" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/download_complete_background"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@color/green_lite"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginBottom="0dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_download_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:drawablePadding="6dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:text="@string/backup_downloaded_and_saved"
+        android:textAppearance="?textAppearanceBody2"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_check_green"
+        app:layout_constraintBottom_toBottomOf="@id/download_complete_background"
+        app:layout_constraintEnd_toEndOf="@id/download_complete_background"
+        app:layout_constraintStart_toStartOf="@id/download_complete_background"
+        app:layout_constraintTop_toTopOf="@id/download_complete_background" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_downloaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:constraint_referenced_ids="download_complete_background, tv_download_complete" />
+
+    <View
+        android:id="@+id/downloading_background"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@color/green_lite"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_downloading"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginHorizontal="6dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/downloading_background"
+        app:layout_constraintEnd_toStartOf="@+id/tv_downloading"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/downloading_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_downloading"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="@string/downloading_backup_please_wait"
+        android:textAppearance="?textAppearanceBody2"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/downloading_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_downloading"
+        app:layout_constraintTop_toTopOf="@id/downloading_background" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_downloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="downloading_background, tv_downloading, iv_downloading" />
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

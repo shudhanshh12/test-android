@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">ప్రొఫైల్ ఎడిట్ చేయండి</string>
+    <string name="t_001_multi_acc_title_new_biz">కొత్త వ్యాపారాన్ని సృష్టించండి</string>
+    <string name="t_001_multi_acc_input_biz_name">వ్యాపారం / దుకాణం పేరు</string>
+    <string name="t_001_multi_acc_net_bal">నెట్‌ బ్యాలెన్స్:</string>
+    <string name="t_001_multi_acc_net_bal_due">బకాయి</string>
+    <string name="t_001_multi_acc_net_bal_advance">అడ్వాన్స్</string>
+    <string name="t_001_multi_acc_title_select_biz">వ్యాపారాన్ని ఎంచుకోండి</string>
+    <string name="t_001_multi_acc_msg_biz_added">కొత్త వ్యాపారం విజయవంతంగా సృష్టించబడింది</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">బిజినెస్ సృష్టించడం సాధ్యపడలేదు. గరిష్ట బిజినెస్ పరిమితి చేరుకుంది</string>
+</resources>

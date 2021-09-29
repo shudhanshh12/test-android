@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="supplier_edit_amount_proceed">Proceed</string>
+    <string name="supplier_edit_amount_send_to">Send to:</string>
+    <string name="supplier_edit_amount_paid_to">Paid to:</string>
+    <string name="supplier_enter_amount_to_pay">Enter amount to pay</string>
+    <string name="supplier_edit_amount_rupee_symbol">₹</string>
+    <string name="supplier_edit_amount_rupee">₹%s</string>
+    <string name="supplier_limit_reached_warning">Limit reached: ₹%s left from your daily payment limit of  ₹%s. Try again tomorrow.</string>
+    <string name="supplier_put_a_valid_amount">Please put a valid amount</string>
+    <string name="supplier_put_a_valid_amount_greater_than_1">Minimum amount ₹1!</string>
+    <string name="supplier_learn_more">Learn More</string>
+    <string name="supplier_copied_toast">Txn id copied to clipboard</string>
+    <string name="supplier_payment_title_pending">Payment Pending</string>
+    <string name="supplier_payment_result_pending">Status will be updated in a few hours. %s</string>
+    <string name="supplier_payment_title_success">Payment Successful</string>
+    <string name="supplier_payment_title_failed">Payment Failed</string>
+    <string name="supplier_payment_title_cancelled">Transaction Cancelled</string>
+    <string name="supplier_payment_result_failed">Any money debited will be refunded in 5-7 working days. %s</string>
+    <string name="supplier_share">Share</string>
+    <string name="supplier_done">Done</string>
+    <string name="supplier_retry">Retry</string>
+    <string name="supplier_copy">Copy</string>
+    <string name="supplier_network">Network Error</string>
+    <string name="supplier_other_error">Something went wrong</string>
+    <string name="supplier_install_okcredit_now">If you also have a business, Install OkCredit now</string>
+    <string name="supplier_txn_id">Txn ID: %s</string>
+    <string name="supplier_copy_error">Could not copy. Please try again!</string>
+    <string name="supplier_please_wait">Please wait… (%ss)</string>
+    <string name="supplier_limit_reached_title">Limit Reached!</string>
+    <string name="supplier_txn_limit_reached_warning">Your daily transaction limit is reached.</string>
+    <string name="click_here_reach_customer_support">to reach out to our support team.</string>
+    <string name="click_here">Click here</string>
+    <string name="supplier_pay_online">Pay Online</string>
+    <string name="supplier_last_payment">(Last Payment on %s)</string>
+    <string name="supplier_added_on_date">(Added On %1$s)</string>
+    <string name="supplier_chat">Chat</string>
+    <string name="supplier_hey_whatsapp">Hey %s</string>
+    <string name="supplier_initial_text_please_wait_12s">Please wait… (12s)</string>
+    <string name="supplier_other_error_jp001">Try some other payment mode</string>
+
+</resources>

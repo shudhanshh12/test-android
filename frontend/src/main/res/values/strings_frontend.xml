@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dateRange">10 Jul, 2018 - 10 Jul, 2018</string>
+    <string name="Rupee">₹</string>
+    <string name="my_bills">My Bills</string>
+</resources>

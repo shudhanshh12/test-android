@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="payable_amount">देय रक्कम</string>
+    <string name="please_check_or_edit_final_payable_amount">कृपया अंतिम देय रक्कम तपासा किंवा त्यात बदल करा</string>
+    <string name="rupee_text">₹</string>
+    <string name="juspay_pay_securely">सुरक्षितपणे पेमेंट करा</string>
+    <string name="juspay_enter_amount_to_pay">देय रक्कम लिहा</string>
+    <string name="juspay_payment_successful">पेमेंट यशस्वी</string>
+    <string name="juspay_no_internet_connection">इंटरनेट सेवा उपलब्ध नाही</string>
+    <string name="juspay_something_went_wrong">काहीतरी चूक झाली. कृपया पुन्हा प्रयत्न करा.</string>
+    <string name="juspay_please_fill_correct_amount">कृपया योग्य रक्कम लिहा</string>
+</resources>

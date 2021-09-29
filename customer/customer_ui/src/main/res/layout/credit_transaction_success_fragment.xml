@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/image_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/text_credit_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_big_round_tick_6dp" />
+
+    <TextView
+        android:id="@+id/text_credit_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/credit_added"
+        android:textAppearance="@style/OKC.TextAppearance.Headline6"
+        android:textColor="@color/green_ada"
+        app:layout_constraintBottom_toTopOf="@id/text_sms_sent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_success"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/text_sms_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/msg_sms_sent_transaction"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/grey600"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/image_safe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_credit_amount"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_secured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/text_secured"
+        app:layout_constraintEnd_toEndOf="@id/text_secured"
+        app:layout_constraintStart_toStartOf="@id/text_secured"
+        app:srcCompat="@drawable/ic_grey_secured" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/text_safe"
+        app:layout_constraintEnd_toEndOf="@id/text_safe"
+        app:layout_constraintStart_toStartOf="@id/text_safe"
+        app:srcCompat="@drawable/ic_grey_safe" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_protected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/text_protected"
+        app:layout_constraintEnd_toEndOf="@id/text_protected"
+        app:layout_constraintStart_toStartOf="@id/text_protected"
+        app:srcCompat="@drawable/ic_grey_protected" />
+
+    <TextView
+        android:id="@+id/text_secured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/secured"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+        android:textColor="@color/grey400" />
+
+    <ImageView
+        android:id="@+id/bullet_safe"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:src="@drawable/circle_grey400_background"
+        app:tint="@color/grey500" />
+
+    <TextView
+        android:id="@+id/text_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/data_stored_online"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+        android:textColor="@color/grey400" />
+
+    <ImageView
+        android:id="@+id/bullet_protected"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:src="@drawable/circle_grey400_background"
+        app:tint="@color/grey500" />
+
+    <TextView
+        android:id="@+id/text_protected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/data_protected"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+        android:textColor="@color/grey400" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/data_security_flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        app:constraint_referenced_ids="text_secured,bullet_safe,text_safe,bullet_protected,text_protected"
+        app:flow_horizontalGap="10dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

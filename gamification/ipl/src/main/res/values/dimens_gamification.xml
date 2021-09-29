@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rewards_card_size">162dp</dimen>
+    <dimen name="claim_rewards_card_size">264dp</dimen>
+</resources>

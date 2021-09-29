@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_16dp"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/ic_person_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/payment_type_img"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_8dp"
+        android:src="@drawable/ic_icon_link_pay"
+        app:layout_constraintBottom_toBottomOf="@id/payment_type_tv"
+        app:layout_constraintStart_toEndOf="@id/profile_img"
+        app:layout_constraintTop_toTopOf="@id/payment_type_tv"
+        app:tint="@color/grey600" />
+
+    <TextView
+        android:id="@+id/payment_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:text="@string/link_pay"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toTopOf="@id/customer_name"
+        app:layout_constraintStart_toEndOf="@id/payment_type_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/name"
+        android:textAppearance="?textAppearanceSubtitle2"
+        app:layout_constraintBottom_toBottomOf="@id/profile_img"
+        app:layout_constraintEnd_toStartOf="@id/date"
+        app:layout_constraintStart_toStartOf="@id/start_barrier"
+        app:layout_constraintTop_toBottomOf="@id/payment_type_img" />
+
+    <TextView
+        android:id="@+id/status_refunded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:drawablePadding="@dimen/_4dp"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_2dp"
+        android:paddingEnd="5dp"
+        android:text="@string/refund_successful"
+        android:textAppearance="?textAppearanceSubtitle4"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_refund"
+        app:drawableTint="@color/orange_primary"
+        app:layout_constraintStart_toStartOf="@id/start_barrier"
+        app:layout_constraintTop_toBottomOf="@id/customer_name"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivRefundSuccess"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/status_refunded"
+        app:layout_constraintStart_toEndOf="@id/status_refunded"
+        app:layout_constraintTop_toTopOf="@id/status_refunded"
+        app:srcCompat="@drawable/payment_ic_success"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/status_settlement_pending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:drawablePadding="@dimen/_4dp"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_2dp"
+        android:text="@string/settlement_pending"
+        android:textAppearance="?textAppearanceSubtitle4"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_pending"
+        app:layout_constraintStart_toStartOf="@id/start_barrier"
+        app:layout_constraintTop_toBottomOf="@id/customer_name"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/start_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="payment_type_img,customer_name,status"
+        app:layout_constraintStart_toEndOf="@id/profile_img" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceSubtitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/amount" />
+
+    <ImageView
+        android:id="@+id/imageArrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="@dimen/_4dp"
+        android:src="@drawable/ic_take"
+        app:layout_constraintBottom_toBottomOf="@id/amount"
+        app:layout_constraintEnd_toStartOf="@id/amount"
+        app:layout_constraintTop_toTopOf="@id/amount"
+        app:tint="@color/green_primary" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4dp"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="@id/profile_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amount"
+        tools:text="16/06/2020" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/add_to_khata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4dp"
+        android:drawableStart="@drawable/ic_add_circle_fill"
+        android:drawablePadding="@dimen/_4dp"
+        android:gravity="center"
+        android:text="@string/t_003_transaction_history_btn_add2_khata"
+        android:textAppearance="?textAppearanceSubtitle4"
+        android:textColor="@color/primary"
+        android:visibility="gone"
+        app:drawableTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/added_in_khata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4dp"
+        android:background="@drawable/background_added_in_khata"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/_10dp"
+        android:paddingVertical="@dimen/_2dp"
+        android:text="@string/t_003_transaction_history_added"
+        android:textAppearance="?textAppearanceSubtitle4"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        tools:visibility="gone" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/bottomBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="added_in_khata,add_to_khata,status,status_settlement_pending,status_refunded" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/start_barrier"
+        app:layout_constraintTop_toBottomOf="@+id/bottomBarrier" />
+
+</merge>

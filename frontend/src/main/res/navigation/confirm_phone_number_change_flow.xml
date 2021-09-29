@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# UpdateBankAccount Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/confirm_phone_number_change_flow"
+    app:startDestination="@id/confirm_number_change_screen">
+
+    <fragment
+        android:id="@+id/confirm_number_change_screen"
+        android:name="in.okcredit.frontend.ui.confirm_phone_change.ConfirmNumberChangeFragment"
+        android:label="ConfirmNumberChangeScreen">
+
+    </fragment>
+
+</navigation>

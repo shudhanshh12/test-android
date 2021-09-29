@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply plugin: 'kotlin-android-extensions'
+apply from: "$rootDir/config.gradle"
+
+android {
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-collection-module.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-collection-module.pro'
+        }
+    }
+
+}

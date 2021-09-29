@@ -1,0 +1,2 @@
+-keepclassmembers class io.netty.** { *; }
+-keepclassmembers class org.jctools.** { *; }

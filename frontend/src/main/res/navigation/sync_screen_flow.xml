@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# Sync Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sync_flow"
+    app:startDestination="@id/sync_screen">
+
+    <fragment
+        android:id="@+id/sync_screen"
+        android:name="in.okcredit.frontend.ui.sync.SyncFragment"
+        android:label="SyncScreen"
+        tools:layout="@layout/sync_fragment">
+
+        <action
+            android:id="@+id/action_sync_screen_to_selectBusinessFragment"
+            app:destination="@id/selectBusinessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectBusinessFragment"
+        android:name="in.okcredit.merchant.ui.select_business.SelectBusinessFragment"
+        android:label="SelectBusinessFragment" />
+
+</navigation>

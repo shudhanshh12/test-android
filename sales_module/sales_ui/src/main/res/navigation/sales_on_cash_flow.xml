@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/sales_on_cash_flow"
+    app:startDestination="@id/salesOnCashScreen">
+
+    <fragment
+        android:id="@+id/salesOnCashScreen"
+        android:name="in.okcredit.sales_ui.ui.list_sales.SalesOnCashFragment"
+        android:label="SalesOnCashScreen" >
+        <action
+            android:id="@+id/action_salesOnCashScreen_to_salesDetailScreen"
+            app:destination="@id/salesDetailScreen"
+            app:popUpTo="@id/salesOnCashScreen" />
+        <action
+            android:id="@+id/action_salesOnCashScreen_to_addSaleScreen"
+            app:destination="@id/addSaleScreen"
+            app:popUpTo="@id/salesOnCashScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_salesOnCashScreen_to_billSummaryScreen"
+            app:destination="@id/billSummaryScreen" />
+        <action
+            android:id="@+id/action_salesOnCashScreen_to_addBillItemsScreen"
+            app:destination="@id/addBillItemsScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/salesDetailScreen"
+        android:name="in.okcredit.sales_ui.ui.view_sale.SalesDetailFragment"
+        android:label="SalesDetailScreen" />
+    <fragment
+        android:id="@+id/addSaleScreen"
+        android:name="in.okcredit.sales_ui.ui.add_sales.AddSaleFragment"
+        android:label="AddSaleScreen" >
+        <deepLink app:uri="sales://add/sale"/>
+        <action
+            android:id="@+id/action_addSaleScreen_to_addBillItemsScreen"
+            app:destination="@id/addBillItemsScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_addSaleScreen_to_billSummaryScreen"
+            app:destination="@id/billSummaryScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBillItemsScreen"
+        android:name="in.okcredit.sales_ui.ui.add_bill_items.AddBillItemsFragment"
+        android:label="AddBillItemsScreen" >
+        <deepLink app:uri="sales://add/bill"/>
+        <action
+            android:id="@+id/action_addBillItemsScreen_to_billSummaryScreen"
+            app:destination="@id/billSummaryScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/billSummaryScreen"
+        android:name="in.okcredit.sales_ui.ui.bill_summary.BillSummaryFragment"
+        android:label="BillSummaryScreen" />
+</navigation>

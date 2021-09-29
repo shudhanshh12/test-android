@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_back_icon"
+        android:layout_width="@dimen/grid_6"
+        android:layout_height="@dimen/grid_6"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_3"
+        android:layout_marginEnd="@dimen/grid_3_half"
+        android:padding="@dimen/grid_1"
+        android:src="@drawable/ic_arrow_back" />
+
+    <ImageView
+        android:id="@+id/iv_open_reward_icon"
+        android:layout_width="116dp"
+        android:layout_height="91dp"
+        android:layout_below="@+id/iv_back_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="@dimen/grid_3_half"
+        android:src="@drawable/reward_opened_no_bakground" />
+
+    <TextView
+        android:id="@+id/tv_you_won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_open_reward_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/grid_5"
+        android:text="@string/you_won"
+        android:textAppearance="?textAppearanceHeadline6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_you_won"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/grid_1"
+        android:text="@string/setup_collection_to_get_money"
+        android:textAppearance="?textAppearanceCaption2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_setup_collection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:layout_marginBottom="@dimen/grid_2"
+        app:cardBackgroundColor="@color/green_primary"
+        app:cardCornerRadius="@dimen/grid_1_half"
+        app:cardElevation="2dp"
+        app:contentPadding="@dimen/grid_1"
+        tools:cardBackgroundColor="@color/green_primary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/collection_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/grid_2"
+                android:layout_marginTop="@dimen/grid_1_half"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/setup_collection"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18" />
+
+            <ImageView
+                android:id="@+id/iv_right_arrow_icon"
+                android:layout_width="@dimen/grid_3"
+                android:layout_height="@dimen/grid_3"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/grid_3_half"
+                app:srcCompat="@drawable/ic_long_arrow"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

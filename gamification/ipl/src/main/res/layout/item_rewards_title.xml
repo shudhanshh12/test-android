@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <TextView
+        android:id="@+id/earned_rewards"
+        style="@style/TextAppearance.OKCTheme.Subtitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/earned_rewards"
+        android:textAllCaps="true"
+        android:textColor="@color/green_primary" />
+
+</merge>

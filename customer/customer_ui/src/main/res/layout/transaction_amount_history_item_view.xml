@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sectionRoot"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/grid_7">
+
+    <TextView
+        android:id="@+id/tv_edited_on_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:layout_marginEnd="@dimen/spacing_16"
+        android:layout_marginBottom="@dimen/spacing_16"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/grey500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_txn_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="14 Jun 2020, 12:59 Pm" />
+
+    <TextView
+        android:id="@+id/tv_edited_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:gravity="end"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="5sp"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/grey900"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="₹ 500" />
+
+    <TextView
+        android:id="@+id/tv_txn_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/grey500"
+        app:layout_constraintEnd_toEndOf="@+id/tv_edited_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edited_amount"
+        tools:text="Edited to" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height_dimension"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_edited_on_date"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

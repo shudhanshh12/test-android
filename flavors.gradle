@@ -1,0 +1,27 @@
+ext.flavorConfig = {
+
+    flavorDimensions "server"
+
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    def list = ["stagingDebug", "alphaDebug", "alphaQa", "prodDebug", "prodRelease"]
+
+    android.variantFilter { variant ->
+        variant.setIgnore(!list.contains(variant.name))
+    }
+
+}

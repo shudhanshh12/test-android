@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="240dp"
+        android:background="@color/green_lite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rewardLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/rewardTitleTextView"
+        app:layout_constraintEnd_toEndOf="@id/header"
+        app:layout_constraintStart_toStartOf="@id/header"
+        app:layout_constraintTop_toTopOf="@id/header"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/reward" />
+
+    <TextView
+        android:id="@+id/rewardTitleTextView"
+        style="@style/TextAppearance.OKCTheme.Headline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/rewards_title"
+        app:layout_constraintBottom_toTopOf="@id/rewardSubtitleTextView"
+        app:layout_constraintEnd_toEndOf="@id/header"
+        app:layout_constraintStart_toStartOf="@id/header"
+        app:layout_constraintTop_toBottomOf="@id/rewardLogo" />
+
+    <TextView
+        android:id="@+id/rewardSubtitleTextView"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/add_customer_rewards_subtitle"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        app:layout_constraintEnd_toEndOf="@id/header"
+        app:layout_constraintStart_toStartOf="@id/header"
+        app:layout_constraintTop_toBottomOf="@id/rewardTitleTextView" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.OKCTheme.Subtitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/how_does_this_work"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <TextView
+        android:id="@+id/step1TextView"
+        style="@style/TextAppearance.OKCTheme.Caption4"
+        android:layout_width="@dimen/rewards_steps_indicator_size"
+        android:layout_height="@dimen/rewards_steps_indicator_size"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_stroke_lightgreen_1dp"
+        android:gravity="center"
+        android:text="@string/numeric_1"
+        app:layout_constraintStart_toStartOf="@id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:text="@string/tick_mark" />
+
+    <TextView
+        android:id="@+id/step1TitleTextView"
+        style="@style/TextAppearance.OKCTheme.Subtitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/rewards_step_1_title"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toEndOf="@id/step1TextView"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/step1SubtitleTextView"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/rewards_step_1_subtitle"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toEndOf="@id/step1TextView"
+        app:layout_constraintTop_toBottomOf="@id/step1TitleTextView" />
+
+    <View
+        android:id="@+id/dottedLineView"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@drawable/verticle_dotted_line"
+        app:layout_constraintBottom_toTopOf="@id/step2TextView"
+        app:layout_constraintEnd_toEndOf="@+id/step1TextView"
+        app:layout_constraintStart_toStartOf="@+id/step1TextView"
+        app:layout_constraintTop_toBottomOf="@+id/step1TextView" />
+
+    <TextView
+        android:id="@+id/step2TextView"
+        style="@style/TextAppearance.OKCTheme.Caption4"
+        android:layout_width="@dimen/rewards_steps_indicator_size"
+        android:layout_height="@dimen/rewards_steps_indicator_size"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_stroke_lightgreen_1dp"
+        android:gravity="center"
+        android:text="@string/numeric_2"
+        app:layout_constraintStart_toStartOf="@id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@id/step1SubtitleTextView" />
+
+    <TextView
+        android:id="@+id/step2TitleTextView"
+        style="@style/TextAppearance.OKCTheme.Subtitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/rewards_step_2_title"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toEndOf="@id/step2TextView"
+        app:layout_constraintTop_toBottomOf="@id/step1SubtitleTextView" />
+
+    <TextView
+        android:id="@+id/step2SubtitleTextView"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/rewards_step_2_subtitle"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toEndOf="@id/step1TextView"
+        app:layout_constraintTop_toBottomOf="@id/step2TitleTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

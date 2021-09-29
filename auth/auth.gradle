@@ -1,0 +1,81 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://auth.staging.okcredit.in/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://auth.alpha.okcredit.in/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://auth.okcredit.in/\""
+        }
+
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-auth.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-auth.pro'
+        }
+    }
+
+}
+
+dependencies {
+    // base
+    implementation project(':base')
+
+    // dagger
+    implementation dagger.core
+    kapt dagger.androidAnnotationProcessor
+    kapt dagger.annotationProcessor
+
+    // retrofit
+    implementation retrofit.retrofit
+    implementation retrofit.gsonConverter
+
+    implementation utility.guava
+    implementation utility.timber
+    implementation utility.kotlin
+
+    // androidx
+    implementation androidX.annotation
+
+    // TESTING
+    // local unit tests
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockWebServer
+    testImplementation unitTest.mockk
+    testImplementation unitTest.robolectric
+
+}

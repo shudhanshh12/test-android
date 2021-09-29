@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_otp">ওটিপি এন্টার করুন</string>
+    <string name="otp_sent_message">আমরা আপনার %1$s ফোন নম্বরটিতে OTP সহ একটি SMS পাঠিয়েছি</string>
+    <string name="otp_incorrect">ভুল OTP</string>
+    <string name="otp_expired">OTP র মেয়াদ শেষ হয়েছে</string>
+    <string name="resend_otp"><u>OTP পুনরায় পাঠান</u></string>
+    <string name="forgot_pin"><u>পিন ভুলে গেছেন</u></string>
+    <string name="confirm_otp">OTP নিশ্চিত করুন</string>
+    <string name="set_a_4_digit_pin">একটি 4-অঙ্কের পিন সেট করুন</string>
+    <string name="confirm_pin">পিন নিশ্চিত করুন</string>
+    <string name="incorrect_pin">ভুল পিন। অনুগ্রহপূর্বক আবার চেষ্টা করুন।</string>
+    <string name="enter_security_pin">সুরক্ষা পিন এন্টার করুন</string>
+    <string name="security_setup_description">আপনার গ্রাহকের বিশদ এবং লেনদেনের ডেটা সুরক্ষা নিশ্চিত করতে আপনার অ্যাপ্লিকেশনের জন্য সুরক্ষা পিন সেট করুন</string>
+    <string name="security_update_description">আমরা পাসওয়ার্ডটিকে 4-অঙ্কের পিনে আপডেট করেছি, আপনার বর্তমান পাসওয়ার্ডের প্রথম 4-টি সংখ্যা লিখুন</string>
+    <string name="confirm_fingerprint">আঙুলের ছাপ নিশ্চিত করুন</string>
+    <string name="use_fingerprint">আঙুলের ছাপ ব্যবহার করুন</string>
+    <string name="confirm_fingerprint_description">সুরক্ষার জন্য দয়া করে আপনার আঙুলের ছাপ নিশ্চিত করুন</string>
+    <string name="use_pin">পিন ব্যবহার করুন</string>
+    <string name="four_digit_security_pin">4-সংখ্যার সুরক্ষা পিন </string>
+</resources>

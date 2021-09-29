@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    app:layoutName="Rewards Fragment"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:background="@color/grey50"
+        android:padding="16dp"
+        android:src="@drawable/pattern_bg"
+        android:tint="?colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey50"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/OKC.TextAppearance.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/rewards"
+            android:textColor="@color/grey800" />
+
+        <tech.okcredit.help.contextual_help.ContextualHelpMenuView
+            android:id="@+id/contextual_help"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="@dimen/_16dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="?colorPrimary"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/arrow"
+        app:layout_constraintStart_toStartOf="@+id/arrow"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:text="$45" />
+
+    <TextView
+        android:id="@+id/total_rewards_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/total_rewards"
+        android:textColor="@color/grey800"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/amount"
+        app:layout_constraintStart_toStartOf="@+id/amount"
+        app:layout_constraintTop_toBottomOf="@id/amount" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:drawablePadding="@dimen/_4dp"
+        android:text="@string/rewards_money_credited_72_hours"
+        android:textColor="@color/grey700"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        app:drawableStartCompat="@drawable/ic_icon_info"
+        app:layout_constraintEnd_toEndOf="@+id/total_rewards_text"
+        app:layout_constraintStart_toStartOf="@+id/total_rewards_text"
+        app:layout_constraintTop_toBottomOf="@id/total_rewards_text" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/arrow">
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:itemCount="5" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

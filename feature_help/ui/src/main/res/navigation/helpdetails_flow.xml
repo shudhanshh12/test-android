@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# HelpDetails Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/helpdetails_flow"
+    app:startDestination="@id/helpdetails_screen">
+
+    <fragment
+        android:id="@+id/helpdetails_screen"
+        android:name="tech.okcredit.help.help_details.HelpDetailsFragment"
+        android:label="HelpDetailsScreen"
+        tools:layout="@layout/helpdetails_screen">
+
+        <action
+            android:id="@+id/startYoutubePlayer"
+            app:destination="@id/youtube_full_screen">
+
+            <argument
+                android:name="videoUrl"
+                android:defaultValue="VIDEO_URL"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/youtube_full_screen"
+        android:name="tech.okcredit.help.help_details.dialog.YouTubeBottomSheetDialog"
+        android:label="youTube Full Screen"
+        tools:layout="@layout/bottomsheet_fullscreen_video" />
+
+</navigation>

@@ -1,0 +1,103 @@
+[
+  {
+    "target": "home_side_navigation",
+    "component": {
+      "version": "v1alpha",
+      "kind": "vertical_list",
+      "metadata": {
+        "name": "VerticalList",
+        "debug": true,
+        "lang": "afh"
+      },
+      "items": [
+        {
+          "version": "v1alpha",
+          "kind": "menu_item",
+          "metadata": {
+            "Name": "Share"
+          },
+          "event_handlers": {
+            "view": [
+              {
+                "action": "track",
+                "event": "Entry Point Viewed",
+                "properties": {
+                  "source": "Side Menu",
+                  "type": "Share"
+                }
+              }
+            ],
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://staging.okcredit.app/merchant/v1/share"
+              },
+              {
+                "action": "track",
+                "event": "Share App",
+                "properties": {
+                  "Screen": "Drawer"
+                }
+              }
+            ]
+          },
+          "title": "Share",
+          "icon": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ic_share%404x.webp"
+        }
+      ]
+    }
+  },
+  {
+    "target": "dashboard",
+    "component": {
+      "version": "v1alpha",
+      "kind": "vertical_list",
+      "metadata": {
+        "name": "VerticalList",
+        "lang": "afh"
+      },
+      "items": [
+        {
+          "version": "v1alpha",
+          "kind": "summary_card",
+          "metadata": {
+            "name": "net_balance",
+            "lang": "afh"
+          },
+          "event_handlers": {
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://staging.okcredit.app/merchant/v1/account_statement?duration=30"
+              }
+            ]
+          },
+          "title": "Bahikhata",
+          "subtitle": "Kul Balance",
+          "icon": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ledger/drawable-xxxhdpi/icon_ledger_book.png"
+        },
+        {
+          "version": "v1alpha",
+          "kind": "advertisement",
+          "metadata": {
+            "name": "Setup Collection",
+            "lang": "afh"
+          },
+          "event_handlers": {
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://staging.okcredit.app/merchant/v1/account/collections/merchant_collection_screen?source=dashboard"
+              }
+            ]
+          },
+          "title": "Online collection setup karein aur online payment paayein.",
+          "subtitle": "22 lakh se zyada bharosemand merchants OkCredit ka istemaal karte hain.",
+          "icon": "",
+          "button_text": "Shuru karein",
+          "image": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/setup/drawable-xxxhdpi/kyc_illustration.png"
+        }
+      ]
+    }
+  }
+]

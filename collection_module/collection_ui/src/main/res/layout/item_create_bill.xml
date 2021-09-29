@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="14dp"
+    android:paddingTop="@dimen/view_12dp"
+    android:paddingEnd="14dp"
+    android:paddingBottom="@dimen/view_12dp">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxWidth="200dp"
+        android:maxLines="1"
+        android:textAppearance="?textAppearanceSubtitle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Surf Excel - 500gm" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey600"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toBottomOf="@+id/textName"
+        tools:text="Rate : ₹670" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clQuantityLayout"
+        android:layout_width="102dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circle_background_grey100_outline"
+        android:padding="@dimen/_8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textName">
+
+        <TextView
+            android:id="@+id/textAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/inventory_add"
+            android:textAppearance="?textAppearanceSubtitle2"
+            android:textColor="@color/green_primary"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/textPlus"
+            app:layout_constraintEnd_toStartOf="@id/textPlus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textPlus" />
+
+        <ImageView
+            android:id="@+id/textMinus"
+            android:layout_width="@dimen/_24dp"
+            android:layout_height="@dimen/_24dp"
+            android:src="@drawable/ic_delete_outline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/grey400" />
+
+        <TextView
+            android:id="@+id/textQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:textAppearance="?textAppearanceSubtitle4"
+            android:textColor="@color/green_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/textPlus"
+            app:layout_constraintStart_toEndOf="@id/textMinus"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1" />
+
+        <ImageView
+            android:id="@+id/textPlus"
+            android:layout_width="@dimen/_24dp"
+            android:layout_height="@dimen/_24dp"
+            android:src="@drawable/ic_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/green_primary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

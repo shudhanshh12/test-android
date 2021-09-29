@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/vwKnowMoreBg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_orange_lite_corner_radius_8dp_stroke_orange_lite_1"
+        app:layout_constraintBottom_toBottomOf="@id/tvSubAlert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintTop_toTopOf="@id/tvEarnUpto" />
+
+    <TextView
+        android:id="@+id/tvEarnUpto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="12dp"
+        android:paddingTop="12dp"
+        android:text="@string/invite_earn_card_heading"
+        android:textAppearance="@style/OKC.TextAppearance.Headline6"
+        android:textColor="@color/orange_ada"
+        app:layout_constraintEnd_toStartOf="@+id/ivReferral"
+        app:layout_constraintStart_toStartOf="@id/vwKnowMoreBg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubReward"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:lineHeight="17sp"
+        android:text="@string/invite_earn_card_subheading"
+        app:layout_constraintEnd_toStartOf="@+id/ivReferral"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/vwKnowMoreBg"
+        app:layout_constraintTop_toBottomOf="@id/tvEarnUpto"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <TextView
+        android:id="@+id/tvSubAlert"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:paddingBottom="22dp"
+        android:text="@string/earned_money_will_reflect_in_rewards"
+        android:textColor="@color/grey600"
+        app:layout_constraintEnd_toStartOf="@+id/ivReferral"
+        app:layout_constraintStart_toStartOf="@id/vwKnowMoreBg"
+        app:layout_constraintTop_toBottomOf="@id/tvSubReward" />
+
+    <ImageView
+        android:id="@+id/ivReferral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_referral_screen_svg"
+        app:layout_constraintBottom_toBottomOf="@id/vwKnowMoreBg"
+        app:layout_constraintEnd_toEndOf="@id/vwKnowMoreBg"
+        app:layout_constraintTop_toTopOf="@id/tvSubReward" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

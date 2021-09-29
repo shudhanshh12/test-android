@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="save_contact">Save Contact</string>
+    <string name="contact_saved">Contact Saved</string>
+    <string name="save_contact_info">Save this contact number to reach out to us on WhatsApp any time and for any issues.</string>
+</resources>

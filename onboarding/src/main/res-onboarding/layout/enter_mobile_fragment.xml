@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ScrollViewLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/svEnterMobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutName="Enter Mobile Fragment"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:padding="@dimen/_16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/otp_will_be_sent"
+            android:textAppearance="?textAppearanceHeadline4"
+            app:layout_constraintBottom_toTopOf="@+id/tiBusinessName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiBusinessName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/mobile_number"
+            app:boxStrokeColor="?colorPrimary"
+            app:hintTextAppearance="@style/TestInputHintApearance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fbNumberSubmit"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="12dp"
+                android:drawableTint="?colorPrimary"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingStart="8dp"
+                android:paddingEnd="34dp"
+                android:textAppearance="?textAppearanceBody2"
+                tools:text="@string/mobile_number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/ivCancelNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_cross"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tiBusinessName"
+            app:layout_constraintEnd_toEndOf="@+id/tiBusinessName"
+            app:layout_constraintTop_toTopOf="@+id/tiBusinessName"
+            tools:visibility="visible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbNumberSubmit"
+            style="@style/OKC.FAB"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="2dp"
+            android:tint="@color/white"
+            app:backgroundTint="@color/grey400"
+            app:elevation="0dp"
+            app:fabCustomSize="48dp"
+            app:fabSize="auto"
+            app:layout_constraintBottom_toBottomOf="@+id/tiBusinessName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tiBusinessName"
+            app:srcCompat="@drawable/ic_next_confirm_2" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieOtpVerifySuccess"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/success_message"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/otp_verify_success" />
+
+        <TextView
+            android:id="@+id/success_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/verification_success"
+            android:textAppearance="?textAppearanceHeadline4"
+            android:textColor="@color/grey800"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lottieOtpVerifySuccess" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/llVerificationSuccess"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:constraint_referenced_ids="success_message,lottieOtpVerifySuccess" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</in.okcredit.shared.performance.layout_perf.ScrollViewLayoutTracker>

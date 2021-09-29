@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okassistant_greeting">crwdns268625:0crwdne268625:0</string>
+    <string name="okassistant_education">crwdns268627:0crwdne268627:0</string>
+    <string name="read_this">crwdns268629:0crwdne268629:0</string>
+    <string name="invalid_recording">crwdns268631:0crwdne268631:0</string>
+    <string name="task_complete">crwdns268633:0crwdne268633:0</string>
+    <string name="okassistant_retry">crwdns268635:0crwdne268635:0</string>
+    <!-- /* Bulk Add by voice -->
+    <string name="t_004_bulk_voice_txn_main_headline">crwdns268637:0crwdne268637:0</string>
+    <string name="t_004_bulk_voice_txn_main_caption">crwdns268639:0crwdne268639:0</string>
+    <string name="t_004_bulk_voice_txn_date_field">crwdns268641:0crwdne268641:0</string>
+    <string name="t_004_bulk_voice_txn_body_headline">crwdns268643:0crwdne268643:0</string>
+    <string name="t_004_bulk_voice_txn_body_english_example">crwdns268645:0crwdne268645:0</string>
+    <string name="t_004_bulk_voice_txn_body_subtitle">crwdns268647:0crwdne268647:0</string>
+    <string name="t_004_bulk_voice_txn_hinglish_example">crwdns268649:0crwdne268649:0</string>
+    <string name="t_004_speech_eg_title">crwdns268651:0crwdne268651:0</string>
+    <string name="t_004_speech_eg_caption_credit">crwdns268653:0crwdne268653:0</string>
+    <string name="t_004_speech_eg_credit_desc">crwdns268655:0crwdne268655:0</string>
+    <string name="t_004_speech_eg_caption_payment">crwdns268657:0crwdne268657:0</string>
+    <string name="t_004_speech_eg_payment_desc">crwdns268659:0crwdne268659:0</string>
+    <string name="t_004_speech_try_again_error_desc">crwdns268661:0crwdne268661:0</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_processing">crwdns268663:0crwdne268663:0</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_failed">crwdns268665:0crwdne268665:0</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_incomplete">crwdns268667:0crwdne268667:0</string>
+    <string name="t_004_bulk_voice_txn_voice_transcript_label">crwdns268669:0crwdne268669:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_credit">crwdns268671:0crwdne268671:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_payment">crwdns268673:0crwdne268673:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_credit">crwdns268675:0crwdne268675:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_payment">crwdns268677:0crwdne268677:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_txn_type">crwdns268679:0crwdne268679:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_add_note">crwdns268681:0crwdne268681:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_amount">crwdns268683:0crwdne268683:0</string>
+    <string name="t_004_bulk_voice_txn_delete">crwdns268685:0crwdne268685:0</string>
+    <string name="t_004_bulk_voice_txn_update">crwdns268687:0crwdne268687:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_saved">crwdns268689:0crwdne268689:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_deleted">crwdns268691:0crwdne268691:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_edit_discarded">crwdns268693:0crwdne268693:0</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_load_failed">crwdns268695:0crwdne268695:0</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_title">crwdns268697:0crwdne268697:0</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_search_more">crwdns268699:0crwdne268699:0</string>
+    <string name="t_004_bulk_voice_txn_select_name_hint_text">crwdns268701:0crwdne268701:0</string>
+    <string name="t_004_bulk_voice_txn_confirm_save_title">crwdns268703:0crwdne268703:0</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_date_of_txn">crwdns268705:0%scrwdne268705:0</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_txn_not_saved_caption">crwdns268707:0crwdne268707:0</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_blocked_merchants">crwdns268709:0crwdne268709:0</string>
+    <string name="t_004_bulk_voice_txn_customer_count">crwdns268711:0%1scrwdne268711:0</string>
+    <string name="t_004_bulk_voice_txn_supplier_count">crwdns268713:0%1scrwdne268713:0</string>
+    <string name="t_004_bulk_voice_txn_transaction_saved">crwdns268715:0crwdne268715:0</string>
+    <string name="t_004_bulk_voice_txn_transaction_cancelled">crwdns268717:0crwdne268717:0</string>
+    <!-- Bulk Add by voice */ -->
+</resources>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/okcredit_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/okassistant_greeting"
+        android:textAppearance="@style/OKC.TextAppearance.Headline6"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivLogo"
+        app:layout_constraintTop_toTopOf="@+id/ivLogo" />
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:paddingBottom="6dp"
+        android:src="@drawable/ic_arrow_drop_up"
+        app:layout_constraintBottom_toTopOf="@id/tvEducation"
+        app:layout_constraintEnd_toEndOf="@id/ivLogo"
+        app:layout_constraintStart_toStartOf="@id/ivLogo"
+        app:layout_constraintTop_toTopOf="@id/tvEducation" />
+
+    <TextView
+        android:id="@+id/tvEducation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_rounded_grey50"
+        android:padding="16dp"
+        android:text="@string/okassistant_education"
+        android:textAppearance="@style/OKC.TextAppearance.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivLogo"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+    <TextView
+        android:id="@+id/tvVoiceInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle1"
+        android:textColor="@color/indigo_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvEducation"
+        app:layout_constraintTop_toBottomOf="@id/tvEducation"
+        tools:text="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum" />
+
+    <TextView
+        android:id="@+id/tvReadThis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="8dp"
+        android:text="@string/read_this"
+        android:textAppearance="@style/OKC.TextAppearance.Body1"
+        app:drawableStartCompat="@drawable/ic_arrow_up"
+        app:drawableTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvVoiceInput"
+        app:layout_constraintStart_toStartOf="@+id/tvVoiceInput"
+        app:layout_constraintTop_toBottomOf="@id/tvVoiceInput" />
+
+    <View
+        android:id="@+id/viewBackground"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:background="@drawable/top_corner_rounded"
+        android:backgroundTint="@color/grey50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCta"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_mic_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewBackground" />
+
+    <ImageView
+        android:id="@+id/ivRecordingMic"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_mic_voice_input_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewBackground"
+        app:tint="@color/red_primary" />
+
+    <Chronometer
+        android:id="@+id/tvRecordingTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textAppearance="@style/OKC.TextAppearance.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivRecordingMic"
+        app:layout_constraintTop_toTopOf="@+id/viewBackground"
+        app:tint="@color/red_primary" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabRecordingDone"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/done"
+        android:tint="@color/white"
+        app:backgroundTint="?colorPrimary"
+        app:elevation="0dp"
+        app:fabCustomSize="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewBackground"
+        app:srcCompat="@drawable/ic_check" />
+
+    <TextView
+        android:id="@+id/tvRecordingCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        android:textColor="@color/red_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fabRecordingDone"
+        app:layout_constraintTop_toTopOf="@+id/viewBackground" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="ivRecordingMic,tvRecordingTimer,tvRecordingCancel,fabRecordingDone" />
+
+    <TextView
+        android:id="@+id/tvValidRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/task_complete"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_check"
+        app:layout_constraintBottom_toBottomOf="@id/viewBackground"
+        app:layout_constraintStart_toStartOf="@id/viewBackground"
+        app:layout_constraintTop_toTopOf="@id/viewBackground" />
+
+    <TextView
+        android:id="@+id/tvClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/close"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/viewBackground"
+        app:layout_constraintEnd_toEndOf="@id/viewBackground"
+        app:layout_constraintTop_toTopOf="@+id/viewBackground" />
+
+    <TextView
+        android:id="@+id/tvInvalidRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/invalid_recording"
+        android:textColor="@color/grey900"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_warning_red_round"
+        app:layout_constraintBottom_toBottomOf="@id/viewBackground"
+        app:layout_constraintStart_toStartOf="@id/viewBackground"
+        app:layout_constraintTop_toTopOf="@id/viewBackground" />
+
+    <TextView
+        android:id="@+id/tvRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/okassistant_retry"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        android:textColor="@color/red_primary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/viewBackground"
+        app:layout_constraintEnd_toEndOf="@id/viewBackground"
+        app:layout_constraintTop_toTopOf="@+id/viewBackground" />
+
+    <View
+        android:id="@+id/voice_booster_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/voice_booster_state_grp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="voice_booster_state,voice_booster_state_img,voice_booster_state_text"/>
+
+    <ImageView
+        android:id="@+id/voice_booster_state_img"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_pending"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/voice_booster_state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:text="@string/loading"
+        android:textAppearance="?textAppearanceHeadline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/voice_booster_state_img" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retry_voice_booster_text"
+        style="@style/Button.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:paddingHorizontal="@dimen/_24dp"
+        android:text="@string/retry"
+        android:visibility="gone"
+        app:cornerRadius="@dimen/_24dp"
+        app:icon="@drawable/ic_icon_repeat"
+        app:iconGravity="textStart"
+        app:iconTint="@color/grey900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

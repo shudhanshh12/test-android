@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvRoot"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitleLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="28dp"
+            android:textAppearance="?textAppearanceHeadline4"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSubTitleLanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="?textAppearanceSubtitle2"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="@+id/tvTitleLanguage"
+            app:layout_constraintRight_toLeftOf="@+id/ivLetter"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleLanguage" />
+
+
+        <ImageView
+            android:id="@+id/ivLetter"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivLangSelected"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="-4dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_tick_language" />
+
+</androidx.cardview.widget.CardView>

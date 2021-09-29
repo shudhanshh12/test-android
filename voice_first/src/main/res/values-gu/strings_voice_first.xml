@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okassistant_greeting">નમસ્કાર 🙏 હું છું OkAssistant !!</string>
+    <string name="okassistant_education">તમારી અવાજ ઓળખવામાં મને થોડી મદદ જોઈએ છીએ.\n\nકૃપા કરીને માઈકનું બટન દબાવો અને સ્પષ્ટ અવાજમાં નીચે આપેલા વાક્ય વાંચીને રેકોર્ડ કરો.</string>
+    <string name="read_this">આ વાંચો</string>
+    <string name="invalid_recording">અમાન્ય રેકોર્ડિંગ</string>
+    <string name="task_complete">પૂરું થયું</string>
+    <string name="okassistant_retry">ફરીવાર પ્રયાસ કરો</string>
+    <!-- /* Bulk Add by voice -->
+    <string name="t_004_bulk_voice_txn_main_headline">બોલો અને વ્યવહાર ઉમેરો</string>
+    <string name="t_004_bulk_voice_txn_main_caption">માત્ર બોલીને ઝડપથી કામ પૂરું કરો</string>
+    <string name="t_004_bulk_voice_txn_date_field">વ્યવહારની તારીખ</string>
+    <string name="t_004_bulk_voice_txn_body_headline">અંગ્રેજી અથવા હિંદીમાં બોલો</string>
+    <string name="t_004_bulk_voice_txn_body_english_example">Sameer 100 rupees credit / Sameer 100 rupees payment</string>
+    <string name="t_004_bulk_voice_txn_body_subtitle">અથવા</string>
+    <string name="t_004_bulk_voice_txn_hinglish_example">Sameer ki 100 rupaye ki udhaari / Sameer ka 100 rupaye ka payment</string>
+    <string name="t_004_speech_eg_title">અંગ્રેજી અથવા હિંદીમાં બોલો</string>
+    <string name="t_004_speech_eg_caption_credit">ઉધાર ઉમેરવા માટે, બોલો</string>
+    <string name="t_004_speech_eg_credit_desc">“Sameer 100 rupees credit” or “Sameer ki 100 rupaye ki udhaari”</string>
+    <string name="t_004_speech_eg_caption_payment">પેમેન્ટ ઉમેરવા માટે, બોલો</string>
+    <string name="t_004_speech_eg_payment_desc">“Sameer 100 rupees payment” or “Sameer ka 100 rupaye ka payment”</string>
+    <string name="t_004_speech_try_again_error_desc">ક્ષમા કરજો, સમજી શક્યા નથી. કૃપા કરીને માઈકનું બટન દબાવીને ફરીવાર બોલો.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_processing">પ્રોસેસ થઇ રહ્યું છે…</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_failed">પ્રોસેસ અસફળ! કૃપા કરીને ફરીથી પ્રયાસ કરો.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_incomplete">કૃપા કરીને પૂરી વિગતો ઉમેરો</string>
+    <string name="t_004_bulk_voice_txn_voice_transcript_label">તમે આ બોલ્યા</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_credit">ઉધાર</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_payment">ચુકવણી</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_credit">આપેલું</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_payment">મળ્યું</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_txn_type">વ્યવહાર</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_add_note">નોંધ (વૈકલ્પિક)</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_amount">રકમ</string>
+    <string name="t_004_bulk_voice_txn_delete">કાઢી નાખો</string>
+    <string name="t_004_bulk_voice_txn_update">અપડેટ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_saved">વ્યવહાર અપડેટ થયો</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_deleted">વ્યવહાર હટાવાયો</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_edit_discarded">વ્યવહારમાં થયેલા સુધારાઓ સેવ નથી થયા</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_load_failed">વ્યવહાર લોડ કરી શકતા નથી</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_title">નામ પસંદ કરો</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_search_more">વધુ નામો શોધો</string>
+    <string name="t_004_bulk_voice_txn_select_name_hint_text">નામ પસંદ કરો અથવા શોધો</string>
+    <string name="t_004_bulk_voice_txn_confirm_save_title">સેવ કરતા પહેલા વ્યવહારોને તપાસી લો</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_date_of_txn">વ્યવહારની તારીખ - %s</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_txn_not_saved_caption">₹0 રકમ, પ્રોસેસ થઇ રહેલા/ અસફળ કે અધૂરી માહિતી વાળા વ્યવહારો સેવ નહિ થાય.</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_blocked_merchants">જો તમે કોઈ ગ્રાહક/ સપ્લાયરને બ્લોક કર્યા હોય અથવા તમને કોઈ ગ્રાહક/ સપ્લાયર દ્વારા બ્લોક કરવામાં આવ્યા હોય તો ઉમેરવામાં આવેલો વ્યવહાર સેવ નહિ થાય.</string>
+    <string name="t_004_bulk_voice_txn_customer_count">%1s ગ્રાહક,</string>
+    <string name="t_004_bulk_voice_txn_supplier_count">%1s સપ્લાયર</string>
+    <string name="t_004_bulk_voice_txn_transaction_saved">વ્યવહાર સેવ થયો</string>
+    <string name="t_004_bulk_voice_txn_transaction_cancelled">વ્યવહાર રદ્દ થયો</string>
+    <!-- Bulk Add by voice */ -->
+</resources>

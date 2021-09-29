@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvAddPaymentTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/add_upi_id"
+            android:textAppearance="?textAppearanceSubtitle1"
+            app:layout_constraintEnd_toStartOf="@+id/tvSwitchPaymentMode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvSwitchPaymentMode"
+            android:layout_marginTop="16dp"
+            android:background="@color/grey300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddPaymentTitle" />
+
+        <TextView
+            android:id="@+id/tvSwitchPaymentMode"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:background="@drawable/circle_stroke_grey_1dp"
+            android:gravity="center_vertical"
+            android:paddingStart="19dp"
+            android:paddingEnd="19dp"
+            android:text="@string/add_bank_account"
+            android:textAppearance="?textAppearanceBody2"
+            android:textColor="@color/grey900"
+            app:layout_constraintBottom_toBottomOf="@id/tvAddPaymentTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvAddPaymentTitle" />
+
+        <TextView
+            android:id="@+id/tvAddPaymentDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_separator"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:text="@string/to_accept_online_collections"
+            android:textAppearance="?textAppearanceBody2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilAccountNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="80dp"
+            android:focusable="true"
+            android:hint="@string/payment_account_number"
+            app:boxStrokeColor="@color/green_primary"
+            app:endIconDrawable="@drawable/ic_cross"
+            app:endIconMode="clear_text"
+            app:hintTextAppearance="@style/TestInputHintApearance"
+            app:hintTextColor="@color/green_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddPaymentDescription">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/payment_ic_bank"
+                android:drawablePadding="12dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="18"
+                android:textAppearance="?textAppearanceBody2" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilIfsc"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="24dp"
+            android:hint="@string/payment_ifsc_code"
+            app:boxStrokeColor="@color/green_primary"
+            app:endIconDrawable="@drawable/ic_cross"
+            app:endIconMode="clear_text"
+            app:hintTextAppearance="@style/TestInputHintApearance"
+            app:hintTextColor="@color/green_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilAccountNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietIfsc"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/payment_ic_ifsc"
+                android:drawableEnd="@drawable/ic_square"
+                android:drawablePadding="12dp"
+                android:imeOptions="actionDone"
+                android:inputType="textCapCharacters"
+                android:maxLength="11"
+                android:textAppearance="?textAppearanceBody2" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilUpi"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="24dp"
+            android:hint="@string/payment_upi_id"
+            app:boxStrokeColor="@color/green_primary"
+            app:endIconDrawable="@drawable/ic_scan_qr"
+            app:endIconMode="custom"
+            app:endIconTint="@color/green_primary"
+            app:hintTextAppearance="@style/TestInputHintApearance"
+            app:hintTextColor="@color/green_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilAccountNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietUpi"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_upi_icon"
+                android:drawableEnd="@drawable/ic_square"
+                android:drawablePadding="12dp"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textAppearance="?textAppearanceBody2" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivValidateDetails"
+            android:layout_width="@dimen/grid_5"
+            android:layout_height="@dimen/grid_5"
+            android:layout_below="@+id/tilAccountNumber"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:background="@drawable/circle_background_dark_green_no_theme"
+            android:padding="@dimen/grid_1"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/glBottomIfsc"
+            app:layout_constraintStart_toStartOf="@+id/glBtn"
+            app:layout_constraintTop_toTopOf="@id/glTopIfsc"
+            app:srcCompat="@drawable/ic_check"
+            tools:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/verify_progress_bar"
+            android:layout_width="@dimen/grid_5"
+            android:layout_height="@dimen/grid_5"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/circle_background_dark_green_no_theme"
+            android:indeterminateTint="@color/white"
+            android:padding="@dimen/grid_1"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/glBottomIfsc"
+            app:layout_constraintStart_toStartOf="@+id/glBtn"
+            app:layout_constraintTop_toTopOf="@id/glTopIfsc"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/ivPaymentModeSuccess"
+            android:layout_width="@dimen/grid_7"
+            android:layout_height="@dimen/grid_7"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/circular_green_lite_filled_background_no_stroke"
+            android:padding="@dimen/grid_3_half"
+            android:tint="@color/green_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_account_balance_bank"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvMerchantNameSuccess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textAppearance="?textAppearanceSubtitle1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPaymentModeSuccess"
+            tools:text="Punna Jagadeesh Babu"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvBankAccountSuccess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textAppearance="?textAppearanceBody1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMerchantNameSuccess"
+            tools:text="054101507917"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvIfscOrUpiSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textAppearance="?textAppearanceCaption1"
+            app:layout_constraintEnd_toStartOf="@id/ivCheckSuccess"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBankAccountSuccess"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvAccountAddedSuccess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_3"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/linked_successfully"
+            android:textAppearance="?textAppearanceHeadline5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvIfscOrUpiSuccess"
+            tools:text="Bank Account Added Successfully Hurray"
+            tools:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivCheckSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            app:layout_constraintStart_toEndOf="@id/tvIfscOrUpiSuccess"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvIfscOrUpiSuccess"
+            app:layout_constraintBottom_toBottomOf="@id/tvIfscOrUpiSuccess"
+            app:srcCompat="@drawable/ic_success_green"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/add_method_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="view_separator, tvAddPaymentTitle, ivValidateDetails"
+            tools:visibility="gone" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="ivPaymentModeSuccess,tvBankAccountSuccess,tvMerchantNameSuccess,tvIfscOrUpiSuccess,ivCheckSuccess,tvAccountAddedSuccess"
+            tools:visibility="gone" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBottomIfsc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="24dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glTopIfsc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="72dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBtn"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="80dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

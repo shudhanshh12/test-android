@@ -1,0 +1,91 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.staging.okcredit.in/v1.0/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.alpha.okcredit.in/v1.0/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.okcredit.in/v1.0/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-accounting.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-accounting.pro'
+        }
+
+    }
+
+}
+
+dependencies {
+
+    implementation project(':shared')
+    implementation project(':auth')
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':accounting:contract')
+    implementation project(':ab')
+    implementation project(':communication')
+    implementation project(':business:contract')
+
+    implementation utility.kotlin
+
+    implementation rx.java
+    implementation rx.binding
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.supportLibrary
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.gsonConverter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+
+    implementation view.shimmer
+    implementation view.material
+    implementation view.calendarDateRangePicker
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+
+    implementation androidX.constraintLayout
+
+}

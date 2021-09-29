@@ -1,0 +1,84 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.staging.okcredit.in/v2.0/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.alpha.okcredit.in/v2.0/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.okcredit.in/v2.0/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-device.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-device.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':analytics')
+
+    implementation androidX.ktx
+
+    implementation rx.java
+    implementation rx.android
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.gsonConverter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation utility.kotlin
+    implementation utility.timber
+    implementation utility.jodaTime
+    implementation utility.trueTime
+    implementation utility.guava
+    implementation utility.rootbeer
+
+    implementation playService.googlePlayAds
+
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">crwdns268719:0crwdne268719:0</string>
+    <string name="t_001_multi_acc_title_new_biz">crwdns268721:0crwdne268721:0</string>
+    <string name="t_001_multi_acc_input_biz_name">crwdns268723:0crwdne268723:0</string>
+    <string name="t_001_multi_acc_net_bal">crwdns268725:0crwdne268725:0</string>
+    <string name="t_001_multi_acc_net_bal_due">crwdns268727:0crwdne268727:0</string>
+    <string name="t_001_multi_acc_net_bal_advance">crwdns268729:0crwdne268729:0</string>
+    <string name="t_001_multi_acc_title_select_biz">crwdns268731:0crwdne268731:0</string>
+    <string name="t_001_multi_acc_msg_biz_added">crwdns268733:0crwdne268733:0</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">crwdns268735:0crwdne268735:0</string>
+</resources>

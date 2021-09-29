@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-rewards-contract.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-rewards-contract.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':referral:contract')
+
+    implementation utility.kotlin
+    implementation utility.coroutines
+    implementation utility.jodaTime
+
+    implementation rx.java
+}

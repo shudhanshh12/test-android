@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ipl_title">OkPL 2021: Play &amp; Win</string>
+
+    <string name="todays_game">Today’s Game</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="sunday_game">Weekly Draw</string>
+
+    <string-array name="ipl_tabs">
+        <item>@string/todays_game</item>
+        <item>@string/leaderboard</item>
+        <item>@string/sunday_game</item>
+    </string-array>
+    <string name="welcome_to_ipl_2020">Welcome to OkPL 2021</string>
+    <string name="ipl_description">Win up to ₹1000 just be on the app &amp; answer a few question and claim your reward</string>
+    <string name="let_s_play">Let\'s play</string>
+    <string name="live">● LIVE</string>
+    <string name="complete_questions">Complete all steps:</string>
+    <string name="points">Today\'s Score</string>
+    <string name="game_rules">Game Rules</string>
+    <string name="vs">vs</string>
+    <string name="select">Select</string>
+    <string name="guess_winner">Choose today’s winning team</string>
+    <string name="guess_winner_batsman">Choose the highest run scoring batsman in this match</string>
+    <string name="guess_winner_bowler">Choose highest wicket taking bowler in this match</string>
+
+    <string name="winning_team_guess">Chosen Team</string>
+    <string name="best_batsman_guess">Chosen Batsman</string>
+    <string name="best_bowler_guess">Chosen Bowler</string>
+
+    <string name="prediction_meter">Poll meter</string>
+    <string name="ipl_progress">%1$s%%</string>
+    <string name="ipl_select_match_rules">1.To qualify: Choose team -> Choose batsman -> Choose bowler -> Wait to answer the Booster question in the middle of the OkPL game.\n2. Match Score = [30 (for answering first 3 questions) + Batsman runs + (Bowler’s wickets x 20 runs) + 50 runs (if your team wins)] x Booster Multiplier (for answering Booster question)\n\nEvery match lucky 1000 will win up to Rs. 100.\n<b>Hint: Answering questions in the middle of the OkPL game will multiply your total score with a booster multiplier. Don’t forget to do that.</b></string>
+    <string name="ipl_game_rules">1.To qualify: Choose team -> Choose batsman -> Choose bowler -> Wait to answer the Booster question in the middle of the OkPL game.\n2. Today\'s Score = [30 (for answering first 3 questions) + Batsman runs + (Bowler’s wickets x 20 runs) + 50 runs (if your team wins)] x Booster Multiplier (for answering Booster question)\n\nEvery match lucky 1000 will win up to Rs. 100.\n<b>Hint: Answering questions in the middle of the OkPL game will multiply your total score with a booster multiplier. Don’t forget to do that.</b></string>
+    <string name="terms_and_conditions"><a href=''>Terms and conditions</a></string>
+
+    <string name="title_booster_task">Your Booster Task</string>
+    <string name="title_first_booster_task">First Booster Task</string>
+    <string name="title_second_booster_task">Second Booster Task</string>
+    <string name="complete_first_booster">Complete first Booster task for the week in Today\’s Game screen</string>
+    <string name="complete_second_booster">Complete second Booster for the week in Today\’s Game screen</string>
+    <string name="ends_today">Ends today</string>
+    <string name="completed_first_booster">YAYY!\nYou completed the first Booster Task</string>
+    <string name="completed_second_booster">YAYY!\nYou completed the second Booster Task</string>
+    <string name="completed_third_booster">HURRAY!!\nYou’ve scored %s runs in last 7 days</string>
+    <string name="complete_runs_tip">Tip: Keep collecting mystery runs at the end of the game to improve your score!</string>
+    <string name="body_qualified_for_draw">Congratulations!\nYou are qualified for Weekly Lucky Draw.</string>
+    <string name="lucky_draw_available_on">Available on %s</string>
+
+    <string name="start">Start</string>
+    <string name="mystery_reward_title">Tap &amp; collect mystery runs</string>
+    <string name="mystery_welcome_reward_title"> Enjoy your welcome gift !!</string>
+    <string name="ipl_reward_title">Yayy!! Scratch &amp; collect lucky draw prizes!!!</string>
+    <string name="sunday_game_rules">1. Answer at least %d booster questions coming during the OkPL matches in the week -> Score %d runs in the week\n2. Week starts from Sunday 3 PM to Saturday 11:59 PM\n3. Weekly draw is announced every Sunday at 12PM\n4. Scores on weekly draw are updated an hour after the match\n\nEvery Sunday, 500 players will get up to ₹1000.\n<b>Hint: Improve your chances by answering more booster questions</b></string>
+
+    <!--
+         As a developer, you should always supply "one" and "other"
+         strings. Your translators will know which strings are actually
+         needed for their language. Always include %d in "one" because
+         translators will need to use %d for languages where "one"
+         doesn't mean 1 (as explained above).
+    -->
+    <plurals name="ends_in">
+        <item quantity="one">Ends in %d day</item>
+        <item quantity="other">Ends in %d days</item>
+    </plurals>
+    <plurals name="runs_away">
+        <item quantity="one">You’re just %d run away from completing this task</item>
+        <item quantity="other">You’re just %s runs away from completing this task</item>
+    </plurals>
+
+    <string name="leader_board_game_rules">\u2022 Top 10 players will win 2.5 gm Gold Coins worth ₹15,000\n\u2022 Next 25 players will win assured prizes worth up to ₹10,000\n\u2022 Subsequent 500 players will win OkCredit Jersey\n\u2022 Next 500 players will win Mini Bats signed by the Delhi Capitals Team\n\u2022 Leaderboard is updated an hour after the match\n\n<b>Hint: Play daily and answer booster question during the OkPL match to appear at the top in the leaderboard</b></string>
+    <string name="label_total_points">Tournament Score</string>
+    <string name="label_money_earned">Prize money earned</string>
+    <string name="msg_rank_motivation">Increase your chances by %d%% to win Gold coin, by coming during the OkPL match time</string>
+    <string name="title_gold_prize">Players winning Gold Coin</string>
+    <string name="title_cash_prize_10k">Players winning cash prize of ₹10,000</string>
+    <string name="title_cash_prize_5k">Players winning cash prize of ₹5,000</string>
+    <string name="title_cash_prize_2_5k">Players winning cash prize of ₹2,500</string>
+    <string name="title_cash_prize_1_5k">Players winning cash prize of ₹1,500</string>
+    <string name="title_cash_prize_1k">Players winning cash prize of ₹1,000</string>
+    <string name="title_prize_t_shirts">In race to win T-shirt</string>
+    <string name="title_prize_mini_bats">In race to win Mini Bat</string>
+    <string name="score">Score: %d</string>
+    <string name="rank_with_prefix">#%d</string>
+    <string name="self_name">%s (You)</string>
+    <string name="team_vs_team">%1$s vs %2$s</string>
+
+    <plurals name="runs">
+        <item quantity="one">Run %1$s</item>
+        <item quantity="other">Runs %1$s</item>
+    </plurals>
+    <plurals name="balls">
+        <item quantity="one">Ball %1$s</item>
+        <item quantity="other">Balls %1$s</item>
+    </plurals>
+    <string name="batsman_score">%1$s | %2$s</string>
+
+    <plurals name="wickets">
+        <item quantity="one">Wkt %1$s</item>
+        <item quantity="other">Wkts %1$s</item>
+    </plurals>
+    <string name="overs">Overs %1$s.%2$s</string>
+
+    <string name="bowler_score">%1$s | %2$s</string>
+    <string name="team_score">%1$s-%2$s (%3$s.%4$s)</string>
+    <string name="your_guess">(Your Team)</string>
+    <string name="prediction_value">%1$s - %2$s%%</string>
+    <string name="no_active_matches">No match today</string>
+    <string name="match_load_error">Couldn\'t load active matches please try again</string>
+    <string name="score_no_internet">Please connect to internet to get live score updates</string>
+    <string name="you_have_won">Hurray!! You have won</string>
+    <string name="better_luck_next_time">Better luck next time</string>
+
+    <string name="ends_in">Ends in %1$s</string>
+    <string name="expired">Expired</string>
+    <string name="congs_point">Congratulations!!\nYou got X3 score multiplier</string>
+    <plurals name="days">
+        <item quantity="one">%1$sday</item>
+        <item quantity="other">%1$sdays</item>
+    </plurals>
+
+    <string name="hours">%1$shr</string>
+    <string name="minutes">%1$smin</string>
+    <string name="seconds">%1$ssec</string>
+
+    <string name="win_status">%1$s won. You\'ve earned %2$s extra runs</string>
+    <string name="lose_status">%1$s won. Try again tomorrow</string>
+    <string name="congratulations">Congratulations!!!</string>
+    <string name="earned_rewards">Earned rewards</string>
+    <string name="t_shirt_details">OkCredit Jersey</string>
+    <string name="bat_details">Mini bat signed by the Delhi Capitals Team</string>
+    <string name="show_more">Show More</string>
+    <string name="scratch_hint">Scratch back and forth to see the reward</string>
+    <string name="play_game">Play Game</string>
+    <string name="nice_choice">Nice choice</string>
+    <string name="points_placeholder">%1$s runs</string>
+    <string name="runs_placeholder">%1$s points</string>
+    <string name="reward_claim_failure">Couldn\'t claim reward. Please try again</string>
+
+    <string name="label_your_booster_task">Your Booster Task</string>
+    <string name="booster_available_in">Your booster task will be available in</string>
+    <string name="formatted_multiplier">%dX</string>
+    <string name="booster_success_multiplier">Woohoo!!\nYour today’s game score will be multiplied by %d</string>
+    <string name="booster_question_formatted">%1$s and\nyour score will be <b>%2$sX</b></string>
+    <string name="hint_your_answer">Your answer</string>
+    <string name="success">Success!</string>
+    <string name="message_business_location_success">Business location added successfully</string>
+    <string name="message_business_name_success">Business name added successfully</string>
+    <string name="message_business_type_success">Business type added successfully</string>
+    <string name="message_business_category_success">Business Category added successfully</string>
+    <string name="message_merchant_name_success">Merchant name added successfully</string>
+    <string name="message_merchant_email_success">Merchant email added successfully</string>
+    <string name="message_merchant_about_success">About business added successfully</string>
+    <string name="message_add_customer_success">Customer added successfully</string>
+    <string name="rewards">Rewards</string>
+    <string name="play_booster_video">Show me how</string>
+
+    <string name="today_game_prize">Let’s win Today’s Game!</string>
+    <string name="week_score">Week’s\nScore</string>
+    <string name="win_10k">Win up to ₹1000 every Sunday!</string>
+    <string name="sunday_game_rules_title">Let’s win Weekly Draw!</string>
+    <string name="leader_board_game_rules_title">Leaderboard Toppers will win…</string>
+
+    <string name="status_bowling">● Bowling</string>
+    <string name="status_not_bowling">Not bowling</string>
+    <string name="status_yet_to_bowl">Yet to bowl</string>
+    <string name="status_yet_to_bat">Yet to bat</string>
+
+    <string name="status_batting">● Batting</string>
+    <string name="status_bowled">Bowled</string>
+    <string name="status_caught_and_bowled">Caught and bowled</string>
+    <string name="status_caught">Caught</string>
+    <string name="status_out">Out</string>
+    <string name="status_hit_wicket">Hit wicket</string>
+    <string name="status_lbw">Lbw</string>
+    <string name="status_retired_hurt">Retired hurt</string>
+    <string name="status_run_out">Run out</string>
+    <string name="status_stumped">Stumped</string>
+    <string name="status_tea">Tea</string>
+    <string name="status_lunch">Lunch</string>
+    <string name="status_2nd_innings">Innings break</string>
+    <string name="status_rain">Rain</string>
+    <string name="status_bad_light">Bad light</string>
+    <string name="status_interrupted">Interrupted</string>
+    <string name="status_drinks">Drinks</string>
+    <string name="status_delayed">Delayed</string>
+    <string name="status_super_over">Super over</string>
+    <string name="status_day_over">Day over</string>
+    <string name="status_match_over">Match over</string>
+    <string name="status_nil"> </string>
+
+    <string name="weekly_draw_coming_soon">Welcome! To OKPL weekly prizes screen. Visit us back on 20th September, 3 PM onwards to see your progress on the weekly draw. The first OKPL weekly draw will happen on Sunday, 26th Sep, 12:00 PM noon.\n\nWin Prizes worth Rs. 50 Lakh during the OKPL tournament\n\nRules for weekly Draw\n1. Answer at least 2 questions during the OkPL match in a week (Week starts from Sunday 3PM to Saturday 11:59 PM)\n2. Score 1000 runs for this week and qualify</string>
+    <string name="leaderboard_coming_soon">Starts on\nMonday, 21st September, 12:00 AM(mid-night)\n\nWin prizes worth ₹ 51 Lakhs during the tournament\n\nTop 10 scorers will get Gold Coins of 2.5 grams\n\nNext 1025 players will get assured rewards
+
+</string>
+
+    <string name="today_lucky_draw">Congratulations!\nYou have qualified for today’s lucky draw</string>
+    <string name="today_lucky_draw_available">Available at the end of match</string>
+
+    <string name="add_address_hint">Need address to ship ‘%1$s’.</string>
+    <string name="add_address"><u>Add Address</u></string>
+    <string name="confirm_address"><u>Confirm Address</u></string>
+    <string name="correct_address_hint"><u>Will deliver to current business location.</u></string>
+
+    <string name="contact_us_whatsapp"><u>Contact us on WhatsApp</u></string>
+    <string name="contact_us_inapp_chat"><u>In-app chat</u></string>
+    <string name="whatsapp_your_address">Whatsapp your address</string>
+    <string name="or">Or</string>
+    <string name="whatsapp_message_deliver_price">I have won a %1$s please ship it to below address %2$s</string>
+    <string name="whatsapp_message_send_address">My address is</string>
+    <string name="mini_bat">mini-bat</string>
+    <string name="t_shirt">t-shirt</string>
+    <string name="series_name">%1$s | Match %2$s</string>
+    <string name="please_come_back">You have not qualified for today’s match. Play again tomorrow.</string>
+
+    <string name="game_rules_tool_tip">This is how we calculate the score.\nToday’s Score = [30 (for answering first 3 questions) + Batsman’s runs + (Bowler’s Wicket x %1$s) runs + %2$s runs (If your team wins)] x Booster Multiplier (for answering Booster question)</string>
+
+    <string name="claim_in_progress">Processing…Please wait</string>
+    <string name="add_your_payment_details">Please add your payment details to claim the reward</string>
+
+    <string name="booster_pending">Please add your payment details to claim the reward</string>
+
+    <plurals name="booster_pending">
+        <item quantity="one">Please wait we are processing your input. Booster will be complete in %1$s minute</item>
+        <item quantity="other">Please wait we are processing your input. Booster will be complete in %1$s minutes</item>
+    </plurals>
+
+    <string name="match_title">%s VS %s - Match %d</string>
+    <string name="play_okpl">\nPlay OkPL, win up to ₹51 Lakhs</string>
+    <string name="show_all_players">Show all Players</string>
+
+    <string name="coming_soon_leaderboard"><![CDATA[Starts on<br/><b>Sunday, 11th April, 12:00 AM (mid-night)</b><br/><br/><b><font color=#1c873b>Win prizes worth ₹51 Lakhs</font></b><br/><b>during the tournament</b><br/><br/>Top 10 scorers will get<b>Gold Coins of 2.5 grams</b><br/><br/><b>Next 500 players</b> will get assured rewards]]></string>
+    <string name="coming_soon_weekly"><![CDATA[Starts on<br/><b>Sunday, 18th April, 3:00 PM</b><br/><br/>First weekly draw happens on<br/><b>Sunday, 18th April 2021,12:00 PM noon<br/><br/><font color=#1c873b>Win prizes worth ₹51 Lakhs</font></b><br/><b>during the tournament</b><br/><br/><b>Complete 2 tasks in the week &amp; earn 1000 runs to qualify for the weekly draw</b>]]></string>
+    <string name="coming_soon_todasygame"><![CDATA[Starts on<br/><b>Friday, 9th April, 12:00 AM (mid-night)</b><br/><br/><b><font color=#1c873b>Win prizes worth ₹51 Lakhs</font></b><br/><b>during the tournament</b><br/><br/><b>Answer 3 simple questions</b><br/>about OkPL match <b>&amp; perform a task</b>]]></string>
+
+    <string name="todays_tab_tool_tip">\n\nThis is your daily gaming place</string>
+    <string name="server_error"><![CDATA[Something went wrong. <font color=#0574e3><u>Retry</u></font>]]></string>
+    <string name="network_error"><![CDATA[Network error. <font color=#0574e3><u>Retry</u></font>]]></string>
+    <string name="weekly_tool_tip">\n\nWeekly Lucky draw will be\nplayed here based on the\nruns scored in the last 7 days</string>
+    <string name="leaderboard_tool_tip">\n\nDaily runs scored will\nget added &amp; ranked here\nleading to the Finale Prize of\n<b>Gold Coins &amp; other Cash Rewards</b></string>
+    <string name="contact_added">Contact added successfully</string>
+    <string name="do_booster">%1$s booster tasks left </string>
+    <plurals name="runs_away_weekly">
+        <item quantity="one">%s runs away</item>
+        <item quantity="other">%s runs away</item>
+    </plurals>
+    <string name="complete_booster">Complete any %1$s booster tasks during the week</string>
+    <string name="make_weekly_score">Make atleast %1$s runs each week</string>
+    <string name="horray">Hurray!</string>
+    <string name="booster_completed">You have completed booster tasks for the week.</string>
+    <string name="booster_completed_score">You have scored %1$s runs</string>
+    <string name="sunday_draw_qualified">Congratulations !!\nYou have qualified for weekly draw.</string>
+    <string name="sunday_draw_availability">Available on coming Sunday, %1$s</string>
+    <string name="each_week">Each week</string>
+    <string name="rules_answer_any">Answer any %1$s Booster Questions</string>
+    <string name="rules_weekly_score">Score %1$s runs</string>
+    <string name="rules_weekly_available">Available on Sunday %1$s</string>
+    <string name="how_to_play_okpl">How to play OkPL?</string>
+    <string name="got_3x_mutipler">Congratulations !!\nYou got %d point multiplier</string>
+    <string name="play_again">More you play,\nhigher your chances to win</string>
+    <string name="answer_3_question">Answer 3 IPL questions</string>
+    <string name="before_match">Before match starts</string>
+    <string name="answer_1_booster">Answer 1 Booster question</string>
+    <string name="during_ipl">During IPL match</string>
+    <string name="after_ipl">After IPL match</string>
+    <string name="lucky_100">Lucky 1000 will up to ₹100</string>
+    <string name="welcome_gift">Play regularly to win prizes worth ₹51 Lakhs!</string>
+    <string name="play_again_this_week">Play again\nto win the weekly draw.</string>
+    <string name="keep_going">Keep going!</string>
+    <string name="complete_one_motes_task">Complete one more booster task for the week.</string>
+    <string name="rules_leaderboard_top_players">Top 10 Players Win 2.5 GM\nGold Coins</string>
+    <string name="rules_leaderboard_next_25_player">Next 25 Players Win Cash Prize\nup to ₹10,000</string>
+    <string name="rules_leaderboard_next_1000_player">Next 1000 Players Win OkCredit Merchandise</string>
+    <string name="rules_leaderboard_note">• All prizes will be awarded based on final score at the end of IPL\n• Do all booster tasks during IPL to get higher scores</string>
+
+    <string name="rules_leaderboard_top_players_new">Top 10 Players Win Gold\nCoins worth ₹15,000</string>
+    <string name="rules_leaderboard_next_500_player">Next 500 Players Win\nOkCredit T-Shirts</string>
+    <string name="before_match_ends">Before match ends</string>
+    <string name="lucky_2500">Lucky 2500 will win up to ₹100</string>
+    <string name="weekly_draw_upto_1000">2,000 players will win up to ₹1,000</string>
+    <string name="coming_soon_leaderboard_new"><![CDATA[Starts on<br/><b>Sunday, 11th April, 12:00 AM (mid-night)</b><br/><br/><b><font color=#1c873b>Win prizes worth ₹ 51 Lakhs</font></b><br/><b>during the tournament</b><br/><br/>Top 10 scorers will win <b>Gold Coins worth ₹15,000</b><br/><br/><b>Next 525 players</b> will get assured rewards]]></string>
+    <string name="coming_soon_todasygame_new"><![CDATA[Starts on<br/><b>Friday, 9th April, 12:00 AM (mid-night)</b><br/><br/><b><font color=#1c873b>Win prizes worth ₹51 Lakhs</font></b><br/><b>during the tournament</b><br/><br/><b>Answer 3 simple questions</b><br/>about OkPL match <b>&amp; perform a task</b>]]></string>
+    <string name="coming_soon_weekly_new"><![CDATA[Starts on<br/><b>Sunday, 18th April, 3:00 PM</b><br/><br/>First weekly draw happens on<br/><b>Sunday, 18th April 2021,12:00 PM noon<br/><br/><font color=#1c873b>Win prizes worth ₹51 Lakhs</font></b><br/><b>during the tournament</b><br/><br/><b>Complete 2 tasks in the week &amp; earn 1000 runs to qualify for the weekly draw</b>]]></string>
+
+    <string name="okassistant_greeting">Hi 🙏 I\'m OkAssistant !!</string>
+    <string name="okassistant_education">I need some help to recognize your voice.\n\nPlease press the mic button and read the text below in a clear voice to record.</string>
+    <string name="read_this">Read this</string>
+    <string name="invalid_recording">Invalid recording</string>
+    <string name="task_complete">Task complete</string>
+    <string name="okassistant_retry">Retry</string>
+</resources>

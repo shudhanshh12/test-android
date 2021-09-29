@@ -1,0 +1,83 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://ab.staging.okcredit.in/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://ab.alpha.okcredit.in/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://ab.okcredit.in/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-ab.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-ab.pro'
+        }
+    }
+}
+
+dependencies {
+    // base
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':device')
+    implementation project(':auth')
+    implementation project(':business:contract')
+
+    // rxpreferences
+    implementation rx.rxPreferences
+    implementation utility.guava
+
+    // dagger
+    implementation dagger.core
+    kapt dagger.androidAnnotationProcessor
+    kapt dagger.annotationProcessor
+
+    // retrofit
+    implementation retrofit.retrofit
+    implementation retrofit.gsonConverter
+    implementation retrofit.retrofitRxAdapter
+
+    // androidx
+    implementation androidX.annotation
+
+    implementation utility.kotlin
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockWebServer
+    testImplementation unitTest.mockk
+}

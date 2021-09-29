@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.okcredit.payment">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+        <activity
+            android:name=".PaymentActivity"
+            android:theme="@style/Theme.TransparentActivity" />
+        <activity android:name=".PspUpiActivity">
+<!--            until PSp upi is not live this should be commented-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                <data-->
+<!--                    android:host="pay"-->
+<!--                    android:pathPattern=".*"-->
+<!--                    android:scheme="upi" />-->
+<!--            </intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

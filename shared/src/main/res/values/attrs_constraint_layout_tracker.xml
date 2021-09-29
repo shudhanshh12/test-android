@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="LayoutTracker">
+        <attr name="layoutName" format="string" />
+        <attr name="isRecycler" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tech.okcredit.help">
+
+    <application>
+
+        <activity
+            android:name="tech.okcredit.help.HelpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.OKCTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>

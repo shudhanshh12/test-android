@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invite_new_person">crwdns267869:0crwdne267869:0</string>
+    <string name="invite_and_earn">crwdns267871:0crwdne267871:0</string>
+    <string name="invite_and_earn_cta">crwdns267873:0crwdne267873:0</string>
+    <string name="invite_and_earn_new">crwdns267875:0crwdne267875:0</string>
+    <string name="share_okcredit_app_and_get_rewards"><![CDATA[crwdns267877:0%1$scrwdne267877:0]]></string>
+    <string name="know_more">crwdns267879:0crwdne267879:0</string>
+    <string name="invite_from_the_list">crwdns267881:0crwdne267881:0</string>
+    <string name="share_okcredit_with_your_friends_families_and_get_rewards_upto_1000"><![CDATA[crwdns267883:0crwdne267883:0]]></string>
+    <string name="share_okcredit_app_to_everyone">crwdns267885:0crwdne267885:0</string>
+    <string name="ask_your_invites_to_install_the_app">crwdns267887:0crwdne267887:0</string>
+    <string name="money_will_be_ncredited_for_every_ninstallation">crwdns267889:0crwdne267889:0</string>
+    <string name="your_referral_link">crwdns267891:0crwdne267891:0</string>
+    <string name="share_to_anyone">crwdns267893:0crwdne267893:0</string>
+    <string name="copy_link">crwdns267895:0crwdne267895:0</string>
+    <string name="invite">crwdns267897:0crwdne267897:0</string>
+    <string name="earn">crwdns267899:0%1$scrwdne267899:0</string>
+    <string name="share_as_status">crwdns267901:0crwdne267901:0</string>
+    <string name="share_referral_failure">crwdns267903:0crwdne267903:0</string>
+    <string name="default_referral_share_content" comment="Download OKCredit from this link and help me earn up to Rs.50">crwdns267905:0%1$scrwdne267905:0</string>
+    <string name="link_copied_toast">crwdns267907:0crwdne267907:0</string>
+    <string name="copy_referral_failure">crwdns267909:0crwdne267909:0</string>
+    <string name="targeted_referral_registered_merchant">crwdns267911:0crwdne267911:0</string>
+    <string name="targeted_referral_all_invited_title">crwdns267913:0crwdne267913:0</string>
+    <string name="targeted_referral_all_invited_subtitle">crwdns267915:0crwdne267915:0</string>
+    <string name="share_app_title">crwdns267917:0crwdne267917:0</string>
+    <string name="share_app_description">crwdns267919:0crwdne267919:0</string>
+    <string name="share_apk">crwdns267921:0crwdne267921:0</string>
+    <string name="share_app_know_more_title">crwdns267923:0crwdne267923:0</string>
+    <string name="share_app_know_more_step_1">crwdns267925:0crwdne267925:0</string>
+    <string name="share_app_know_more_step_2">crwdns267927:0crwdne267927:0</string>
+    <string name="share_app_know_more_step_3">crwdns267929:0crwdne267929:0</string>
+    <string name="share_app_failure">crwdns267931:0crwdne267931:0</string>
+    <string name="share_app_msg">crwdns267933:0%1$scrwdne267933:0</string>
+    <string name="win_25">crwdns267935:0%1$scrwdne267935:0</string>
+    <string name="add_a_transaction_to_the_customer_to_nearn_25">crwdns267937:0crwdne267937:0</string>
+    <string name="how_does_this_work">crwdns267939:0crwdne267939:0</string>
+    <string name="step_1_how_does_it_works">crwdns267941:0crwdne267941:0</string>
+    <string name="step_2_how_does_it_works">crwdns267943:0crwdne267943:0</string>
+    <string name="referred_merchant_list_error">crwdns267945:0crwdne267945:0</string>
+    <string name="you_claim_rewards_menu_referral">crwdns267947:0crwdne267947:0</string>
+    <string name="no_reward_error">crwdns267949:0crwdne267949:0</string>
+</resources>

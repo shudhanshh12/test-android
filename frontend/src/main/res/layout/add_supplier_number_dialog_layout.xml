@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_destination_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/circular_border_on_top"
+    android:orientation="vertical"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/title_add_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_2"
+        android:text="@string/add_phone_number"
+        android:textAppearance="?textAppearanceHeadline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/view_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@color/grey300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_add_phone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_add_mobile_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_separator"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:text="@string/to_send_reminder"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/grey600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_separator"
+        tools:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_6"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="@dimen/grid_3"
+        android:background="@drawable/circular_corners_selected_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_mobile_description"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_call"
+            android:layout_width="@dimen/grid_5_half"
+            android:layout_height="@dimen/grid_5_half"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/grid_3_half"
+            android:tint="@color/grey800"
+            app:srcCompat="@drawable/ic_call" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@+id/ifsc_clear"
+            android:layout_toEndOf="@+id/iv_call"
+            android:focusable="true"
+            android:hint="@string/phone_number"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:padding="0dp"
+            android:textAppearance="?textAppearanceBody1"
+            android:textColor="@color/grey800"
+            android:textColorHint="@color/grey400"
+            android:textSize="18sp"
+            app:backgroundTint="@color/transparent"
+            app:textAllCaps="true">
+
+            <requestFocus />
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <ImageView
+            android:id="@+id/clear_phone_number"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/grid_1"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_cross"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_4"
+        android:layout_marginBottom="-36dp"
+        android:background="@color/white"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:text="@string/phone_number"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="?colorPrimary"
+        android:translationY="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/rl_phone_number"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="2dp"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/red_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_phone_number"
+        tools:text="Error message can be written here" />
+
+    <ImageView
+        android:id="@+id/validate_details"
+        android:layout_width="@dimen/grid_6"
+        android:layout_height="@dimen/grid_6"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:background="@drawable/circle_grey_background"
+        android:padding="@dimen/grid_1"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/rl_phone_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rl_phone_number"
+        app:srcCompat="@drawable/ic_check"
+        tools:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/grid_6"
+        android:layout_height="@dimen/grid_6"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:background="@drawable/circle_background_dark_green_no_theme"
+        android:indeterminateTint="@color/white"
+        android:padding="@dimen/grid_1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/rl_phone_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rl_phone_number"
+        tools:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/success_check"
+        android:layout_width="@dimen/grid_6"
+        android:layout_height="@dimen/grid_6"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/circle_background_dark_green_no_theme"
+        android:padding="@dimen/grid_1"
+        android:tint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_check"
+        tools:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/phone_added_successfully"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/success_check"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_3_half"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:layout_marginBottom="55dp"
+        android:gravity="center"
+        android:text="@string/phone_number_added_successfully"
+        android:textAppearance="?textAppearanceHeadline5"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/success_check"
+        tools:text="Phone Number Added Successfully"
+        tools:visibility="gone" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/input_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_add_mobile_description,view_separator, title_add_phone, rl_phone_number, tv_phone_number, validate_details"
+        tools:visibility="gone" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/success_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="phone_added_successfully,success_check"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

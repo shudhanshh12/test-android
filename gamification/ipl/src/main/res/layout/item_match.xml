@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="6dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/OKC.TextAppearance.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/guess_winner"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Indian Primer League 2020 • 1st Match" />
+
+        <TextView
+            android:id="@+id/start_time"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:text="SEP 19 | 08:00 PM" />
+
+        <ImageView
+            android:id="@+id/home_team_logo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/vs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/start_time"
+            app:srcCompat="@drawable/ic_person_placeholder" />
+
+        <TextView
+            android:id="@+id/vs"
+            style="@style/TextAppearance.OKCTheme.Headline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/vs"
+            app:layout_constraintBottom_toBottomOf="@id/home_team_logo"
+            app:layout_constraintEnd_toStartOf="@id/away_team_logo"
+            app:layout_constraintStart_toEndOf="@id/home_team_logo"
+            app:layout_constraintTop_toTopOf="@id/home_team_logo" />
+
+        <ImageView
+            android:id="@+id/away_team_logo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vs"
+            app:layout_constraintTop_toBottomOf="@id/start_time"
+            app:srcCompat="@drawable/ic_person_placeholder" />
+
+        <TextView
+            android:id="@+id/home_team_name"
+            style="@style/TextAppearance.OKCTheme.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="true"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="@id/home_team_logo"
+            app:layout_constraintStart_toStartOf="@id/home_team_logo"
+            app:layout_constraintTop_toBottomOf="@id/home_team_logo"
+            tools:text="CSK" />
+
+        <TextView
+            android:id="@+id/away_team_name"
+            style="@style/TextAppearance.OKCTheme.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="true"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="@id/away_team_logo"
+            app:layout_constraintStart_toStartOf="@id/away_team_logo"
+            app:layout_constraintTop_toBottomOf="@id/away_team_logo"
+            tools:text="KKR" />
+
+
+        <ImageView
+            android:id="@+id/ivHand"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_hand_sales"
+            android:rotation="270"
+            app:elevation="2dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="@+id/play"
+            app:layout_constraintBottom_toBottomOf="@+id/play"
+            app:layout_constraintEnd_toStartOf="@+id/play"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/play"
+            style="@style/OKC.Button.Dark.Solid.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/play_game"
+            app:icon="@drawable/ic_play"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/away_team_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

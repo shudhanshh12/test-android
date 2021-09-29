@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:textAppearance="?textAppearanceSubtitle1"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        tools:text="Bob Dylan" />
+
+
+    <TextView
+        android:id="@+id/balance_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceSubtitle4"
+        app:layout_constraintEnd_toStartOf="@+id/last_payment_date"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="Advance: $50"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/last_payment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textAppearance="?textAppearanceCaption2"
+        app:layout_constraintBottom_toBottomOf="@+id/balance_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/balance_info"
+        app:layout_constraintTop_toTopOf="@+id/balance_info"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="(Last Payment: 02 Jun, 2020)" />
+
+    <ImageView
+        android:id="@+id/qr_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="36dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_payment_date" />
+
+    <TextView
+        android:id="@+id/tv_qr_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/scan_and_pay_via_upi_any_upi_app"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/grey800"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qr_image" />
+
+
+    <ImageView
+        android:id="@+id/iv_bhim_upi"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_qr_description"
+        app:srcCompat="@drawable/ic_upi_logos" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/account_sync_status_warning"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/orange_lite"
+        android:drawableStart="@drawable/ic_sync_problem_24"
+        android:drawablePadding="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_bhim_upi"
+        tools:text="@string/offline_cus_customer_profile_drawer_dirty_desc"
+        tools:visibility="visible" />
+
+    <in.okcredit.shared.view.KycStatusView
+        android:id="@+id/kyc_status_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/account_sync_status_warning"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/grey300"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kyc_status_view" />
+
+    <ImageButton
+        android:id="@+id/call_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/ic_call"
+        app:layout_constraintEnd_toStartOf="@+id/sms_icon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:tint="@color/primary" />
+
+    <TextView
+        android:id="@+id/call_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="@string/call"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="@+id/call_icon"
+        app:layout_constraintStart_toStartOf="@+id/call_icon"
+        app:layout_constraintTop_toBottomOf="@+id/call_icon" />
+
+    <ImageButton
+        android:id="@+id/sms_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/ic_icon_sms_outline"
+        app:layout_constraintEnd_toStartOf="@+id/whatsapp_icon"
+        app:layout_constraintStart_toEndOf="@+id/call_icon"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:tint="@color/primary" />
+
+    <TextView
+        android:id="@+id/sms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="@string/sms"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="@+id/sms_icon"
+        app:layout_constraintStart_toStartOf="@+id/sms_icon"
+        app:layout_constraintTop_toBottomOf="@+id/sms_icon" />
+
+    <ImageButton
+        android:id="@+id/whatsapp_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/ic_whatsapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sms_icon"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:tint="@color/primary"
+        tools:tint="@color/primary" />
+
+    <TextView
+        android:id="@+id/whatsapp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="@string/whatsapp"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="@+id/whatsapp_icon"
+        app:layout_constraintStart_toStartOf="@+id/whatsapp_icon"
+        app:layout_constraintTop_toBottomOf="@+id/whatsapp_icon" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/contact_panel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="call_icon,call_text,sms_icon,sms_text,whatsapp_icon,whatsapp_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

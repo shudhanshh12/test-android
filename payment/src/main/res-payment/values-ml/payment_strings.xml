@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="payable_amount">അയക്കേണ്ട തുക</string>
+    <string name="please_check_or_edit_final_payable_amount">അയക്കേണ്ട തുക പരിശോധിച്ച് വേണമെങ്കിൽ മാറ്റങ്ങൾ വരുത്തുക</string>
+    <string name="rupee_text">₹</string>
+    <string name="juspay_pay_securely">സുരക്ഷിതമായി അയക്കുക</string>
+    <string name="juspay_enter_amount_to_pay">അയക്കേണ്ട തുക നൽകുക</string>
+    <string name="juspay_payment_successful">പേയ്മെന്റ് വിജയകരം</string>
+    <string name="juspay_no_internet_connection">ഇന്റർനെറ്റ് സൗകര്യം ലഭ്യമല്ല</string>
+    <string name="juspay_something_went_wrong">എന്തോ പ്രശ്നം നേരിട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="juspay_please_fill_correct_amount">ദയവായി ശരിയായ തുക നൽകുക</string>
+</resources>

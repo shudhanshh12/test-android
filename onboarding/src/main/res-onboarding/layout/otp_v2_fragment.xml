@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_applogo_name" />
+
+        <ImageView
+            android:id="@+id/sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            app:srcCompat="@drawable/incomplete_otp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/incomplete_otp_animation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/sms"
+            app:layout_constraintEnd_toEndOf="@id/sms"
+            app:layout_constraintStart_toStartOf="@id/sms"
+            app:layout_constraintTop_toTopOf="@id/sms"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/incomplete_otp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mobile"
+            style="@style/TextAppearance.OKCTheme.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_edit"
+            android:drawablePadding="8dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/green_primary"
+            app:drawableTint="@color/green_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sms"
+            tools:text="9662058852" />
+
+        <TextView
+            android:id="@+id/enter_otp"
+            style="@style/TextAppearance.OKCTheme.Headline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/enter_otp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mobile" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            style="@style/TextAppearance.OKCTheme.Caption1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_otp"
+            app:layout_constraintWidth_percent="0.7"
+            tools:text="@string/otp_sent_message"
+            tools:visibility="visible" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/otp"
+            style="@style/OtpWidget.OtpView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:inputType="number"
+            android:textColor="@color/green_primary"
+            android:textSize="32sp"
+            app:itemCount="6"
+            app:itemSpacing="12dp"
+            android:enabled="false"
+            android:focusableInTouchMode="false"
+            app:itemWidth="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/progress_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subtitle"
+            app:lineColor="@color/black"
+            app:viewType="line"
+            tools:text="123456"
+            tools:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/otp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/otp" />
+
+        <TextView
+            android:id="@+id/incorrect_otp"
+            style="@style/TextAppearance.OKCTheme.Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="2dp"
+            android:paddingEnd="8dp"
+            android:text="@string/otp_incorrect"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/otp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/resend_otp"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="2dp"
+            android:text="@string/resend_otp"
+            android:textColor="@color/indigo_primary"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/incorrect_otp"
+            app:layout_constraintTop_toBottomOf="@id/otp"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/success_box"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/success_animation"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/otp_verify_success" />
+
+        <TextView
+            android:id="@+id/authentication_success_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/verification_success"
+            android:textAppearance="?textAppearanceHeadline4"
+            android:textColor="@color/grey800"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/success_animation" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/success_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="success_box,authentication_success_message,success_animation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

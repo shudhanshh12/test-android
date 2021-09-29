@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.okcredit.web_features">
+
+    <application>
+        <activity
+            android:name=".cash_counter.CashCounterActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

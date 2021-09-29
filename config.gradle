@@ -1,0 +1,77 @@
+project.android {
+    compileSdkVersion appSdk.compileSdk
+    buildToolsVersion buildVersion.buildTools
+
+    ndkVersion "22.1.7171670"
+
+    defaultConfig {
+        versionCode appVersion.versionCode
+        versionName appVersion.versionName
+
+        minSdkVersion appSdk.minSdk
+        targetSdkVersion appSdk.compileSdk
+
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+        buildConfigField "String", 'APP_PACKAGE_NAME', "\"in.okcredit.merchant\""
+        buildConfigField "String", 'VERSION_NAME', "\"${appVersion.versionName.toString()}\""
+        buildConfigField "String", 'VERSION_CODE', "\"${appVersion.versionCode.toString()}\""
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        "room.schemaLocation": "$projectDir/schemas".toString(),
+                        "room.incremental"   : "true"
+                ]
+            }
+        }
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            debugSymbolLevel 'FULL'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes.all { type ->
+        if (type == "debug") {
+            type.javaCompileOptions.annotationProcessorOptions.arguments = [
+                    logEpoxyTimings              : "true",
+                    enableParallelEpoxyProcessing: "true"
+            ]
+        } else {
+            type.javaCompileOptions.annotationProcessorOptions.arguments = [
+                    logEpoxyTimings              : "true",
+                    enableParallelEpoxyProcessing: "false"
+            ]
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+        freeCompilerArgs = ["-Xjvm-default=enable"]
+    }
+
+    testOptions {
+        unitTests.includeAndroidResources = true
+        unitTests.returnDefaultValues = true
+        unitTests.all {
+            // All the usual Gradle options.
+            testLogging {
+                events "passed", "skipped", "failed"
+                outputs.upToDateWhen { false }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">Edit Profile</string>
+    <string name="t_001_multi_acc_title_new_biz">Create New Business</string>
+    <string name="t_001_multi_acc_input_biz_name">Business / Shop Name</string>
+    <string name="t_001_multi_acc_net_bal">Net Balance:</string>
+    <string name="t_001_multi_acc_net_bal_due">Due</string>
+    <string name="t_001_multi_acc_net_bal_advance">Advance</string>
+    <string name="t_001_multi_acc_title_select_biz">Select Business</string>
+    <string name="t_001_multi_acc_msg_biz_added">New Business Created Successfully</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">Couldn\'t create business. Maximum business count limit reached</string>
+</resources>

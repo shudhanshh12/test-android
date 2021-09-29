@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_screen_flow"
+        android:icon="@drawable/ic_ledger"
+        android:title="@string/ledger" />
+    <item
+        android:id="@+id/home_payments"
+        android:icon="@drawable/ic_collection_icon"
+        android:title="@string/payments" />
+    <item
+        android:id="@+id/home_dashboard_flow"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/dashboard" />
+    <item
+        android:id="@+id/home_help_support"
+        android:icon="@drawable/ic_help_outline"
+        android:title="@string/t_001_bottom_navigation_help" />
+    <item
+        android:id="@+id/home_menu_flow"
+        android:icon="@drawable/ic_hamburger"
+        android:title="@string/menu" />
+</menu>

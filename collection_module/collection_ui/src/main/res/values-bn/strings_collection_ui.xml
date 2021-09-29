@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_send_reminder"><![CDATA[QR এবং অনলাইন পেমেন্ট লিঙ্ক সহ Whatsapp এ একটি রিমাইন্ডার পাঠান।]]></string>
+    <string name="title_payment_options">গ্রাহক বিভিন্ন পেমেন্ট বিকল্প থেকে অর্থ প্রদান করতে পারেন</string>
+    <string name="title_auto_ledger">সফল অর্থপ্রদানের জন্য স্বয়ংক্রিয় লেজার এন্ট্রি দেখুন</string>
+</resources>

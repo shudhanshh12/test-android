@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">প্রোফাইল এডিট করুন</string>
+    <string name="t_001_multi_acc_title_new_biz">নতুন ব্যবসা তৈরি করুন</string>
+    <string name="t_001_multi_acc_input_biz_name">ব্যবসা / দোকানের নাম</string>
+    <string name="t_001_multi_acc_net_bal">নেট ব্যালেন্স:</string>
+    <string name="t_001_multi_acc_net_bal_due">বকেয়া</string>
+    <string name="t_001_multi_acc_net_bal_advance">অ্যাডভান্স</string>
+    <string name="t_001_multi_acc_title_select_biz">ব্যবসা নির্বাচন করুন</string>
+    <string name="t_001_multi_acc_msg_biz_added">নতুন ব্যবসা সফলভাবে তৈরি হয়েছে</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">ব্যবসা তৈরি করা যায়নি। সর্বাধিক ব্যবসা তৈরি হয়ে গেছে</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pinlock_screen_deeplink" translatable="false">okcr://applock/pinlock</string>
+    <string name="changepin_screen_deeplink" translatable="false">okcr://applock/changePin</string>
+    <string name="enterpin_screen_deeplink" translatable="false">okcr://applock/enterPin</string>
+</resources>

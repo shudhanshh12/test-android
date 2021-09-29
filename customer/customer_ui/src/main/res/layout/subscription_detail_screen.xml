@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Subscription Details" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/text_subscription_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingMultiplier="1.1"
+        android:textAppearance="@style/OKC.TextAppearance.Headline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:text="The Hindu" />
+
+    <TextView
+        android:id="@+id/text_start_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/start_date"
+        android:textAppearance="@style/OKC.TextAppearance.Body2"
+        android:textColor="@color/grey600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_subscription_name" />
+
+    <TextView
+        android:id="@+id/text_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        app:layout_constraintBottom_toBottomOf="@id/text_start_date_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_start_date_label"
+        tools:text="24 Nov 2019" />
+
+    <TextView
+        android:id="@+id/text_repeat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/repeat"
+        android:textAppearance="@style/OKC.TextAppearance.Body2"
+        android:textColor="@color/grey600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_start_date_label" />
+
+    <TextView
+        android:id="@+id/text_repeat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        android:textColor="@color/green_primary"
+        app:layout_constraintBottom_toBottomOf="@id/text_repeat_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_repeat_label"
+        app:layout_constraintTop_toTopOf="@id/text_repeat_label"
+        tools:text="Daily" />
+
+    <TextView
+        android:id="@+id/text_amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/subscription_amount"
+        android:textAppearance="@style/OKC.TextAppearance.Body2"
+        android:textColor="@color/grey600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_repeat_label" />
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        app:layout_constraintBottom_toBottomOf="@id/text_amount_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_amount_label"
+        tools:text="₹20" />
+
+    <TextView
+        android:id="@+id/text_txn_count_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/subscription_txn_count"
+        android:textAppearance="@style/OKC.TextAppearance.Body2"
+        android:textColor="@color/grey600"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_amount_label" />
+
+    <TextView
+        android:id="@+id/text_txn_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/text_txn_count_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_txn_count_label"
+        tools:text="24" />
+
+    <TextView
+        android:id="@+id/text_next_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/next_transaction_date"
+        android:textAppearance="@style/OKC.TextAppearance.Body2"
+        android:textColor="@color/grey600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_txn_count_label" />
+
+    <TextView
+        android:id="@+id/text_next_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        app:layout_constraintBottom_toBottomOf="@id/text_next_date_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_next_date_label"
+        tools:text="26 Nov 2019" />
+
+    <TextView
+        android:id="@+id/text_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/subscription_status"
+        android:textAppearance="@style/OKC.TextAppearance.Body2"
+        android:textColor="@color/grey600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_next_date_label" />
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        android:textColor="?colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/text_status_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_status_label"
+        tools:text="Active" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_delete"
+        style="@style/OKC.Button.Dark.Solid.Small"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/delete"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone"
+        app:backgroundTint="@color/red_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_status_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

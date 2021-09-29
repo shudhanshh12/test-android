@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.LinearLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutName="Due Customer Fragment"
+    android:background="@color/black_60"
+    android:paddingLeft="16dp"
+    android:paddingTop="24dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_background_corner_radius_8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bottom_links_container"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/not_now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/not_now"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey600"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5">
+
+                <ProgressBar
+                    android:id="@+id/button_loader"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/send_reminders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circular_border_dark_green"
+                    android:elevation="@dimen/elevate_2dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:maxLines="1"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/send_reminder"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:targetApi="lollipop" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true">
+
+            <EditText
+                android:id="@+id/search_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                android:layout_toStartOf="@+id/select_all_customer"
+                android:layout_toEndOf="@+id/search_icon"
+                android:background="@null"
+                android:hint="@string/search_customers"
+                android:textColor="@color/grey600"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="27dp"
+                android:src="@drawable/ic_search_black_24dp"
+                app:tint="@color/grey800" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/select_all_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                app:buttonTint="?colorPrimary" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/bottom_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/bottom_links_container"
+            android:background="@color/grey300" />
+
+
+        <View
+            android:id="@+id/top_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/search_container"
+            android:background="@color/grey300" />
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_separator"
+            android:layout_below="@+id/top_separator"
+            android:paddingBottom="10dp"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_due_customer" />
+    </RelativeLayout>
+
+</in.okcredit.shared.performance.layout_perf.LinearLayoutTracker>

@@ -1,0 +1,125 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs"
+apply from: "$rootDir/config.gradle"
+
+android {
+
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'AUI_BASE_URL', "\"https://aui.staging.okcredit.in/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'AUI_BASE_URL', "\"https://aui.alpha.okcredit.in/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'AUI_BASE_URL', "\"https://aui.okcredit.in/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-onboarding-ui.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-onboarding-ui.pro'
+        }
+    }
+
+    sourceSets {
+        main.res.srcDirs = ['src/main/res-onboarding']
+    }
+}
+
+dependencies {
+    implementation project(':base')
+    implementation project(':shared')
+    implementation project(':analytics')
+    implementation project(':business:contract')
+    implementation project(':app:app_contract')
+    implementation project(':backend:contract')
+    implementation project(':frontend:contract')
+    implementation project(':feature_help:contract')
+    implementation project(':auth')
+    implementation project(':onboarding:contract')
+    implementation project(':device')
+    implementation project(':resources')
+    implementation project(':ab')
+    implementation project(':home:contract')
+    implementation project(':accounting')
+    implementation project(':suppliercredit') // replace with contract module when suppliercredit:contract is ready
+    implementation project(':individual:contract')
+    implementation project(':customer:contract')
+    implementation project(':fileupload')
+
+
+    implementation view.material
+
+    implementation utility.kotlin
+    implementation utility.truecaller
+    implementation utility.coroutines
+    implementation utility.rootbeer
+    implementation utility.moshi
+
+    implementation view.material
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.supportLibrary
+
+    implementation rx.rxRelay
+    implementation rx.binding
+
+    implementation androidX.constraintLayout
+    implementation androidX.ktx
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    implementation navigation.fragment
+    implementation navigation.fragmentKtx
+    implementation navigation.ui
+    implementation navigation.uiKtx
+
+    implementation view.pinview
+    implementation view.pageIndicator
+    implementation view.lottie
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+    implementation view.otpview
+    implementation view.otpviewKtx
+
+    implementation view.exoplyer
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation firebase.firebaseCrashlytics
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="220dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:background="@color/shimmer_background"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Indian Primer League 2020 • 1st Match" />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="120dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/shimmer_background"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <ImageView
+            android:id="@+id/home_team_logo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/shimmer_background"
+            app:layout_constraintEnd_toStartOf="@+id/vs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/start_time" />
+
+        <TextView
+            android:id="@+id/vs"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/shimmer_background"
+            android:gravity="center"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="@id/home_team_logo"
+            app:layout_constraintEnd_toStartOf="@id/away_team_logo"
+            app:layout_constraintStart_toEndOf="@id/home_team_logo"
+            app:layout_constraintTop_toTopOf="@id/home_team_logo" />
+
+        <ImageView
+            android:id="@+id/away_team_logo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/shimmer_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vs"
+            app:layout_constraintTop_toBottomOf="@id/start_time" />
+
+        <TextView
+            android:id="@+id/home_team_name"
+            android:layout_width="48dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/shimmer_background"
+            android:textAllCaps="true"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="@id/home_team_logo"
+            app:layout_constraintStart_toStartOf="@id/home_team_logo"
+            app:layout_constraintTop_toBottomOf="@id/home_team_logo" />
+
+        <TextView
+            android:id="@+id/away_team_name"
+            android:layout_width="48dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/shimmer_background"
+            android:textAllCaps="true"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="@id/away_team_logo"
+            app:layout_constraintStart_toStartOf="@id/away_team_logo"
+            app:layout_constraintTop_toBottomOf="@id/away_team_logo" />
+
+        <TextView
+            android:id="@+id/play"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/shimmer_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/away_team_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.facebook.shimmer.ShimmerFrameLayout>

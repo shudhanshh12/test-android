@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <TextView
+                android:id="@+id/tvTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invite_earn_header_title"
+                android:textAppearance="@style/OKC.TextAppearance.Subtitle1" />
+
+            <ImageView
+                android:id="@+id/ivHelp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/ic_help" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/mbInvite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/vwTopDivider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vwKnowMoreBg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/background_orange_lite_corner_radius_8dp_stroke_orange_lite_1"
+                app:layout_constraintBottom_toBottomOf="@id/tvSubAlert"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvEarnUpto" />
+
+            <TextView
+                android:id="@+id/tvEarnUpto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingTop="12dp"
+                android:text="@string/invite_earn_card_heading"
+                android:textAppearance="@style/OKC.TextAppearance.Headline6"
+                android:textColor="@color/orange_ada"
+                app:layout_constraintEnd_toStartOf="@+id/ivReferral"
+                app:layout_constraintStart_toStartOf="@id/vwKnowMoreBg"
+                app:layout_constraintTop_toBottomOf="@id/vwTopDivider" />
+
+            <TextView
+                android:id="@+id/tvSubReward"
+                style="@style/TextAppearance.OKCTheme.Caption2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/invite_earn_card_subheading"
+                app:layout_constraintEnd_toStartOf="@+id/ivReferral"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/vwKnowMoreBg"
+                app:layout_constraintTop_toBottomOf="@id/tvEarnUpto"
+                app:layout_constraintVertical_bias="0.472"
+                app:lineHeight="17sp" />
+
+            <TextView
+                android:id="@+id/tvSubAlert"
+                style="@style/TextAppearance.OKCTheme.Caption2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/earned_money_will_reflect_in_rewards"
+                android:textColor="@color/grey600"
+                app:layout_constraintEnd_toStartOf="@+id/ivReferral"
+                app:layout_constraintStart_toStartOf="@id/vwKnowMoreBg"
+                app:layout_constraintTop_toBottomOf="@id/tvSubReward" />
+
+            <ImageView
+                android:id="@+id/ivReferral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_referral_screen_svg"
+                app:layout_constraintBottom_toBottomOf="@id/tvSubAlert"
+                app:layout_constraintEnd_toEndOf="@id/vwKnowMoreBg"
+                app:layout_constraintTop_toTopOf="@id/tvSubReward" />
+
+            <TextView
+                android:id="@+id/tvShareApp"
+                style="@style/TextAppearance.OKCTheme.Caption1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/invite_earn_step_1_text"
+                app:layout_constraintBottom_toTopOf="@id/brShareApp"
+                app:layout_constraintEnd_toStartOf="@id/ivShareApp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vwKnowMoreBg"
+                app:lineHeight="18sp" />
+
+            <ImageView
+                android:id="@+id/ivShareApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_referral_screen_svg_part1"
+                app:layout_constraintBottom_toTopOf="@id/brShareApp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vwKnowMoreBg" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/brShareApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="tvShareApp,ivShareApp" />
+
+            <TextView
+                android:id="@+id/tvCollectMoney"
+                style="@style/TextAppearance.OKCTheme.Caption1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/invite_earn_text"
+                app:layout_constraintBottom_toTopOf="@id/brCollectMoney"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivCollectMoney"
+                app:layout_constraintTop_toBottomOf="@id/brShareApp"
+                app:lineHeight="18sp" />
+
+            <ImageView
+                android:id="@+id/ivCollectMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_referral_graphics_svg_part2"
+                app:layout_constraintBottom_toTopOf="@id/brCollectMoney"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/brShareApp" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/brCollectMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="tvCollectMoney,ivCollectMoney" />
+
+            <TextView
+                android:id="@+id/tvGetReward"
+                style="@style/TextAppearance.OKCTheme.Caption1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/invite_earn_step_3_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivGetReward"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/brCollectMoney"
+                app:lineHeight="18sp" />
+
+            <ImageView
+                android:id="@+id/ivGetReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_referral_graphics_svg_part3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/brCollectMoney" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbInvite"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:text="@string/invite_earn_cta_text"
+        app:icon="@drawable/ic_whatsapp"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

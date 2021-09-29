@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_destination_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/circular_border_on_top"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_note_text_input_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:paddingBottom="20dp"
+        android:hint="@string/add_note"
+        app:boxStrokeColor="@color/green_primary"
+        app:endIconDrawable="@drawable/ic_cross"
+        app:endIconMode="clear_text"
+        app:hintTextAppearance="@style/TestInputHintApearance"
+        app:hintTextColor="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/done_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/note_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableStart="@drawable/ic_bill_notes"
+            android:drawableEnd="@drawable/ic_square"
+            android:drawablePadding="12dp"
+            android:textAppearance="?textAppearanceBody2" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/done_button"
+        style="@style/OKC.FAB"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/background_tint"
+        android:tint="@color/white"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:fabCustomSize="48dp"
+        app:fabSize="auto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edit_note_text_input_layout"
+        app:layout_constraintTop_toTopOf="@id/edit_note_text_input_layout"
+        app:srcCompat="@drawable/ic_next_confirm_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

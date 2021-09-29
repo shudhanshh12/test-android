@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutName="Home SideMenu Fragment">
+
+    <ScrollView
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/view_footer_divider"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:theme="@style/Base.OKCTheme">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/header"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:background="@color/green_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/photo_image_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/image_border_home"
+                android:clickable="false"
+                app:layout_constraintBottom_toBottomOf="@id/header"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/header"
+                app:srcCompat="@drawable/ic_business_account"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/phone_text_view"
+                app:layout_constraintEnd_toStartOf="@id/iv_edit"
+                app:layout_constraintStart_toEndOf="@id/photo_image_view"
+                app:layout_constraintTop_toTopOf="@id/header"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="Business Name" />
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/name_text_view"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/phone_text_view"
+                style="@style/TextAppearance.OKCTheme.Body2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/header"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/photo_image_view"
+                app:layout_constraintTop_toBottomOf="@id/name_text_view"
+                tools:text="9833426881" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_create_business"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/green_primary"
+                android:drawablePadding="32dp"
+                android:drawableTint="@color/white"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minHeight="@dimen/menu_component_height"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/t_001_multi_acc_cta_new_biz"
+                android:textAppearance="?textAppearanceBody2"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/account_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="32dp"
+                android:drawableTint="@color/green_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minHeight="@dimen/menu_component_height"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/account"
+                android:textAppearance="?textAppearanceBody2"
+                app:drawableStartCompat="@drawable/ic_account_circle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_create_business" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/collection_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="32dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minHeight="@dimen/menu_component_height"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/online_payments"
+                android:textAppearance="?textAppearanceBody2"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_collection_icon"
+                app:drawableTint="@color/green_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/account_text_view"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/kyc_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="32dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minHeight="@dimen/menu_component_height"
+                android:text="@string/collections"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:drawableStartCompat="@drawable/ic_collection_icon"
+                android:textAppearance="?textAppearanceBody2"
+                android:visibility="gone"
+                app:drawableTint="@color/green_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/collection_text_view"
+                tools:drawableStartCompat="@drawable/ic_collection_icon"
+                tools:text="@string/kyc_status_not_set"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textBilling"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="32dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minHeight="@dimen/menu_component_height"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textAppearance="?textAppearanceBody2"
+                app:drawableTint="@color/green_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/kyc_text_view"
+                app:drawableStartCompat="@drawable/bill_manage_ic"
+                android:text="Bills and Items"
+                tools:visibility="visible" />
+
+            <View
+                android:id="@+id/divider_account"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textBilling"
+                tools:visibility="visible" />
+
+            <in.okcredit.dynamicview.view.DynamicView
+                android:id="@+id/dynamic_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider_account"
+                tools:itemCount="4"
+                tools:listitem="@layout/component_menu" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/call_customer_care"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="32dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minHeight="@dimen/menu_component_height"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/t_001_help_call_customer_care"
+                android:textAppearance="?textAppearanceBody2"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_call"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dynamic_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/feedback_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="32dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minHeight="@dimen/menu_component_height"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/feedback"
+                android:textAppearance="?textAppearanceBody2"
+                app:drawableStartCompat="@drawable/ic_feedback"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/call_customer_care" />
+
+            <View
+                android:id="@+id/divider_dynamic_view"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/feedback_text"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivCircularImg"
+                android:layout_width="@dimen/spacing_36"
+                android:layout_height="@dimen/spacing_36"
+                android:src="@drawable/circ_img"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/iv_settingsIcon"
+                app:layout_constraintEnd_toEndOf="@id/iv_settingsIcon"
+                app:layout_constraintStart_toStartOf="@id/iv_settingsIcon"
+                app:layout_constraintTop_toTopOf="@id/iv_settingsIcon" />
+
+            <ImageView
+                android:id="@+id/iv_settingsIcon"
+                android:layout_width="@dimen/_24dp"
+                android:layout_height="@dimen/_24dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginBottom="@dimen/spacing_12"
+                android:src="@drawable/ic_icon_settings"
+                app:layout_constraintBottom_toBottomOf="@id/tvSettings"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider_dynamic_view"
+                app:tint="@color/green_primary" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSettings"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/grid_6"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingStart="@dimen/_70dp"
+                android:paddingTop="@dimen/spacing_12"
+                android:text="@string/account_settings_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_dynamic_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/help_support_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="32dp"
+                android:drawableTint="@color/green_primary"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minHeight="@dimen/menu_component_height"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/help_support"
+                android:textAppearance="?textAppearanceBody2"
+                app:drawableStartCompat="@drawable/ic_help_outline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSettings" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view_footer_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/grey300"
+        app:layout_constraintBottom_toTopOf="@id/version_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/version_text_view"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/grey500"
+        app:layout_constraintBottom_toTopOf="@+id/made_in_india_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Version: v191" />
+
+    <TextView
+        android:id="@+id/made_in_india_text_view"
+        style="@style/TextAppearance.OKCTheme.Caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:maxLines="1"
+        android:text="@string/made_in_india"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

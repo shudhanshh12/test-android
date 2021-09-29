@@ -1,0 +1,145 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'USER_STORIES_URL', "\"https://okstatus.staging.okcredit.in/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'USER_STORIES_URL', "\"https://okstatus.alpha.okcredit.in/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'USER_STORIES_URL', "\"https://okstatus.okcredit.in/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-stories.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-stories.pro'
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+}
+
+dependencies {
+    // OkCredit utility
+    implementation project(':auth')
+    implementation project(':ab')
+    implementation project(':fileupload')
+    implementation project(':device')
+    implementation project(':resources')
+    implementation project(':camera')
+    implementation project(':camera:camera_contract')
+
+    // Platform
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':shared')
+
+    // Contracts
+    implementation project(':business:contract')
+    implementation project(':user-stories:contract')
+    implementation project(':backend:contract')
+    implementation project(':contacts:contract')
+
+
+    // Dagger
+    implementation dagger.core
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    // Fragment
+    implementation navigation.fragmentKtx
+    implementation navigation.uiKtx
+    implementation arch.lifecycle
+
+    // Rxjava
+    implementation rx.java
+    implementation rx.android
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    // Moshi
+    implementation moshi.core
+    kapt moshi.codegen
+
+    //coroutines
+    implementation utility.coroutines
+
+    //permission
+    implementation utility.permission
+
+    // Retrofit
+    implementation retrofit.retrofit
+    implementation retrofit.gsonConverter
+    implementation retrofit.moshiConverter
+    implementation retrofit.gson
+    implementation retrofit.retrofitRxAdapter
+
+    // Androidx
+    implementation androidX.annotation
+    implementation androidX.appcompact
+    implementation androidX.constraintLayout
+
+    // Kotlin
+    implementation utility.kotlin
+
+    // Ui
+    implementation imageDeps.textDrawable
+    implementation imageDeps.glide
+    implementation imageDeps.glideCompiler
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+
+    implementation utility.guava
+
+    //room
+    implementation arch.room
+    implementation arch.roomRx
+    kapt arch.roomAnnotationProcessor
+
+
+    // Test
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation firebase.firebaseCrashlytics
+}

@@ -1,0 +1,151 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'JUSPAY_CLIENT_ID', "\"okcredit_android\""
+            buildConfigField "String", 'JUSPAY_MERCHANT_ID', "\"okcredit\""
+            buildConfigField "String", 'JUSPAY_MERCHANT_KEY_ID', "\"3440\""
+            buildConfigField "String", 'JUSPAY_ENV', "\"sandbox\""
+            buildConfigField "String", 'JUSPAY_SERVICE', "\"in.juspay.hyperpay\""
+            buildConfigField "String", 'JUSPAY_SERVICE_UPI_PSP', "\"in.juspay.hyperupi\""
+            buildConfigField "Boolean", 'JUSPAY_IS_BETA_ASSETS', "true"
+            buildConfigField "String", 'PAYMENT_URL', "\"https://payment2.staging.okcredit.io/v1/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'JUSPAY_CLIENT_ID', "\"okcredit_android\""
+            buildConfigField "String", 'JUSPAY_MERCHANT_ID', "\"okcredit\""
+            buildConfigField "String", 'JUSPAY_MERCHANT_KEY_ID', "\"3440\""
+            buildConfigField "String", 'JUSPAY_ENV', "\"sandbox\""
+            buildConfigField "String", 'JUSPAY_SERVICE', "\"in.juspay.hyperpay\""
+            buildConfigField "String", 'JUSPAY_SERVICE_UPI_PSP', "\"in.juspay.hyperupi\""
+            buildConfigField "Boolean", 'JUSPAY_IS_BETA_ASSETS', "true"
+            buildConfigField "String", 'PAYMENT_URL', "\"https://payment2.alpha.okcredit.io/v1/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'JUSPAY_CLIENT_ID', "\"okcredit_android\""
+            buildConfigField "String", 'JUSPAY_MERCHANT_ID', "\"okcredit_prod\""
+            buildConfigField "String", 'JUSPAY_MERCHANT_KEY_ID', "\"8116\""
+            buildConfigField "String", 'JUSPAY_ENV', "\"production\""
+            buildConfigField "String", 'JUSPAY_SERVICE', "\"in.juspay.hyperpay\""
+            buildConfigField "String", 'JUSPAY_SERVICE_UPI_PSP', "\"in.juspay.hyperupi\""
+            buildConfigField "Boolean", 'JUSPAY_IS_BETA_ASSETS', "false"
+            buildConfigField "String", 'PAYMENT_URL', "\"https://payment2.okcredit.io/v1/\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':analytics')
+    implementation project(':app:app_contract')
+    implementation project(':base')
+    implementation project(':shared')
+    implementation project(':resources')
+    implementation project(':auth')
+    implementation project(':business:contract')
+    implementation project(':collection_module:contract')
+    implementation project(':payment:contract')
+    implementation project(':cashback:contract')
+    implementation project(':rewards:contract')
+    implementation project(':web:contract')
+    implementation project(':suppliercredit')
+    implementation project(':communication')
+    implementation project(':backend:contract')
+    implementation project(':ab')
+    implementation project(':fileupload')
+    implementation project(':accounting:contract')
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.moshiConverter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+
+    // Moshi
+    implementation moshi.core
+    kapt moshi.codegen
+
+    //Rx
+    implementation rx.binding
+    implementation rx.rxRelay
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+    implementation androidX.appcompact
+    implementation navigation.fragment
+    implementation navigation.ui
+    implementation navigation.uiKtx
+    implementation navigation.fragmentKtx
+    implementation androidX.ktx
+    implementation view.material
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    //Utility
+    implementation utility.kotlin
+    implementation utility.permission
+    implementation utility.timber
+    implementation utility.guava
+
+    //view
+    implementation view.lottie
+    implementation view.textDrawable
+
+    //androidx
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+
+    // Unit testing
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+
+    //Juspay sdk's
+    implementation utility.juspay
+    // commenting these now as PSP UPI feature is not live
+//    implementation utility.juspayLogging
+//    implementation utility.juspaySecureAar
+//    implementation utility.juspaySecureSdk
+//    implementation utility.juspayQrScanner
+}

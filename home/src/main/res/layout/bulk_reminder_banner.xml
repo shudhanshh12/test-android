@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/background_view"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_bulk_reminder"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/header"
+        style="@style/OKC.TextAppearance.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="12dp"
+        android:clickable="false"
+        android:elevation="4dp"
+        android:text="@string/t_001_daily_remind_entry_pt_title"
+        android:textColor="@color/grey900"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/background_view"
+        app:layout_constraintTop_toTopOf="@id/background_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/balance_due"
+        style="@style/OKC.TextAppearance.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="2dp"
+        android:clickable="false"
+        android:elevation="4dp"
+        android:textColor="@color/red_primary"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/background_view"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        tool:text="$15000" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/due_since"
+        style="@style/OKC.TextAppearance.Body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:clickable="false"
+        android:elevation="4dp"
+        android:text="@string/t_001_daily_remind_due_since"
+        android:textColor="@color/grey800"
+        app:layout_constraintBottom_toBottomOf="@id/balance_due"
+        app:layout_constraintStart_toEndOf="@id/balance_due"
+        app:layout_constraintTop_toTopOf="@id/balance_due" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/caption"
+        style="@style/OKC.TextAppearance.Body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:clickable="false"
+        android:elevation="4dp"
+        android:text="@string/t_001_daily_remind_entry_pt_subtitle"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="@id/background_view"
+        app:layout_constraintStart_toStartOf="@id/background_view"
+        app:layout_constraintTop_toBottomOf="@id/balance_due"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <ImageView
+        android:id="@+id/notification_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:background="@drawable/ic_bulk_reminder_notification_icon"
+        android:elevation="@dimen/_4dp"
+        app:layout_constraintBottom_toBottomOf="@id/background_view"
+        app:layout_constraintEnd_toEndOf="@id/background_view"
+        app:layout_constraintTop_toTopOf="@id/background_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reminder_count"
+        style="@style/OKC.TextAppearance.Body4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/background_notification_badge"
+        android:clickable="false"
+        android:elevation="4dp"
+        android:paddingStart="7dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="7dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/notification_imageview"
+        app:layout_constraintEnd_toEndOf="@id/background_view"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="@id/notification_imageview"
+        app:layout_constraintTop_toTopOf="@id/background_view"
+        app:layout_constraintVertical_bias="0.32"
+        tool:text="24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

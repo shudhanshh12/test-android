@@ -1,0 +1,117 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://communication.staging.okcredit.in/v1/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://communication.alpha.okcredit.in/v1/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://communication.okcredit.in/v1/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-communication-inappnotification.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-communication-inappnotification.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation project(':communication_inappnotification:contract')
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':shared')
+    implementation project(':analytics')
+    implementation project(':resources')
+    implementation project(':fileupload')
+    implementation project(':device')
+    implementation project(':business:contract')
+
+    implementation androidX.appcompact
+    implementation androidX.ktx
+
+    implementation view.balloon
+    implementation view.advancedMaterialTap
+    implementation view.material
+
+    implementation utility.kotlin
+
+    implementation rx.java
+    implementation rx.android
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.moshiConverter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+
+    implementation moshi.core
+    kapt moshi.codegen
+    implementation moshi.adapters
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation utility.kotlin
+    implementation utility.timber
+    implementation utility.jodaTime
+    implementation utility.trueTime
+    implementation utility.guava
+
+    implementation arch.room
+    implementation arch.roomRx
+    implementation arch.roomKtx
+    kapt arch.roomAnnotationProcessor
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+
+    implementation utility.coroutines
+    implementation utility.coroutinesRx2
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+}

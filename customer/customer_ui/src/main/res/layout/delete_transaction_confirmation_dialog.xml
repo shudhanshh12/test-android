@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top"
+    android:paddingBottom="@dimen/grid_2">
+
+    <View
+        android:id="@+id/horizontal_view"
+        android:layout_width="@dimen/grid_4"
+        android:layout_height="@dimen/grid_1_half"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@color/grey400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_txn_delete_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/added_wrong_amount"
+        android:textAppearance="?textAppearanceHeadline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_view"
+        tools:text="Are you sure?" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="246dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:padding="@dimen/grid_3_half"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_txn_delete_title"
+        app:srcCompat="@drawable/ic_txn_delete_confirm" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:gravity="center"
+        android:text="@string/you_can_now_edit_txns"
+        android:textAppearance="?textAppearanceCaption2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="407dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/grid_5_half"
+        android:background="@color/grey50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tv_delete_txn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_6"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_1"
+        android:background="@drawable/circle_stroke_green_1dp"
+        android:gravity="center"
+        android:paddingStart="21dp"
+        android:paddingEnd="21dp"
+        android:text="@string/delete"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceButton"
+        android:textColor="@color/grey900"
+        app:cornerRadius="@dimen/grid_3"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_edit_amount"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_6"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_1"
+        android:background="@drawable/circle_background_dark_green_no_theme"
+        android:gravity="center"
+        android:paddingStart="21dp"
+        android:paddingEnd="21dp"
+        android:text="@string/edit_amount"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceButton"
+        android:textColor="@color/white"
+        app:cornerRadius="@dimen/grid_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

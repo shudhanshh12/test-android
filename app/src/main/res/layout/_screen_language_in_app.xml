@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.LinearLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    app:layoutName="InApp Language Activity"
+    android:background="@color/grey50"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:theme="@style/LightActionBarTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <tech.okcredit.help.contextual_help.ContextualHelpMenuView
+                android:id="@+id/contextual_help"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="@dimen/_16dp"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/englishView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/englishText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="English"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/englishCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/hindiView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/hindiText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="हिंदी"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/hindiCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/hinglishView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/hinglishText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hinglish"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/hinglishCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/marathiView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/marathiText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="मराठी"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/marathiCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/gujaratiView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/gujaratiText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ગુજરાતી"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/gujaratiCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/punjabiView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/punjabiText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ਪੰਜਾਬੀ"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/punjabiCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/divider" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/teluguView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/teluguText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="తెలుగు"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/teluguCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/tamilView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tamilText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="தமிழ்"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/tamilCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/malayalamView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/malayalamText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="മലയാളം"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/malayalamCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/kannadaView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/kannadaText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ಕನ್ನಡ"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/kannadaCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/bengaliView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/bengaliText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="বাংলা"
+                            android:textAppearance="?textAppearanceBody2" />
+
+                        <ImageView
+                            android:id="@+id/bengaliCheck"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:tint="?colorPrimary"
+                            app:srcCompat="@drawable/ic_check" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/in_app_lang_desc"
+                android:textAlignment="center"
+                android:textAppearance="?textAppearanceBody2"
+                android:textColor="@color/grey800" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</in.okcredit.shared.performance.layout_perf.LinearLayoutTracker >

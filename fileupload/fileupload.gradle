@@ -1,0 +1,119 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply plugin: "kotlin-android-extensions"
+apply from: "$rootDir/config.gradle"
+
+android {
+
+
+    testOptions.unitTests.includeAndroidResources = true
+
+    sourceSets {
+        androidTest.assets.srcDirs +=
+            files("$projectDir/schemas".toString())
+    }
+
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+    kapt {
+        correctErrorTypes = true
+    }
+
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // OkCredit library
+    implementation project(':auth')
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':business:contract')
+
+    // Architecture Component
+    implementation arch.lifecycle
+    implementation arch.room
+    implementation arch.roomRx
+    kapt arch.roomAnnotationProcessor
+
+
+    // Dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    // Image
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+
+    // AndroidX
+    implementation androidX.exifInterface
+    implementation androidX.ktx
+
+    // Rx
+    implementation rx.java
+    implementation rx.android
+
+    // Aws
+    implementation aws.awsS3
+
+    // Utility
+    implementation utility.kotlin
+    implementation utility.guava
+    implementation utility.timber
+    implementation utility.moshi
+
+    //Test
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockk
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation firebase.firebaseCrashlytics
+
+}
+repositories {
+    mavenCentral()
+}

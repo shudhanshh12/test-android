@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="merchant.okcredit.user_stories">
+
+    <application>
+        <activity
+            android:name=".storycamera.UserStoryCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".storypreview.StoryPreviewActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+</manifest>

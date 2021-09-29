@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/inProgressCard"
+        layout="@layout/ipl_progress_card" />
+
+    <include
+        android:id="@+id/inLoading"
+        layout="@layout/ipl_loading" />
+
+    <include
+        android:id="@+id/inError"
+        layout="@layout/ipl_error" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inProgressCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <merchant.okcredit.gamification.ipl.game.ui.GameRulesCardNew
+                android:id="@+id/inGameRulesCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/lucky_draw_qualified_card"
+                android:visibility="gone"
+                layout="@layout/ipl_sunday_game_qualified" />
+
+            <include
+                android:id="@+id/booster_question_card"
+                android:visibility="gone"
+                layout="@layout/ipl_booster_question" />
+
+            <TextView
+                android:id="@+id/tvPleaseComeBack"
+                style="@style/OKC.TextAppearance.Body2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="8dp"
+                android:text="@string/please_come_back"
+                android:textAllCaps="false"
+                android:textColor="@color/indigo_1"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_info_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inGameRulesCard" />
+
+            <include
+                android:id="@+id/inSelectTeamCard"
+                android:visibility="gone"
+                layout="@layout/ipl_select_team_card"  />
+
+            <include
+                android:id="@+id/team_score_card"
+                android:visibility="gone"
+                layout="@layout/team_score_card" />
+
+            <include
+                android:id="@+id/inSelectBatsman"
+                android:visibility="gone"
+                layout="@layout/ipl_select_batsman_card" />
+
+            <include
+                android:id="@+id/batsman_score_card"
+                android:visibility="gone"
+                layout="@layout/batsman_score_card" />
+
+            <include
+                android:id="@+id/inSelectBowlersCard"
+                android:visibility="gone"
+                layout="@layout/ipl_select_bowlers_card" />
+
+            <include
+                android:id="@+id/bowler_score_card"
+                android:visibility="gone"
+                layout="@layout/bowler_score_card" />
+
+            <View
+                android:id="@+id/bottom_margin"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/flowAllCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:constraint_referenced_ids="lucky_draw_qualified_card,booster_question_card,tvPleaseComeBack,inSelectTeamCard,team_score_card,inSelectBatsman,batsman_score_card,inSelectBowlersCard,bowler_score_card,bottom_margin"
+                app:flow_verticalGap="12dp"
+                app:flow_wrapMode="chain"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inGameRulesCard" />
+
+            <TextView
+                android:id="@+id/tvRewards"
+                style="@style/TextAppearance.OKCTheme.Subtitle2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:foregroundTint="@color/green_primary"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:visibility="gone"
+                android:paddingEnd="12dp"
+                android:text="@string/rewards"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/flowAllCard" />
+
+            <com.airbnb.epoxy.EpoxyRecyclerView
+                android:id="@+id/rvTodaysRewards"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRewards"
+                app:spanCount="2"
+                tools:itemCount="3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="inProgressCard,scrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

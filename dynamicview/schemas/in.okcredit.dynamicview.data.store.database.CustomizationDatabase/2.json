@@ -1,0 +1,47 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "e07dc62e88f8de1ddc3d942401b83174",
+    "entities": [
+      {
+        "tableName": "CustomizationEntityV2",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`target` TEXT NOT NULL, `component` TEXT NOT NULL, `businessId` TEXT NOT NULL, PRIMARY KEY(`target`, `businessId`))",
+        "fields": [
+          {
+            "fieldPath": "target",
+            "columnName": "target",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "componentJsonString",
+            "columnName": "component",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "businessId",
+            "columnName": "businessId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "target",
+            "businessId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e07dc62e88f8de1ddc3d942401b83174')"
+    ]
+  }
+}

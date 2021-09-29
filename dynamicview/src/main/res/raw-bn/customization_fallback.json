@@ -1,0 +1,103 @@
+[
+    {
+      "target": "home_side_navigation",
+      "component": {
+        "version": "v1alpha",
+        "kind": "vertical_list",
+        "metadata": {
+          "name": "VerticalList",
+          "debug": true,
+          "lang": "bn"
+        },
+        "items": [
+          {
+            "version": "v1alpha",
+            "kind": "menu_item",
+            "metadata": {
+              "Name": "Share"
+            },
+            "event_handlers": {
+              "view": [
+                {
+                  "action": "track",
+                  "event": "Entry Point Viewed",
+                  "properties": {
+                    "source": "Side Menu",
+                    "type": "Share"
+                  }
+                }
+              ],
+              "click": [
+                {
+                  "action": "navigate",
+                  "url": "https://okcredit.app/merchant/v1/share"
+                },
+                {
+                  "action": "track",
+                  "event": "Share App",
+                  "properties": {
+                    "Screen": "Drawer"
+                  }
+                }
+              ]
+            },
+            "title": "শেয়ার",
+            "icon": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ic_share%404x.webp"
+          }
+        ]
+      }
+    },
+  {
+    "target": "dashboard",
+    "component": {
+      "version": "v1alpha",
+      "kind": "vertical_list",
+      "metadata": {
+        "name": "VerticalList",
+        "lang": "bn"
+      },
+      "items": [
+        {
+          "version": "v1alpha",
+          "kind": "summary_card",
+          "metadata": {
+            "name": "net_balance",
+            "lang": "bn"
+          },
+          "event_handlers": {
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://okcredit.app/merchant/v1/account_statement?duration=30"
+              }
+            ]
+          },
+          "title": "লেজার",
+          "subtitle": "নেট ব্যালেন্স",
+          "icon": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ledger/drawable-xxxhdpi/icon_ledger_book.png"
+        },
+        {
+          "version": "v1alpha",
+          "kind": "advertisement",
+          "metadata": {
+            "name": "Setup Collection",
+            "lang": "bn"
+          },
+          "event_handlers": {
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://okcredit.app/merchant/v1/account/collections/merchant_collection_screen?source=dashboard"
+              }
+            ]
+          },
+          "title": "অনলাইন কালেকশন সেটআপ করুন এবং অনলাইন অর্থ সংগ্রহ করুন",
+          "subtitle": "২২ লাখেরও বেশি বিশ্বস্ত ব্যাবসায়ীরা OkCredit ব্যবহার করেন",
+          "icon": "",
+          "button_text": "শুরু করুন",
+          "image": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/setup/drawable-xxxhdpi/kyc_illustration.png"
+        }
+      ]
+    }
+  }
+  ]

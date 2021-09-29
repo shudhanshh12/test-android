@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_16dp"
+    android:background="@drawable/background_greenlite_radius_8dp_stroke">
+
+    <ImageView
+        android:id="@+id/calendar_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_cal" />
+
+    <TextView
+        android:id="@+id/date_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="@id/calendar_img"
+        app:layout_constraintBottom_toBottomOf="@id/calendar_img"
+        app:layout_constraintStart_toEndOf="@+id/calendar_img"
+        android:padding="@dimen/_2dp"
+        android:textAppearance="?textAppearanceSubtitle3"
+        tools:text="April" />
+
+    <TextView
+        android:id="@+id/total_expense_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/total_expense"
+        android:textAppearance="?textAppearanceSubtitle3"
+        tools:text="Total Expense" />
+
+    <TextView
+        android:id="@+id/rupee_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_expense_text"
+        android:layout_toStartOf="@+id/total_expense"
+        app:layout_constraintTop_toBottomOf="@+id/total_expense_text"
+        app:layout_constraintEnd_toStartOf="@id/total_expense"
+        android:text="@string/rupee_symbol"
+        android:textAppearance="?textAppearanceHeadline6"
+        android:textColor="@color/red_primary" />
+
+    <TextView
+        android:id="@+id/total_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/total_expense_text"
+        android:layout_below="@+id/total_expense_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="?textAppearanceHeadline6"
+        android:textColor="@color/red_primary"
+        tools:text="20,000" />
+</androidx.constraintlayout.widget.ConstraintLayout>

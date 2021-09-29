@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="payable_amount">প্রদেয় আমউন্ট</string>
+    <string name="please_check_or_edit_final_payable_amount">দয়া করে চূড়ান্ত প্রদেয় আমউন্টটি পরীক্ষা বা এডিট করুন</string>
+    <string name="rupee_text">₹</string>
+    <string name="juspay_pay_securely">নিরাপদে প্রদান করুন</string>
+    <string name="juspay_enter_amount_to_pay">প্রদানের পরিমাণটি এন্টার করুন</string>
+    <string name="juspay_payment_successful">পেমেন্ট সফল হয়েছে</string>
+    <string name="juspay_no_internet_connection">কোন ইন্টারনেট সংযোগ নেই</string>
+    <string name="juspay_something_went_wrong">কিছু সমস্যা আছে. দয়া করে আবার চেষ্টা করুন</string>
+    <string name="juspay_please_fill_correct_amount">সঠিক পরিমাণ পূরণ করুন</string>
+</resources>

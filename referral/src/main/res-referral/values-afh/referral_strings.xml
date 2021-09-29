@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invite_new_person">Naye person ko invite karein</string>
+    <string name="invite_and_earn">Share &amp; Earn</string>
+    <string name="invite_and_earn_cta">Share karke kamayein</string>
+    <string name="invite_and_earn_new">Share karein aur kamayein</string>
+    <string name="share_okcredit_app_and_get_rewards"><![CDATA[Dukaandaron &amp; businessman friends ke saath OkCredit share karein. Aap dono bhi kul <b>₹%1$s</b> tak kama sakte hain]]></string>
+    <string name="know_more">Aur janein</string>
+    <string name="invite_from_the_list">List me se invite karein!</string>
+    <string name="share_okcredit_with_your_friends_families_and_get_rewards_upto_1000"><![CDATA[Aapke friends aur family ke saath OkCredit share karein aur ₹1000 tak inaam kamayein]]></string>
+    <string name="share_okcredit_app_to_everyone">Sab ke saath \nOkCredit app share karein</string>
+    <string name="ask_your_invites_to_install_the_app">Un ko app par \nregister karawayein</string>
+    <string name="money_will_be_ncredited_for_every_ninstallation">Un ke app par register aur app ka istemaal \nkarne ke baad paise kamayein</string>
+    <string name="your_referral_link">Aapki referral link</string>
+    <string name="share_to_anyone">Kisi ke bhi saath share karein</string>
+    <string name="copy_link">Link copy karein</string>
+    <string name="invite">Invite karein</string>
+    <string name="earn">₹%1$s kamayein</string>
+    <string name="share_as_status">Status banakar share karein</string>
+    <string name="share_referral_failure">Referral share nahi kar paayein. Kripaya fir se koshish karein</string>
+    <string name="default_referral_share_content" comment="Download OKCredit from this link and help me earn up to Rs.50">Is link se OkCredit download karein aur Rs.%1$s tak kamayein</string>
+    <string name="link_copied_toast">Link copy ho gaya</string>
+    <string name="copy_referral_failure">Copy nahi kar paayein. Kripaya fir se koshish karein</string>
+    <string name="targeted_referral_registered_merchant">Invite accept kiya, aage badhein…</string>
+    <string name="targeted_referral_all_invited_title">Bahut Badhiya! Aapne sabko invite kar liya hai</string>
+    <string name="targeted_referral_all_invited_subtitle">Reminder bhejne ke liye ek mobile number chunein</string>
+    <string name="share_app_title">Naye person ko invite karein</string>
+    <string name="share_app_description">Apne friends aur family ke saath OkCredit share karein</string>
+    <string name="share_apk">Apk share karein</string>
+    <string name="share_app_know_more_title">Aap kisi ko invite kar ke paise kama sakte hain. Is tarah!</string>
+    <string name="share_app_know_more_step_1">10 Alag alag din par kam se kam 10 transactions jodein</string>
+    <string name="share_app_know_more_step_2">Aap ek exclusive referral program ka hissa ban jayenge</string>
+    <string name="share_app_know_more_step_3">₹1000 tak kamane ka mauka paayein</string>
+    <string name="share_app_failure">App share nahi kar paayein. Kripaya fir se koshish karein</string>
+    <string name="share_app_msg">Abhi, India ka No. 1 digital khata management app install karein, Made in India @ %1$s</string>
+    <string name="referred_merchant_list_error">Referral list nahi la payein. Please phir se try karein</string>
+    <string name="you_claim_rewards_menu_referral">Apne inaam prapt karne ke liye apna bank account set up karein</string>
+    <string name="no_reward_error">Kuchh galat ho gaya, 504</string>
+    <string name="how_does_this_work">yah kaise kaam karta hai?</string>
+
+</resources>

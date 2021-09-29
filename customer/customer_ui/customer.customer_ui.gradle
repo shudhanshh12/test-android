@@ -1,0 +1,149 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'androidx.navigation.safeargs'
+
+apply from: "$rootDir/config.gradle"
+
+android {
+
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'AUTO_CREDIT_BASE_URL', "\"https://auto-credit.staging.okcredit.io/\""
+            buildConfigField "String", 'GOOGLE_PAY_BASE_URL', "\"https://gpay.staging.okcredit.io/\""
+            buildConfigField "String", 'STAFF_LINK_BASE_URL', "\"https://staff-link.staging.okcredit.io/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'AUTO_CREDIT_BASE_URL', "\"https:/auto-credit.alpha.okcredit.io/\""
+            buildConfigField "String", 'GOOGLE_PAY_BASE_URL', "\"https://gpay.alpha.okcredit.io/\""
+            buildConfigField "String", 'STAFF_LINK_BASE_URL', "\"https://staff-link.alpha.okcredit.io/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'AUTO_CREDIT_BASE_URL', "\"https:/auto-credit.okcredit.io/\""
+            buildConfigField "String", 'GOOGLE_PAY_BASE_URL', "\"https://gpay.okcredit.io/\""
+            buildConfigField "String", 'STAFF_LINK_BASE_URL', "\"https://staff-link.okcredit.io/\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-customer_ui.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-customer_ui.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':analytics')
+    implementation project(':base')
+    implementation project(':accounting')
+    implementation project(':backend')
+    implementation project(':backend:contract')
+    implementation project(':shared')
+    implementation project(':app:app_contract')
+    implementation project(':suppliercredit')
+    implementation project(':supplier:contract')
+    implementation project(':communication')
+    implementation project(':collection_module:contract')
+    implementation project(':user_migration:contract')
+    implementation project(':accounting_core')
+    implementation project(':business:contract')
+    implementation project(':fileupload')
+    implementation project(':camera')
+    implementation project(':camera:camera_contract')
+    implementation project(':ab')
+    implementation project(':auth')
+    implementation project(':home:contract')
+    implementation project(':customer:contract')
+    implementation project(':applock:contract')
+    implementation project(':feature_help:sdk')
+    implementation project(':feature_help:ui')
+    implementation project(':feature_help:contract')
+    implementation project(':onboarding:contract')
+    implementation project(':contacts:contract')
+    implementation project(':accounting_core:contract')
+    implementation project(':referral:contract')
+    implementation project(':payment:contract')
+    implementation project(':referral')
+    implementation project(':rewards:contract')
+    implementation project(':bill_management:contract')
+    implementation project(':account_chat:account_chat_contract')
+    implementation project(':cashback:contract')
+    implementation project(':okstream:contract')
+    implementation project(':accounting:contract')
+    implementation project(':individual:contract')
+
+    // Dagger
+    implementation dagger.core
+    implementation project(path: ':web:contract')
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+    //Rx
+    implementation rx.binding
+    implementation rx.java
+    implementation rx.android
+
+    implementation arch.roomKtx
+    kapt arch.roomAnnotationProcessor
+
+    implementation navigation.fragment
+
+    //androidx
+    implementation androidX.constraintLayout
+    implementation androidX.ktx
+    implementation androidX.constraintLayoutSolver
+
+    implementation arch.roomKtx
+    kapt arch.roomAnnotationProcessor
+
+
+    //Views
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+
+    implementation view.shimmer
+    implementation view.calendarDateRangePicker
+    implementation view.lottie
+    implementation view.balloon
+    implementation view.advancedMaterialTap
+    implementation view.numberPicker
+    implementation view.textDrawable
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+
+    testImplementation unitTest.androidxTestCore
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockk
+    testImplementation unitTest.mockitoKotlin
+    testImplementation firebase.firebaseCrashlytics
+    testImplementation unitTest.robolectric
+
+}

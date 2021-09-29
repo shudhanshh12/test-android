@@ -1,0 +1,209 @@
+apply plugin: 'com.android.library'
+apply plugin: "kotlin-android"
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "kotlin-kapt"
+apply plugin: 'androidx.navigation.safeargs'
+apply from: "$rootDir/config.gradle"
+
+android {
+
+    sourceSets {
+        androidTest.assets.srcDirs +=
+            files("$projectDir/schemas".toString())
+    }
+
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-frontend.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-frontend.pro'consumerProguardFiles 'consumer-rules-frontend.pro'
+        }
+    }
+
+    kapt {
+        correctErrorTypes = true
+    }
+
+}
+
+dependencies {
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':accounting')
+    implementation project(':ab'),{exclude group: 'com.google.guava', module: 'listenablefuture'}
+    implementation project(':backend')
+    implementation project(':resources')
+    implementation project(':fileupload')
+    implementation project(':analytics')
+    implementation project(':suppliercredit')
+    implementation project(':collection_module:collection_sdk')
+    implementation project(':rewards')
+    implementation project(':expense')
+    implementation project(':business')
+    implementation project(':business:contract')
+    implementation project(':camera')
+    implementation project(':device')
+    implementation project(':shared')
+    implementation project(':referral')
+    implementation project(':referral:contract')
+    implementation project(':communication')
+
+    implementation project(':app:app_contract')
+    implementation project(':frontend:contract')
+    implementation project(':camera:camera_contract')
+    implementation project(':collection_module:contract')
+    implementation project(':contacts:contract')
+    implementation project(':home')
+    implementation project(':home:contract')
+    implementation project(':sales_module:sales_sdk')
+    implementation project(':sales_module:sales_ui')
+    implementation project(':dynamicview')
+    implementation project(':accounting_core')
+    implementation project(':onboarding')
+
+    implementation project(':backend:contract')
+    implementation project(':onboarding:contract')
+    implementation project(':feature_help:ui')
+    implementation project(':feature_help:sdk')
+    implementation project(':feature_help:contract')
+    implementation project(':account_chat:account_chat_sdk')
+    implementation project(':account_chat:account_chat_ui')
+    implementation project(':bill_management:ui')
+    implementation project(':bill_management:contract')
+    implementation project(':bill_management:sdk')
+    implementation project(':accounting_core:contract')
+    implementation project(':customer:customer_ui')
+    implementation project(':resources')
+    implementation project(':web:contract')
+    implementation project(':rewards:contract')
+    implementation project(':dynamicview:contract')
+    implementation project(':customer')
+    implementation project(':supplier')
+    implementation project(':supplier:contract')
+    implementation project(':payment:contract')
+    implementation project(':cashback:contract')
+    implementation project(':onboarding:contract')
+    implementation project(':user-stories:contract')
+    implementation project(':account_chat:account_chat_contract')
+    implementation project(':applock:contract')
+    implementation project(':okstream:contract')
+    implementation project(':accounting:contract')
+    implementation project(':individual:contract')
+
+    implementation androidX.appcompact
+    implementation androidX.webkit
+
+    implementation navigation.fragment
+    implementation navigation.ui
+    implementation navigation.fragmentKtx
+    implementation navigation.uiKtx
+
+    // Views
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+    annotationProcessor view.epoxyProcessor
+
+    //androidX
+    implementation androidX.ktx
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+    implementation androidX.biometric
+
+    //View
+    implementation view.shimmer
+    implementation view.calendarDateRangePicker
+    implementation view.lottie
+    implementation view.textDrawable
+    implementation view.youtubePlayer
+    implementation view.mpandroidchart
+    implementation view.advancedMaterialTap
+    implementation view.balloon
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    // Dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    //Firebase
+    implementation firebase.firebaseAnalytics
+    implementation firebase.firebaseMessaging
+    implementation firebase.firebaseCrashlytics
+
+    //Rx
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    // Utility
+    implementation utility.kotlin
+    implementation utility.timber
+    implementation utility.trueTime
+    implementation playService.location
+    implementation playService.map
+    implementation utility.apacheCommons
+    implementation utility.apacheCommonsCore
+    implementation utility.philology
+    implementation utility.viewpump
+    implementation utility.truecaller
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    //CameraX
+    implementation camerax_3.camera_view
+    implementation camerax_3.camerax_camera
+    implementation camerax_3.camera_extensions
+    implementation camerax_3.camera_lifecycle
+    implementation camerax_3.camera_core
+
+    implementation utility.coroutinesRx2
+
+    //zendesk
+    implementation zendesk.chat
+    implementation zendesk.messaging
+
+    implementation view.sectorprogressview
+    implementation view.exoplyer
+    implementation view.gridlayout
+    implementation view.recyclerviewAnimators
+
+}

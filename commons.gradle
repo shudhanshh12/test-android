@@ -1,0 +1,45 @@
+def loadApkFileName() {
+    String apkName = ""
+    String apkNameEnvVar = "$System.env.APK_FILE_NAME"
+    if (apkNameEnvVar != null && !apkNameEnvVar.isEmpty() && !apkNameEnvVar.equals("null")) {
+        apkName = apkNameEnvVar
+    }
+    return apkName.replace("/", "_")
+}
+
+Properties loadConfig() {
+    String buildType = "default"
+
+    if (gradle.startParameter.taskNames[0] != null &&
+            gradle.startParameter.taskNames[0].contains("Release")) {
+        buildType = "release"
+    }
+
+    String buildTypeEnvVar = "$System.env.BUILD_TYPE"
+    if (buildTypeEnvVar != null && !buildTypeEnvVar.isEmpty() && !buildTypeEnvVar.equals("null")) {
+        buildType = buildTypeEnvVar
+    }
+    println 'Task Started with BUILD_TYPE=' + buildType
+    def configFile = String.format("./.config/%s/config.properties", buildType)
+    def config = new Properties()
+    config.load(new FileInputStream(rootProject.file(configFile)))
+    return config
+}
+
+String loadApkSource() {
+    String apkSource = "google"
+
+    String buildTypeEnvVar = "$System.env.APK_SOURCE"
+    if (buildTypeEnvVar != null && !buildTypeEnvVar.isEmpty() && buildTypeEnvVar != "null") {
+        apkSource = String.format(buildTypeEnvVar)
+    }
+    println 'Apk Source is ' +apkSource
+    return apkSource
+}
+
+// Export methods by turning them into closures
+ext {
+    loadApkFileName = this.&loadApkFileName
+    loadConfig = this.&loadConfig
+    loadApkSource = this.&loadApkSource
+}

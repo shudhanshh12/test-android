@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="bottom"
+    android:focusable="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_8dp"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:paddingBottom="@dimen/_8dp"
+        android:theme="@style/AppTheme"
+        android:background="@drawable/circular_border_on_top">
+
+        <View
+            android:id="@+id/bar"
+            android:layout_width="48dp"
+            android:layout_height="4dp"
+            android:background="@color/grey300"
+            android:layout_marginBottom="@dimen/_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/name_layout"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:text="@string/add_item"
+            android:visibility="gone"
+            android:textAppearance="?textAppearanceSubtitle2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bar"
+            app:layout_constraintBottom_toTopOf="@+id/name_layout" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:hint="@string/item_description"
+            android:textColorHint="@color/grey400"
+            app:backgroundTint="@color/green_primary"
+            app:layout_constraintBottom_toTopOf="@+id/rate_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="textAutoComplete"
+                android:maxLength="60"
+                android:imeOptions="actionNext"
+                android:textAppearance="?textAppearanceSubtitle2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/quantity_layout"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/_2dp"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:padding="@dimen/_8dp"
+            android:background="@drawable/circle_background_green_primary_outline"
+            app:layout_constraintTop_toTopOf="@id/rate_layout"
+            app:layout_constraintStart_toEndOf="@id/rate_layout"
+            app:layout_constraintBottom_toBottomOf="@id/rate_layout"
+            app:layout_constraintEnd_toEndOf="@+id/submit_bill_item">
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/plus"
+                app:layout_constraintTop_toTopOf="@id/plus"
+                app:layout_constraintBottom_toBottomOf="@id/plus"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textColor="@color/green_primary"
+                android:text="@string/add"/>
+
+            <ImageView
+                android:id="@+id/minus"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_delete_bill"
+                android:tint="@color/grey400"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <EditText
+                android:id="@+id/quantity_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="1"
+                android:focusedByDefault="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:maxLength="7"
+                android:inputType="numberDecimal"
+                android:textAppearance="?textAppearanceSubtitle4"
+                android:textColor="@color/green_primary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/minus"
+                app:layout_constraintEnd_toStartOf="@id/plus"/>
+
+            <ImageView
+                android:id="@+id/plus"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_plus"
+                android:tint="@color/green_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/quantity_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:text="@string/invalid_quantity"
+            android:textColor="@color/red_primary"
+            android:maxLines="2"
+            android:gravity="center"
+            android:textAppearance="?textAppearanceCaption2"
+            app:layout_constraintTop_toBottomOf="@+id/quantity_layout"
+            app:layout_constraintStart_toStartOf="@+id/quantity_layout"
+            app:layout_constraintEnd_toEndOf="@+id/quantity_layout"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rate_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:backgroundTint="@color/green_primary"
+            android:hint="@string/rate"
+            android:textColorHint="@color/grey400"
+            app:layout_constraintBottom_toTopOf="@id/submit_bill_item"
+            app:layout_constraintEnd_toStartOf="@+id/quantity_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rate_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxLength="8"
+                android:inputType="numberDecimal"
+                android:textAppearance="?textAppearanceSubtitle2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit_bill_item"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/white"
+            android:visibility="visible"
+            app:backgroundTint="@color/grey400"
+            app:elevation="0dp"
+            app:cornerRadius="20dp"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

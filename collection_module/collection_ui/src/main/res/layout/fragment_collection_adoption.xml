@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="@string/online_payments" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/indicatorOne"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_black_radius_2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/indicatorTwo"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.2"
+        android:background="@drawable/background_black_radius_2dp"
+        app:layout_constraintStart_toEndOf="@+id/indicatorOne"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/indicatorThree"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.2"
+        android:background="@drawable/background_black_radius_2dp"
+        app:layout_constraintStart_toEndOf="@+id/indicatorTwo"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/epoxyBenefits"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSetup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/buttonSetup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="?colorPrimary"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/add_bank_details"
+            android:textAppearance="@style/OKC.TextAppearance.Button"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/viewShine"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:background="@drawable/shine_effect"
+            android:translationX="-150dp"
+            android:visibility="gone" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/image_hand_nudge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_hand_sales"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSetup"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSetup"
+        app:layout_constraintStart_toStartOf="@+id/buttonSetup"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

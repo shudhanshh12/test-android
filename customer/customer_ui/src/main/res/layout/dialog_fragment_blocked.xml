@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:textAppearance="?textAppearanceHeadline6"
+                android:textStyle="bold"
+                tools:text="You are blocked by customer" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:textAppearance="?textAppearanceBody2"
+                tools:text="Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account." />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:background="@color/grey300" />
+
+            <LinearLayout
+                android:id="@+id/action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8dp"
+                android:paddingEnd="@dimen/_16dp">
+
+                <ImageView
+                    android:id="@+id/action_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8dp"
+                    android:src="@drawable/ic_call" />
+
+                <TextView
+                    android:id="@+id/action_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_8dp"
+                    android:text="@string/call_customer"
+                    android:textAllCaps="true"
+                    android:gravity="start|center"
+                    android:textColor="@color/primary"
+                    android:textAppearance="?textAppearanceSubtitle2"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

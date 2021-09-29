@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tech.okcredit.account_chat_ui" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application>
+        <activity android:name=".chat_activity.ChatActivity" />
+    </application>
+</manifest>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phone_number_added_successfully">Phone Number Added Successfully</string>
+    <string name="last_zero_balance">Last 0 balance</string>
+    <string name="file_download_successfully">File downloaded successfully!</string>
+    <string name="no_transaction_recorded">No Transactions were recorded during the selected period.</string>
+    <string name="last_three_month">Last 3 months</string>
+    <string name="last_six_month">Last 6 months</string>
+    <string name="overall">Overall</string>
+    <string name="date_filters">Date Filters</string>
+    <string name="drag_and_select_dates">Drag &amp; Select dates or tags to view report of desired period</string>
+    <string name="now_you_can_view">Now you can View, Save and Share reports for desired periods</string>
+    <string name="customer_report">Customer Report</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="optional">Optional</string>
+    <string name="bill_date">Bill Date</string>
+    <string name="credit_with_name">Gave to %s</string>
+    <string name="payment_with_name">Got from %s</string>
+    <string name="select_date">Select date</string>
+    <string name="confirm_date">Confirm (%s)</string>
+    <string name="start_typing">Start typing…</string>
+    <string name="zero" formatted="false">0</string>
+    <string name="enter_payment_password">Enter Payment Password</string>
+    <string name="notes_regular">Notes</string>
+    <string name="forgot_password_underline"><u>Forgot Password</u></string>
+
+    <string name="add_subscription_name">Subscription for</string>
+    <string name="subscription_name">Subscription name</string>
+    <string name="repeat">Repeat</string>
+    <string name="weekly">Weekly</string>
+    <string name="start_date">Start Date</string>
+    <string name="subscription_amount">Subscription amount</string>
+    <string name="new_subscription">New subscription</string>
+    <string name="subscription_txn_count">No. of transactions added till date</string>
+    <string name="next_transaction_date">Next transaction date</string>
+    <string name="subscription_status">Subscription Status</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="msg_delete_confirmation">Automatic transactions will not be added after deleting subscription</string>
+    <string name="subscription_list">Subscription list</string>
+    <string name="subscription_detail">Subscription details</string>
+    <string name="add_subscription">Add subscription</string>
+    <string name="daily">Daily</string>
+    <string name="monthly">Monthly</string>
+    <string name="subscription">Subscription</string>
+    <string name="subscriptions">Subscriptions</string>
+    <string name="repeat_weekly">Repeat weekly on</string>
+    <string name="repeat_monthly">Repeat monthly on</string>
+    <string name="message_empty_subscription">Create a subscription and repeat transaction automatically on periodic basis</string>
+    <string name="subscription_saved_successfully">Subscription saved successfully</string>
+    <string name="msg_select_frequency">Please select repeat frequency</string>
+    <string name="msg_select_date">Please select repeat date</string>
+    <string name="msg_select_days">Please select repeat days</string>
+    <string name="on_day_of_month">On %1$d%2$s</string>
+
+    <string name="nofrills_screen">NoFrillsAddTransactionScreen</string>
+    <string name="safe_trusted">Safe &amp; Trusted</string>
+    <string name="msg_sms_sent_transaction">SMS update will be sent to customer</string>
+    <string name="title_password_protection">Secure your transactions with Password Protection</string>
+    <string name="reduce_error"><b>Reduce Errors</b> caused by unsupervised entries.</string>
+    <string name="share_pin"><b>Choose who can add payment transactions</b>, by sharing payment password only with people you trust.</string>
+    <string name="account_private_secure"><b>Keep your account Private, Safe &amp; Secured!</b></string>
+    <string name="cta_setup_payment_password">Setup Payment Password</string>
+    <string name="credit_added_of_amount">Added a Credit of amount ₹%s</string>
+    <string name="payment_added_of_amount">Added a Payment of amount ₹%s</string>
+    <string name="active">Active</string>
+    <string name="paused">Paused</string>
+    <string name="expired">Expired</string>
+    <string name="saving_subscription">Saving subscription</string>
+    <string name="deleting_subscription">Deleting subscription</string>
+    <string name="message_empty_subscription_title">Repeat Transactions</string>
+    <string name="enter_amount_manually"><u>Enter Amount Manually</u></string>
+    <string name="amount_will_be_updated_in_a_few_seconds">Amount will be updated in a few seconds</string>
+    <string name="always_make_sure_that_photo_is_easy_to_read">Always make sure that photo is easy to read.</string>
+    <string name="amount_updated">Amount updated!</string>
+    <string name="edit_amount"><u>Edit Amount</u></string>
+    <string name="currently_automatic_amount_entry_supported">Currently, automatic amount entry is supported only if 1 image is added.</string>
+    <string name="roboflow_fetch_failed_message">Not able to read your bills. Always make sure photo is easy to read.</string>
+    <string name="roboflow_tooltip_message">App will scan your photo and automatically enter %s Amount.</string>
+    <string name="remove_details">Remove details?</string>
+    <string name="caption_remove_details_dailog">If you go back without saving the details, your information will not be saved.</string>
+    <string name="remove">remove</string>
+    <string name="upload_failure_message">Not able to read your bills due to low or no internet connection.</string>
+    <string name="calculator_education_text">Calculate Total using keypad below, save computing Time!</string>
+    <string name="calculator_example">Eg. 10+20 = 30</string>
+    <string name="data_stored_online">Stored Online</string>
+    <string name="collect_with">Collect With</string>
+    <string name="collect_with_gpay">Collect With Google Pay</string>
+    <string name="collect_with_gpay_request_already_sent">Collection Request has been sent on customers Gpay app, to send again come back after some time</string>
+    <string name="collect_with_gpay_sent">Collect with GPay request sent successfully</string>
+    <string name="amount_receive_in">Receive Amount In</string>
+    <string name="enter_amount_to_collect">Enter amount to Collect</string>
+    <string name="cta_send_collection_request">Send Collection Request</string>
+    <string name="request_sent">Request sent</string>
+
+    <string name="customer_not_present_on_gpay">Sorry! your customer doesn\'t have Google pay account</string>
+    <string name="collect_on_gpay_request_already_sent">Please wait. We have already sent a collect request</string>
+    <string name="real_time_contextual_message_card_text">Maintain accurate accounts. No need to send account number to receive money.</string>
+    <string name="message_bank_details_added">Thanks for adding Bank details. Request  payment from customer by</string>
+    <string name="sending_reminder">Sending Reminder</string>
+    <string name="ce_relation_scrn_err_title_unable_to_add_customer">Unable to add this customer</string>
+    <string name="ce_relation_scrn_err_subtitle_already_registered_as_customer_supplier">%s already registered to %s as a customer/supplier</string>
+    <string name="already_registered_without_number">%s already registered as a customer/supplier</string>
+    <string name="ce_relation_scrn_account_deleted_successfully">Account Deleted Successfully</string>
+    <string name="ce_relation_scrn_empt_state_text"><![CDATA[All transactions between you and customers are totally private & secure.]]></string>
+    <string name="ce_relation_scrn_cta_take">Received</string>
+    <string name="ce_relation_scrn_cta_give">Given</string>
+    <string name="account_deleted_successfully">Account Deleted Successfully</string>
+    <string name="more">More</string>
+
+    <string name="real_time_contextual_message_card_text_payment_se">Want to record payments automatically?</string>
+    <string name="real_time_contextual_message_card_text_payment_cta_se">BECOME A super USER</string>
+    <string name="real_time_contextual_message_card_text_credit_cta_se">GET PAID 4X FASTER</string>
+    <string name="real_time_contextual_message_card_text_credit_se">No need to keep asking for payment again and again</string>
+    <string name="t_003_staff_collection_no_result">Sorry, we could not find results for %s. Please ADD CUSTOMER.</string>
+
+
+    <string name="after_due_on">After</string>
+    <string name="since_due_on">Since</string>
+    <string name="customer_collections_pending">Collection is pending from %1$s/%2$s customers</string>
+    <string name="t_003_staff_collection_select">Select All</string>
+    <string name="t_003_staff_collection_deselect">Deselect All</string>
+    <string name="t_003_staff_collection_help">Add details like, addresses &amp; mobile numbers of customers. Share with your staff to collect using QR or Payment Link.</string>
+    <string name="t_003_staff_collection_help_no_customer">Customers with balance due will appear here, you can create a list and share with your staff for collection</string>
+    <string name="t_003_staff_collection_page_scta">Details</string>
+    <string name="t_003_staff_collection_add_to_list">Add to List</string>
+    <string name="t_003_staff_collection_due">Total Dues</string>
+    <string name="msg_share_staff_link">Hello,\nSharing the list of the customers with pending dues. Please collect payment from them by showing QR or Sharing Payment Link.\n\n%s</string>
+    <string name="customers_pre_selected">We have selected the customers with pending dues for you!</string>
+    <string name="t_001_pre_nw_onboarding_warning_inactive_acc">Last activity on this account was 30 day ago. The balance may not be up to date.</string>
+    <string name="t_003_staff_collection_delete_list_heading">Do you really want to delete the collection list?</string>
+    <string name="t_003_staff_collection_delete_list_body">This list will not be saved. You can create a new collection list.</string>
+    <string name="t_003_staff_collection_remove_customer_heading">Do you really want to remove the customer from the list?</string>
+    <string name="t_003_staff_collection_remove_customer_body">This customer will be removed from the list shared with the staff</string>
+    <string name="t_003_staff_collection_success">Payment received (%s)</string>
+    <string name="t_003_staff_collection_due_message">Collect pending dues from customers in one click</string>
+    <string name="t_003_staff_collection_remove_customer_pcta">Remove</string>
+    <string name="t_003_staff_collection_delete_list_scta">Delete</string>
+    <string name="t_003_staff_collection_add_address_heading">Add Address</string>
+
+    <string name="t_003_staff_collection_add_address_body">Adding address will help staff to reach the customer’s location for collection</string>
+    <string name="t_003_staff_collection_section_header">Customers (%s)</string>
+
+    <string name="t_003_staff_collection_page_title">Collection List</string>
+    <string name="t_003_staff_collection_page_pcta">Create Collection List</string>
+    <string name="t_003_staff_collection_page_heading1">Create a list of customers with pending payment</string>
+    <string name="t_003_staff_collection_page_heading2">Share list with staff on whatsapp</string>
+    <string name="t_003_staff_collection_page_heading3">Staff can show QR or share payment link and collect pending payment</string>
+    <string name="t_003_staff_collection_page_heading4">Get notified as transactions are added automatically to the customers’ ledger</string>
+    <string name="t_003_staff_collection_amount_due_date"> Due • %1$s %2$sd</string>
+    <string name="t_003_staff_collection_add_number_heading">Add Mobile Number</string>
+    <string name="t_003_staff_collection_add_number_body">Adding mobile number will help staff to contact customer for collection</string>
+
+    <string name="t_003_staff_collection_setup_payments_heading">You have not setup online payments</string>
+    <string name="t_003_staff_collection_setup_payments_body">It is must to add bank details before sharing list with staff for collection</string>
+    <string name="t_003_staff_collection_setup_payments_pcta">Add Bank Details</string>
+    <string name="t_001_addrel_list_cta_sub_txt"><![CDATA[Type name & mobile number]]></string>
+
+    <string name="t002_show_qr">Show QR</string>
+    <string name="t002_customer_ledger_remind">Remind</string>
+
+    <string name="t_002_add_payment_add_amount">Or Add Payment</string>
+
+    <string name="t_002_add_payment_scan_pay">Ask %1$s to Scan &amp; Pay</string>
+    <string name="t_002_add_payment_education">Payments received by scanning this QR will be added on %1$s’s page automatically</string>
+
+    <string name="t_002_payment_success_H1">%1$s paid ₹%2$s</string>
+    <string name="t_002_payment_success_date">Added on %s</string>
+    <string name="t_002_payment_success_updated_balance">Updated Balance: ₹%1$s %2$s</string>
+    <string name="t_002_payment_success_UTR">UTR: %s</string>
+
+    <string name="received_amount_speech" translatable="false">Received payment of rupees %1s</string>
+
+    <string name="t_002_daily_settlement_pending_delayed_ledger_text">This payment is pending with us due to security issues. Please complete KYC to settle it.</string>
+    <string name="t_002_daily_settlement_pending_ledger_text">You have opted for daily settlements. Automatic settlement will be done by 12 am.</string>
+</resources>

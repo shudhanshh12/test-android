@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.okcredit.merchant.rewards">
+
+    <application>
+        <activity
+            android:name="in.okcredit.merchant.rewards.ui.RewardsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.OKCTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="in.okcredit.merchant.rewards.ui.rewards_dialog.ClaimRewardActivity"
+            android:theme="@style/Theme.TransparentActivity"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

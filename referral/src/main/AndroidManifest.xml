@@ -1,0 +1,17 @@
+<manifest package="tech.okcredit.android.referral"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name="tech.okcredit.android.referral.ui.ReferralActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.OKCTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="tech.okcredit.android.referral.ui.share.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.OKCTheme"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+</manifest>

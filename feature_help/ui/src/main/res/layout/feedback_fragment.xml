@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:theme="@style/LightActionBarTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textAppearance="?textAppearanceHeadline6"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_8dp"
+                android:textAllCaps="false"
+                android:paddingEnd="@dimen/view_116dp"
+                android:text="@string/feedback"
+                android:textColor="@color/grey900"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="?textAppearanceCaption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:text="@string/content_text"
+                app:layout_constraintEnd_toEndOf="@+id/et_feedback"
+                app:layout_constraintStart_toStartOf="@+id/et_feedback"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_feedback"
+                style="?textAppearanceCaption2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:background="@drawable/background_white_corner_radius_4dp"
+                android:gravity="top|start"
+                android:hint="@string/write_your_feedback_here"
+                android:maxLines="5"
+                android:padding="@dimen/spacing_4"
+                android:textColor="@color/grey800"
+                android:textColorHint="@color/grey600"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_content"
+                app:layout_constraintVertical_bias="0.050000012" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit"
+                style="@style/OKC.Button.Dark.Solid.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/spacing_4"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:text="@string/submit_feedback"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_feedback" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_VerificationSuccess"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:constraint_referenced_ids="lottie_help_OtpVerifySuccess,tv_feedback_submitted"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_help_OtpVerifySuccess"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        app:lottie_autoPlay="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_rawRes="@raw/otp_verify_success"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <TextView
+        android:id="@+id/tv_feedback_submitted"
+        app:layout_constraintTop_toBottomOf="@id/lottie_help_OtpVerifySuccess"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_20"
+        android:text="@string/feedback_submitted"
+        android:textAppearance="?textAppearanceHeadline4"
+        android:textColor="@color/grey800" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

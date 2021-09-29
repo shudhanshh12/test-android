@@ -1,0 +1,96 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'OK_DOC_BASE_URL', "\"https://okdoc.staging.okcredit.in/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'OK_DOC_BASE_URL', "\"https://okdoc.alpha.okcredit.in/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'OK_DOC_BASE_URL', "\"https://okdoc.okcredit.in/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-stories.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-stories.pro'
+        }
+    }
+
+}
+
+dependencies {
+    // OkCredit utility
+    implementation project(':auth')
+    implementation project(':ab')
+
+    // Platform
+    implementation project(':base')
+    implementation project(':analytics')
+
+    //Contracts
+    implementation project(":ok-doc:contract")
+    implementation project(":business:contract")
+
+
+    // Dagger
+    implementation dagger.core
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+
+    //coroutines
+    implementation utility.coroutines
+
+    // Retrofit
+    implementation retrofit.retrofit
+    implementation retrofit.gsonConverter
+    implementation retrofit.gson
+    implementation retrofit.retrofitRxAdapter
+
+
+    // Kotlin
+    implementation utility.kotlin
+
+
+    // Test
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+}

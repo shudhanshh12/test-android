@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txn_filter_popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="200dp"
+    app:cardCornerRadius="@dimen/grid_1_half"
+    app:cardElevation="@dimen/grid_1">
+
+    <LinearLayout
+        android:id="@+id/all_txns_container"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_7"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/all_txns_icon"
+                android:layout_width="@dimen/grid_3"
+                android:layout_height="@dimen/grid_3"
+                android:layout_marginStart="@dimen/grid_2"
+                app:srcCompat="@drawable/ic_double_arrows" />
+
+            <TextView
+                android:id="@+id/all_txns"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/grid_2"
+                android:layout_marginEnd="@dimen/grid_1"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:text="@string/all_transactions"
+                tools:text="Here is" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/online_txns_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/online_txns_icon"
+                android:layout_width="@dimen/grid_3"
+                android:layout_height="@dimen/grid_3"
+                android:layout_marginStart="@dimen/grid_2"
+                android:tint="?colorPrimary"
+                app:srcCompat="@drawable/ic_collection_icon" />
+
+            <TextView
+                android:id="@+id/online_txns"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/grid_2"
+                android:layout_marginEnd="@dimen/grid_1"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:text="@string/online_transactions"
+                tools:text="there is Something" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

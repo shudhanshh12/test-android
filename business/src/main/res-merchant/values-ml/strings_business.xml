@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">പ്രൊഫൈൽ തിരുത്തുക</string>
+    <string name="t_001_multi_acc_title_new_biz">പുതിയ ബിസിനസ് ചേർക്കാം</string>
+    <string name="t_001_multi_acc_input_biz_name">ബിസിനസ് / ഷോപ്പിന്റെ പേര്</string>
+    <string name="t_001_multi_acc_net_bal">മൊത്തം ബാലൻസ്:</string>
+    <string name="t_001_multi_acc_net_bal_due">കടം</string>
+    <string name="t_001_multi_acc_net_bal_advance">അഡ്വാൻസ്</string>
+    <string name="t_001_multi_acc_title_select_biz">ബിസിനസ് തിരഞ്ഞെടുക്കുക</string>
+    <string name="t_001_multi_acc_msg_biz_added">പുതിയ ബിസിനസ് വിജയകരമായി ചേർത്തു</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">ബിസിനസ് ചേർക്കാനായില്ല. ചേർക്കാവുന്ന ഉയർന്ന പരിധി എത്തിയിരിക്കുന്നു</string>
+</resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    app:layoutName="Account Statement Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/grid_1"
+                    android:paddingLeft="@dimen/grid_1"
+                    android:paddingEnd="@dimen/grid_1"
+                    android:paddingRight="@dimen/grid_1"
+                    android:text="@string/account_statement"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    android:textColor="@color/grey800"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/menu_overflow"
+                    android:layout_width="@dimen/grid_5"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/grid_2"
+                    android:padding="@dimen/grid_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_menu_overflow" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/date_container"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:strokeColor="@color/grey300"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:paddingLeft="@dimen/spacing_12"
+            android:paddingTop="@dimen/spacing_6"
+            android:paddingRight="@dimen/spacing_12"
+            android:paddingBottom="@dimen/spacing_6">
+
+            <ImageView
+                android:id="@+id/img_calendar"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="2dp"
+                android:tint="@color/grey800"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/date_range"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_calendar" />
+
+            <TextView
+                android:id="@+id/date_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:text="@string/dateRange"
+                android:layout_margin="2dp"
+                android:textAllCaps="true"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textColor="@color/grey800"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/img_arrow"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/img_calendar"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="10 Jul, 2018 - 10 Jul, 2018" />
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="90"
+                android:tint="@color/grey800"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/date_range"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        tools:itemCount="7"
+        tools:listitem="@layout/account_statement_tx_item" />
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_download"
+        style="@style/OKC.ExtendedFloatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/download"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:cornerRadius="24dp"
+        app:icon="@drawable/ic_icon_download"
+        app:iconGravity="textStart"
+        app:iconSize="24dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/black_25"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/downloading_background"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@color/green_lite"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/btn_download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/download_complete_background"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/green_lite"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/btn_download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginBottom="0dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_download_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:clickable="true"
+        android:drawablePadding="6dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:text="@string/download_complete"
+        android:textAppearance="?textAppearanceBody2"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_check_green"
+        app:layout_constraintEnd_toEndOf="@id/download_complete_background"
+        app:layout_constraintBottom_toBottomOf="@id/download_complete_background"
+        app:layout_constraintStart_toStartOf="@id/download_complete_background"
+        app:layout_constraintTop_toTopOf="@id/download_complete_background" />
+
+    <View
+        android:id="@+id/download_button_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:paddingTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/download_complete_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_downloading"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@id/downloading_background"
+        app:layout_constraintEnd_toStartOf="@+id/tv_downloading"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:visibility="gone"
+        android:layout_marginHorizontal="6dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/downloading_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_downloading"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/downloading_please_wait"
+        android:textAppearance="?textAppearanceBody2"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/downloading_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_downloading"
+        app:layout_constraintTop_toTopOf="@id/downloading_background" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_downloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="downloading_background, tv_downloading, iv_downloading" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_downloaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="download_complete_background, tv_download_complete, download_button_background" />
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

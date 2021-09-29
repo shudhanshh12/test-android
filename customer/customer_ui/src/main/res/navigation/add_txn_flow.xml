@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_transaction_flow"
+    app:startDestination="@id/addTxnFragment">
+
+    <fragment
+        android:id="@+id/addTxnFragment"
+        android:name="in.okcredit.merchant.customer_ui.ui.add_txn_screen.AddTransactionFragment"
+        android:label="AddTxnFragment"
+        tools:layout="@layout/add_transaction_screen_old">
+
+        <argument
+            android:name="add_transaction_shortcut"
+            app:argType="boolean"
+            android:defaultValue="false"/>
+
+        <argument
+            android:name="add_transaction_roboflow"
+            app:argType="boolean"
+            android:defaultValue="false"/>
+
+        <argument
+            android:name="amount"
+            app:argType="long" />
+
+
+        <action
+            android:id="@+id/action_credit_education"
+            app:destination="@+id/credit_transaction_success">
+            <argument
+                android:name="arg_txn_amount"
+                app:argType="long" />
+            <argument
+                android:name="arg_txn_type"
+                app:argType="long" />
+            <argument
+                android:name="arg_customer_mobile_present"
+                app:argType="boolean"
+                android:defaultValue="false"/>
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/credit_transaction_success"
+        android:name="in.okcredit.merchant.customer_ui.ui.add_txn_screen.NewTransactionSuccessFragment"
+        tools:layout="@layout/credit_transaction_success_fragment" />
+
+</navigation>

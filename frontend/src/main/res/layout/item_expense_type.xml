@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:id="@+id/expense_type"
+    android:checkable="false"
+    android:stateListAnimator="@null"
+    android:layout_marginEnd="@dimen/_8dp"
+    tool:text ="Rent"
+    app:chipCornerRadius="24dp"
+    app:chipBackgroundColor="@color/grey50"
+    app:chipStrokeColor="@color/grey100"
+    app:chipStrokeWidth="1dp"
+    android:paddingTop="@dimen/_8dp"
+    android:paddingBottom="@dimen/_8dp"
+    android:paddingStart="22dp"
+    android:paddingEnd="22dp">
+
+</com.google.android.material.chip.Chip>

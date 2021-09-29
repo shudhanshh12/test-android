@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boosterCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="8dp"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewOrangeBg"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_top_curved"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCardNumber"
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_circle_white"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/orange_ada"
+            app:layout_constraintBottom_toBottomOf="@+id/viewOrangeBg"
+            app:layout_constraintStart_toStartOf="@+id/viewOrangeBg"
+            app:layout_constraintTop_toTopOf="@+id/viewOrangeBg"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/ic_time"
+            app:layout_constraintBottom_toBottomOf="@+id/viewOrangeBg"
+            app:layout_constraintEnd_toEndOf="@+id/viewOrangeBg"
+            app:layout_constraintTop_toTopOf="@+id/viewOrangeBg"
+            tools:text="End in 02m 32s" />
+
+        <ImageView
+            android:id="@+id/ivBoosterIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_pending_booster"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewOrangeBg" />
+
+        <TextView
+            android:id="@+id/tvBoosterTitle"
+            style="@style/TextAppearance.OKCTheme.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/label_your_booster_task"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivBoosterIcon" />
+
+        <TextView
+            android:id="@+id/tvBoosterBody"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBoosterTitle"
+            tools:text="Your booster task will be available in" />
+
+        <TextView
+            android:id="@+id/tvBoosterTimer"
+            style="@style/TextAppearance.OKCTheme.Subtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/indigo_primary"
+            android:lineSpacingMultiplier="1.1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBoosterBody"
+            tools:text="1hr : 30 min : 60sec" />
+
+        <TextView
+            android:id="@+id/pending_state"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBoosterBody"
+            tools:text="We have received your input. Booster should be complete in %1$s minutes" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSubmit"
+            style="@style/OKC.Button.Light.Solid.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/select"
+            android:textColor="@color/grey900"
+            app:backgroundTint="@color/green_lite_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pending_state" />
+
+        <View
+            android:id="@+id/bottom_margin"
+            android:layout_width="@dimen/view_0dp"
+            android:layout_height="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSubmit" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/contentGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="ivBoosterIcon,tvBoosterTitle,tvBoosterBody,buttonSubmit,bottom_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewOrangeBg" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtubePlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:visibility="gone"
+            app:autoPlay="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewOrangeBg"
+            app:showFullScreenButton="false"
+            app:showYouTubeButton="true" />
+
+        <TextView
+            android:id="@+id/tvBoosterSuccess"
+            style="@style/TextAppearance.OKCTheme.Subtitle2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/green_lite"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="20dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Congratulations!\nYou got 3x point multiplier" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

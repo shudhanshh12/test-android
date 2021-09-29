@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="@dimen/_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_remove_details"
+                style="@style/OKC.TextAppearance.Subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/remove_details"
+                app:layout_constraintStart_toStartOf="@id/container"
+                app:layout_constraintTop_toTopOf="@id/container" />
+
+            <TextView
+                android:id="@+id/caption_remove_details_dailog"
+                style="@style/OKC.TextAppearance.Subtitle2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/caption_remove_details_dailog"
+                android:textColor="@color/grey600"
+                app:layout_constraintEnd_toEndOf="@id/container"
+                app:layout_constraintStart_toStartOf="@id/container"
+                app:layout_constraintTop_toBottomOf="@id/tv_remove_details" />
+
+            <TextView
+                android:id="@+id/cancel_tv"
+                style="@style/OKC.TextAppearance.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/cancel"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/green_primary"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintEnd_toStartOf="@id/remove_tv"
+                app:layout_constraintStart_toStartOf="@id/container"
+                app:layout_constraintTop_toBottomOf="@id/caption_remove_details_dailog" />
+
+            <TextView
+                android:id="@+id/remove_tv"
+                style="@style/OKC.TextAppearance.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/remove"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/green_primary"
+                app:layout_constraintEnd_toEndOf="@id/container"
+                app:layout_constraintBottom_toBottomOf="@id/container"
+                app:layout_constraintStart_toEndOf="@id/cancel_tv"
+                app:layout_constraintTop_toBottomOf="@id/caption_remove_details_dailog" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/select_date_range"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/grey900"
+        android:layout_margin="@dimen/_24dp"/>
+
+    <TextView
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        android:textColor="@color/red_primary"
+        android:background="@color/transparent"
+        android:layout_margin="@dimen/_24dp"
+        android:text="@string/clear"/>
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_24dp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:background="@color/divider"/>
+
+    <View
+        android:id="@+id/from_selector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/divider_1"
+        app:layout_constraintBottom_toBottomOf="@id/divider_2"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toStartOf="@id/arrow"/>
+
+    <View
+        android:id="@+id/from_indicator"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@color/green_primary"
+        app:layout_constraintBottom_toBottomOf="@id/divider_2"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/from_date"/>
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/divider_1"
+        app:layout_constraintBottom_toBottomOf="@id/divider_2"
+        app:layout_constraintStart_toStartOf="@id/title"
+        android:text="@string/from"
+        android:textAppearance="?textAppearanceCaption2"/>
+
+    <TextView
+        android:id="@+id/from_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/from"
+        app:layout_constraintStart_toStartOf="@id/from"
+        tool:text="6 Jun, 2020"
+        android:textAppearance="?textAppearanceSubtitle4"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_1"
+        app:layout_constraintBottom_toTopOf="@id/divider_2"
+        android:src="@drawable/ic_back"
+        android:rotation="180"/>
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/divider_1"
+        app:layout_constraintBottom_toBottomOf="@id/divider_2"
+        app:layout_constraintStart_toEndOf="@id/arrow"
+        app:layout_constraintEnd_toEndOf="@id/clear"
+        android:text="@string/To"
+        android:gravity="start"
+        android:textAppearance="?textAppearanceCaption2"/>
+
+    <TextView
+        android:id="@+id/to_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/to"
+        app:layout_constraintStart_toStartOf="@id/to"
+        tool:text="7 Jun, 2020"
+        android:textAppearance="?textAppearanceSubtitle4"/>
+
+    <View
+        android:id="@+id/to_selector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/divider_1"
+        app:layout_constraintBottom_toBottomOf="@id/divider_2"
+        app:layout_constraintStart_toEndOf="@id/arrow"
+        app:layout_constraintEnd_toEndOf="@id/clear"/>
+
+    <View
+        android:id="@+id/to_indicator"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:visibility="gone"
+        android:background="@color/green_primary"
+        app:layout_constraintBottom_toBottomOf="@id/divider_2"
+        app:layout_constraintStart_toStartOf="@id/to_date"
+        app:layout_constraintEnd_toEndOf="@id/clear"/>
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/arrow"
+        android:background="@color/divider"/>
+
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/divider_2"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="12dp"
+        app:cornerRadius="@dimen/_24dp"
+        app:layout_constraintTop_toBottomOf="@id/calendar_view"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

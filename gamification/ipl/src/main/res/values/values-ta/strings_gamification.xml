@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ipl_title">OkPL 2021: விளையாடி வெற்றி பெறுங்கள்</string>
+    <string name="todays_game">இன்றைய போட்டி</string>
+    <string name="leaderboard">லீடர்போர்டு</string>
+    <string name="sunday_game">வார குலுக்கல்</string>
+    <string-array name="ipl_tabs">
+        <item>@string/todays_game</item>
+        <item>@string/leaderboard</item>
+        <item>@string/sunday_game</item>
+    </string-array>
+    <string name="welcome_to_ipl_2020">OkPL 2021 க்கு வரவேற்கிறோம்</string>
+    <string name="ipl_description">ஆப் இல் இருந்தாலே ₹1000 வரை வெல்லலாம் &amp; சில கேள்விகளுக்கு பதிலளித்து உங்கள் பரிசுகளை பெறுங்கள்</string>
+    <string name="let_s_play">விளையாட வாங்க</string>
+    <string name="live">● நேரலை</string>
+    <string name="complete_questions">எல்லா படிகளையும் முடிக்கவும்:</string>
+    <string name="points">இன்றைய ஸ்கோர்</string>
+    <string name="game_rules">போட்டி விதிமுறைகள்</string>
+    <string name="vs">vs</string>
+    <string name="select">தேர்ந்தெடு</string>
+    <string name="guess_winner">இன்று வெற்றிபெறும் அணியை தேர்ந்தெடுங்கள்</string>
+    <string name="guess_winner_batsman">இன்று அதிக ரன்கள் எடுக்கப்போகும் பேட்ஸ்மேனை தேர்ந்தெடுங்கள்</string>
+    <string name="guess_winner_bowler">இன்று அதிக விக்கெட்கள் எடுக்கப்போகும் பேட்ஸ்மேனை தேர்ந்தெடுங்கள்</string>
+    <string name="winning_team_guess">தேர்ந்தெடுத்த அணி</string>
+    <string name="best_batsman_guess">தேர்ந்தெடுத்த அணி</string>
+    <string name="best_bowler_guess">தேர்ந்தெடுத்த பவுலர்</string>
+    <string name="prediction_meter">கருத்துக்கணிப்பு மீட்டர்</string>
+    <string name="ipl_progress">%1$s%%</string>
+    <string name="ipl_select_match_rules">1. தகுதி பெற: அணியைத் தேர்வுசெய்க -&gt; பேட்ஸ்மேனைத் தேர்வுசெய்க -&gt; பவுலரைத் தேர்வுசெய்க -&gt; OkPL போட்டியின் நடுவில் கேட்கப்படும் ஒரு பூஸ்டர் கேள்விக்கு பதிலளிக்கவும்.\n2. மேட்ச் ஸ்கோர் = [30 (முதல் 3 கேள்விகளுக்கு பதில் அளித்ததற்கு) + பேட்ஸ்மேனின் ரன்கள் + (பவுலரின் விக்கெட்கள் x 20) + 50 ரன்கள் (உங்கள் அணி வென்றால்)] x பூஸ்டர் பெருக்கி (பூஸ்டர் கேள்விக்கு பதில் அளித்தால்)\n\nஒவ்வொரு போட்டிக்கும் 1000 அதிர்ஷ்டசாலிகள் ₹100 வரை வெல்வார்கள்.\n<b>குறிப்பு: OkPL போட்டியின் நடுவில் கேள்விகளுக்கு பதிலளித்தால், உங்கள் ஸ்கோர் பூஸ்ட் செய்யப்படும். அதை செய்ய மறந்துவிடாதீர்கள்.</b></string>
+    <string name="ipl_game_rules">1. தகுதி பெற: அணியைத் தேர்வுசெய்க -&gt; பேட்ஸ்மேனைத் தேர்வுசெய்க -&gt; பவுலரைத் தேர்வுசெய்க -&gt; OkPL போட்டியின் நடுவில் கேட்கப்படும் ஒரு பூஸ்டர் கேள்விக்கு பதிலளிக்கவும்.\n2. மேட்ச் ஸ்கோர் = [30 (முதல் 3 கேள்விகளுக்கு பதில் அளித்ததற்கு) + பேட்ஸ்மேனின் ரன்கள் + (பவுலரின் விக்கெட்கள் x 20) + 50 ரன்கள் (உங்கள் அணி வென்றால்)] x பூஸ்டர் பெருக்கி (பூஸ்டர் கேள்விக்கு பதில் அளித்தால்)\n\nஒவ்வொரு போட்டிக்கும் 1000 அதிர்ஷ்டசாலிகள் ₹100 வரை வெல்வார்கள்.\n<b>குறிப்பு: OkPL போட்டியின் நடுவில் கேள்விகளுக்கு பதிலளித்தால், உங்கள் ஸ்கோர் பூஸ்ட் செய்யப்படும். அதை செய்ய மறந்துவிடாதீர்கள்.</b></string>
+    <string name="terms_and_conditions"><a href="">விதிமுறைகள் மற்றும் நிபந்தனைகள்</a></string>
+    <string name="title_booster_task">உங்களது பூஸ்டர் டாஸ்க்</string>
+    <string name="title_first_booster_task">முதல் பூஸ்டர் டாஸ்க்</string>
+    <string name="title_second_booster_task">இரண்டாவது பூஸ்டர் டாஸ்க்</string>
+    <string name="complete_first_booster">இன்றைய போட்டித் திரையில் வாரத்திற்கான முதல் பூஸ்டர் டாஸ்க்கை முடிக்கவும்</string>
+    <string name="complete_second_booster">இன்றைய போட்டித் திரையில் வாரத்திற்கான இரண்டாவது பூஸ்டர் டாஸ்க்கை முடிக்கவும்</string>
+    <string name="ends_today">இன்று முடிகிறது</string>
+    <string name="completed_first_booster">அருமை!\nமுதல் பூஸ்டர் டாஸ்க்கை முடித்துவிட்டீர்கள்</string>
+    <string name="completed_second_booster">அருமை!\nஇரண்டாவது பூஸ்டர் டாஸ்க்கை முடித்துவிட்டீர்கள்</string>
+    <string name="completed_third_booster">சூப்பர்!!\nகடந்த 7 நாட்களில் நீங்கள் %s ரன்களை எடுத்துள்ளீர்கள்</string>
+    <string name="complete_runs_tip">உதவிக்குறிப்பு: உங்கள் ஸ்கோரை மேம்படுத்த விளையாட்டின் முடிவில் ரகசிய ரன்கள் சேகரிப்பதைத் தொடருங்கள்!</string>
+    <string name="body_qualified_for_draw">வாழ்த்துக்கள்!\nநீங்கள் வாராந்திர குலுக்கலுக்கு தகுதி பெற்றிருக்கிறீர்கள்.</string>
+    <string name="lucky_draw_available_on">%s அன்று கிடைக்கும்</string>
+    <string name="start">தொடங்கு</string>
+    <string name="mystery_reward_title">இங்கு டச் செய்து, ரகசிய ரன்களை சேகரிக்கவும்</string>
+    <string name="mystery_welcome_reward_title"> இதோ உங்களது வரவேற்பு பரிசு !!</string>
+    <string name="ipl_reward_title">ஆஹா!! ஸ்க்ராட்ச் செய்து அதிர்ஷ்ட குலுக்கல் பரிசுகளை வெல்லுங்கள் !!!</string>
+    <string name="sunday_game_rules">1. வாரத்தில் OkPL போட்டிகளின் போது வரும் குறைந்தது %d பூஸ்டர் கேள்விகளுக்கு பதிலளிக்கவும் -&gt; வாரத்தில் %d ரன்கள் எடுங்கள்\n2. வாரம் ஞாயிற்றுக்கிழமை மாலை 3 மணிக்கு தொடக்கி சனிக்கிழமை 11:59 மணி வரை ஆகும்\n3. ஒவ்வொரு ஞாயிற்றுக்கிழமையும் மதியம் 12 மணிக்கு வாராந்திர குலுக்கல் அறிவிக்கப்படும்\n4. போட்டிக்கு ஒரு மணி நேரத்திற்குப் பின் வாராந்திர குலுக்கலின் ஸ்கோர் புதுப்பிக்கப்படும்\n\nஒவ்வொரு ஞாயிற்றுக்கிழமையும், 500 பேர் ₹1000 வரை பெறுவார்கள்.\n<b>குறிப்பு: அதிக பூஸ்டர் கேள்விகளுக்கு பதிலளிப்பதன் மூலம் வெற்றி பெறுவதற்கான வாய்ப்புகளை அதிகரியுங்கள்.</b></string>
+    <!--
+         As a developer, you should always supply "one" and "other"
+         strings. Your translators will know which strings are actually
+         needed for their language. Always include %d in "one" because
+         translators will need to use %d for languages where "one"
+         doesn't mean 1 (as explained above).
+    -->
+    <plurals name="ends_in">
+        <item quantity="one">%d நாளில் முடிகிறது</item>
+        <item quantity="other">%d நாட்களில் முடிகிறது</item>
+    </plurals>
+    <plurals name="runs_away">
+        <item quantity="one">நீங்கள் இந்த பணியை முடிக்க இன்னும் %d ரன் எடுத்தால் போதும்</item>
+        <item quantity="other">நீங்கள் இந்த பணியை முடிக்க இன்னும் %s ரன்கள் எடுத்தால் போதும்</item>
+    </plurals>
+    <string name="leader_board_game_rules">\u2022 முதல் 10 பேர் ₹15,000 மதிப்புள்ள 2.5 கிராம் தங்க நாணயங்களை வெல்வார்கள்\n\u2022 அடுத்த 25 பேர் ₹10,000 வரை மதிப்புள்ள பரிசுகளை வெல்வார்கள்\n\u2022 அதைத் தொடர்ந்து 500 பேர் OkCredit ஜெர்சி வெல்வார்கள்\n\u2022 அடுத்த 500 பேர் மினி பேட்களை வெல்வார்கள்\n\u2022 போட்டிக்கு ஒரு மணி நேரத்திற்குப் பின் லீடர்போர்டு புதுப்பிக்கப்படும்\n\n<b>குறிப்பு: OkPL போட்டியின் போது தினமும் விளையாடி, பூஸ்டர் கேள்விக்கு பதிலளித்து, லீடர்போர்டில் மேலே செல்லுங்கள்.</b></string>
+    <string name="label_total_points">மொத்த ஸ்கோர்</string>
+    <string name="label_money_earned">வென்ற மொத்த பணம்</string>
+    <string name="msg_rank_motivation">OkPL போட்டியின்பொது இங்கு வந்து, தங்க நாணயம் வெல்லும் வாய்ப்பை %d%% அதிகரியுங்கள்</string>
+    <string name="title_gold_prize">தங்க நாணயம் வெல்பவர்கள்</string>
+    <string name="title_cash_prize_10k">₹10,000 பணப்பரிசை வெல்பவர்கள்</string>
+    <string name="title_cash_prize_5k">₹5,000 பணப்பரிசை வெல்பவர்கள்</string>
+    <string name="title_cash_prize_2_5k">₹2,500 பணப்பரிசை வெல்பவர்கள்</string>
+    <string name="title_cash_prize_1_5k">₹1,500 பணப்பரிசை வெல்பவர்கள்</string>
+    <string name="title_cash_prize_1k">₹1,000 பணப்பரிசை வெல்பவர்கள்</string>
+    <string name="title_prize_t_shirts">T-சர்ட் வெல்ல போட்டியிடுபவர்கள்</string>
+    <string name="title_prize_mini_bats">மினி பேட் வெல்ல போட்டியிடுபவர்கள்</string>
+    <string name="score">ஸ்கோர்: %d</string>
+    <string name="rank_with_prefix">#%d</string>
+    <string name="self_name">%s (நீங்கள்)</string>
+    <string name="team_vs_team">%1$s vs %2$s</string>
+    <plurals name="runs">
+        <item quantity="one">ரன் %1$s</item>
+        <item quantity="other">ரன்கள் %1$s</item>
+    </plurals>
+    <plurals name="balls">
+        <item quantity="one">பந்து %1$s</item>
+        <item quantity="other">பந்துகள் %1$s</item>
+    </plurals>
+    <string name="batsman_score">%1$s | %2$s</string>
+    <plurals name="wickets">
+        <item quantity="one">விக்கெட் %1$s</item>
+        <item quantity="other">விக்கெட்கள் %1$s</item>
+    </plurals>
+    <string name="overs">ஓவர்கள் %1$s.%2$s</string>
+    <string name="bowler_score">%1$s | %2$s</string>
+    <string name="team_score">%1$s-%2$s (%3$s.%4$s)</string>
+    <string name="your_guess">(உங்கள் அணி)</string>
+    <string name="prediction_value">%1$s - %2$s%%</string>
+    <string name="no_active_matches">இன்று போட்டி இல்லை</string>
+    <string name="match_load_error">தற்போதைய போட்டிகளை காட்ட முடியவில்லை, மீண்டும் முயற்சிக்கவும்</string>
+    <string name="score_no_internet">நேரடி ஸ்கோர் தகவல்களைப் பெற இன்டர்நெட்டுடன் இணைக்கவும்</string>
+    <string name="you_have_won">சபாஷ்!! நீங்கள் வெற்றிபெற்றுள்ளீர்கள்</string>
+    <string name="better_luck_next_time">அடுத்த முறை வெல்ல வாழ்த்துக்கள்</string>
+    <string name="ends_in">முடிய இன்னும் %1$s</string>
+    <string name="expired">முடிந்தது</string>
+    <string name="congs_point">வாழ்த்துக்கள்!!\nஉங்களுக்கு X3 மதிப்பெண் பெருக்கி கிடைத்துள்ளது</string>
+    <plurals name="days">
+        <item quantity="one">%1$s நாள்</item>
+        <item quantity="other">%1$s நாட்கள்</item>
+    </plurals>
+    <string name="hours">%1$s மணி</string>
+    <string name="minutes">%1$s நிமிடம்</string>
+    <string name="seconds">%1$s நொடிகள்</string>
+    <string name="win_status">%1$s வென்றது. நீங்கள் %2$s கூடுதல் ரன்கள் பெற்றுள்ளீர்கள்</string>
+    <string name="lose_status">%1$s வென்றது. நாளை மீண்டும் முயற்சிக்கவும்</string>
+    <string name="congratulations">வாழ்த்துக்கள்!!!</string>
+    <string name="earned_rewards">வென்ற வெகுமதிகள்</string>
+    <string name="t_shirt_details">OkCredit ஜெர்சி</string>
+    <string name="bat_details">டெல்லி கேப்பிடல்ஸ் அணி கையெழுத்திட்ட மினி பேட்</string>
+    <string name="show_more">மேலும் காட்ட</string>
+    <string name="scratch_hint">பரிசைக் காண முன்னும் பின்னுமாக ஸ்க்ராட்ச் செய்யவும்</string>
+    <string name="play_game">விளையாடு</string>
+    <string name="nice_choice">நல்ல தேர்வு</string>
+    <string name="points_placeholder">%1$s ரன்கள்</string>
+    <string name="runs_placeholder">%1$s புள்ளிகள்</string>
+    <string name="reward_claim_failure">பணப்பரிசை கோர முடியவில்லை. தயவுசெய்து மீண்டும் முயற்சி செய்யவும்</string>
+    <string name="label_your_booster_task">உங்களது பூஸ்டர் டாஸ்க்</string>
+    <string name="booster_available_in">உங்களது பூஸ்டர் டாஸ்க் கிடைக்க இன்னும்</string>
+    <string name="formatted_multiplier">%dX</string>
+    <string name="booster_success_multiplier">செம!!\nஉங்கள் இன்றைய ஆட்டத்தின் ஸ்கோர் %d ஆல் பெருக்கப்படும்</string>
+    <string name="booster_question_formatted">%1$s மற்றும்\nஉங்கள் ஸ்கோர் <b>%2$sX</b> ஆகும்</string>
+    <string name="hint_your_answer">உங்கள் பதில்</string>
+    <string name="success">வெற்றி!</string>
+    <string name="message_business_location_success">வணிக முகவரி வெற்றிகரமாக சேர்க்கப்பட்டது</string>
+    <string name="message_business_name_success">வணிகப்பெயர் வெற்றிகரமாக சேர்க்கப்பட்டது</string>
+    <string name="message_business_type_success">வணிக முறை வெற்றிகரமாக சேர்க்கப்பட்டது</string>
+    <string name="message_business_category_success">வணிக வகை வெற்றிகரமாக சேர்க்கப்பட்டது</string>
+    <string name="message_merchant_name_success">வணிகர் பெயர் வெற்றிகரமாக சேர்க்கப்பட்டது</string>
+    <string name="message_merchant_email_success">வணிகர் ஈமெயில் வெற்றிகரமாக சேர்க்கப்பட்டது</string>
+    <string name="message_merchant_about_success">வணிகத்தைப் பற்றி வெற்றிகரமாகச் சேர்க்கப்பட்டது</string>
+    <string name="message_add_customer_success">கஸ்டமர் வெற்றிகரமாக சேர்க்கப்பட்டார்</string>
+    <string name="rewards">ரிவார்ட்ஸ்</string>
+    <string name="play_booster_video">எப்படி என்று காட்டு</string>
+    <string name="today_game_prize">இன்றைய ஆட்டத்தில் வெற்றி நிச்சயம்!</string>
+    <string name="week_score">வார\nஸ்கோர்</string>
+    <string name="win_10k">ஒவ்வொரு ஞாயிற்றுக்கிழமையும் ₹1000 வரை வெல்லுங்கள்!</string>
+    <string name="sunday_game_rules_title">வாராந்திர குழுக்களின் வெல்லலாம் வாங்க!</string>
+    <string name="leader_board_game_rules_title">லீடர்போர்டில் மேலே உள்ளவர்கள் வெல்லப்போவது…</string>
+    <string name="status_bowling">● பவுலிங்</string>
+    <string name="status_not_bowling">பவுலிங் செய்யவில்லை</string>
+    <string name="status_yet_to_bowl">இன்னும் பவுலிங் செய்யவில்லை</string>
+    <string name="status_yet_to_bat">இன்னும் பேட்டிங் செய்யவில்லை</string>
+    <string name="status_batting">● பேட்டிங்</string>
+    <string name="status_bowled">பவுலிங் செய்துவிட்டார்</string>
+    <string name="status_caught_and_bowled">பந்து வீசி பிடித்தார்</string>
+    <string name="status_caught">பிடிபட்டார்</string>
+    <string name="status_out">அவுட்</string>
+    <string name="status_hit_wicket">ஹிட் விக்கெட்</string>
+    <string name="status_lbw">Lbw</string>
+    <string name="status_retired_hurt">காயமடைத்து ஓய்வு பெற்றவர்</string>
+    <string name="status_run_out">ரன் அவுட்</string>
+    <string name="status_stumped">ஸ்டம்பிங்</string>
+    <string name="status_tea">டீ</string>
+    <string name="status_lunch">மத்திய உணவு</string>
+    <string name="status_2nd_innings">இன்னிங்ஸ் இடைவேளை</string>
+    <string name="status_rain">மழை</string>
+    <string name="status_bad_light">மோசமான ஒளி</string>
+    <string name="status_interrupted">குறுக்கீடு ஏற்பட்டது</string>
+    <string name="status_drinks">ட்ரிங்க்ஸ்</string>
+    <string name="status_delayed">தாமதமானது</string>
+    <string name="status_super_over">சூப்பர் ஓவர்</string>
+    <string name="status_day_over">நாள் முடிந்தது</string>
+    <string name="status_match_over">ஆட்டம் முடிந்தது</string>
+    <string name="status_nil"></string>
+    <string name="weekly_draw_coming_soon">OkPL வாராந்திர பரிசுத் திரைக்கு வரவேற்கிறோம். வாராந்திர குலுக்கலில் உங்கள் முன்னேற்றத்தைக் காண செப்டம்பர் 20, மாலை 3 மணி முதல் இங்கு பார்வையிடவும். முதல் வாராந்திர OkPL குலுக்கல் செப்டம்பர் 26, 2020 ஞாயிற்றுக்கிழமை, மதியம் 12:00 மணிக்கு நடைபெறும்.\n\nOkPL போட்டிகளின் பொது ₹51 லட்சம் மதிப்புள்ள பரிசுகளை வெல்ல வாய்ப்பு\n\nவாராந்திர குலுக்கலுக்கான விதிகள்\n1. வாரத்தில் OkPL போட்டிகளின் போது வரும் குறைந்தது 2 கேள்விகளுக்கு பதிலளிக்கவும் -> வாரத்தில் 1000 ரன்கள் எடுங்கள் (வாரம் ஞாயிற்றுக்கிழமை மாலை 3 மணிக்கு தொடக்கி சனிக்கிழமை 11:59 மணி வரை ஆகும்)\n2. தகுதி பெற வாரத்தில் 1000 ரன்கள் எடுக்கவேண்டும்</string>
+    <string name="leaderboard_coming_soon">தொடக்க நேரம்\nசெப்டம்பர் 21 திங்கள், 12:00 AM (நள்ளிரவு)\n\nபோட்டியின் போது ₹51 லட்சம் மதிப்புள்ள பரிசுகளை வெல்லுங்கள்\n\nமுதல் 10 இடங்களை பிடிப்பவர்களுக்கு 2.5 கிராம் தங்க நாணயங்கள் கிடைக்கும்\n\nஅடுத்த 1025 இடங்களை பிடிப்பவர்களுக்கு உறுதியான வெகுமதிகள் கிடைக்கும்</string>
+    <string name="today_lucky_draw">வாழ்த்துக்கள்!\nஇன்றைய குலுக்கலுக்கு நீங்கள் தகுதி பெற்றுள்ளீர்கள்</string>
+    <string name="today_lucky_draw_available">போட்டியின் முடிவில் கிடைக்கும்</string>
+    <string name="add_address_hint">‘%1$s’ அனுப்ப முகவரி தேவைப்படுகிறது.</string>
+    <string name="add_address"><u>முகவரியை பதிவிடு</u></string>
+    <string name="confirm_address"><u>முகவரியை உறுதிசெய்</u></string>
+    <string name="correct_address_hint"><u>தற்போதைய வணிக இருப்பிடத்திற்கு அனுப்பப்படும்</u></string>
+    <string name="contact_us_whatsapp"><u>WhatsApp எங்களைத் தொடர்பு கொள்ளுங்கள்</u></string>
+    <string name="contact_us_inapp_chat"><u>இன் ஆப் சாட்</u></string>
+    <string name="whatsapp_your_address">உங்கள் முகவரியை WhatsApp செய்யுங்கள்</string>
+    <string name="or">அல்லது</string>
+    <string name="whatsapp_message_deliver_price">நான் %1$s வென்றுள்ளேன். தயவுசெய்து அதை கீழ்கண்ட முகவரிக்கு அனுப்பவும் %2$s</string>
+    <string name="whatsapp_message_send_address">எனது முகவரி</string>
+    <string name="mini_bat">மினி பேட்</string>
+    <string name="t_shirt">t-சர்ட்</string>
+    <string name="series_name">%1$s | ஆட்டம் %2$s</string>
+    <string name="please_come_back">நீங்கள் இன்றைய போட்டியில் பங்கேற்க தகுதி பெறவில்லை. மீண்டும் நாளை விளையாடவும்.</string>
+    <string name="game_rules_tool_tip">நாங்கள் ஸ்கோர் கணக்கிடும் முறை.\nஇன்றைய ஸ்கோர் = [30 (முதல் 3 கேள்விகளுக்கு பதில் அளித்ததற்கு) + பேட்ஸ்மேனின் ரன்கள் + (பவுலரின் விக்கெட்கள் x %1$s) + %2$s ரன்கள் (உங்கள் அணி வென்றால்)] x பூஸ்டர் பெருக்கி (பூஸ்டர் கேள்விக்கு பதில் அளித்தால்)</string>
+    <string name="claim_in_progress">செயலாக்குகிறது… தயவுசெய்து காத்திருங்கள்</string>
+    <string name="add_your_payment_details">பணப்பரிசைக் கோர உங்கள் கட்டண விவரங்களைச் சேர்க்கவும்</string>
+    <string name="booster_pending">பணப்பரிசைக் கோர உங்கள் கட்டண விவரங்களைச் சேர்க்கவும்</string>
+    <plurals name="booster_pending">
+        <item quantity="one">உங்கள் உள்ளீட்டை நாங்கள் செயலாக்கும் வரை காத்திருங்கள். பூஸ்டர் %1$s நிமிடத்தில் நிறைவடையும்</item>
+        <item quantity="other">உங்கள் உள்ளீட்டை நாங்கள் செயலாக்கும் வரை காத்திருங்கள். பூஸ்டர் %1$s நிமிடங்களில் நிறைவடையும்</item>
+    </plurals>
+    <string name="match_title">%s VS %s - Match %d</string>
+    <string name="play_okpl">\nOkPL விளையாடி, ₹51 லட்சம் வரை வெல்லுங்கள்</string>
+    <string name="show_all_players">எல்லா வீரர்களையும் காட்டு</string>
+    <string name="coming_soon_leaderboard"><![CDATA[தொடக்க நேரம்<br/><b>ஏப்ரல் 11 ஞாயிறு, 12:00 AM (நள்ளிரவு)</b><br/><br/><b><font color=#1c873b>போட்டியின் போது ₹51 லட்சம் மதிப்புள்ள பரிசுகளை வெல்லுங்கள்</font></b><br/><b>போட்டி காலத்தில்</b><br/><br/>முதல் 10 இடங்களை பிடிப்பவர்களுக்கு<b>2.5 கிராம் தங்க நாணயங்கள் கிடைக்கும்</b><br/><br/><b>அடுத்த 500 இடங்களை பிடிப்பவர்களுக்கு</b>உறுதியான வெகுமதிகள் கிடைக்கும்]]></string>
+    <string name="coming_soon_weekly"><![CDATA[தொடக்க நேரம்<br/><b>ஏப்ரல் 18 ஞாயிறு, 3:00 PM</b><br/><br/>முதல் வாராந்திர குலுக்கல்<br/><b><b>ஏப்ரல் 18, 2021 ஞாயிற்றுக்கிழமை, மதியம் 12:00 மணிக்கு நடைபெறும்<br/><br/>போட்டியின் போது<font color=#1c873b>₹51 லட்சம் மதிப்புள்ள பரிசுகளை வெல்லுங்கள்</font></b><br/><b>போட்டி காலத்தில்</b><br/><br/><b>வாரத்தில் 2 டாஸ்க்களை முடித்து, வாராந்திர குலுக்கலுக்கு தகுதி பெற 1000 ரன்கள் பெறவும்</b>]]></string>
+    <string name="coming_soon_todasygame"><![CDATA[தொடக்க நேரம்<br/><b>ஏப்ரல் 9 வெள்ளி, 12:00 AM (நள்ளிரவு)</b><br/><br/><b><font color=#1c873b>₹51 லட்சம் மதிப்புள்ள பரிசுகளை வெல்லுங்கள்</font></b><br/><b>போட்டி காலத்தில்</b><br/><br/><b>OkPL மேட்ச் பற்றிய 3 எளிய கேள்விகளுக்கு பதிலளித்துவிட்டு</b><br/>ஒரு டாஸ்க்கை செய்யவும்</b>]]></string>
+    <string name="todays_tab_tool_tip">\n\nஇது உங்கள் தினசரி விளையாட்டுப் பகுதி</string>
+    <string name="server_error"><![CDATA[ஏதோ தவறு நடந்துவிட்டது. <font color=#0574e3><u>மீண்டும் முயற்சி செய்</u></font>]]></string>
+    <string name="network_error"><![CDATA[நெட்ஒர்க் பிரச்சனை. <font color=#0574e3><u>மீண்டும் முயற்சி செய்</u></font>]]></string>
+    <string name="weekly_tool_tip">\n\nகடந்த 7 நாட்களில் பெற்ற\nரன்களின் அடிப்படையில் வாராந்திர\nபரிசுக் குலுக்கல் இங்கு நடக்கும்</string>
+    <string name="leaderboard_tool_tip">\n\nநீங்கள் பெரும் தினசரி ரன்கள்\nஇங்கு சேர்க்கப்பட்டு தரவரிசைப்படுத்தப்படும்\nஇது இறுதிப் பரிசுகளான\n <b>தங்க நாணயங்கள் &amp; பிற பண வெகுமதிகள்</b> பெற உங்களுக்கு உதவும்</string>
+    <string name="contact_added">தொடர்பு வெற்றிகரமாக சேர்க்கப்பட்டது</string>
+    <string name="do_booster">%1$s பூஸ்டர் டாஸ்க்கள் மீதமுள்ளன </string>
+    <plurals name="runs_away_weekly">
+        <item quantity="one">%s ரன் தேவை</item>
+        <item quantity="other">%s ரன்கள் தேவை</item>
+    </plurals>
+    <string name="complete_booster">வாரத்தில் ஏதேனும் %1$s பூஸ்டர் டாஸ்க்களை முடிக்கவும்</string>
+    <string name="make_weekly_score">ஒவ்வொரு வாரமும் குறைந்தது %1$s ரன்களை எடுக்கவும்</string>
+    <string name="horray">சபாஷ்!</string>
+    <string name="booster_completed">வாரத்திற்கான பூஸ்டர் டாஸ்க்களை முடித்துவிட்டீர்கள்.</string>
+    <string name="booster_completed_score">நீங்கள் %1$s ரன்கள் எடுத்துள்ளீர்கள்</string>
+    <string name="sunday_draw_qualified">வாழ்த்துக்கள் !!\nநீங்கள் வாராந்திர குலுக்கலுக்கு தகுதி பெற்றிருக்கிறீர்கள்.</string>
+    <string name="sunday_draw_availability">வரும் ஞாயிறு அன்று %1$s க்கு கிடைக்கும்</string>
+    <string name="each_week">ஒவ்வொரு வாரமும்</string>
+    <string name="rules_answer_any">ஏதேனும் %1$s பூஸ்டர் கேள்விக்கு பதிலளியுங்கள்</string>
+    <string name="rules_weekly_score">%1$s ரன்களை எடுங்கள்</string>
+    <string name="rules_weekly_available">ஞாயிறு அன்று %1$s க்கு கிடைக்கும்</string>
+    <string name="how_to_play_okpl">OkPL எப்படி விளையாடுவது?</string>
+    <string name="got_3x_mutipler">வாழ்த்துக்கள் !!\nஉங்களுக்கு %d மடங்கு புள்ளிகள் கிடைத்துள்ளது</string>
+    <string name="play_again">அதிகம் விளையாடி,\nஉங்கள் வெற்றி வாய்ப்பை அதிகரியுங்கள்</string>
+    <string name="answer_3_question">3 IPL கேள்விகளுக்கு பதிலளியுங்கள்</string>
+    <string name="before_match">மேட்ச் தொடங்குவதற்கு முன்</string>
+    <string name="answer_1_booster">1 பூஸ்டர் கேள்விக்கு பதிலளியுங்கள்</string>
+    <string name="during_ipl">IPL மேட்சின் போது</string>
+    <string name="after_ipl">IPL மேட்சிற்கு பின்</string>
+    <string name="lucky_100">1000 அதிஷ்டசாலிகள் ₹100 வரை வெல்வார்கள்</string>
+    <string name="welcome_gift">₹51 லட்சம் மதிப்புள்ள பரிசுகளை வெல்ல தொடர்ந்து விளையாடுங்கள்!</string>
+    <string name="play_again_this_week">மீண்டும் விளையாடி\nவாராந்திர குலுக்கலில் வெல்லுங்கள்.</string>
+    <string name="keep_going">தொடர்ந்து விளையாடுங்க!</string>
+    <string name="complete_one_motes_task">வாரத்திற்கான மேலும் ஒரு பூஸ்டர் டாஸ்க்கை முடிக்கவும்.</string>
+    <string name="rules_leaderboard_top_players">முதல் 10 வீரர்கள் 2.5 கிராம்\nதங்க நாணயங்களை வெல்வார்கள்</string>
+    <string name="rules_leaderboard_next_25_player">அடுத்த 25 வீரர்கள் ₹10,000 வரை\nரொக்கப் பரிசை வெல்வார்கள்</string>
+    <string name="rules_leaderboard_next_1000_player">அடுத்த 1000 வீரர்கள் OkCredit பரிசுகளை வெல்வார்கள்</string>
+    <string name="rules_leaderboard_note">• அனைத்து பரிசுகளும் இறுதி ஸ்கோரின் அடிப்படையில் IPL இன் முடிவில் தரப்படும்\n• அதிக ஸ்கோரைப் பெற IPL இன் போது அனைத்து பூஸ்டர் டாஸ்க்களையும் செய்யுங்கள்</string>
+    <string name="rules_leaderboard_top_players_new">முதல் 10 வீரர்கள் ₹15,000 மதிப்புள்ள\nதங்கக் காசுகளை வெல்வார்கள்</string>
+    <string name="rules_leaderboard_next_500_player">அடுத்த 500 வீரர்கள் OkCredit\nடீ-சர்ட்களை வெல்வார்கள்</string>
+    <string name="before_match_ends">மேட்ச் முடிவதற்கு முன்</string>
+    <string name="lucky_2500">2500 அதிஷ்டசாலிகள் ₹100 வரை வெல்வார்கள்</string>
+    <string name="weekly_draw_upto_1000">2000 வீரர்கள் ₹1,000 வரை வெல்வார்கள்</string>
+    <string name="coming_soon_leaderboard_new"><![CDATA[தொடக்க நேரம்<br/><b>ஏப்ரல் 11 ஞாயிறு, 12:00 AM (நள்ளிரவு)</b><br/><br/><b><font color=#1c873b>போட்டியின் போது ₹51 லட்சம் மதிப்புள்ள பரிசுகளை வெல்லுங்கள்</font></b><br/><b>போட்டி காலத்தில்</b><br/><br/>முதல் 10 இடங்களை பிடிப்பவர்கள்<b>₹15,000 மதிப்புள்ள தங்க நாணயங்களை வெல்வார்கள்</b><br/><br/><b>அடுத்த 525 இடங்களை பிடிப்பவர்களுக்கு</b>உறுதியான வெகுமதிகள் கிடைக்கும்]]></string>
+    <string name="coming_soon_todasygame_new"><![CDATA[தொடக்க நேரம்<br/><b>ஏப்ரல் 9 வெள்ளி, 12:00 AM (நள்ளிரவு)</b><br/><br/><b><font color=#1c873b>₹51 லட்சம் மதிப்புள்ள பரிசுகளை வெல்லுங்கள்</font></b><br/><b>போட்டி காலத்தில்</b><br/><br/><b>OkPL மேட்ச் பற்றிய 3 எளிய கேள்விகளுக்கு பதிலளித்துவிட்டு</b><br/>ஒரு டாஸ்க்கை செய்யவும்</b>]]></string>
+    <string name="coming_soon_weekly_new"><![CDATA[தொடக்க நேரம்<br/><b>ஏப்ரல் 18 ஞாயிறு, 3:00 PM</b><br/><br/>முதல் வாராந்திர குலுக்கல்<br/><b><b>ஏப்ரல் 18, 2021 ஞாயிற்றுக்கிழமை, மதியம் 12:00 மணிக்கு நடைபெறும்<br/><br/>போட்டியின் போது<font color=#1c873b>₹51 லட்சம் மதிப்புள்ள பரிசுகளை வெல்லுங்கள்</font></b><br/><b>போட்டி காலத்தில்</b><br/><br/><b>வாரத்தில் 2 டாஸ்க்களை முடித்து, வாராந்திர குலுக்கலுக்கு தகுதி பெற 1000 ரன்கள் பெறவும்</b>]]></string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">Setup your Bank Account to get your rewards from Menu</string>
+    <string name="you_won_feature">You Won %1$s</string>
+    <string name="visit_feature">View %1$s</string>
+    <string name="claim_in_progress">Processing…Please wait</string>
+    <string name="scratch_view_hint">Scratch to reveal reward</string>
+    <string name="enter_bank_details_description">Enter bank account details to redeem this cashback.</string>
+    <string name="please_solve_this_issue">Please solve this issue</string>
+    <string name="earned_due_to_activation">Earned for adding transactions records.</string>
+    <string name="better_luck_next_time">Better luck next time</string>
+    <string name="something_went_wrong_in_claiming_rewards">Sorry, we are facing a technical problem. Please try again after some time.</string>
+    <string name="congratulations_tell_them_add_bank_details">Congratulations!!! setup bank account to get reward.</string>
+    <string name="reward_on_hold">Reward on hold</string>
+    <string name="error_budged_limit_exceeded">Due to technical issue your reward is on hold. Our team will solve the issue soon. Please claim again in 3 days.</string>
+    <string name="you_won_10">you won 10</string>
+    <string name="hurray">Hurray!</string>
+    <string name="oops">Oops!</string>
+    <string name="rewarded_on_06_nov_02_38pm">Rewarded on 06 Nov, 02:38pm</string>
+    <string name="earned_for_adding_transactions_records">Earned for adding transactions records.</string>
+    <string name="setup_bank_account_to_get_reward">Setup bank account to get reward.</string>
+    <string name="step_1_how_does_it_works_roa">Add customers and minimum 2 transactions on different days.</string>
+    <string name="step_2_how_does_it_works_roa">Your gifts will be displayed in Rewards section.</string>
+
+    <string name="error_description_bank_valid">This bank account or UPI already exist on some other user. Please submit correct details or use another account.</string>
+    <string name="upi_inactive_error_msg">Your Bank account is not active anymore. Please use another account or make your account active again.</string>
+    <string name="payout_daily_limit_reached_error_msg">You have exceeded the reward claim limit for today. Please claim again tomorrow.</string>
+    <string name="reward_update">Reward Update</string>
+    <string name="please_try_again_later">Please try again later</string>
+    <string name="payment_update">Payment Update</string>
+    <string name="close">Close</string>
+    <string name="processing_state">Processing…</string>
+    <string name="bank_service_unavail">Bank service unavailable</string>
+    <string name="bank_service_unavil_error_msg">Your bank is not processing payment request right now. Please try again after few hours.</string>
+    <string name="we_are_processing_your_reward">We are processing your reward. Please check again in 3 days.</string>
+    <string name="edit_bank_details">Edit Bank Details</string>
+    <string name="please_try_again">Please Try Again</string>
+
+</resources>

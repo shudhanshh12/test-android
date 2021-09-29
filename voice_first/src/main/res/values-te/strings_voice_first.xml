@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okassistant_greeting">హాయ్ 🙏 నేను OkAssistant!!</string>
+    <string name="okassistant_education">మీ వాయిస్‌ని గుర్తించడానికి నాకు కొంత సహాయం కావాలి.\n\nదయచేసి మైక్ బటన్‌ను నొక్కండి మరియు రికార్డ్ చేయడానికి స్పష్టమైన వాయిస్‌లో క్రింది వచనాన్ని చదవండి.</string>
+    <string name="read_this">దీన్ని చదవండి</string>
+    <string name="invalid_recording">చెల్లని రికార్డింగ్</string>
+    <string name="task_complete">టాస్క్ పూర్తయింది</string>
+    <string name="okassistant_retry">పునఃప్రయత్నించండి</string>
+    <!-- /* Bulk Add by voice -->
+    <string name="t_004_bulk_voice_txn_main_headline">చెప్పండి మరియు లావాదేవీలను జోడించండి</string>
+    <string name="t_004_bulk_voice_txn_main_caption">చెప్పడం ద్వారా పనిని వేగంగా పూర్తి చేయండి</string>
+    <string name="t_004_bulk_voice_txn_date_field">లావాదేవీ తేదీ</string>
+    <string name="t_004_bulk_voice_txn_body_headline">ఇంగ్లీష్ లేదా హిందీలో చెప్పండి</string>
+    <string name="t_004_bulk_voice_txn_body_english_example">Sameer 100 rupees credit / Sameer 100 rupees payment</string>
+    <string name="t_004_bulk_voice_txn_body_subtitle">లేదా</string>
+    <string name="t_004_bulk_voice_txn_hinglish_example">Sameer ki 100 rupaye ki udhaari / Sameer ka 100 rupaye ka payment</string>
+    <string name="t_004_speech_eg_title">ఇంగ్లీష్ లేదా హిందీలో చెప్పండి</string>
+    <string name="t_004_speech_eg_caption_credit">క్రెడిట్ జోడించడానికి, చెప్పండి</string>
+    <string name="t_004_speech_eg_credit_desc">“Sameer 100 rupees credit” or “Sameer ki 100 rupaye ki udhaari”</string>
+    <string name="t_004_speech_eg_caption_payment">చెల్లింపు జోడించడానికి, చెప్పండి</string>
+    <string name="t_004_speech_eg_payment_desc">“Sameer 100 rupees payment” or “Sameer ka 100 rupaye ka payment”</string>
+    <string name="t_004_speech_try_again_error_desc">క్షమించండి, మాకు అర్థం కాలేదు. దయచేసి క్రింద నొక్కి మళ్ళీ చెప్పండి.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_processing">ప్రాసెస్ అవుతోంది…</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_failed">ప్రాసెస్ చేయడం సాధ్యం కాలేదు. దయచేసి మళ్ళీ ప్రయత్నించండి.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_incomplete">దయచేసి ఇక్కడ లేని వివరాలను జోడించండి</string>
+    <string name="t_004_bulk_voice_txn_voice_transcript_label">మీరు చెప్పినది</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_credit">క్రెడిట్</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_payment">చెల్లింపు</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_credit">అందించారు</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_payment">అందుకున్నారు</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_txn_type">లావాదేవీ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_add_note">గమనిక (ఐచ్ఛికం)</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_amount">మొత్తం</string>
+    <string name="t_004_bulk_voice_txn_delete">తొలగించు</string>
+    <string name="t_004_bulk_voice_txn_update">నవీకరణ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_saved">అప్డేట్ చేయబడినది</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_deleted">లావాదేవీ తొలగించబడింది</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_edit_discarded">లావాదేవీ మార్పులు తొలగించబడ్డాయి</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_load_failed">లావాదేవీలను లోడ్ చేయడం సాధ్యపడలేదు</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_title">పేరును ఎంచుకోండి</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_search_more">మరిన్ని పేరులను శోధించండి</string>
+    <string name="t_004_bulk_voice_txn_select_name_hint_text">పేరును ఎంచుకోండి లేదా శోధించండి</string>
+    <string name="t_004_bulk_voice_txn_confirm_save_title">సేవ్ చేయడానికి ముందు లావాదేవీలను ధృవీకరించండి</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_date_of_txn">లావాదేవీల తేదీ - %s</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_txn_not_saved_caption">₹0 విలువ ఉన్న లావాదేవీలు, ప్రాసెస్ / విఫలమైన లేదా అసంపూర్ణ సమాచారంతో ఉన్న లావాదేవీలు సేవ్ చేయబడవు.</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_blocked_merchants">మీరు ఏదైనా కస్టమర్/ సప్లయర్‌ని బ్లాక్ చేసినట్లయితే లేదా మీరు ఏదైనా కస్టమర్/ సప్లయర్ ద్వారా బ్లాక్ చేయబడినా, లావాదేవీ సేవ్ చేయబడదు.</string>
+    <string name="t_004_bulk_voice_txn_customer_count">%1s కస్టమర్,</string>
+    <string name="t_004_bulk_voice_txn_supplier_count">%1s సరఫరాదారు</string>
+    <string name="t_004_bulk_voice_txn_transaction_saved">లావాదేవీ సేవ్ అయ్యింది</string>
+    <string name="t_004_bulk_voice_txn_transaction_cancelled">లావాదేవీ రద్దు చేయబడింది</string>
+    <!-- Bulk Add by voice */ -->
+</resources>

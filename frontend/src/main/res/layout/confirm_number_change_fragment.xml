@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="@id/root_view"
+        app:layout_constraintStart_toStartOf="@id/root_view"
+        app:layout_constraintTop_toTopOf="@id/root_view"
+        app:navigationIcon="?attr/homeAsUpIndicator">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/change_number"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="@color/grey800" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/grey900"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_verify_and_change"
+        app:layout_constraintEnd_toEndOf="@id/root_view"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/root_view"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/migration_layout"
+                layout="@layout/number_migration_stage_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="@string/you_are_about_to_change_your_number_from"
+                android:textAppearance="?textAppearanceBody2"
+                tool:text="லிருந்து உங்கள் எண்ணை நீங்கள் மாற்றவிருக்கிறீர்கள்" />
+
+
+            <TextView
+                android:id="@+id/oldnumber_to_new_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/to"
+                android:textAppearance="?textAppearanceCaption1" />
+
+            <TextView
+                android:id="@+id/line_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:gravity="center"
+                android:textAppearance="?textAppearanceBody2"
+                tool:text="lkncsdjnc sdjkcndsjv ksjdvns vkndsv ksdmvkmsdvkmsdv lkjsvknklnvns vlkndsjvnk " />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="16dp"
+                android:background="@color/divider" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/you_will_be_signed_out_from_all_other_devices"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textColor="@color/grey800" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/divider" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_verify_and_change"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/verify_and_change"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_shield"
+        app:iconGravity="textStart"
+        app:iconTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        app:layout_constraintBottom_toBottomOf="@id/root_view"
+        app:layout_constraintEnd_toEndOf="@id/root_view"
+        app:layout_constraintStart_toStartOf="@id/root_view" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/root_view"
+        app:layout_constraintStart_toStartOf="@id/root_view"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        tool:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

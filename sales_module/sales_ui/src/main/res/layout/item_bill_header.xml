@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_16dp"
+    android:paddingEnd="@dimen/_16dp"
+    android:paddingTop="@dimen/view_12dp"
+    android:paddingBottom="@dimen/view_12dp"
+    android:background="@color/grey50"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/item"
+        android:textAppearance="?textAppearanceSubtitle3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/qty"
+        android:textAppearance="?textAppearanceSubtitle3"
+        android:gravity="start"
+        app:layout_constraintStart_toEndOf="@id/item_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rate"
+        android:textAppearance="?textAppearanceSubtitle3"
+        android:gravity="start"
+        app:layout_constraintStart_toEndOf="@id/qty"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textAppearance="?textAppearanceSubtitle3"
+        android:gravity="end"
+        app:layout_constraintStart_toEndOf="@id/rate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

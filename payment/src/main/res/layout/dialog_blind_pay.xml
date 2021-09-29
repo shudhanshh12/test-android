@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_destination_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSupport"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+            app:icon="@drawable/ic_whatsapp_indigo"
+            app:iconGravity="textStart"
+            app:backgroundTint="@color/indigo_lite"
+            app:iconTint="@color/indigo_primary"
+            android:textColor="@color/indigo_primary"
+            android:background="@drawable/circular_border_on_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/t_002_24X7help_banner_whatsapp_label"
+            android:stateListAnimator="@null"
+            app:iconPadding="4dp"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_add_payment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:text="@string/blind_pay_choose_payment_option"
+            android:textColor="@color/grey900"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/buttonSupport"
+            tools:text="@string/blind_pay_choose_payment_option" />
+
+        <View
+            android:id="@+id/view_separator1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/grid_1"
+            android:background="@color/grey300"
+            app:layout_constraintTop_toBottomOf="@id/tv_add_payment_title" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/gpEasyPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="iv_easy_Pay,tv_blind_pay_header,ivEasyPayOption,tv_blind_pay_sub_header" />
+
+        <ImageView
+            android:id="@+id/iv_easy_Pay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/_10dp"
+            android:src="@drawable/ic_easy_pay"
+            android:background="@drawable/round_border_style"
+            app:layout_constraintBottom_toBottomOf="@+id/view_separator2"
+            app:layout_constraintEnd_toStartOf="@+id/tv_blind_pay_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_separator1" />
+
+        <TextView
+            android:id="@+id/tv_blind_pay_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="start"
+            android:text="@string/ease_pay_header"
+            android:textColor="@color/grey900"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_easy_Pay"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator1" />
+
+        <ImageView
+            android:id="@+id/ivEasyPayOption"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toTopOf="@+id/view_separator2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_blind_pay_sub_header"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator1" />
+
+
+        <TextView
+            android:id="@+id/tv_blind_pay_sub_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="start"
+            android:text="@string/ease_pay_sub_header"
+            android:textColor="@color/grey700"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivOthersPayOption"
+            app:layout_constraintStart_toEndOf="@+id/iv_easy_Pay"
+            app:layout_constraintTop_toBottomOf="@+id/tv_blind_pay_header" />
+
+        <View
+            android:id="@+id/view_separator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/grid_1"
+            android:background="@color/grey300"
+            app:layout_constraintTop_toBottomOf="@id/tv_blind_pay_sub_header" />
+
+        <ImageView
+            android:id="@+id/iv_others_Pay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/_10dp"
+            android:src="@drawable/ic_easy_pay_destination"
+            android:background="@drawable/round_border_style"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_others_pay_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_separator2" />
+
+        <TextView
+            android:id="@+id/tv_others_pay_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:gravity="start"
+            android:text="@string/others_header_supplier"
+            android:textColor="@color/grey900"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_others_Pay"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator2" />
+
+        <TextView
+            android:id="@+id/tv_others_pay_sub_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:gravity="start"
+            android:text="@string/others_pay_sub_header"
+            android:textColor="@color/grey700"
+            app:layout_constraintEnd_toStartOf="@+id/ivEasyPayOption"
+            app:layout_constraintStart_toEndOf="@+id/iv_others_Pay"
+            app:layout_constraintTop_toBottomOf="@+id/tv_others_pay_header" />
+
+        <ImageView
+            android:id="@+id/ivOthersPayOption"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_blind_pay_sub_header"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator2" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/gpOthersPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="iv_others_Pay,tv_others_pay_header,tv_others_pay_sub_header,ivOthersPayOption" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

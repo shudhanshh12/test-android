@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_144dp">144dp</dimen>
+    <dimen name="rewards_steps_indicator_size">16dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+</resources>

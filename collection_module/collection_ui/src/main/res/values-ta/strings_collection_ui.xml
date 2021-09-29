@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_send_reminder"><![CDATA[QR மற்றும் ஆன்லைன் கட்டண லிங்க்-ஐ Whatsapp இல் நினைவூட்டலாக அனுப்புங்கள்]]></string>
+    <string name="title_payment_options">கஸ்டமர் பல்வேறு கட்டண முறைகள் மூலம் பணம் செலுத்தலாம்</string>
+    <string name="title_auto_ledger">வெற்றிகரமான பேமெண்ட்கள் தானாக லெட்ஜரில் சேர்க்கப்படும்</string>
+</resources>

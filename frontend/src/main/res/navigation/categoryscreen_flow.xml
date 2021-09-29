@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# CategoryScreen Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categoryscreen_flow"
+    app:startDestination="@id/categoryscreen_screen">
+
+    <fragment
+        android:id="@+id/categoryscreen_screen"
+        android:name="in.okcredit.frontend.ui.merchant_profile.categoryscreen.CategoryFragment"
+        android:label="CategoryScreenScreen"
+        tools:layout="@layout/category_fragment">
+
+    </fragment>
+
+</navigation>

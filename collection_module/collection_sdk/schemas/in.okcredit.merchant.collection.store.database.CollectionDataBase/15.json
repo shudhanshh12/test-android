@@ -1,0 +1,696 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 15,
+    "identityHash": "9474f164f57c6bfa214f0b3fb6468e15",
+    "entities": [
+      {
+        "tableName": "Collection",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `create_time` INTEGER NOT NULL, `update_time` INTEGER NOT NULL, `status` INTEGER NOT NULL, `payment_link` TEXT NOT NULL, `amount_requested` INTEGER, `amount_collected` INTEGER, `fee` INTEGER, `expire_time` INTEGER, `customer_id` TEXT NOT NULL, `discount` INTEGER, `fee_category` INTEGER NOT NULL, `settlement_category` INTEGER NOT NULL, `lastSyncTime` INTEGER, `lastViewTime` INTEGER, `merchantName` TEXT, `paymentOriginName` TEXT, `paymentId` TEXT, `errorCode` TEXT NOT NULL, `errorDescription` TEXT NOT NULL, `blindPay` INTEGER NOT NULL, `cashbackGiven` INTEGER NOT NULL, `businessId` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "create_time",
+            "columnName": "create_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "update_time",
+            "columnName": "update_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "payment_link",
+            "columnName": "payment_link",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "amount_requested",
+            "columnName": "amount_requested",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "amount_collected",
+            "columnName": "amount_collected",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fee",
+            "columnName": "fee",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expire_time",
+            "columnName": "expire_time",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "customer_id",
+            "columnName": "customer_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discount",
+            "columnName": "discount",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fee_category",
+            "columnName": "fee_category",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "settlement_category",
+            "columnName": "settlement_category",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastSyncTime",
+            "columnName": "lastSyncTime",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastViewTime",
+            "columnName": "lastViewTime",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "merchantName",
+            "columnName": "merchantName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "paymentOriginName",
+            "columnName": "paymentOriginName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "paymentId",
+            "columnName": "paymentId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "errorCode",
+            "columnName": "errorCode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "errorDescription",
+            "columnName": "errorDescription",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "blindPay",
+            "columnName": "blindPay",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cashbackGiven",
+            "columnName": "cashbackGiven",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "businessId",
+            "columnName": "businessId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_Collection_businessId",
+            "unique": false,
+            "columnNames": [
+              "businessId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Collection_businessId` ON `${TABLE_NAME}` (`businessId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "CollectionProfile",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`merchant_id` TEXT NOT NULL, `name` TEXT, `payment_address` TEXT NOT NULL, `type` TEXT NOT NULL, `merchant_vpa` TEXT, `limit_type` TEXT, `kyc_limit` INTEGER NOT NULL, `remaining_limit` INTEGER NOT NULL, `merchant_qr_enabled` INTEGER NOT NULL, PRIMARY KEY(`merchant_id`))",
+        "fields": [
+          {
+            "fieldPath": "merchant_id",
+            "columnName": "merchant_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "payment_address",
+            "columnName": "payment_address",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "merchant_vpa",
+            "columnName": "merchant_vpa",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "limit_type",
+            "columnName": "limit_type",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "kyc_limit",
+            "columnName": "kyc_limit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "remaining_limit",
+            "columnName": "remaining_limit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "merchant_qr_enabled",
+            "columnName": "merchant_qr_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "merchant_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "CollectionShareInfo",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`customer_id` TEXT NOT NULL, `shared_time` INTEGER NOT NULL, `businessId` TEXT NOT NULL, PRIMARY KEY(`customer_id`))",
+        "fields": [
+          {
+            "fieldPath": "customer_id",
+            "columnName": "customer_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shared_time",
+            "columnName": "shared_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "businessId",
+            "columnName": "businessId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "customer_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_CollectionShareInfo_businessId",
+            "unique": false,
+            "columnNames": [
+              "businessId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_CollectionShareInfo_businessId` ON `${TABLE_NAME}` (`businessId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "KycExternalEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`merchantId` TEXT NOT NULL, `kyc` TEXT NOT NULL, `upiDailyLimit` INTEGER NOT NULL, `nonUpiDailyLimit` INTEGER NOT NULL, `upiDailyTransactionAmount` INTEGER NOT NULL, `nonUpiDailyTransactionAmount` INTEGER NOT NULL, `category` TEXT NOT NULL, PRIMARY KEY(`merchantId`))",
+        "fields": [
+          {
+            "fieldPath": "merchantId",
+            "columnName": "merchantId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kyc",
+            "columnName": "kyc",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "upiDailyLimit",
+            "columnName": "upiDailyLimit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nonUpiDailyLimit",
+            "columnName": "nonUpiDailyLimit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "upiDailyTransactionAmount",
+            "columnName": "upiDailyTransactionAmount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nonUpiDailyTransactionAmount",
+            "columnName": "nonUpiDailyTransactionAmount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "merchantId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "CollectionOnlinePaymentEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `createdTime` INTEGER NOT NULL, `updatedTime` INTEGER NOT NULL, `status` INTEGER NOT NULL, `merchantId` TEXT NOT NULL, `accountId` TEXT NOT NULL, `amount` REAL NOT NULL, `paymentId` TEXT NOT NULL, `payoutId` TEXT NOT NULL, `paymentSource` TEXT NOT NULL, `paymentMode` TEXT NOT NULL, `type` TEXT NOT NULL, `read` INTEGER NOT NULL, `errorCode` TEXT NOT NULL, `errorDescription` TEXT NOT NULL, `businessId` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdTime",
+            "columnName": "createdTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedTime",
+            "columnName": "updatedTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "merchantId",
+            "columnName": "merchantId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "accountId",
+            "columnName": "accountId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "amount",
+            "columnName": "amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paymentId",
+            "columnName": "paymentId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "payoutId",
+            "columnName": "payoutId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paymentSource",
+            "columnName": "paymentSource",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paymentMode",
+            "columnName": "paymentMode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "read",
+            "columnName": "read",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "errorCode",
+            "columnName": "errorCode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "errorDescription",
+            "columnName": "errorDescription",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "businessId",
+            "columnName": "businessId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_CollectionOnlinePaymentEntity_businessId",
+            "unique": false,
+            "columnNames": [
+              "businessId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_CollectionOnlinePaymentEntity_businessId` ON `${TABLE_NAME}` (`businessId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "CustomerAdditionalInfoEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `link` TEXT NOT NULL, `status` INTEGER NOT NULL, `amount` INTEGER NOT NULL, `message` TEXT NOT NULL, `youtubeLink` TEXT NOT NULL, `customerMerchantId` TEXT NOT NULL, `ledgerSeen` INTEGER NOT NULL, `businessId` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "link",
+            "columnName": "link",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "amount",
+            "columnName": "amount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "message",
+            "columnName": "message",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "youtubeLink",
+            "columnName": "youtubeLink",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerMerchantId",
+            "columnName": "customerMerchantId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ledgerSeen",
+            "columnName": "ledgerSeen",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "businessId",
+            "columnName": "businessId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_CustomerAdditionalInfoEntity_businessId",
+            "unique": false,
+            "columnNames": [
+              "businessId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_CustomerAdditionalInfoEntity_businessId` ON `${TABLE_NAME}` (`businessId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "CustomerCollectionProfile",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`customerId` TEXT NOT NULL, `messageLink` TEXT, `message` TEXT, `qrIntent` TEXT, `showImage` INTEGER NOT NULL, `linkId` TEXT, `googlePayEnabled` INTEGER NOT NULL, `paymentIntent` INTEGER NOT NULL, `destinationUpdateAllowed` INTEGER NOT NULL, `cashbackEligible` INTEGER NOT NULL, `businessId` TEXT NOT NULL, PRIMARY KEY(`customerId`))",
+        "fields": [
+          {
+            "fieldPath": "customerId",
+            "columnName": "customerId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "messageLink",
+            "columnName": "messageLink",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "message",
+            "columnName": "message",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "qrIntent",
+            "columnName": "qrIntent",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "showImage",
+            "columnName": "showImage",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "linkId",
+            "columnName": "linkId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "googlePayEnabled",
+            "columnName": "googlePayEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paymentIntent",
+            "columnName": "paymentIntent",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "destinationUpdateAllowed",
+            "columnName": "destinationUpdateAllowed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cashbackEligible",
+            "columnName": "cashbackEligible",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "businessId",
+            "columnName": "businessId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "customerId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_CustomerCollectionProfile_businessId",
+            "unique": false,
+            "columnNames": [
+              "businessId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_CustomerCollectionProfile_businessId` ON `${TABLE_NAME}` (`businessId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SupplierCollectionProfile",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`accountId` TEXT NOT NULL, `messageLink` TEXT, `linkId` TEXT, `name` TEXT, `type` TEXT, `paymentAddress` TEXT, `destinationUpdateAllowed` INTEGER NOT NULL, `businessId` TEXT NOT NULL, PRIMARY KEY(`accountId`))",
+        "fields": [
+          {
+            "fieldPath": "accountId",
+            "columnName": "accountId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "messageLink",
+            "columnName": "messageLink",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "linkId",
+            "columnName": "linkId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "paymentAddress",
+            "columnName": "paymentAddress",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "destinationUpdateAllowed",
+            "columnName": "destinationUpdateAllowed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "businessId",
+            "columnName": "businessId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "accountId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_SupplierCollectionProfile_businessId",
+            "unique": false,
+            "columnNames": [
+              "businessId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_SupplierCollectionProfile_businessId` ON `${TABLE_NAME}` (`businessId`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9474f164f57c6bfa214f0b3fb6468e15')"
+    ]
+  }
+}

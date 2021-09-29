@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.okcredit.collection_ui">
+
+    <application>
+        <activity
+            android:name=".ui.home.CollectionsHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.OKCTheme.Grey"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.benefits.CollectionBenefitsActivity"
+            android:theme="@style/Base.OKCTheme.Grey"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.referral.TargetedReferralActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.passbook.PassbookActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.insights.CollectionInsightsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.qr_scanner.QrScannerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.defaulters.DefaulterListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.inventory.InventoryActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

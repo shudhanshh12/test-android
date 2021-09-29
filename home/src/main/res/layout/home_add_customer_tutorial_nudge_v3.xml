@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvHowToAddVariant"
+    style="@style/OKC.TextAppearance.Body2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    android:drawablePadding="16dp"
+    android:gravity="center_horizontal"
+    android:text="@string/add_customer_nudge"
+    app:drawableTopCompat="@drawable/im_add_customer_tutorial_nudge"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />

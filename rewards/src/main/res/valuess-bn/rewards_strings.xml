@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">মেনু থেকে আপনার পুরষ্কার পেতে আপনার ব্যাংক অ্যাকাউন্ট সেটআপ করুন</string>
+    <string name="you_won_feature">আপনি %1$s জিতেছেন</string>
+    <string name="visit_feature">দেখুন %1$s</string>
+    <string name="claim_in_progress">প্রসেস হচ্ছে... দয়া করে অপেক্ষা করুন</string>
+    <string name="scratch_view_hint">পুরষ্কারের জন্য স্ক্র্যাচ করুন</string>
+    <string name="enter_bank_details_description">এই ক্যাশব্যাকটি পাওয়ার জন্য ব্যাংক অ্যাকাউন্টের বিশদ এন্টার করুন।</string>
+    <string name="please_solve_this_issue">দয়া করে এই সমস্যাটির সমাধান করুন</string>
+    <string name="earned_due_to_activation">লেনদেনের রেকর্ড যুক্ত করার জন্য অর্জিত</string>
+    <string name="better_luck_next_time">পরবর্তি সময়ে আপনার ভাগ্য আরও ভালো হোক</string>
+    <string name="something_went_wrong_in_claiming_rewards">দুঃখিত, আমরা একটি প্রযুক্তিগত সমস্যার সম্মুখীন হচ্ছি। কিছু সময় পরে আবার চেষ্টা করুন।</string>
+    <string name="congratulations_tell_them_add_bank_details">অভিনন্দন !!! পুরস্কার পেতে ব্যাংক অ্যাকাউন্ট সেটআপ করুন।</string>
+    <string name="reward_on_hold">পুরষ্কার হোল্ডে রাখা হয়েছে</string>
+    <string name="error_budged_limit_exceeded">প্রযুক্তিগত সমস্যার কারণে আপনার পুরষ্কারটি আটকে আছে। আমাদের দল শীঘ্রই বিষয়টি সমাধান করবে। 3 দিনের মধ্যে আবার দাবি করুন।</string>
+    <string name="you_won_10">you won 10</string>
+    <string name="hurray">অভিনন্দন!</string>
+    <string name="oops">ওহ!</string>
+    <string name="rewarded_on_06_nov_02_38pm">06 নভেম্বর, 02:38 pm এ পুরস্কৃত হয়েছে</string>
+    <string name="earned_for_adding_transactions_records">লেনদেনের রেকর্ড যুক্ত করার জন্য অর্জিত</string>
+    <string name="setup_bank_account_to_get_reward">পুরস্কার পেতে ব্যাংক অ্যাকাউন্ট সেটআপ করুন।</string>
+    <string name="step_1_how_does_it_works_roa">বিভিন্ন দিনে গ্রাহক এবং সর্বনিম্ন দুটি লেনদেন যুক্ত করুন।</string>
+    <string name="step_2_how_does_it_works_roa">আপনার উপহারগুলি পুরষ্কার বিভাগে প্রদর্শিত হবে।</string>
+    <string name="error_description_bank_valid">এই ব্যাংক অ্যাকাউন্ট বা UPI ইতিমধ্যে অন্য কেউ ব্যবহার করছেন। সঠিক বিবরণ জমা দিন বা অন্য অ্যাকাউন্ট ব্যবহার করুন।</string>
+    <string name="upi_inactive_error_msg">আপনার ব্যাংক অ্যাকাউন্ট আর সক্রিয় নেই। দয়া করে অন্য অ্যাকাউন্ট ব্যবহার করুন বা আপনার অ্যাকাউন্টটি আবার সক্রিয় করুন।</string>
+    <string name="payout_daily_limit_reached_error_msg">আপনি আজকের জন্য পুরষ্কার দাবীর সীমা অতিক্রম করেছেন। কালকের মধ্যে আবার দাবি করুন।</string>
+    <string name="reward_update">পুরষ্কার আপডেট</string>
+    <string name="please_try_again_later">পরে আবার চেষ্টা করুন</string>
+    <string name="payment_update">পেমেন্ট আপডেট</string>
+    <string name="close">বন্ধ করুন</string>
+    <string name="processing_state">প্রসেস হচ্ছে…</string>
+    <string name="bank_service_unavail">ব্যাংক পরিষেবা উপলব্ধ নয়</string>
+    <string name="bank_service_unavil_error_msg">আপনার ব্যাংক এখনই পেমেন্টের অনুরোধটি প্রক্রিয়া করছে না। কয়েক ঘন্টা পরে আবার চেষ্টা করুন।</string>
+    <string name="we_are_processing_your_reward">আমরা আপনার পুরষ্কার প্রসেস করছি। 3 দিনের মধ্যে আবার চেক করুন।</string>
+    <string name="edit_bank_details">ব্যাঙ্কের বিশদ এডিট করুন</string>
+    <string name="please_try_again">অনুগ্রহপূর্বক আবার চেষ্টা করুন</string>
+</resources>

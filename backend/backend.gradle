@@ -1,0 +1,181 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply from: "$rootDir/config.gradle"
+
+android {
+    sourceSets {
+        androidTest.assets.srcDirs +=
+                files("$projectDir/schemas".toString())
+    }
+
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'DEEPLINK_URL', "\"https://staging.okcredit.app/merchant/v1\""
+            buildConfigField "String", 'BASE_URL', "\"https://api.staging.okcredit.in/v1.0/\""
+            buildConfigField "String", 'REPORTS_V2_BASE_URL', "\"https://report.staging.okcredit.in/v2/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'DEEPLINK_URL', "\"https://alpha.okcredit.app/merchant/v1\""
+            buildConfigField "String", 'BASE_URL', "\"https://api.alpha.okcredit.in/v1.0/\""
+            buildConfigField "String", 'REPORTS_V2_BASE_URL', "\"https://report.alpha.okcredit.in/v2/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'DEEPLINK_URL', "\"https://okcredit.app/merchant/v1\""
+            buildConfigField "String", 'BASE_URL', "\"https://api.okcredit.in/v1.0/\""
+            buildConfigField "String", 'REPORTS_V2_BASE_URL', "\"https://report.okcredit.in/v2/\""
+        }
+
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-backend.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-backend.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':accounting')
+    implementation project(':accounting:contract')
+    implementation project(':device')
+    implementation project(':resources')
+    implementation project(':fileupload')
+    implementation project(':analytics')
+    implementation project(':suppliercredit')
+    implementation project(':collection_module:collection_sdk')
+    implementation project(':collection_module:contract')
+    implementation project(':rewards')
+    implementation project(':business:contract')
+    implementation project(':camera')
+    implementation project(':communication')
+    implementation project(':contacts:contract')
+    implementation project(':bill_management:contract')
+    implementation project(':home:contract')
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':ab'),{exclude group: 'com.google.guava', module: 'listenablefuture'}
+    implementation project(':referral:contract')
+
+    implementation project(':shared')
+    implementation project(':accounting_core')
+    implementation project(':accounting_core:contract')
+    implementation project(':backend:contract')
+    implementation project(':onboarding:contract')
+    implementation project(':feature_help:sdk')
+    implementation project(':device:installedpackges')
+    implementation project(':camera:camera_contract')
+    implementation project(':rewards:contract')
+    implementation project(':dynamicview:contract')
+    implementation project(':customer:contract')
+    implementation project(':user-stories:contract')
+    implementation project(':cashback:contract')
+    implementation project(':business_health_dashboard:contract')
+    implementation project(':okstream:contract')
+    implementation project(':payment:contract')
+    implementation project(':individual:contract')
+    implementation project(':voice_first:contract')
+
+    implementation androidX.appcompact
+    implementation androidX.ktx
+
+    // Architecture Component
+    implementation arch.viewModelKtx
+
+    implementation moshi.core
+    kapt moshi.codegen
+
+    api arch.lifecycle
+    api arch.room
+    api arch.roomRx
+    implementation arch.roomKtx
+    implementation project(':camera:camera_contract')
+    kapt arch.roomAnnotationProcessor
+    implementation arch.workManagerRuntimeKtx
+    implementation arch.lifecycleKtx
+
+    // Dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    // Image
+    api imageDeps.belvedereImagePicker
+    api imageDeps.photoView
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+    implementation imageDeps.textDrawable
+
+    // Retrofit
+    api network.retrofit
+    api network.retrofitRxAdapter
+    api network.gsonConverter
+    api network.gson
+    api network.okhttp3
+    api network.okhttpLoginInterceptor
+
+    api rx.rxRelay
+
+    // Fire base
+    implementation firebase.firebaseAnalytics
+    implementation firebase.firebaseMessaging
+    implementation firebase.firebaseCrashlytics
+    implementation firebase.auth
+    implementation firebase.firestore
+
+    // Analytics
+    api analytics.mixpanel
+    api analytics.cleverTap
+    api analytics.appsflyer
+    implementation aws.awsS3
+
+    // Views
+    api view.material
+    api view.pageIndicator
+    implementation androidX.constraintLayout
+
+    // Utility
+    api utility.jodaTime
+    api utility.trueTime
+    api utility.permission
+    api utility.guava
+    implementation utility.coroutines
+
+    api zxing.zxingAndroid, { transitive = true }
+    api zxing.zxingCore
+
+    // Unit testing
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+
+}

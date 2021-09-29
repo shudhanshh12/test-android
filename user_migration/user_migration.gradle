@@ -1,0 +1,118 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs"
+apply from: "$rootDir/config.gradle"
+
+android {
+
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://okFile.staging.okcredit.io/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://okFile.alpha.okcredit.io/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://okFile.okcredit.io/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-onboarding-ui.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-onboarding-ui.pro'
+        }
+    }
+
+    sourceSets {
+        main.res.srcDirs = ['src/main/res-user-migration']
+    }
+}
+
+dependencies {
+    implementation project(':auth')
+    implementation project(':base')
+    implementation project(':ab')
+    implementation project(':backend:contract')
+    implementation project(':business:contract')
+    implementation project(':user_migration:contract')
+    implementation project(':shared')
+    implementation project(':analytics')
+    implementation project(':app:app_contract')
+    implementation project(':resources')
+    implementation project(':fileupload')
+
+    implementation view.material
+
+    implementation utility.kotlin
+
+    implementation utility.coroutines
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.supportLibrary
+
+    implementation rx.rxRelay
+    implementation rx.binding
+
+    implementation androidX.constraintLayout
+    implementation androidX.ktx
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    implementation navigation.fragment
+    implementation navigation.fragmentKtx
+    implementation navigation.ui
+    implementation navigation.uiKtx
+
+    implementation view.shimmer
+
+
+    // retrofit
+    implementation retrofit.retrofit
+    implementation retrofit.gsonConverter
+    implementation retrofit.moshiConverter
+    implementation retrofit.gson
+    implementation retrofit.retrofitRxAdapter
+
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+
+    testImplementation unitTest.androidxTestCore
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockWebServer
+    testImplementation unitTest.mockk
+    testImplementation firebase.firebaseCrashlytics
+
+
+}

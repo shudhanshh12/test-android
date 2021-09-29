@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">crwdns268077:0crwdne268077:0</string>
+    <string name="you_won_feature">crwdns268079:0%1$scrwdne268079:0</string>
+    <string name="visit_feature">crwdns268081:0%1$scrwdne268081:0</string>
+    <string name="claim_in_progress">crwdns268083:0crwdne268083:0</string>
+    <string name="scratch_view_hint">crwdns268085:0crwdne268085:0</string>
+    <string name="enter_bank_details_description">crwdns268087:0crwdne268087:0</string>
+    <string name="please_solve_this_issue">crwdns268089:0crwdne268089:0</string>
+    <string name="earned_due_to_activation">crwdns268091:0crwdne268091:0</string>
+    <string name="better_luck_next_time">crwdns268093:0crwdne268093:0</string>
+    <string name="something_went_wrong_in_claiming_rewards">crwdns268095:0crwdne268095:0</string>
+    <string name="congratulations_tell_them_add_bank_details">crwdns268097:0crwdne268097:0</string>
+    <string name="reward_on_hold">crwdns268099:0crwdne268099:0</string>
+    <string name="error_budged_limit_exceeded">crwdns268101:0crwdne268101:0</string>
+    <string name="you_won_10">crwdns268103:0crwdne268103:0</string>
+    <string name="hurray">crwdns268105:0crwdne268105:0</string>
+    <string name="oops">crwdns268107:0crwdne268107:0</string>
+    <string name="rewarded_on_06_nov_02_38pm">crwdns268109:0crwdne268109:0</string>
+    <string name="earned_for_adding_transactions_records">crwdns268111:0crwdne268111:0</string>
+    <string name="setup_bank_account_to_get_reward">crwdns268113:0crwdne268113:0</string>
+    <string name="step_1_how_does_it_works_roa">crwdns268115:0crwdne268115:0</string>
+    <string name="step_2_how_does_it_works_roa">crwdns268117:0crwdne268117:0</string>
+    <string name="error_description_bank_valid">crwdns268119:0crwdne268119:0</string>
+    <string name="upi_inactive_error_msg">crwdns268121:0crwdne268121:0</string>
+    <string name="payout_daily_limit_reached_error_msg">crwdns268123:0crwdne268123:0</string>
+    <string name="reward_update">crwdns268125:0crwdne268125:0</string>
+    <string name="please_try_again_later">crwdns268127:0crwdne268127:0</string>
+    <string name="payment_update">crwdns268129:0crwdne268129:0</string>
+    <string name="close">crwdns268131:0crwdne268131:0</string>
+    <string name="processing_state">crwdns268133:0crwdne268133:0</string>
+    <string name="bank_service_unavail">crwdns268135:0crwdne268135:0</string>
+    <string name="bank_service_unavil_error_msg">crwdns268137:0crwdne268137:0</string>
+    <string name="we_are_processing_your_reward">crwdns268139:0crwdne268139:0</string>
+    <string name="edit_bank_details">crwdns268141:0crwdne268141:0</string>
+    <string name="please_try_again">crwdns268143:0crwdne268143:0</string>
+</resources>

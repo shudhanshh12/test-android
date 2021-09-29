@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="payable_amount">crwdns85246:0crwdne85246:0</string>
+    <string name="please_check_or_edit_final_payable_amount">crwdns85248:0crwdne85248:0</string>
+    <string name="rupee_text">crwdns85250:0crwdne85250:0</string>
+    <string name="juspay_pay_securely">crwdns85252:0crwdne85252:0</string>
+    <string name="juspay_enter_amount_to_pay">crwdns85254:0crwdne85254:0</string>
+    <string name="juspay_payment_successful">crwdns85256:0crwdne85256:0</string>
+    <string name="juspay_no_internet_connection">crwdns85258:0crwdne85258:0</string>
+    <string name="juspay_something_went_wrong">crwdns85260:0crwdne85260:0</string>
+    <string name="juspay_please_fill_correct_amount">crwdns85262:0crwdne85262:0</string>
+</resources>

@@ -1,0 +1,51 @@
+files:
+  - source: /resources/src/main/res/values/strings.xml
+    translation: /resources/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /onboarding/src/main/res-onboarding/values/onboarding_strings.xml
+    translation: /onboarding/src/main/res-onboarding/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /collection_module/collection_ui/src/main/res/values/strings_collection_ui.xml
+    translation: /collection_module/collection_ui/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /home/src/main/res/values/strings_home.xml
+    translation: /home/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /referral/src/main/res-referral/values/referral_strings.xml
+    translation: /referral/src/main/res-referral/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /customer/customer_ui/src/main/res/values/strings_customer_ui.xml
+    translation: /customer/customer_ui/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /contacts/src/main/res-contact/values/contact_strings.xml
+    translation: /contacts/src/main/res-contact/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /payment/src/main/res/values/payment_strings.xml
+    translation: /payment/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /lending/src/main/res/values/lending_strings.xml
+    translation: /lending/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /gamification/src/main/res/values/strings_gamification.xml
+    translation: /gamification/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /rewards/src/main/res/values/rewards_strings.xml
+    translation: /rewards/src/main/res/valuess-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /applock/src/main/res/values/strings_applock.xml
+    translation: /applock/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /gamification/ipl/src/main/res/values/strings_gamification.xml
+    translation: /gamification/ipl/src/main/res/values-%two_letters_code%/%original_file_name%
+  - source: /voice_first/src/main/res/values/strings_voice_first.xml
+    translation: /voice_first/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /business/src/main/res/values/strings_business.xml
+    translation: /business/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /resources/src/main/res/values/strings_resources.xml
+    translation: /resources/src/main/res/values-%two_letters_code%/%original_file_name%
+    translate_content: 0
+  - source: /business/src/main/res-merchant/values/strings_business.xml
+    translation: /business/src/main/res-merchant/values-%two_letters_code%/%original_file_name%
+    translate_content: 0

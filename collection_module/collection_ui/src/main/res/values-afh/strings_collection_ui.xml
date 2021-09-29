@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_send_reminder"><![CDATA[Whatsapp par QR aur payment link ke saath Reminder bhejein]]></string>
+    <string name="title_payment_options">Customer payment vikalpon me se apni pasand ka vikalp chun kar payment kar sakte hain</string>
+    <string name="title_auto_ledger">Payment safal hone par woh transaction me apne aap joda jayega</string>
+</resources>

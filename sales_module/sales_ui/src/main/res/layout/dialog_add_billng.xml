@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="bottom"
+    android:focusable="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circular_border_on_top">
+
+        <View
+            android:id="@+id/bar"
+            android:layout_width="48dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:background="@color/grey300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/select_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:text="@string/select_a_contact"
+            android:textAppearance="?textAppearanceSubtitle4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bar" />
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:id="@+id/rv_contacts"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/add_layout"
+            app:layout_constraintTop_toBottomOf="@+id/select_contact"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_billing_contact" />
+
+        <ImageView
+            android:id="@+id/import_img"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_phone_book"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bar"/>
+
+        <TextView
+            android:id="@+id/import_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            style="@style/OKC.TextAppearance.Button"
+            android:textColor="@color/green_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/import_img"
+            android:text="@string/import_contacts"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/import_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="import_img,import_contacts"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/add_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/_16dp"
+            android:elevation="@dimen/_2dp"
+            android:theme="@style/AppTheme"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:hint="@string/name"
+                android:textColorHint="@color/grey400"
+                app:backgroundTint="@color/green_primary"
+                app:layout_constraintBottom_toTopOf="@+id/mobile_layout"
+                app:layout_constraintEnd_toStartOf="@+id/submit_contact"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_person_placeholder">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:imeOptions="actionNext"
+                    android:textAppearance="?textAppearanceSubtitle2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/clear_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8dp"
+                android:src="@drawable/ic_cross"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/name_layout"
+                app:layout_constraintEnd_toEndOf="@id/name_layout"
+                app:layout_constraintTop_toTopOf="@id/name_layout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobile_layout"
+                style="@style/Editable.TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:backgroundTint="@color/green_primary"
+                android:hint="@string/phone_number"
+                android:textColorHint="@color/grey400"
+                app:layout_constraintBottom_toBottomOf="@+id/submit_contact"
+                app:layout_constraintEnd_toStartOf="@+id/submit_contact"
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/ic_call"
+                tools:visibility="visible">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobile_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:textAppearance="?textAppearanceSubtitle2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/clear_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8dp"
+                android:src="@drawable/ic_cross"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/mobile_layout"
+                app:layout_constraintEnd_toEndOf="@id/mobile_layout"
+                app:layout_constraintTop_toTopOf="@id/mobile_layout"
+                tools:visibility="gone" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/submit_contact"
+                style="@style/OKC.FAB"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:tint="@color/white"
+                android:visibility="visible"
+                app:backgroundTint="@color/grey400"
+                app:elevation="0dp"
+                app:fabCustomSize="48dp"
+                app:fabSize="auto"
+                app:layout_constraintBottom_toTopOf="@+id/add_mobile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_next_confirm_2" />
+
+            <TextView
+                android:id="@+id/add_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Mobile"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textColor="@color/green_primary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <tech.okcredit.android.base.utils.ManagedGroup
+                android:id="@+id/name_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="name_layout,clear_name" />
+
+            <tech.okcredit.android.base.utils.ManagedGroup
+                android:id="@+id/phone_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="mobile_layout,clear_phone" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

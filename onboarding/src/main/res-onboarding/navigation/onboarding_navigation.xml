@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding"
+    app:startDestination="@id/splash_screen">
+
+    <fragment
+        android:id="@+id/splash_screen"
+        android:name="in.okcredit.onboarding.launcher.LauncherFragment"
+        android:label="SplashScreen"
+        tools:layout="@layout/launcher_fragment">
+        <action
+            android:id="@+id/login"
+            app:destination="@id/enter_mobile"
+            app:popUpTo="@+id/splash_screen"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/business_name_screen"
+            app:destination="@id/business_name_screen"
+            app:popUpTo="@+id/splash_screen"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otp_screen_v2"
+        android:name="in.okcredit.onboarding.enterotp.v2.OtpV2Fragment"
+        android:label="OtpScreenV2"
+        tools:layout="@layout/otp_v2_fragment">
+
+        <argument
+            android:name="mobile"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/business_name_screen"
+            app:destination="@id/business_name_screen"
+            app:popUpTo="@+id/enter_mobile"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/business_name_screen"
+        android:name="in.okcredit.onboarding.businessname.BusinessNameFragment"
+        android:label="BusinessNameScreen"
+        tools:layout="@layout/onboarding_business_name" />
+
+</navigation>

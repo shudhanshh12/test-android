@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    tool:ignore="RtlHardcoded"
+    tool:layout_height="wrap_content"
+    tool:layout_width="match_parent"
+    tool:parentTag="android.widget.FrameLayout">
+
+    <TextView
+        android:id="@+id/text_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="184dp"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/security_query_post_script"
+        android:textAppearance="@style/OKC.TextAppearance.Caption1" />
+</merge>

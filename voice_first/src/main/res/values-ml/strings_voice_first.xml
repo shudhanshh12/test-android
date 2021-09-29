@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okassistant_greeting">നമസ്കാരം 🙏 ഞാൻ OkAssistant !!</string>
+    <string name="okassistant_education">നിങ്ങളുടെ ശബ്ദം മനസിലാക്കാൻ എനിക്ക് അല്പം സഹായം ആവശ്യമാണ്.\n\nദയവായി മൈക്ക് ബട്ടൺ അമർത്തി താഴെ കാണുന്ന വരികൾ കൃത്യമായി പറയുക.</string>
+    <string name="read_this">ഇത് വായിക്കുക</string>
+    <string name="invalid_recording">തെറ്റായ റെക്കോർഡിങ്</string>
+    <string name="task_complete">ദൗത്യം പൂർത്തിയായി</string>
+    <string name="okassistant_retry">വീണ്ടും ശ്രമിക്കുക</string>
+    <!-- /* Bulk Add by voice -->
+    <string name="t_004_bulk_voice_txn_main_headline">സംസാരിച്ച് ഇടപാടുകൾ ചേർക്കാം</string>
+    <string name="t_004_bulk_voice_txn_main_caption">പറഞ്ഞാൽ മാത്രം മതി, എല്ലാം എളുപ്പത്തിൽ ചെയ്തു തീർക്കാം</string>
+    <string name="t_004_bulk_voice_txn_date_field">ഇടപാട് തിയതി</string>
+    <string name="t_004_bulk_voice_txn_body_headline">ഇംഗ്ലീഷിലോ ഹിന്ദിയിലോ പറയാം</string>
+    <string name="t_004_bulk_voice_txn_body_english_example">Sameer 100 rupees credit / Sameer 100 rupees payment</string>
+    <string name="t_004_bulk_voice_txn_body_subtitle">അല്ലെങ്കിൽ</string>
+    <string name="t_004_bulk_voice_txn_hinglish_example">Sameer ki 100 rupaye ki udhaari / Sameer ka 100 rupaye ka payment</string>
+    <string name="t_004_speech_eg_title">ഇംഗ്ലീഷിലോ ഹിന്ദിയിലോ പറയാം</string>
+    <string name="t_004_speech_eg_caption_credit">കടം ചേർക്കാൻ പറയൂ,</string>
+    <string name="t_004_speech_eg_credit_desc">“Sameer 100 rupees credit” or “Sameer ki 100 rupaye ki udhaari”</string>
+    <string name="t_004_speech_eg_caption_payment">പേയ്മെന്റ് ചേർക്കാൻ പറയൂ</string>
+    <string name="t_004_speech_eg_payment_desc">“Sameer 100 rupees payment” or “Sameer ka 100 rupaye ka payment”</string>
+    <string name="t_004_speech_try_again_error_desc">ക്ഷമിക്കണം. ഞങ്ങൾക്ക് മനസിലാക്കാനായില്ല. ദയവായി താഴെ അമർത്തി വീണ്ടും പറയൂ.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_processing">നടപടി ആകുന്നു…</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_failed">പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_incomplete">ദയവായി മറ്റു വിവരങ്ങൾ ചേർക്കുക</string>
+    <string name="t_004_bulk_voice_txn_voice_transcript_label">നിങ്ങൾ പറഞ്ഞത്</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_credit">കടം</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_payment">പേയ്മെന്റ്</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_credit">നൽകി</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_payment">ലഭിച്ചു</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_txn_type">ഇടപാട്</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_add_note">കുറിപ്പ് (ഓപ്ഷണൽ)</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_amount">തുക</string>
+    <string name="t_004_bulk_voice_txn_delete">ഡിലീറ്റ്</string>
+    <string name="t_004_bulk_voice_txn_update">അപ്‌ഡേറ്റ്</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_saved">ഇടപാട് അപ്ഡേറ്റ് ചെയ്തു</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_deleted">ഇടപാട് ഡിലീറ്റ് ചെയ്തു</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_edit_discarded">ഇടപാടിലെ തിരുത്ത് തള്ളിക്കളഞ്ഞു</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_load_failed">ഇടപാടുകൾ ലോഡ് ചെയ്യാനായില്ല</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_title">പേര് തിരഞ്ഞെടുക്കാം</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_search_more">കൂടുതൽ പേരുകൾ തിരയാം</string>
+    <string name="t_004_bulk_voice_txn_select_name_hint_text">പേര് തിരയാം, തിരഞ്ഞെടുക്കാം</string>
+    <string name="t_004_bulk_voice_txn_confirm_save_title">സേവ് ചെയ്യുന്നതിന് മുന്നേ ഇടപാടുകൾ പരിശോധിക്കുക</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_date_of_txn">ഇടപാട് തിയതി - %s</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_txn_not_saved_caption">₹0 തുകയ്ക്കുള്ള, നടപടിയായിക്കൊണ്ടിരിക്കുന്ന/ പരാജയപ്പെട്ട, അല്ലെങ്കിൽ വിവരങ്ങൾ നഷ്ടപ്പെട്ട ഇടപാടുകൾ സേവ് ചെയ്യപ്പെടുന്നതല്ല.</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_blocked_merchants">നിങ്ങൾ ഒരു കസ്റ്റമറിനെയോ സപ്ലയറേയോ ബ്ലോക്ക് ചെയ്താലോ, നിങ്ങളെ ഏതെങ്കിലും കസ്റ്റമറോ സപ്ലയറോ ബ്ലോക്ക് ചെയ്താലോ ഇടപാടുകൾ സേവ് ആകുന്നതല്ല.</string>
+    <string name="t_004_bulk_voice_txn_customer_count">%1s കസ്റ്റമർ,</string>
+    <string name="t_004_bulk_voice_txn_supplier_count">%1s സപ്ലയർ</string>
+    <string name="t_004_bulk_voice_txn_transaction_saved">ഇടപാട് സേവ് ചെയ്തു</string>
+    <string name="t_004_bulk_voice_txn_transaction_cancelled">ഇടപാട് ക്യാൻസൽ ചെയ്തു</string>
+    <!-- Bulk Add by voice */ -->
+</resources>

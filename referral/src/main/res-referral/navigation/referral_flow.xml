@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/referral_flow"
+    app:startDestination="@id/referral_screen">
+
+    <fragment
+        android:id="@+id/referral_screen"
+        android:name="tech.okcredit.android.referral.ui.referral_screen.ReferralFragment"
+        android:label="ReferralScreen"
+        tools:layout="@layout/fragment_referral">
+        <action
+            android:id="@+id/show_referral_rewards"
+            app:destination="@id/referredMerchantListScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/referredMerchantListScreen"
+        android:name="tech.okcredit.android.referral.ui.referral_rewards_v1.ReferralRewardsFragment"
+        android:label="ReferredMerchantListScreen"
+        tools:layout="@layout/referred_merchant_list" >
+        <action
+            android:id="@+id/goToRewardScreen"
+            app:destination="@id/rewards_screen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rewards_screen"
+        android:name="in.okcredit.merchant.rewards.ui.rewards_screen.RewardsFragment"
+        android:label="ReferredMerchantListScreen"
+        tools:layout="@layout/rewards_fragment" />
+
+</navigation>

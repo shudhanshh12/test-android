@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <TextView
+                android:id="@+id/tvTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/invite"
+                android:textAppearance="@style/OKC.TextAppearance.Subtitle1" />
+
+            <ImageView
+                android:id="@+id/ivHelp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/ic_help" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/rvInviteTargetedUserList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/mbTotalReward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        tools:listitem="@layout/referral_invite_list_view" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbTotalReward"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:drawableEnd="@drawable/arrow_right_icon"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEarnAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:elevation="10dp"
+        android:textAppearance="@style/OKC.TextAppearance.Headline4"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/mbTotalReward"
+        app:layout_constraintStart_toStartOf="@id/mbTotalReward"
+        app:layout_constraintTop_toTopOf="@id/mbTotalReward"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/tvEarnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:elevation="10dp"
+        android:text="@string/total_rewards_earned"
+        android:textAppearance="@style/OKC.TextAppearance.Caption2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tvEarnAmount"
+        app:layout_constraintStart_toEndOf="@id/tvEarnAmount"
+        app:layout_constraintTop_toTopOf="@id/tvEarnAmount"
+        tools:text="@string/total_rewards_earned" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

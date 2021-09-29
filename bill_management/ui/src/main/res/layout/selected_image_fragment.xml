@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".selected_bills.selectedimage.SelectedImageFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingStart="8dp"
+                    android:text="@string/add_bill"
+                    android:textAppearance="@style/OKC.TextAppearance.Headline6"
+                    android:textColor="@color/grey900"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_bill_delete"
+                    android:tint="@color/black"
+                    android:id="@+id/delete"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey300"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <com.camera.camera_preview_images.CameraImagesPreview
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/camera_preview"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/new_date_container"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/new_date_container"
+        style="@style/NonEditable.TextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/note_container"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/date"
+        android:textColorHint="@color/grey400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date_text_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:drawableEnd="@drawable/ic_arrow_down_black_light"
+            android:drawablePadding="14sp"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/grey600"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="10 Jul. 2018" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/note_container"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/background_white_corner_radius_8dp_stroke_grey_400"
+        app:layout_constraintEnd_toStartOf="@id/done"
+        app:layout_constraintTop_toTopOf="@id/done"
+        app:layout_constraintBottom_toBottomOf="@id/done"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/add_note_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:tint="@color/grey600"
+            app:srcCompat="@drawable/ic_bill_notes" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/add_note_input_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/add_note_optional"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="@integer/max_transaction_note_input_limit"
+            android:padding="0dp"
+            android:textColor="@color/grey800"
+            android:textColorHint="@color/grey600"
+            android:textSize="14sp"
+            app:backgroundTint="@color/transparent" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/done"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_goneMarginEnd="14dp"
+        android:layout_marginBottom="20dp"
+        android:tint="@color/white"
+        app:backgroundTint="?colorPrimary"
+        app:elevation="0dp"
+        app:fabCustomSize="48dp"
+        app:fabSize="auto"
+        app:srcCompat="@drawable/ic_check" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_goneMarginEnd="14dp"
+        android:layout_marginBottom="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

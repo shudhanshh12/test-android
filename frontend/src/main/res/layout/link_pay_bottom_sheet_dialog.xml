@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textAppearance="?textAppearanceSubtitle1"
+        tools:text="Anjal" />
+
+    <LinearLayout
+        android:id="@+id/ll_payment_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/grid_1_half"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_payment_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceBody1"
+            tools:text="punnajb@okicici" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            app:srcCompat="@drawable/ic_success_green" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_payment_address"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="24dp"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/tv_qr_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/grid_2"
+        android:gravity="center_horizontal"
+        android:text="@string/scan_and_pay_via_upi"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/grey800" />
+
+    <TextView
+        android:id="@+id/get_money_directly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_qr_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="@string/get_money_to_your_bank"
+        android:textAppearance="?textAppearanceCaption2" />
+
+    <ImageView
+        android:id="@+id/iv_bhim_upi"
+        android:layout_width="112dp"
+        android:layout_height="@dimen/grid_2"
+        android:layout_below="@+id/get_money_directly"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/grid_3"
+        android:layout_marginBottom="@dimen/grid_3"
+        app:srcCompat="@drawable/bhim_upi_v2" />
+
+
+</RelativeLayout>

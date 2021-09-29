@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_16dp"
+    app:cardBackgroundColor="@color/orange_lite"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/orange_lite_1"
+    app:strokeWidth="1dp">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="@dimen/_8dp"
+        android:drawableTint="@color/grey900"
+        android:gravity="center"
+        android:padding="@dimen/_8dp"
+        android:text="@string/all_transactions_with_your"
+        android:textAlignment="center"
+        android:textAppearance="?textAppearanceCaption2" />
+
+</com.google.android.material.card.MaterialCardView>

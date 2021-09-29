@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motion_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/launcher_fragment_scene">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="216dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine"
+        app:srcCompat="@drawable/ic_splash_okcredit_text" />
+
+    <TextView
+        android:id="@+id/text_trusted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/trusted_by_businesses"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_secured"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_protected"
+        app:layout_constraintEnd_toStartOf="@+id/image_safe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_secured" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_safe"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_safe"
+        app:layout_constraintEnd_toStartOf="@+id/image_protected"
+        app:layout_constraintStart_toEndOf="@+id/image_secured"
+        app:srcCompat="@drawable/ic_safe_trusted" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_protected"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_protected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_safe"
+        app:srcCompat="@drawable/ic_protected" />
+
+    <TextView
+        android:id="@+id/text_secured"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="@string/secured"
+        android:textAllCaps="true"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toTopOf="@+id/ivMadeInIndia"
+        app:layout_constraintEnd_toEndOf="@id/image_secured"
+        app:layout_constraintStart_toStartOf="@+id/image_secured" />
+
+
+    <TextView
+        android:id="@+id/text_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="@string/safe_trusted"
+        android:textAllCaps="true"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toTopOf="@+id/ivMadeInIndia"
+        app:layout_constraintEnd_toEndOf="@id/image_safe"
+        app:layout_constraintStart_toStartOf="@+id/image_safe" />
+
+    <TextView
+        android:id="@+id/text_protected"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="@string/data_private"
+        android:textAllCaps="true"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toTopOf="@+id/ivMadeInIndia"
+        app:layout_constraintEnd_toEndOf="@id/image_protected"
+        app:layout_constraintStart_toStartOf="@+id/image_protected" />
+
+    <ImageView
+        android:id="@+id/ivMadeInIndia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/made_with_love_india" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="image_secured,image_safe,image_protected,text_secured,text_safe,text_protected,ivMadeInIndia,ivLogo, text_trusted" />
+
+    <ImageView
+        android:id="@+id/ivSplashLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_logo" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

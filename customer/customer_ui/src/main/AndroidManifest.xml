@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.okcredit.merchant.customer_ui">
+
+    <application>
+        <activity
+            android:name=".ui.add_txn_screen.AddTxnContainerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.OKCTheme"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name=".ui.subscription.SubscriptionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <nav-graph android:value="@navigation/subscription_nav_graph" />
+        </activity>
+        <activity
+            android:name=".ui.staff_link.StaffLinkActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.bulk_reminder_v2.BulkReminderV2Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.payment.AddCustomerPaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.OKCTheme.Grey"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name=".addrelationship.AddRelationshipActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.payment.success.PaymentSuccessActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

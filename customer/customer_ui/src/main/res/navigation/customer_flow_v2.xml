@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_flow"
+    app:startDestination="@id/customerScreenv2">
+
+    <fragment
+        android:id="@+id/customerScreenv2"
+        android:name="in.okcredit.merchant.customer_ui.ui.customer.CustomerFragment"
+        android:label="HomeScreen"
+        tools:layout="@layout/customer_fragment">
+
+        <argument
+            android:name="customer_id"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+
+        <action
+            android:id="@+id/goToAddNumberDialog"
+            app:destination="@id/show_add_number_popup"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right">
+
+            <argument
+                android:name="customer_id"
+                app:argType="string" />
+
+            <argument
+                android:name="description"
+                app:argType="string" />
+
+            <argument
+                android:name="is_skip_and_send"
+                app:argType="boolean" />
+
+            <argument
+                android:name="mobile"
+                android:defaultValue="@null"
+                app:argType="string"
+                app:nullable="true" />
+        </action>
+
+
+        <action
+            android:id="@+id/goToCustomerTxnAlertScreen"
+            app:destination="@id/show_txn_alert_popup"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right">
+
+            <argument
+                android:name="customer_id"
+                app:argType="string" />
+
+            <argument
+                android:name="description"
+                app:argType="string" />
+
+            <argument
+                android:name="mobile"
+                app:argType="string"
+                app:nullable="true" />
+
+            <argument
+                android:name="profilePic"
+                app:argType="string"
+                app:nullable="true" />
+        </action>
+
+        <action
+            android:id="@+id/goToCustomerReportsScreen"
+            app:destination="@id/customerReportScreen"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right">
+
+            <argument
+                android:name="customer_id"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/credit_transaction_success"
+        android:name="in.okcredit.merchant.customer_ui.ui.add_txn_screen.NewTransactionSuccessFragment"
+        tools:layout="@layout/credit_transaction_success_fragment" />
+
+    <dialog
+        android:id="@+id/discount_info_popup"
+        android:name="in.okcredit.merchant.customer_ui.ui.discount_info.CustomerAddTxnDiscountInfoDialogScreen"
+        android:label="Disocunt Info Popup"
+        tools:layout="@layout/add_number_dialog_layout" />
+
+    <dialog
+        android:id="@+id/show_add_number_popup"
+        android:name="in.okcredit.merchant.customer_ui.ui.add_customer_dialog.AddNumberDialogScreen"
+        android:label="Add Number Popup"
+        tools:layout="@layout/add_number_dialog_layout" />
+
+    <dialog
+        android:id="@+id/show_txn_alert_popup"
+        android:name="in.okcredit.merchant.customer_ui.ui.buyer_txn_alert.CustomerTxnAlertDialogScreen"
+        android:label="CustomerTxnAlert Popup"
+        tools:layout="@layout/customer_txn_alert_dialog_screen" />
+
+    <fragment
+        android:id="@+id/customerReportScreen"
+        android:name="in.okcredit.merchant.customer_ui.ui.customerreports.CustomerReportsFragment"
+        android:label="CustomerReportsScreen"
+        tools:layout="@layout/customer_reports_fragment" />
+</navigation>

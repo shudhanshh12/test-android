@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+# collect all the files we are changing so that we only add them
+filesToFormat="$(git --no-pager diff --name-status --no-color --cached | awk '$1 != "D" { print $2}')"
+
+echo "files to format $filesToFormat"
+# apply spotless for for file changes, we use rachetFrom in spotless.gradle so it is running on files changed from develop.
+# It should be super fast Refer - https://github.com/diffplug/spotless/issues/511
+./gradlew -PdisableSpotlessCheck spotlessKotlinApply
+
+for sourceFilePath in $filesToFormat
+do
+  git add $sourceFilePath
+
+done;

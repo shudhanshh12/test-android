@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.RelativeLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    app:layoutName="Live Sales Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/grid_3">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/LightActionBarTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/liveSaleTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/grid_2"
+                    android:textAlignment="textStart"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    tool:visibility="visible" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    tool:background="@color/white"
+                    tool:visibility="gone">
+
+                    <View
+                        android:layout_width="170dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="56dp"
+                        android:background="@drawable/shape" />
+
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:layout_marginBottom="144dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/total_amount_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_6"
+        android:layout_above="@+id/separator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="@dimen/grid_3"
+        app:cardBackgroundColor="@color/grey50"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/grey200"
+        app:strokeWidth="1dp"
+        tool:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/grid_2"
+                android:text="@string/total_online_collection"
+                android:textAppearance="?textAppearanceBody1" />
+
+            <TextView
+                android:id="@+id/total_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/grid_2"
+                android:textAppearance="?textAppearanceHeadline4"
+                tool:text="₹2560" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/qr_code"
+        android:layout_centerHorizontal="true"
+        android:background="@color/link_pay_divider" />
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="@dimen/view_0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_3_half"
+        android:layout_marginBottom="14dp"
+        android:layout_toStartOf="@+id/center"
+        android:background="@drawable/circular_border_grey300_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tool:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/grid_3"
+            android:layout_height="@dimen/grid_3"
+            app:srcCompat="@drawable/ic_qr_code"
+            app:tint="@color/green_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="@string/show_qr_code"
+            android:textAllCaps="false"
+            android:textAppearance="?textAppearanceSubtitle4"
+            android:textColor="?colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_share_link_pay"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/grid_3_half"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/center"
+        android:background="@drawable/circle_background_dark_green"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tool:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/grid_3"
+            android:layout_height="@dimen/grid_3"
+            app:srcCompat="@drawable/ic_share_payment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_1"
+            android:drawablePadding="@dimen/grid_1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="@string/share_link_pay"
+            android:textAllCaps="false"
+            android:textAppearance="?textAppearanceSubtitle4"
+            android:textColor="@color/white"
+            tool:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/dimLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_add_destination_container"
+        android:layout_below="@+id/appbar"
+        android:background="@color/black_60"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:visibility="gone"
+        tool:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_add_destination_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/circular_border_on_top"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tool:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_add_payment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:text="@string/add_upi_id"
+            android:textAppearance="?textAppearanceSubtitle1" />
+
+        <TextView
+            android:id="@+id/tv_switch_payment_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/grid_1"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:paddingTop="@dimen/grid_1"
+            android:paddingBottom="@dimen/grid_1"
+            android:text="@string/add_bank_account"
+            android:textAppearance="?textAppearanceBody2"
+            android:textColor="@color/indigo_primary" />
+
+        <View
+            android:id="@+id/view_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_switch_payment_mode"
+            android:layout_marginTop="@dimen/grid_1"
+            android:background="@color/grey300" />
+
+        <TextView
+            android:id="@+id/tv_add_payment_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_separator"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:text="@string/required_to_accept_online_payments"
+            android:textAppearance="?textAppearanceBody2" />
+
+        <RelativeLayout
+            android:id="@+id/bank_account_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_6"
+            android:layout_below="@+id/tv_add_payment_description"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_4"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/circular_corners_selected_background"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tool:visibility="visible">
+
+            <ImageView
+                android:id="@+id/bank_icon"
+                android:layout_width="@dimen/grid_5_half"
+                android:layout_height="@dimen/grid_5_half"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/grid_3_half"
+                android:tint="@color/grey800"
+                app:srcCompat="@drawable/ic_account_balance_bank" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toStartOf="@+id/account_clear"
+                android:layout_toEndOf="@+id/bank_icon"
+                android:focusable="true"
+                android:hint="@string/account_number"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="18"
+                android:padding="0dp"
+                android:textAllCaps="true"
+                android:textColor="@color/grey800"
+                android:textColorHint="@color/grey400"
+                android:textSize="18sp"
+                app:backgroundTint="@color/transparent" />
+
+            <ImageView
+                android:id="@+id/account_clear"
+                android:layout_width="@dimen/grid_5"
+                android:layout_height="@dimen/grid_5"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/grid_1"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_cross" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_account_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bank_account_container"
+            android:layout_marginStart="@dimen/grid_4"
+            android:layout_marginBottom="-40dp"
+            android:background="@color/white"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="@string/account_number"
+            android:textAppearance="?textAppearanceCaption2"
+            android:textColor="?colorPrimary"
+            android:visibility="gone"
+            tool:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ifsc_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_6"
+            android:layout_below="@+id/bank_account_container"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/circular_corners_unselected_background"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tool:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ifsc_icon"
+                android:layout_width="@dimen/grid_5_half"
+                android:layout_height="@dimen/grid_5_half"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/grid_3_half"
+                android:tint="@color/grey800"
+                app:srcCompat="@drawable/ic_ifsc" />
+
+            <LinearLayout
+                android:id="@+id/ifsc_text_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ifsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:focusable="true"
+                    android:hint="@string/ifsc"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapCharacters|textVisiblePassword"
+                    android:maxLength="11"
+                    android:padding="0dp"
+                    android:textColor="@color/grey800"
+                    android:textColorHint="@color/grey400"
+                    android:textSize="18sp"
+                    app:backgroundTint="@color/transparent"
+                    app:textAllCaps="true" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ifsc_clear"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/grid_1"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_cross" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ifsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ifsc_container"
+            android:layout_marginStart="@dimen/grid_4"
+            android:layout_marginBottom="-36dp"
+            android:background="@color/white"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="@string/ifsc_code"
+            android:textAppearance="?textAppearanceCaption2"
+            android:visibility="gone"
+            tool:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ifsc_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ifsc_container"
+            android:layout_marginStart="@dimen/grid_2"
+            android:text="@string/invalid_ifsc"
+            android:textColor="@color/red_primary"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tool:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/upi_id_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_6"
+            android:layout_below="@+id/bank_account_container"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/circular_corners_selected_background"
+            android:orientation="horizontal"
+            tool:visibility="visible">
+
+            <ImageView
+                android:id="@+id/upi_icon"
+                android:layout_width="@dimen/grid_5_half"
+                android:layout_height="@dimen/grid_5_half"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/grid_3_half"
+                app:srcCompat="@drawable/ic_upi_icon"
+                app:tint="@color/grey800" />
+
+            <LinearLayout
+                android:id="@+id/upi_text_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/upi_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:focusable="true"
+                    android:hint="@string/upi_id"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:padding="0dp"
+                    android:textColor="@color/grey800"
+                    android:textColorHint="@color/grey400"
+                    android:textSize="18sp"
+                    app:backgroundTint="@color/transparent"
+                    app:textAllCaps="true" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/upi_clear"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/grid_1"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_cross" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_upi_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/upi_id_container"
+            android:layout_marginStart="@dimen/grid_4"
+            android:layout_marginBottom="-36dp"
+            android:background="@color/white"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="@string/upi_id"
+            android:textAppearance="?textAppearanceCaption2"
+            android:textColor="?colorPrimary"
+            tool:visibility="visible" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/bank_account_container"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/grid_4"
+            android:layout_marginEnd="@dimen/grid_2"
+            app:cardBackgroundColor="?colorPrimary"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            tool:visibility="visible">
+
+            <ImageView
+                android:id="@+id/submit_details"
+                android:layout_width="@dimen/grid_5"
+                android:layout_height="@dimen/grid_5"
+                android:layout_gravity="center"
+                android:padding="@dimen/grid_1"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_check" />
+
+            <ProgressBar
+                android:id="@+id/upi_loader"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/white"
+                tool:visibility="gone" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</in.okcredit.shared.performance.layout_perf.RelativeLayoutTracker>

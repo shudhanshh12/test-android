@@ -1,0 +1,174 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'project-report'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':resources')
+    implementation project(':secure_keys')
+
+    // navigation
+    implementation navigation.fragment
+    implementation navigation.fragmentKtx
+    implementation navigation.ui
+
+    // gson
+    api retrofit.gson
+
+    // Moshi
+    implementation moshi.core
+    kapt moshi.codegen
+
+    // time
+    api utility.jodaTime
+    api utility.trueTime
+    implementation utility.kotlin
+    api utility.philology
+    api utility.viewpump
+
+    implementation utility.permission
+    api utility.timber
+
+    // rxjava
+    api rx.java
+    api rx.android
+
+
+    // Retrofit
+    api network.retrofit
+    api network.retrofitRxAdapter
+    api network.gsonConverter
+    api network.gson
+    api network.okhttp3
+    api network.okhttpLoginInterceptor
+
+    // analytics
+    api analytics.mixpanel
+    api analytics.cleverTap
+    api analytics.appsflyer
+
+    //Room
+    api arch.room
+    api arch.roomRx
+    kapt arch.roomAnnotationProcessor
+
+    // work mager
+    api arch.workManagerRuntime
+    api arch.workManagerRuntimeKtx
+    api arch.workManagerRx
+
+    implementation arch.lifecycleCommonJava8
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    //dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+
+    // Firebase
+    implementation firebase.firebaseAnalytics
+    implementation firebase.firebaseMessaging
+    api firebase.firebasePerf
+    implementation firebase.firebaseCrashlytics
+
+    implementation androidX.multidex
+    implementation androidX.constraintLayout
+    implementation androidX.appcompact
+    implementation androidX.biometric
+    implementation androidX.ktx
+    implementation androidX.sharedPreferencesKtx
+
+    api playService.auth
+    api playService.location
+    api playService.googlePlayCore
+    implementation playService.map
+
+    api utility.coroutines
+    api utility.coroutinesRx2
+    api utility.apacheCommons
+    api utility.apacheCommonsCore
+    api utility.bugfender
+    implementation utility.guava
+
+    implementation rx.rxPreferences
+
+    api view.gridlayout
+    implementation view.advancedMaterialTap
+
+    // Image
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+    implementation imageDeps.textDrawable
+
+    // Chucker
+    debugApi "com.github.ChuckerTeam.Chucker:library:3.1.2", { exclude group: 'androidx.room' }
+    releaseApi "com.github.ChuckerTeam.Chucker:library-no-op:3.1.2", { exclude group: 'androidx.room' }
+    qaApi "com.github.ChuckerTeam.Chucker:library-no-op:3.1.2", { exclude group: 'androidx.room' }
+
+    //
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+
+    debugImplementation tools.flipper
+    debugImplementation tools.flipperNetworkPlugin
+    debugImplementation tools.soLoader
+
+    implementation view.textDrawable
+    implementation view.exoplyer
+    implementation view.lottie
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation unitTest.androidxTestCore
+    testImplementation unitTest.robolectric
+    testImplementation unitTest.androidxFragmentTesting
+}

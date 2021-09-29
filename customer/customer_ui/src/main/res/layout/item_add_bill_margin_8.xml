@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_bill_textview"
+    android:layout_width="84dp"
+    android:layout_height="84dp"
+    android:gravity="center"
+    android:padding="@dimen/_8dp"
+    android:text="@string/add_bills"
+    android:textAppearance="?textAppearanceSubtitle4"
+    android:textColor="@color/green_primary"
+    app:drawableTopCompat="@drawable/ic_camera_add" />

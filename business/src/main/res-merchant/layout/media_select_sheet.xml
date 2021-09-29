@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlMediaSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/trasparent"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:theme="@style/LightActionBarTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/llProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_title"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/ivProfilePhotoFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_above="@+id/llMediaOptions"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_account_125dp" />
+
+
+    <LinearLayout
+        android:id="@+id/llMediaOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:animateLayoutChanges="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="26dp"
+        android:weightSum="3"
+        android:paddingBottom="26dp">
+
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_weight="1"
+            android:id="@+id/viewBlank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/llDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fbDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:clipChildren="false"
+                android:tint="@color/white"
+                app:backgroundTint="@color/white"
+                app:elevation="6dp"
+                app:fabCustomSize="58dp"
+                app:tint="@color/red_primary"
+                app:srcCompat="@drawable/ic_delete" />
+
+            <TextView
+                android:id="@+id/tvDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/delete"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="1"
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+        <LinearLayout
+            android:id="@+id/llGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fbGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:clipChildren="false"
+                android:tint="@color/white"
+                app:backgroundTint="?colorPrimary"
+                app:elevation="6dp"
+                app:fabCustomSize="58dp"
+                app:srcCompat="@drawable/ic_add_gallery_56" />
+
+            <TextView
+                android:id="@+id/tvGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/gallery"
+                android:textAppearance="?textAppearanceSubtitle2" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_weight="1"
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/llCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fbCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:clipChildren="false"
+                android:tint="@color/white"
+                app:backgroundTint="?colorPrimary"
+                app:elevation="6dp"
+                app:fabCustomSize="58dp"
+                app:srcCompat="@drawable/ic_camera_56" />
+
+            <TextView
+                android:id="@+id/tvCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/camera"
+                android:textAppearance="?textAppearanceSubtitle2"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="1"
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">Profile me Sudhaar Karein</string>
+    <string name="t_001_multi_acc_title_new_biz">Naya Business Banaayein</string>
+    <string name="t_001_multi_acc_input_biz_name">Business / Dukaan ka Naam</string>
+    <string name="t_001_multi_acc_net_bal">Net Balance:</string>
+    <string name="t_001_multi_acc_net_bal_due">Udhaar</string>
+    <string name="t_001_multi_acc_net_bal_advance">Advance</string>
+    <string name="t_001_multi_acc_title_select_biz">Business Chunein</string>
+    <string name="t_001_multi_acc_msg_biz_added">Naya Business Banaaya Gaya</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">Business nahi bana paayein. Business banane ki adhiktam seema samapt ho gayi hai</string>
+</resources>

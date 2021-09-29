@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    //Base
+    implementation project(':base')
+
+    implementation project(':auth')
+    implementation project(':business:contract')
+    implementation project(':device')
+    implementation project(':individual:contract')
+
+    api project(':okstream:sdk')
+    implementation project(':okstream:contract')
+
+
+    // dagger
+    implementation dagger.core
+    kapt dagger.androidAnnotationProcessor
+    kapt dagger.annotationProcessor
+
+    // Moshi
+    implementation moshi.core
+    kapt moshi.codegen
+
+    // androidx
+    implementation androidX.annotation
+
+    // kotlin
+    implementation utility.kotlin
+
+}

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    app:layoutName="Supplier Report Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <RelativeLayout
+                android:id="@+id/rootLayout"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/grid_2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/bold"
+                    android:maxLines="1"
+                    android:text="@string/supplier_statement"
+                    android:textAppearance="?textAppearanceSubtitle1"
+                    android:textColor="@color/grey900"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/current_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar_title"
+                    android:layout_alignStart="@+id/toolbar_title"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/current_balance"
+                    android:textAppearance="?textAppearanceCaption2"
+                    tools:text="Current Balance " />
+
+                <TextView
+                    android:id="@+id/total_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar_title"
+                    android:layout_alignTop="@+id/current_balance"
+                    android:layout_marginStart="6dp"
+                    android:layout_toEndOf="@+id/current_balance"
+                    android:textAppearance="?textAppearanceSubtitle4"
+                    tools:text="₹15000" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey300"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <HorizontalScrollView
+        android:id="@+id/filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_2"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/education_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/date_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/grid_4"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/button_selector_light_green"
+                    android:drawableEnd="@drawable/ic_arrow_down_black"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_16dp"
+                    android:paddingTop="@dimen/_8dp"
+                    android:paddingEnd="@dimen/_16dp"
+                    android:paddingBottom="@dimen/_8dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/date_range"
+                    android:textAllCaps="false"
+                    android:textAppearance="?textAppearanceCaption2"
+                    tools:text="Date Range" />
+
+                <TextView
+                    android:id="@+id/this_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/grid_4"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/button_selector_light_green"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_16dp"
+                    android:paddingTop="@dimen/_8dp"
+                    android:paddingEnd="@dimen/_16dp"
+                    android:paddingBottom="@dimen/_8dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/this_month"
+                    android:textAllCaps="false"
+                    android:textAppearance="?textAppearanceCaption2"
+                    tools:text="@string/this_month" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/last_seven_days"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/grid_4"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/button_selector_light_green"
+                android:gravity="center"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:stateListAnimator="@null"
+                android:text="@string/last_7_days"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceCaption2"
+                tools:text="@string/last_7_days" />
+
+            <TextView
+                android:id="@+id/last_zero_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/grid_4"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/button_selector_light_green"
+                android:gravity="center"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:stateListAnimator="@null"
+                android:text="@string/last_zero_balance"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceCaption2"
+                tools:text="@string/last_zero_balance" />
+
+            <TextView
+                android:id="@+id/last_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/button_selector_light_green"
+                android:gravity="center"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:stateListAnimator="@null"
+                android:text="@string/last_month"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceCaption2"
+                tools:text="@string/last_month" />
+
+            <TextView
+                android:id="@+id/last_three_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/button_selector_light_green"
+                android:gravity="center"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:stateListAnimator="@null"
+                android:text="@string/last_three_month"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceCaption2"
+                tools:text="@string/last_three_month" />
+
+            <TextView
+                android:id="@+id/last_six_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/button_selector_light_green"
+                android:gravity="center"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:stateListAnimator="@null"
+                android:text="@string/last_six_month"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceCaption2"
+                tools:text="@string/last_six_month" />
+
+            <TextView
+                android:id="@+id/overall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/button_selector_light_green"
+                android:gravity="center"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:stateListAnimator="@null"
+                android:text="@string/overall"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceCaption2"
+                tools:text="@string/overall" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/balance_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/grid_4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/grid_4"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="9sp"
+        android:textAppearance="?textAppearanceHeadline4"
+        android:textColor="@color/red_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filters"
+        tools:text="₹8500" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_1_half"
+        android:text="@string/balance"
+        android:textAppearance="?textAppearanceCaption2"
+        app:layout_constraintEnd_toStartOf="@+id/balance_separator"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balance_amount"
+        tools:text="Balance" />
+
+    <View
+        android:id="@+id/balance_separator"
+        android:layout_width="1dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="6dp"
+        android:background="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="@+id/balance"
+        app:layout_constraintEnd_toStartOf="@+id/selected_date_range"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/balance"
+        app:layout_constraintTop_toBottomOf="@+id/balance_amount"
+        app:layout_constraintTop_toTopOf="@+id/balance" />
+
+    <TextView
+        android:id="@+id/selected_date_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/balance"
+        android:layout_marginStart="@dimen/grid_1_half"
+        android:layout_toEndOf="@+id/balance"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceSubtitle4"
+        app:layout_constraintBottom_toBottomOf="@+id/balance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/balance_separator"
+        app:layout_constraintTop_toTopOf="@+id/balance"
+        tools:text="1 Jan - 31 Jan, 2020" />
+
+    <View
+        android:id="@+id/txn_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="@dimen/grid_5_half"
+        android:background="@color/grey50"
+        app:layout_constraintTop_toBottomOf="@+id/selected_date_range" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="@dimen/grid_1"
+        android:text="@string/date"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceSubtitle4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txn_title_container"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_1"
+        android:layout_toStartOf="@+id/center_horizontal_view"
+        android:gravity="end"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="7sp"
+        android:layout_marginEnd="15dp"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceSubtitle4"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txn_title_container"
+        tools:text="Payment (5)" />
+
+    <TextView
+        android:id="@+id/selected_duration_total_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment"
+        android:layout_alignEnd="@+id/payment"
+        android:gravity="end"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="7sp"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="?colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/payment"
+        app:layout_constraintTop_toBottomOf="@+id/payment"
+        tools:text="₹15000" />
+
+    <TextView
+        android:id="@+id/credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/grid_1"
+        android:gravity="end"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="7sp"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceSubtitle4"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="@+id/center_horizontal_view"
+        app:layout_constraintTop_toTopOf="@+id/txn_title_container"
+        tools:text="Credit (10)" />
+
+    <TextView
+        android:id="@+id/selected_duration_total_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credit"
+        android:layout_alignEnd="@+id/credit"
+        android:gravity="end"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="7sp"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/red_primary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/credit"
+        app:layout_constraintTop_toBottomOf="@+id/credit"
+        tools:text="₹23500" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_horizontal_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/white_space"
+        app:layout_constraintTop_toBottomOf="@+id/txn_title_container"
+        tools:listitem="@layout/customerreports_view" />
+
+    <View
+        android:id="@+id/white_space"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/download_report"
+        style="@style/OKC.Button.Dark.Outline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/grid_5_half"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/download"
+        android:layout_marginTop="@dimen/_16dp"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceButton"
+        android:textColor="?colorPrimary"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="visible"
+        app:icon="@drawable/ic_archive"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/grid_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view"
+        tools:text="@string/download" />
+
+    <Space
+        android:id="@+id/vertical_guideline"
+        android:layout_width="@dimen/grid_2"
+        android:layout_height="@dimen/grid_5"
+        android:layout_marginBottom="@dimen/grid_5_half"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/share_report"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/grid_5_half"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/share"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14"
+        app:icon="@drawable/ic_whatsapp"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/grid_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/vertical_guideline"
+        app:layout_constraintTop_toTopOf="@+id/download_report"
+        tools:text="Share" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_collection_highlighter"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="56dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/share_report"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/dot_highlighter"
+        tools:visibility="visible" />
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

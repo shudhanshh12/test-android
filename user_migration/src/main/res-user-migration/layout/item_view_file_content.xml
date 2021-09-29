@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFileName"
+        style="@style/OKC.TextAppearance.Subtitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:ellipsize="middle"
+        app:layout_constraintEnd_toStartOf="@id/tvOpenPdf"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/rootView"
+        app:layout_constraintTop_toTopOf="@id/rootView"
+        tool:text="File Name snjdkjajkhjkafhjkahjkhkjadksjlah1"
+        android:singleLine="true" />
+
+
+    <TextView
+        android:id="@+id/tvOpenPdf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:maxLength="20"
+        android:text="@string/open_pdf"
+        android:padding="6dp"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/indigo_1"
+        app:layout_constraintBottom_toBottomOf="@id/tvFileName"
+        app:layout_constraintEnd_toEndOf="@id/rootView"
+        app:layout_constraintTop_toTopOf="@id/tvFileName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

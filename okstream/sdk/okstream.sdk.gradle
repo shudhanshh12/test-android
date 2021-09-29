@@ -1,0 +1,85 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BROKER_URL', "\"mqtt.staging.okcredit.in\""
+            buildConfigField "int", 'BROKER_PORT', '443'
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BROKER_URL', "\"mqtt.alpha.okcredit.in\""
+            buildConfigField "int", 'BROKER_PORT', '443'
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BROKER_URL', "\"mqtt.okcredit.io\""
+            buildConfigField "int", 'BROKER_PORT', '443'
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':okstream:contract')
+    implementation project(':analytics')
+    implementation project(':auth')
+
+    // dagger
+    implementation dagger.core
+    kapt dagger.androidAnnotationProcessor
+    kapt dagger.annotationProcessor
+
+    // androidx
+    implementation androidX.annotation
+
+    // kotlin
+    implementation utility.kotlin
+
+    //room
+    implementation arch.room
+    implementation arch.roomRx
+    kapt arch.roomAnnotationProcessor
+
+
+    // Moshi
+    implementation moshi.core
+    kapt moshi.codegen
+
+    // Mqtt
+    implementation network.hivemq
+    implementation network.sourceforgeStreams
+    implementation network.sourceforgeFuture
+}

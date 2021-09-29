@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close" />
+
+    <View
+        android:id="@+id/indicator_one"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/background_black_radius_2dp"
+        app:layout_constraintBottom_toBottomOf="@id/image_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_close" />
+
+    <View
+        android:id="@+id/indicator_two"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="12dp"
+        android:alpha="0.2"
+        android:background="@drawable/background_black_radius_2dp"
+        app:layout_constraintBottom_toBottomOf="@id/image_close"
+        app:layout_constraintStart_toEndOf="@+id/indicator_one"
+        app:layout_constraintTop_toTopOf="@id/image_close" />
+
+    <View
+        android:id="@+id/indicator_three"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="12dp"
+        android:alpha="0.2"
+        android:background="@drawable/background_black_radius_2dp"
+        app:layout_constraintBottom_toBottomOf="@id/image_close"
+        app:layout_constraintStart_toEndOf="@+id/indicator_two"
+        app:layout_constraintTop_toTopOf="@id/image_close" />
+
+    <View
+        android:id="@+id/indicator_four"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="12dp"
+        android:alpha="0.2"
+        android:background="@drawable/background_black_radius_2dp"
+        app:layout_constraintBottom_toBottomOf="@id/image_close"
+        app:layout_constraintStart_toEndOf="@+id/indicator_three"
+        app:layout_constraintTop_toTopOf="@id/image_close" />
+
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/epoxy_benefits"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_setup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_close" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/button_setup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="?colorPrimary"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/setup_online_payments"
+            android:textAllCaps="false"
+            android:textAppearance="@style/OKC.TextAppearance.Button"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/viewShine"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:background="@drawable/shine_effect"
+            android:translationX="-150dp"
+            android:visibility="gone" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/image_hand_nudge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_hand_sales"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/button_setup"
+        app:layout_constraintEnd_toEndOf="@+id/button_setup"
+        app:layout_constraintStart_toStartOf="@+id/button_setup"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

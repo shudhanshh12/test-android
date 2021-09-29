@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">प्रोफाईल दुरुस्त करा</string>
+    <string name="t_001_multi_acc_title_new_biz">नवीन व्यवसाय बनवा</string>
+    <string name="t_001_multi_acc_input_biz_name">व्यवसाय/ दुकानाचे नाव</string>
+    <string name="t_001_multi_acc_net_bal">निव्वळ शिल्लक:</string>
+    <string name="t_001_multi_acc_net_bal_due">देय रक्कम</string>
+    <string name="t_001_multi_acc_net_bal_advance">आगाऊ रक्कम</string>
+    <string name="t_001_multi_acc_title_select_biz">व्यवसाय निवडा</string>
+    <string name="t_001_multi_acc_msg_biz_added">नवीन व्यवसाय बनवला गेला</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">व्यवसाय बनवू शकलो नाही. व्यवसाय बनवण्याची जास्तीतजास्त सीमा संपली आहे</string>
+</resources>

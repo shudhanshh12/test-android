@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_otp">OTP enter karein</string>
+    <string name="otp_sent_message">OTP ke saath humne ek SMS aapke %1$s is phone number par bheja hai</string>
+    <string name="otp_incorrect">Galat OTP</string>
+    <string name="otp_expired">OTP expire hua</string>
+    <string name="resend_otp"><u>OTP resend karein</u></string>
+    <string name="forgot_pin"><u>PIN Bhool Gayein</u></string>
+    <string name="confirm_otp">Dobara vahi OTP likhein</string>
+    <string name="set_a_4_digit_pin">4 anko wala PIN set karein</string>
+    <string name="confirm_pin">Dobara vahi PIN likhein</string>
+    <string name="incorrect_pin">Galat PIN. Krupya for se koshish karein.</string>
+    <string name="enter_security_pin">Security PIN likhein</string>
+    <string name="security_setup_description">Apne customers ke details aur transaction data ko surakshit rakhne ke liye, apne app me security PIN set karein</string>
+    <string name="security_update_description">Humne password ko 4-digit pin me badal diya hai, aapke vartmaan password ke pehle 4-digits likhein</string>
+    <string name="confirm_fingerprint">Dobara fingerprint dein</string>
+    <string name="use_fingerprint">Fingerprint ka istemaal karein</string>
+    <string name="confirm_fingerprint_description">Suraksha ke liye kripaya dobara fingerprint dein</string>
+    <string name="use_pin">PIN ka istemaal karein</string>
+    <string name="four_digit_security_pin">4-Digit Security PIN</string>
+</resources>

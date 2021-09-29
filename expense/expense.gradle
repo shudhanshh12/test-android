@@ -1,0 +1,88 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://expense.staging.okcredit.in/v1.0/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://expense.alpha.okcredit.in/v1.0/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://expense.okcredit.in/v1.0/\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation androidX.appcompact
+    implementation androidX.ktx
+
+    implementation project(':auth')
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':device')
+    implementation project(':business:contract')
+
+    implementation utility.guava
+
+    // dagger
+    implementation dagger.core
+    kapt dagger.androidAnnotationProcessor
+    kapt dagger.annotationProcessor
+
+    // retrofit
+    implementation retrofit.retrofit
+    implementation retrofit.gsonConverter
+    implementation retrofit.retrofitRxAdapter
+
+    // androidx
+    implementation androidX.annotation
+
+    implementation utility.kotlin
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+
+    // Unit testing
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    app:layoutName="Enter Pin Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/enter_security_pin"
+                android:textAppearance="?textAppearanceSubtitle1"
+                android:textColor="@color/grey900"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height_dimension"
+        android:background="@color/grey300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar" />
+
+
+    <ImageView
+        android:id="@+id/ivLock"
+        android:layout_width="@dimen/spacing_32"
+        android:layout_height="@dimen/spacing_32"
+        android:layout_marginTop="@dimen/_24dp"
+        android:src="@drawable/ic_app_lock_settings"
+        android:tint="@color/green_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar" />
+
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pin_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24dp"
+        app:cursorVisible="false"
+        app:filledBackground="@drawable/selected_dot"
+        app:hidePin="true"
+        app:inputType="number"
+        android:focusable="true"
+        app:forceKeyboard="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLock"
+        app:password="true"
+        app:pinBackground="@drawable/unselected_dot"
+        app:pinHeight="@dimen/spacing_12"
+        app:pinLength="4"
+        app:pinWidth="@dimen/spacing_12"
+        app:splitWidth="8dp" />
+
+
+    <TextView
+        android:id="@+id/tvInvalid_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24dp"
+        android:text="@string/incorrect_pin"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/red_primary"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pin_view" />
+
+    <TextView
+        android:id="@+id/forgot_pin"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="@dimen/_24dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="2dp"
+        android:text="@string/forgot_pin"
+        android:textColor="@color/indigo_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/use_finger_print_btn"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/use_finger_print_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/grid_6"
+        android:layout_marginTop="@dimen/dimen_144dp"
+        android:layout_marginBottom="@dimen/_24dp"
+        android:background="@drawable/circle_stroke_grey_1dp"
+        android:drawableStart="@drawable/ic_fingerprint"
+        android:drawablePadding="@dimen/_8dp"
+        android:gravity="center"
+        android:paddingStart="21dp"
+        android:paddingEnd="21dp"
+        android:text="@string/use_fingerprint"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInvalid_pin"
+        tools:visibility="visible" />
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

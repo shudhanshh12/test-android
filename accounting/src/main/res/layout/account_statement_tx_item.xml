@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tool:ignore="RtlHardcoded">
+
+    <LinearLayout
+        android:id="@+id/tx_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/spacing_chat_view_item"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:paddingTop="2dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/grey200">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/online_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/grey100"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textAppearance="?textAppearanceSubtitle4"
+                    android:textColor="@color/grey700"
+                    android:text="@string/online_payment" />
+
+                <TextView
+                    android:id="@+id/customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="240dp"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_16dp"
+                    android:paddingRight="@dimen/_16dp"
+                    android:textAppearance="?textAppearanceCaption2"
+                    tool:text="gfdg fjhdsgf sfhgsdjh hsdgfjhsd" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_16dp"
+                    android:paddingRight="@dimen/_16dp">
+
+                    <TextView
+                        android:id="@+id/tx_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:textAppearance="?textAppearanceHeadline5"
+                        tool:text="300" />
+
+                    <TextView
+                        android:id="@+id/tx_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_weight="1"
+                        android:textAppearance="?textAppearanceCaption2"
+                        android:textColor="@color/grey600"
+                        tool:text="21-10-1993" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</FrameLayout>

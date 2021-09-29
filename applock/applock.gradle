@@ -1,0 +1,98 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply plugin: "androidx.navigation.safeargs"
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-applock.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-applock.pro'
+        }
+    }
+
+}
+
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':ab')
+    implementation project(':shared')
+    implementation project(':device')
+    implementation project(':analytics')
+    implementation project(':app:app_contract')
+    implementation project(':resources')
+    implementation project(':business:contract')
+    implementation project(':onboarding')
+    implementation project(':auth')
+    implementation project(':backend:contract')
+    implementation project(':applock:contract')
+    implementation project(':individual:contract')
+
+    implementation navigation.fragment
+    implementation navigation.fragmentKtx
+    implementation navigation.ui
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    implementation androidX.ktx
+    implementation androidX.constraintLayout
+
+    implementation utility.coroutines
+    implementation utility.coroutinesRx2
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    implementation view.lottie
+    implementation view.otpview
+
+    implementation view.pinview
+    implementation androidX.biometric
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+
+}

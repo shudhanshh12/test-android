@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:paddingTop="@dimen/spacing_chat_view_item">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_load_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        style="@style/OKC.Button.Dark.Outline.Small"
+        app:icon="@drawable/ic_arrow_down_black"
+        android:textAllCaps="false"
+        android:text="@string/load_settled_entries" />
+
+</FrameLayout>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey50"
+    app:layoutName="Business Health Dashboard Fragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingTop="24dp"
+        android:theme="@style/Base.OKCTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:lineSpacingExtra="7sp"
+            android:maxLines="1"
+            android:text="@string/t_004_biz_health_header_title"
+            android:textAppearance="@style/OKC.TextAppearance.Headline6"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Dashboard" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:lineSpacingExtra="5sp"
+            android:maxLines="1"
+            android:text="@string/t_004_biz_health_header_subtitle"
+            android:textColor="@color/green_lite"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            tools:text="Keep a track of total credit and payment" />
+
+        <TextView
+            android:id="@+id/selected_time_cadence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawableEnd="@drawable/ic_arrow_down_white"
+            android:drawablePadding="4dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textAppearance="@style/Button.Normal"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:text="Yesterday: 07 Jun"
+            tools:visibility="visible" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--START: Last updated on banner -->
+    <View
+        android:id="@+id/last_updated_at_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/indigo_lite_1"
+        app:layout_constraintBottom_toBottomOf="@+id/last_updated_at"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <TextView
+        android:id="@+id/last_updated_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:lineSpacingExtra="5sp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:textColor="@color/grey900"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/last_updated_at_container"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        tools:text="Last updated on 07 Jun, 01:15 pm" />
+    <!--END: Last updated on banner -->
+
+    <!--START: Groups-->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/dashboard_data_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="dashboard_data_scrollview,last_updated_at,last_updated_at_container" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/loading_view_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="loading_progress_bar,loading_description_text" />
+
+    <!--END: Groups-->
+
+    <!--START: Network error image-->
+    <ImageView
+        android:id="@+id/network_error_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appbar"
+        tools:src="@drawable/bg_network_error"
+        tools:visibility="gone" />
+    <!--END: Network error image-->
+
+    <!--START: Loading state-->
+
+    <ProgressBar
+        android:id="@+id/loading_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:progressTint="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loading_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="5sp"
+        android:textColor="@color/grey600"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loading_progress_bar"
+        tools:text="Loading. Please wait…" />
+
+    <!--END: Loading state-->
+
+    <ScrollView
+        android:id="@+id/dashboard_data_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_updated_at_container">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--START: Guidelines-->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/card_vertical_guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/card_vertical_guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/card_content_vertical_guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="24dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/card_content_vertical_guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="24dp" />
+            <!--END: Guidelines-->
+
+            <!--START: Metrics card view container-->
+            <View
+                android:id="@+id/metrics_card_container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_white_corner_radius_8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/show_more_textview"
+                app:layout_constraintEnd_toStartOf="@+id/card_vertical_guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/card_vertical_guideline_start"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/total_account_balance_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/grey800"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/card_content_vertical_guideline_start"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="TOTAL ACCOUNT BALANCE" />
+
+            <TextView
+                android:id="@+id/total_account_balance_value"
+                style="@style/OKC.TextAppearance.Headline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:textColor="#d3340f"
+                app:layout_constraintStart_toStartOf="@+id/card_content_vertical_guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/total_account_balance_title"
+                tools:text="₹15,00,000"
+                tools:textColor="#d3340f" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/metrics_internal_horizontal_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/total_account_balance_value" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_circle_payment"
+                app:layout_constraintStart_toStartOf="@+id/card_content_vertical_guideline_start"
+                app:layout_constraintTop_toTopOf="@+id/metrics_internal_horizontal_guideline" />
+
+            <TextView
+                android:id="@+id/payment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/grey700"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/metrics_internal_horizontal_guideline"
+                tools:text="PAYMENT" />
+
+            <TextView
+                android:id="@+id/payment_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:letterSpacing="0.015"
+                android:textColor="@color/green_primary"
+                android:textSize="16sp"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="2sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/view15"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/payment_title"
+                tools:text="₹50,00,000" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="@+id/card_vertical_guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/card_vertical_guideline_start"
+                app:layout_constraintTop_toTopOf="@+id/metrics_internal_horizontal_guideline" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_circle_credit"
+                app:layout_constraintStart_toEndOf="@+id/view15"
+                app:layout_constraintTop_toTopOf="@+id/metrics_internal_horizontal_guideline" />
+
+            <TextView
+                android:id="@+id/credit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/grey700"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toBottomOf="@+id/metrics_internal_horizontal_guideline"
+                tools:text="CREDIT" />
+
+            <TextView
+                android:id="@+id/credit_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:letterSpacing="0.015"
+                android:textColor="@color/red_ada"
+                android:textSize="16sp"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="2sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/card_content_vertical_guideline_end"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toBottomOf="@+id/credit_title"
+                tools:text="₹50,00,000" />
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/grey300"
+                app:layout_constraintEnd_toEndOf="@+id/card_content_vertical_guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/card_content_vertical_guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/view15" />
+
+            <TextView
+                android:id="@+id/show_more_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_arrow_forward_grey600"
+                android:drawablePadding="4dp"
+                android:lineSpacingExtra="5sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/t_004_biz_health_balance_section_cta_show_more"
+                android:textColor="@color/grey600"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/card_content_vertical_guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/view16"
+                tools:text="Show More" />
+
+            <!--END: Metrics card view container-->
+
+            <!--START: Trends title and caption-->
+            <TextView
+                android:id="@+id/trends_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:letterSpacing="0.015"
+                android:textColor="@color/grey800"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/card_content_vertical_guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/metrics_card_container"
+                tools:text="Last 7 Days" />
+
+            <!--END: Trends title and caption-->
+
+            <!--START: Trends recycler view-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/trends_recycler_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toStartOf="@+id/card_vertical_guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/card_vertical_guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/trends_title"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_trend_card_layout" />
+            <!--END: Trends recycler view-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/snackbar_coordinator_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

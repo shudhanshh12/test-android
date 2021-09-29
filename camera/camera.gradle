@@ -1,0 +1,136 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+kapt {
+    correctErrorTypes = true
+    useBuildCache = true
+}
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-camera.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-camera.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation firebase.firebasePerf
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':analytics')
+    implementation project(':resources')
+    implementation project(':base')
+    implementation project(':shared')
+    implementation project(':ab')
+    implementation project(':fileupload')
+    implementation project(':camera:camera_contract')
+
+
+
+    implementation utility.kotlin
+    implementation androidX.appcompact
+    implementation androidX.ktx
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation project(':resources')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+    implementation view.viewPager
+
+    // coroutine
+    api utility.coroutines
+    api utility.coroutinesRx2
+
+    // App compat and UI things
+    implementation androidX.appcompact
+
+
+    implementation camerax_3.camera_view
+    implementation camerax_3.camerax_camera
+    implementation camerax_3.camera_extensions
+    implementation camerax_3.camera_lifecycle
+    implementation camerax_3.camera_core
+
+
+    // App compat and UI things
+    implementation androidX.appcompact
+    implementation androidX.constraintLayout
+    implementation androidX.viewpager2
+
+    implementation rx.java
+    implementation rx.android
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+    // kotlin
+    implementation utility.kotlin
+    implementation imageDeps.glide
+    implementation view.textDrawable
+
+    // playservice
+    api playService.googlePlayAds
+
+    // Utility
+    api utility.jodaTime
+    implementation firebase.auth
+    implementation firebase.firestore
+    implementation firebase.uiFirestore
+    implementation view.material
+    implementation firebase.database
+
+    // test
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+
+    implementation view.material
+
+}

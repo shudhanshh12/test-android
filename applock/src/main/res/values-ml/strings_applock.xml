@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_otp">OTP നൽകൂ</string>
+    <string name="otp_sent_message">OTP അടങ്ങിയ SMS നിങ്ങളുടെ ഫോൺ നമ്പറായ %1$sൽ ഉടനെ ലഭിക്കുന്നതായിരിക്കും</string>
+    <string name="otp_incorrect">OTP തെറ്റാണ്</string>
+    <string name="otp_expired">OTP സമയം കഴിഞ്ഞു</string>
+    <string name="resend_otp"><u>OTP വീണ്ടും അയക്കാം</u></string>
+    <string name="forgot_pin"><u>പിൻ മറന്നോ?</u></string>
+    <string name="confirm_otp">OTP ഉറപ്പുവരുത്തുക</string>
+    <string name="set_a_4_digit_pin">4 അക്ക PIN നൽകുക</string>
+    <string name="confirm_pin">PIN ഉറപ്പുവരുത്തുക</string>
+    <string name="incorrect_pin">പിൻ തെറ്റാണ്. ദയവായി വീണ്ടും ശ്രമിക്കൂ.</string>
+    <string name="enter_security_pin">സെക്യൂരിറ്റി PIN നൽകുക</string>
+    <string name="security_setup_description">നിങ്ങളുടെ കസ്റ്റമേഴ്സിന്റെ വിവരങ്ങളുടെ സുരക്ഷ ഉറപ്പുവരുത്തുന്നതിന് സെക്യൂരിറ്റി PIN സെറ്റപ്പ് ചെയ്യാം</string>
+    <string name="security_update_description">പാസ്‌വേഡ് ഞങ്ങൾ 4 അക്ക പിൻ ആക്കി പുതുക്കിയിരിക്കുന്നു, നിങ്ങളുടെ നിലവിലെ പാസ്‌വേർഡിന്റെ ആദ്യ 4 അക്കങ്ങൾ നൽകുക</string>
+    <string name="confirm_fingerprint">ഫിംഗർ പ്രിന്റ് ഉറപ്പുവരുത്തുക</string>
+    <string name="use_fingerprint">ഫിംഗർ പ്രിന്റ് നൽകാം</string>
+    <string name="confirm_fingerprint_description">സുരക്ഷയ്ക്കായി ദയവായി നിങ്ങളുടെ വിരലടയാളം ഉറപ്പുവരുത്തുക</string>
+    <string name="use_pin">പിൻ ഉപയോഗിക്കുക</string>
+    <string name="four_digit_security_pin">4 അക്ക സുരക്ഷാ പിൻ</string>
+</resources>

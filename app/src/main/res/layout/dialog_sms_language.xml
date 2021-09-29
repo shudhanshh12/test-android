@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey50"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?colorPrimary"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_language" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/sms_language"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/select_sms_language"
+                android:textColor="@color/grey700"
+                android:textSize="14sp" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:scrollbars="vertical">
+
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/english"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language_english"
+                        android:checked="true"
+                        android:buttonTint="?colorPrimary"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/hindi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language_hindi"
+                        android:buttonTint="?colorPrimary"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/panjabi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language_punjabi"
+                        android:buttonTint="?colorPrimary"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/malayalam"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language_malayalam"
+                        android:buttonTint="?colorPrimary"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/hinglish"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="?colorPrimary"
+                        android:text="@string/hinglish"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/marathi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language_marathi"
+                        android:buttonTint="?colorPrimary"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/tamil"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language_tamil"
+                        android:buttonTint="?colorPrimary"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/telugu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language_telugu"
+                        android:buttonTint="?colorPrimary"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/bengali"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language_bengali"
+                        android:buttonTint="?colorPrimary"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/gujarati"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language_gujarati"
+                        android:buttonTint="?colorPrimary"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/kannada"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/language_kannada"
+                        android:buttonTint="?colorPrimary"
+                        android:textSize="14sp"/>
+
+                </RadioGroup>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?colorPrimary"
+                    android:textAppearance="?textAppearanceSubtitle2"
+                    android:text="@string/cancel"
+                    android:textAllCaps="true"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?colorPrimary"
+                    android:textAppearance="?textAppearanceSubtitle2"
+                    android:text="@string/ok"
+                    android:textAllCaps="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

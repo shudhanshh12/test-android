@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_rounded_grey50"
+    android:backgroundTint="@color/red_lite"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:paddingStart="8dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="16dp"
+    tools:backgroundTint="@color/grey50">
+
+    <TextView
+        android:id="@+id/t_004_bulk_voice_txn_intermediate_state_failed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/t_004_bulk_voice_txn_intermediate_state_failed"
+        android:textColor="@color/red_ada"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_cross"
+        app:drawableTint="@color/red_ada"
+        app:layout_constraintEnd_toStartOf="@id/retry_icon"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/transcript"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:textColor="@color/grey600"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@id/retry_icon"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/t_004_bulk_voice_txn_intermediate_state_failed"
+        app:layout_constraintTop_toBottomOf="@id/t_004_bulk_voice_txn_intermediate_state_failed"
+        tools:text="Somnath pe 10 lakh udhaar chadao" />
+
+    <ImageView
+        android:id="@+id/retry_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_draft_parse_retry"
+        app:tint="@color/grey400"
+        tools:tint="@color/grey600" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

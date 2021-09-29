@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# TutorialAddCustomer Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/otp_verification_flow"
+    app:startDestination="@id/otp_verification_screen">
+
+    <fragment
+        android:id="@+id/otp_verification_screen"
+        android:name="in.okcredit.onboarding.otp_verification.OtpVerificationFragment"
+        android:label="OtpVerificationScreen"
+        tools:layout="@layout/otp_verification_fragment">
+
+    </fragment>
+
+</navigation>

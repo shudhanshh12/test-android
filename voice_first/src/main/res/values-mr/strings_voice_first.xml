@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okassistant_greeting">नमस्कार 🙏मी आहे OkAssistant !!</string>
+    <string name="okassistant_education">आपला आवाज ओळखण्यासाठी मला थोडी मदत हवी आहे.\n\nकृपया माईकचे बटण दाबा आणि खालील मजकूर स्पष्ट आवाजात वाचून रेकॉर्ड करा.</string>
+    <string name="read_this">हे वाचा</string>
+    <string name="invalid_recording">अमान्य रेकॉर्डिंग</string>
+    <string name="task_complete">पूर्ण झाले</string>
+    <string name="okassistant_retry">पुन्हा प्रयत्न करा</string>
+    <!-- /* Bulk Add by voice -->
+    <string name="t_004_bulk_voice_txn_main_headline">बोला आणि व्यवहार जोडा</string>
+    <string name="t_004_bulk_voice_txn_main_caption">फक्त बोलून लवकर काम पूर्ण करा</string>
+    <string name="t_004_bulk_voice_txn_date_field">व्यवहाराची तारीख</string>
+    <string name="t_004_bulk_voice_txn_body_headline">इंग्रजी किंवा हिंदीत बोला</string>
+    <string name="t_004_bulk_voice_txn_body_english_example">Sameer 100 rupees credit / Sameer 100 rupees payment</string>
+    <string name="t_004_bulk_voice_txn_body_subtitle">किंवा</string>
+    <string name="t_004_bulk_voice_txn_hinglish_example">Sameer ki 100 rupaye ki udhaari / Sameer ka 100 rupaye ka payment</string>
+    <string name="t_004_speech_eg_title">इंग्रजी किंवा हिंदीत बोला</string>
+    <string name="t_004_speech_eg_caption_credit">उधार जोडण्यासाठी, बोला</string>
+    <string name="t_004_speech_eg_credit_desc">“Sameer 100 rupees credit” or “Sameer ki 100 rupaye ki udhaari”</string>
+    <string name="t_004_speech_eg_caption_payment">पेमेंट जोडण्यासाठी, बोला</string>
+    <string name="t_004_speech_eg_payment_desc">“Sameer 100 rupees payment” or “Sameer ka 100 rupaye ka payment”</string>
+    <string name="t_004_speech_try_again_error_desc">क्षमा करा, समजू शकलो नाही. कृपया माईक बटन दाबून पुन्हा बोला.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_processing">प्रोसेस होत आहे…</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_failed">प्रोसेस असफल! कृपया पुन्हा प्रयत्न करा.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_incomplete">कृपया पूर्ण माहिती जोडा</string>
+    <string name="t_004_bulk_voice_txn_voice_transcript_label">आपण हे बोललात</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_credit">उधार</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_payment">पेमेंट</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_credit">दिलेले</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_payment">मिळाले</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_txn_type">व्यवहार</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_add_note">टिपण (ऐच्छिक)</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_amount">रक्कम</string>
+    <string name="t_004_bulk_voice_txn_delete">हटवा</string>
+    <string name="t_004_bulk_voice_txn_update">अद्यतनित करा</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_saved">व्यवहार अपडेट झाला</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_deleted">व्यवहार हटवला</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_edit_discarded">व्यवहारात केलेले बदल सेव्ह झाले नाही</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_load_failed">व्यवहार लोड करू शकत नाही</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_title">नाव निवडा</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_search_more">अधिक नावे शोधा</string>
+    <string name="t_004_bulk_voice_txn_select_name_hint_text">नाव निवडा किंवा शोधा</string>
+    <string name="t_004_bulk_voice_txn_confirm_save_title">सेव्ह करण्यापूर्वी व्यवहार तपासून बघा</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_date_of_txn">व्यवहाराची तारीख - %s</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_txn_not_saved_caption">₹0 रक्कम, प्रोसेस होणारे/ असफल किंवा अपूर्ण माहिती असणारे व्यवहार सेव्ह होणार नाहीत.</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_blocked_merchants">जर आपण एखाद्या ग्राहकाला/ सप्लायरला ब्लॉक केले असेल, किंवा आपल्याला एखाद्या ग्राहकाने/ सप्लायरने ब्लॉक केले असेल, तर जोडलेला व्यवहार सेव्ह होणार नाही.</string>
+    <string name="t_004_bulk_voice_txn_customer_count">%1s ग्राहक,</string>
+    <string name="t_004_bulk_voice_txn_supplier_count">%1s सप्लायर</string>
+    <string name="t_004_bulk_voice_txn_transaction_saved">व्यवहार सेव्ह झाला</string>
+    <string name="t_004_bulk_voice_txn_transaction_cancelled">व्यवहार रद्द झाला</string>
+    <!-- Bulk Add by voice */ -->
+</resources>

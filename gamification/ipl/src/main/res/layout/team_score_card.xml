@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvTeamScoreCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvWinningTeamGuess"
+            style="@style/TextAppearance.OKCTheme.Caption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_curved_indigo"
+            android:text="@string/winning_team_guess"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvExpiryTime"
+            style="@style/TextAppearance.OKCTheme.Caption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_curved_green"
+            android:text="@string/winning_team_guess"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/match_time"
+            style="@style/TextAppearance.OKCTheme.Caption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_layout"
+            android:backgroundTint="@color/green_primary"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Sep 15 | 05:09 PM"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvLive"
+            style="@style/TextAppearance.OKCTheme.Caption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_layout"
+            android:text="@string/live"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvSeriesName"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="start"
+            android:textColor="@color/grey600"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvWinningTeamGuess"
+            tools:text="Indian premier league 2020 • 1st Match" />
+
+        <ImageView
+            android:id="@+id/ivTeamHome"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSeriesName"
+            app:srcCompat="@drawable/ic_person_placeholder" />
+
+        <TextView
+            android:id="@+id/tvSelectTeamHome"
+            style="@style/OKC.TextAppearance.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="start"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTeamHome"
+            app:layout_constraintStart_toEndOf="@+id/ivTeamHome"
+            app:layout_constraintTop_toTopOf="@+id/ivTeamHome"
+            tools:text="CSK" />
+
+        <TextView
+            android:id="@+id/home_team_chosen_hint"
+            style="@style/OKC.TextAppearance.Subtitle3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/your_guess"
+            android:textColor="@color/green_primary"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTeamHome"
+            app:layout_constraintEnd_toStartOf="@id/tvTeamHomeScore"
+            app:layout_constraintStart_toEndOf="@+id/tvSelectTeamHome"
+            app:layout_constraintTop_toTopOf="@+id/ivTeamHome"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvTeamHomeScore"
+            style="@style/OKC.TextAppearance.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTeamHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivTeamHome"
+            tools:text="156-8 (16.4)" />
+
+        <ImageView
+            android:id="@+id/ivTeamAway"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivTeamHome"
+            app:srcCompat="@drawable/ic_person_placeholder" />
+
+        <TextView
+            android:id="@+id/tvSelectTeamAway"
+            style="@style/OKC.TextAppearance.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="start"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTeamAway"
+            app:layout_constraintStart_toEndOf="@+id/ivTeamAway"
+            app:layout_constraintTop_toTopOf="@+id/ivTeamAway"
+            tools:text="KKR" />
+
+        <TextView
+            android:id="@+id/away_team_chosen_hint"
+            style="@style/OKC.TextAppearance.Subtitle3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/your_guess"
+            android:textColor="@color/green_primary"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTeamAway"
+            app:layout_constraintEnd_toStartOf="@id/tvTeamAwayScore"
+            app:layout_constraintStart_toEndOf="@+id/tvSelectTeamAway"
+            app:layout_constraintTop_toTopOf="@+id/ivTeamAway"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvTeamAwayScore"
+            style="@style/OKC.TextAppearance.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSelectTeamAway"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvSelectTeamAway"
+            tools:text="0-0 (1)" />
+
+
+        <TextView
+            android:id="@+id/tvPredictionMeter"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/prediction_meter"
+            android:textColor="@color/grey600"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivTeamAway" />
+
+        <ProgressBar
+            android:id="@+id/pbPrediction"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progressDrawable="@drawable/curved_progressbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPredictionMeter" />
+
+        <TextView
+            android:id="@+id/tvTeamHome"
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pbPrediction"
+            tools:text="CSK - 35%" />
+
+        <TextView
+            android:id="@+id/tvTeamAway"
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pbPrediction"
+            tools:text="KKR - 65%" />
+
+        <View
+            android:id="@+id/viewLineSeparator"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey100"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTeamHome"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvWinStatus"
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/win_status"
+            android:textColor="@color/indigo_primary"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewLineSeparator"
+            tools:text="CSK won. You've earned 50 extra points"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvNiceChoice"
+        style="@style/OKC.TextAppearance.Subtitle1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="46dp"
+        android:drawablePadding="24dp"
+        android:gravity="center"
+        android:text="@string/nice_choice"
+        android:visibility="gone"
+        app:drawableTopCompat="@drawable/bg_nice_choice" />
+
+
+</androidx.cardview.widget.CardView>

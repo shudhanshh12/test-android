@@ -1,0 +1,121 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.staging.okcredit.in/v1.0/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.alpha.okcredit.in/v1.0/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.okcredit.in/v1.0/\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-accounting_core.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-accounting_core.pro'
+        }
+    }
+
+    configurations {
+        implementation {
+            exclude group: 'com.google.android.gms', module: 'play-services-ads'
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':shared')
+    implementation project(':ab'), { exclude group: 'com.google.guava', module: 'listenablefuture' }
+    implementation project(':analytics')
+    implementation project(':fileupload')
+    implementation project(':accounting_core:contract')
+    implementation project(':business:contract')
+
+    implementation androidX.appcompact
+    implementation androidX.ktx
+
+    api rx.java
+    api rx.android
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.moshiConverter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+    implementation retrofit.okhttp3
+
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+
+    implementation utility.kotlin
+    implementation utility.timber
+    implementation utility.jodaTime
+    implementation utility.trueTime
+    implementation utility.guava
+
+    implementation arch.room
+    implementation arch.roomRx
+    implementation arch.roomKtx
+    kapt arch.roomAnnotationProcessor
+
+    // ------------------------------------------------------------
+    // Testing
+    // ------------------------------------------------------------
+    androidTestImplementation unitTest.jUnit
+    androidTestImplementation unitTest.truth
+
+    // Moshi
+    implementation moshi.core
+    kapt moshi.codegen
+
+    // Aws
+    implementation aws.awsS3
+
+    implementation utility.guava
+
+    // Unit testing
+    testImplementation unitTest.androidxTestCore
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation unitTest.robolectric
+}

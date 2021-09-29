@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_inapp_icon"
+        android:layout_width="@dimen/grid_12"
+        android:layout_height="@dimen/grid_12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/grid_3"
+        app:srcCompat="@drawable/ic_corona_go_go_corona" />
+
+    <TextView
+        android:id="@+id/tv_insurance_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_inapp_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_3"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:text="@string/protect_your_family"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceButton"
+        tools:text="Protect yourself &amp; Family" />
+
+    <TextView
+        android:id="@+id/tv_insurance_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_insurance_title"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_1"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/okcredit_ab_aapki_wealth"
+        android:textColor="@color/grey800"
+        android:textSize="12sp"
+        tools:text="OkCredit ab aapki wealth ke saath-saath health ka bhi khayal rakhega" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_insurance_description"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@color/trasparent_black" />
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="@dimen/view_0dp"
+        android:layout_height="@dimen/view_0dp"
+        android:layout_below="@+id/separator"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/tv_not_now"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/grid_6"
+        android:layout_below="@+id/separator"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:layout_marginBottom="@dimen/grid_2"
+        android:layout_toStartOf="@+id/center"
+        android:background="@drawable/circle_background_grey_filled"
+        android:drawableStart="@drawable/ic_close_white_24dp"
+        android:drawablePadding="@dimen/grid_1"
+        android:gravity="center"
+        android:paddingStart="@dimen/grid_2"
+        android:paddingEnd="@dimen/grid_2"
+        android:text="@string/not_now"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceButton"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/grid_6"
+        android:layout_below="@+id/separator"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginBottom="@dimen/grid_2"
+        android:layout_toEndOf="@+id/center"
+        android:background="@drawable/circle_background_dark_green"
+        android:drawableStart="@drawable/ic_check"
+        android:drawablePadding="@dimen/grid_1"
+        android:gravity="center"
+        android:paddingStart="@dimen/grid_2"
+        android:paddingEnd="@dimen/grid_2"
+        android:text="@string/yes_i_need"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceButton"
+        android:textColor="@color/white"
+        tools:textColor="@color/white" />
+
+</RelativeLayout>

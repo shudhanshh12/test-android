@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">ಪ್ರೊಫೈಲ್ ಎಡಿಟ್ ಮಾಡಿ</string>
+    <string name="t_001_multi_acc_title_new_biz">ಹೊಸ ವ್ಯವಹಾರ ರಚಿಸಿ</string>
+    <string name="t_001_multi_acc_input_biz_name">ವ್ಯವಹಾರ / ಅಂಗಡಿ ಹೆಸರು</string>
+    <string name="t_001_multi_acc_net_bal">ನಿವ್ವಳ ಬಾಕಿ:</string>
+    <string name="t_001_multi_acc_net_bal_due">ಬಾಕಿ</string>
+    <string name="t_001_multi_acc_net_bal_advance">ಮುಂಗಡ</string>
+    <string name="t_001_multi_acc_title_select_biz">ವ್ಯವಹಾರ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="t_001_multi_acc_msg_biz_added">ಹೊಸ ವ್ಯವಹಾರವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಚಿಸಲಾಗಿದೆ</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">ಬಿಸ್‌ನೆಸ್ ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಗರಿಷ್ಠ ಬಿಸ್‌ನೆಸ್ ಕೌಂಟ್ ಲಿಮಿಟ್ ತಲುಪಿದೆ</string>
+</resources>

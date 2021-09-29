@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okassistant_greeting">ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ 🙏🏻 ਮੈਂ ਹਾਂ OkAssistant !!</string>
+    <string name="okassistant_education">ਮੈਨੂੰ ਤੁਹਾਡੀ ਅਵਾਜ਼ ਨੂੰ ਪਛਾਣਨ ਲਈ ਕੁਝ ਮਦਦ ਦੀ ਜ਼ਰੂਰਤ ਹੈ।\n\nਰਿਕਾਰਡ ਕਰਨ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਮਾਈਕ ਬਟਨ ਨੂੰ ਦਬਾਓ ਅਤੇ ਹੇਠਾਂ ਦਿੱਤੇ ਟੈਕਸਟ ਨੂੰ ਸਪੱਸ਼ਟ ਆਵਾਜ਼ ਵਿਚ ਪੜ੍ਹੋ।</string>
+    <string name="read_this">ਇਸ ਨੂੰ ਪੜ੍ਹੋ</string>
+    <string name="invalid_recording">ਗਲਤ ਰਿਕਾਰਡਿੰਗ</string>
+    <string name="task_complete">ਪੂਰਾ ਹੋਇਆ</string>
+    <string name="okassistant_retry">ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <!-- /* Bulk Add by voice -->
+    <string name="t_004_bulk_voice_txn_main_headline">ਬੋਲੋ ਅਤੇ ਲੈਣ ਦੇਣ ਜੋੜੋ</string>
+    <string name="t_004_bulk_voice_txn_main_caption">ਸਿਰਫ ਬੋਲ ਕੇ ਤੇਜ਼ੀ ਨਾਲ ਕੰਮ ਪੂਰਾ ਕਰੋ</string>
+    <string name="t_004_bulk_voice_txn_date_field">ਲੈਣ-ਦੇਣ ਦੀ ਮਿਤੀ</string>
+    <string name="t_004_bulk_voice_txn_body_headline">ਅੰਗਰੇਜ਼ੀ ਜਾਂ ਹਿੰਦੀ ਵਿੱਚ ਬੋਲੋ</string>
+    <string name="t_004_bulk_voice_txn_body_english_example">Sameer 100 rupees credit / Sameer 100 rupees payment</string>
+    <string name="t_004_bulk_voice_txn_body_subtitle">ਜਾਂ</string>
+    <string name="t_004_bulk_voice_txn_hinglish_example">Sameer ki 100 rupaye ki udhaari / Sameer ka 100 rupaye ka payment</string>
+    <string name="t_004_speech_eg_title">ਅੰਗਰੇਜ਼ੀ ਜਾਂ ਹਿੰਦੀ ਵਿੱਚ ਬੋਲੋ</string>
+    <string name="t_004_speech_eg_caption_credit">ਉਧਾਰ ਜੋੜਨ ਲਈ, ਬੋਲੋ</string>
+    <string name="t_004_speech_eg_credit_desc">“Sameer 100 rupees credit” or “Sameer ki 100 rupaye ki udhaari”</string>
+    <string name="t_004_speech_eg_caption_payment">ਪੇਮੈਂਟ ਜੋੜਨ ਲਈ‚ ਬੋਲੋ</string>
+    <string name="t_004_speech_eg_payment_desc">“Sameer 100 rupees payment” or “Sameer ka 100 rupaye ka payment”</string>
+    <string name="t_004_speech_try_again_error_desc">ਮਾਫ਼ ਕਰਨਾ, ਸਮਝ ਨਹੀਂ ਪਾਏ। ਕਿਰਪਾ ਕਰਕੇ ਮਾਈਕ ਬਟਨ ਤੇ ਕਲਿੱਕ ਕਰਕੇ ਦੁਬਾਰਾ ਬੋਲੋ।</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_processing">ਪ੍ਰੋਸੈਸ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_failed">ਪ੍ਰੋਸੈਸਿੰਗ ਅਸਫਲ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ ਕਰੋ।</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_incomplete">ਕਿਰਪਾ ਕਰਕੇ ਪੂਰਾ ਵੇਰਵਾ ਜੋੜੋ</string>
+    <string name="t_004_bulk_voice_txn_voice_transcript_label">ਤੁਸੀਂ ਕਿਹਾ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_credit">ਉਧਾਰ ਦਿੱਤਾ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_payment">ਜਮ੍ਹਾਂ ਕੀਤਾ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_credit">ਦਿੱਤਾ ਹੋਇਆ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_payment">ਪ੍ਰਾਪਤ ਹੋਇਆ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_txn_type">ਲੈਣ ਦੇਣ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_add_note">ਨੋਟ (ਵਿਕਲਪਿਕ)</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_amount">ਰਕਮ</string>
+    <string name="t_004_bulk_voice_txn_delete">ਮਿਟਾਓ</string>
+    <string name="t_004_bulk_voice_txn_update">ਅਪਡੇਟ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_saved">ਲੈਣ- ਦੇਣ ਅਪਡੇਟ ਹੋਇਆ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_deleted">ਲੈਣ- ਦੇਣ ਮਿਟਾਇਆ ਗਿਆ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_edit_discarded">ਲੈਣ ਦੇਣ ਵਿੱਚ ਕੀਤੇ ਬਦਲਾਅ ਸੇਵ ਨਹੀਂ ਹੋਏ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_load_failed">ਲੈਣ ਦੇਣ ਲੋਡ ਨਹੀਂ ਕਰ ਪਾ ਰਹੇ</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_title">ਨਾਮ ਚੁਣੋ</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_search_more">ਹੋਰ ਨਾਮ ਖੋਜੋ</string>
+    <string name="t_004_bulk_voice_txn_select_name_hint_text">ਨਾਮ ਚੁਣੋ ਜਾਂ ਖੋਜੋ</string>
+    <string name="t_004_bulk_voice_txn_confirm_save_title">ਸੇਵ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਲੈਣ ਦੇਣ ਦੀ ਜਾਂਚ ਕਰੋ</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_date_of_txn">ਲੈਣ-ਦੇਣ ਦੀ ਮਿਤੀ - %s</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_txn_not_saved_caption">₹0 ਰਕਮ ਪ੍ਰੋਸੈਸ ਹੋ ਰਹੇ/ ਅਧੂਰੇ ਜਾਂ ਫੇਲ ਹੋਏ ਲੈਣ-ਦੇਣ ਸੇਵ ਨਹੀਂ ਹੋਣਗੇ।</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_blocked_merchants">ਜੇਕਰ ਤੁਸੀਂ ਕਿਸੇ ਗ੍ਰਾਹਕ/ ਸਪਲਾਇਰ ਨੂੰ ਬਲਾਕ ਕੀਤਾ ਹੈ ਜਾਂ ਤੁਸੀਂ ਕਿਸੇ ਗ੍ਰਾਹਕ/ ਸਪਲਾਇਰ ਵਲੋਂ ਬਲਾਕ ਕੀਤੇ ਹੋਏ ਹੋ ਤਾਂ ਜੋੜਿਆ ਗਿਆ ਲੈਣ ਦੇਣ ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਦਾ।</string>
+    <string name="t_004_bulk_voice_txn_customer_count">%1s ਗ੍ਰਾਹਕ,</string>
+    <string name="t_004_bulk_voice_txn_supplier_count">%1s ਸਪਲਾਇਰ</string>
+    <string name="t_004_bulk_voice_txn_transaction_saved">ਲੈਣ-ਦੇਣ ਸੇਵ ਹੋਇਆ</string>
+    <string name="t_004_bulk_voice_txn_transaction_cancelled">ਲੈਣ- ਦੇਣ ਰੱਦ ਹੋ ਗਿਆ</string>
+    <!-- Bulk Add by voice */ -->
+</resources>

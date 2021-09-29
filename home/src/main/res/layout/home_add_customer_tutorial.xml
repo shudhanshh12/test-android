@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvHowToAddVariant"
+    style="@style/OKC.TextAppearance.Subtitle2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_16dp"
+    android:drawablePadding="16dp"
+    android:gravity="center_horizontal"
+    android:text="@string/t_001_addrel_first_time_txt"
+    app:drawableTopCompat="@drawable/ic_ledger_tutorial" />

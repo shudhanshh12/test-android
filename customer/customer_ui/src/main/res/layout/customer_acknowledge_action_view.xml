@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="4dp"
+    app:cardBackgroundColor="@color/orange_lite"
+    tools:context=".ui.add_txn_screen.AddTxnContainerActivity">
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.1"
+        android:textAppearance="?textAppearanceCaption1"
+        android:textColor="@color/grey800"
+        tools:text="Customer name has requested bank details to pay you back online" />
+
+</androidx.cardview.widget.CardView>

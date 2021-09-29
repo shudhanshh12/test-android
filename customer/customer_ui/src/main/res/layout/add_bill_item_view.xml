@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_bill_textview"
+    android:layout_width="72dp"
+    android:layout_marginStart="12dp"
+    android:layout_height="72dp"
+    android:background="@drawable/border_reactange_rounded_corner"
+    android:gravity="center"
+    android:padding="@dimen/_8dp"
+    android:drawablePadding="2dp"
+    android:text="@string/add_bills"
+    android:textAppearance="?textAppearanceSubtitle4"
+    android:textColor="@color/green_primary"
+    app:drawableTopCompat="@drawable/ic_camera_add"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />

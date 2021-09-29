@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# SupplierDestinationScreen Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/supplier_payment_dialog_flow"
+    app:startDestination="@id/supplier_payment_dialog_screen">
+
+    <fragment
+        android:id="@+id/supplier_payment_dialog_screen"
+        android:name="tech.okcredit.home.dialogs.supplier_payment_dialog.SupplierPaymentDialog"
+        android:label="SupplierDestinationScreen"
+        tools:layout="@layout/supplier_payment_dialog">
+
+    </fragment>
+
+</navigation>

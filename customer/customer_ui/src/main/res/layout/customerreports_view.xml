@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/date_container"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circular_border_grey100_border"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/grid_1_half"
+        android:paddingBottom="@dimen/grid_1_half"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/transaction_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceSubtitle2"
+            tools:text="28" />
+
+        <TextView
+            android:id="@+id/transaction_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="4sp"
+            android:textAllCaps="true"
+            android:textColor="@color/grey700"
+            android:textSize="@dimen/text_size_10"
+            tools:text="JAN" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/payment_arrow"
+        android:layout_width="9dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_toStartOf="@+id/payment"
+        app:layout_constraintBottom_toBottomOf="@+id/payment"
+        app:layout_constraintEnd_toStartOf="@+id/payment"
+        app:layout_constraintTop_toTopOf="@+id/payment"
+        app:srcCompat="@drawable/ic_arrow_down_green" />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="end"
+        android:letterSpacing="0.01"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/grey900"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintEnd_toEndOf="@+id/center_horizontal_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="₹15" />
+
+    <TextView
+        android:id="@+id/payment_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/online_transaction"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey700"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/date_container"
+        app:layout_constraintEnd_toEndOf="@+id/payment"
+        app:layout_constraintTop_toBottomOf="@+id/payment"
+        tools:visibility="gone"
+        tools:text="Online Transaction" />
+
+    <ImageView
+        android:id="@+id/credit_arrow"
+        android:layout_width="9dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/credit"
+        app:layout_constraintEnd_toStartOf="@+id/credit"
+        app:layout_constraintTop_toTopOf="@+id/credit"
+        app:srcCompat="@drawable/ic_arrow_up_red" />
+
+    <TextView
+        android:id="@+id/credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="end"
+        android:letterSpacing="0.01"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/grey900"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="₹2350" />
+
+    <TextView
+        android:id="@+id/tv_edited"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="7sp"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey700"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/payment_description"
+        app:layout_constraintEnd_toEndOf="@+id/credit"
+        app:layout_constraintTop_toBottomOf="@+id/credit"
+        tools:text="Edited on 12 Jun 2020" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="payment_description,tv_edited,date_container"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@+id/barrier" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_horizontal_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

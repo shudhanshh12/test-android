@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/OKC.TextAppearance.Headline6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginLeft="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:layout_marginRight="@dimen/grid_2"
+            android:layout_weight="1"
+            android:lines="1"
+            android:text="@string/filter" />
+
+        <TextView
+            android:id="@+id/clear"
+            style="@style/OKC.TextAppearance.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginLeft="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:layout_marginRight="@dimen/grid_2"
+            android:lines="1"
+            android:text="@string/clear"
+            android:textAllCaps="false"
+            android:textColor="@color/red_primary" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@color/black_transparent_10" />
+
+    <TextView
+        android:id="@+id/sort_only"
+        style="@style/OKC.TextAppearance.Subtitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/reminder_date" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sort_filter_contianer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/due_today"
+            style="@style/OKC.Button.Dark.Outline.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/today"
+            android:textAllCaps="false"
+            android:textAppearance="?textAppearanceCaption2"
+            android:textColor="@color/grey900"
+            app:cornerRadius="24dp"
+            app:iconSize="@dimen/_16dp"
+            app:iconTint="@color/green_primary"
+            app:rippleColor="@color/white"
+            app:strokeColor="@color/grey400"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:strokeWidth="1dp"
+            tools:text="Today" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/due_crossed"
+            style="@style/OKC.Button.Dark.Outline.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/pending"
+            android:textAllCaps="false"
+            android:textAppearance="?textAppearanceCaption2"
+            android:textColor="@color/grey900"
+            app:cornerRadius="24dp"
+            app:iconSize="@dimen/_16dp"
+            app:layout_constraintStart_toEndOf="@id/due_today"
+            app:iconTint="@color/green_primary"
+            app:rippleColor="@color/white"
+            app:strokeColor="@color/grey400"
+            app:strokeWidth="1dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Pending" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upcoming_due"
+            style="@style/OKC.Button.Dark.Outline.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/upcoming"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@id/due_crossed"
+            android:textAppearance="?textAppearanceCaption2"
+            android:textColor="@color/grey900"
+            app:cornerRadius="24dp"
+            app:iconSize="@dimen/_16dp"
+            app:iconTint="@color/green_primary"
+            app:rippleColor="@color/white"
+            app:strokeColor="@color/grey400"
+            app:strokeWidth="1dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Upcoming" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/sort_by"
+        style="@style/OKC.TextAppearance.Subtitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/sort_by" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/grid_2"
+        android:paddingRight="@dimen/grid_2">
+
+
+        <RadioGroup
+            android:id="@+id/rdg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdg_name"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/name"
+                android:textAppearance="@style/OKC.TextAppearance.Body2" />
+
+            <RadioButton
+                android:id="@+id/rdg_amount"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/amount"
+                android:textAppearance="@style/OKC.TextAppearance.Body2" />
+
+            <RadioButton
+                android:id="@+id/rdg_latest"
+                style="@style/RadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/latest"
+                android:textAppearance="@style/OKC.TextAppearance.Body2" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/grey300" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel"
+            style="@style/OKC.Button.Dark.Outline.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/apply"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+            android:textColor="@color/grey900"
+            app:cornerRadius="24dp"
+            app:strokeColor="@color/grey400"
+            app:strokeWidth="1dp"
+            tools:text="lvjnfv jdfvbndf bvkjf bjkdfb" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/apply"
+            style="@style/OKC.Button.Dark.Outline.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:backgroundTint="@color/green_primary"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:text="@string/apply"
+            android:textAllCaps="false"
+            android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+            android:textColor="@color/white"
+            app:cornerRadius="24dp"
+            app:strokeColor="@color/green_primary"
+            app:strokeWidth="1dp"
+            tools:text="lvjnfv jdfvbndf bvkjf bjkdfb" />
+
+
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/apply"-->
+        <!--            style="@style/OKC.Button.Light.Outline.Small"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="13dp"-->
+        <!--            android:layout_marginTop="7dp"-->
+        <!--            android:layout_marginRight="13dp"-->
+        <!--            android:layout_marginBottom="7dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="@string/apply"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            app:cornerRadius="24dp"-->
+        <!--            tools:text="kjnvjv jdbdbfbj dkfjbdfbjbdb" />-->
+
+        <!--        <com.google.android.material.card.MaterialCardView-->
+        <!--            android:id="@+id/cancel"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginRight="12dp"-->
+        <!--            app:cardCornerRadius="24dp"-->
+        <!--            app:strokeColor="@color/grey400"-->
+        <!--            app:strokeWidth="1dp">-->
+
+        <!--            <TextView-->
+        <!--                style="@style/OKC.TextAppearance.Subtitle4"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginLeft="13dp"-->
+        <!--                android:layout_marginTop="7dp"-->
+        <!--                android:layout_marginRight="13dp"-->
+        <!--                android:layout_marginBottom="7dp"-->
+        <!--                android:text="@string/cancel" />-->
+
+        <!--        </com.google.android.material.card.MaterialCardView>-->
+
+        <!--        <com.google.android.material.card.MaterialCardView-->
+        <!--            android:id="@+id/apply"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginRight="12dp"-->
+        <!--            app:cardBackgroundColor="@color/green_primary"-->
+        <!--            app:cardCornerRadius="24dp"-->
+        <!--            app:strokeColor="@color/grey400"-->
+        <!--            app:strokeWidth="1dp">-->
+
+        <!--            <TextView-->
+        <!--                style="@style/OKC.TextAppearance.Caption2"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginLeft="13dp"-->
+        <!--                android:layout_marginTop="7dp"-->
+        <!--                android:layout_marginRight="13dp"-->
+        <!--                android:layout_marginBottom="7dp"-->
+        <!--                android:text="@string/apply"-->
+        <!--                android:textColor="@color/white" />-->
+
+        <!--        </com.google.android.material.card.MaterialCardView>-->
+    </RelativeLayout>
+
+
+</LinearLayout>

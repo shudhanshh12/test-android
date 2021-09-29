@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">ബാങ്ക് അക്കൗണ്ട് സെറ്റപ്പ് ചെയ്ത് മെനുവിൽ ചെന്ന് പ്രതിഫലം കരസ്ഥമാക്കൂ</string>
+    <string name="you_won_feature">നിങ്ങൾ ₹%1$s നേടിയിരിക്കുന്നു!</string>
+    <string name="visit_feature">%1$s കാണുക</string>
+    <string name="claim_in_progress">പുരോഗമിക്കുന്നു…ദയവായി കാത്തിരിക്കുക</string>
+    <string name="scratch_view_hint">പ്രതിഫലം കാണാൻ ഉരച്ചു നോക്കുക</string>
+    <string name="enter_bank_details_description">ക്യാഷ് ബാക്ക് നേടാൻ ബാങ്ക് അക്കൗണ്ട് വിവരങ്ങൾ നൽകുക.</string>
+    <string name="please_solve_this_issue">ദയവായി പ്രശ്നം പരിഹരിക്കുക</string>
+    <string name="earned_due_to_activation">പഴയ ഇടപാടുകൾ ചേർത്തത്തിന്റെ പ്രതിഫലം.</string>
+    <string name="better_luck_next_time">ഭാഗ്യം തുണച്ചില്ല. \nഅടുത്ത തവണ ശ്രമിക്കൂ</string>
+    <string name="something_went_wrong_in_claiming_rewards">ക്ഷമിക്കണം, ചില സാങ്കേതിക തകാരാറുകൾ നേരിടുന്നു. ദയവായി അൽപ സമയത്തിന് ശേഷം ശ്രമിക്കുക.</string>
+    <string name="congratulations_tell_them_add_bank_details">അഭിനന്ദനങ്ങൾ!!! പ്രതിഫലം നേടാൻ ബാങ്ക് അക്കൗണ്ട് സെറ്റപ്പ് ചെയ്യുക.</string>
+    <string name="reward_on_hold">പ്രതിഫലങ്ങൾ തടഞ്ഞുവെച്ചിരിക്കുന്നു</string>
+    <string name="error_budged_limit_exceeded">ചില സാങ്കേതിക തകരാറുകൾ കാരണം നിങ്ങളുടെ പ്രതിഫലം തടഞ്ഞു വെച്ചിരിക്കുന്നു. ഞങ്ങളുടെ ടീം പ്രശ്നം പരിഹരിക്കുന്നുണ്ട്. ദയവായി 3 ദിവസത്തിന് ശേഷം ശ്രമിക്കുക.</string>
+    <string name="you_won_10">you won 10</string>
+    <string name="hurray">ഭേഷ്!</string>
+    <string name="oops">കഷ്ടം!</string>
+    <string name="rewarded_on_06_nov_02_38pm">നേടിയത് 06 നവം, 02:38pm</string>
+    <string name="earned_for_adding_transactions_records">പഴയ ഇടപാടുകൾ ചേർത്തത്തിന്റെ പ്രതിഫലം.</string>
+    <string name="setup_bank_account_to_get_reward">ബാങ്ക് അക്കൗണ്ട് സെറ്റപ്പ് ചെയ്ത് പ്രതിഫലം നേടുക.</string>
+    <string name="step_1_how_does_it_works_roa">കസ്റ്റമേഴ്സിനെ ചേർത്ത് വ്യത്യസ്ത ദിവസങ്ങളിൽ ഓരോ ഇടപാടുകളെങ്കിലും ചേർക്കുക.</string>
+    <string name="step_2_how_does_it_works_roa">നിങ്ങളുടെ സമ്മാനങ്ങൾ പ്രതിഫലങ്ങൾ സെക്ഷനിൽ കാണാവുന്നതാണ്.</string>
+    <string name="error_description_bank_valid">ഈ ബാങ്ക് അക്കൗണ്ട് അല്ലെങ്കിൽ UPI മറ്റാരോ നിലവിൽ ഉപയോഗിക്കുന്നു. ദയവായി കൃത്യമായ വിവരങ്ങൾ നൽകുകയോ വേറെ അക്കൗണ്ട് ഉപയോഗിക്കുകയോ ചെയ്യുക.</string>
+    <string name="upi_inactive_error_msg">നിങ്ങളുടെ ബാങ്ക് അക്കൗണ്ട് ഇപ്പോൾ ആക്റ്റീവ് അല്ല. ദയവായി വേറെ അക്കൗണ്ട് ഉപയോഗിക്കുക അല്ലെങ്കിൽ നിങ്ങളുടെ അക്കൗണ്ട് വീണ്ടും ആക്റ്റീവ് ആക്കുക.</string>
+    <string name="payout_daily_limit_reached_error_msg">പ്രതിഫലങ്ങൾ നേടാനുള്ള ഇന്നത്തെ പരിധി അതിക്രമിച്ചിരിക്കുന്നു. ദയവായി നാളെ വീണ്ടും കൈപ്പറ്റുക.</string>
+    <string name="reward_update">പ്രതിഫലങ്ങൾ അപ്ഡേറ്റ്</string>
+    <string name="please_try_again_later">ദയവായി വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="payment_update">പേയ്മെന്റ് അപ്ഡേറ്റ്</string>
+    <string name="close">അടയ്ക്കുക</string>
+    <string name="processing_state">നടപടി ആകുന്നു…</string>
+    <string name="bank_service_unavail">ബാങ്ക് സർവീസ് ലഭ്യമല്ല</string>
+    <string name="bank_service_unavil_error_msg">നിങ്ങളുടെ ബാങ്ക് ഇപ്പോൾ പേയ്മെന്റ് റിക്വസ്റ്റ് സ്വീകരിക്കുന്നില്ല. ദയവായി ഏതാനും മണിക്കൂറുകൾക്കു ശേഷം ശ്രമിക്കുക.</string>
+    <string name="we_are_processing_your_reward">നിങ്ങളുടെ പ്രതിഫലം ലഭ്യമാകുന്നതാണ്. ദയവായി 3 ദിവസത്തിനകം വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="edit_bank_details">ബാങ്ക് വിവരങ്ങൾ തിരുത്തുക</string>
+    <string name="please_try_again">ദയവായി വീണ്ടും ശ്രമിക്കുക</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green_lite"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_16dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="@dimen/_16dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/circle"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:src="@drawable/ic_menu_overflow"
+        android:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_filter_count"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/grey900"
+        tools:text="3" />
+
+
+    <TextView
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:text="@string/filters_active"
+        android:textColor="@color/grey900" />
+
+
+    <TextView
+        android:id="@+id/clear_filter"
+        android:textAppearance="?textAppearanceSubtitle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/clear_filters"
+        android:textAllCaps="false"
+        android:textColor="@color/green_primary" />
+
+</LinearLayout>

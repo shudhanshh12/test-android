@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'DEEPLINK_URL', "\"https://staging.okcredit.app/merchant/v1\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'DEEPLINK_URL', "\"https://alpha.okcredit.app/merchant/v1\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'DEEPLINK_URL', "\"https://okcredit.app/merchant/v1\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-onboarding-contract.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-app-onboarding-contract.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation project(':auth')
+    implementation project(':shared')
+    implementation project(':base')
+    implementation project(':business:contract')
+    implementation project(':accounting_core')
+    implementation project(':secure_keys')
+    implementation project(':individual:contract')
+    implementation utility.kotlin
+    implementation rx.java
+    implementation utility.guava
+
+    implementation retrofit.gson
+}

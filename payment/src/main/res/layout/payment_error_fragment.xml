@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/ivCross"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/payment_ic_close"
+        app:layout_constraintBottom_toBottomOf="@id/vwDividerTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vwDividerTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/grey300"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivError"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/payment_error_network"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/tvErrorTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vwDividerTop"
+        app:layout_constraintVertical_bias="0.35000002"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <TextView
+        android:id="@+id/tvErrorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/payment_network"
+        android:textAppearance="@style/TextAppearance.OKCTheme.Headline6"
+        app:layout_constraintBottom_toTopOf="@id/tvErrorSubTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivError" />
+
+    <TextView
+        android:id="@+id/tvErrorSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/grey700"
+        android:visibility="gone"
+        android:text="@string/payment_other_error_jp001"
+        android:textAppearance="@style/TextAppearance.OKCTheme.Body1"
+        app:layout_constraintBottom_toTopOf="@id/mbRetry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvErrorTitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbRetry"
+        style="@style/OKC.Button.Dark.Outline"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/payment_retry"
+        android:textColor="@color/grey900"
+        app:cornerRadius="24dp"
+        app:icon="@drawable/payment_ic_loader"
+        app:iconGravity="textStart"
+        app:layout_constraintTop_toBottomOf="@id/tvErrorSubTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/grey400" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

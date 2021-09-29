@@ -1,0 +1,325 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 6,
+    "identityHash": "55aa93ffd1b7218b8c8e33913e40373d",
+    "entities": [
+      {
+        "tableName": "Supplier",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `registered` INTEGER NOT NULL, `deleted` INTEGER NOT NULL, `createTime` INTEGER NOT NULL, `txnStartTime` INTEGER NOT NULL, `name` TEXT NOT NULL, `mobile` TEXT, `address` TEXT, `profileImage` TEXT, `balance` INTEGER NOT NULL, `newActivityCount` INTEGER NOT NULL, `lastActivityTime` INTEGER, `lastViewTime` INTEGER, `txnAlertEnabled` INTEGER NOT NULL, `lang` TEXT, `syncing` INTEGER NOT NULL, `lastSyncTime` INTEGER, `addTransactionRestricted` INTEGER NOT NULL, `state` INTEGER NOT NULL, `blockedBySupplier` INTEGER NOT NULL, `restrictContactSync` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "registered",
+            "columnName": "registered",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deleted",
+            "columnName": "deleted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "createTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "txnStartTime",
+            "columnName": "txnStartTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mobile",
+            "columnName": "mobile",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "address",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "profileImage",
+            "columnName": "profileImage",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "balance",
+            "columnName": "balance",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "newActivityCount",
+            "columnName": "newActivityCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastActivityTime",
+            "columnName": "lastActivityTime",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastViewTime",
+            "columnName": "lastViewTime",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "txnAlertEnabled",
+            "columnName": "txnAlertEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lang",
+            "columnName": "lang",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "syncing",
+            "columnName": "syncing",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastSyncTime",
+            "columnName": "lastSyncTime",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "addTransactionRestricted",
+            "columnName": "addTransactionRestricted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "blockedBySupplier",
+            "columnName": "blockedBySupplier",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "restrictContactSync",
+            "columnName": "restrictContactSync",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Transaction",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `supplierId` TEXT NOT NULL, `collectionId` TEXT, `payment` INTEGER NOT NULL, `amount` INTEGER NOT NULL, `note` TEXT, `receiptUrl` TEXT, `billDate` INTEGER NOT NULL, `createTime` INTEGER NOT NULL, `createdBySupplier` INTEGER NOT NULL, `deleted` INTEGER NOT NULL, `deleteTime` INTEGER, `deletedBySupplier` INTEGER NOT NULL, `updateTime` INTEGER NOT NULL, `syncing` INTEGER NOT NULL, `lastSyncTime` INTEGER, `transactionState` INTEGER NOT NULL, `txCategory` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "supplierId",
+            "columnName": "supplierId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "collectionId",
+            "columnName": "collectionId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "payment",
+            "columnName": "payment",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "amount",
+            "columnName": "amount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "note",
+            "columnName": "note",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "receiptUrl",
+            "columnName": "receiptUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "billDate",
+            "columnName": "billDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "createTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdBySupplier",
+            "columnName": "createdBySupplier",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deleted",
+            "columnName": "deleted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deleteTime",
+            "columnName": "deleteTime",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deletedBySupplier",
+            "columnName": "deletedBySupplier",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updateTime",
+            "columnName": "updateTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncing",
+            "columnName": "syncing",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastSyncTime",
+            "columnName": "lastSyncTime",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "transactionState",
+            "columnName": "transactionState",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "txCategory",
+            "columnName": "txCategory",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "NotificationReminder",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `accountId` TEXT NOT NULL, `createdAt` TEXT NOT NULL, `expiresAt` TEXT NOT NULL, `status` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "accountId",
+            "columnName": "accountId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "expiresAt",
+            "columnName": "expiresAt",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [
+      {
+        "viewName": "SupplierWithTransactionsInfo",
+        "createSql": "CREATE VIEW `${VIEW_NAME}` AS SELECT\n            supplier.id,\n            supplier.registered,\n            supplier.deleted,\n            supplier.createTime,\n            supplier.txnStartTime,\n            supplier.name,\n            supplier.mobile,\n            supplier.address,\n            supplier.profileImage,\n            supplier.restrictContactSync,\n            SUM(CASE WHEN `TRANSACTION`.deleted == 1 THEN 0 WHEN `Transaction`.transactionState == 0 THEN 0 WHEN `TRANSACTION`.payment == 0 THEN -1 * `TRANSACTION`.amount ELSE `TRANSACTION`.amount END) as balance,\n            SUM(CASE WHEN supplier.lastViewTime == 0 THEN 0 WHEN `TRANSACTION`.updateTime > supplier.lastViewTime AND `TRANSACTION`.createdBySupplier == 1 AND `TRANSACTION`.deleted == 0  THEN 1 ELSE 0 END) as newActivityCount,\n            MAX(`TRANSACTION`.updateTime ) as lastActivityTime,\n            supplier.lastViewTime,\n            supplier.txnAlertEnabled,\n            supplier.lang,\n            MAX(`TRANSACTION`.syncing ) as syncing,\n            MAX(`TRANSACTION`.lastSyncTime ) as lastSyncTime,\n            supplier.addTransactionRestricted,\n            supplier.state,\n            supplier.blockedBySupplier\n        FROM Supplier\n        LEFT OUTER JOIN `TRANSACTION` ON Supplier.id = `TRANSACTION`.supplierId\n        GROUP BY Supplier.id"
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '55aa93ffd1b7218b8c8e33913e40373d')"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invite_new_person">Invite a new person</string>
+    <string name="invite_and_earn">Share &amp; Earn</string>
+    <string name="invite_and_earn_cta">Click to Share</string>
+    <string name="invite_and_earn_new">Share And Earn</string>
+    <string name="share_okcredit_app_and_get_rewards"><![CDATA[Share OkCredit with shopkeepers &amp; businessman friends. You both can earn up to a total of <b>₹%1$s</b>]]></string>
+    <string name="know_more">Know More</string>
+    <string name="invite_from_the_list">Invite from the List!</string>
+    <string name="share_okcredit_with_your_friends_families_and_get_rewards_upto_1000"><![CDATA[Share OkCredit with your friends & families and get rewards upto ₹1000]]></string>
+    <string name="share_okcredit_app_to_everyone">Share OkCredit App\nwith everyone</string>
+    <string name="ask_your_invites_to_install_the_app">Get them to register\non the app</string>
+    <string name="money_will_be_ncredited_for_every_ninstallation">Earn money after they\nregister and use the app</string>
+    <string name="your_referral_link">Your referral link</string>
+    <string name="share_to_anyone">Share to anyone</string>
+    <string name="copy_link">Copy Link</string>
+    <string name="invite">Invite</string>
+    <string name="earn">Earn ₹%1$s</string>
+    <string name="share_as_status">Share as status</string>
+    <string name="share_referral_failure">Could not share referral. Please try again</string>
+    <string name="default_referral_share_content" comment="Download OKCredit from this link and help me earn up to Rs.50">Download OKCredit from this link and earn up to Rs.%1$s</string>
+    <string name="link_copied_toast">Link copied to clipboard</string>
+    <string name="copy_referral_failure">Could not copy. Please try again</string>
+    <string name="targeted_referral_registered_merchant">Invite accepted, check next steps…</string>
+    <string name="targeted_referral_all_invited_title">Great Job! You have invited all</string>
+    <string name="targeted_referral_all_invited_subtitle">Select a contact to send a reminder</string>
+
+    <string name="share_app_title">Invite a new person</string>
+    <string name="share_app_description">Share OkCredit with your businessmen friends.</string>
+    <string name="share_apk">Share Apk</string>
+    <string name="share_app_know_more_title">You can earn by inviting someone. Here\'s how!</string>
+    <string name="share_app_know_more_step_1">Add at least 10 transactions on 10 different days</string>
+    <string name="share_app_know_more_step_2">You will become a part of exclusive referral program</string>
+    <string name="share_app_know_more_step_3">Get your businessmen friends to use the app</string>
+    <string name="share_app_failure">Could not share app. Please try again</string>
+    <string name="share_app_msg">Install India\'s No. 1 digital khata management app now, OkCredit, Made in India @ %1$s</string>
+
+
+    <string name="referred_merchant_list_error">Failed to fetch referral list. Please try again</string>
+    <string name="you_claim_rewards_menu_referral">Setup your Bank Account to get your rewards</string>
+    <string name="no_reward_error">Something went wrong, 504</string>
+</resources>

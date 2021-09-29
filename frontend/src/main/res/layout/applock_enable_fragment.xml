@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    app:layoutName="AppLock Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieOtpVerifySuccess"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/otp_verify_success" />
+
+    <TextView
+        android:id="@+id/tvAuthenticationSuccess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/verification_success"
+        android:textAppearance="?textAppearanceHeadline4"
+        android:textColor="@color/grey800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieOtpVerifySuccess" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="lottieOtpVerifySuccess,tvAuthenticationSuccess" />
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

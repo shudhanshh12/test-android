@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Relative layout is necessary here since ConstraintLayout causes flickering with the video
+    This happens due to nesting of ConstraintLayout if used here. Aim is to preserve the size
+    of the Video view. This is only possible by including the hacky image view. Without a ref
+    the video view needs to use wrap content which in turn triggers view resizing for all the
+    items in the view pager. This is an acceptable compromise.
+
+    note: Flickering only happens when the ui for video control is shown
+    ref: https://github.com/PierfrancescoSoffritti/android-youtube-player/issues/341#issuecomment-480754879
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imagePage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/hacky_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_supplier_carousels_01" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/video_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignStart="@id/hacky_image_view"
+        android:layout_alignTop="@id/hacky_image_view"
+        android:layout_alignEnd="@id/hacky_image_view"
+        android:layout_alignBottom="@id/hacky_image_view"
+        app:autoPlay="false" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_view"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="16dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:textAppearance="?textAppearanceSubtitle2"
+        tools:text="@string/payables_onboarding_carousel_string_video" />
+</RelativeLayout>

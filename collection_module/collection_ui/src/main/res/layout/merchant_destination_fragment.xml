@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    app:layoutName="Merchant Destination Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey50">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/grey50"
+        app:elevation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/collection"
+                android:textAppearance="?textAppearanceHeadline6"
+                android:textColor="@color/grey800"
+                android:textSize="@dimen/text_size_18" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/merchantGraphicalInsightsPage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/appbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginEnd="@dimen/grid_2">
+
+            <TextView
+                android:id="@+id/tv_date_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textAppearance="?textAppearanceHeadline4"
+                app:layout_constraintBottom_toBottomOf="@id/iv_date_range"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv_date_range"
+                tools:text="Feb 18 - 24" />
+
+            <ImageView
+                android:id="@+id/iv_date_range"
+                android:layout_width="@dimen/grid_3"
+                android:layout_height="@dimen/grid_3"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/grid_1"
+                android:layout_marginTop="@dimen/grid_1"
+                android:layout_toEndOf="@+id/tv_date_range"
+                android:tint="@color/green_primary"
+                app:layout_constraintStart_toEndOf="@id/tv_date_range"
+                app:srcCompat="@drawable/ic_arrow_drop_down_circle" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/grp_date_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:constraint_referenced_ids="tv_date_range,iv_date_range" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rl_barChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/grid_3_half"
+                android:background="@drawable/background_white_corner_radius_8dp"
+                android:paddingBottom="@dimen/grid_1"
+                app:layout_constraintTop_toBottomOf="@id/iv_date_range">
+
+                <TextView
+                    android:id="@+id/total_credit_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/grid_2"
+                    android:layout_marginTop="@dimen/grid_1"
+                    android:text="@string/total_credit_given"
+                    android:textAppearance="?textAppearanceCaption2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/total_credit_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/grid_2"
+                    android:layout_marginTop="@dimen/grid_1_half"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/total_credit_title"
+                    tools:text="₹50,000" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_marginTop="@dimen/grid_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/total_credit_amount" />
+
+                <ImageView
+                    android:id="@+id/iv_empty_graph"
+                    android:layout_width="@dimen/grid_12"
+                    android:layout_height="@dimen/grid_12"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="52dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_equalizer" />
+
+                <TextView
+                    android:id="@+id/tv_empty_graph_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/grid_3"
+                    android:layout_marginBottom="44dp"
+                    android:text="@string/no_txn_available"
+                    android:textAppearance="?textAppearanceCaption2"
+                    android:textColor="@color/grey700"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_empty_graph" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/center"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rl_barChart" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rl_offline_collection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/grid_2"
+                android:layout_toStartOf="@+id/center"
+                android:background="@drawable/background_white_corner_radius_8dp"
+                app:layout_constraintEnd_toStartOf="@id/center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rl_barChart">
+
+                <TextView
+                    android:id="@+id/tv_offline_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/grid_1"
+                    android:layout_marginTop="@dimen/grid_1"
+                    android:text="@string/total_offline_collection"
+                    android:textAppearance="?textAppearanceCaption2"
+                    android:textColor="@color/grey700"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_offline_collection_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/grid_1_half"
+                    android:layout_marginBottom="19dp"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    android:textColor="?colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tv_offline_collection"
+                    app:layout_constraintTop_toBottomOf="@id/tv_offline_collection"
+                    tools:text="₹4,000" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rl_online_collection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/grid_1"
+                android:layout_toStartOf="@+id/center"
+                android:background="@drawable/background_white_corner_radius_8dp"
+                app:layout_constraintEnd_toEndOf="@id/rl_offline_collection"
+                app:layout_constraintStart_toStartOf="@id/rl_offline_collection"
+                app:layout_constraintTop_toBottomOf="@id/rl_offline_collection">
+
+                <TextView
+                    android:id="@+id/tv_online_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/grid_1"
+                    android:layout_marginTop="@dimen/grid_1"
+                    android:text="@string/total_online_collection"
+                    android:textAppearance="?textAppearanceCaption2"
+                    android:textColor="@color/grey700"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_online_collection_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/grid_1_half"
+                    android:layout_marginBottom="19dp"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    android:textColor="?colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tv_online_collection"
+                    app:layout_constraintTop_toBottomOf="@id/tv_online_collection"
+                    tools:text="₹4,000" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rl_pie_chart_outer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/rl_barChart"
+                android:layout_marginStart="@dimen/grid_1_half"
+                android:background="@drawable/background_white_corner_radius_8dp"
+                app:layout_constraintBottom_toBottomOf="@id/rl_online_collection"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/center"
+                app:layout_constraintTop_toTopOf="@+id/rl_offline_collection">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieChart"
+                    android:layout_width="@dimen/grid_12"
+                    android:layout_height="@dimen/grid_12"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/grid_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/centerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="?textAppearanceHeadline5"
+                    android:textColor="?colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@id/pieChart"
+                    app:layout_constraintEnd_toEndOf="@id/pieChart"
+                    app:layout_constraintStart_toStartOf="@id/pieChart"
+                    app:layout_constraintTop_toTopOf="@id/pieChart"
+                    tools:text="25%" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/grid_2"
+                    android:text="@string/online_collection_ratio"
+                    android:textAppearance="?textAppearanceCaption2"
+                    android:textColor="@color/grey700"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/pieChart" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_defaulters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_online_collection"
+                android:layout_marginTop="@dimen/grid_2"
+                android:text="@string/defaulters"
+                android:textAppearance="?textAppearanceHeadline4"
+                android:textColor="@color/grey900"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rl_online_collection" />
+
+            <com.airbnb.epoxy.EpoxyRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/grid_2"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_defaulters" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/grid_2"
+                android:layout_marginBottom="@dimen/grid_2"
+                android:gravity="center"
+                android:text="@string/customers_not_made_payment"
+                android:textAppearance="?textAppearanceCaption2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_view" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

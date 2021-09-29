@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+#  discount details Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/discount_details_flow"
+    app:startDestination="@id/discount_details_screen">
+
+    <fragment
+        android:id="@+id/discount_details_screen"
+        android:name="in.okcredit.merchant.customer_ui.ui.discount_details.DiscountDetailsFragment"
+        android:label="DiscountDetailsScreen"
+        tools:layout="@layout/discount_details_screen">
+
+    </fragment>
+
+</navigation>

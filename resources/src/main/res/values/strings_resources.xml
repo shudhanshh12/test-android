@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress LongLine -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyQuotes">
+    <string name="application_name" translatable="false">OkCredit</string>
+    <string name="txn_invalid_amount">Invalid Amount</string>
+    <string name="txn_incorrect_password">Wrong Password</string>
+    <string name="txn_credit_title">Credit Given</string>
+    <string name="txn_payment_title">Payment Received</string>
+    <string name="ok">OK</string>
+    <string name="balance">Balance</string>
+    <string name="advance">Advance</string>
+    <string name="home_customer_advance">Advance</string>
+    <string name="password">Password</string>
+    <string name="help">Help</string>
+    <string name="tx_credit">Credit</string>
+    <string name="tx_payment">Payment</string>
+    <string name="done">Done</string>
+    <string name="try_again">Try Again</string>
+    <string name="mobile">Mobile</string>
+    <string name="customers">Customers</string>
+    <string name="no_tx">You don\'t have any transactions</string>
+    <string name="err_default">Something\'s wrong. Please Try Again.</string>
+    <string name="err_network">Internet Connection Issue</string>
+    <string name="login_enter_password">Enter Password</string>
+    <string name="register_verify_mobile_title">Verify Mobile</string>
+    <string name="register_password_msg">Minimum 6 digits</string>
+    <string name="register_err_incorrect_otp">Incorrect OTP</string>
+    <string name="search_customers">Search Customer</string>
+    <string name="customer_not_found">No customer named <![CDATA[<b>%1$s</b>]]></string>
+    <string name="add_customer">Add Customer</string>
+    <string name="paid_today">Today</string>
+    <string name="paid_yesterday">Yesterday</string>
+    <string name="logout">Sign Out</string>
+    <string name="about">About Us</string>
+    <string name="save_customer_mobile">Mobile (Optional)</string>
+    <string name="err_mobile_conflict">Already registered with %1$s</string>
+    <string name="err_mobile_conflict_default">Already registered with another customer</string>
+    <string name="txn_add_payment_btn">Accept\nPayment</string>
+    <string name="txn_add_credit_btn">Give\nCredit</string>
+    <string name="delete">Delete</string>
+    <string name="payment_amount">Payment Amount</string>
+    <string name="account">Account</string>
+    <string name="account_settings_title">Settings</string>
+    <string name="account_statement">Account Statement</string>
+    <string name="download_backup">Download Backup</string>
+    <string name="logout_from_all_devices">Sign out from all devices</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="account_report_loading">Creating report…</string>
+    <string name="account_reminder">Reminder</string>
+    <string name="account_language">Language</string>
+    <string name="account_profile">Profile</string>
+    <string name="account_incorrect_password">Wrong Password. Try again</string>
+    <string name="account_report_download_started">Download Started</string>
+    <string name="update_password_failed">Password update failed. Try again</string>
+    <string name="logout_failed">Signout Failed. Try Again</string>
+    <string name="report_generation_failed">Report creation failed. Try again</string>
+    <string name="update_password">Update Password</string>
+    <string name="err_invalid_password">Invalid Password (must be at least 6 characters long)</string>
+    <string name="confirm_logout">Confirm Sign Out?</string>
+    <string name="help_screen_action_title">Introduction</string>
+    <string name="help_whatsapp">Whatsapp Us</string>
+    <string name="help_whatsapp_msg">I have a question regarding OkCredit</string>
+    <string name="language_english">English</string>
+    <string name="language_hindi">हिंदी</string>
+    <string name="language_punjabi">ਪੰਜਾਬੀ</string>
+    <string name="reminder_on">On</string>
+    <string name="reminder_off">Off</string>
+    <string name="reminder_action_bar">Reminder Settings</string>
+    <string name="share">Share</string>
+    <string name="whatsapp_not_installed">WhatsApp is not installed</string>
+    <string name="reset_pwd_msg">OTP is for mobile verification</string>
+    <string name="reset_pwd_set_new_pwd">Set New Password</string>
+    <string name="forgot_pwd">Forgot Password</string>
+    <string name="share_title">Tell your friends and family!</string>
+    <string name="share_msg">Udhaar ka saara Hisaab apne Phone me - Install OkCredit for FREE @</string>
+    <string name="share_on_whatsapp">Share on WhatsApp</string>
+    <string name="share_link_on_whatsapp">Share link on WhatsApp</string>
+    <string name="share_apk_on_whatsapp">Share apk on WhatsApp</string>
+    <string name="reset_pwd_title">Reset Password</string>
+    <string name="reset_pwd_success">Password Updated</string>
+    <string name="custpr_add_mobile">Add Mobile Number</string>
+    <string name="profile_title">Profile</string>
+    <string name="delcst_msg_settlement">Please make customer balance 0 to delete</string>
+    <string name="delcst_msg">Customer will still be able to see all old SMS</string>
+    <string name="delcst_msg_no_mobile">Customer data will be deleted permanently</string>
+    <string name="delcst_settlement_label_credit">Add Credit of %1$s</string>
+    <string name="delcst_settlement_label_payment">Accept Payment of %1$s</string>
+    <string name="reset_pwd_otp_expired">OTP expired. Please try again.</string>
+    <string name="home_sort_name">Name</string>
+    <string name="home_sort_balance">Amount</string>
+    <string name="home_sort_recent">Latest</string>
+    <string name="autoverifying">Auto Verifying OTP</string>
+    <string name="checking_otp">Checking OTP</string>
+    <string name="verification_success">Verification Successful</string>
+    <string name="add_first_cst_title">Add your First Customer</string>
+    <string name="add_first_cst_desc">Click on the button below to add a new customer</string>
+    <string name="old_balance_title_credit">Old Credit Balance</string>
+    <string name="old_balance_title_payment">Old Payment Advance</string>
+    <string name="write_contacts_permission_msg">Please allow write contacts permission to add OkCredit.</string>
+    <string name="payment_reminder">Payment Reminder</string>
+    <string name="verified_by_okc">OkCredit Verified</string>
+    <string name="in_app_lang_desc">Choose OkCredit App language</string>
+    <string name="credit_delete_desc">Delete Credit</string>
+    <string name="payment_delete_desc">Delete Payment</string>
+    <string name="del_credit_msg">SMS will be sent for Deleted Credit</string>
+    <string name="del_payment_msg">SMS will be sent for Deleted Payment</string>
+    <string name="account_security">Security</string>
+    <string name="security_app_lock">App Lock</string>
+    <string name="app_lock_enabled">App Lock On</string>
+    <string name="app_lock_disabled">App Lock Off</string>
+    <string name="app_lock_enable">Click to turn on</string>
+    <string name="app_lock_disable">Click to turn off</string>
+    <string name="enable_app_lock">Turn on App Lock</string>
+    <string name="disable_app_lock">Turn off App Lock</string>
+    <string name="app_lock_desc_msg">Protect your account with App Lock</string>
+    <string name="draw_unlock_pattern">Draw Unlock pattern</string>
+    <string name="unlock_phone">Unlock OkCredit with phone password</string>
+    <string name="draw_patern_again">Draw pattern again to confirm</string>
+    <string name="set_pattern">Set Pattern</string>
+    <string name="confirm_pattern">Confirm Pattern</string>
+    <string name="incorrect_pattern">Wrong Pattern</string>
+    <string name="invalid_pattern">Connect at least 4 dots</string>
+    <string name="pattern_mismatch">Pattern Mismatch</string>
+    <string name="pattern_verified">Pattern Verified</string>
+    <string name="forgot_pattern">Forgot Pattern?</string>
+    <string name="pattern_disable_sign_in_msg">Sign in with OkCredit password to turn off app lock</string>
+    <string name="due">Due</string>
+    <string name="home_customer_due">Due</string>
+    <string name="reminder_noti_title">Update Balances</string>
+    <string name="no_internet_title">Internet Required</string>
+    <string name="no_internet_msg">Please connect to internet and try again</string>
+    <string name="report_loading_msg">Creating Report…</string>
+    <string name="home_no_internet_msg">No Internet Connection</string>
+    <string name="other_options">Other Options</string>
+    <string name="thanks_in_advance">Thanks in advance! 😊</string>
+    <string name="share_okcredit_app">Share OkCredit with your businessmen friends.</string>
+    <string name="submit_feedback">Submit</string>
+    <string name="payment_reminder_by">Payment Reminder by</string>
+    <string name="payment_reminder_amount">Amount:</string>
+    <string name="payment_reminder_check_details">Check Details at</string>
+    <string name="sms_delivered">SMS Delivered</string>
+    <string name="language_malayalam">മലയാളം</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="import_phone_contact_title">Import Phone Contacts</string>
+    <string name="import_phone_contact_desc">Add new customers directly from phonebook</string>
+    <string name="contacts">Contacts</string>
+    <string name="add">Add</string>
+    <string name="address">Address</string>
+    <string name="name_should_not">Character limit - 500</string>
+    <string name="address_should_not">Character limit - 150</string>
+    <string name="invalid_phone">Enter 10 digit mobile number</string>
+    <string name="where_do_you_want_choose_from">Where do you want to choose from?</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="delete_cus">Delete Customer</string>
+    <string name="custpr_add_address">Add Address</string>
+    <string name="invalid_name">Invalid Name</string>
+    <string name="invalid_address">Invalid Address</string>
+    <string name="invalid_mobile">Invalid Mobile Number</string>
+    <string name="hinglish">Hinglish</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="txn_synced">Sync Successful</string>
+    <string name="txn_sync_now">Sync Now</string>
+    <string name="touch_again_exit">Touch again to exit</string>
+    <string name="send">Send</string>
+    <string name="whatsapp_page_description">OkCredit will send information to %1$s on Whatsapp</string>
+    <string name="whatsapp_page_title">Get Update On WhatsApp</string>
+    <string name="yes_please_send">Yes, Please Send</string>
+    <string name="no_don_t_send">No, Don\'t Send</string>
+    <string name="crop_image">Crop Image</string>
+    <string name="business_card_share_text">Hey, please save my business card for any business enquiries!</string>
+    <string name="email">Email</string>
+    <string name="about_should_not">Character limit - 50</string>
+    <string name="email_should_not">Character limit - 40</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="contact_person">Contact Person Name</string>
+    <string name="call">Call</string>
+    <string name="add_payment">Add Payment</string>
+    <string name="add_credit">Add Credit</string>
+    <string name="add_note_optional">Add Note (Optional)</string>
+    <string name="permission_bottomsheet_title">Allow access to your photos</string>
+    <string name="permission_bottomsheet_desc">Allow camera and storage access</string>
+    <string name="allow">Allow</string>
+    <string name="txn_camera_gallery_permission_msg">Allow camera and storage access</string>
+    <string name="photo_added">Photo Added</string>
+    <string name="now_you_may_accept_payment_without_password_confirmation_to_enable_payment">Disable payment password. To turn on payment password, go to your security settings</string>
+    <string name="call_permission_denied">Give call permission for calling customer</string>
+    <string name="password_enabled">Password On</string>
+    <string name="password_disabled">Password Off</string>
+    <string name="disable">Turn Off</string>
+    <string name="enable">Turn On</string>
+    <string name="for_addn_payment">Password will be asked for every payment</string>
+    <string name="disable_payment_password">Payment Password</string>
+    <string name="payment_password_protects">Please verify your password to disable payment password</string>
+    <string name="download">Download</string>
+    <string name="download_and_share">Download &amp; Share</string>
+    <string name="download_complete">Download Complete</string>
+    <string name="backup_downloaded_and_saved">Backup downloaded and saved</string>
+    <string name="downloading_please_wait">Downloading, please wait..</string>
+    <string name="downloading_backup_please_wait">Downloading report, please wait..</string>
+    <string name="net_balance">Net Balance</string>
+    <string name="tx_payments">Payments</string>
+    <string name="tx_credits">Credits</string>
+    <string name="credit_details">Credit Details</string>
+    <string name="deleted_on">Deleted On</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="sms_from_phone">Send SMS  from your phone</string>
+    <string name="your_transactions_with_customer_name_is_safe_and_secure">Your transactions with <![CDATA[<b>%1$s</b>]]> are completely secure and private.</string>
+    <string name="credit_deleted">Credit Deleted</string>
+    <string name="payment_deleted">Payment Deleted</string>
+    <string name="delete_credit">Delete Credit</string>
+    <string name="delete_payment">Delete Payment</string>
+    <string name="last_payment">Last Payment</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="sms">SMS</string>
+    <string name="credit_amount">Credit Amount</string>
+    <string name="to_send_free_sms_for_each_transaction_with_customer_name_add_phone_number">Add <![CDATA[<b>%1$s</b>]]> mobile number to send a free SMS for every transaction</string>
+    <string name="remind_via">Remind via</string>
+    <string name="reminder_credit">%1$s dues added by %2$s. Balance: %3$s. Check detail %4$s</string>
+    <string name="reminder_payment">%1$s payment accepted by %2$s. Balance: %3$s. Check detail %4$s</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="added_on_date">Added On %1$s</string>
+    <string name="billed_on_date">Billed On %1$s</string>
+    <string name="load_settled_entries">Show Old</string>
+    <string name="transaction_sms">Transaction SMS</string>
+    <string name="sms_language">SMS Language</string>
+    <string name="switch_off">Switch Off</string>
+    <string name="switch_on">Switch On</string>
+    <string name="after_switching_off"><![CDATA[Stop<b>“Transaction SMS”</b> for this <b>Customer</b>]]></string>
+    <string name="select_sms_language">Select SMS Language for this Customer</string>
+    <string name="language_marathi">मराठी</string>
+    <string name="data_privacy">Data Privacy</string>
+    <string name="all_transactions_with_your">All transactions are safe &amp; secure.Click to know more</string>
+    <string name="okcredit_is_fully_committed_to_the_security">OkCredit is fully committed to the security of your data!</string>
+    <string name="why_my_data">Why my data is online?</string>
+    <string name="so_that_sms_from_server_can_be_sent">So that, SMS can be sent for every transactions.</string>
+    <string name="so_that_your_data_may_be_recovered_when_the_phone">So that, your data may be recovered when the phone is lost or defective.</string>
+    <string name="is_my_data_shared_with">Is my data shared with another person or organisation?</string>
+    <string name="no_we_do_not">No, we do not share your data with anyone. We use it to improve your OkCredit experience.</string>
+    <string name="click_to_know_more"><![CDATA[Click to know more about <font color=\'#2b752e\'><b>Privacy Policy</b></font>]]></string>
+    <string name="register_via_whatsapp">Register Via WhatsApp</string>
+    <string name="retry">Retry</string>
+    <string name="verification_successful">Verification Successful</string>
+    <string name="start_switching_on"><![CDATA[Start<b>“Transaction SMS”</b> for this <b>Customer</b>]]></string>
+    <string name="collections">Collections</string>
+    <string name="upi_id">UPI ID</string>
+    <string name="fees_and_settlement"><![CDATA[Fees & Settlement]]></string>
+    <string name="send_payment_link">Send payment link</string>
+    <string name="online_payment">Online Payment</string>
+    <string name="online_payment_transaction">Online Transaction</string>
+    <string name="invalid_upi">Invalid UPI</string>
+    <string name="enter_upi_hint">Enter UPI ID</string>
+    <string name="setup_collection">Setup Collection</string>
+    <string name="upi_conflict_message">Upi already registered with another merchant</string>
+    <string name="customer_reminder">Customer Reminder</string>
+    <string name="self_reminder">Self Reminder</string>
+    <string name="self_reminder_after_selected_date">Self reminder after selected date</string>
+    <string name="auto_reminder_on_5th_of_every_month">Auto reminder on 5th of every month</string>
+    <string name="account_reminders">Reminders</string>
+    <string name="self_reminder_days">Self Reminder Days</string>
+    <string name="get_reminded_on_selected_day_after_credit_given_to_customers">Get reminded on selected day after credit given to customers</string>
+    <string name="_07_days">%1$s Days</string>
+    <string name="reminder_notification_title_1">%1$s has due today</string>
+    <string name="reminder_notification_title_2">%1$s + %2$s others has due today</string>
+    <string name="language_tamil">தமிழ்</string>
+    <string name="language_telugu">తెలుగు</string>
+    <string name="language_bengali">বাঙালি</string>
+    <string name="language_gujarati">ગુજરાતી</string>
+    <string name="language_kannada">ಕನ್ನಡ</string>
+    <string name="update_upi">Update UPI</string>
+    <string name="amount">Amount</string>
+    <string name="now_you_can_collect_payment_online_in_okcredit_setup_upi_and_start_collecting">Collect payment online now. Setup UPI and start collecting</string>
+    <string name="not_now">Not Now</string>
+    <string name="select_method_to_send_link">Select method to send link</string>
+    <string name="reminders_on">Reminders On</string>
+    <string name="namaste_welcome_to_okcredit">Namaste! Welcome to OkCredit!!</string>
+    <string name="made_in">Made with \u2665 in India</string>
+    <string name="select_your_app_language">Select your Language</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="are_you_on_whatsapp_n_we_ll_reach_you_there">Are you on WhatsApp?\n</string>
+    <string name="allow_us_to_communicate">Allow us to WhatsApp you on %1$s. Do not edit information on next page.</string>
+    <string name="allow_us_to_communicate_short">Allow us to WhatsApp you on %1$s</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="skip">Skip</string>
+    <string name="name_your_business">Name your Business</string>
+    <string name="your_customer_will">Your customers will receive SMS with this name</string>
+    <string name="setup_profile">Setup Profile</string>
+    <string name="camera_permission_denied">Please allow camera permission to add image</string>
+    <string name="storage_permission_denied">Please allow storage permission to add image</string>
+    <string name="_0_transaction_fee">0% transaction fee</string>
+    <string name="view_customer">View Customer</string>
+    <string name="err_mobile_conflict_v2">“%1$s” is already in your Customers list with name “%2$s”</string>
+    <string name="didn_t_get_otp">Didn’t get OTP?</string>
+    <string name="resend">Resend</string>
+    <string name="please_be_patient">Please be patient</string>
+    <string name="your_otp_will_be_delivered">Your OTP will be delivered soon on %1$s</string>
+    <string name="contact_list">Contact List</string>
+    <string name="new_customer">New Customer</string>
+    <string name="transaction_fee_n_perc">%1$s Transaction Fee</string>
+    <string name="set_password">Set Password</string>
+    <string name="one_transactions_unsynced">1 transaction unsynced</string>
+    <string name="n_transactions_unsynced">%1$d transactions unsynced</string>
+    <string name="how_to_add_a_new_customer">How to add a new customer?</string>
+    <string name="click_on_add_customer_button_below_to_add_a_new_customer">Click on “ADD CUSTOMER” button below to add a new customer</string>
+    <string name="please_update">Please update to our new security feature. Create a minimum 6-digit password</string>
+    <string name="you_are_safe_with">You are safe with OkCredit</string>
+
+
+    <string name="online_transactions">Online Transactions</string>
+    <string name="rewards">Rewards</string>
+    <string name="please_be_patient_we_are_verifying_your_upi">Please be patient. UPI Verification in process.</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="camera_permission_denied_qr">Please allow camera permission to scan QR code</string>
+    <string name="allow_camera_access_to_scan_qr">Allow camera access to scan QR</string>
+    <string name="cashfree_tag">Pay via Cashfree\n(cashfree@yesbank)</string>
+    <string name="to_mobile">To: %1$s</string>
+    <string name="collect_online">Collect Online</string>
+    <string name="reward_range">Win between ₹10 - ₹100 by Online Collection setup</string>
+    <string name="collection_got_easier">Collection Got Easier</string>
+    <string name="add_upi_id_and_collect_due_online">Add UPI ID/Bank Account to collect dues online</string>
+    <string name="due_as_on">Due as on : %1$s</string>
+    <string name="total_rewards">Total Rewards</string>
+    <string name="referral_reward_track_referred_merchants">Track Reward and Invites</string>
+    <string name="you_won">You Won ₹%1$s</string>
+    <string name="claim_reward">Claim Reward</string>
+    <string name="rewards_money_credited_72_hours">Reward money will be credited within 72 hours</string>
+    <string name="tap_and_scratch_for_reward">Tap and scratch for reward</string>
+    <string name="enter_bank_details_to_redeem_cashback">Enter bank account details to redeem this cashback. Click here.</string>
+    <string name="you_won_cashback_amount">You\'ve won ₹%1$d cashback</string>
+    <string name="you_won_cashback">You\'ve won cashback</string>
+    <string name="better_luck_next_time">Better luck next time</string>
+    <string name="claiming">Please Wait…</string>
+    <string name="update_upi_text">You are about to update your UPI ID. Collections amount will be deposited to the updated UPI ID.</string>
+    <string name="update_account_text_kyc">Collection amount will be deposited in the updated account. After updating your account, you have to redo KYC</string>
+    <string name="okcredit_values_time_and_money">OkCredit values Time and Money of all Users. We are dedicated to make your collection on time and save any expense in doing so.</string>
+    <string name="send_collection_link_on_whatsapp">Send collection link on WhatsApp</string>
+    <string name="get_paid_on_time">Get paid on time</string>
+    <string name="tell_your_friends">Tell Your Friends</string>
+    <string name="go_to_rewards">Go to Rewards</string>
+    <string name="enter_bank_details">Enter Bank Details</string>
+    <string name="share_reward_text_v2">I won ₹%1$s with OkCredit! Now have all the daily transaction on phone - Install OkCredit for FREE@ %2$s</string>
+    <string name="upi_decode_error">UPI ID Invalid</string>
+    <string name="you_may_call">You may call customer from here only and discuss details.</string>
+    <string name="note_tutorial">You may add note about this transaction. Customer can view the note by clicking on link with transaction SMS.send to the customer on that day.</string>
+    <string name="check_all_your_accounting">Keep track of all your accounting at one place and download in PDF format..</string>
+    <string name="check_now">Check Now</string>
+    <string name="supplier_not_found"><![CDATA[“No supplier named ”<b>%1$s</b>""]]></string>
+    <string name="permission_title">"Enable Permission"</string>
+    <string name="permission_needed">"Please goto settings and enable the permission to use this feature."</string>
+    <string name="add_supplier">"Add Supplier"</string>
+    <string name="supplier_name">"Supplier Name"</string>
+    <string name="search_or_add">"Search or Add"</string>
+    <string name="new_count">"%1$s New"</string>
+    <string name="supplier_txn_take_credit_btn">Credit</string>
+    <string name="supplier_txn_give_payment_btn">Payment</string>
+    <string name="give_payment">"Give Payment"</string>
+    <string name="take_credit">"Take Credit"</string>
+    <string name="call_permission_denied_supplier">"Give call permission for calling supplier"</string>
+    <string name="err_mobile_conflict_suppliers">"“%1$s” is already in your Suppliers list with name “%2$s”"</string>
+    <string name="delete_supplier">"Delete Supplier"</string>
+    <string name="delcst_supplier_msg_settlement">"Please make supplier balance 0 to delete"</string>
+    <string name="delcst_supplier_msg">"Supplier will still be able to see all old SMS"</string>
+    <string name="delcst_supplier_msg_no_mobile">"Supplier data will be deleted permanently"</string>
+    <string name="err_cyclick_conflict_customer">"“%1$s” is already in your Customers list with name “%2$s”"</string>
+    <string name="err_cyclick_conflict_supplier">"“%1$s” is already in your Supplier list with name “%2$s”"</string>
+    <string name="notification_delivered">"Notification Delivered"</string>
+    <string name="view_supplier">"View Supplier"</string>
+    <string name="transaction_notification">"Transaction Notification"</string>
+    <string name="notification_language">"Notification Language"</string>
+    <string name="empty_supplier">"Now, you can record credit taken from suppliers."</string>
+    <string name="open_app_setting">"Settings"</string>
+    <string name="import_phone_contact_desc_suppliers">"Add new suppliers directly from phonebook"</string>
+    <string name="customer">"Customer"</string>
+
+    <string name="app_update_available">App update available</string>
+    <string name="update">Update</string>
+    <string name="app_under_construction">App Under Construction</string>
+    <string name="sorry_for_the_inconvenience_caused">Sorry for the inconvenience caused! Please be patience, your app will resume soon</string>
+    <string name="all_your_data_is_safe_with_okcredit">All your data is safe with OkCredit. We are dedicated to provide seamless experience.</string>
+
+    <string name="contact_info">Contact Info</string>
+    <string name="communication">Communications</string>
+    <string name="got_it">Got It</string>
+    <string name="verified_user">Verified User</string>
+    <string name="cannot_edit">The Merchant is registered on OkCredit. You’re only allowed to change his Name and Profile Picture.</string>
+
+    <string name="keep_your_phone_connected_to_internet">Keep your phone connected to internet</string>
+    <string name="downloading_update">Downloading Update</string>
+    <string name="send_reminder">Send Reminder</string>
+    <string name="by_contiuing_terms_privacy"><![CDATA[By continuing, you accept OkCredit\‘s & Payment Provider\’s <font color=\'#0076f8\'><a href=“http://okcredit.in/terms”>Terms And Privacy Policy</a></font>]]></string>
+    <string name="supplier_i_dont_know">I don’t know</string>
+    <string name="bank_account">Bank Account</string>
+    <string name="_0_collection_fee">0% Fee</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="update_bank">Update Bank Account</string>
+    <string name="update_bank_text">You are about to update your Bank Account. Payment from customer will be deposited to the updated Bank Account.</string>
+    <string name="scan_qr_or_add_bank">Scan QR or add Bank Account</string>
+    <string name="send_payment_reminder">Send Payment Reminder</string>
+    <string name="no_transaction_fee_for_upi_payments_collect_instently_v2">0% fee for payments. Collect Instantly</string>
+    <string name="how_to_collect_due_online_via_upi_v2">How to collect dues online?</string>
+    <string name="account_number">Account Number</string>
+    <string name="enter_name_ifsc_account_number">Enter Name, IFSC &amp; Account Number</string>
+    <string name="scan_qr_or_enter_upi_id">Scan QR or enter BHIM UPI</string>
+    <string name="ifsc">IFSC</string>
+    <string name="confirm_details">Confirm Details</string>
+    <string name="okcredit_will_transact_1_to_verify_the_account">OkCredit will transact ₹1 to verify the account</string>
+    <string name="edit_details">Edit Details</string>
+    <string name="update_account">Update Account</string>
+    <string name="add_bank_account_slide1">Hi,\nPlease enter your Bank Account Number</string>
+    <string name="add_bank_account_slide2">Great,\nPlease enter your Bank IFSC code</string>
+    <string name="add_bank_account_slide3">Almost there!\nPlease enter your name as per Bank Account</string>
+    <string name="oops_your_ifsc_do_not">Oops! Your IFSC does not match with the bank account</string>
+    <string name="please_check_and_rectify_the_same">Please check and rectify the same</string>
+    <string name="confirm_and_proceed">Confirm and Proceed</string>
+    <string name="add_number">Add Number</string>
+    <string name="hurrey_account_linked_successfully">Hurray!  Account linked successfully</string>
+    <string name="ask_customer_to_scan_qr_and_pay_online">Ask customer to scan QR and pay online</string>
+    <string name="invalid_account_number">Oops your account number is invalid</string>
+    <string name="invalid_ifsc_code">Oops your IFSC code is invalid</string>
+    <string name="invalid_account_name">Oops your account name is invalid</string>
+    <string name="invalid_account_or_ifsc">OOPs your account number or ifsc code is invalid</string>
+    <string name="invalid_ifsc">Invalid IFSC Code</string>
+    <string name="payment_failed">Payment Failed</string>
+    <string name="settlement_pending">Settlement Pending</string>
+    <string name="payment_title_success">Payment Successful</string>
+    <string name="refund_successful">Refund Successful</string>
+    <string name="refund_initiated">Refund Initiated</string>
+    <string name="paid_to">TO</string>
+    <string name="credit_failed">Credit Failed</string>
+    <string name="credit_cycle">Credit Cycle</string>
+    <string name="get_collection_help">I have a question related to collection %1$s</string>
+    <string name="due_on">Collect on</string>
+    <string name="due_on_new"><![CDATA[Collect on <b>%1$s</b>]]></string>
+    <string name="automated_reminder">Automated Reminder</string>
+    <string name="automated_reminder_subtitle">Are you sure to switch off? No reminder SMS will be send to any customer on due date</string>
+    <string name="self_Reminder_subtitle">Are you sure to switch off? You will not receive any notification from OkCredit regarding due</string>
+    <string name="credit_cycle_subtitle">You are about to set credit cycle for all your customers including the ones you set</string>
+    <string name="set">SET</string>
+    <string name="days">days</string>
+    <string name="change_number">Change Number</string>
+    <string name="change_number_line_1">Changing number will migrate all your data to the new number.</string>
+    <string name="change_number_line_2">Make sure, you are able to receive SMS on new number.</string>
+    <string name="change_number_line_3">An OTP will be send on the current number to verify the user.</string>
+    <string name="enter_your_new_mobile_number">Enter your new mobile number</string>
+    <string name="new_number">New Number</string>
+    <string name="verify_and_change">Verify &amp; Change</string>
+    <string name="you_are_about_to_change_your_number_from">You are about to change your number from</string>
+    <string name="to">&#160;to&#160;</string>
+    <string name="migration_successful">Migration Successful!</string>
+    <string name="merchant_already_exists">Merchant Already Exists</string>
+
+    <string name="confirm_number_change_line3">An OTP will be send to <![CDATA[<b>%1$s</b>]]> for user verification</string>
+
+    <string name="title_business_name">Business Name</string>
+    <string name="enter_business_name">"Enter Your Business Name"</string>
+    <string name="enter_business_name_box">"Your Business Name"</string>
+    <string name="enter_business_name_note">Profile name will be visible to your customers.</string>
+
+
+    <string name="enter_mobile_number">"Enter Your Mobile Number"</string>
+
+    <string name="title_category">Category</string>
+    <string name="enter_category">"Select Your Business Category"</string>
+
+    <string name="enter_location">"Set Your Current Location"</string>
+    <string name="enter_location_box">"Enter Your Address"</string>
+
+    <string name="enter_about_business">"Enter About Your Business"</string>
+    <string name="enter_about_business_box">"About Your Business"</string>
+
+    <string name="enter_email">"Enter Your Email ID"</string>
+    <string name="enter_email_box">"Your Email Id"</string>
+
+    <string name="enter_person_name">"Enter Contact Person Name"</string>
+    <string name="enter_person_name_box">"Contact Person Name"</string>
+
+
+    <string name="title_category_info">Other Info</string>
+    <string name="enter_other_category_name">"Other Category Name"</string>
+    <string name="enter_other_category_name_box">"Other Category"</string>
+
+    <string name="other_info_title">Email, About, Name</string>
+
+    <string name="title_business_card">Business Card</string>
+    <string name="share_business_card">Share your business card</string>
+
+    <string name="confirm_delete">"Confirm Delete"</string>
+    <string name="new_supplier">"New Supplier"</string>
+    <string name="category_name_limit">Character limit - 50</string>
+    <string name="added_by">Added by %1$s</string>
+    <string name="deleted_by">Deleted by %1$s</string>
+    <string name="now_record_credit_taken">Now, record credits taken from Suppliers</string>
+    <string name="email_already_exit">This email is already taken</string>
+    <string name="watch_tutorial">Watch Tutorial</string>
+    <string name="map_business">Map your Business</string>
+    <string name="allow_map_location">Allow location service to display your business on map</string>
+    <string name="business_location">Business Location</string>
+    <string name="business_location_secondary">Make your shop location visible to\ncustomers and get more business</string>
+    <string name="ask_later">Ask Later</string>
+    <string name="location_set_successfully">Business location\nadded successfully</string>
+    <string name="change_number_tv_3">An OTP will be send on <![CDATA[<b>%1$s</b>]]> to verify the user.</string>
+    <string name="your_otp_will_be_delivered_bold">Your OTP will be delivered soon on <![CDATA[<b>%1$s</b>]]></string>
+    <string name="verify_mobile">Verify Mobile</string>
+    <string name="old_number">Old Number</string>
+    <string name="merchant">Merchant</string>
+    <string name="add_note">Add Note</string>
+    <string name="new_number_caps">New Number</string>
+    <string name="title_location_not_found">Location not found</string>
+    <string name="location_not_found_map">Mentioned location is not found on map</string>
+    <string name="set_map_location">SET LOCATION ON MAP</string>
+    <string name="contact_not_found">No contact found with <![CDATA[<b>%1$s</b>]]></string>
+    <string name="suppliers">Supplier</string>
+    <string name="didnt_understand">Didn\'t understand, please repeat</string>
+    <string name="add_bills">Add Bills</string>
+    <string name="notes">NOTES</string>
+    <string name="add_more">Add More</string>
+    <string name="listening">Listening…</string>
+    <string name="you_will_be_signed_out_from_all_other_devices">You will be Signed Out from all other devices</string>
+    <string name="select_reminder_type">Select Reminder Type</string>
+    <string name="always_use_whatsapp">Always use WhatsApp</string>
+    <string name="always_use_sms">Always use SMS</string>
+    <string name="send_statement_to_customer">Send Statement to Customer</string>
+    <string name="add_customer_number_to_send">Add customer number to send reminders</string>
+    <string name="add_customer_number_to_call">Add customer number to call</string>
+    <string name="balance_in_advance_no_reminder">Account in advance, no reminder to sent</string>
+    <string name="more_send_options">Long press for more send options</string>
+
+
+    <string name="new_text">New</string>
+    <string name="total_livesales_online_collection">Total online collection :</string>
+    <string name="live_sale_tuto_desc_2">Receive money directly to your bank account from any customer, without any transaction fee</string>
+    <string name="live_sale_tuto_title_2">Collect any Payment</string>
+    <string name="live_sale_tuto_title_1">Summary of Payments via Link</string>
+    <string name="live_sale_tuto_desc_1">Keep track of all your payments from Link Pay/ QR at one place!</string>
+    <string name="all_your_qr_payments_will_appear_here">All your QR payments will appear here</string>
+
+    <string name="syncing_your_data">Downloading your Data</string>
+    <string name="syncing_paused">Syncing Paused</string>
+    <string name="syncing_failed">Syncing Failed</string>
+    <string name="please_connect_internet">To continue, please connect to internet.</string>
+    <string name="please_click_connect_internet">To continue, please click retry button.</string>
+    <string name="processing_your_data">It may take 5 minutes. Please wait…</string>
+    <string name="restart_sync">Restart Sync</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="name">Name</string>
+    <string name="name_required">Name (Required)</string>
+    <string name="phonebook_contacts">Select from Phonebook</string>
+    <string name="mobile_number_optional">Mobile Number -  <i>Optional</i></string>
+    <string name="bills">BILLS</string>
+    <string name="all_transactions">All Transactions</string>
+
+
+    <string name="welcome">Welcome</string>
+    <string name="next">Next</string>
+    <string name="welcome_banner_title_1">Digital Bahi-Khata</string>
+    <string name="welcome_banner_sub_title_1">Get rid of your old Bahi-Khata. Opt for new digital and Forever Bahi-Khata</string>
+
+    <string name="welcome_banner_title_2">All accounting in phone</string>
+    <string name="welcome_banner_title_v2_2">Timely Collection</string>
+    <string name="welcome_banner_sub_title_2">Keep all your accounting digitally safe &amp; secure. Access from anywhere, anytime</string>
+    <string name="welcome_banner_sub_title_v2_2">Forget the stress of door to door collection,Use payment reminders to collect dues &amp; save time!</string>
+
+    <string name="welcome_banner_title_3">100% Safe &amp; Secure</string>
+    <string name="welcome_banner_title_v2_3">Great Customer Connection</string>
+    <string name="welcome_banner_sub_title_3">No tension of losing data. Keep all your accounting forever, safe and secure</string>
+    <string name="welcome_banner_sub_title_v2_3">Send updates of transactions to customers and maintain a transparent &amp; happy bond.</string>
+
+    <string name="welcome_banner_title_4">Collect due on time</string>
+    <string name="welcome_banner_sub_title_4">Collect due on time without any hustle and going door to door</string>
+    <string name="welcome_banner_sub_title_v2_4">Use on multiple devices, Setup app lock  &amp; Download backup without worrying about losing data</string>
+
+
+    <string name="record_credit_new_customer">Record customer credit transactions. Start by adding a new customer.</string>
+    <string name="otp_will_be_sent">An OTP will be send on the mentioned mobile number to verify the user</string>
+    <string name="auto_read_mobile_error">Invalid mobile number. Please enter the correct number.</string>
+
+
+    <string name="share_with_family">Share with your friends and family !</string>
+    <string name="win_referrral_amount">Win <b>₹61</b> on every valid referral</string>
+    <string name="share_earn">Share &amp; Earn</string>
+
+
+    <string name="share_feedback">Share Feedback</string>
+    <string name="how_satisfied_are_you_with_okcredit">How satisfied are you with \nOkCredit?</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="rate_us_playstore">Rate 5 Star On Play store</string>
+    <string name="hated_it">Hated it!</string>
+    <string name="did_not_like_it">Did not like it !</string>
+    <string name="loved_it">Loved it !</string>
+    <string name="date">Date</string>
+    <string name="liked_it">Liked it!</string>
+    <string name="enjoyedit">Enjoyed it!</string>
+    <string name="add_business_photo_and_card">Add photo to business account!</string>
+    <string name="add_now">Add Now</string>
+    <string name="keep_your_account_safe">Keep your account safe!</string>
+    <string name="setup_app_lock">Set up App Lock</string>
+    <string name="add_address_for_business">Add address for business cards!</string>
+    <string name="link_your_payment_method">Link your Account with OkCredit and collect money directly to your bank account without any charges</string>
+    <string name="add_your_paytm_wallet">Add your Paytm wallet</string>
+    <string name="add_bank_account">Add Bank Account</string>
+    <string name="upi_holder_name">UPI Holder Name</string>
+    <string name="common_ledger_text_customer">This is a common account with your customer. Your customer is also using OkCredit and can view, add and delete transactions on this account.</string>
+
+    <string name="import_contacts">Import Contacts</string>
+    <string name="verifying">Verifying…</string>
+    <string name="added_by_v2">Added by <![CDATA[<b>%1$s</b>]]></string>
+    <string name="deleted_by_v2">Deleted by <![CDATA[<b>%1$s</b>]]></string>
+
+    <string name="security_update">Security Update</string>
+    <string name="now_unlock_okcredit">Now unlock OkCredit with your existing phone lock</string>
+    <string name="enable_security">Enable Security</string>
+    <string name="skip_security">Skip Security</string>
+    <string name="secure_app">Secure your app</string>
+    <string name="use_existing_screen_lock">Use your existing screen lock to open OkCredit</string>
+    <string name="lock_okcredit">Lock OkCredit</string>
+    <string name="unlock_okcredit">Unlock OkCredit</string>
+    <string name="confirm_screen_lock">Confirm your screen lock password, PIN or pattern</string>
+    <string name="too_may_wrong_attempts">Too many attempts. Try after some times</string>
+
+    <string name="raise_concern">Raise Concern</string>
+    <string name="know_more_text_2">Can delete <![CDATA[<b>Credit</b>]]> or <![CDATA[<b>Payment</b>]]></string>
+    <string name="know_more_text_1">Can add <![CDATA[<b>Credit</b>]]>  or <![CDATA[<b>Payment</b>]]></string>
+
+
+    <string name="cannot_delete_customer_transaction"><![CDATA[You cannot delete a transaction added by the customer. <u><font color=\'#0076f8\'>Know More</font></u>]]></string>
+    <string name="single_list_cannot_delete_customer_transaction"><![CDATA[You cannot delete a transaction added by the contact. <u><font color=\'#0076f8\'>Know More</font></u>]]></string>
+    <string name="cannot_delete_supplier_transaction"><![CDATA[You cannot delete a transaction added by the supplier. <u><font color=\'#0076f8\'>Know More</font></u>]]></string>
+    <string name="why_common_khata">Why Common khata?</string>
+    <string name="common_khata_explaination">Both are using OkCredit app. Therefore, using single khata make sense.</string>
+    <string name="feedback_submitted">Feedback Submitted</string>
+    <string name="common_ledger_text_customer_know_more"><![CDATA[Common account with customer. <u><font color=\'#0076f8\'>Know More</font></u>]]></string>
+    <string name="single_list_common_ledger_text_contact_know_more"><![CDATA[Common account with contact. <u><font color=\'#0076f8\'>Know More</font></u>]]></string>
+    <string name="common_ledger_text_supplier_know_more"><![CDATA[Common account with supplier. <u><font color=\'#0076f8\'>Learn More</font></u>]]></string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="select_reminder_date">Select Reminder Date</string>
+    <string name="balance_advance">Balance Advance</string>
+    <string name="customer_balance_advance">Balance Advance</string>
+    <string name="balance_due">Balance Due</string>
+    <string name="customer_balance_due">Balance Due</string>
+    <string name="request_payment">Request Payment</string>
+    <string name="change_reminder_date">Reminder Date</string>
+    <string name="due_info_sms_sent">SMS payment request has been sent.</string>
+    <string name="due_Date">Due Date</string>
+    <string name="automatic_sms">Automatic SMS request will be sent.</string>
+    <string name="upcoming_due">Collection Due</string>
+    <string name="latest">Latest</string>
+    <string name="due_crossed">Pending Collection</string>
+    <string name="due_today">Collect Today</string>
+    <string name="pending_collection">Pending Collection %1$s</string>
+    <string name="collect_on">Collect on %1$s</string>
+    <string name="clear">Clear</string>
+    <string name="apply">Apply</string>
+    <string name="set_due_date">Collection Date</string>
+    <string name="filter">Filter</string>
+    <string name="filters_active">Filters Active</string>
+    <string name="clear_filters">Clear Filters</string>
+    <string name="send_sms_request">Send SMS Request</string>
+    <string name="send_whatsapp_request">Send WhatsApp request</string>
+    <string name="call_customer">Call Customer</string>
+    <string name="day_ago">day ago</string>
+    <string name="days_ago">days ago</string>
+    <string name="month_ago">month ago</string>
+    <string name="months_Ago">months ago</string>
+    <string name="add_phone_number">Add Phone Number</string>
+    <string name="your_name">Your Name</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="name_will_be_displayed">Your name will be displayed on every transactional SMS delivered to your customer</string>
+    <string name="collection">Collection</string>
+    <string name="scan_and_pay_via_qr">Ask customer to scan and pay via QR</string>
+    <string name="get_money_to_your_bank">(Get money directly to your bank)</string>
+    <string name="online_history">Online History</string>
+    <string name="cash_history">Cash History</string>
+    <string name="offline_payment">Offline Payment</string>
+    <string name="no_collection_history">No collection history</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="generating_qr_code">Generating your QR code</string>
+    <string name="note_hint_credit">What is it for? (Optional)</string>
+    <string name="note_hint_payment">Add details (Optional)</string>
+    <string name="total_credit">Total Credit</string>
+    <string name="no_results_found">No Results Found</string>
+    <string name="set_due_date_for_faster_payment_collection">Set due date for faster payment collection.</string>
+    <string name="clear_filter">Clear Filter</string>
+    <string name="sort_by">Sort By</string>
+    <string name="show_only">Collection Date</string>
+    <string name="reminder_date">Reminder Date</string>
+    <string name="new_filter_options">Check out the new filter option</string>
+
+
+    <string name="take">Take</string>
+    <string name="give">Give</string>
+    <string name="credit">Credit</string>
+    <string name="payment">Payment</string>
+    <string name="how_common_ledger_works">How Common Ledger works</string>
+    <string name="can_the_other_user_delete_my_transactions">Can the other user delete my transactions?</string>
+    <string name="no_only_the_person">No, only the person who added the transaction has the permission to delete/modify the transaction.</string>
+    <string name="submit_text">Submit</string>
+    <string name="payment_reminder_text">Payment of Rs.%1$s to %2$s is pending. Please make payment as soon as possible. Check details at %3$s</string>
+    <string name="payment_reminder_text_without_account_url">Payment of ₹%1$s to %2$s is pending. Please make payment as soon as possible.</string>
+    <string name="write_your_feedback_here">Write your feedback here</string>
+    <string name="inapp_paytm_description">Add Paytm wallet to collect due online with 0% transaction fee.</string>
+    <string name="inapp_upi_description">Add UPI ID to collect due online with 0% transaction fee.</string>
+    <string name="inapp_bank_description">Add Airtel / Paytm Bank to collect due online with 0% transaction fee.</string>
+    <string name="earn_reward_of">Earn reward up to ₹100</string>
+    <string name="request_or_their_bank_upi_details_to_make_online_payment">Request %s for their Bank/ UPI details to make online payment</string>
+    <string name="add_payment_method_request">Request</string>
+    <string name="add_upi_id">Add UPI ID</string>
+    <string name="add_wallet">Add Wallet</string>
+    <string name="add_another">Add Another</string>
+    <string name="setup_collection_to_get_money">Setup collection to get money to your bank account</string>
+    <string name="text_new">New</string>
+    <string name="hurray">Hurray!</string>
+    <string name="earned_for_making_online_payment">Earned for making online payment</string>
+    <string name="enable_for_referring_merchant">Earned for Referring merchant to\nset-up payments on OkCredit</string>
+    <string name="earned_for_opting">Earned for opting %1$s</string>
+    <string name="paid_on">Rewarded on %1$s</string>
+    <string name="scratched_on">Scratched on %1$s</string>
+    <string name="online_collection">Online Collection</string>
+    <string name="collection_to_earn_reward">Setup Collection to earn reward up to ₹100</string>
+    <string name="whatsapp_mini_statement">WhatsApp Mini Statement</string>
+    <string name="whatsapp_monthly_statement">WhatsApp Monthly Statement</string>
+    <string name="transaction_sms_info">Your customer will receive SMS for every transaction that you add</string>
+    <string name="online_collections">Online Collection</string>
+    <string name="refferal">Referral</string>
+    <string name="share_and_earn">Share &amp; Earn</string>
+    <string name="crossed" comment="crossed">Crossed</string>
+    <string name="cannot_select_past_date">Cannot select past date</string>
+    <string name="cannot_select_current_date">Cannot select current date</string>
+    <string name="give_credit_of_100_rs">\“100 Rs Credit\”</string>
+    <string name="to_accept_payment_say">To accept payment, say</string>
+    <string name="accept_payment_of_100_rs">\“100 Rs Payment\”</string>
+    <string name="add_transaction_with_voice">Add transaction with voice</string>
+    <string name="to_give_credit_say">To give credit, say</string>
+    <string name="sorry_the_process_was_interrupted_click_below_to_start_again">Sorry, the process was interrupted.Click below to start again</string>
+    <string name="listening_mic">Listening</string>
+    <string name="no_match_found">No Match found</string>
+    <string name="hello">Hello!</string>
+    <string name="added_on">Added On</string>
+    <string name="added_on_new"><![CDATA[Added On <b>%1$s</b>]]></string>
+    <string name="step">Step</string>
+    <string name="steps_to_add_customer">Steps to add a customer</string>
+    <string name="how_to_add_customer_step1">Click on “Add Customer” button</string>
+    <string name="how_to_add_customer_step2">Add customer’s name</string>
+    <string name="how_to_add_customer_step3">Add customer’s mobile number (optional)</string>
+    <string name="we_recommend_payment_address">We recommend your payment address based on your registration details.</string>
+    <string name="contact_us"><![CDATA[<u>Contact Us</u>]]></string>
+    <string name="error_msg_for_paymetn_refund">Error: Couldn’t complete payment. Amount would be refunded to your customer in 5–7 business days.</string>
+    <string name="error_msg_for_payment_failed">Error: Couldn’t complete payment.  Please provide a valid payment address</string>
+    <string name="payment_refunded">Payment Refunded</string>
+    <string name="how_does_this_work">How does this work?</string>
+
+    <string name="share_okcredit">Share OkCredit</string>
+    <string name="referral_step_1_title_V1">@string/share_okcredit</string>
+    <string name="referral_step_1_description_V1">Share OkCredit app to a Businessman</string>
+    <string name="referral_step_2_title_V1">Get Downloaded</string>
+    <string name="referral_step_2_description_V1">Ask that Businessman to download the app</string>
+    <string name="referral_step_3_title_V1">Earn Reward</string>
+    <string name="referral_step_3_description_V1" comment="example: Get ₹50 on every successful install upto ₹250">Get %1$s on every successful install up to %2$s</string>
+
+    <string name="referral_step_1_title_V2">Share and Download OkCredit</string>
+    <string name="referral_step_1_description_V2">Share the link with a shopkeeper and get them registered on the app</string>
+    <string name="referral_step_2_title_V2">Use the App</string>
+    <string name="referral_step_2_description_V2">Both you and your friend earn Rs. 50/- if he registers and uses the app</string>
+    <string name="referral_step_3_title_V2">Earn Money</string>
+    <string name="referral_step_3_description_V2">You can earn up to Rs. 250/- by inviting more shopkeepers</string>
+
+    <string name="share_app" maxLength="20">Share App</string>
+    <string name="referral_share_content" comment="Download OKCredit from this link and help me earn Rs.30. https://this.is.for.link">Download OKCredit from this link and earn up to Rs.%1$s. %2$s</string>
+    <string name="help_detail">Help Detail</string>
+    <string name="thanks_for_the_feedback">Thanks for the feedback!</string>
+    <string name="your_pin_will_be_delivered_bold">Your 6 digit PIN will be delivered soon on <![CDATA[<b>%1$s</b>]]></string>
+    <string name="register_err_incorrect_pin">Incorrect PIN</string>
+    <string name="didn_t_get_pin">Didn’t get PIN?</string>
+    <string name="pin_will_be_sent">Your 6 digit PIN will be sent on the entered mobile number</string>
+    <string name="also_have_business">If you also have a business, Install OkCredit now <![CDATA[%1$s]]></string>
+    <string name="was_the_content_helpful" comment="Help details screen bottom">Was the content helpful?</string>
+    <string name="watch_video_for_more_details">Watch video more details:</string>
+    <string name="payment_incomplete">Payment Incomplete</string>
+    <string name="credit_incomplete">Credit Incomplete</string>
+    <string name="contact_us_v2">Contact Us</string>
+    <string name="to_collect_payment_online">To collect payment online %1$s</string>
+    <string name="back">Back</string>
+    <string name="supplier_subtext_1">Now you can also maintain your supplier bahi khata on OkCredit.</string>
+    <string name="supplier_subtext_2">You have existing Suppliers. Now get notified about your supplier entries on OkCredit app.</string>
+    <string name="you_can_add_payment">You can add udhar / payment entry.</string>
+    <string name="supplier_education_2">"added you as customer. Now you can check supplier entries on OKCredit app.\n \n \n\n"</string>
+    <string name="money_transfer">Money Transfer</string>
+    <string name="customers_ko_offers">Customers ko offers bhejiye !</string>
+    <string name="whatsapp_us">WhatsApp Us</string>
+    <string name="email_us">Email Us</string>
+    <string name="send_email">Send Email…</string>
+    <string name="please_provide_feedback">Please Provide the feedback!</string>
+    <string name="now_send_payment_reminder">Now send payment link or ask customer to scan QR for online payments</string>
+    <string name="money_succesfully_transferred">Money successfully transferred to your account</string>
+    <string name="total_online_collection">Total online collection</string>
+    <string name="total_offline_collection">Total offline collection</string>
+    <string name="offline_slash_online_collection">Online/Offline collection</string>
+    <string name="defaulters">Defaulters</string>
+    <string name="customers_not_made_payment">These customers have not made any payment, within expected credit cycle</string>
+    <string name="last_seven_days">Last 7 days</string>
+    <string name="last_thirty_days">Last 30 days</string>
+    <string name="total_credit_given">Total credit given</string>
+    <string name="home_delivery">Home Delivery</string>
+    <string name="tell_your_customers">Tell your customers</string>
+    <string name="earned_for_opting_survey_response">Earned for Survey response</string>
+    <string name="deny_to_add_transaction">Deny to Add Transaction</string>
+    <string name="customer_permission">Customer Permission</string>
+    <string name="transaction_edit_permission">Permission to add transaction is disabled by %1$s</string>
+    <string name="link_pay">Link Pay</string>
+    <string name="collect_any_payment_online">Collect any Payment Online</string>
+    <string name="share_payment_link_to_connect">Share payment link to collect and track payment from any customer</string>
+    <string name="ask_customer_to_pay_online">Ask customer to pay online via Link/ QR</string>
+    <string name="kyc_set_reminder_text">Limit Reached! Please try tomorrow</string>
+    <string name="online_collection_ratio">Online collection ratio</string>
+    <string name="share_payment_link">Share Link</string>
+    <string name="no_txn_available">No transaction available within selected time</string>
+    <string name="pay_via_okcredit">Pay via OkCredit</string>
+    <string name="share_app_via">Share app via</string>
+    <string name="earn_more_rewards">Earn more rewards</string>
+    <string name="add_transaction">Add transaction</string>
+    <string name="notify_this_person">Notify this person</string>
+    <string name="numeric_1">1</string>
+    <string name="numeric_2">2</string>
+    <string name="numeric_3">3</string>
+    <string name="rewards_step_1_title">@string/add_customer</string>
+    <string name="rewards_step_1_subtitle">Add a customer whose khata you want to maintain</string>
+    <string name="rewards_step_2_title">@string/add_transaction</string>
+    <string name="rewards_step_2_subtitle">Record credit or payment of that customer &amp; earn ₹25</string>
+    <string name="rewards_title">Win ₹25</string>
+    <string name="add_customer_rewards_title">@string/how_does_this_work</string>
+    <string name="add_customer_rewards_subtitle">Add a customer with transaction to earn ₹25</string>
+    <string name="add_transaction_rewards_subtitle">Add  a transaction to earn ₹25</string>
+    <string name="add_transaction_rewards_title">Great! Now add a transaction to win</string>
+    <string name="tick_mark" translatable="false">\u2713</string>
+    <string name="edit_mobile">Edit Mobile</string>
+    <string name="collect_due_from">Calender due from %1$s</string>
+    <string name="to_quickly_add_customers_from_contacts">To quickly add customers from contacts</string>
+    <string name="notify_later">Notify next %1$s hours later</string>
+    <string name="total_earnings">Total earnings</string>
+    <string name="merchant_notified">User had been notified</string>
+    <string name="notify_merchant_error">Could not notify user. Please try again</string>
+    <string name="notify_merchant_success">User has been notified</string>
+    <string name="rupee_placeholder">₹%1$s</string>
+    <string name="unclaimed_rewards">₹%1$s unclaimed</string>
+    <string name="second_reward_transaction_title">Hooray! Win ₹ 25</string>
+    <string name="second_reward_transaction_subtitle">Add another transaction to claim this reward</string>
+    <string name="pending_rewards">Pending Reward</string>
+    <string name="merchant_already_notified">Try again after 24 hours</string>
+    <string name="close">Close</string>
+    <string name="transaction_disabled">Permission to add transaction is disabled by you.</string>
+    <string name="common_ledger_transaction_restriction">You are unable to delete this supplier due to restriction by %1$s</string>
+    <string name="block">Block</string>
+    <string name="unblock">Unblock</string>
+    <string name="block_customer">Block Customer</string>
+    <string name="block_customer_description">Please confirm that you are blocking above customer. Blocked customer’s due amount will not be added to net balance.</string>
+    <string name="unblock_customer">Unblock Customer</string>
+    <string name="unblock_customer_description">Please confirm that you are unblocking above customer. Unblocked customer’s due amount will be added to net balance.</string>
+    <string name="block_supplier">Block Supplier</string>
+    <string name="block_supplier_description">Please confirm that you are blocking above supplier. Blocked supplier’s due amount will not be added to net balance.</string>
+    <string name="unblock_supplier">Unblock Supplier</string>
+    <string name="unblock_supplier_description">Please confirm that you are unblocking above supplier. Unblocked supplier’s due amount will be added to net balance.</string>
+
+    <string name="blocked_by_customer">You are blocked by customer</string>
+    <string name="blocked_by_customer_description">Blocked customers cannot add/edit transactions and due amount will not be added to your net balance.</string>
+    <string name="blocked_by_supplier">You are blocked by supplier</string>
+    <string name="blocked_by_supplier_description">Blocked suppliers cannot add/edit transactions and due amount will not be added to your net balance.</string>
+    <string name="blocked_customer">You’ve blocked this customer</string>
+    <string name="blocked_customer_description">Blocked Customers cannot add/edit transactions and will not get updates.</string>
+    <string name="blocked_supplier">You’ve blocked this supplier</string>
+    <string name="blocked_supplier_description">Blocked Suppliers cannot add/edit transactions and will not get updates.</string>
+    <string name="call_supplier">Call Supplier</string>
+    <string name="processing_payment">Processing Payment</string>
+    <string name="processing_transaction">Processing Transaction</string>
+    <string name="supplier_payment_failed">Payment Failed</string>
+    <string name="processing_tx_description">We\'re processing your payment, please be patient.</string>
+    <string name="supplier_payment_pending">If money is deducted it will be refunded within next 3–7 days</string>
+    <string name="credit_added">Credit added</string>
+    <string name="payment_added">Payment added</string>
+    <string name="bill_on">Billed On %1$s</string>
+    <string name="supplier_add_number"><![CDATA[Add %1$s mobile number to send free SMS for every transaction. <u><font color=\'#0076f8\'>Add Number</font></u>]]></string>
+    <string name="supplier_share_app"><![CDATA[Ask your supplier to download OkCredit app to easily manage this Khata. <u><font color=\'#0076f8\'>Share</font></u>]]></string>
+    <string name="app_promotion_link">"I’m using OkCredit app to record all the credit transactions between us, download the app now to check the details. Send SMS to your customers for Free http://onelink.to/9vu8v3"</string>
+    <string name="share_report">Share Report</string>
+    <string name="processing_amount">Processing amount</string>
+    <string name="insurance">Insurance</string>
+    <string name="mobile_prepaid_recharge">Mobile Prepaid Recharge</string>
+    <string name="mobile_recharge_sms">Mobile Recharge SMS</string>
+    <string name="money_transfer_sms">Money Transfer SMS</string>
+    <string name="lending_sme">Lending SME</string>
+    <string name="kyc">Kyc</string>
+    <string name="protect_your_family">Protect yourself &amp; Family</string>
+    <string name="okcredit_ab_aapki_wealth">OkCredit ab aapki wealth ke saath-saath health ka bhi khayal rakhega</string>
+    <string name="yes_i_need">Yes, I Need</string>
+    <string name="provide_feedback">Provide Feedback</string>
+    <string name="feedback">Feedback</string>
+    <string name="this_is_suggested">This payment address is suggested based on your registration details with OkCredit. %1$s</string>
+    <string name="know_more">Know More</string>
+    <string name="how_we_predict_your_address">How do we recommend your payment address?</string>
+    <string name="how_we_predict_desc">We recommend your payment address based on the details you share with OkCredit.</string>
+    <string name="what_can_you_do">What can you do with the recommended address?</string>
+    <string name="what_can_you_do_desc">By adding this payment address, you can start receiving online payments from your customers on this address.</string>
+    <string name="add_bank">Add Bank</string>
+    <string name="business_type">Business Type</string>
+    <string name="select_your_business_type">Select your business type</string>
+    <string name="popular_text">Popular</string>
+    <string name="others">Others</string>
+    <string name="select_category">Select Category</string>
+    <string name="search">Search</string>
+    <string name="category_search_text">Select or search category</string>
+    <string name="add_category">Add Category</string>
+    <string name="category_empty_text" comment="You can add “Painter” as a new category">
+        You can add <![CDATA[<b>%1$s</b>]]> as a new category
+    </string>
+    <string name="kyc_rick_high"><![CDATA[Daily UPI collection limit reached. To\n increase your limit <u><font color=\'#0574e3\'>Start Kyc</font></u>]]></string>
+    <string name="kyc_rick_low"><![CDATA[Limit reached! You can collect ₹50K on UPI and ₹20K on Non UPI daily. To unlock more payment options and higher limits <u><font color=\'#0574e3\'>Start Kyc</font></u>]]></string>
+    <string name="kyc_rick_none"><![CDATA[Limit reached! You can collect ₹1Lakh on UPI and ₹1Lakh on Non UPI daily. Your customers can resume paying online from tomorrow.]]></string>
+    <string name="show_qr_code">Show QR Code</string>
+    <string name="share_link_pay">Share Link Pay</string>
+    <string name="scan_and_pay_via_upi">Scan and pay via UPI</string>
+    <string name="scan_and_pay_via_upi_any_upi_app">Scan and pay using any UPI APP</string>
+    <string name="send_payment_link_with_ease">Send payment link and collect money from any customer with ease.</string>
+    <string name="required_to_accept_online_payments">Required to accept online payments from your customers</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="add_bank_details">Add Bank Details</string>
+    <string name="upi_added_successfully">UPI ID Added Successfully</string>
+    <string name="bank_account_added_successfully">Bank Account Added Successfully</string>
+    <string name="move_to_supplier">Move to Supplier</string>
+    <string name="please_confirm_moving_customer">Please confirm that you are moving the above customer to supplier.</string>
+    <string name="how_does_it_work">How does it work ?</string>
+    <string name="move_to_supplier_step_1">Credit entries will become the Payment entries</string>
+    <string name="move_to_supplier_step_2">Payment entries will become the Credit entries</string>
+    <string name="move_to_supplier_step_3">Due will become Advance</string>
+    <string name="discount_deleted">Discount deleted</string>
+    <string name="discount_added">Discount added</string>
+    <string name="delete_discount">Delete Discount</string>
+    <string name="discounts_offered">Discounts offered</string>
+    <string name="discount_offered">Discount offered</string>
+    <string name="add_discount">Add discount</string>
+    <string name="give_discount_education_primary_text">Offer Discounts to customers!</string>
+    <string name="give_discount_education_secondary_text"><![CDATA[Discounts encourage customers to clear dues & pay back easily during these tough times!]]></string>
+    <string name="customer_menu_education_primary_text">Introducing More</string>
+    <string name="customer_menu_education_secondary_text">Find helpful options like  give discount and QR here!</string>
+    <string name="note_will_be_sent_with_sms_update_of_discount">Note will be sent with SMS update of discount!</string>
+    <string name="discount_sms_update_sent">Discount SMS Update Sent</string>
+    <string name="del_discount_msg">SMS update will be sent for deleted discount</string>
+    <string name="internet_required">Internet Required</string>
+    <string name="please_connect_to_internet_and_try_again">Please connect to internet and try again</string>
+    <string name="give_discount">Give Discount</string>
+    <string name="need_help">Need help?</string>
+    <string name="made_in_india">Made with  \u2665 in India</string>
+    <string name="side_menu_version">Version v%1$s (%2$s) %3$s</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="expense_manager">Expense Manager</string>
+    <string name="type_of_expense">Type of Expense </string>
+    <string name="last_month">Last month</string>
+    <string name="this_month">This month</string>
+    <string name="last_7_days">Last 7 days</string>
+    <string name="all">All</string>
+    <string name="total_expense">Total Expenses</string>
+    <string name="add_amount">Add Amount</string>
+    <string name="new_expense">New Expense</string>
+    <string name="delete_expense">Delete Expense</string>
+    <string name="deleted">Deleted</string>
+    <string name="delete_expense_description">Are you sure you want to delete this expense?</string>
+    <string name="expense_education_1_primary">Don’t remember where &amp; how much you spent yesterday?</string>
+    <string name="expense_education_1_secondary">Add &amp; manage all your expenses on OkCredit!</string>
+    <string name="expense_education_2_primary">Manage Business Expenses</string>
+    <string name="expense_education_2_secondary">Remember where you spend your money, by adding &amp; tracking them in OkCredit</string>
+    <string name="record_mananage_expense">Record &amp; Manage, Business &amp; \nPersonal Expenses</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="please_check_network_setting">Please check your network settings &amp; try again!</string>
+    <string name="expense_card_description">Record &amp; Track business Spendings!</string>
+    <string name="manage_expenses">Manage Expenses</string>
+    <string name="add_expense_description">Add Expense Amount (kharcha)</string>
+    <string name="weekly_report">Weekly Report</string>
+    <string name="daily_report">Daily Report</string>
+    <string name="weekly_report_notification_content" comment="example: Net Balance Due $23">Net Balance %1$s %2$s</string>
+    <string name="mark_as_read">Mark as Read</string>
+    <string name="credit_colon">Credit:</string>
+    <string name="payment_colon">Payment:</string>
+    <string name="net_balance_column">Net Balance:</string>
+    <string name="syncing_your_account">Syncing your account</string>
+    <string name="select_the_app_to_be_shared_on">Select the app to be shared on</string>
+    <string name="select_the_whatsapp_to_share">Select the WhatsApp App to be shared on</string>
+    <string name="add_customer_start_transacting">Add your customer and start transacting. All transactions are 100% safe &amp; secure.</string>
+    <string name="unable_to_share_report">Unable to share report</string>
+    <string name="collection_date_passed">Since %1$s</string>
+    <string name="pending_collection_date_passed">Pending Collection Since %1$s</string>
+
+    <string name="five_days">5 days</string>
+    <string name="ten_days">10 days</string>
+    <string name="fiftenn_days">15 days</string>
+    <string name="thirty_days">30 days</string>
+    <string name="sms_reminder_will_be_sent_to_your_customer_on_selected_collection_date">SMS reminder will be sent to your customer on selected collection date</string>
+    <string name="sms_reminder_will_be_sent_to_your_customer_on_selected_reminder_date">SMS reminder will be sent to your customer on selected reminder date</string>
+    <string name="collect">Collect</string>
+    <string name="pending">Pending</string>
+    <string name="upcoming">Upcoming</string>
+
+    <string name="reminder_date_education">Set reminder date and send automated SMS payment reminder to customer</string>
+    <string name="remind_education">Long press to select more reminder types</string>
+    <string name="remind">Remind</string>
+    <string name="collection_due">Collection Due</string>
+    <string name="selected_due_date_title">SMS reminder will be sent to customer on <b>%1$s</b>.</string>
+    <string name="moving_to_supplier">Moving to Supplier</string>
+    <string name="please_don_t_move_away_from_this_screen">*Please don’t move away from this screen</string>
+    <string name="moving_successful">Moving Successful</string>
+    <string name="view_account">View Account</string>
+    <string name="moving_failed">Moving Failed!</string>
+    <string name="home">Home</string>
+    <string name="already_in_customer_list">This number is already in your customer list. You can view the customer or move to supplier. </string>
+    <string name="cannot_add_as_supplier">Cannot add as supplier</string>
+    <string name="deleted_customer_add_supplier">This number was previously added as a customer, are you sure you want to add the customer as a supplier?</string>
+    <string name="migration_error">You cannot migrate this customer since you\'re not the creator of this relationship.</string>
+    <string name="_1">1</string>
+    <string name="cyclic_account_error">You cannot migrate this customer since this person already exist in your supplier list.</string>
+    <string name="pay_online">Pay Online</string>
+    <string name="send_to">Send to:</string>
+    <string name="proceed">Proceed</string>
+    <string name="change_account">Change Account</string>
+    <string name="upi_added_succesfully">UPI ID Added Successfully</string>
+    <string name="bank_added_succesfully">Bank Account Added Successfully</string>
+    <string name="pay_online_education_text">"Send money online via UPI, Debit cards, Net Banking, and Wallets. Enjoy an improved payment experience"</string>
+    <string name="single_list_pay_online_education_text">"Now you can pay your supplier online.\n Pay by adding bank account/UPI"</string>
+    <string name="add_supplier_details_to_pay">Add Supplier\'s %1$s details to pay</string>
+    <string name="upi">UPI</string>
+    <string name="supplier_tab_education">You can start adding your suppliers, it doesn\'t matter if they\'re not on okCredit</string>
+    <string name="interent_error">Internet connection is not available, Check your network settings.</string>
+    <string name="go_back">Go Back</string>
+    <string name="feedback_qstn">Great! Hope we have clarified your question. Do you have any further question?</string>
+    <string name="manual_chat">Chat with Agent</string>
+    <string name="chat_with_us">Chat with Us</string>
+    <string name="help_chat">Help Chat</string>
+    <string name="chat_input_hint">Write a Message</string>
+    <string name="yes_inapp_chat">Yes / Go back</string>
+    <string name="no_inapp_chat">No / Exit chat</string>
+    <string name="heart_emoji">"\u2665"</string>
+    <string name="initial_message">Hi! We would love to help you. please select the topic from the below list related to your question.</string>
+    <string name="start_accepting_online_collection"><![CDATA[Set up collections to get 100% safe and secure online payments from customers with 0% fee.]]></string>
+    <string name="scan_and_pay">Scan and pay via UPI</string>
+    <string name="compatible_with">Compatible with:</string>
+    <string name="save">Save</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="to_accept_online_collections">Please enter your %1$s to accept online collection from your customers directly into your bank account.</string>
+
+    <string name="sales">Sales</string>
+    <string name="cash_sales">Cash Sales</string>
+    <string name="new_sale">New Sale</string>
+    <string name="rupees">₹%1$s</string>
+    <string name="total_sales">Total Sales</string>
+    <string name="sales_detail">Sale Details</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="note">Note</string>
+    <string name="delete_sale">Delete Sale</string>
+    <string name="add_sales">Add Sales</string>
+    <string name="add_sale">Add Sale</string>
+    <string name="billing_name">Billing Name</string>
+    <string name="sale_note_hint">Item Details eg. Milk, Atta etc</string>
+    <string name="delete_sale_description">Are you sure you want to delete the sale entry?</string>
+    <string name="sale_education_primary">क्या आप दिन भर बिके\nसमान का हिसाब पेपर पर रखते हैं?</string>
+    <string name="sale_education_secondary">Now record daily sales on\nOkCredit and track profits easily.</string>
+    <string name="record_sales">Record your sales on OkCredit \nand keep track of Profits</string>
+    <string name="add_total_amount">Add Total Amount</string>
+    <string name="add_sale_amount">Add Sale Amount</string>
+    <string name="add_bill_total">Add Bill Total</string>
+    <string name="add_expense_education_primary">Start Recording Expenses Here!</string>
+    <string name="add_expense_education_secondary">Like Electricity bills, Maintenance,\nSalaries, Delivery charges etc.</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="select_a_contact">Select A Contact</string>
+    <string name="add_items_to_bill">Add Items to Bill</string>
+    <string name="rate">Rate</string>
+    <string name="add_item">Add Item</string>
+    <string name="update_item">Update Item</string>
+    <string name="total">Total</string>
+    <string name="item">Item</string>
+    <string name="qty">Qty</string>
+    <string name="select_items">Select Items</string>
+    <string name="set_rate">Rate : ₹%1$s</string>
+    <string name="bill_total">Bill Total | ₹%1$s</string>
+    <string name="bill_total_string">Bill Total</string>
+    <string name="items_and_qty">%1$s Items . %2$s Qty</string>
+    <string name="name_and_rate">Name and Rate</string>
+    <string name="add_new_item">Add New Item</string>
+    <string name="tap_to_add_rate">Tap to add Rate</string>
+    <string name="invalid_rate">Invalid Rate</string>
+    <string name="invalid_quantity">Invalid</string>
+    <string name="item_name_max_count">Max count 60/60</string>
+    <string name="item_name_already_exist">Item name already exist!</string>
+    <string name="bill_summary">Bill Summary</string>
+    <string name="why_to_use">Why to Use?</string>
+    <string name="expense_info_text">Record business expenses at one place. Tension kam karen aur samay bachayen! </string>
+    <string name="expense_info_description">Kharchon ka hisab \n kab tak paper par rakhenge?</string>
+    <string name="sales_info_text">Recording sales \non paper or mobile?</string>
+    <string name="share_bill_text" comment="Manage business udhar khata on mobile \n https://play.google.com/store/apps/details?id=in.okcredit.merchant">
+        Thank you for your purchase with us. Above is your bill. \nBill Total: ₹%1$s \n%2$s \nhttps://play.google.com/store/apps/details?id=in.okcredit.merchant
+    </string>
+    <string name="start_adding_cash_sales">Start Adding cash sales</string>
+    <string name="start_making_bill">Start making a bill</string>
+    <string name="make_your_first_bill">Make your first bill</string>
+    <string name="sales_billing_info_text">Make &amp; share bills \non Whatsapp!</string>
+    <string name="sales_billing_info_text_ab">Ab Bill banao mobile par \naur share karo!</string>
+    <string name="bill_no_results_found">No Results Found!</string>
+    <string name="bill_tap_to_add">Tap on Add to create New Item</string>
+    <string name="err_loading_page">Error loading page! Try again later.</string>
+
+    <string name="change">Change</string>
+    <string name="confirm_bank_details">Confirm Bank Details</string>
+    <string name="confirm_upi_details">Confirm UPI ID</string>
+    <string name="invalid_payment_address">Oops incorrect details! Please check</string>
+    <string name="scan_any_qr_code_to_add_upi">Just scan the QR code of your store and it will be set as your UPI ID automatically.</string>
+    <string name="accept_online_collection_via_link"><![CDATA[Set up Online Payments with 0% fee and share safe & secure payment links with customer in the reminder.]]></string>
+    <string name="dont_ask_again">Don’t ask again</string>
+    <string name="setup_later">Setup later</string>
+    <string name="setup_now">Setup Now</string>
+    <string name="click_to_add_your_upi_and_bank"><![CDATA[Click to link your UPI ID/ Bank account and collect dues online via secure payment link.]]></string>
+    <string name="linked_successfully">Linked Successfully</string>
+    <string name="learn_more">Learn More</string>
+    <string name="supplier_learn_more_title">Add all your supplier here and save time by easily recording sale/ purchase done with them.</string>
+    <string name="deleted_italic">Deleted\u0020</string>
+    <string name="recharge_sms_tell_your_customers">Tell Your Customers</string>
+    <string name="send_free_sms_and_tell_your_customers_abrecharge_sms_out_your_prepaid_recharge_service">Send FREE SMS and tell your customers about your\nPrepaid Recharge service</string>
+    <string name="send_free_sms_and_tell_your_customers_money_transfer_sms_out_your_prepaid_recharge_service">Send FREE SMS and tell your customers about your\nMoney Transfer service</string>
+    <string name="sms_in_app_not_now">Not Now</string>
+    <string name="sms_in_app_tell_now">Tell Now</string>
+    <string name="manage_supplier"><![CDATA[Learn how to manage supplier <u><font color=\'#0574e3\'>Click Here</font></u>]]></string>
+    <string name="supplier_screen_learn_more_center">Go stress free by recording sale/purchase done with your suppliers.</string>
+    <string name="seller">Seller</string>
+    <string name="merchant_added_your">%1$s added you as a customer. Now keep track of all your transactions and pay online securely.</string>
+    <string name="now_you_can_securely">Click here to pay online safely and securely.</string>
+    <string name="add_seller">Add Seller</string>
+    <string name="add_mobile">Add mobile</string>
+    <string name="to_send_reminder">To send reminder, please add customer\'s phone number.</string>
+    <string name="to_send_chat">To send chat, please add customer\'s phone number.</string>
+    <string name="to_call_add_customer_number">To call, please add customer\'s phone number.</string>
+    <string name="please_add_customer_number">Please add customer\'s phone number.</string>
+    <string name="please_add_customer_new_number_to_update">Please add customer\'s new phone number to update.</string>
+    <string name="edit_amount">Edit Amount</string>
+    <string name="add_new_amount_here">Add the new amount here!</string>
+    <string name="edited_on">Edited on %1$s</string>
+    <string name="edited_to">Edited to</string>
+    <string name="added_wrong_amount">Added Wrong Amount?</string>
+    <string name="you_can_now_edit_txns">You can now edit the transactions added  and see edit history from the transaction detail page!</string>
+    <string name="edit_transaction">Edit Transaction</string>
+    <string name="edited">Edited</string>
+    <string name="chat_with_customer">Chat with Customer</string>
+    <string name="chat_send_invite"><![CDATA[To chat easily, ask %1$s to download okCredit app. <u><font color=\'#0574e3\'>Invite now</font></u>]]></string>
+    <string name="chat_education">"Now you can chat with your merchant on OkCredit App.  "</string>
+    <string name="add_number_of_user_for_chat">Please click on user\'s name and add mobile number to start chatting</string>
+    <string name="messages">Messages</string>
+    <string name="supplier_screen_transaction_cta_credit">Credit</string>
+    <string name="supplier_screen_transaction_cta_payment">Payment</string>
+    <string name="in_app_help_chat_ended">%1$s left the chat, chat ended</string>
+    <string name="in_app_help_title">Customer Support (%1$s)</string>
+    <string name="help_contact_us_screen_title">Chat with Agent</string>
+    <string name="help_contact_us_screen_label">OkCredit</string>
+    <string name="date_range">Date Range</string>
+    <string name="customer_statement">Customer Statement</string>
+    <string name="discount">Discount</string>
+    <string name="online_transaction">Online Transaction</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="customer_txn_alert_deny">Deny</string>
+    <string name="customer_txn_alert_allow">Allow</string>
+    <string name="buyer_txn_alert_credit"><![CDATA[%1$s has added <font color=\'#d93025\'>₹%2$s</font> credit to your Khata. Do you want to allow this user to add transactions?]]></string>
+    <string name="buyer_txn_alert_payment"><![CDATA[%1$s has added <font color=\'#1c873b\'>₹%2$s</font> payment to your Khata. Do you want to allow this user to add transactions?]]></string>
+    <string name="unreadchat_messages">"%1$s Unread Messages"</string>
+    <string name="whats_app_link_promotion">I’m using OkCredit app to record all the credit transactions between us, download the app now to check the details. https://qi1jw.app.link/LxEZzzcBL7</string>
+    <string name="install">Install</string>
+    <string name="downloading">Downloading…</string>
+    <string name="update_now">Update Now</string>
+    <string name="update_started_background">The update is started in background</string>
+    <string name="update_cancelled">Update Cancelled/Failed</string>
+    <string name="tap_for_details" comment="https://okcredit.atlassian.net/browse/TP-591" documentation="Jira Ticket here https://okcredit.atlassian.net/browse/TP-591">Tap for details</string>
+    <string name="view_profile" comment="https://okcredit.atlassian.net/browse/CE-46">View Profile</string>
+    <string name="please_enter_amount_greater_than_zero">Please enter amount greater than zero</string>
+    <string name="credit_edited">Credit edited</string>
+    <string name="payment_edited">Payment edited</string>
+    <string name="phone_number_added_successfully">Phone Number Added Successfully</string>
+    <string name="amount_should_not_be_empty">Amount shouldn\'t be empty</string>
+    <string name="content_text">Please provide suggestion/issue to improve Okcredit Experience</string>
+    <string name="customer_pay_online">Pay Online</string>
+    <string name="chat_text_new">New</string>
+    <string name="bill_text_new">New</string>
+    <string name="supplier_subtext_3">You will pay ₹%1$s to %2$s. Now view and add all your suppliers inside the \‘Supplier\’ Section</string>
+    <string name="supplier_subtext_4">You will get ₹%1$s from %2$s. Now view and add all your suppliers inside the \‘Supplier\’ Section</string>
+    <string name="home_tab_supplier_section">Supplier Section</string>
+    <string name="you_can_change_this_decision_in_the_future_by_going_to_profile_section"><![CDATA[You can also change this permission in the future. To change permission click on customer name -> Go to \‘Deny to Add Transaction\’]]></string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="permission_given">Permission Given</string>
+    <string name="invite_customer">Invite %1$s</string>
+    <string name="home_supplier_tab_new">NEW</string>
+    <string name="customer_add_txn_discount">Discount</string>
+    <string name="now_you_can_chat_with_your_contacts_on_okcredit">Say \‘Hi\’ to %1$s</string>
+    <string name="supplier_statement">Supplier Statement</string>
+    <string name="single_list_transaction_disabled">Permission to add transaction is disabled by %1$s.</string>
+    <string name="percentage_completed">%1$s Completed</string>
+    <string name="completed">Completed</string>
+    <string name="customer_add_txn_discount_details">Discount Details</string>
+    <string name="customer_add_txn_net_amount">Net Amount</string>
+    <string name="change_details">Change Details</string>
+    <string name="select_date_range">Select Date Range</string>
+    <string name="from">From</string>
+    <string name="To">To</string>
+    <string name="save_expense">Save Expense</string>
+    <string name="expense_audio_url">https://storage.googleapis.com/new_initiatives_files/expense.m4a</string>
+    <string name="expense_feedback_description">Tell us what do you feel about Expense Manager?</string>
+    <string name="expense_info_text_v3">Save time by managing all expenses at one place and view Summary!</string>
+    <string name="expense_info_description_v3_img_1">Track How much business costs are \nand manage expenses! </string>
+    <string name="expense_info_description_v3_img_2">Record money spent on business expenses like \nshop rent, maintenance etc</string>
+    <string name="expense_info_description_v3_img_3">Record money spent on personal expenses like \nschool fees, medical etc</string>
+    <string name="expense_info_description_v3_img_4">Calculate monthly expenses, \nand know how much business costs are!</string>
+    <string name="discount_greater_than_amounnt">Discount greater than amount</string>
+
+    <string-array name="default_expense_types">
+        <item>Rent Paid</item>
+        <item>Worker Salary</item>
+        <item>Petrol</item>
+        <item>Milk</item>
+        <item>Vegetables</item>
+        <item>Electricity Bill</item>
+    </string-array>
+
+    <string name="passbook">Passbook</string>
+    <string name="no_sms_permission_available">Provide SMS permission from settings</string>
+    <string name="passbook_onboarding_url">https://account.staging.okcredit.in/passBookOnboarding</string>
+    <string name="app_name">PassBook</string>
+
+    <string name="suggested">"Suggested"</string>
+    <string name="credit_added_with_amount">"Credit added with amount ₹%1$d"</string>
+    <string name="payment_added_with_amount">"Payment added with amount ₹%1$d"</string>
+    <string name="bills_education">Bills</string>
+    <string name="bills_education_details"><![CDATA[Scan & store all your bills in one place! Now going back & searching for bill is super easy.]]></string>
+    <string name="discount_internet_error">Need Internet Connection to add Discount</string>
+    <string name="pay_online_to">Pay Online To</string>
+    <string name="add_user_bank_account">Add %1$s\'s Bank Account</string>
+    <string name="add_user_upi_id">Add %1$s\'s UPI ID</string>
+
+    <string name="total_sales_on">Total sales | %1$s</string>
+    <string name="item_description">Item Description</string>
+    <string name="tap_to_add">Tap to Add</string>
+    <string name="tap_to_edit">Tap to Edit</string>
+    <string name="new_bill">New Bill</string>
+    <string name="bill_introductory_text">Add Item details or Bill Amount here to create bill\n\nYou can add customers Name &amp; Your Details on next page before sharing!</string>
+
+    <string name="add_item_description_rate">Add Item Description &amp; Rate</string>
+    <string name="new_item">New Item</string>
+    <string name="save_bill">Save Bill</string>
+    <string name="item_list">Item List</string>
+
+    <string name="failed_to_save">Failed To Save</string>
+    <string name="saving_transaction">Saving Transaction…</string>
+    <string name="unable_to_delete_customer_balance_not_zero">Could not delete customer\nPlease try again</string>
+
+
+    <string name="help_support">Help &amp; Support</string>
+    <string name="change_pin">Change Security PIN</string>
+    <string name="app_language">App Language</string>
+
+    <string name="customer_report_take">Payment</string>
+    <string name="customer_report_give">Credit</string>
+    <string name="about_okcredit">About OkCredit</string>
+    <string name="privacy_security"><![CDATA[Privacy Policy & Security]]></string>
+    <string name="test_web_view">Test Web View</string>
+    <string name="how_to_use_okcredit">How to use OkCredit?</string>
+    <string name="customer_khata">Customer Khata</string>
+    <string name="t_004_biz_health_account_lagtime_info">Last updated 1 second ago</string>
+    <string name="you_give">You Give</string>
+    <string name="you_get">You Get</string>
+    <string name="supplier_khata">Supplier Khata</string>
+    <string name="change_security_pin">Change Security PIN</string>
+    <string name="set_security_pin">Set Security PIN</string>
+    <string name="set_pin">Set PIN</string>
+    <string name="set_security_pin_secondary">Add an added layer of security to your OkCredit app. Set up a 4 digit PIN to restrict data entry</string>
+    <string name="set_new_pin">Set New PIN</string>
+    <string name="add_transaction_nudge">Select Credit or Payment to add transaction</string>
+
+    <string name="your_transactions_with_customer_name_is_private_nudge_experiment">Your transactions with <![CDATA[<b>%1$s</b>]]> are 100%% private.</string>
+
+    <string name="steps_how_it_works_reward_on_activation"><![CDATA[<ul><li> Add customers and minimum 2 transactions on different days.</li><li> Your gifts will be displayed in Rewards section.</li></ul>]]></string>
+
+    <string name="online_payments">Online Payments</string>
+
+    <string name="qr_education_share">Share or save your unique OkCredit QR code to get payments from customers</string>
+    <string name="qr_education_online_collection">Track daily, weekly or monthly online payments received on QR code.</string>
+    <string name="qr_education_menu">Update your bank account/ UPI details here.</string>
+    <string name="send_qr">Send QR</string>
+    <string name="link_payment">Link Payment</string>
+    <string name="qr_payment">QR Payment</string>
+    <string name="add_to_khata">Add to Ledger</string>
+    <string name="added_in_khata">Added in Ledger</string>
+    <string name="refunded">Refunded</string>
+    <string name="processing">Processing</string>
+    <string name="paid_by">Paid By</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="last_3_months">Last 3 Months</string>
+    <string name="overall">Overall</string>
+    <string name="select_customer">Select Customer</string>
+    <string name="success">Success</string>
+    <string name="received_amount">₹%1$s Received</string>
+    <string name="successfully_added">Successfully Added</string>
+    <string name="add_to_khata_description">Please confirm that you are adding ₹%1$s payment in to %2$s’s Ledger</string>
+    <string name="add_destination_whats_app_not_installed">Whatsapp have not been installed.</string>
+    <string name="add_destination_request_text_whatsapp">I want to pay you online\n\nPlease share your UPI or bank account details (Account no + IFSC code)\n\nYou can also add your payment details inside okCredit app\n\nhttps://okcredit.onelink.me/3Akq/922402d1</string>
+    <string name="request_for_details">Request for details</string>
+    <string name="date_range_placeholder">%1$s - %2$s</string>
+
+    <string name="app_security_pin">App Security PIN</string>
+    <string name="credit_deleted_on">Credit Deleted%1$s</string>
+    <string name="payment_deleted_on">Payment Deleted%1$s</string>
+    <string name="credit_on">Credit%1$s</string>
+    <string name="payment_on">Payment%1$s</string>
+    <string name="discount_deleted_on">Discount Deleted%1$s</string>
+    <string name="discount_offered_on">Discount%1$s</string>
+    <string name="credit_edited_on">Credit Edited%1$s</string>
+    <string name="payment_edited_on">Payment Edited%1$s</string>
+    <string name="on">\u0020on</string>
+
+    //for the varinats 4,5,6,7,8
+    <string name="businessName_credibility_variants_default">%1$s businesses have already registered with their names</string>
+    <string name="businessName_credibility_variants1"> In the last %1$s, %1$s+  businesses have registered with their names</string>
+    <string name="businessName_credibility_variants2"> %1$s businesses from %1$s are on OkCredit now</string>
+    <string name="businessName_credibility_variants3"> Last %1$s, %1$s+ businesses from %1$s have registered on OkCredit</string>
+
+
+    <string name="setup_collection_nudge_payment_side">For easy &amp; hassle free collections use online payment. </string>
+    <string name="setup_collection_nudge_credit_side">Setup Online Payment</string>
+    <string name="setup_collection_description">Accept online payments by sending a payment link to your customers. 0% Fee &amp; No hidden charges.</string>
+    <string name="setup_online_payments">Setup Online Payments</string>
+
+    <string name="payment_pending">Payment pending</string>
+    <string name="payment_pending_description_update">Payment of ₹%1$s was due as of %2$s. Please update the reminder date or send a reminder.</string>
+    <string name="payment_pending_description_collection">Payment of ₹%1$s was due as of %2$s. Setup online payments for easy collections or send a reminder.</string>
+
+    <string name="skip_and_remind">Skip &amp; Remind</string>
+    <string name="skip_and_send">Skip &amp; Send</string>
+    <string name="please_add_supplier_number">Please add supplier\'s phone number.</string>
+
+    <plurals name="credit_plural">
+        <item quantity="one">%1$s credit</item>
+        <item quantity="other">%1$s credits</item>
+    </plurals>
+
+    <plurals name="payment_plural">
+        <item quantity="one">%1$s payment</item>
+        <item quantity="other">%1$s payments</item>
+    </plurals>
+
+    <string name="secured">Secured</string>
+    <string name="data_protected">Protected</string>
+    <string name="data_private">Private</string>
+    <string name="safe_trusted">Safe &amp; Trusted</string>
+    <string name="err_default_with_error_code">%1$s Something\'s wrong. Please Try Again.</string>
+
+    <string name="complete_kyc">Complete KYC</string>
+    <string name="complete_kyc_description">Unlock Net banking and Debit card along with UPI options. Transfer up to ₹2 Lakh a day.</string>
+
+    <string name="kyc_pending">KYC Pending</string>
+    <string name="kyc_pending_description">You will be notified in 48 hours.</string>
+    <string name="kyc_failed">KYC Rejected</string>
+    <string name="kyc_failed_description">The submitted documents did not meet some of our criteria.\nPlease try again and make sure documents have same name, and uploaded photos are easy to read.</string>
+    <string name="kyc_success">KYC Verified</string>
+    <string name="kyc_success_description"><![CDATA[Collection and Online Payment limit increased up to <font color=\'#1c873b\'>₹2 Lakh</font> a day.]]></string>
+    <string name="kyc_success_credit_card_info"><![CDATA[\n\nYou can also use your <font color=\'#1c873b\'>Credit Card</font> for payments at 0% charge.]]></string>
+    <string name="start_kyc">Start KYC</string>
+    <string name="redo_kyc">Try Again</string>
+    <string name="kyc_limit_reached">Online Payment Limit Reached!</string>
+    <string name="kyc_limit_reached_low_risk_kyc_not_done">You have received the daily maximum amount possible for online collection. You can resume collecting online payments again in 24 hours.</string>
+    <string name="kyc_limit_reached_high_risk_kyc_not_done">Complete KYC now to collect up to Rs.2 Lakh daily</string>
+    <string name="kyc_limit_reached_kyc_done">You have received the daily maximum amount possible for online collection. You can resume collecting online payments again in 24 hours.</string>
+    <string name="kyc_limit_reached_low_risk_kyc_status_pending">You have received the daily maximum amount possible for online collection. You can resume collecting online payments again in 24 hours.</string>
+    <string name="kyc_limit_reached_high_risk_kyc_status_pending">Your KYC for increasing the limit is pending with us. We’d share an update with you within 48 hours of submission.</string>
+    <string name="kyc_banner_description">Unlock more payment options for your customer and collect up to Rs.2 Lakh online daily.</string>
+
+    <string name="kyc_information_banner">Do KYC and transfer up to ₹%s daily.</string>
+    <string name="kyc_information_banner_credit_card_text">Unlock Credit Card payment option as well.</string>
+    <string name="kyc_increase_payment_limit">Increase Payment Limit</string>
+    <string name="kyc_status_not_set">Complete KYC</string>
+    <string name="kyc_status_pending">KYC Status - Pending</string>
+    <string name="kyc_status_complete">KYC Status - Verified</string>
+    <string name="kyc_status_failed">KYC Status - Try Again</string>
+
+    <string name="collection_info_graphic_title_1">Get back money 3X faster!</string>
+    <string name="collection_info_graphic_title_2">Become a Smart Merchant</string>
+    <string name="collection_info_graphic_title_3">Start Collecting on OkCredit</string>
+
+    <string name="collection_info_graphic_description_1">Get money directly in Bank Account 0% Fee &amp; No hidden charges</string>
+    <string name="collection_info_graphic_description_2">Show QR on Phone, Share QR on SMS/Whatsapp or Send Payment Links</string>
+    <string name="collection_info_graphic_description_3">Collect Timely, Reconcile at one place and increase cash flow in Business</string>
+
+    <string name="collection_testimonial_name_1">Shyam Kanojia</string>
+    <string name="collection_testimonial_bio_1">Owner, Ram Shyam Telecom</string>
+    <string name="collection_testimonial_msg_1">My customers used to ask me if they can pay online. I was not using QR because of delayed settlement times &amp; fees involved. Now I show OkC QR on phone &amp; get all updates about payment at one place with my khata.</string>
+    <string name="collection_testimonial_profile_pic_1">https://storage.googleapis.com/okcredit-public/testimonial_images/shyam.png</string>
+
+    <string name="collection_testimonial_name_2">Dinesh Verma</string>
+    <string name="collection_testimonial_bio_2">Owner, Dinesh General Store</string>
+    <string name="collection_testimonial_msg_2">I give udhaar to customers and because of the lockdown, people didn’t want to come to shop &amp; pay, but now I send them payment links &amp; they pay online, from whatever medium they like. I can collect faster.</string>
+    <string name="collection_testimonial_profile_pic_2">https://storage.googleapis.com/okcredit-public/testimonial_images/dinesh.png</string>
+
+    <string name="collection_testimonial_name_3">Saurabh</string>
+    <string name="collection_testimonial_bio_3">Owner, Medicos India</string>
+    <string name="collection_testimonial_msg_3">I offer home delivery to my customers, they order medicine on text &amp; I share QR code with them, they pay online. They have trust that money will come to me and no staff mishandling will happen. </string>
+    <string name="collection_testimonial_profile_pic_3">https://storage.googleapis.com/okcredit-public/testimonial_images/saurabh.png</string>
+
+    <string name="collection_testimonial_name_4">Raju Jaiswal</string>
+    <string name="collection_testimonial_bio_4">Staff, Vardhaman Fashion Wear</string>
+    <string name="collection_testimonial_msg_4">We only accepted cash earlier, but now after we started accepting money online, We have seen an increase in sales, increase in loyal customer base. And customers clear dues also faster.</string>
+    <string name="collection_testimonial_profile_pic_4">https://storage.googleapis.com/okcredit-public/testimonial_images/raju.png</string>
+
+    <string name="collection_date_added">Collection Date Added</string>
+    <string name="collection_date_added_description">An SMS reminder will be sent to your customer on suggested collection date.</string>
+    <string name="collection_date">Collection Date</string>
+    <string name="edit">Edit</string>
+
+    <string name="credit_added_new"><![CDATA[Credit Added <b>\u20B9%1$s</b>]]></string>
+    <string name="payment_added_new"><![CDATA[Payment Added <b>\u20B9%1$s</b>]]></string>
+    <string name="payment_deleted_new"><![CDATA[Payment Deleted <b>\u20B9%1$s</b>]]></string>
+    <string name="credit_deleted_new"><![CDATA[Credit Deleted <b>\u20B9%1$s</b>]]></string>
+    <string name="payment_edited_new"><![CDATA[Payment Edited <b>\u20B9%1$s</b>]]></string>
+    <string name="credit_edited_new"><![CDATA[Credit Edited <b>\u20B9%1$s</b>]]></string>
+    <string name="discount_offered_new"><![CDATA[Discount offered <b>\u20B9%1$s</b>]]></string>
+    <string name="discount_deleted_new"><![CDATA[Discount deleted <b>\u20B9%1$s</b>]]></string>
+
+    <plurals name="credit_added_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> Credit Added on <b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> Credit Added <b>%2$s</b>]]></item>
+    </plurals>
+
+    <plurals name="payment_added_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> Payment Added on <b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> Payment Added <b>%2$s</b>]]></item>
+    </plurals>
+
+    <plurals name="credit_deleted_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> Credit Deleted on <b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> Credit Deleted <b>%2$s</b>]]></item>
+    </plurals>
+
+    <plurals name="payment_deleted_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> Payment Deleted on <b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> Payment Deleted <b>%2$s</b>]]></item>
+    </plurals>
+
+    <plurals name="credit_edited_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> Credit Edited on <b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> Credit Edited <b>%2$s</b>]]></item>
+    </plurals>
+
+    <plurals name="payment_edited_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> Payment Edited on <b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> Payment Edited <b>%2$s</b>]]></item>
+    </plurals>
+
+    <plurals name="discount_offered_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> Discount offered on <b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> Discount offered <b>%2$s</b>]]></item>
+    </plurals>
+
+    <plurals name="discount_deleted_on_date">
+        <item quantity="one"><![CDATA[<b>\u20B9%1$s</b> Discount deleted on <b>%2$s</b>]]></item>
+        <item quantity="other"><![CDATA[<b>\u20B9%1$s</b> Discount deleted <b>%2$s</b>]]></item>
+    </plurals>
+
+    <plurals name="processing_amount_new">
+        <item quantity="other">Processing amount</item>
+    </plurals>
+
+    <plurals name="pending_day">
+        <item quantity="one">Pending Collection Since %1$s day</item>
+        <item quantity="other">Pending Collection Since %1$s days</item>
+    </plurals>
+
+    <plurals name="pending_month">
+        <item quantity="one">Pending Collection Since %1$s month</item>
+        <item quantity="other">Pending Collection Since %1$s months</item>
+    </plurals>
+
+    <string name="sync_status">Sync status</string>
+    <string name="quick_add_customer_failure">Could not add customer. Please try again</string>
+    <string name="quick_add_failure">Could not add transaction. Please try again</string>
+    <string name="change_language_to"><![CDATA[Do you want to change your app language?  <action><b><font color=#0574e3><u>Yes, change now</u></font></b></action>]]></string>
+
+    <string name="payment_edit_amount_proceed">Proceed</string>
+    <string name="payment_edit_amount_send_to">Send to:</string>
+    <string name="payment_edit_amount_paid_to">Paid to:</string>
+    <string name="payment_enter_amount_to_pay">Enter amount to pay</string>
+    <string name="payment_edit_amount_rupee_symbol">₹</string>
+    <string name="payment_edit_amount_rupee">₹%s</string>
+    <string name="payment_put_a_valid_amount">Please put a valid amount</string>
+    <string name="payment_put_a_valid_amount_greater_than_1">Minimum amount ₹1!</string>
+    <string name="not_able_to_tag_customer">We were not able to tag customer at the moment. Please try again!</string>
+    <string name="settlement_blocked_reason">Your money is with OkCredit, add valid bank details to receive money.</string>
+    <string name="payment_refund_reason_payout_initiated">We have initiated the settlement process. It may take up to 2 days</string>
+    <string name="payment_refund_initiated">Couldn\'t complete payment. Amount would be refunded to your bank account in 5–7 business days.</string>
+    <string name="settlement_blocked_due_to_bank_offline">Your bank account systems are offline. We are automatically retrying settlement.</string>
+    <string name="settlement_blocked_due_to_bank_issue_try_after_24_hrs">There is an issue with your bank account systems. We will automatically retry settlement after 24 hrs.</string>
+
+
+    <string name="saved_on_device">Saved on device</string>
+    <string name="online_backup_is_done">Online backup is done</string>
+
+    <string name="please_solve_this_issue">Please solve this issue</string>
+    <string name="bank_service_unavail">Bank service unavailable</string>
+    <string name="bank_service_unavil_error_msg">Your bank is not processing payment request right now. Please try again after few hours.</string>
+    <string name="reward_update">Reward Update</string>
+    <string name="please_try_again_later">Please try again later</string>
+    <string name="we_are_processing_your_reward">We are processing your reward. Please check again in 3 days.</string>
+    <string name="error_description_bank_valid">This bank account or UPI already exist on some other user. Please submit correct details or use another account.</string>
+    <string name="upi_inactive_error_msg">Your Bank account is not active anymore. Please use another account or make your account active again.</string>
+    <string name="payout_daily_limit_reached_error_msg">You have exceeded the reward claim limit for today. Please claim again tomorrow.</string>
+    <string name="amount_credit_in_48_hours">Reward money will be credited within 72 hours</string>
+    <string name="edit_bank_details">Edit Bank Details</string>
+    <string name="please_try_again">Please Try Again</string>
+    <string name="reward_on_hold">Reward on hold</string>
+    <string name="processing_state">Processing…</string>
+    <string name="add_bank_details_alert">You got a payment of ₹%s from your customer,</string>
+    <string name="no_bank_account_added">No Bank Account added</string>
+    <string name="settlement_blocked">Settlement Blocked</string>
+    <string name="your_money_is_with_okcredit">Your money is with okcredit,\n</string>
+    <string name="to_receive_money">to receive money</string>
+    <string name="refund_failed_please_try_again">Refund failed! Please try again</string>
+    <string name="refund">Refund</string>
+    <string name="refund_already_initiated">Refund Already Initiated!</string>
+    <string name="refund_to_customer">Refund to Customer</string>
+    <string name="add_bank_details_tooltip">Beneficiary Account is closed\nPlease Contact beneficiary bank</string>
+    <string name="added_by_qr"> Added by QR payment</string>
+    <string name="added_by_online">Added by Online payment</string>
+    <string name="added_by_link">Added by Link payment</string>
+    <string name="blind_pay_choose_payment_option">Select one option</string>
+    <string name="ease_pay_header">Easy Pay</string>
+    <string name="ease_pay_sub_header">Send money using mobile number</string>
+    <string name="others_header_supplier">Enter Bank details</string>
+    <string name="others_pay_sub_header">Bank account/UPI details are required</string>
+    <string name="blind_pay_make_payment">Make Payment</string>
+    <string name="blind_pay_education_header">Don\'t Have Bank Details?</string>
+    <string name="blind_pay_education_sub_header">No problem. We will help you with this.</string>
+    <string name="blind_pay_education_deposit_header">Deposit</string>
+    <string name="blind_pay_education_deposit_sub_header_supplier">Amount will remain with OkCredit until the supplier claims it.</string>
+    <string name="blind_pay_education_deposit_sub_header_customer">Amount will remain with OkCredit until the customer claims it.</string>
+    <string name="blind_pay_education_refund_header">Refund</string>
+    <string name="blind_pay_education_refund_sub_header_customer">If the customer does not claim the amount, it will be refunded to you after 24 hours.</string>
+    <string name="blind_pay_education_refund_sub_header_supplier">If the supplier does not claim the amount, it will be refunded to you after 24 hours.</string>
+    <string name="blind_pay_education_receiver_header_customer">Customer Payment Claim</string>
+    <string name="blind_pay_education_receiver_header_supplier">Supplier Payment Claim</string>
+    <string name="blind_pay_education_receiver_sub_header_supplier">Supplier will receive an SMS payment link. Payment can be claimed using a bank account/ UPI. </string>
+    <string name="blind_pay_education_receiver_sub_header_customer">Customer will receive an SMS payment link. Payment can be claimed using a bank account/ UPI. </string>
+    <string name="blind_pay_education_settlement_header">Quick Settlement</string>
+    <string name="blind_pay_education_settlement_sub_header_customer">Claimed money will be deposited in customer\'s account within 4 hour.</string>
+    <string name="blind_pay_education_settlement_sub_header_supplier">Claimed money will be deposited in supplier\’s account within 4 hour.</string>
+    <string name="blind_pay_max_limit_education">Maximum limit: ₹ %s daily</string>
+    <string name="blind_pay_payment_processing_supplier">The payment status will be updated after the supplier claims the money.</string>
+    <string name="blind_pay_payment_processing_customer">The payment status will be updated after the customer claims the money.</string>
+    <string name="blind_pay_payment_failed_supplier">Supplier did not claim the payment.</string>
+    <string name="blind_pay_payment_failed_customer">Customer did not claim the payment.</string>
+    <string name="referral_msg_to_setup_payment">Get merchants to set up payments and earn up to ₹500</string>
+    <string name="invite_earn_header_title">Invite &amp; Earn</string>
+    <string name="invite_earn_card_heading">Earn Up to ₹500</string>
+    <string name="invite_earn_card_subheading">Invite merchants to setup\npayments and collect like you\nvia OkCredit &amp; earn money!</string>
+    <string name="earned_money_will_reflect_in_rewards">Earned money will reflect in rewards</string>
+    <string name="invite_earn_cta_text">Invite Now</string>
+    <string name="invite_earn_step_1_text"><b>Share Link</b>\nAsk merchant to tap on link in message &amp; setup online payments on Okcredit.</string>
+    <string name="invite_earn_text"><b>Ask to collect</b>\nRequest payment via Okcredit by clicking on \“Show QR\” or \“Remind\” from customer page</string>
+    <string name="invite_earn_step_3_text"><b>Earn Reward</b>\nYou will earn ₹50 when merchant\'s first payment is verified.</string>
+    <string name="invite">Invite</string>
+    <string name="select_from_the_list_and_invite">Select from the list and Invite</string>
+    <string name="earned_amount">₹%s</string>
+    <string name="total_rewards_earned">Total Rewards Earned</string>
+    <string name="invite_earn_share_list_subtext">Invite &amp; Earn ₹%s</string>
+    <string name="you_will_earn_rewards_when_referred_merchant_sets_up_payments_and_receive_their_1st_payment_through_okcredit">You will earn rewards when referred merchant sets up payments and receive their first payment through okcredit.</string>
+    <string name="invite_earn_share_list_subtext_1">Link Shared</string>
+    <string name="invite_earn_share_list_subtext_2">Payments Set-Up done</string>
+    <string name="invite_earn_share_list_subtext_4">You have got the reward!</string>
+    <string name="invite_earn_share_list_subtext_3">View Rewards!</string>
+    <string name="customer_add_bank_request_single">%1s has requested bank details to pay you back online</string>
+    <string name="customer_add_bank_request_two">%1s and %2s have requested bank details to pay you back online</string>
+    <string name="customer_add_bank_request_multiple">%1s and %2d others have requested bank details to pay you back online</string>
+
+    <!-- Add offline customers -->
+    <string name="offline_cus_customer_profile_drawer_immutable_to">to %s</string>
+    <string name="offline_cus_customer_profile_drawer_immutable_desc">Unable to add customer, %s already registered %s as a customer/supplier</string>
+    <string name="offline_cus_customer_profile_drawer_dirty_desc">Unable to generate QR, account is not synced. Please check your internet connection.</string>
+    <!-- Add offline customers -->
+
+    <string name="ref_online_payment_customerlist_background">Invite and Earn ₹50, when customer receives their first payment.</string>
+    <string name="ref_online_payment_customerlist_text_2">Invite has been sent, you can send more invites or remind them again.</string>
+    <string name="ref_online_payment_customerlist_text_3">Payments have been setup, ask them to accept payments via OkCredit.</string>
+    <string name="ref_online_payment_customerlist_text_4">You have earned ₹50 for inviting %s, Go View rewards.</string>
+    <string name="ref_online_payment_customerlist_cta_1">Know More</string>
+    <string name="ref_online_payment_customerlist_cta_3">Check Status</string>
+    <string name="ref_online_payment_customerlist_cta_4">Check Rewards</string>
+    <string name="other_merchants">Other Merchants</string>
+
+    <string name="loading">Loading…</string>
+    <string name="loading_failed">Loading Failed!</string>
+    <string name="my_bills">My Bills</string>
+    <string name="error_msg_for_payment_refund_supplier">Couldn\'t complete payment. Amount would be refunded to your bank account in 5–7 business days.</string>
+    <string name="customer_need_help">Need Help</string>
+
+    <!--    Customer support-->
+    <string name="t_002_24X7help_banner_whatsapp_label">%1$s Chat Support %2$s</string>
+    <string name="t_002_24X7help_banner_call_label">%1$s Call Support %2$s</string>
+    <string name="t_002_i_need_help">Hello, I need help with my online payment\n</string>
+    <string name="t_002_amount">Amount</string>
+    <string name="t_002_payment_time">Payment Time</string>
+    <string name="t_002_txn_id">Transaction Id</string>
+    <string name="t_002_status">Status</string>
+    <string name="t_002_i_need_help_generic">Hello, I have a question about Online Payments</string>
+    <string name="t_002_24X7help_helpbox_CTA">Need Help? Contact Us</string>
+    <string name="t_002_24X7help_helpbox_choice_label">Contact Us</string>
+    <string name="t_002_24X7help_helpbox_choice_label_op1">Call</string>
+    <string name="t_002_24X7help_helpbox_choice_label_op2">WhatsApp</string>
+    <string name="t_002_24X7help_exit_nudge_heading">Need help with Online Payments?</string>
+    <string name="t_002_24X7help_exit_nudge_body">We are here to help you</string>
+    <string name="t_002_24X7help_exit_nudge_callCTA">Call Us %1$s</string>
+    <string name="t_002_24X7help_exit_nudge_chatCTA">WhatsApp Us %1$s</string>
+
+    <string name="call_template" translatable="false">tel:+91%s</string>
+    <string name="whatsapp_bold_template" translatable="false">*%1$s*</string>
+    <string name="whatsapp_mono_space_template" translatable="false">```%1$s```</string>
+
+    <string name="SU2_Cashback_Discovery_body_1">Customer can get cashback from OkCredit by paying via Reminder link!</string>
+    <string name="SU2_Cashback_Discovery_body_2">%1$s got cashback from OkCredit for paying you via Reminder link</string>
+    <string name="SU2_Cashback_Discovery_body_3">Cashback</string>
+    <string name="t_003_cashback_banner_reminder_qr">Get cashback on UPI payments!!</string>
+
+    <!--Bulk reminder -->
+    <string name="t_001_daily_remind_ab_title">Daily Reminders</string>
+    <string name="t_001_daily_remind_selected_count">%1s Selected</string>
+    <string name="t_001_daily_remind_total_dues">Total Dues</string>
+    <string name="t_001_daily_remind_pending_for_days">Pending for %1s+ days</string>
+    <string name="t_001_daily_remind_cust_count">%1s Customer</string>
+    <string name="t_001_daily_remind_accordian_cust">Customers (%1s)</string>
+    <string name="t_001_daily_remind_accordian_select_all">Select All</string>
+    <string name="t_001_daily_remind_last_reminder">Last reminder sent • %1sd ago</string>
+    <string name="t_001_daily_remind_last_reminder_months">Last reminder sent • %1sm ago</string>
+    <string name="t_001_daily_remind_last_reminder_years">Last reminder sent • %1sy ago</string>
+    <string name="t_001_daily_remind_cust_sent_popup_title">%1s Reminders Sent</string>
+    <string name="t_001_daily_remind_cta_ok">OK</string>
+    <string name="t_001_daily_remind_cust_sent_popup_subtitle">Send reminders regularly to collect dues faster.</string>
+    <string name="t_001_daily_remind_last_reminder_never">Last reminder sent • Never</string>
+    <string name="t_001_daily_remind_last_reminder_today">Last reminder sent • Today</string>
+    <string name="t_001_daily_remind_cust_due_since">Due • Since %1sd</string>
+    <string name="t_001_daily_remind_cust_due_since_months">Due • Since %1sm</string>
+    <string name="t_001_daily_remind_cust_due_since_years">Due • Since %1sy</string>
+    <string name="t_001_daily_remind_cust_due_since_today">Due • Since today</string>
+    <string name="t_001_daily_remind_cust_due_since_error">Due</string>
+    <string name="t_001_daily_remind_empty_state_title">Congratulations!</string>
+    <string name="t_001_daily_remind_empty_state_subtitle">You’ve successfully sent reminders. Keep sending daily reminders to collect dues easily.</string>
+    <string name="t_001_daily_remind_default_reminder_type_wa">WhatsApp</string>
+    <string name="t_001_daily_remind_default_reminder_type_sms">SMS</string>
+    <string name="t_001_daily_remind_accordian_sent_today">Sent Today (%1s)</string>
+    <string name="t_001_daily_remind_default_reminder_type_no_internet_err">No Internet Connection</string>
+    <string name="t_001_daily_remind_todays_reminder_send_no_internet_err">No Internet Connection</string>
+    <string name="t_001_daily_remind_sent_reminder_count">%1s/%2s Reminders Sent</string>
+    <string name="t_001_daily_remind_cust_sending_popup_title">Sending to..\.</string>
+    <string name="t_001_daily_remind_default_reminder_popup_title">Default Reminder Type</string>
+    <string name="t_001_daily_remind_error_something_went_wong">SomeThing Went Wrong, 507</string>
+
+    <string name="t_001_multi_acc_cta_new_biz">Create New Business</string>
+
+    <string name="win_25">Win ₹%1$s</string>
+    <string name="add_a_transaction_to_the_customer_to_nearn_25">Add a transaction to the customer to\nearn ₹25</string>
+    <string name="step_1_how_does_it_works">Add a customer to record digital Khata.</string>
+    <string name="step_2_how_does_it_works">Record credit/payment of that customer</string>
+
+    <string name="bills_and_items" translatable="false">Bills And Items</string>
+    <string name="inventory_bills_and_items" translatable="false">Bills and Items</string>
+    <string name="inventory_create_new_bill" translatable="false">Create New Bill</string>
+    <string name="inventory_create_new_item" translatable="false">Add New Item</string>
+    <string name="inventory_bills" translatable="false">Bills</string>
+    <string name="inventory_items" translatable="false">Items</string>
+    <string name="inventory_empty_bill_msg" translatable="false">Click the button below to create the bills.Share the bill with the customer and collect online payment</string>
+    <string name="inventory_bill_created" translatable="false">Bills created (%1$s)</string>
+    <string name="inventory_item_empty_msg" translatable="false">Add items in your shop here. The item will be deducted automatically from the stock after the bill is generated</string>
+    <string name="inventory_item_in_stock" translatable="false">Items in stock (%1$s)</string>
+    <string name="inventory_no_item_in_stock" translatable="false">No item in stock</string>
+    <string name="inventory_no_item_added" translatable="false">No item added</string>
+    <string name="inventory_new_bill" translatable="false">New Bill</string>
+    <string name="inventory_select_items" translatable="false">Select Items</string>
+    <string name="inventory_tap_on_the_button_below_to_add_item_to_bill_or_save_time_by_adding_your_inventory_in_items_tab_they_will_appear_here" translatable="false">Click the button below to add the items and calculate the bill.Add the inventory to the items tab, see it here, and save you time.</string>
+    <string name="inventory_quantity_already_min" translatable="false">Quantity is already minimum</string>
+    <string name="inventory_fill_details_correctly" translatable="false">Please fill all details correctly</string>
+    <string name="inventory_items_number" translatable="false">%1$s items</string>
+    <string name="inventory_rate_text" translatable="false">Rate ₹%1$s</string>
+    <string name="inventory_item" translatable="false">%1$s item</string>
+    <string name="inventory_quantity" translatable="false">Quantity</string>
+    <string name="inventory_0" translatable="false">0</string>
+    <string name="inventory_amount_rupee" translatable="false">₹%1$s</string>
+    <string name="billing" translatable="false">billing</string>
+    <string name="inventory_item_name" translatable="false">Item name</string>
+    <string name="inventory_rate" translatable="false">Rate(₹)</string>
+    <string name="inventory_add_item_description_rate" translatable="false">Add item name and rate here</string>
+    <string name="inventory_add" translatable="false">Add</string>
+
+    <string name="t_001_simplify_add_relation_error_something_went_wong">SomeThing Went Wrong, 508</string>
+    <string name="t_001_simplify_add_relation_error_in_add_relation_something_went_wong">SomeThing Went Wrong, 506</string>
+    <string name="t_001_addrel_ab_title_add_cust">Add Customer</string>
+    <string name="t_001_addrel_ab_title_add_supp">Add Supplier</string>
+    <string name="t_001_addrel_list_cta_add_manually">Add %1s Manually</string>
+    <string name="t_001_addrel_ab_title_add_cust_manually">Add Customer Manually</string>
+    <string name="t_001_addrel_ab_title_add_supp_manually">Add Supplier Manually</string>
+    <string name="_001_addrel_cta_add_from_contacts">Add from contacts</string>
+    <string name="t_001_addrel_cant_add_supplier_popup_sub_txt">This number is already added as a customer.</string>
+    <string name="t_001_addrel_cant_add_customer_popup_sub_txt">This number is already added as a supplier.</string>
+    <string name="t_001_addrel_cta_view_cust">View Customer</string>
+    <string name="t_001_addrel_cta_view_supp">View Supplier</string>
+    <string name="t_001_addrel_cta_move">Move</string>
+    <string name="t_001_addrel_cant_add_supplier_popup_title">Cannot add supplier</string>
+    <string name="t_001_addrel_cant_add_customer_popup_title">Cannot add customer</string>
+    <string name="t_001_addrel_list_header_tap_to_add">Click to add contact</string>
+
+    <string name="t_002_add_payment_unlock_QR">Unlock QR</string>
+    <string name="t_002_add_payment_unlock_QR_subtext">Add bank details</string>
+
+    <string name="t_001_filter_sort_by_title">SORT BY</string>
+    <string name="t_001_filter_sort_by_bottomsheet_title">Sort by</string>
+    <string name="t_001_filter_sort_by_bill_date">Billing Date</string>
+    <string name="t_001_filter_sort_by_create_date">Entry Date</string>
+</resources>
+

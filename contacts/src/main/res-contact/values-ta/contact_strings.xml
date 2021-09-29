@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="save_contact">தொடர்பைச் சேமி</string>
+    <string name="contact_saved">தொடர்பு சேமிக்கப்பட்டது</string>
+    <string name="save_contact_info">எந்த நேரத்திலும் ஏதேனும் சிக்கல்களுக்கு WhatsApp-ல் எங்களை அணுக இந்த தொடர்பு எண்ணை சேமிக்கவும்.</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingDefaultResource">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/svSearchFile"
+                style="@style/Widget.AppCompat.SearchView.ActionBar"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:layout_gravity="center|end"
+                android:src="@drawable/ic_search_black_24dp" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/no_file_found_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="empty_folder_iv,no_file_found_description,no_file_found_text"/>
+
+    <ImageView
+        android:id="@+id/empty_folder_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_folder_empty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@+id/no_file_found_text"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/no_file_found_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/OKC.TextAppearance.Subtitle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/no_pdf_files_found"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/no_file_found_description"
+        app:layout_constraintTop_toBottomOf="@id/empty_folder_iv"
+        />
+
+    <TextView
+        android:id="@+id/no_file_found_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/OKC.TextAppearance.Body2"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center"
+        android:text="@string/please_download_account_statement_from_the_other_digital_bahi_khata_apps_in_your_phone_and_check_here_again"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_file_found_text"
+        />
+
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/list_files_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_layout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="@dimen/_24dp"
+        android:minWidth="156dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

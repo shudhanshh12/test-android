@@ -1,0 +1,133 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/txn_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white_corner_radius_8dp_stroke_grey200"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tx_image_container"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/background_black_25_radius_8dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:visibility="visible">
+
+            <View
+                android:id="@+id/tx_image_divider"
+                android:layout_width="2dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="@dimen/_24dp"
+                android:background="@color/red_primary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <TextView
+                android:id="@+id/photo_added"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_4dp"
+                android:layout_marginTop="@dimen/view_4dp"
+                android:gravity="center_horizontal"
+                android:text="@string/photo_added"
+                android:textSize="10sp"
+                android:textColor="@color/grey600"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/photo_img"
+                app:layout_constraintStart_toEndOf="@+id/tx_image_divider" />
+
+            <ImageView
+                android:id="@+id/photo_img"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="@dimen/view_4dp"
+                android:layout_marginBottom="@dimen/view_4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tx_image_divider"
+                app:layout_constraintTop_toBottomOf="@+id/photo_added"
+                app:srcCompat="@drawable/ic_camera_56"
+                app:tint="@color/grey700" />
+
+            <ImageView
+                android:id="@+id/tx_bill"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tx_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24dp"
+            android:gravity="start"
+            android:textAppearance="?textAppearanceHeadline5"
+            app:layout_constraintEnd_toStartOf="@id/tx_date"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_image_container"
+            tool:text="576577" />
+
+        <TextView
+            android:id="@+id/tx_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceCaption2"
+            android:textColor="@color/grey600"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tx_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            tool:text="576577" />
+
+        <TextView
+            android:id="@+id/tx_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="240dp"
+            android:textColor="@color/grey800"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tx_amount"
+            tool:text="this is note" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:textAppearance="?textAppearanceCaption1"
+        android:textColor="@color/grey700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txn_item"
+        tool:text="275" />
+</androidx.constraintlayout.widget.ConstraintLayout>

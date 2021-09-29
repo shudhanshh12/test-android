@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/rootview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round_corner_24_400"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingTop="6dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter"
+            android:textAppearance="@style/OKC.TextAppearance.Subtitle4" />
+
+        <ImageView
+            android:id="@+id/filter_overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:tint="@color/green_primary"
+            app:srcCompat="@drawable/ic_menu_overflow" />
+
+        <TextView
+            android:id="@+id/filter_count"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"
+            android:background="@drawable/circle"
+            android:backgroundTint="?colorPrimary"
+            android:gravity="center"
+            android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</merge>

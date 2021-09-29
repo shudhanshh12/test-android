@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enhance_image.EnhanceImageActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:tag="enhance_screen"
+        android:id="@+id/enhance_screen"
+        android:name="tech.okcredit.bill_management_ui.enhance_image.enhanceimagescreen.EnhanceImageFragment"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

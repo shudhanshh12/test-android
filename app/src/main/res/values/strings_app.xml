@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="asset_statements" translatable="false" tools:ignore="ExtraTranslation">[{ \"include\": \"https://okcredit.app/.well-known/assetlinks.json\" }]</string>
+    <string name="block">Block</string>
+    <string name="bills">Bills</string>
+    <string name="ce_delete_customer_err_error_unsynced_account">Error. Unsynced account.</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/tabTitle"
+    android:background="@android:color/transparent"
+    android:layout_height="56dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvTabTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:visibility="visible"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            tools:textColor="@color/green_primary"
+            android:textAppearance="?textAppearanceSubtitle2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="CUSTOMER" />
+
+        <TextView
+            android:id="@+id/tvTabBadge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textAppearance="?textAppearanceSubtitle4"
+            android:layout_marginLeft="4dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:background="@drawable/tab_badge"
+            app:layout_constraintTop_toTopOf="@id/tvTabTitle"
+            app:layout_constraintBottom_toBottomOf="@id/tvTabTitle"
+            app:layout_constraintLeft_toRightOf="@id/tvTabTitle"
+            android:layout_marginStart="4dp" />
+
+        <TextView
+            android:id="@+id/supplier_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/red_primary"
+            android:textAppearance="?textAppearanceSubtitle4"
+            android:visibility="gone"
+            android:text="@string/home_supplier_tab_new"
+            tools:visibility="visible"
+            app:layout_constraintTop_toTopOf="@id/tvTabTitle"
+            app:layout_constraintBottom_toBottomOf="@id/tvTabTitle"
+            app:layout_constraintStart_toEndOf="@id/tvTabBadge"
+            android:layout_marginStart="4dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

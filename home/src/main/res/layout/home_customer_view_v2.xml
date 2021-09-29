@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:attr/selectableItemBackground"
+    tools:context=".ui.activity.HomeActivity"
+    tools:layout_height="wrap_content"
+    tools:layout_width="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account_125dp" />
+
+    <ImageView
+        android:id="@+id/registered"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/photo_image_view"
+        app:layout_constraintStart_toStartOf="@+id/photo_image_view"
+        app:srcCompat="@drawable/ic_common_ledger_border" />
+
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginStart="12dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:textAppearance="?textAppearanceSubtitle1"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toRightOf="@+id/photo_image_view"
+        app:layout_constraintRight_toLeftOf="@+id/tvBalance"
+        app:layout_constraintTop_toTopOf="@+id/photo_image_view"
+        app:layout_constraintWidth_default="wrap"
+        tools:text="Karthik Kolanji" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceSubtitle1"
+        android:textColor="@color/red_primary"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name_text_view"
+        tools:text="Rs 32" />
+
+    <TextView
+        android:id="@+id/tvBalanceStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textAllCaps="true"
+        android:textAppearance="?textAppearanceCaption1"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBalance"
+        app:layout_constraintVertical_bias="0"
+        tools:text="ADVANCE" />
+
+    <ImageView
+        android:id="@+id/iv_subtitle"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:src="@drawable/ic_search_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_subtitle"
+        app:layout_constraintEnd_toStartOf="@id/tv_subtitle"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/name_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/name_text_view" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/confirm"
+        android:textAppearance="?textAppearanceCaption1"
+        android:textColor="@color/grey600"
+        app:layout_constraintEnd_toStartOf="@id/tvNewCount"
+        app:layout_constraintStart_toEndOf="@id/iv_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/name_text_view"
+        app:layout_constraintWidth_default="wrap"
+        tools:text="Big text " />
+
+
+    <TextView
+        android:id="@+id/tvNewCount"
+        style="@style/OKC.TextAppearance.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4dp"
+        android:background="@drawable/bg_border_filled_green"
+        android:paddingStart="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="2dp"
+        android:textAllCaps="true"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="?textAppearanceSubtitle1"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tv_subtitle"
+        app:layout_constraintEnd_toStartOf="@id/tvBalanceStatus"
+        app:layout_constraintStart_toEndOf="@id/tv_subtitle"
+        app:layout_constraintTop_toTopOf="@id/tv_subtitle"
+        tools:text="1 NEW"
+        tools:visibility="gone" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/spacing_12"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/name_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+</merge>

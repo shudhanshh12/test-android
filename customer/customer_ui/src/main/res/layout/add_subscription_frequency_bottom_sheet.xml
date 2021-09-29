@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top"
+    android:paddingBottom="@dimen/grid_2">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/OKC.TextAppearance.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/repeat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_daily"
+        style="@style/OKC.Button.Dark.Outline.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/daily"
+        android:textColor="@color/grey700"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toStartOf="@+id/button_weekly"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_top"
+        app:strokeColor="@color/grey400" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_weekly"
+        style="@style/OKC.Button.Dark.Outline.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/weekly"
+        android:textColor="@color/grey700"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toStartOf="@+id/button_monthly"
+        app:layout_constraintStart_toEndOf="@+id/button_daily"
+        app:layout_constraintTop_toBottomOf="@+id/divider_top"
+        app:strokeColor="@color/grey400" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_monthly"
+        style="@style/OKC.Button.Dark.Outline.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="12dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/monthly"
+        android:textColor="@color/grey700"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_weekly"
+        app:layout_constraintTop_toBottomOf="@+id/divider_top"
+        app:strokeColor="@color/grey400" />
+
+
+    <CheckBox
+        android:id="@+id/button_monday"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@drawable/custom_radio_button"
+        android:button="@null"
+        android:gravity="center"
+        android:text="M"
+        android:textColor="@color/check_box_tint_on_primary"
+        app:layout_constraintEnd_toStartOf="@id/button_tuesday"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_monthly" />
+
+    <CheckBox
+        android:id="@+id/button_tuesday"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@drawable/custom_radio_button"
+        android:button="@null"
+        android:gravity="center"
+        android:text="T"
+        android:textColor="@color/check_box_tint_on_primary"
+        app:layout_constraintEnd_toStartOf="@id/button_wednesday"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/button_monday"
+        app:layout_constraintTop_toBottomOf="@id/button_monthly" />
+
+    <CheckBox
+        android:id="@+id/button_wednesday"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@drawable/custom_radio_button"
+        android:button="@null"
+        android:gravity="center"
+        android:text="W"
+        android:textColor="@color/check_box_tint_on_primary"
+        app:layout_constraintEnd_toStartOf="@id/button_thursday"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/button_tuesday"
+        app:layout_constraintTop_toBottomOf="@id/button_monthly" />
+
+    <CheckBox
+        android:id="@+id/button_thursday"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@drawable/custom_radio_button"
+        android:button="@null"
+        android:gravity="center"
+        android:text="T"
+        android:textColor="@color/check_box_tint_on_primary"
+        app:layout_constraintEnd_toStartOf="@id/button_friday"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/button_wednesday"
+        app:layout_constraintTop_toBottomOf="@id/button_monthly" />
+
+    <CheckBox
+        android:id="@+id/button_friday"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@drawable/custom_radio_button"
+        android:button="@null"
+        android:gravity="center"
+        android:text="F"
+        android:textColor="@color/check_box_tint_on_primary"
+        app:layout_constraintEnd_toStartOf="@id/button_saturday"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/button_thursday"
+        app:layout_constraintTop_toBottomOf="@id/button_monthly" />
+
+    <CheckBox
+        android:id="@+id/button_saturday"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@drawable/custom_radio_button"
+        android:button="@null"
+        android:gravity="center"
+        android:text="S"
+        android:textColor="@color/check_box_tint_on_primary"
+        app:layout_constraintEnd_toStartOf="@id/button_sunday"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/button_friday"
+        app:layout_constraintTop_toBottomOf="@id/button_monthly" />
+
+    <CheckBox
+        android:id="@+id/button_sunday"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@drawable/custom_radio_button"
+        android:button="@null"
+        android:gravity="center"
+        android:text="S"
+        android:textColor="@color/check_box_tint_on_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/button_saturday"
+        app:layout_constraintTop_toBottomOf="@id/button_monthly" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/weekly_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="button_monday,button_tuesday,button_wednesday,button_thursday,button_friday,button_saturday,button_sunday" />
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/grid_month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_sunday" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_confirm"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="@dimen/view_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/confirm"
+        android:textAppearance="@style/OKC.TextAppearance.Button"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid_month" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

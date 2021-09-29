@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">ಮೆನುವಿನಿಂದ ನಿಮ್ಮ ಬಹುಮಾನಗಳನ್ನು ಪಡೆಯಲು ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಖಾತೆಯನ್ನು ಸೆಟಪ್ ಮಾಡಿ</string>
+    <string name="you_won_feature">ನೀವು %1$s. ಗೆದ್ದಿದ್ದೀರಿ</string>
+    <string name="visit_feature">ವೀಕ್ಷಿಸಿ %1$s</string>
+    <string name="claim_in_progress">ಪ್ರಕ್ರಿಯಿಸಲಾಗುತ್ತಿದೆ... ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ</string>
+    <string name="scratch_view_hint">ರಿವಾರ್ಡ್ ಅನ್ನು ಬಹಿರಂಗಪಡಿಸಲು ಸ್ಕ್ರಾಚ್ ಮಾಡಿ</string>
+    <string name="enter_bank_details_description">ಈ ಕ್ಯಾಶ್‌ಬ್ಯಾಕ್ ಅನ್ನು ರಿಡೀಮ್ ಮಾಡಲು ಬ್ಯಾಂಕ್ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ.</string>
+    <string name="please_solve_this_issue">ದಯವಿಟ್ಟು ಈ ಸಮಸ್ಯೆಯನ್ನು ಪರಿಹರಿಸಿ</string>
+    <string name="earned_due_to_activation">ವಹಿವಾಟುಗಳ ದಾಖಲೆಗಳನ್ನು ಸೇರಿಸಿದ್ದಕ್ಕಾಗಿ ಗಳಿಸಲಾಗಿದೆ.</string>
+    <string name="better_luck_next_time">ಚಿಂತಿಸದಿರಿ ಮುಂದಿನ ಬಾರಿ ಅದೃಷ್ಟ ನಿಮ್ಮದಾಗಲಿದೆ</string>
+    <string name="something_went_wrong_in_claiming_rewards">ಕ್ಷಮಿಸಿ, ನಾವು ತಾಂತ್ರಿಕ ಸಮಸ್ಯೆಯನ್ನು ಎದುರಿಸುತ್ತಿದ್ದೇವೆ. ದಯವಿಟ್ಟು ಕೆಲವು ಸಮಯದ ನಂತರ ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="congratulations_tell_them_add_bank_details">ಅಭಿನಂದನೆಗಳು!!! ಬಹುಮಾನ ಪಡೆಯಲು ಬ್ಯಾಂಕ್ ಖಾತೆ ಹೊಂದಿಸಿ.</string>
+    <string name="reward_on_hold">ಬಹುಮಾನ ಹೋಲ್ಡ್‌ನಲ್ಲಿದೆ</string>
+    <string name="error_budged_limit_exceeded">ತಾಂತ್ರಿಕ ಕಾರಣದಿಂದ ನಿಮ್ಮ ಬಹುಮಾನವನ್ನು ತಡೆಹಿಡಿಯಲಾಗಿದೆ. ನಮ್ಮ ತಂಡವು ಶೀಘ್ರದಲ್ಲಿಯೇ ಸಮಸ್ಯೆಯನ್ನು ಪರಿಹರಿಸುತ್ತದೆ. ದಯವಿಟ್ಟು 3 ದಿನಗಳಲ್ಲಿ ಪುನಃ ಕ್ಲೈಮ್ ಮಾಡಿ.</string>
+    <string name="you_won_10">you won 10</string>
+    <string name="hurray">ಸಕ್ಕತ್‌!</string>
+    <string name="oops">ಓಹ್!</string>
+    <string name="rewarded_on_06_nov_02_38pm">06 ನವೆಂ, 02:38pm ಗೆ ಬಹುಮಾನ ನೀಡಲಾಗಿದೆ</string>
+    <string name="earned_for_adding_transactions_records">ವಹಿವಾಟುಗಳ ದಾಖಲೆಗಳನ್ನು ಸೇರಿಸಿದ್ದಕ್ಕಾಗಿ ಗಳಿಸಲಾಗಿದೆ.</string>
+    <string name="setup_bank_account_to_get_reward">ಬಹುಮಾನ ಪಡೆಯಲು ಬ್ಯಾಂಕ್ ಖಾತೆಯನ್ನು ಹೊಂದಿಸಿ.</string>
+    <string name="step_1_how_does_it_works_roa">ಗ್ರಾಹಕರನ್ನು ಸೇರಿಸಿ ಮತ್ತು ವಿವಿಧ ದಿನಗಳಲ್ಲಿ ಕನಿಷ್ಠ 2 ವಹಿವಾಟುಗಳು.</string>
+    <string name="step_2_how_does_it_works_roa">ನಿಮ್ಮ ಉಡುಗೊರೆಗಳನ್ನು ಬಹುಮಾನಗಳ ವಿಭಾಗದಲ್ಲಿ ಪ್ರದರ್ಶಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="error_description_bank_valid">ಈ ಬ್ಯಾಂಕ್‌ ಖಾತೆ ಅಥವಾ UPI ಈಗಾಗಲೇ ಬೇರೆ ಬಳಕೆದಾರರಲ್ಲಿದೆ. ದಯವಿಟ್ಟು ಸರಿಯಾದ ವಿವರಗಳನ್ನು ಸಲ್ಲಿಸಿ ಅಥವಾ ಇನ್ನೊಂದು ಖಾತೆಯನ್ನು ಬಳಸಿ.</string>
+    <string name="upi_inactive_error_msg">ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಖಾತೆಯನ್ನು ಇನ್ನು ಮುಂದೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ. ದಯವಿಟ್ಟು ಇನ್ನೊಂದು ಖಾತೆಯನ್ನು ಬಳಸಿ ಅಥವಾ ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಪುನಃ ಸಕ್ರಿಯಗೊಳಿಸಿ.</string>
+    <string name="payout_daily_limit_reached_error_msg">ನೀವು ಇಂದಿನ ರಿವಾರ್ಡ್ ಹಕ್ಕು ಮಿತಿಯನ್ನು ಮೀರಿದ್ದೀರಿ. ದಯವಿಟ್ಟು ನಾಳೆ ಮತ್ತೆ ಕ್ಲೈಮ್ ಪಡೆಯಿರಿ.</string>
+    <string name="reward_update">ರಿವಾರ್ಡ್ ಅಪ್‌ಡೇಟ್</string>
+    <string name="please_try_again_later">ದಯವಿಟ್ಟು ನಂತರ ಪುನಃ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="payment_update">ಪಾವತಿ ಅಪ್‌ಡೇಟ್</string>
+    <string name="close">ಮುಚ್ಚಿ</string>
+    <string name="processing_state">ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="bank_service_unavail">ಬ್ಯಾಂಕ್ ಸೇವೆ ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="bank_service_unavil_error_msg">ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಇದೀಗ ಪಾವತಿ ವಿನಂತಿಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುತ್ತಿಲ್ಲ. ದಯವಿಟ್ಟು ಕೆಲವು ಗಂಟೆಗಳ ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="we_are_processing_your_reward">ನಿಮ್ಮ ರಿವಾರ್ಡ್ ಅನ್ನು ನಾವು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುತ್ತಿದ್ದೇವೆ. ದಯವಿಟ್ಟು ಪುನಃ 3 ದಿನಗಳಲ್ಲಿ ಪುನಃ ಪರಿಶೀಲಿಸಿ.</string>
+    <string name="edit_bank_details">ಬ್ಯಾಂಕ್ ವಿವರಗಳನ್ನು ಎಡಿಟ್ ಮಾಡಿ</string>
+    <string name="please_try_again">ದಯವಿಟ್ಟು ನಂತರ ಪುನಃ ಪ್ರಯತ್ನಿಸಿ</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <View
+        android:id="@+id/know_more_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_orange_lite_corner_radius_8dp_stroke_orange_lite_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/invite_and_earn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/invite_and_earn"
+        android:textAppearance="@style/OKC.TextAppearance.Headline6"
+        android:textColor="@color/orange_ada"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_referral_svg"
+        app:layout_constraintStart_toStartOf="@id/know_more_background"
+        app:layout_constraintTop_toTopOf="@id/know_more_background" />
+
+    <TextView
+        android:id="@+id/share_text_with_price"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/barrier"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_referral_svg"
+        app:layout_constraintStart_toStartOf="@id/know_more_background"
+        app:layout_constraintTop_toBottomOf="@id/invite_and_earn"
+        tools:text="@string/share_okcredit_app_and_get_rewards" />
+
+    <ImageView
+        android:id="@+id/image_view_referral_svg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_referral_screen_svg"
+        app:layout_constraintBottom_toTopOf="@id/barrier"
+        app:layout_constraintEnd_toEndOf="@id/know_more_background"
+        app:layout_constraintTop_toTopOf="@id/invite_and_earn" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="share_text_with_price,image_view_referral_svg" />
+
+    <View
+        android:id="@+id/total_rewards"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_selected_radius_8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/know_more_background"
+        app:layout_constraintStart_toStartOf="@id/know_more_background"
+        app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+    <TextView
+        android:id="@+id/total_rewards_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:clickable="false"
+        android:textAppearance="@style/OKC.TextAppearance.Headline4"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/total_rewards"
+        app:layout_constraintStart_toStartOf="@id/total_rewards"
+        app:layout_constraintTop_toTopOf="@id/total_rewards"
+        tools:text="50" />
+
+    <TextView
+        android:id="@+id/total_rewards_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:clickable="false"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="@string/referral_reward_track_referred_merchants"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/white"
+        app:drawableEndCompat="@drawable/ic_arrow_right_white"
+        app:layout_constraintBottom_toBottomOf="@id/total_rewards"
+        app:layout_constraintEnd_toEndOf="@id/total_rewards"
+        app:layout_constraintStart_toEndOf="@id/total_rewards_amount"
+        app:layout_constraintTop_toTopOf="@id/total_rewards" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/rewards_views"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:constraint_referenced_ids="total_rewards,total_rewards_text,total_rewards_amount"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

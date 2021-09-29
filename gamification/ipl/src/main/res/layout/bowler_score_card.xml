@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvBowlersScoreCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBowlers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvBestBowlersGuess"
+            style="@style/TextAppearance.OKCTheme.Caption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_curved_indigo"
+            android:text="@string/best_bowler_guess"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBowlersName"
+            style="@style/OKC.TextAppearance.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBestBowlersGuess"
+            tools:text="scdddvdvd Khan" />
+
+        <TextView
+            android:id="@+id/tvBowlerStatus"
+            style="@style/TextAppearance.OKCTheme.Caption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_layout"
+            android:gravity="end"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/tvBestBowlersGuess"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/status_bowling" />
+
+        <TextView
+            android:id="@+id/tvBowlerScore"
+            style="@style/OKC.TextAppearance.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBestBowlersGuess"
+            tools:text="Wkts 2 | Overs 3.2" />
+
+        <TextView
+            android:id="@+id/tvMatchVs"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="start"
+            android:textColor="@color/grey600"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBowlersName"
+            tools:text="CSK vs KKR" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvNiceChoice"
+        style="@style/OKC.TextAppearance.Subtitle1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="46dp"
+        android:drawablePadding="24dp"
+        android:gravity="center"
+        android:text="@string/nice_choice"
+        android:visibility="gone"
+        app:drawableTopCompat="@drawable/bg_nice_choice" />
+
+
+</androidx.cardview.widget.CardView>

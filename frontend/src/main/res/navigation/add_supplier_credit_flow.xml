@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# Main Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_flow"
+    app:startDestination="@id/addSupplierTxnScreen">
+
+    <fragment
+        android:id="@+id/addSupplierTxnScreen"
+        android:name="in.okcredit.frontend.ui.add_supplier_transaction.AddSupplierTransactionFragment"
+        android:label="Add Supplier Transaction">
+
+    </fragment>
+
+</navigation>

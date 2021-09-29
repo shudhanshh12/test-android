@@ -1,0 +1,95 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.staging.okcredit.in/v1.0/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.alpha.okcredit.in/v1.0/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.okcredit.in/v1.0/\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-communication.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-communiaction.pro'
+        }
+    }
+
+}
+
+dependencies {
+    // base
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':auth')
+    implementation project(':device')
+    implementation project(':resources')
+    implementation project(':backend:contract')
+    implementation project(':frontend:contract')
+    implementation project(':business:contract')
+
+    implementation utility.guava
+
+
+    //FIREBASE
+    implementation firebase.firebaseAnalytics
+    implementation firebase.firebaseMessaging
+    implementation firebase.firebasePerf
+
+    // View
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+    implementation imageDeps.textDrawable
+
+    // dagger
+    implementation dagger.core
+    kapt dagger.androidAnnotationProcessor
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+
+    // retrofit
+    implementation retrofit.retrofit
+    implementation retrofit.gsonConverter
+    implementation retrofit.retrofitRxAdapter
+
+    // androidx
+    implementation androidX.annotation
+
+    //zendesk
+    implementation zendesk.chat
+    implementation zendesk.messaging
+
+    // work manager
+
+    // kotlin
+    implementation utility.kotlin
+}

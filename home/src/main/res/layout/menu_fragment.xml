@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey50"
+    tools:context=".ui.menu.HomeMenuFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profile_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="@dimen/_4dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/view_0dp"
+        app:cardElevation="@dimen/_4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8dp">
+
+            <ImageView
+                android:id="@+id/photo_image_view"
+                android:layout_width="@dimen/spacing_36"
+                android:layout_height="@dimen/spacing_36"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/spacing_20"
+                android:layout_marginBottom="@dimen/spacing_20"
+                android:background="@drawable/image_border_home"
+                android:clickable="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_business_account"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_20"
+                android:layout_marginEnd="@dimen/_4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/name"
+                android:textAppearance="?textAppearanceSubtitle1"
+                android:textColor="@color/grey900"
+                app:layout_constraintEnd_toStartOf="@id/iv_edit"
+                app:layout_constraintStart_toEndOf="@id/photo_image_view"
+                app:layout_constraintTop_toTopOf="@id/photo_image_view"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="Business Name" />
+
+            <TextView
+                android:id="@+id/phone_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_2"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?textAppearanceCaption2"
+                android:textColor="@color/grey800"
+                app:layout_constraintEnd_toStartOf="@id/iv_edit"
+                app:layout_constraintStart_toStartOf="@+id/name_text_view"
+                app:layout_constraintTop_toBottomOf="@id/name_text_view"
+                tools:text="9833426881" />
+
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:src="@drawable/ic_edit"
+                android:tint="@color/green_primary"
+                app:layout_constraintBottom_toBottomOf="@id/photo_image_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/photo_image_view" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_create_business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:elevation="@dimen/_4dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/view_0dp"
+        app:cardElevation="@dimen/_4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_view">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:drawablePadding="28dp"
+            android:drawableTint="@color/green_primary"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minHeight="@dimen/menu_component_height"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/t_001_multi_acc_cta_new_biz"
+            android:textAppearance="?textAppearanceBody2"
+            android:visibility="visible"
+            app:drawableStartCompat="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/photo_image_view"
+            app:layout_constraintTop_toBottomOf="@id/photo_image_view" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/version_text_view"
+        app:layout_constraintTop_toBottomOf="@id/card_create_business">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/account_and_collection_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_10"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="@dimen/spacing_10"
+                android:background="@color/white"
+                android:elevation="@dimen/_4dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_8dp"
+                app:cardElevation="@dimen/_4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/account_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="28dp"
+                        android:drawableTint="@color/green_primary"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/menu_component_height"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="16dp"
+                        android:text="@string/account"
+                        android:textAppearance="?textAppearanceBody2"
+                        app:drawableStartCompat="@drawable/ic_account_circle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/collection_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="28dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/menu_component_height"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="16dp"
+                        android:text="@string/online_payments"
+                        android:textAppearance="?textAppearanceBody2"
+                        app:drawableStartCompat="@drawable/ic_collection_icon"
+                        app:drawableTint="@color/green_primary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/account_text_view" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/kyc_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="28dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/menu_component_height"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="16dp"
+                        android:textAppearance="?textAppearanceBody2"
+                        android:visibility="gone"
+                        app:drawableTint="@color/green_primary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/collection_text_view"
+                        tools:drawableStartCompat="@drawable/ic_collection_icon"
+                        tools:text="@string/kyc_status_not_set"
+                        tools:visibility="visible" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textBilling"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="32dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/menu_component_height"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:textAppearance="?textAppearanceBody2"
+                        app:drawableTint="@color/green_primary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/kyc_text_view"
+                        app:drawableStartCompat="@drawable/bill_manage_ic"
+                        android:text="@string/inventory_bills_and_items"
+                        tools:visibility="visible" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/dynamic_view_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_10"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="@dimen/spacing_10"
+                android:background="@color/white"
+                android:elevation="@dimen/_4dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_8dp"
+                app:cardElevation="@dimen/_4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/account_and_collection_view">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <in.okcredit.dynamicview.view.DynamicView
+                        android:id="@+id/dynamic_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:itemCount="4"
+                        tools:listitem="@layout/component_menu" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/call_customer_care"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="32dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/menu_component_height"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="@string/t_001_help_call_customer_care"
+                        android:textAppearance="?textAppearanceBody2"
+                        android:visibility="gone"
+                        app:drawableStartCompat="@drawable/ic_call"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_view" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/settings_view_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_10"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="@dimen/spacing_10"
+                android:background="@color/white"
+                android:elevation="@dimen/_4dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_8dp"
+                app:cardElevation="@dimen/_4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dynamic_view_section">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivCircularImg"
+                        android:layout_width="@dimen/spacing_36"
+                        android:layout_height="@dimen/spacing_36"
+                        android:src="@drawable/circ_img"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_settingsIcon"
+                        app:layout_constraintEnd_toEndOf="@id/iv_settingsIcon"
+                        app:layout_constraintStart_toStartOf="@id/iv_settingsIcon"
+                        app:layout_constraintTop_toTopOf="@id/iv_settingsIcon" />
+
+                    <ImageView
+                        android:id="@+id/iv_settingsIcon"
+                        android:layout_width="@dimen/_24dp"
+                        android:layout_height="@dimen/_24dp"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:src="@drawable/ic_icon_settings"
+                        android:tint="@color/green_primary"
+                        app:layout_constraintBottom_toBottomOf="@id/tvSettings"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvSettings" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSettings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:minHeight="56dp"
+                        android:paddingStart="72dp"
+                        android:text="@string/account_settings_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/help_support_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="28dp"
+                        android:drawableTint="@color/green_primary"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/menu_component_height"
+                        android:paddingStart="18dp"
+                        android:text="@string/help_support"
+                        android:textAppearance="?textAppearanceBody2"
+                        app:drawableStartCompat="@drawable/ic_help_outline"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvSettings" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/version_text_view"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/grey500"
+        app:layout_constraintBottom_toTopOf="@id/made_in_india_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Version: v191" />
+
+    <TextView
+        android:id="@+id/made_in_india_text_view"
+        style="@style/TextAppearance.OKCTheme.Caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:maxLines="1"
+        android:text="@string/made_in_india"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

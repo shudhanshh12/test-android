@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_send_reminder"><![CDATA[QR ಹಾಗೂ ಆನ್‌ಲೈನ್ ಪಾವತಿ ಲಿಂಕ್‌ನೊಂದಿಗೆ Whatsapp ನಲ್ಲಿ ರಿಮೈಂಡರ್ ಕಳುಹಿಸಿ]]></string>
+    <string name="title_payment_options">ವಿವಿಧ ರೀತಿಯ ಪಾವತಿ ಆಯ್ಕೆಗಳ ಮೂಲಕ ಗ್ರಾಹಕರು ಪಾವತಿಸಲು ಆಯ್ಕೆಮಾಡಬಹುದು</string>
+    <string name="title_auto_ledger">ಯಶಸ್ವಿ ಪಾವತಿಯಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತ ಲೆಡ್ಜರ್ ನಮೂದನ್ನು ವೀಕ್ಷಿಸಿ</string>
+</resources>

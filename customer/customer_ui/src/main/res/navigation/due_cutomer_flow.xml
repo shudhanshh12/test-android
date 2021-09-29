@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# TutorialAddCustomer Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/otp_verification_flow"
+    app:startDestination="@id/due_customer_screen">
+
+    <fragment
+        android:id="@+id/due_customer_screen"
+        android:name="in.okcredit.merchant.customer_ui.ui.due_customer.DueCustomerFragment"
+        android:label="DueCustomerScreen"
+        tools:layout="@layout/due_customer_fragment">
+
+    </fragment>
+
+</navigation>

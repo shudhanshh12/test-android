@@ -1,0 +1,216 @@
+<in.okcredit.shared.performance.layout_perf.LinearLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tx_container"
+    android:layout_width="256dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="@dimen/spacing_chat_view_item"
+    android:layout_marginRight="16dp"
+    android:maxWidth="250dp"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    app:isRecycler="true"
+    app:layoutName="Processing Transaction Recycler View">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/grey200"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey300"
+                android:paddingStart="10dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="8dp"
+                android:text="@string/online_transaction"
+                android:textAppearance="@style/OKC.TextAppearance.Caption2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_payment_down_arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+            <TextView
+                android:id="@+id/processing_tx_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?textAppearanceHeadline5"
+                app:layout_constraintBottom_toBottomOf="@+id/ivArrow"
+                app:layout_constraintStart_toEndOf="@+id/ivArrow"
+                app:layout_constraintTop_toTopOf="@+id/ivArrow"
+                tools:text="₹500" />
+
+            <ImageView
+                android:id="@+id/tx_bill"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivArrow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ivArrow"
+                app:srcCompat="@drawable/clock_outline"
+                app:tint="@color/grey700" />
+
+            <TextView
+                android:id="@+id/processing_tx_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_toStartOf="@+id/tx_bill"
+                android:gravity="center_vertical"
+                android:textAppearance="?textAppearanceCaption2"
+                android:textColor="@color/grey700"
+                app:layout_constraintBottom_toBottomOf="@+id/ivArrow"
+                app:layout_constraintEnd_toStartOf="@+id/tx_bill"
+                app:layout_constraintTop_toTopOf="@+id/ivArrow"
+                tools:text="10:30 AM" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/processing_tx_amount" />
+
+            <ImageView
+                android:id="@+id/ivProcessing"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@+id/ivArrow"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                app:srcCompat="@drawable/supplier_ic_pending" />
+
+            <TextView
+                android:id="@+id/processing_payment_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/settlement_pending"
+                android:textAppearance="?textAppearanceSubtitle4"
+                app:layout_constraintBottom_toBottomOf="@+id/ivProcessing"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivProcessing"
+                app:layout_constraintTop_toTopOf="@+id/ivProcessing" />
+
+            <TextView
+                android:id="@+id/processing_tx_note"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="@dimen/grid_1"
+                android:ellipsize="end"
+                android:text="@string/payment_refund_reason_payout_initiated"
+                android:textAppearance="?textAppearanceBody2"
+                android:textColor="@color/grey700"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ivArrow"
+                app:layout_constraintTop_toBottomOf="@+id/processing_payment_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvCompleteKyc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border_gray400_outlined"
+        android:drawablePadding="4dp"
+        android:paddingStart="10dp"
+        android:paddingTop="4dp"
+        android:gravity="center"
+        android:paddingEnd="14dp"
+        android:paddingBottom="4dp"
+        android:text="@string/complete_kyc"
+        android:textAppearance="@style/OKC.TextAppearance.Caption2"
+        app:drawableStartCompat="@drawable/icon_kyc_16dp" />
+
+    <TextView
+        android:id="@+id/tvAddBankDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border_gray400_outlined"
+        android:drawablePadding="4dp"
+        android:paddingStart="10dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="4dp"
+        android:text="@string/add_bank_details"
+        android:textAppearance="@style/OKC.TextAppearance.Caption2"
+        app:drawableStartCompat="@drawable/ic_bank_16dp" />
+
+    <TextView
+        android:id="@+id/textChatWithUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border_gray400_outlined"
+        android:drawablePadding="4dp"
+        android:paddingStart="10dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="4dp"
+        android:text="@string/t_002_24X7help_helpbox_CTA"
+        android:textAppearance="@style/OKC.TextAppearance.Caption2"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_chat_16" />
+
+    <LinearLayout
+        android:id="@+id/due_contianer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textAppearance="?textAppearanceCaption1"
+            android:textColor="@color/grey700"
+            tools:text="₹500 Due" />
+    </LinearLayout>
+
+
+</in.okcredit.shared.performance.layout_perf.LinearLayoutTracker>

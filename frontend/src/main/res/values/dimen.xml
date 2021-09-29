@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="_16dp">16dp</dimen>
+
+    <!--Padding-->
+    <dimen name="padding_16">16dp</dimen>
+
+    <!--Margin-->
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+
+    <!--Text size-->
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+
+    <dimen name="view_0dp">0dp</dimen>
+    <dimen name="view_12dp">12dp</dimen>
+    <dimen name="view_height_dimension">1dp</dimen>
+
+</resources>

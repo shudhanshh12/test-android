@@ -1,0 +1,15 @@
+task installPreCommitGitHooks(type: Copy) {
+    def gitHooksDirectory = new File("$project.rootDir/.git/hooks/")
+    if (!gitHooksDirectory.exists()) gitHooksDirectory.mkdirs()
+    from new File(rootProject.rootDir, 'scripts/pre-commit')
+    into { new File(rootProject.rootDir, '.git/hooks') }
+    fileMode 0777
+}
+
+task installPrePushGitHooks(type: Copy) {
+    def gitHooksDirectory = new File("$project.rootDir/.git/hooks/")
+    if (!gitHooksDirectory.exists()) gitHooksDirectory.mkdirs()
+    from new File(rootProject.rootDir, 'scripts/pre-push')
+    into { new File(rootProject.rootDir, '.git/hooks') }
+    fileMode 0777
+}

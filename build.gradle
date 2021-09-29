@@ -1,0 +1,77 @@
+buildscript {
+    apply from: 'dependencies.gradle'
+    repositories {
+        google()
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        jcenter()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath gradlePlugin.android
+        classpath gradlePlugin.googleService
+        classpath gradlePlugin.crashlyticsPlugin
+        classpath gradlePlugin.firebasePerf
+        classpath gradlePlugin.kotlin
+        classpath gradlePlugin.jacocoPlugin
+        classpath gradlePlugin.navigationSafeArgs
+        classpath gradlePlugin.retrofix
+    }
+}
+
+plugins {
+    id 'com.diffplug.spotless' version '5.12.5'
+}
+
+apply plugin: "com.vanniktech.android.junit.jacoco"
+
+
+apply from: "$project.rootDir/git-hooks.gradle"
+apply from: "$project.rootDir/spotless.gradle"
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://zendesk.jfrog.io/zendesk/repo'
+            content {
+                includeGroup "com.zendesk"
+            }
+        }
+        maven {
+            url "https://maven.juspay.in/jp-build-packages/hyper-sdk/"
+            content {
+                includeGroup "in.juspay"
+                includeGroup "in.juspay.juspayppsafemode"
+            }
+        }
+        google()
+        maven {
+            url 'https://maven-central-asia.storage-download.googleapis.com/repos/central/data/'
+        }
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        jcenter()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    }
+}
+
+subprojects {
+    afterEvaluate {
+        pluginManager.withPlugin('kotlin-kapt') {
+            kapt {
+                useBuildCache = true
+                correctErrorTypes = true
+            }
+        }
+        tasks.withType(Test) {
+            jacoco.excludes = ['jdk.internal.*']
+        }
+    }
+}
+
+junitJacoco {
+    jacocoVersion = '0.8.7' // type String
+    includeNoLocationClasses = true // type boolean
+    xml.enabled = true
+    html.enabled = true
+}

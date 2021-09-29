@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tech.okcredit.home">
+
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application>
+        <activity
+            android:name=".ui.business_health_dashboard.BusinessHealthDashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.acccountV2.ui.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.settings.SettingsActivity" />
+        <activity
+            android:name=".ui.add_transaction_home_search.AddTxnShortcutSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialogs.customer_profile_dialog.CustomerProfileTransparentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TransparentActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_8">
+
+    <LinearLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/handler_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_shape_grey_filled_24"
+            android:padding="@dimen/spacing_12"
+            android:src="@drawable/ic_graph"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/notification_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/spacing_12">
+
+            <TextView
+                android:id="@+id/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daily_report"
+                android:textAppearance="@style/TextAppearance.Compat.Notification.Title" />
+
+            <TextView
+                android:id="@+id/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.Compat.Notification"
+                android:textIsSelectable="true"
+                tools:text="Net Balance Due" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notification_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_12"
+        android:background="@drawable/rounded_border_grey_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/net_balance_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="@dimen/spacing_4"
+                android:src="@drawable/ic_wallet"
+                android:tint="@color/grey700" />
+
+            <TextView
+                android:id="@+id/netbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_margin="@dimen/spacing_4"
+                android:text="@string/net_balance_column" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/red_primary"
+                android:textStyle="bold"
+                tools:text=" ₹ 1526" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/horizontal_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:src="@drawable/horizantal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/spacing_6"
+            android:paddingBottom="@dimen/spacing_6">
+
+
+            <ImageView
+                android:id="@+id/top_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:rotation="270"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/tx_payment" />
+
+
+            <TextView
+                android:id="@+id/tv_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_colon"
+                android:textSize="13sp"
+                android:textAlignment="viewEnd" />
+
+            <TextView
+                android:id="@+id/tv_payment_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_6"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="viewEnd"
+                android:textSize="14sp"
+                android:textColor="@color/tx_payment"
+                android:textStyle="bold"
+                tools:text="₹1526" />
+
+            <ImageView
+                android:id="@+id/down_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:rotation="90"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/tx_credit" />
+
+            <TextView
+                android:id="@+id/tv_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_colon"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_credit_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_6"
+                android:textSize="14sp"
+                android:textColor="@color/red_primary"
+                android:textIsSelectable="true"
+                android:textStyle="bold"
+                tools:text="₹1526" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

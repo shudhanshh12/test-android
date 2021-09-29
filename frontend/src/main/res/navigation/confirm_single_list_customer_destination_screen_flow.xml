@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/confirm_single_list_customer_destination_screen_flow.xml"
+    app:startDestination="@id/confirm_single_list_customer_destination_screen_flow">
+
+    <fragment
+        android:id="@+id/confirm_single_list_customer_destination_screen_flow"
+        android:name="in.okcredit.frontend.ui.single_list_customer_destination.ConfirmSingleListCustomerDestinationFragment"
+        android:label="ConfirmSingleListCustomerDestinationScreen"
+        tools:layout="@layout/confirm_supplier_destination_layout">
+
+    </fragment>
+
+</navigation>

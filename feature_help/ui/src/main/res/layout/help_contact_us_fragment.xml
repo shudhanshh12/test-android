@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/bold"
+                android:maxLines="1"
+                android:paddingStart="8dp"
+                android:text="@string/contact_us_v2"
+                android:textColor="@color/black_44"
+                android:textSize="18sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/iv_help_whatsapp_icon"
+        android:layout_width="@dimen/spacing_24"
+        android:layout_height="@dimen/spacing_24"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:tint="?colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        app:srcCompat="@drawable/ic_whatsapp" />
+
+    <TextView
+        android:id="@+id/tv_whatsapp_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginEnd="@dimen/spacing_8"
+        android:text="@string/whatsapp_us"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/grey900"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_help_whatsapp_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_help_whatsapp_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_help_whatsapp_icon" />
+
+    <View
+        android:id="@+id/whatsapp_divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height_dimension"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_whatsapp_text" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/whatsappus_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="iv_help_whatsapp_icon,tv_whatsapp_text,whatsapp_divider" />
+
+    <ImageView
+        android:id="@+id/iv_help_chat_icon"
+        android:layout_width="@dimen/spacing_24"
+        android:layout_height="@dimen/spacing_24"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:tint="?colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/whatsapp_divider"
+        app:srcCompat="@drawable/ic_help_green" />
+
+    <TextView
+        android:id="@+id/tv_chat_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginEnd="@dimen/spacing_8"
+        android:text="@string/chat_with_us"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/grey900"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_help_chat_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_help_chat_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_help_chat_icon" />
+
+
+    <View
+        android:id="@+id/chatus_divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height_dimension"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chat_text" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/chat_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="iv_help_chat_icon,tv_chat_text,chatus_divider"
+        app:layout_constraintTop_toBottomOf="@id/whatsappus_container" />
+
+    <ImageView
+        android:id="@+id/iv_help_text_icon"
+        android:layout_width="@dimen/spacing_24"
+        android:layout_height="@dimen/spacing_24"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:tint="?colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chatus_divider"
+        app:srcCompat="@drawable/ic_email_boarder" />
+
+    <TextView
+        android:id="@+id/tv_email_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginEnd="@dimen/spacing_8"
+        android:text="@string/email_us"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/grey900"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_help_text_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_help_text_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_help_text_icon" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height_dimension"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email_text" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/emailus_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="iv_help_text_icon,tv_email_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

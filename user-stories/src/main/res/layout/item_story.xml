@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+
+    <merchant.okcredit.user_stories.widget.CircularStoryView
+        android:id="@+id/circularStoryView"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvStoryPoster"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/circularStoryView"
+        app:layout_constraintStart_toStartOf="@+id/circularStoryView"
+        app:layout_constraintTop_toBottomOf="@+id/circularStoryView"
+        tool:text="Mr. John Doe" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

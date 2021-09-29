@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/subscription_nav_graph.xml"
+    app:startDestination="@id/subscription_list">
+
+    <fragment
+        android:id="@+id/subscription_list"
+        android:name="in.okcredit.merchant.customer_ui.ui.subscription.list.SubscriptionListFragment"
+        android:label="@string/subscription_list"
+        tools:layout="@layout/subscription_list_screen">
+        <action
+            android:id="@+id/action_subscription_detail"
+            app:destination="@+id/subscription_detail">
+            <argument
+                android:name="arg_subscription_id"
+                app:argType="string" />
+            <argument
+                android:name="arg_source"
+                app:argType="string" />
+            <argument
+                android:name="arg_customer_id"
+                app:argType="string" />
+            <argument
+                android:name="arg_subscription_object"
+                app:nullable="true"
+                app:argType="in.okcredit.merchant.customer_ui.data.server.model.response.Subscription" />
+        </action>
+
+        <action
+            android:id="@+id/action_add_subscription"
+            app:destination="@id/add_subscription" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscription_detail"
+        android:name="in.okcredit.merchant.customer_ui.ui.subscription.detail.SubscriptionDetailFragment"
+        android:label="@string/subscription_detail"
+        tools:layout="@layout/subscription_detail_screen" />
+    <fragment
+        android:id="@+id/add_subscription"
+        android:name="in.okcredit.merchant.customer_ui.ui.subscription.add.AddSubscriptionFragment"
+        android:label="@string/add_subscription"
+        tools:layout="@layout/add_subscription_screen">
+
+        <action
+            android:id="@+id/action_subscription_success"
+            app:destination="@id/subscription_success" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscription_success"
+        android:name="in.okcredit.merchant.customer_ui.ui.subscription.add.SubscriptionSuccessScreen"
+        tools:layout="@layout/subscription_success_screen" />
+</navigation>

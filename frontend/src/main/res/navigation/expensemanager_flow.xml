@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# EnterOfferDetail Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expensemanager_flow"
+    app:startDestination="@id/expensemanager_screen">
+
+    <fragment
+        android:id="@+id/expensemanager_screen"
+        android:name="in.okcredit.frontend.ui.expense_manager.ExpenseManagerFragment"
+        android:label="ExpenseManagerScreen"
+        tools:layout="@layout/expense_manager_screen">
+
+        <action
+            android:id="@+id/action_expensemanager_screen_to_addExpenseScreen"
+            app:destination="@id/addExpenseScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/addExpenseScreen"
+        android:name="in.okcredit.frontend.ui.add_expense.AddExpenseFragment"
+        android:label="AddExpenseScreen" />
+
+</navigation>

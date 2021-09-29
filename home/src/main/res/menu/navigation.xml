@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/gr_account">
+        <item android:title="">
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_account_circle"
+                android:title="@string/account" />
+
+
+        </item>
+    </group>
+
+    <item android:title="">
+
+
+        <item
+            android:id="@+id/nav_rewards"
+            android:icon="@drawable/trophy_icon"
+            android:title="@string/rewards" />
+
+
+        <item
+            android:id="@+id/nav_referral"
+            android:icon="@drawable/ic_share_green"
+            android:title="@string/share_and_earn" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share_green"
+            android:title="@string/share" />
+
+        <item
+            android:id="@+id/nav_help_V2"
+            android:icon="@drawable/ic_help_green"
+            android:title="@string/help" />
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_info_green"
+            android:title="@string/about" />
+
+        <item
+            android:id="@+id/nav_money_transfer"
+            android:icon="@drawable/ic_money_transfer"
+            android:title="@string/money_transfer" />
+        <item
+            android:id="@+id/nav_mobile_prepaid_recharge"
+            android:icon="@drawable/ic_mobile_recharge"
+            android:title="@string/mobile_prepaid_recharge" />
+
+        <item
+            android:id="@+id/nav_insurance"
+            android:icon="@drawable/ic_insurance"
+            android:title="@string/insurance" />
+
+        <item
+            android:id="@+id/nav_privacy_policy"
+            android:icon="@drawable/ic_lock_green"
+            android:title="@string/privacy_policy" />
+        <item
+            android:id="@+id/nav_quick_add_card"
+            android:icon="@drawable/ic_quick_add"
+            android:title="@string/quick_add_card" />
+
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_rate_us"
+            android:title="@string/rate_us" />
+
+    </item>
+
+    <group android:id="@+id/gr_sign_out">
+
+        <item android:title="">
+            <item
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/ic_power_green"
+                android:title="@string/logout" />
+        </item>
+
+        <!-- Following placeholder items are added to avoid item overlap with side navigation footer -->
+        <item
+            android:id="@+id/placeholder_item_1"
+            android:title="" />
+        <item
+            android:id="@+id/placeholder_item_2"
+            android:title="" />
+
+    </group>
+
+
+</menu>

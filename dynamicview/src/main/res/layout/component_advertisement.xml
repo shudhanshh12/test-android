@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/spacing_8"
+    android:layout_marginTop="@dimen/spacing_6"
+    android:layout_marginEnd="@dimen/spacing_8"
+    android:layout_marginBottom="@dimen/spacing_6"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/spacing_8"
+        android:paddingTop="@dimen/padding_16"
+        android:paddingEnd="@dimen/padding_16"
+        android:paddingBottom="@dimen/padding_16">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/advertisement_component_small_icon_size"
+            android:layout_height="@dimen/advertisement_component_small_icon_size"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/view_4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_8"
+            android:layout_marginEnd="@dimen/spacing_8"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="@style/OKC.TextAppearance.Subtitle1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/icon"
+            app:layout_constraintEnd_toStartOf="@id/image"
+            app:layout_constraintStart_toEndOf="@id/icon"
+            app:layout_constraintTop_toTopOf="@+id/icon"
+            tools:text="Complete KYC" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="@style/OKC.TextAppearance.Body3"
+            android:textColor="@color/grey800"
+            app:layout_constraintEnd_toEndOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:text="Increase your individual &amp; monthly transaction limit" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_8"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:backgroundTint="@color/green_primary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="@dimen/spacing_24"
+            android:paddingTop="@dimen/_2dp"
+            android:paddingEnd="@dimen/spacing_24"
+            android:paddingBottom="@dimen/_2dp"
+            android:stateListAnimator="@null"
+            android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/title"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:strokeColor="@color/grey400"
+            tools:text="Start KYC" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/advertisement_component_image_size"
+            android:layout_height="@dimen/advertisement_component_image_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

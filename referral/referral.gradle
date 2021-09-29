@@ -1,0 +1,142 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'REFERRAL_URL', "\"https://get.staging.okcredit.in/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'REFERRAL_URL', "\"https://get.alpha.okcredit.in/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'REFERRAL_URL', "\"https://get.okcredit.in/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-referral.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-referral.pro'
+        }
+    }
+
+    sourceSets {
+        main.res.srcDirs = [
+                'src/main/res-referral'
+        ]
+    }
+
+}
+
+dependencies {
+    // base
+    implementation project(':auth')
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':device')
+    implementation project(':resources')
+    implementation project(':fileupload')
+    implementation project(':business:contract')
+    implementation project(':referral:contract')
+    implementation project(':app:app_contract')
+    implementation project(':shared')
+    implementation project(':ab')
+    implementation project(':communication')
+    implementation project(':rewards')
+    implementation project(':collection_module:contract')
+    implementation project(':rewards:contract')
+    implementation project(':feature_help:ui')
+    implementation project(':feature_help:sdk')
+    implementation project(':feature_help:contract')
+
+    implementation project(':backend:contract')
+
+    implementation rx.rxPreferences
+    implementation rx.binding
+    implementation rx.rxRelay
+
+
+    implementation utility.guava
+
+    // dagger
+    implementation dagger.core
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation navigation.fragmentKtx
+    implementation navigation.uiKtx
+
+    implementation rx.java
+    implementation rx.android
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    // retrofit
+    implementation retrofit.retrofit
+    implementation retrofit.gsonConverter
+    implementation retrofit.moshiConverter
+    implementation retrofit.gson
+    implementation retrofit.retrofitRxAdapter
+
+    // androidx
+    implementation androidX.annotation
+    implementation androidX.ktx
+
+    // kotlin
+    implementation utility.kotlin
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+
+    implementation aws.awsS3
+
+    implementation androidX.appcompact
+    implementation androidX.constraintLayout
+    implementation imageDeps.textDrawable
+    implementation imageDeps.glide
+    implementation imageDeps.glideCompiler
+
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+
+    implementation arch.lifecycle
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation unitTest.coroutines
+}

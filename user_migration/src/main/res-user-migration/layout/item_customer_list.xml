@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/root_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/error_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_reload"
+        app:layout_constraintStart_toStartOf="@id/cbCustomer"
+        app:layout_constraintEnd_toEndOf="@id/cbCustomer"
+        app:layout_constraintTop_toTopOf="@id/cbCustomer"
+        app:layout_constraintBottom_toBottomOf="@id/cbCustomer"/>
+
+
+    <CheckBox
+        android:id="@+id/cbCustomer"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@id/background_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/background_view" />
+
+    <View
+        android:id="@+id/background_view"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:maxHeight="64dp"
+        app:layout_constraintEnd_toStartOf="@id/down_arrow"
+        app:layout_constraintStart_toEndOf="@id/cbCustomer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="12dp"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        app:layout_constraintEnd_toStartOf="@id/amount_final"
+        app:layout_constraintStart_toEndOf="@+id/cbCustomer"
+        app:layout_constraintTop_toTopOf="@id/background_view"
+        app:layout_constraintVertical_chainStyle="packed"
+        tool:text="Harshit Sharma Harshit Sharma Harshit Sharma" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/grey600"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/amount_status"
+        app:layout_constraintStart_toEndOf="@id/cbCustomer"
+        app:layout_constraintTop_toBottomOf="@id/customer_name"
+        tool:text="7786960263" />
+
+    <TextView
+        android:id="@+id/amount_final"
+        style="@style/OKC.TextAppearance.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:clickable="false"
+        android:digits="12345677890"
+        android:inputType="number"
+        android:textColor="@color/green_primary"
+        app:layout_constraintBottom_toTopOf="@+id/amount_status"
+        app:layout_constraintEnd_toEndOf="@+id/background_view"
+        app:layout_constraintTop_toTopOf="@id/background_view"
+        app:layout_constraintVertical_chainStyle="packed"
+        tool:text="$50" />
+
+    <TextView
+        android:id="@+id/amount_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="@id/background_view"
+        app:layout_constraintEnd_toEndOf="@id/amount_final"
+        app:layout_constraintTop_toBottomOf="@+id/amount_final"
+        tool:text="@string/advance" />
+
+    <ImageButton
+        android:id="@+id/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/ic_icon_edit"
+        app:layout_constraintBottom_toBottomOf="@id/background_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/background_view"
+        app:layout_constraintTop_toTopOf="@id/background_view" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/background_view"
+        app:layout_constraintStart_toStartOf="@id/background_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

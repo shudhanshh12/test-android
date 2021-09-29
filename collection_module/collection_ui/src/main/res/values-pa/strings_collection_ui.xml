@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_send_reminder"><![CDATA[QR ਅਤੇ ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਲਿੰਕ ਦੇ ਨਾਲ Whatsapp ਤੇ ਇੱਕ ਰਿਮਾਈਂਡਰ ਭੇਜੋ]]></string>
+    <string name="title_payment_options">ਗ੍ਰਾਹਕ ਭੁਗਤਾਨ ਦੀਆਂ ਕਈ ਕਿਸਮਾਂ ਤੋਂ ਭੁਗਤਾਨ ਕਰ ਸਕਦੇ ਹਨ</string>
+    <string name="title_auto_ledger">ਸਫਲ ਭੁਗਤਾਨ \'ਤੇ ਵਹੀ ਖਾਤੇ ਵਿੱਚ ਆਟੋਮੈਟਿਕ ਐਂਟਰੀ ਵੇਖੋ</string>
+</resources>

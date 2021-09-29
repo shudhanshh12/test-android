@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutName="Online Payment Fragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonFilterTransactionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?textAppearanceSubtitle4"
+        android:textColor="@color/grey900"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="@dimen/_24dp"
+        app:icon="@drawable/ic_arrow_down_black"
+        app:iconGravity="textEnd"
+        app:iconTint="@color/green_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:strokeColor="@color/grey400"
+        app:strokeWidth="1dp"
+        tools:text="Last 7 Days" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonFilterTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:textAppearance="?textAppearanceSubtitle4"
+        android:textColor="@color/grey900"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="@dimen/_24dp"
+        app:icon="@drawable/ic_arrow_down_black"
+        app:iconGravity="textEnd"
+        app:iconTint="@color/green_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:strokeColor="@color/grey400"
+        app:strokeWidth="1dp"
+        tools:text="Last 7 Days" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFilterTransactionType" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSummary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFilterTransactionType">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:id="@+id/textCustomerCollectionsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/t_003_transaction_history_payments_received"
+                android:textAppearance="@style/OKC.TextAppearance.Caption2"
+                android:textColor="@color/grey600"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageCustomerCollections"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_payment_down_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/textCustomerCollectionsTotal"
+                app:layout_constraintStart_toStartOf="@id/textCustomerCollectionsTitle"
+                app:layout_constraintTop_toTopOf="@+id/textCustomerCollectionsTotal" />
+
+            <TextView
+                android:id="@+id/textCustomerCollectionsTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/OKC.TextAppearance.Subtitle1"
+                android:textColor="@color/green_primary"
+                app:layout_constraintStart_toEndOf="@+id/imageCustomerCollections"
+                app:layout_constraintTop_toBottomOf="@+id/textCustomerCollectionsTitle"
+                tools:text="2,000" />
+
+            <TextView
+                android:id="@+id/textSupplierCollectionsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/t_003_transaction_history_payment_given"
+                android:textAppearance="@style/OKC.TextAppearance.Caption2"
+                android:textColor="@color/grey600"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageSupplierCollections"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_give"
+                app:layout_constraintBottom_toBottomOf="@+id/textSupplierCollectionsTotal"
+                app:layout_constraintEnd_toStartOf="@id/textSupplierCollectionsTotal"
+                app:layout_constraintTop_toTopOf="@+id/textSupplierCollectionsTotal" />
+
+            <TextView
+                android:id="@+id/textSupplierCollectionsTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/OKC.TextAppearance.Subtitle1"
+                android:textColor="@color/green_primary"
+                app:layout_constraintEnd_toEndOf="@id/textSupplierCollectionsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textSupplierCollectionsTitle"
+                tools:text="2,000" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textNoResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/t_003_transaction_history_no_result"
+        android:textAppearance="@style/OKC.TextAppearance.Body2"
+        android:textColor="@color/grey700"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardSummary" />
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardSummary"
+        tools:listitem="@layout/online_payments_view" />
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

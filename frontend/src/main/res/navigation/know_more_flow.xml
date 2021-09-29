@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# Know More Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/know_more"
+    app:startDestination="@id/know_more_screen">
+
+    <fragment
+        android:id="@+id/know_more_screen"
+        android:name="in.okcredit.frontend.ui.know_more.KnowMoreFragment"
+        android:label="KnowMore"
+        tools:layout="@layout/know_more_privacy_fragment">
+
+    </fragment>
+
+</navigation>

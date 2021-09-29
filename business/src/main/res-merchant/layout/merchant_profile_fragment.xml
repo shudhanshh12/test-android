@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.CoordinatorLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    app:layoutName="Merchant Profile Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/LightActionBarTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/llProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="64dp"
+                    android:text="@string/profile_title"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    android:textColor="@color/grey800"
+                    android:textSize="@dimen/text_size_18"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <tech.okcredit.help.contextual_help.ContextualHelpMenuView
+                    android:id="@+id/contextual_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|end"
+                    app:layout_constraintEnd_toStartOf="@id/img_toolbar_business"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageButton
+                    android:id="@+id/img_toolbar_business"
+                    android:layout_width="48dp"
+                    android:layout_height="32dp"
+                    android:paddingHorizontal="@dimen/_8dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/business_type"
+                    android:src="@drawable/ic_person_placeholder"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginEnd="@dimen/_16dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:background="@color/white">
+
+
+            <LinearLayout
+                android:id="@+id/llImageContainer"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_margin="@dimen/_16dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/photo_image_view"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_account_125dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivAddPhoto"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/llImageContainer"
+                app:layout_constraintRight_toRightOf="@+id/llImageContainer"
+                app:srcCompat="@drawable/ic_camera_round" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBusinessName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llImageContainer">
+
+                <ImageView
+                    android:id="@+id/ivBusiness"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="6dp"
+                    android:tint="?colorPrimary"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvTitleBusinessName"
+                    app:srcCompat="@drawable/ic_account_circle" />
+
+                <TextView
+                    android:id="@+id/tvTitleBusinessName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:text="@string/title_business_name"
+                    android:textAppearance="?textAppearanceCaption1"
+                    android:textColor="@color/grey600"
+                    app:layout_constraintLeft_toRightOf="@+id/ivBusiness"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvValueBusinessName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:hint="@string/enter_business_name"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleBusinessName"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitleBusinessName" />
+
+                <TextView
+                    android:id="@+id/tvProfileNameNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:text="@string/enter_business_name_note"
+                    android:textAppearance="?textAppearanceCaption2"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleBusinessName"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvValueBusinessName" />
+
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:background="@color/divider"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleBusinessName"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvProfileNameNote" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!--    *************************************************************************-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clMobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clBusinessName">
+
+                <ImageView
+                    android:id="@+id/ivMobileNumber"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:tint="?colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvValueMobileNumber"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvTitleMobileNumber"
+                    app:srcCompat="@drawable/ic_mobile" />
+
+                <TextView
+                    android:id="@+id/tvTitleMobileNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:text="@string/mobile_number"
+                    android:textAppearance="?textAppearanceCaption1"
+                    android:textColor="@color/grey600"
+                    app:layout_constraintLeft_toRightOf="@+id/ivMobileNumber"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvValueMobileNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:text="@string/enter_mobile_number"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintEnd_toStartOf="@+id/tvChangeMobileNumber"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleMobileNumber"
+                    app:layout_constraintStart_toStartOf="@+id/tvTitleMobileNumber"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitleMobileNumber" />
+
+                <TextView
+                    android:id="@+id/tvChangeMobileNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:gravity="center_vertical"
+                    android:textAllCaps="true"
+                    android:textAppearance="?textAppearanceSubtitle2"
+                    android:textColor="?colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvValueMobileNumber"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvTitleMobileNumber"
+                    android:text="@string/change_number" />
+
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:background="@color/divider"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleMobileNumber"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvValueMobileNumber" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/businessTypeContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clMobile">
+
+                <ImageView
+                    android:id="@+id/businessTypeIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:tint="?colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_business" />
+
+                <TextView
+                    android:id="@+id/titleBusinessType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:text="@string/business_type"
+                    android:textAppearance="?textAppearanceCaption1"
+                    android:textColor="@color/grey600"
+                    app:layout_constraintLeft_toRightOf="@+id/businessTypeIcon"
+                    app:layout_constraintRight_toLeftOf="@+id/businessTypeArrow"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/descBusinessType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:text="@string/select_your_business_type"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintLeft_toLeftOf="@+id/titleBusinessType"
+                    app:layout_constraintRight_toLeftOf="@+id/businessTypeArrow"
+                    app:layout_constraintTop_toBottomOf="@+id/titleBusinessType" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:background="@color/divider"
+                    app:layout_constraintLeft_toLeftOf="@+id/titleBusinessType"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/descBusinessType" />
+
+                <ImageView
+                    android:id="@+id/businessTypeArrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:tint="@color/grey900"
+                    app:layout_constraintBottom_toBottomOf="@+id/descBusinessType"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/descBusinessType"
+                    app:srcCompat="@drawable/ic_expand_collapse_arrow" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCategoryHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/businessTypeContainer">
+
+                <ImageView
+                    android:id="@+id/ivCategory"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:tint="?colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvValueCategory"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvTitleCategory"
+                    app:srcCompat="@drawable/ic_business" />
+
+                <TextView
+                    android:id="@+id/tvTitleCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/title_category"
+                    android:textAppearance="?textAppearanceCaption1"
+                    android:textColor="@color/grey600"
+                    app:layout_constraintLeft_toRightOf="@+id/ivCategory"
+                    app:layout_constraintRight_toLeftOf="@+id/ivCategoryExpandCollapse"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvValueCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/enter_category"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleCategory"
+                    app:layout_constraintRight_toLeftOf="@+id/ivCategoryExpandCollapse"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitleCategory" />
+
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:background="@color/divider"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleCategory"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvValueCategory" />
+
+                <ImageView
+                    android:id="@+id/ivCategoryExpandCollapse"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:tint="@color/grey900"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvValueCategory"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvValueCategory"
+                    app:srcCompat="@drawable/ic_expand_collapse_arrow" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clCategoryHeader"
+                app:layout_goneMarginTop="0dp">
+
+                <ImageView
+                    android:id="@+id/ivAddress"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="6dp"
+                    android:tint="?colorPrimary"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvTitleAddress"
+                    app:srcCompat="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/tvTitleAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/address"
+                    android:textAppearance="?textAppearanceCaption1"
+                    android:textColor="@color/grey600"
+                    app:layout_constraintLeft_toRightOf="@+id/ivAddress"
+                    app:layout_constraintRight_toLeftOf="@+id/ivLocation"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvValueAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="6dp"
+                    android:hint="@string/enter_location"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleAddress"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitleAddress" />
+
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:background="@color/divider"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleAddress"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvValueAddress" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--    *************************************************************************-->
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clOtherInfoHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clAddress">
+
+                <ImageView
+                    android:id="@+id/ivOtherInfo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:tint="?colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvValueOtherInfo"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvTitleOtherInfo"
+                    app:srcCompat="@drawable/ic_info" />
+
+                <TextView
+                    android:id="@+id/tvTitleOtherInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/title_category_info"
+                    android:textAppearance="?textAppearanceCaption1"
+                    android:textColor="@color/grey600"
+                    app:layout_constraintLeft_toRightOf="@+id/ivOtherInfo"
+                    app:layout_constraintRight_toLeftOf="@+id/ivOthersExpandCollapse"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvValueOtherInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/other_info_title"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleOtherInfo"
+                    app:layout_constraintRight_toLeftOf="@+id/ivOthersExpandCollapse"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitleOtherInfo" />
+
+                <ImageView
+                    android:id="@+id/ivOthersExpandCollapse"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:tint="@color/grey900"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvValueOtherInfo"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvTitleOtherInfo"
+                    app:srcCompat="@drawable/ic_expand_collapse_arrow" />
+
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:background="@color/divider"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleOtherInfo"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvValueOtherInfo" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--    *************************************************************************-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clOtherInfoContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clOtherInfoHeader">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvTitleEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:text="@string/email"
+                        android:textAppearance="?textAppearanceCaption1"
+                        android:textColor="@color/grey600"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvValueEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:hint="@string/enter_email"
+                        android:textAppearance="?textAppearanceBody1"
+                        app:layout_constraintLeft_toLeftOf="@+id/tvTitleEmail"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleEmail" />
+
+
+                    <View
+                        android:id="@+id/view6"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:background="@color/divider"
+                        app:layout_constraintLeft_toLeftOf="@+id/tvTitleEmail"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvValueEmail" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clAbout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clEmail">
+
+                    <TextView
+                        android:id="@+id/tvTitleAbout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:text="@string/about"
+                        android:textAppearance="?textAppearanceCaption1"
+                        android:textColor="@color/grey600"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvValueAbout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:hint="@string/enter_about_business"
+                        android:textAppearance="?textAppearanceBody1"
+                        app:layout_constraintLeft_toLeftOf="@+id/tvTitleAbout"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleAbout" />
+
+
+                    <View
+                        android:id="@+id/view7"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:background="@color/divider"
+                        app:layout_constraintLeft_toLeftOf="@+id/tvTitleAbout"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvValueAbout" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clContactPersonName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clAbout">
+
+                    <TextView
+                        android:id="@+id/tvTitleContactPersonName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:text="@string/contact_person"
+                        android:textAppearance="?textAppearanceCaption1"
+                        android:textColor="@color/grey600"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvValueContactPersonName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:hint="@string/enter_person_name"
+                        android:textAppearance="?textAppearanceBody1"
+                        app:layout_constraintLeft_toLeftOf="@+id/tvTitleContactPersonName"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleContactPersonName" />
+
+
+                    <View
+                        android:id="@+id/view8"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:layout_marginRight="@dimen/_16dp"
+                        android:background="@color/divider"
+                        app:layout_constraintLeft_toLeftOf="@+id/tvTitleContactPersonName"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvValueContactPersonName" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clShareBusinessCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clOtherInfoContent">
+
+                <ImageView
+                    android:id="@+id/ivBusinessCard"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:tint="?colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvValueBusinessCard"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvTitleBusinessCard"
+                    app:srcCompat="@drawable/ic_business_card" />
+
+                <TextView
+                    android:id="@+id/tvTitleBusinessCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:text="@string/title_business_card"
+                    android:textAppearance="?textAppearanceCaption1"
+                    android:textColor="@color/grey600"
+                    app:layout_constraintLeft_toRightOf="@+id/ivBusinessCard"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvValueBusinessCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:text="@string/share_business_card"
+                    android:textAppearance="?textAppearanceBody1"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleBusinessCard"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitleBusinessCard" />
+
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:background="@color/divider"
+                    app:layout_constraintLeft_toLeftOf="@+id/tvTitleBusinessCard"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvValueBusinessCard" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/flDim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trasparent_black"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+    <include layout="@layout/media_select_sheet" />
+
+</in.okcredit.shared.performance.layout_perf.CoordinatorLayoutTracker>

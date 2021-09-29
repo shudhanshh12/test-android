@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/billScreen">
+    <fragment
+        android:id="@+id/billScreen"
+        android:name="tech.okcredit.bill_management_ui.BillFragment"
+        android:label="@string/bill_screen"
+        android:tag="base screen">
+        <action
+            android:id="@+id/action_bill_to_detail"
+            app:destination="@id/billdetailsScreen" />
+        <action
+            android:id="@+id/goToBillIntroductionBottomSheet"
+            app:destination="@id/show_bill_introduction_pop_up"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right">
+
+        </action>
+
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/show_bill_introduction_pop_up"
+        android:name="tech.okcredit.bill_management_ui.billintroductionbottomsheet.BillIntroductionBottomSheetScreen"
+        android:label="BillIntroductionBottomSheetScreen"
+        tools:layout="@layout/billintroductionbottomsheet_screen" />
+
+
+    <fragment
+        android:id="@+id/billdetailsScreen"
+        android:name="tech.okcredit.bill_management_ui.billdetail.BillDetailFragment"
+        tools:layout="@layout/bill_detail_fragment">
+        <action
+            android:id="@+id/gotToBillImageDetailScreen"
+            app:destination="@id/billImagedetailsScreen"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+        <action
+            android:id="@+id/action_billdetailsScreen_to_show_edit_phone_number_dialog"
+            app:destination="@id/show_edit_phone_number_dialog" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/billImagedetailsScreen"
+        android:name="tech.okcredit.bill_management_ui.editBill.EditBillFragment"
+        tools:layout="@layout/bill_image_detail_fragment" />
+
+    <dialog
+        android:id="@+id/show_edit_phone_number_dialog"
+        android:name="tech.okcredit.bill_management_ui.edit_notes.EditNoteFragment"
+        android:label="EditNotBottomSheet"
+        tools:layout="@layout/edit_note_screen">
+        <argument
+            android:name="note"
+            app:nullable="true"
+            app:argType="string" />
+
+        <argument
+            android:name="bill_id"
+            app:argType="string" />
+
+    </dialog>
+
+</navigation>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:visibility="gone"
+    android:layout_marginStart="10dp"
+    app:contentPaddingBottom="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="6dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewOrangeBg"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_top_curved"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvCardNumber"
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_circle_white"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/orange_ada"
+            app:layout_constraintBottom_toBottomOf="@+id/viewOrangeBg"
+            app:layout_constraintStart_toStartOf="@+id/viewOrangeBg"
+            app:layout_constraintTop_toTopOf="@+id/viewOrangeBg" />
+
+        <ProgressBar
+            android:id="@+id/pbSelectBowler"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCardNumber"
+            app:layout_constraintEnd_toEndOf="@+id/tvCardNumber"
+            app:layout_constraintStart_toStartOf="@+id/tvCardNumber"
+            app:layout_constraintTop_toTopOf="@+id/tvCardNumber" />
+
+
+        <TextView
+            android:id="@+id/tvExpiryTime"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:drawableStartCompat="@drawable/ic_time"
+            app:layout_constraintBottom_toBottomOf="@+id/viewOrangeBg"
+            app:layout_constraintEnd_toEndOf="@+id/viewOrangeBg"
+            app:layout_constraintTop_toTopOf="@+id/viewOrangeBg"
+            tools:text="End in 02m 32s" />
+
+
+        <TextView
+            android:id="@+id/tvWinnerTitle"
+            style="@style/OKC.TextAppearance.Subtitle2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="center"
+            android:text="@string/guess_winner_bowler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewOrangeBg" />
+
+        <TextView
+            android:id="@+id/tvMatchDate"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvWinnerTitle"
+            tools:text="SEP 19 | 08:00 PM" />
+
+        <com.airbnb.epoxy.EpoxyRecyclerView
+            android:id="@+id/rvBowlers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMatchDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:spanCount="2"
+            tools:itemCount="10"
+            tools:listitem="@layout/ipl_item_bowlers" />
+
+        <View
+            android:id="@+id/viewLineSeparator"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvBowlers"/>
+
+        <TextView
+            android:id="@+id/tvShowAllPlayers"
+            style="@style/TextAppearance.OKCTheme.Subtitle4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="start"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/show_all_players"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewLineSeparator" />
+
+        <ImageButton
+            android:id="@+id/ivArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:rotation="360"
+            app:layout_constraintBottom_toBottomOf="@+id/tvShowAllPlayers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvShowAllPlayers"
+            app:srcCompat="@drawable/ic_arrow_down_black" />
+
+        <View
+            android:id="@+id/viewShowAllClick"
+            android:layout_width="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewLineSeparator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

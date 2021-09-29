@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="370dp"
+    android:layout_height="wrap_content"
+    android:background="@color/green_primary"
+    android:padding="@dimen/grid_2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white_corner_radius_8dp">
+
+        <ImageView
+            android:id="@+id/okcredit_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="@dimen/grid_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_okcredit_logo"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/grid_5_half"
+            android:layout_marginTop="@dimen/grid_5_half"
+            android:layout_marginEnd="@dimen/grid_5_half"
+            android:background="@color/grey300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/okcredit_logo" />
+
+        <TextView
+            android:id="@+id/tv_merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/grid_5_half"
+            android:textAppearance="?textAppearanceHeadline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+
+            tools:text="Punna Jagadeesh Babu" />
+
+        <TextView
+            android:id="@+id/merchant_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/grid_1_half"
+            android:textAppearance="?textAppearanceBody1"
+            app:layout_constraintEnd_toStartOf="@+id/check_icon"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_merchant_name"
+            tools:text="punnajb@okicici" />
+
+        <ImageView
+            android:id="@+id/check_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/merchant_mobile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/merchant_mobile"
+            app:srcCompat="@drawable/ic_success" />
+
+
+        <ImageView
+            android:id="@+id/qr_image"
+            android:layout_width="248dp"
+            android:layout_height="248dp"
+            android:layout_marginTop="@dimen/grid_3_half"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check_icon" />
+
+        <TextView
+            android:id="@+id/scan_and_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/grid_1"
+            android:text="@string/scan_and_pay"
+            android:textAppearance="?textAppearanceSubtitle2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qr_image"
+            tools:text="@string/scan_and_pay" />
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="365dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/grid_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scan_and_pay" />
+
+        <ImageView
+            android:id="@+id/upi_logos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="@dimen/grid_5_half"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scan_and_pay"
+            app:srcCompat="@drawable/ic_upi_logos"
+            tools:layout_editor_absoluteX="121dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

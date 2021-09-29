@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+    <ImageView
+        android:id="@+id/torch"
+        android:layout_width="@dimen/grid_5"
+        android:layout_height="@dimen/grid_5"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="@dimen/grid_1"
+        app:layout_constraintEnd_toStartOf="@+id/gallery"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_torch_white_on" />
+
+    <ImageView
+        android:id="@+id/gallery"
+        android:layout_width="@dimen/grid_5"
+        android:layout_height="@dimen/grid_5"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="@dimen/grid_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_gallery_white" />
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="@dimen/grid_5"
+        android:layout_height="@dimen/grid_5"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="@dimen/grid_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_white" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="77dp"
+        android:gravity="center"
+        android:text="@string/scan_any_qr_code_to_add_upi"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/view11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Scan any one of the QR Code in your store to add it as your UPI ID." />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/circular_border_on_top"
+        app:layout_constraintBottom_toBottomOf="@+id/barcode_scanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/compatible_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/compatible_with"
+        android:textAllCaps="true"
+        android:textColor="@color/grey600"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/upi_logos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Compatible with:" />
+
+    <ImageView
+        android:id="@+id/upi_logos"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/grid_2"
+        android:layout_marginStart="@dimen/grid_1_half"
+        android:layout_marginBottom="@dimen/grid_5_half"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/compatible_with"
+        app:srcCompat="@drawable/ic_upi_logos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

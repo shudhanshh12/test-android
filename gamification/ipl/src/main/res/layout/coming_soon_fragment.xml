@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:fillViewport="true">
+    <TextView
+        android:id="@+id/tvComingSoon"
+        style="@style/TextAppearance.OKCTheme.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="start"
+        app:drawableTopCompat="@drawable/ic_ipl_coming_soon"
+        tools:text="@string/leaderboard_coming_soon" />
+</ScrollView>

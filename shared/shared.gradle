@@ -1,0 +1,292 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'OK_DOCS_BASE_URL', "\"https://okdoc.staging.okcredit.in/v1/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'OK_DOCS_BASE_URL', "\"https://okdoc.alpha.okcredit.in/v1/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'OK_DOCS_BASE_URL', "\"https://okdoc.okcredit.in/v1/\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-shared.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-shared.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':auth')
+    implementation project(':app:app_contract')
+    api project(':communication_inappnotification:contract')
+    implementation project(':camera:camera_contract')
+
+    implementation utility.kotlin
+    implementation arch.lifecycleKtx
+
+    implementation rx.rxRelay
+
+    implementation view.material
+    implementation androidX.constraintLayout
+    //utility
+    implementation utility.guava
+    api rx.java
+    api rx.android
+
+    // view
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+    annotationProcessor view.epoxyProcessor
+    api imageDeps.glide
+    kapt imageDeps.glideCompiler
+    implementation view.viewPager
+
+    // coroutine
+    api utility.coroutines
+    api utility.coroutinesRx2
+
+
+    // App compat and UI things
+    implementation androidX.appcompact
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+    implementation utility.kotlin
+    implementation androidX.ktx
+
+    //CameraX
+    implementation camerax_3.camera_view
+    implementation camerax_3.camerax_camera
+    implementation camerax_3.camera_extensions
+    implementation camerax_3.camera_lifecycle
+    implementation camerax_3.camera_core
+
+    //dagger
+    implementation dagger.android
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+
+    implementation navigation.fragmentKtx
+
+    implementation androidX.appcompact
+    implementation androidX.webkit
+
+    implementation navigation.fragment
+    implementation navigation.ui
+    implementation navigation.fragmentKtx
+    implementation navigation.uiKtx
+
+    // Views
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+    annotationProcessor view.epoxyProcessor
+
+    //androidX
+    implementation androidX.ktx
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+    implementation androidX.biometric
+
+    //View
+    implementation view.shimmer
+    implementation view.calendarDateRangePicker
+    implementation view.lottie
+    implementation view.textDrawable
+    implementation view.youtubePlayer
+    implementation view.mpandroidchart
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    // Dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    //Firebase
+    implementation firebase.firebaseAnalytics
+    implementation firebase.firebaseMessaging
+    implementation firebase.firebaseCrashlytics
+
+    //Rx
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    // Utility
+    implementation utility.kotlin
+    implementation utility.timber
+    implementation utility.trueTime
+    implementation playService.location
+    implementation playService.map
+    implementation utility.apacheCommons
+    implementation utility.apacheCommonsCore
+    implementation utility.philology
+    implementation utility.viewpump
+    implementation utility.truecaller
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    //CameraX
+    implementation camerax_3.camera_view
+    implementation camerax_3.camerax_camera
+    implementation camerax_3.camera_extensions
+    implementation camerax_3.camera_lifecycle
+    implementation camerax_3.camera_core
+
+    implementation utility.coroutinesRx2
+
+    //zendesk
+    implementation zendesk.chat
+    implementation zendesk.messaging
+
+    implementation view.sectorprogressview
+
+    implementation view.exoplyer
+
+    //coroutines lifecycle
+    implementation arch.lifecycleKtx
+
+    implementation view.material
+    implementation androidX.constraintLayout
+    // Views
+    implementation view.advancedMaterialTap
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+    annotationProcessor view.epoxyProcessor
+
+    //androidX
+    implementation androidX.ktx
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+    implementation androidX.biometric
+
+    //View
+    implementation view.shimmer
+    implementation view.lottie
+    implementation view.textDrawable
+    implementation view.youtubePlayer
+    implementation view.mpandroidchart
+    implementation view.gridlayout
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    // Dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    //Firebase
+    implementation firebase.firebaseAnalytics
+    implementation firebase.firebaseMessaging
+    implementation firebase.firebaseCrashlytics
+
+    //Rx
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    // Utility
+    implementation utility.kotlin
+    implementation utility.timber
+    implementation utility.trueTime
+    implementation playService.location
+    implementation playService.map
+    implementation utility.apacheCommons
+    implementation utility.apacheCommonsCore
+    implementation utility.philology
+    implementation utility.viewpump
+    implementation utility.truecaller
+
+    //Test
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockk
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    //CameraX
+    implementation camerax_3.camera_view
+    implementation camerax_3.camerax_camera
+    implementation camerax_3.camera_extensions
+    implementation camerax_3.camera_lifecycle
+    implementation camerax_3.camera_core
+
+    implementation utility.coroutinesRx2
+
+    // Moshi
+    implementation moshi.core
+    kapt moshi.codegen
+
+    //zendesk
+    implementation zendesk.chat
+    implementation zendesk.messaging
+
+    implementation view.sectorprogressview
+
+    implementation view.exoplyer
+
+    //coroutines lifecycle
+    implementation arch.lifecycleKtx
+
+    implementation navigation.fragmentKtx
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+    implementation retrofit.okhttp3
+}

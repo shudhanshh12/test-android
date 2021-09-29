@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Spacing-->
+    <dimen name="spacing_2">2dp</dimen>
+    <dimen name="spacing_4">4dp</dimen>
+    <dimen name="spacing_6">6dp</dimen>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_10">10dp</dimen>
+    <dimen name="spacing_12">12dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_20">20dp</dimen>
+    <dimen name="spacing_24">24dp</dimen>
+    <dimen name="spacing_32">32dp</dimen>
+    <dimen name="spacing_36">36dp</dimen>
+    <dimen name="spacing_48">48dp</dimen>
+
+
+    <!--Text size-->
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+    <dimen name="text_size_48">48sp</dimen>
+    <dimen name="text_size_64">64sp</dimen>
+
+    <!--Letter Spacing-->
+    <item name="text_line_spacing_1" format="float" type="dimen">-0.05</item>
+    <item name="text_line_spacing_2" format="float" type="dimen">0</item>
+    <item name="text_line_spacing_3" format="float" type="dimen">0.012</item>
+    <item name="text_line_spacing_4" format="float" type="dimen">0.013</item>
+    <item name="text_line_spacing_5" format="float" type="dimen">0.014</item>
+    <item name="text_line_spacing_6" format="float" type="dimen">0.015</item>
+    <item name="text_line_spacing_7" format="float" type="dimen">0.016</item>
+    <item name="text_line_spacing_8" format="float" type="dimen">0.02</item>
+    <item name="text_line_spacing_9" format="float" type="dimen">0.025</item>
+    <item name="text_line_spacing_10" format="float" type="dimen">0.05</item>
+
+    <dimen name="spacing_chat_view_item">12dp</dimen>
+
+    <dimen name="round_button_large">92dp</dimen>
+
+    <dimen name="shutter_button_margin">16dp</dimen>
+
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <!--Padding-->
+    <dimen name="padding_16">16dp</dimen>
+
+    <!--Margin-->
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+
+    <!--Text size-->
+    <dimen name="text_size_10">10sp</dimen>
+
+    <!--Tab width & height -->
+    <dimen name="tab_height_40">40dp</dimen>
+
+    <!--Home search elevation -->
+    <dimen name="no_elevation">0dp</dimen>
+    <dimen name="elevate_2dp">2dp</dimen>
+    <dimen name="view_116dp">116dp</dimen>
+    <dimen name="view_4dp">4dp</dimen>
+    <dimen name="view_6dp">6dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">24dp</dimen>
+
+    <!--8dp Grid Layout Sizes  -->
+    <dimen name="grid_1">8dp</dimen>
+    <dimen name="grid_2">16dp</dimen>
+    <dimen name="grid_3">24dp</dimen>
+    <dimen name="grid_4">32dp</dimen>
+    <dimen name="grid_5">40dp</dimen>
+    <dimen name="grid_6">48dp</dimen>
+    <dimen name="grid_7">56dp</dimen>
+    <dimen name="grid_8">64dp</dimen>
+
+    <dimen name="grid_12">96dp</dimen>
+
+    <!--4dp Mini Grid Layout Sizes  -->
+    <dimen name="grid_1_half">4dp</dimen>
+    <dimen name="grid_3_half">12dp</dimen>
+    <dimen name="grid_5_half">20dp</dimen>
+    <dimen name="grid_7_half">28dp</dimen>
+
+    <!--Alpha emphasis  -->
+    <dimen name="alpha_emphasis_high">@dimen/material_emphasis_high_type</dimen>
+    <dimen name="alpha_emphasis_medium">@dimen/material_emphasis_medium</dimen>
+    <dimen name="alpha_emphasis_disabled">@dimen/material_emphasis_disabled</dimen>
+
+    <dimen name="list_preferred_item_height">72dp</dimen>
+    <dimen name="display_picture_size">40dp</dimen>
+    <dimen name="default_card_elevation">6dp</dimen>
+    <dimen name="default_card_radius">4dp</dimen>
+
+    <dimen name="side_menu_item_height">56dp</dimen>
+    <dimen name="view_0dp">0dp</dimen>
+    <dimen name="view_12dp">12dp</dimen>
+    <dimen name="view_height_dimension">1dp</dimen>
+
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_70dp">70dp</dimen>
+
+</resources>

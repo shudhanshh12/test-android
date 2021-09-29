@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tx_container"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="@dimen/spacing_chat_view_item"
+    android:layout_marginRight="16dp"
+    android:maxWidth="250dp"
+    android:orientation="vertical"
+    android:paddingTop="2dp">
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/cvContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginTop="@dimen/spacing_chat_view_item"
+    android:background="@android:color/transparent"
+    android:maxWidth="250dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/grey200"
+    app:strokeWidth="1dp">
+
+    <RelativeLayout
+        android:id="@+id/llContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_give"
+            android:layout_alignTop="@id/processing_tx_amount"
+            android:layout_alignBottom="@id/processing_tx_amount"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/processing_tx_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_toEndOf="@id/ivArrow"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="2dp"
+            android:textAppearance="?textAppearanceHeadline5"
+            tools:text="₹500" />
+
+
+        <TextView
+            android:id="@+id/processing_tx_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/processing_tx_amount"
+            android:gravity="center_vertical"
+            android:layout_alignBottom="@id/processing_tx_amount"
+            android:layout_toStartOf="@+id/tx_bill"
+            android:textAppearance="?textAppearanceCaption1"
+            android:textColor="@color/grey700"
+            tools:text="10:30 AM" />
+
+        <ImageView
+            android:id="@+id/tx_bill"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@id/processing_tx_amount"
+            android:layout_alignBottom="@id/processing_tx_amount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/grid_1_half"
+            android:layout_marginEnd="@dimen/grid_3_half"
+            android:tint="@color/grey700"
+            app:srcCompat="@drawable/clock_outline" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_1_half"
+            android:layout_below="@+id/processing_tx_amount"
+            android:layout_marginTop="8dp"
+            android:indeterminate="true" />
+
+        <ImageView
+            android:id="@+id/ivProcessing"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="@dimen/grid_1"
+            android:layout_below="@+id/progressBar"
+            app:srcCompat="@drawable/supplier_ic_pending" />
+
+        <TextView
+            android:id="@+id/processing_payment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivProcessing"
+            android:layout_alignTop="@id/ivProcessing"
+            android:layout_alignBottom="@id/ivProcessing"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="4dp"
+            android:text="@string/processing_transaction"
+            android:textAppearance="?textAppearanceSubtitle4" />
+
+        <TextView
+            android:id="@+id/processing_tx_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivProcessing"
+            android:layout_marginStart="@dimen/grid_1"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="@dimen/grid_1"
+            android:layout_marginBottom="@dimen/grid_1"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxEms="15"
+            android:text="@string/processing_tx_description"
+            android:textAppearance="?textAppearanceCaption2"
+            android:textColor="@color/grey800" />
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textChatWithUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border_gray400_outlined"
+        android:paddingStart="10dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="@string/t_002_24X7help_helpbox_CTA"
+        android:drawablePadding="4dp"
+        android:visibility="gone"
+        android:textAppearance="@style/OKC.TextAppearance.Caption2"
+        app:drawableStartCompat="@drawable/ic_call_support_black"
+        tools:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/due_contianer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textAppearance="?textAppearanceCaption1"
+            android:textColor="@color/grey700"
+            tools:text="₹500 Due" />
+    </LinearLayout>
+</LinearLayout>

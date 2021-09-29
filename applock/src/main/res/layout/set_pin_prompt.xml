@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top">
+
+    <ImageView
+        android:id="@+id/iv_security"
+        android:layout_width="@dimen/dimen_144dp"
+        android:layout_height="@dimen/dimen_144dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:src="@drawable/img_security"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_security_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/set_security_pin"
+        android:textAppearance="?textAppearanceSubtitle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_security"
+        tools:text="@string/set_security_pin" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:gravity="center"
+        android:text="@string/security_setup_description"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_security_title" />
+
+    <View
+        android:id="@+id/signout_confirm_divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height_dimension"
+        android:layout_marginTop="@dimen/_24dp"
+        android:alpha=".5"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_6"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_3_half"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:background="@drawable/circle_stroke_grey_1dp"
+        android:gravity="center"
+        android:paddingStart="21dp"
+        android:paddingEnd="21dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceButton"
+        android:textColor="@color/grey900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signout_confirm_divider"
+        tools:visibility="visible" />
+
+    <Space
+        android:id="@+id/vertical_guideline"
+        android:layout_width="@dimen/grid_2"
+        android:layout_height="@dimen/grid_5"
+        android:layout_marginBottom="@dimen/grid_5_half"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_setpin"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/grid_6"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:background="@drawable/circle_background_dark_green_no_theme"
+        android:gravity="center"
+        android:paddingStart="21dp"
+        android:paddingEnd="21dp"
+        android:text="@string/set_pin"
+        android:textAllCaps="false"
+        android:textAppearance="?textAppearanceButton"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/vertical_guideline"
+        app:layout_constraintTop_toTopOf="@+id/cancel_btn"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

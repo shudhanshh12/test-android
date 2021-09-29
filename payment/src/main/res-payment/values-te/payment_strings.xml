@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="payable_amount">చెల్లించవలసిన మొత్తం</string>
+    <string name="please_check_or_edit_final_payable_amount">చెల్లించవలసిన తుది మొత్తాన్ని దయచేసి తనిఖీ చేయండి లేదా ఎడిట్ చేయండి</string>
+    <string name="rupee_text">₹</string>
+    <string name="juspay_pay_securely">సురక్షితంగా చెల్లించండి</string>
+    <string name="juspay_enter_amount_to_pay">చెల్లించాల్సిన మొత్తాన్ని నమోదు చేయండి</string>
+    <string name="juspay_payment_successful">చెల్లింపు విజయవంతమైంది</string>
+    <string name="juspay_no_internet_connection">ఇంటర్నెట్ కనెక్షన్ లేదు</string>
+    <string name="juspay_something_went_wrong">ఏదో తప్పు జరిగింది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="juspay_please_fill_correct_amount">దయచేసి సరియైన మొత్తాన్ని నింపండి</string>
+</resources>

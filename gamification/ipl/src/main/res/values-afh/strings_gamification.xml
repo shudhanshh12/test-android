@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ipl_title">OkPL 2021: Khelein &amp; jeetein</string>
+    <string name="todays_game">Aaj ka Game</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="sunday_game">Saptahik Draw</string>
+    <string-array name="ipl_tabs">
+        <item>@string/todays_game</item>
+        <item>@string/leaderboard</item>
+        <item>@string/sunday_game</item>
+    </string-array>
+    <string name="welcome_to_ipl_2020">OkPL 2021 me aapka swagat hai</string>
+    <string name="ipl_description">₹1000 tak jeetein kewal app par rahein &amp; kuchh sawaalon ke jawaab dein aur apna inaam claim karein</string>
+    <string name="let_s_play">Chalo khelein</string>
+    <string name="live">● LIVE</string>
+    <string name="complete_questions">Saare steps poore karein:</string>
+    <string name="points">Aaj ka Score</string>
+    <string name="game_rules">Game Rules</string>
+    <string name="vs">vs</string>
+    <string name="select">Chunein</string>
+    <string name="guess_winner">Aaj ki jeetne wali team chunein</string>
+    <string name="guess_winner_batsman">Is match ke sab se zyada run banane wale batsman ko chunein</string>
+    <string name="guess_winner_bowler">Is match ke sab se zyada wicket lene wale bowler ko chunein</string>
+    <string name="winning_team_guess">Chuni hui team</string>
+    <string name="best_batsman_guess">Chuna hua batsman</string>
+    <string name="best_bowler_guess">Chuna hua bowler</string>
+    <string name="prediction_meter">Poll meter</string>
+    <string name="ipl_progress">%1$s%%</string>
+    <string name="ipl_select_match_rules">1. Team chunein: -&gt; Batsman chunein -&gt; Bowler chunein -&gt; OkPL game ke dauran poochhe gaye ek sawaal ka jawaab dein.\n2. Match ka Score = [30 (pehle 3 sawaalon ka jawab dene ke liye) + Batsman ke runs + (Bowler ke Wicket x 20 runs) + 50 runs (Agar aapki team jeet jaayein to)] x booster gunnank (Booster sawaal ka jawaab dene ke liye)\n\nHar match ke lucky 1000 jeetenge ₹100 tak ke inaam.\n<b>Hint: OkPL game ke dauran poochhe gaye sawaalon ka jawaab dene par aapka total score booster se multiply kiya jayega. To jawaab dena na bhoolein.</b></string>
+    <string name="ipl_game_rules">1. Team chunein: -&gt; Batsman chunein -&gt; Bowler chunein -&gt; OkPL game ke dauran poochhe gaye ek sawaal ka jawaab dein.\n2. Aaj ka Score = [30 (pehle 3 sawaalon ka jawab dene ke liye) + Batsman ke runs + (Bowler ke Wicket x 20 runs) + 50 runs (Agar aapki team jeet jaayein to)] x booster gunnank (Booster sawaal ka jawaab dene ke liye)\n\nHar match ke lucky 1000 jeetenge ₹100 tak ke inaam.\n<b>Hint: OkPL game ke dauran poochhe gaye sawaalon ka jawaab dene par aapka total score booster se multiply kiya jayega. To jawaab dena na bhoolein.</b></string>
+    <string name="terms_and_conditions"><a href="">Niyam aur shartein</a></string>
+    <string name="title_booster_task">Aapka Booster Task</string>
+    <string name="title_first_booster_task">Pehla Booster Task</string>
+    <string name="title_second_booster_task">Doosra Booster Task</string>
+    <string name="complete_first_booster">Aaj ki Game screen par dikhaya gaya is hafte ka pehla Booster task poora karein</string>
+    <string name="complete_second_booster">Aaj ki Game screen par dikhaya gaya is hafte ka doosra Booster task poora karein</string>
+    <string name="ends_today">Aaj khatam hoga</string>
+    <string name="completed_first_booster">YAYY!\nAapne pehla Booster Task poora kar liya hai</string>
+    <string name="completed_second_booster">YAYY!\nAapne doosra Booster Task poora kar liya hai</string>
+    <string name="completed_third_booster">HURRAY!!\nAapne pichle 7 din mein %s runs score kiye hai</string>
+    <string name="complete_runs_tip">Tip: Apne score ko behtar banane ke liye game ke end me mystery runs collect karte rahein!</string>
+    <string name="body_qualified_for_draw">Badhaai Ho!\nAap Saptahik Lucky Draw ke liye qualify ho gaye hain.</string>
+    <string name="lucky_draw_available_on">%s par uplabdh</string>
+    <string name="start">Shuru karein</string>
+    <string name="mystery_reward_title">Tap karein &amp; mystery runs collect karein</string>
+    <string name="mystery_welcome_reward_title">Yeh raha aapka welcome gift !!</string>
+    <string name="ipl_reward_title">Yayy!! Scratch karein &amp; lucky draw prizes collect karein!!!</string>
+    <string name="sunday_game_rules">1. Is hafte OkPL matches ke dauran poochhe gaye kam se kam %d booster sawaalon ka jawaab dein -&gt; Is week me %d runs banayein\n2. Sunday dopahar 3 baje se Saturday raat 11:59 baje tak yeh hafta chalega\n3. Weekly draw har Sunday dopahar 12 baje ghoshit kiya jayega\n4. Saptahik draw ke score match ke ek ghante baad update kiye jayenge\n\nHar Sunday, game khelne wale 500 players ₹1000 tak ke inaam paayenge.\n<b>Hint: Zyada se zyada booster sawaalon ka jawaab de kar jeetne ka mauka paayein.</b></string>
+    <!--
+         As a developer, you should always supply "one" and "other"
+         strings. Your translators will know which strings are actually
+         needed for their language. Always include %d in "one" because
+         translators will need to use %d for languages where "one"
+         doesn't mean 1 (as explained above).
+    -->
+    <plurals name="ends_in">
+        <item quantity="one">%d din mein samaapt</item>
+        <item quantity="other">%d dino mein samaapt</item>
+    </plurals>
+    <plurals name="runs_away">
+        <item quantity="one">Is task ko poora karne ke liye aapko sirf %d run chahiye</item>
+        <item quantity="other">Is task ko poora karne ke liye aapko sirf %s runs chahiye</item>
+    </plurals>
+    <string name="leader_board_game_rules">\u2022 Jeetne wale pehle 10 players ₹15,000 ke 2.5 gm ke Gold Coins jeetenge\n\u2022 Agle 25 players ₹10,000 ke inaam jeetenge\n\u2022 Us ke baad ke 500 players OkCredit ki Jersey jeetenge\n\u2022 Agle 500 players Delhi Capitals Team ke dwara sign kiye gaye Mini Bats jeetenge\n\u2022 Match ke ek ghante baad leaderboard update kiya jaayega\n\n<b>Hint: Leaderboard par sab se upar aane ke liye har din khelein aur OkPL match ke dauran poochhe gaye booster sawaalon ka jawaab dein</b></string>
+    <string name="label_total_points">Tournament Score</string>
+    <string name="label_money_earned">Kamaayi hui inaam ki rakam</string>
+    <string name="msg_rank_motivation">Yadi aap OkPL game ke chalte huye task poora karte hain, to leaderboard par aane ke aapke chances %d%% se badhenge</string>
+    <string name="title_gold_prize">Gold Coin jeetne wale players</string>
+    <string name="title_cash_prize_10k">₹10,000 ke cash prize jeetne wale khiladi</string>
+    <string name="title_cash_prize_5k">₹5,000 ke cash prize jeetne wale khiladi</string>
+    <string name="title_cash_prize_2_5k">₹2,500 ke cash prize jeetne wale khiladi</string>
+    <string name="title_cash_prize_1_5k">₹1,500 ke cash prize jeetne wale khiladi</string>
+    <string name="title_cash_prize_1k">₹1,000 ke cash prize jeetne wale khiladi</string>
+    <string name="title_prize_t_shirts">T-shirt jeetne ke race me</string>
+    <string name="title_prize_mini_bats">Mini Bat jeetne ki race me</string>
+    <string name="score">Score: %d</string>
+    <string name="rank_with_prefix">#%d</string>
+    <string name="self_name">%s (Aap)</string>
+    <string name="team_vs_team">%1$s vs %2$s</string>
+    <plurals name="runs">
+        <item quantity="one">Run %1$s</item>
+        <item quantity="other">Runs %1$s</item>
+    </plurals>
+    <plurals name="balls">
+        <item quantity="one">Ball %1$s</item>
+        <item quantity="other">Balls %1$s</item>
+    </plurals>
+    <string name="batsman_score">%1$s | %2$s</string>
+    <plurals name="wickets">
+        <item quantity="one">Wkt %1$s</item>
+        <item quantity="other">Wkts %1$s</item>
+    </plurals>
+    <string name="overs">Overs %1$s.%2$s</string>
+    <string name="bowler_score">%1$s | %2$s</string>
+    <string name="team_score">%1$s-%2$s (%3$s.%4$s)</string>
+    <string name="your_guess">(Aapki Team)</string>
+    <string name="prediction_value">%1$s - %2$s%%</string>
+    <string name="no_active_matches">Aaj koi match nahin hai</string>
+    <string name="match_load_error">Active matches load nahi kar paayein. Krupaya dobara koshish karein</string>
+    <string name="score_no_internet">Live score update ke liye Internet se connect karein</string>
+    <string name="you_have_won">Badhaai Ho!! Aap jeet gaye</string>
+    <string name="better_luck_next_time">Koi baat nahi! \nShayad aap agli baar jeet jaayein</string>
+    <string name="ends_in">%1$s mein khatam hoga</string>
+    <string name="expired">Expire hua</string>
+    <string name="congs_point">Congratulations!!\nAapko X3 score multiplier mil gaya hai</string>
+    <plurals name="days">
+        <item quantity="one">%1$sday</item>
+        <item quantity="other">%1$sdays</item>
+    </plurals>
+    <string name="hours">%1$shr</string>
+    <string name="minutes">%1$smin</string>
+    <string name="seconds">%1$ssec</string>
+    <string name="win_status">%1$s jeet gaye. Aapne extra %2$s runs kamaaye hain</string>
+    <string name="lose_status">%1$s jeet gaye. Kal phir se koshish karein</string>
+    <string name="congratulations">Badhaai Ho!!!</string>
+    <string name="earned_rewards">Jeete hue inaam</string>
+    <string name="t_shirt_details">OkCredit Jersey</string>
+    <string name="bat_details">Delhi Capitals Team ke dwara sign kiye gaye Mini Bat</string>
+    <string name="show_more">Aur dikhaao</string>
+    <string name="scratch_hint">Reward dekhne ke liye aage-pichhe scratch karein</string>
+    <string name="play_game">Game Khelen</string>
+    <string name="nice_choice">Badhiya choice</string>
+    <string name="points_placeholder">%1$s runs</string>
+    <string name="runs_placeholder">%1$s points</string>
+    <string name="reward_claim_failure">Reward claim nahi kar paayein. Kripaya dobara koshish karein</string>
+    <string name="label_your_booster_task">Aapka Booster Task</string>
+    <string name="booster_available_in">Aapka booster task uplabdh hoga</string>
+    <string name="formatted_multiplier">%dX</string>
+    <string name="booster_success_multiplier">Woohoo!!\nAapka aajka game score %d se guna kiya jayega</string>
+    <string name="booster_question_formatted">%1$s aur\naapka score ho jayega <b>%2$sX</b></string>
+    <string name="hint_your_answer">Aapka jawaab</string>
+    <string name="success">Safal!</string>
+    <string name="message_business_location_success">Business location safaltapurvak joda gaya</string>
+    <string name="message_business_name_success">Business ka naam safaltapurvak joda gaya</string>
+    <string name="message_business_type_success">Business ka prakar safaltapurvak joda gaya</string>
+    <string name="message_business_category_success">Business ki category safaltapurvak joda gaya</string>
+    <string name="message_merchant_name_success">Businessman ka naam safaltapurvak joda gaya</string>
+    <string name="message_merchant_email_success">Businessman ka email safaltapurvak joda gaya</string>
+    <string name="message_merchant_about_success">Business ke baare mein safaltapurvak joda gaya</string>
+    <string name="message_add_customer_success">Customer safaltapurvak joda gaya</string>
+    <string name="rewards">Puruskar </string>
+    <string name="play_booster_video">Mujhe dikhaiyein kaise</string>
+    <string name="today_game_prize">Chalo Jeetein Aaj ka Game!</string>
+    <string name="week_score">Hafte ka\nscore</string>
+    <string name="win_10k">Har Ravivar jeetein ₹1000 tak!</string>
+    <string name="sunday_game_rules_title">Chalo jeetein Saptahik Draw!</string>
+    <string name="leader_board_game_rules_title">Leaderboard Toppers jeetenge…</string>
+    <string name="status_bowling">● Bowling</string>
+    <string name="status_not_bowling">Not bowling</string>
+    <string name="status_yet_to_bowl">Bowling baaki</string>
+    <string name="status_yet_to_bat">Batting baaki</string>
+    <string name="status_batting">● Batting</string>
+    <string name="status_bowled">bowled</string>
+    <string name="status_caught_and_bowled">caught and bowled</string>
+    <string name="status_caught">caught</string>
+    <string name="status_out">Out</string>
+    <string name="status_hit_wicket">hit wicket</string>
+    <string name="status_lbw">lbw</string>
+    <string name="status_retired_hurt">retired hurt</string>
+    <string name="status_run_out">run out</string>
+    <string name="status_stumped">stumped</string>
+    <string name="status_tea">Chai</string>
+    <string name="status_lunch">Lunch</string>
+    <string name="status_2nd_innings">innings break</string>
+    <string name="status_rain">Baarish</string>
+    <string name="status_bad_light">Kharab light</string>
+    <string name="status_interrupted">Rukaavat</string>
+    <string name="status_drinks">Drinks</string>
+    <string name="status_delayed">Vilambit</string>
+    <string name="status_super_over">Super over</string>
+    <string name="status_day_over">Day over</string>
+    <string name="status_match_over">Match over</string>
+    <string name="status_nil"></string>
+    <string name="weekly_draw_coming_soon">OkPL ki saptahik prize screen par aapka swaagat hai! Saptahik draw ke baare me apni progress janne ke liye humein fir se 20th September, dopahar 3 baje bhent dein.\n\nOkPL tournament ke dauraan ₹51 Lakh ke inaam jeetein\n\nSaptahik draw ke liye rules\n1. Is hafte OkPL matches ke dauran poochhe gaye kam se kam 2 sawaalon ke jawaab dein (Sunday dopahar 3 baje se Saturday raat 11:59 baje tak yeh hafta chalega)\n2. Is saptah 1000 runs banaayein aur qualify ho jaayein</string>
+    <string name="leaderboard_coming_soon">Monday, 21 September, (raat ko) 12:00 baje shuru ho raha hai\n\nTournament ke dauraan ₹51 Lakh ke inaam jeetein\n\nPehle 10 vijeetaon ko milenge 2.5 gram ke Gold Coins\n\nAgle 1025 khiladiyon ko milenge sunischit inaam</string>
+    <string name="today_lucky_draw">Badhaai Ho!\nAap aaj ke Lucky Draw ke liye qualify ho gaye hain</string>
+    <string name="today_lucky_draw_available">Match ke ant me uplabdh</string>
+    <string name="add_address_hint">‘%1$s’ bhejne ke liye address chahiye.</string>
+    <string name="add_address"><u>Apna pata jodein</u></string>
+    <string name="confirm_address"><u>Pataa confirm karein</u></string>
+    <string name="correct_address_hint"><u>Current business location par deliver kiya jayega.</u></string>
+    <string name="contact_us_whatsapp"><u>Humein Whatsapp par contact karein</u></string>
+    <string name="contact_us_inapp_chat"><u>In-app chat</u></string>
+    <string name="whatsapp_your_address">Aapka pata Whatsapp karein</string>
+    <string name="or">Ya</string>
+    <string name="whatsapp_message_deliver_price">Maine ek %1$s jeeta hai. Kripaya usse neeche diye gaye address par bhejein %2$s</string>
+    <string name="whatsapp_message_send_address">Mera pata hai</string>
+    <string name="mini_bat">mini-bat</string>
+    <string name="t_shirt">t-shirt</string>
+    <string name="series_name">%1$s | Match %2$s</string>
+    <string name="please_come_back">Aaj ki match me aap hissa nahi le saktein. Kripaya kal fir se khelein.</string>
+    <string name="game_rules_tool_tip">Score ka hisaab is tarah kiya jaayega.\nAaj ka score = [30 (Pehle 3 sawaalon ka jawaab dene ke liye) + Ballebaaz ke run + (Bowler ke wicket x %1$s runs) + %2$s runs (Agar aapki team jeet jaaye toh)] x Booster Gunnank (Booster sawaal ka jawaab dene ke liye)</string>
+    <string name="claim_in_progress">Process kar rahe hain…Kripaya pratiksha karein</string>
+    <string name="add_your_payment_details">Reward claim karne ke liye kripaya apne payment details jodein</string>
+    <string name="booster_pending">Reward claim karne ke liye kripaya apne payment details jodein</string>
+    <plurals name="booster_pending">
+        <item quantity="one">Aapki jaankari hum process kar rahe hain. Kripaya pratiksha karein. Booster %1$s minute me poora ho jayega</item>
+        <item quantity="other">Aapki jaankari hum process kar rahe hain. Kripaya pratiksha karein. Booster %1$s minutes me poora ho jayega</item>
+    </plurals>
+    <string name="match_title">%s VS %s - Match %d</string>
+    <string name="play_okpl">\nOkPL khelein, ₹51 Lakh tak jeetein</string>
+    <string name="show_all_players">Saare players dikhayein</string>
+    <string name="coming_soon_leaderboard"><![CDATA[Shuru ho raha hai<br/><b>Sunday, 11th April, (raat ke) 12:00 baje</b><br/><br/><b><font color=#1c873b>Jeetein inaam ₹ 51 Lakh ke</font></b><br/><b>is tournament ke dauran</b><br/><br/>Pehle 10 vijeta jeetenge <b>2.5 gram ke Gold Coins</b><br/><br/><b>Agle 500 players</b> ko milenge sunishchit inaam]]></string>
+    <string name="coming_soon_weekly"><![CDATA[Shuru ho raha hai<b>Sunday, 18th April, dopahar 3:00 baje</b><br/><br/>Pehla saptahik lucky draw hoga<br/><b>Sunday, 18th April 2021, dopahar 12:00 baje<br/><br/><b>Tournament ke dauraan</b><br/><b><font color=#1c873b>Jeetein ₹51 Lakh ke inaam</font></b><br/><b>Is hafte me 2 task poore karein&amp; saptahik draw mein hissa lene ke liye zaroori 1000 run prapt karein</b>]]></string>
+    <string name="coming_soon_todasygame"><![CDATA[<b>Friday, 9th April, (Raat) 12:00 baje</b> shuru ho raha hai<br/><br/><b>Tournament ke dauraan</b><br/><b><font color=#1c873b>₹51 Lakh ke inaam jeetein</b><br/><br/><b>OkPL match ke baare main</b><br/><br/><b>3 aasaan sawaalon ke jawaab dein</b><br/><b>&amp; ek task karein</b>]]></string>
+    <string name="todays_tab_tool_tip">\n\nYeh aapka har roj ka gaming space hai</string>
+    <string name="server_error"><![CDATA[Kuchh galat hua. <font color=#0574e3><u>Fir se koshish karein</u></font>]]></string>
+    <string name="network_error"><![CDATA[Kharab Network. <font color=#0574e3><u>Fir se koshish karein</u></font>]]></string>
+    <string name="weekly_tool_tip">\n\nPichhle 7 dinon me aapne\njo run banaaye hain us ke\naadhar par har hafte lucky draw nikala jayega</string>
+    <string name="leaderboard_tool_tip">\n\nHar din banaaye gaye runs\nyahaan jodein &amp; rank kiye jayenge jis ke aadhar par\n<b>Gold Coins</b> ka antim inaam <b>&amp; Cash inaam tay kiye jayenge</b></string>
+    <string name="contact_added">Number jodna safal</string>
+    <string name="do_booster">%1$s booster tasks baki</string>
+    <plurals name="runs_away_weekly">
+        <item quantity="one">%s run duur</item>
+        <item quantity="other">%s runs duur</item>
+    </plurals>
+    <string name="complete_booster">Is hafte ke dauraan koi bhi %1$s booster task poore karein</string>
+    <string name="make_weekly_score">Har hafte kam se kam %1$s runs banaayein</string>
+    <string name="horray">Hurray!</string>
+    <string name="booster_completed">Aapne is hafte ke booster task poore kiye hai.</string>
+    <string name="booster_completed_score">Aapne %1$s runs bana liye hain</string>
+    <string name="sunday_draw_qualified">Badhaai Ho!\nAap Saptahik Draw me hissa le sakte hain.</string>
+    <string name="sunday_draw_availability">Aanewale Ravivar ko %1$s baje uplabdh hoga</string>
+    <string name="each_week">Har hafte</string>
+    <string name="rules_answer_any">Kisi bhi %1$s Booster Sawaalon ke Jawaab dein</string>
+    <string name="rules_weekly_score">%1$s runs banaayein</string>
+    <string name="rules_weekly_available">Ravivar ko %1$s baje uplabdh hoga</string>
+    <string name="how_to_play_okpl">OkPL kaise khelein?</string>
+    <string name="got_3x_mutipler">Congratulations !!\nAapko %d point multiplier mila hai</string>
+    <string name="play_again">Jyada matches khelein,\nJyada inaam jeetne ke mauke paayein</string>
+    <string name="answer_3_question">IPL sambandhit 3 sawaalon ke jawaab dein</string>
+    <string name="before_match">Match shuru hone se pehle</string>
+    <string name="answer_1_booster">1 Booster sawaal ka jawaab dein</string>
+    <string name="during_ipl">IPL match ke dauraan</string>
+    <string name="after_ipl">IPL match ke baad</string>
+    <string name="lucky_100">Bhagyawaan 1000 jeetenge ₹100 tak</string>
+    <string name="welcome_gift">₹51 Lakh ke inaam jeetne ke liye niyamit roop se khelein!</string>
+    <string name="play_again_this_week">Saaptahik draw jeetne ke liye\nfir se khelein.</string>
+    <string name="keep_going">Khelte rahein!</string>
+    <string name="complete_one_motes_task">Is hafte ke dauraan ek aur booster task poora karein.</string>
+    <string name="rules_leaderboard_top_players">Pehle 10 khiladi jeetenge 2.5 gm\nke sone ke sikke</string>
+    <string name="rules_leaderboard_next_25_player">Agle 25 khiladi jeetenge ₹10,000 tak\nke cash inaam</string>
+    <string name="rules_leaderboard_next_1000_player">Agle 1000 khiladi jeetenge OkCredit Branded uphaar</string>
+    <string name="rules_leaderboard_note">• Sabhi inaam IPL ke ant me antim score ke adhaar par diye jayenge\n• Higher score banane ke liye IPL ke dauraan saare booster task poore karein</string>
+    <string name="rules_leaderboard_top_players_new">Pehle 10 Players jeetenge\n₹15,000 ke Gold Coins</string>
+    <string name="rules_leaderboard_next_500_player">Agle 500 Players jeetenge\nOkCredit T-Shirts</string>
+    <string name="before_match_ends">Match khatam hone se pehle</string>
+    <string name="lucky_2500">Bhagyawaan 2500 jeetenge ₹100 tak</string>
+    <string name="weekly_draw_upto_1000">2,000 players jeetenge ₹1,000 tak</string>
+    <string name="coming_soon_leaderboard_new"><![CDATA[Shuru ho raha hai<br/><b>Sunday, 11th April, (raat ke) 12:00 baje</b><br/><br/><b><font color=#1c873b>Jeetein inaam ₹ 51 Lakh ke</font></b><br/><b>is tournament ke dauran</b><br/><br/>Pehle 10 vijeta jeetenge <b>₹15,000 ke Gold Coins</b><br/><br/><b>Agle 525 players</b> ko milenge sunishchit inaam]]></string>
+    <string name="coming_soon_todasygame_new"><![CDATA[<b>Friday, 9th April, (Raat) 12:00 baje</b> shuru ho raha hai<br/><br/><b>Tournament ke dauraan</b><br/><b><font color=#1c873b>₹51 Lakh ke inaam jeetein</b><br/><br/><b>OkPL match ke baare main</b><br/><br/><b>3 aasaan sawaalon ke jawaab dein</b><br/><b>&amp; ek task karein</b>]]></string>
+    <string name="coming_soon_weekly_new"><![CDATA[Shuru ho raha hai<b>Sunday, 18th April, dopahar 3:00 baje</b><br/><br/>Pehla saptahik lucky draw hoga<br/><b>Sunday, 18th April 2021, dopahar 12:00 baje<br/><br/><b>Tournament ke dauraan</b><br/><b><font color=#1c873b>Jeetein ₹51 Lakh ke inaam</font></b><br/><b>Is hafte me 2 task poore karein&amp; saptahik draw mein hissa lene ke liye zaroori 1000 run prapt karein</b>]]></string>
+    <string name="okassistant_greeting">Namaskar 🙏 Main hoon OkAssistant !!</string>
+    <string name="okassistant_education">Aapki aawaaz pehchanane me mujhe thodi madad chahiye.\n\nKripaya mic ka button dabaayein aur neeche di gayi lines spasht aawaaz me padh kar record karein.</string>
+    <string name="read_this">Yeh padhein</string>
+    <string name="invalid_recording">Amanya recording</string>
+    <string name="task_complete">Poora hua</string>
+    <string name="okassistant_retry">Retry</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="okassistant_greeting">Hi 🙏 I\'m OkAssistant !!</string>
+    <string name="okassistant_education">I need some help to recognize your voice.\n\nPlease press the mic button and read the text below in a clear voice to record.</string>
+    <string name="read_this">Read this</string>
+    <string name="invalid_recording">Invalid recording</string>
+    <string name="task_complete">Task complete</string>
+    <string name="okassistant_retry">Retry</string>
+
+    <!-- /* Bulk Add by voice -->
+    <string name="t_004_bulk_voice_txn_main_headline">Say and Add Transactions</string>
+    <string name="t_004_bulk_voice_txn_main_caption">Get things done faster just by saying</string>
+    <string name="t_004_bulk_voice_txn_date_field">Transaction Date</string>
+
+    <string name="t_004_bulk_voice_txn_body_headline">Say in English or Hindi</string>
+    <string name="t_004_bulk_voice_txn_body_english_example">Sameer 100 rupees credit / Sameer 100 rupees payment</string>
+    <string name="t_004_bulk_voice_txn_body_subtitle">OR</string>
+    <string name="t_004_bulk_voice_txn_hinglish_example">Sameer ki 100 rupaye ki udhaari / Sameer ka 100 rupaye ka payment</string>
+
+    <string name="t_004_speech_eg_title">Say in English or Hindi</string>
+    <string name="t_004_speech_eg_caption_credit">To add Credit, say</string>
+    <string name="t_004_speech_eg_credit_desc">“Sameer 100 rupees credit” or “Sameer ki 100 rupaye ki udhaari”</string>
+    <string name="t_004_speech_eg_caption_payment">To add Payment, say</string>
+    <string name="t_004_speech_eg_payment_desc">“Sameer 100 rupees payment” or “Sameer ka 100 rupaye ka payment”</string>
+    <string name="t_004_speech_try_again_error_desc">Sorry, we could not understand. Please tap below and say again.</string>
+
+    <string name="t_004_bulk_voice_txn_intermediate_state_processing">Processing…</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_failed">Processing failed. Please try again.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_incomplete">Please add missing details</string>
+
+    <string name="t_004_bulk_voice_txn_voice_transcript_label">You said</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_credit">Credit</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_payment">Payment</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_credit">Given</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_payment">Received</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_txn_type">Transaction</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_add_note">Note (Optional)</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_amount">Amount</string>
+
+    <string name="t_004_bulk_voice_txn_delete">Delete</string>
+    <string name="t_004_bulk_voice_txn_update">Update</string>
+
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_saved">Transaction updated</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_deleted">Transaction deleted</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_edit_discarded">Transaction changes discarded</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_load_failed">Unable to load transactions</string>
+
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_title">Select Name</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_search_more">Search more names</string>
+    <string name="t_004_bulk_voice_txn_select_name_hint_text">Select or Search Name</string>
+
+    <string name="t_004_bulk_voice_txn_confirm_save_title">Verify transactions before saving</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_date_of_txn">Date of transactions - %s</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_txn_not_saved_caption">Transactions having amount ₹0, processing/ failed status or with missing information will not be saved.</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_blocked_merchants">If you have blocked any customer/ supplier or you are blocked by any customer/ supplier, the transaction will not be saved.</string>
+
+    <string name="t_004_bulk_voice_txn_customer_count">%1s Customer,</string>
+    <string name="t_004_bulk_voice_txn_supplier_count">%1s Supplier</string>
+
+    <string name="t_004_bulk_voice_txn_transaction_saved">Transaction Saved</string>
+    <string name="t_004_bulk_voice_txn_transaction_cancelled">Transaction Cancelled</string>
+
+    <!-- Bulk Add by voice */ -->
+</resources>

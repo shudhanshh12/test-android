@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okassistant_greeting">হাই 🙏 আমি OkAssistant !!</string>
+    <string name="okassistant_education">আপনার ভয়েস চিনতে আমার কিছু সাহায্য দরকার। \n\nরেকর্ড করতে দয়া করে মাইক বোতাম টিপুন এবং নীচের পাঠ্যটি পরিষ্কার আওয়াজে পড়ুন।</string>
+    <string name="read_this">এটি পড়ুন</string>
+    <string name="invalid_recording">অবৈধ রেকর্ডিং</string>
+    <string name="task_complete">কার্য সম্পূর্ণ</string>
+    <string name="okassistant_retry">আবার চেষ্ঠা করুন</string>
+    <!-- /* Bulk Add by voice -->
+    <string name="t_004_bulk_voice_txn_main_headline">বলুন এবং লেনদেন যোগ করুন</string>
+    <string name="t_004_bulk_voice_txn_main_caption">বলুন এবং কাজগুলি দ্রুত সম্পন্ন করুন</string>
+    <string name="t_004_bulk_voice_txn_date_field">লেনদেনের তারিখ</string>
+    <string name="t_004_bulk_voice_txn_body_headline">ইংরেজি বা হিন্দিতে বলুন</string>
+    <string name="t_004_bulk_voice_txn_body_english_example">Sameer 100 rupees credit / Sameer 100 rupees payment</string>
+    <string name="t_004_bulk_voice_txn_body_subtitle">অথবা</string>
+    <string name="t_004_bulk_voice_txn_hinglish_example">Sameer ki 100 rupaye ki udhaari / Sameer ka 100 rupaye ka payment</string>
+    <string name="t_004_speech_eg_title">ইংরেজি বা হিন্দিতে বলুন</string>
+    <string name="t_004_speech_eg_caption_credit">ক্রেডিট যোগ করতে, বলুন</string>
+    <string name="t_004_speech_eg_credit_desc">“Sameer 100 rupees credit” or “Sameer ki 100 rupaye ki udhaari”</string>
+    <string name="t_004_speech_eg_caption_payment">পেমেন্ট যোগ করতে, বলুন</string>
+    <string name="t_004_speech_eg_payment_desc">“Sameer 100 rupees payment” or “Sameer ka 100 rupaye ka payment”</string>
+    <string name="t_004_speech_try_again_error_desc">দুঃখিত, আমরা বুঝতে পারিনি। অনুগ্রহ করে নীচে টাপ করুন এবং আবার বলুন।</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_processing">প্রসেস হচ্ছে…</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_failed">প্রসেস করা যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_incomplete">মিসিং বিবরণ যোগ করুন</string>
+    <string name="t_004_bulk_voice_txn_voice_transcript_label">আপনি বলেছেন</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_credit">ক্রেডিট</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_payment">পেমেন্ট</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_credit">প্রদত্ত</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_payment">প্রাপ্ত</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_txn_type">লেনদেন</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_add_note">নোট (বাধ্যতামূলক না)</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_amount">অ্যামাউন্ট</string>
+    <string name="t_004_bulk_voice_txn_delete">ডিলিট</string>
+    <string name="t_004_bulk_voice_txn_update">আপডেট করুন</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_saved">লেনদেন আপডেট করা হয়েছে</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_deleted">লেনদেন মোছা হয়েছে</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_edit_discarded">লেনদেনের পরিবর্তনগুলি বাতিল করা হয়েছে</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_load_failed">লেনদেন লোড করতে অক্ষম</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_title">নাম নির্বাচন করুন</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_search_more">আরো নাম অনুসন্ধান করুন</string>
+    <string name="t_004_bulk_voice_txn_select_name_hint_text">নাম নির্বাচন করুন বা অনুসন্ধান করুন</string>
+    <string name="t_004_bulk_voice_txn_confirm_save_title">সেভ করার আগে লেনদেন যাচাই করুন</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_date_of_txn">লেনদেনের তারিখ - %s</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_txn_not_saved_caption">লেনদেন পরিমাণ ₹0 হলে, প্রসেসিং/ ব্যর্থ স্টেটাস বা মিসিং তথ্য সেভ করা হবে না।</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_blocked_merchants">আপনি যদি কোন গ্রাহক/ সরবরাহকারীকে অবরুদ্ধ করে থাকেন অথবা আপনি কোন গ্রাহক/ সরবরাহকারী দ্বারা অবরুদ্ধ হয়ে থাকেন, তাহলে লেনদেন সেভ করা হবে না।</string>
+    <string name="t_004_bulk_voice_txn_customer_count">%1s জন গ্রাহক,</string>
+    <string name="t_004_bulk_voice_txn_supplier_count">%1s জন সরবরাহকারী</string>
+    <string name="t_004_bulk_voice_txn_transaction_saved">লেনদেন সেভ করা হয়েছে</string>
+    <string name="t_004_bulk_voice_txn_transaction_cancelled">লেনদেন বাতিল হয়েছে</string>
+    <!-- Bulk Add by voice */ -->
+</resources>

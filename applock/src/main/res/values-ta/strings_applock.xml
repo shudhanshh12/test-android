@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_otp">OTP உள்ளிடவும்</string>
+    <string name="otp_sent_message">OTP கொண்ட SMS உங்கள் %1$s மொபைல் எண்ணுக்கு அனுப்பட்டுள்ளது</string>
+    <string name="otp_incorrect">தவறான OTP</string>
+    <string name="otp_expired">OTP காலாவதியானது</string>
+    <string name="resend_otp"><u>OTP-ஐ மீண்டும் அனுப்பு </u></string>
+    <string name="forgot_pin"><u>PINஐ மறந்துவிட்டேன்</u></string>
+    <string name="confirm_otp">OTPயை உறுதிப்படுத்தவும்</string>
+    <string name="set_a_4_digit_pin">4 இலக்க PIN அமைக்கவும்</string>
+    <string name="confirm_pin">PINஐ உறுதிப்படுத்தவும்</string>
+    <string name="incorrect_pin">தவறான PIN. தயவுசெய்து மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="enter_security_pin">பாதுகாப்பு PINஐ உள்ளிடவும்</string>
+    <string name="security_setup_description">உங்கள் வாடிக்கையாளர் விவரங்கள் மற்றும் பரிவர்த்தனை தகவல்களின் பாதுகாப்பை உறுதிப்படுத்த, உங்கள் ஆப்-ற்கான பாதுகாப்பு PINஐ அமைக்கவும்</string>
+    <string name="security_update_description">கடவுச்சொல்லை 4 இலக்க Pin ஆக புதுப்பித்துள்ளோம், உங்கள் தற்போதைய கடவுச்சொல்லின் முதல் 4 இலக்கங்களை உள்ளிடவும்</string>
+    <string name="confirm_fingerprint">கைரேகையை உறுதிப்படுத்து</string>
+    <string name="use_fingerprint">கைரேகை பயன்படுத்து</string>
+    <string name="confirm_fingerprint_description">பாதுகாப்பிற்காக, உங்கள் கைரேகையை உறுதிப்படுத்தவும்</string>
+    <string name="use_pin">PIN பயன்படுத்து</string>
+    <string name="four_digit_security_pin">4-இலக்க பாதுகாப்பு PIN </string>
+</resources>

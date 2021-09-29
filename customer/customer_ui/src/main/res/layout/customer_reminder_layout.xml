@@ -1,0 +1,82 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/grid_7"
+    android:background="@color/white"
+    android:elevation="6dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/call_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="start|center_vertical"
+        android:background="@drawable/home_menu_ripple"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="@dimen/grid_5_half"
+        android:paddingLeft="@dimen/grid_5_half"
+        android:paddingEnd="@dimen/grid_5_half"
+        android:paddingRight="@dimen/grid_5_half">
+
+        <ImageView
+            android:id="@+id/call_customer_icon"
+            android:layout_width="@dimen/grid_3"
+            android:layout_height="@dimen/grid_3"
+            android:layout_gravity="start"
+            android:tint="?colorPrimary"
+            app:srcCompat="@drawable/ic_call_solid" />
+
+        <TextView
+            android:id="@+id/call_customer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:textAppearance="?textAppearanceSubtitle4"
+            android:maxLines="1"
+            android:text="@string/call"
+            android:textSize="@dimen/text_size_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reminder_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="end|center_vertical"
+        android:background="@drawable/home_menu_ripple"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="@dimen/grid_5_half"
+        android:paddingLeft="@dimen/grid_5_half"
+        android:paddingEnd="@dimen/grid_5_half"
+        android:paddingRight="@dimen/grid_5_half">
+
+        <ImageView
+            android:id="@+id/send_reminder_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:tint="?colorPrimary"
+            app:srcCompat="@drawable/ic_send_plane_border" />
+
+        <TextView
+            android:id="@+id/send_reminder_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/send"
+            android:textAppearance="?textAppearanceSubtitle4" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

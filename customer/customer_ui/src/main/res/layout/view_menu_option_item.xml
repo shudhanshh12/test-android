@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/image_menu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/menu_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/menu_item"
+        app:srcCompat="@drawable/ic_call_solid"
+        app:tint="@color/grey800" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/menu_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawablePadding="12dp"
+        android:gravity="start"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/show_qr_code"
+        android:textAppearance="?textAppearanceBody2"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/image_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chat_count"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/circle_background_16dp"
+        android:backgroundTint="@color/red_primary"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_item"
+        app:layout_constraintStart_toEndOf="@id/menu_item"
+        app:layout_constraintTop_toTopOf="@+id/menu_item"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/grey100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/menu_item"
+        app:layout_constraintTop_toBottomOf="@+id/menu_item" />
+</merge>

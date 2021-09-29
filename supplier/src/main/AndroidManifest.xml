@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.okcredit.supplier">
+
+    <application>
+
+        <activity
+            android:name=".statement.SupplierAccountStatementActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.OKCTheme"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

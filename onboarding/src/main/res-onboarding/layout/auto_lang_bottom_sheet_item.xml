@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:minHeight="80dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="0dp">
+    <!--Design requirement on the elevation-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp">
+
+        <TextView
+            android:id="@+id/tvTitleLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceHeadline5"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvSubTitleLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceSubtitle3"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivLangSelected"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="-4dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_tick_language" />
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tech.okcredit.contacts">
+
+    <application>
+        <activity
+            android:name=".ui.AddOkcreditContactTransparentActivity"
+            android:theme="@style/Theme.TransparentActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+    </application>
+</manifest>

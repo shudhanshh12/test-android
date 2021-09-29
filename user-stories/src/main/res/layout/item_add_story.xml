@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAddStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_add_story" />
+
+
+    <TextView
+        android:id="@+id/tvStoryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/story_you"
+        android:textAlignment="center"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivAddStory"
+        app:layout_constraintStart_toStartOf="@+id/ivAddStory"
+        app:layout_constraintTop_toBottomOf="@+id/ivAddStory" />
+
+
+    <ImageView
+        android:id="@+id/ivAddStoryPlus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_green_add"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAddStory"
+        app:layout_constraintEnd_toEndOf="@+id/ivAddStory" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

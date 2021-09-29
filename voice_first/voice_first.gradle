@@ -1,0 +1,99 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            dimension "server"
+            buildConfigField "String", 'OKPL_VOICE_URL', "\"https://speech.staging.okcredit.io/\""
+            buildConfigField "String", 'DRAFT_SERVICE_URL', "\"https://draft.staging.okcredit.io/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'OKPL_VOICE_URL', "\"https://speech.alpha.okcredit.io/\""
+            buildConfigField "String", 'DRAFT_SERVICE_URL', "\"https://draft.alpha.okcredit.io/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'OKPL_VOICE_URL', "\"https://speech.okcredit.io/\""
+            buildConfigField "String", 'DRAFT_SERVICE_URL', "\"https://draft.okcredit.io/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-voice_first.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-voice_first.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':fileupload')
+    implementation project(':business:contract')
+    implementation project(':individual:contract')
+    implementation project(':shared')
+    implementation project(':resources')
+    implementation project(':analytics')
+    implementation project(':backend:contract')
+    implementation project(':suppliercredit:contract')
+    implementation project(':voice_first:contract')
+    implementation project(':applock:contract')
+
+    implementation utility.kotlin
+    implementation utility.coroutines
+    implementation utility.coroutinesRx2
+
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+
+    implementation androidX.constraintLayout
+    implementation androidX.ktx
+
+    implementation retrofit.gson
+
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+    annotationProcessor view.epoxyProcessor
+    implementation view.material
+    implementation view.lottie
+
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+}

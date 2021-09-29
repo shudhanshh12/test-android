@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/green_lite"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="0dp"
+    tools:context=".ui.add_txn_screen.AddTxnContainerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.1"
+            android:textAppearance="?textAppearanceCaption1"
+            android:textColor="@color/grey800"
+            tools:text="Customer name has requested bank details to pay you back online" />
+
+        <LinearLayout
+            android:id="@+id/button_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/green_lite_1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/image_start"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_icon_bank"
+                android:visibility="gone"
+                app:tint="?colorPrimary"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/text_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_bank_details"
+                android:textAllCaps="true"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textColor="?colorPrimary"
+                app:iconGravity="textStart" />
+
+            <ImageView
+                android:id="@+id/image_end"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_chevron_right_black_24_dp"
+                android:visibility="gone"
+                app:tint="?colorPrimary"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

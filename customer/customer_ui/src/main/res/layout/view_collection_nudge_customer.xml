@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/credit_side"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_grey50_corner_radius_8dp"
+        android:drawablePadding="@dimen/_8dp"
+        android:gravity="center|start"
+        android:padding="@dimen/_8dp"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey900"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_collection_icon"
+        app:drawableTint="@color/green_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        tools:text="@string/real_time_contextual_message_card_text_credit_se"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/payment_side"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_grey50_corner_radius_8dp"
+        android:drawablePadding="@dimen/_8dp"
+        android:gravity="start|center"
+        android:padding="@dimen/_8dp"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey900"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_collection_icon"
+        app:drawableTint="@color/green_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        tools:text="@string/setup_collection_nudge_payment_side"
+        tools:visibility="gone" />
+
+</merge>

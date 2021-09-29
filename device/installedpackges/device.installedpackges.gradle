@@ -1,0 +1,98 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'INSTALLED_PKG_URL', "\"https://cdi.staging.okcredit.io/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'INSTALLED_PKG_URL', "\"https://cdi.alpha.okcredit.io/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'INSTALLED_PKG_URL', "\"https://cdi.okcredit.io/\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-installed-packages.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-installed-packages.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':analytics')
+    implementation project(':shared')
+    implementation project(':business:contract')
+    implementation project(':ab')
+
+    implementation androidX.appcompact
+    implementation androidX.ktx
+
+    implementation rx.java
+    implementation rx.android
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.moshiConverter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+
+    // Moshi
+    implementation moshi.core
+    kapt moshi.codegen
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+
+    implementation utility.kotlin
+    implementation utility.timber
+    implementation utility.jodaTime
+    implementation utility.trueTime
+    implementation utility.guava
+
+    implementation arch.room
+    implementation arch.roomRx
+    kapt arch.roomAnnotationProcessor
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">ਪ੍ਰੋਫਾਈਲ ਵਿੱਚ ਸੋਧ ਕਰੋ</string>
+    <string name="t_001_multi_acc_title_new_biz">ਨਵਾਂ ਕਾਰੋਬਾਰ ਤਿਆਰ ਕਰੋ</string>
+    <string name="t_001_multi_acc_input_biz_name">ਕਾਰੋਬਾਰ / ਦੁਕਾਨ ਦਾ ਨਾਮ</string>
+    <string name="t_001_multi_acc_net_bal">ਨੈੱਟ ਬੈਲੇਂਸ:</string>
+    <string name="t_001_multi_acc_net_bal_due">ਉਧਾਰ</string>
+    <string name="t_001_multi_acc_net_bal_advance">ਐਡਵਾਂਸ</string>
+    <string name="t_001_multi_acc_title_select_biz">ਕਾਰੋਬਾਰ ਚੁਣੋ</string>
+    <string name="t_001_multi_acc_msg_biz_added">ਨਵਾਂ ਕਾਰੋਬਾਰ ਸਫ਼ਲਤਾਪੂਰਵਕ ਤਿਆਰ ਹੋਇਆ</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">ਵਪਾਰ ਨਹੀਂ ਬਣਾ ਸਕੇ। ਵਪਾਰ ਬਣਾਉਣ ਦੀ ਅਧਿਕਤਮ ਸੀਮਾ ਸਮਾਪਤ ਹੋ ਗਈ ਹੈ</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    >
+
+    <TextView
+        android:id="@+id/tvBoosterDetail"
+        style="@style/TextAppearance.OKCTheme.Subtitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:drawablePadding="40dp"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.2"
+        android:textIsSelectable="false"
+        app:drawableEndCompat="@drawable/ic_booster_thumbs_up"
+        tools:text="YAYY!\nYou completed the first Booster Task" />
+
+</androidx.cardview.widget.CardView>

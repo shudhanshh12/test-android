@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/screen_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAppearance="?textAppearanceSubtitle1"
+                    android:textColor="@color/grey900"
+                    tools:text="Shubham Jain" />
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAmountContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey50"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvEnterAmountTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/payment_enter_amount_to_pay"
+                    android:textAppearance="@style/TextAppearance.OKCTheme.Caption1"
+                    app:layout_constraintBottom_toTopOf="@id/etAmount"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvRupeeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/payment_edit_amount_rupee_symbol"
+                    android:textAppearance="@style/TextAppearance.OKCTheme.Headline5"
+                    android:textColor="#1c873b"
+                    app:layout_constraintBottom_toBottomOf="@id/etAmount"
+                    app:layout_constraintEnd_toStartOf="@id/etAmount"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/etAmount" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etAmount"
+                    style="@style/TextAppearance.OKCTheme.Headline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="1dp"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLength="9"
+                    android:textColor="@color/grey900"
+                    app:layout_constraintBottom_toTopOf="@id/vwUnderLineAmount"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvRupeeIcon"
+                    tools:text="111">
+
+                    <requestFocus />
+                </androidx.appcompat.widget.AppCompatEditText>
+
+                <View
+                    android:id="@+id/vwUnderLineAmount"
+                    android:layout_width="200dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/green_primary"
+                    app:layout_constraintBottom_toTopOf="@id/tvLimitReachedWarning"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tvLimitReachedWarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="12dp"
+                    android:textAppearance="@style/TextAppearance.OKCTheme.Caption2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vwUnderLineAmount"
+                    tools:text="You can pay upto ₹ 10000 daily" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/makePayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:paddingStart="30dp"
+                    android:paddingTop="@dimen/_10dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="@dimen/_10dp"
+                    android:text="@string/blind_pay_make_payment"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    app:cornerRadius="24dp"
+                    app:layout_constraintBottom_toTopOf="@id/buttonSupport"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLimitReachedWarning"
+                    app:strokeColor="@color/green_primary" />
+
+                <ImageView
+                    android:id="@+id/ivLoading"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:translationZ="3dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/makePayment"
+                    app:layout_constraintEnd_toEndOf="@id/makePayment"
+                    app:layout_constraintStart_toStartOf="@id/makePayment"
+                    app:layout_constraintTop_toTopOf="@id/makePayment"
+                    app:srcCompat="@drawable/payment_ic_loader" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/circular_border_on_top"
+                    android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+                    android:textColor="@color/indigo_primary"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/indigo_lite"
+                    app:elevation="0dp"
+                    app:icon="@drawable/ic_whatsapp_indigo"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/indigo_primary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="@string/t_002_24X7help_banner_whatsapp_label"
+                    tools:visibility="visible" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvEducationHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="@string/blind_pay_education_header"
+                android:textColor="@color/grey900"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clAmountContainer" />
+
+            <TextView
+                android:id="@+id/tvEducationSubHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/blind_pay_education_sub_header"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEducationHeader" />
+
+
+            <ImageView
+                android:id="@+id/ivDeposit"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/round_border_style"
+                android:src="@drawable/ic_blind_pay_deposit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEducationSubHeader" />
+
+            <TextView
+                android:id="@+id/tvDepositHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="@string/blind_pay_education_deposit_header"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivDeposit"
+                app:layout_constraintTop_toBottomOf="@+id/tvEducationSubHeader" />
+
+            <TextView
+                android:id="@+id/tvDepositSubHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/blind_pay_education_deposit_sub_header_supplier"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivDeposit"
+                app:layout_constraintTop_toBottomOf="@+id/tvDepositHeader" />
+
+
+            <ImageView
+                android:id="@+id/ivRefund"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/round_border_style"
+                android:src="@drawable/ic_bilnd_pay_refund"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDepositSubHeader" />
+
+            <TextView
+                android:id="@+id/tvRefundHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="@string/blind_pay_education_refund_header"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivRefund"
+                app:layout_constraintTop_toBottomOf="@+id/tvDepositSubHeader" />
+
+            <TextView
+                android:id="@+id/tvRefundSubHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/blind_pay_education_refund_sub_header_supplier"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivRefund"
+                app:layout_constraintTop_toBottomOf="@+id/tvRefundHeader" />
+
+            <ImageView
+                android:id="@+id/ivReceiver"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/round_border_style"
+                android:src="@drawable/ic_blind_pay_receiver"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRefundSubHeader" />
+
+            <TextView
+                android:id="@+id/tvReceiverHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="@string/blind_pay_education_receiver_header_supplier"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivReceiver"
+                app:layout_constraintTop_toBottomOf="@+id/tvRefundSubHeader" />
+
+            <TextView
+                android:id="@+id/tvReceiverSubHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/blind_pay_education_receiver_sub_header_supplier"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivRefund"
+                app:layout_constraintTop_toBottomOf="@+id/tvReceiverHeader" />
+
+            <ImageView
+                android:id="@+id/ivSettlement"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/round_border_style"
+                android:src="@drawable/ic_blind_pay_settlement"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvReceiverSubHeader" />
+
+            <TextView
+                android:id="@+id/tvSettlementHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="@string/blind_pay_education_settlement_header"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivSettlement"
+                app:layout_constraintTop_toBottomOf="@+id/tvReceiverSubHeader" />
+
+            <TextView
+                android:id="@+id/tvSettlementSubHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:text="@string/blind_pay_education_settlement_sub_header_supplier"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivRefund"
+                app:layout_constraintTop_toBottomOf="@+id/tvSettlementHeader" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

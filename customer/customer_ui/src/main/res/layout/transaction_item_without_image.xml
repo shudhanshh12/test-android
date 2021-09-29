@@ -1,0 +1,276 @@
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    app:layoutName="Transaction Recycler View"
+    app:isRecycler="true"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="@dimen/spacing_chat_view_item"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    android:id="@+id/clOuter">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintWidth_min="wrap"
+        app:strokeColor="@color/grey200"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tx_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey100"
+                android:paddingStart="16dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="4dp"
+                android:textAppearance="?textAppearanceSubtitle4"
+                android:textColor="@color/grey700"
+                android:visibility="gone"
+                tool:text="@string/online_payment"
+                tool:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:paddingBottom="7dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="12dp">
+
+                    <ImageView
+                        android:id="@+id/arrows"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="4dp"
+                        android:src="@drawable/ic_take" />
+
+                    <TextView
+                        android:id="@+id/tx_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="24dp"
+                        android:text="₹500"
+                        android:textAppearance="?textAppearanceHeadline5" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tx_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="?textAppearanceCaption2"
+                            android:textColor="@color/grey600" />
+
+                        <ImageView
+                            android:id="@+id/sync"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="4dp"
+                            android:contentDescription="@string/sync_status"
+                            android:tint="@color/grey600"
+                            app:srcCompat="@drawable/ic_sync_ok" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/tx_bill_image_container"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:visibility="gone"
+                tool:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/tx_bill_image"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="180dp"
+                    android:scaleType="centerCrop"
+                    tool:src="@drawable/ic_img_place_holder" />
+
+                <TextView
+                    android:id="@+id/btn_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:background="@drawable/rectangle_background_black_radius_16dp"
+                    android:drawablePadding="@dimen/_8dp"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/retry"
+                    android:textAppearance="?textAppearanceSubtitle4"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    app:drawableStartCompat="@drawable/ic_sync"
+                    app:drawableTint="@color/white" />
+
+
+                <ImageView
+                    android:id="@+id/ivRefresh"
+                    android:layout_width="@dimen/spacing_32"
+                    android:layout_height="@dimen/spacing_32"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_refresh_outline"
+                    android:visibility="gone" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/image_count_container"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/_8dp"
+                    app:cardBackgroundColor="@color/black_60"
+                    app:cardCornerRadius="4dp">
+
+                    <TextView
+                        android:id="@+id/image_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAppearance="?textAppearanceSubtitle3"
+                        android:textColor="@color/white"
+                        tool:text="+1" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/status_settlement_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                app:drawableStartCompat="@drawable/ic_pending"
+                android:drawablePadding="@dimen/_4dp"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_2dp"
+                android:text="@string/settlement_pending"
+                android:textAppearance="?textAppearanceSubtitle4"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                tool:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tx_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="end"
+                android:maxEms="15"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="8dp"
+                android:layout_marginTop="6dp"
+                android:textAppearance="?textAppearanceCaption2"
+                tool:text="ssds sdsdsd sdsd sds sd sdsd sd sdsd sdsd"
+                tool:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintEnd_toStartOf="@id/buttonCashback"
+        app:layout_constraintTop_toBottomOf="@id/cvContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tx_bill"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_camera_56"
+            app:tint="@color/grey700" />
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textAppearance="?textAppearanceCaption1"
+            android:textColor="@color/grey700"
+            tool:text="₹500 Due" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/buttonCashback"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/SU2_Cashback_Discovery_body_3"
+        android:textAppearance="@style/OKC.TextAppearance.Caption2"
+        android:textColor="@color/indigo_primary"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginStart="8dp"
+        android:drawablePadding="4dp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/bottom_container"
+        android:drawableStart="@drawable/ic_confetti_14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvContainer"
+        tool:visibility="visible" />
+
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

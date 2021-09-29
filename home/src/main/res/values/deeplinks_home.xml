@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dashboard_screen_deeplink" translatable="false">okcr://home/dashboard</string>
+    <string name="business_health_dashboard_screen_deeplink" translatable="false">okcr://home/business_health_dashboard</string>
+    <string name="menu_screen_deeplink" translatable="false">okcr://home/menu</string>
+    <string name="customer_profile_dialog_deeplink" translatable="false">okcredit://merchant/v1/home/customer_profile/{customer_id}</string>
+</resources>

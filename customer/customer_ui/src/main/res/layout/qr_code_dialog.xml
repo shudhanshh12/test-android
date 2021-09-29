@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <in.okcredit.shared.view.KycStatusView
+        android:id="@+id/kyc_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:textColor="@color/grey900"
+        android:textSize="16sp"
+        android:layout_below="@id/kyc_status_view"
+        tools:text="Anjal" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/tv_qr_description"
+        android:textAppearance="?textAppearanceBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/ask_customer_to_scan_qr_and_pay_online"
+        android:textColor="@color/grey900"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

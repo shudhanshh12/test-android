@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_corner_rounded"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/OKC.TextAppearance.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_reminder_date" />
+
+            <TextView
+                android:id="@+id/reminder_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_marginTop="8dp"
+                android:text="@string/sms_reminder_will_be_sent_to_your_customer_on_selected_reminder_date"
+                android:textAppearance="?textAppearanceCaption1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/clear"
+            style="@style/OKC.TextAppearance.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/clear"
+            android:textAllCaps="false"
+            android:textColor="@color/red_primary" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/grey300" />
+
+
+    <in.okcredit.merchant.customer_ui.utils.calender.MonthView
+        android:id="@+id/month_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:background="@color/white" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/five_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                app:rippleColor="@color/grey300"
+                android:text="@string/five_days"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceCaption2"
+                android:textColor="@color/grey900"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="24dp"
+                app:iconTint="@color/grey900"
+                app:strokeColor="@color/grey400"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ten_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+                app:rippleColor="@color/grey300"
+                android:stateListAnimator="@null"
+                android:text="@string/ten_days"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceCaption2"
+                android:textColor="@color/grey900"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="24dp"
+                app:strokeColor="@color/grey400"
+                app:strokeWidth="1dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fifteen_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+                app:rippleColor="@color/grey300"
+                android:stateListAnimator="@null"
+                android:text="@string/fiftenn_days"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceCaption2"
+                android:textColor="@color/grey900"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="24dp"
+                app:strokeColor="@color/grey400"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/thirty_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="@string/thirty_days"
+                app:rippleColor="@color/grey300"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceCaption2"
+                android:textColor="@color/grey900"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="24dp"
+                app:strokeColor="@color/grey400"
+                app:strokeWidth="1dp" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path
+        name="images"
+        path="images/" />
+    <external-files-path
+        name="share"
+        path="share/" />
+    <external-files-path
+        name="reminder_images"
+        path="reminder_images/" />
+    <external-files-path
+        name="merchant_image"
+        path="merchant_image/" />
+    <external-files-path
+        name="OkCredit"
+        path="OkCredit/" />
+    <root-path
+        name="app"
+        path="/" />
+</paths>

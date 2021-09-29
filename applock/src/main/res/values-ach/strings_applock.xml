@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_otp">crwdns268145:0crwdne268145:0</string>
+    <string name="otp_sent_message">crwdns268147:0%1$scrwdne268147:0</string>
+    <string name="otp_incorrect">crwdns268149:0crwdne268149:0</string>
+    <string name="otp_expired">crwdns268151:0crwdne268151:0</string>
+    <string name="resend_otp">crwdns268153:0crwdne268153:0</string>
+    <string name="forgot_pin">crwdns268155:0crwdne268155:0</string>
+    <string name="confirm_otp">crwdns268157:0crwdne268157:0</string>
+    <string name="set_a_4_digit_pin">crwdns268159:0crwdne268159:0</string>
+    <string name="confirm_pin">crwdns268161:0crwdne268161:0</string>
+    <string name="incorrect_pin">crwdns268163:0crwdne268163:0</string>
+    <string name="enter_security_pin">crwdns268165:0crwdne268165:0</string>
+    <string name="security_setup_description">crwdns268167:0crwdne268167:0</string>
+    <string name="security_update_description">crwdns268169:0crwdne268169:0</string>
+    <string name="confirm_fingerprint">crwdns268171:0crwdne268171:0</string>
+    <string name="use_fingerprint">crwdns268173:0crwdne268173:0</string>
+    <string name="confirm_fingerprint_description">crwdns268175:0crwdne268175:0</string>
+    <string name="use_pin">crwdns268177:0crwdne268177:0</string>
+    <string name="four_digit_security_pin">crwdns268179:0crwdne268179:0</string>
+</resources>

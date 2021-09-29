@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="2dp"
+    android:background="?attr/selectableItemBackground"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_account_125dp" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="?textAppearanceSubtitle1"
+            app:layout_constraintEnd_toStartOf="@+id/imageDelete"
+            app:layout_constraintStart_toEndOf="@+id/imageProfile"
+            app:layout_constraintTop_toTopOf="@+id/imageProfile"
+            tools:text="Kyle Ortiz" />
+
+        <TextView
+            android:id="@+id/textSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="?textAppearanceCaption2"
+            android:textColor="@color/grey700"
+            app:layout_constraintEnd_toStartOf="@+id/imageDelete"
+            app:layout_constraintStart_toStartOf="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@+id/textName"
+            tools:text="₹50 Due" />
+
+        <ImageView
+            android:id="@+id/imageDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_remove_circle_24_dp" />
+
+        <ImageView
+            android:id="@+id/imageCall"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_call"
+            app:layout_constraintStart_toStartOf="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@+id/textSubtitle"
+            app:tint="@color/grey900" />
+
+        <TextView
+            android:id="@+id/textMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/OKC.TextAppearance.Body3"
+            android:textColor="@color/grey700"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCall"
+            app:layout_constraintStart_toEndOf="@+id/imageCall"
+            app:layout_constraintTop_toTopOf="@+id/imageCall"
+            tools:text="1234567890" />
+
+        <TextView
+            android:id="@+id/textMobileEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:layout_marginStart="8dp"
+            android:paddingBottom="2dp"
+            android:text="@string/edit"
+            android:textAllCaps="true"
+            android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+            android:textColor="@color/indigo_primary"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCall"
+            app:layout_constraintStart_toEndOf="@+id/textMobile"
+            app:layout_constraintTop_toTopOf="@+id/imageCall" />
+
+
+        <ImageView
+            android:id="@+id/imageAddress"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_location_line"
+            app:layout_constraintEnd_toStartOf="@+id/textAddress"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@+id/imageCall"
+            app:tint="@color/grey900" />
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/OKC.TextAppearance.Body3"
+            android:textColor="@color/grey700"
+            app:layout_constraintBottom_toBottomOf="@+id/imageAddress"
+            app:layout_constraintEnd_toStartOf="@+id/textAddressEdit"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/imageAddress"
+            app:layout_constraintTop_toTopOf="@+id/imageAddress"
+            app:layout_constraintWidth_default="wrap"
+            tools:text="102, SJR Equinox, Koramangala" />
+
+        <TextView
+            android:id="@+id/textAddressEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="@string/edit"
+            android:textAllCaps="true"
+            android:textAppearance="@style/OKC.TextAppearance.Subtitle4"
+            android:textColor="@color/indigo_primary"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/textAddress"
+            app:layout_constraintTop_toTopOf="@+id/imageAddress" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageAddress"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <TextView
+            android:id="@+id/textPaymentReceived"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/t_003_staff_collection_success"
+            android:textAppearance="?textAppearanceSubtitle4"
+            android:textColor="@color/grey700"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

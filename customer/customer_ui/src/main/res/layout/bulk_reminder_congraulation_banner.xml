@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/white_background_corner_radius_8dp"
+    android:elevation="2dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/congratulations"
+        style="@style/OKC.TextAppearance.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:drawableTop="@drawable/ic_bulk_reminder_congratulations"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:text="@string/t_001_daily_remind_empty_state_title"
+        android:textColor="@color/grey900"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/caption"
+        style="@style/OKC.TextAppearance.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:padding="@dimen/_16dp"
+        android:gravity="center"
+        android:text="@string/t_001_daily_remind_empty_state_subtitle"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/congratulations"
+        app:layout_constraintStart_toStartOf="@id/congratulations"
+        app:layout_constraintTop_toBottomOf="@id/congratulations" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,138 @@
+{
+  "project_info": {
+    "project_number": "468117358387",
+    "firebase_url": "https://okcredit-6cb68.firebaseio.com",
+    "project_id": "okcredit-6cb68",
+    "storage_bucket": "okcredit-6cb68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468117358387:android:288abe0f1c9f3c5d",
+        "android_client_info": {
+          "package_name": "in.okcredit.merchant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468117358387-8h0d5clq50hgpqboe14p82h0f5q6msai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.okcredit.merchant",
+            "certificate_hash": "b98cd8d6bbacb723a6cca0170b8abb671b9bd483"
+          }
+        },
+        {
+          "client_id": "468117358387-9qnmaq422gur6d9fn63gt2iddev3c0ad.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.okcredit.merchant",
+            "certificate_hash": "2b70681d425871f8beb56d976a7d88fe4354e85f"
+          }
+        },
+        {
+          "client_id": "468117358387-qq3thj5tp8qrchulo1hlukrveqc94tr7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.okcredit.merchant",
+            "certificate_hash": "e690b27e2528ad810112197759ac3c2332494775"
+          }
+        },
+        {
+          "client_id": "468117358387-i0rfdc20oefd51ppkpt74s4ajtl8vltr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFJYSt5D6PuaOTXvFCrAF2Ac5aSmC6f_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111150354526654553916",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468117358387:android:8caaaaf41547ab06",
+        "android_client_info": {
+          "package_name": "in.okcredit.merchant.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468117358387-juavtcbkrf0ninkjmat3ltn3pudgscpv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.okcredit.merchant.debug",
+            "certificate_hash": "b98cd8d6bbacb723a6cca0170b8abb671b9bd483"
+          }
+        },
+        {
+          "client_id": "468117358387-mnuosdq8c15klkhvkas2tqq7uemkl9bj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.okcredit.merchant.debug",
+            "certificate_hash": "e690b27e2528ad810112197759ac3c2332494775"
+          }
+        },
+        {
+          "client_id": "468117358387-i0rfdc20oefd51ppkpt74s4ajtl8vltr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFJYSt5D6PuaOTXvFCrAF2Ac5aSmC6f_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111150354526654553916",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240733913060:android:33d0cb4e7182a55e3511f1",
+        "android_client_info": {
+          "package_name": "in.okcredit.merchant.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240733913060-e407uodbb45u0q937u6cc832bfdeftcu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9_nhRxTZBFaJRtIOZqiM5furo0r0wGPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240733913060-e407uodbb45u0q937u6cc832bfdeftcu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

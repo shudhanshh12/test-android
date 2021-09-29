@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/know_more_fragment"
+        android:name="tech.okcredit.android.referral.ui.know_more.ReferralKnowMoreFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_height="150dp"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_16dp" />
+
+    <View
+        android:id="@+id/share_view_background"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="6dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/know_more_fragment" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/referral_link_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:constraint_referenced_ids="your_referral_link_image_view,share_to_earn_text,share_view_background,your_referral_link_text,share_as_status" />
+
+    <ImageButton
+        android:id="@+id/your_referral_link_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_background_dark_green"
+        android:clickable="false"
+        android:src="@drawable/ic_link"
+        app:layout_constraintBottom_toBottomOf="@id/share_view_background"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/share_view_background" />
+
+    <TextView
+        android:id="@+id/your_referral_link_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:maxLines="1"
+        android:text="@string/your_referral_link"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle3.Tall"
+        app:layout_constraintBottom_toTopOf="@id/share_to_earn_text"
+        app:layout_constraintEnd_toStartOf="@id/share_as_status"
+        app:layout_constraintStart_toEndOf="@+id/your_referral_link_image_view"
+        app:layout_constraintTop_toTopOf="@id/share_view_background"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/share_as_status"
+        style="@style/OKC.TextAppearance.Subtitle3.Tall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_primary_green_radius_8dp"
+        android:clickable="true"
+        android:drawablePadding="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="7dp"
+        android:text="@string/share_as_status"
+        android:textAllCaps="false"
+        android:textColor="@color/green_primary"
+        app:drawableStartCompat="@drawable/ic_whatsapp_nav_green"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintTop_toTopOf="@id/your_referral_link_text" />
+
+    <TextView
+        android:id="@+id/share_to_earn_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:maxLines="1"
+        android:text="@string/share_to_anyone"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/grey700"
+        app:layout_constraintBottom_toBottomOf="@id/share_view_background"
+        app:layout_constraintEnd_toStartOf="@+id/share_as_status"
+        app:layout_constraintStart_toEndOf="@+id/your_referral_link_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/your_referral_link_text" />
+
+    <TextView
+        android:id="@+id/invite_form_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/invite_from_the_list"
+        android:textAppearance="@style/OKC.TextAppearance.Headline6"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/share_to_earn_text" />
+
+    <TextView
+        android:id="@+id/invite_form_list_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/targeted_referral_all_invited_subtitle"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle3.Tall"
+        android:textStyle="normal"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/invite_form_list_title" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:progressDrawable="@drawable/progress_bar"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/know_more_fragment" />
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/invite_targeted_user_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/invite_form_list_subtitle" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/targeted_user_views"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:constraint_referenced_ids=",invite_targeted_user_list,invite_form_list_subtitle" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/share_fragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

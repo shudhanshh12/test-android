@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okcredit">crwdns267811:0crwdne267811:0</string>
+    <string name="enter_otp">crwdns267813:0crwdne267813:0</string>
+    <string name="resend_otp">crwdns267815:0crwdne267815:0</string>
+    <string name="otp_incorrect">crwdns267817:0crwdne267817:0</string>
+    <string name="otp_expired">crwdns267819:0crwdne267819:0</string>
+    <string name="send_otp_success">crwdns267821:0crwdne267821:0</string>
+    <string name="send_otp_failure_no_internet">crwdns267823:0crwdne267823:0</string>
+    <string name="send_otp_failure">crwdns267825:0crwdne267825:0</string>
+    <string name="otp_verification_failure">crwdns267827:0crwdne267827:0</string>
+    <string name="otp_sent_message">crwdns267829:0%1$scrwdne267829:0</string>
+    <string name="credibility_text">crwdns267831:0crwdne267831:0</string>
+    <string name="register_user_agreement">crwdns267833:0crwdne267833:0</string>
+    <string name="credibility_business_name_1">crwdns267835:0%scrwdnd267835:0%scrwdne267835:0</string>
+    <string name="credibility_business_name_2">crwdns267837:0%scrwdnd267837:0%scrwdne267837:0</string>
+    <string name="credibility_business_name_3">crwdns267839:0%scrwdnd267839:0%scrwdnd267839:0%scrwdne267839:0</string>
+    <string name="credibility_business_name_4_5_6_7_8">crwdns267841:0%scrwdne267841:0</string>
+    <string name="credibility_business_name_9_control">crwdns267843:0crwdne267843:0</string>
+    <string name="credibility_add_customer_1">crwdns267845:0%scrwdnd267845:0%scrwdne267845:0</string>
+    <string name="credibility_add_customer_2">crwdns267847:0%scrwdnd267847:0%scrwdne267847:0</string>
+    <string name="credibility_add_customer_3">crwdns267849:0%scrwdnd267849:0%scrwdnd267849:0%scrwdne267849:0</string>
+    <string name="credibility_add_customer_4">crwdns267851:0%scrwdnd267851:0%scrwdne267851:0</string>
+    <string name="credibility_add_customer_5">crwdns267853:0%scrwdnd267853:0%scrwdnd267853:0%scrwdne267853:0</string>
+    <string name="credibility_add_customer_6">crwdns267855:0%scrwdnd267855:0%scrwdnd267855:0%scrwdne267855:0</string>
+    <string name="credibility_add_customer_7">crwdns267857:0%scrwdnd267857:0%scrwdnd267857:0%scrwdne267857:0</string>
+    <string name="credibility_add_customer_8">crwdns267859:0%scrwdnd267859:0%scrwdnd267859:0%scrwdne267859:0</string>
+    <string name="credibility_add_customer_9_control">crwdns267861:0crwdne267861:0</string>
+    <string name="credibility_monthly">crwdns267863:0crwdne267863:0</string>
+    <string name="trusted_by_businesses">crwdns267865:0crwdne267865:0</string>
+    <string name="whatsapp_verification_message">crwdns267867:0crwdne267867:0</string>
+</resources>

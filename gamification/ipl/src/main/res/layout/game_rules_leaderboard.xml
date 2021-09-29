@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvGameRules"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="6dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitleGameRules"
+            style="@style/OKC.TextAppearance.Subtitle1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:drawablePadding="8dp"
+            android:text="@string/leader_board_game_rules_title"
+            android:textColor="@color/indigo_primary"
+            app:drawableStartCompat="@drawable/ic_note"
+            app:layout_constraintEnd_toStartOf="@id/ivArrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:drawableStart="@drawable/ic_note" />
+
+        <ImageButton
+            android:id="@+id/ivArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:rotation="180"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTitleGameRules"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTitleGameRules"
+            app:srcCompat="@drawable/ic_arrow_down_black" />
+
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleGameRules"
+            app:srcCompat="@drawable/ic_gold" />
+
+
+        <TextView
+            android:id="@+id/tvBody1"
+            style="@style/OKC.TextAppearance.Subtitle2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="start"
+            android:text="@string/rules_leaderboard_top_players_new"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv1"
+            app:layout_constraintTop_toTopOf="@+id/iv1"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv1"
+            app:srcCompat="@drawable/ic_weekly_prize" />
+
+
+        <TextView
+            android:id="@+id/tvBody2"
+            style="@style/OKC.TextAppearance.Subtitle2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="start"
+            android:text="@string/rules_leaderboard_next_25_player"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv2"
+            app:layout_constraintTop_toTopOf="@+id/iv2"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv2"
+            app:srcCompat="@drawable/ic_rule_question" />
+
+
+        <TextView
+            android:id="@+id/tvBody3"
+            style="@style/OKC.TextAppearance.Subtitle2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="start"
+            android:text="@string/rules_leaderboard_next_500_player"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv3"
+            app:layout_constraintTop_toTopOf="@+id/iv3"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#707070"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv3" />
+
+        <TextView
+            android:id="@+id/tvNote"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:text="@string/rules_leaderboard_note"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine" />
+
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupRules"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:constraint_referenced_ids="iv1,tvBody1,iv2,tvBody2,iv3,tvBody3,viewLine,tvNote" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

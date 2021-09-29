@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    tool:ignore="RtlHardcoded"
+    tool:layout_height="wrap_content"
+    tool:layout_width="match_parent"
+    android:background="@color/white"
+    tool:parentTag="android.widget.FrameLayout">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey50"
+        app:alignmentMode="alignBounds"
+        app:columnCount="3"
+        app:rowOrderPreserved="false"
+        app:useDefaultMargins="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_one"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            android:textAppearance="?textAppearanceButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:textSize="24sp"
+            android:textColor="@color/grey800"
+            android:text="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_two"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:textAppearance="?textAppearanceButton"
+            android:textSize="24sp"
+            android:textColor="@color/grey800"
+            android:text="2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_three"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:background="?attr/selectableItemBackground"
+            android:textSize="24sp"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:text="3" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_four"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:textSize="24sp"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:text="4" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_five"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:textSize="24sp"
+            android:textAppearance="?textAppearanceButton"
+
+            android:textColor="@color/grey800"
+            android:text="5" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_six"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:textSize="24sp"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:text="6" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_seven"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:textAppearance="?textAppearanceButton"
+            android:textSize="24sp"
+
+            android:textColor="@color/grey800"
+            android:text="7" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_eight"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:textAppearance="?textAppearanceButton"
+            android:textSize="24sp"
+            android:textColor="@color/grey800"
+            android:text="8" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_nine"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:textAppearance="?textAppearanceButton"
+            android:textSize="24sp"
+            android:textColor="@color/grey800"
+            android:text="9" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dot"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:textAppearance="?textAppearanceButton"
+            android:textSize="24sp"
+            android:textColor="@color/grey800"
+            android:text="." />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_zero"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:rippleColor="@color/grey500"
+            android:textAppearance="?textAppearanceButton"
+            android:textSize="24sp"
+            android:textColor="@color/grey800"
+            android:text="0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_backspace"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:rippleColor="@color/grey500"
+            android:background="?attr/selectableItemBackground"
+            android:textSize="24sp"
+            android:textAppearance="?textAppearanceButton"
+            app:iconGravity="textStart"
+            app:iconTint="@color/grey800"
+            app:icon="@drawable/backspace_outline"
+            android:gravity="center"
+            android:textColor="@color/grey800" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</merge>

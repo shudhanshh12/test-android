@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tool:ignore="RtlHardcoded"
+    tool:layout_height="wrap_content"
+    tool:layout_width="match_parent"
+    tool:parentTag="android.widget.FrameLayout">
+
+    <!-- NOTE: Do not change text size from dp to sp, it will cause bug when font size is changed from device-->
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey300"
+        app:alignmentMode="alignBounds"
+        app:columnCount="4"
+        app:rowOrderPreserved="false"
+        app:useDefaultMargins="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_one"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="1"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_two"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="2"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_three"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackground"
+            android:text="3"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_backspace"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:icon="@drawable/backspace_outline"
+            app:iconGravity="textStart"
+            app:iconTint="@color/grey800"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_four"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="4"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_five"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="5"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_six"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="6"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_multiply"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="x"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="22dp"
+            android:visibility="invisible"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_seven"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="7"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_eight"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="8"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_nine"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="9"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_minus"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="―"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            android:visibility="invisible"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dot"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="."
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_zero"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_equal"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="="
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            android:visibility="invisible"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_plus"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/grey800"
+            android:textSize="24dp"
+            android:visibility="invisible"
+            app:layout_columnWeight="1"
+            app:rippleColor="@color/grey500"
+            tool:ignore="SpUsage" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</merge>

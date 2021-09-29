@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="@string/inventory_new_bill"
+        app:titleTextAppearance="@style/OKC.TextAppearance.Subtitle1" />
+
+    <TextView
+        android:id="@+id/textSelectItems"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/grey50"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_16dp"
+        android:text="@string/inventory_select_items"
+        android:textAppearance="?textAppearanceSubtitle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/rvBillItems"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/clNewItemLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSelectItems"
+        app:layout_constraintVertical_bias="0"
+        tools:listitem="@layout/item_create_bill" />
+
+    <TextView
+        android:id="@+id/textEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:gravity="center"
+        android:text="@string/inventory_tap_on_the_button_below_to_add_item_to_bill_or_save_time_by_adding_your_inventory_in_items_tab_they_will_appear_here"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        android:textColor="@color/grey600"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSelectItems" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clNewItemLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/green_lite"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/clBillTotalLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_background"
+            android:padding="@dimen/_8dp"
+            android:src="@drawable/billing_add_item"
+            app:layout_constraintBottom_toBottomOf="@+id/textNewRate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textNewItem" />
+
+        <TextView
+            android:id="@+id/textNewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/new_item"
+            android:textAppearance="?textAppearanceSubtitle2"
+            app:layout_constraintBottom_toTopOf="@+id/textNewRate"
+            app:layout_constraintStart_toEndOf="@+id/imageIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textNewRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/inventory_add_item_description_rate"
+            android:textAppearance="?textAppearanceCaption2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageIcon" />
+
+        <ImageView
+            android:id="@+id/imageDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_arrow"
+            app:layout_constraintBottom_toBottomOf="@id/textNewRate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textNewItem"
+            app:tint="@color/green_primary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBillTotalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/imageBillTotal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="@dimen/_8dp"
+            android:src="@drawable/ic_bill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textBillTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_8dp"
+            android:paddingTop="@dimen/_8dp"
+            android:text="@string/bill_total"
+            android:textAppearance="?textAppearanceSubtitle2"
+            app:layout_constraintStart_toEndOf="@+id/imageBillTotal"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textItemQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_8dp"
+            android:text="@string/items_and_qty"
+            android:textAppearance="?textAppearanceCaption2"
+            app:layout_constraintStart_toEndOf="@id/imageBillTotal"
+            app:layout_constraintTop_toBottomOf="@+id/textBillTotal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSaveBill"
+            style="@style/OKC.Button.Dark.Solid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:minWidth="110dp"
+            android:shadowColor="@android:color/transparent"
+            android:text="@string/save_bill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

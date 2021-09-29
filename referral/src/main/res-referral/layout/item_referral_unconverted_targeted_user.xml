@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="72dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0" />
+
+    <ImageView
+        android:id="@+id/targeted_user_image"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline"
+        app:srcCompat="@drawable/ic_account_125dp" />
+
+    <TextView
+        android:id="@+id/referree_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle3.Tall"
+        app:layout_constraintBottom_toTopOf="@id/earn_price"
+        app:layout_constraintEnd_toStartOf="@+id/invite_btn"
+        app:layout_constraintStart_toEndOf="@+id/targeted_user_image"
+        app:layout_constraintTop_toTopOf="@id/top_guideline"
+        app:layout_constraintVertical_chainStyle="packed"
+        tool:text="Harshit Sharma Harshit Sharma Harshit Sharma" />
+
+    <TextView
+        android:id="@+id/earn_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/indigo_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/invite_btn"
+        app:layout_constraintStart_toEndOf="@id/targeted_user_image"
+        app:layout_constraintTop_toBottomOf="@+id/referree_name"
+        tool:text="Earn $300" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/invite_btn"
+        style="@style/OKC.TextAppearance.Subtitle3.Tall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_primary_green_radius_8dp"
+        android:drawablePadding="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="6dp"
+        android:text="@string/invite"
+        android:textAllCaps="false"
+        android:textColor="@color/green_primary"
+        app:drawableStartCompat="@drawable/ic_whatsapp_nav_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintTop_toTopOf="@id/top_guideline" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="@id/rootView"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toEndOf="@id/targeted_user_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

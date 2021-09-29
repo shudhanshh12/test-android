@@ -1,0 +1,102 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://okprewards.staging.okcredit.in/v1/reward/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://okprewards.alpha.okcredit.in/v1/reward/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://okprewards.okcredit.in/v1/reward/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':ab'), { exclude group: 'com.google.guava', module: 'listenablefuture' }
+    implementation project(':shared')
+    implementation project(':resources')
+    implementation project(':backend:contract')
+    implementation project(':rewards')
+    implementation project(':rewards:contract')
+    implementation project(':cashback:contract')
+    implementation project(':business:contract')
+
+    implementation androidX.appcompact
+    implementation androidX.constraintLayout
+    implementation androidX.ktx
+    implementation androidX.recyclerview
+
+    implementation rx.java
+    implementation rx.android
+    implementation rx.rxRelay
+    implementation rx.binding
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.moshiConverter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+
+
+    implementation dagger.core
+    implementation  androidX.constraintLayout
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation utility.kotlin
+    implementation utility.guava
+
+    // Moshi
+    implementation moshi.core
+    kapt moshi.codegen
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation firebase.firebaseCrashlytics
+}

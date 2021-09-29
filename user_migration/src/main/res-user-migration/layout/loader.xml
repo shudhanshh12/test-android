@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:paddingLeft="12dp"
+    android:paddingTop="12dp"
+    android:paddingRight="12dp">
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/circle_shape_grey_filled" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toEndOf="@+id/view1"
+        android:background="@color/shimmer_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view1"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="56dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/view1"
+        android:background="@color/shimmer_background" />
+
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/view1"
+        android:layout_alignStart="@+id/view2"
+        android:layout_marginTop="12dp"
+        android:background="@color/shimmer_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/view3"
+        app:layout_constraintTop_toBottomOf="@id/view3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

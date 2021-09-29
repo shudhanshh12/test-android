@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/v_top_divider"
+        android:background="@color/divider"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:layout_marginBottom="@dimen/spacing_24"
+        android:layout_height="@dimen/view_height_dimension"/>
+    <TextView
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_youtube_heading"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:text="@string/watch_video_for_more_details"
+        android:layout_marginTop="@dimen/spacing_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/spacing_12"
+        app:layout_constraintTop_toBottomOf="@id/v_top_divider" />
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:layout_marginRight="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/spacing_24"
+        app:autoPlay="false"
+        android:background="@drawable/rounded_drawable"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_youtube_heading"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/youtube"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/gifImage"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:background="@drawable/rounded_drawable"
+        android:layout_marginRight="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/spacing_24"/>
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gifImage"
+        android:id="@+id/v_bottom_divider"
+        android:background="@color/divider"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:layout_marginBottom="@dimen/spacing_24"
+        android:layout_height="@dimen/view_height_dimension"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

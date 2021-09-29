@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">మెను నుండి మీ రివార్డులను పొందడానికి మీ బ్యాంక్ ఖాతాను సెటప్ చేయండి</string>
+    <string name="you_won_feature">మీరు గెలుచుకున్న బహుమతులు %1$s</string>
+    <string name="visit_feature">%1$s చూడండి</string>
+    <string name="claim_in_progress">ప్రాసెసింగ్… దయచేసి వేచి ఉండండి</string>
+    <string name="scratch_view_hint">బహుమతిని చూడటానికి స్క్రాచ్ చేయండి</string>
+    <string name="enter_bank_details_description">ఈ క్యాష్‌బ్యాక్‌ను రీడీమ్ చేయడానికి బ్యాంక్ ఖాతా వివరాలను నమోదు చేయండి.</string>
+    <string name="please_solve_this_issue">దయచేసి ఈ సమస్యను పరిష్కరించండి</string>
+    <string name="earned_due_to_activation">లావాదేవీల రికార్డులను జోడించడం వలన సంపాదించారు.</string>
+    <string name="better_luck_next_time">ఫర్వాలేదు! \n తిరిగి తరువాత మళ్ళి ప్రయత్నించండి</string>
+    <string name="something_went_wrong_in_claiming_rewards">క్షమించండి, మేము సాంకేతిక సమస్యను ఎదుర్కొంటున్నాము. దయచేసి కొంత సమయం తర్వాత మళ్ళీ ప్రయత్నించండి.</string>
+    <string name="congratulations_tell_them_add_bank_details">అభినందనలు!!! బహుమతి పొందడానికి బ్యాంక్ ఖాతాను సెటప్ చేయండి.</string>
+    <string name="reward_on_hold">బహుమతి హోల్డ్ లో ఉంది</string>
+    <string name="error_budged_limit_exceeded">సాంకేతిక సమస్య కారణంగా మీ రివార్డ్ నిలిచిపోయింది. మా బృందం త్వరలో సమస్యను పరిష్కరిస్తుంది. దయచేసి 3 రోజుల్లో మళ్ళీ క్లెయిమ్ చేయండి.</string>
+    <string name="you_won_10">you won 10</string>
+    <string name="hurray">హుర్రే!</string>
+    <string name="oops">అయ్యో!</string>
+    <string name="rewarded_on_06_nov_02_38pm">రివార్డ్ పొందిన తేదీ 06 నవంబర్, మధ్యాహ్నం 02:38</string>
+    <string name="earned_for_adding_transactions_records">లావాదేవీల రికార్డులను జోడించడం వలన సంపాదించారు.</string>
+    <string name="setup_bank_account_to_get_reward">బహుమతి పొందడానికి బ్యాంక్ ఖాతాను సెటప్ చేయండి.</string>
+    <string name="step_1_how_does_it_works_roa">వేర్వేరు రోజులలో కస్టమర్లను మరియు కనిష్ట 2 లావాదేవీలను జోడించండి.</string>
+    <string name="step_2_how_does_it_works_roa">మీ బహుమతులు రివార్డ్స్ విభాగంలో ఉంటాయి.</string>
+    <string name="error_description_bank_valid">ఈ బ్యాంక్ ఖాతా లేదా UPI ఇప్పటికే వేరే వినియోగదారులతో ఉంది. దయచేసి సరైన వివరాలను ఇవ్వండి లేదా మరొక ఖాతాను ఉపయోగించండి.</string>
+    <string name="upi_inactive_error_msg">మీ బ్యాంక్ ఖాతా ఇప్పుడు యాక్టీవ్గా లేదు. దయచేసి మరొక ఖాతాను ఉపయోగించండి లేదా మీ ఖాతాను మళ్లీ యాక్టీవ్ చేయండి.</string>
+    <string name="payout_daily_limit_reached_error_msg">మీరు ఈ రోజు రివార్డ్ క్లెయిమ్ పరిమితిని మించిపోయారు. రేపు మళ్ళీ క్లెయిమ్ చేయండి.</string>
+    <string name="reward_update">రివార్డ్ నవీకరణ</string>
+    <string name="please_try_again_later">దయచేసి తిరిగి మళ్లీ ప్రయత్నించండి</string>
+    <string name="payment_update">చెల్లింపు నవీకరణ</string>
+    <string name="close">ముగింపు</string>
+    <string name="processing_state">ప్రాసెస్ అవుతోంది…</string>
+    <string name="bank_service_unavail">బ్యాంక్ సేవ అందుబాటులో లేదు</string>
+    <string name="bank_service_unavil_error_msg">మీ బ్యాంక్ ప్రస్తుతం చెల్లింపు అభ్యర్థనను ప్రాసెస్ చేయడం లేదు. దయచేసి కొన్ని గంటల తర్వాత మళ్లీ ప్రయత్నించండి.</string>
+    <string name="we_are_processing_your_reward">మేము మీ రివార్డ్ ను ప్రాసెస్ చేస్తున్నాము. దయచేసి 3 రోజుల్లో మళ్ళీ తనిఖీ చేయండి.</string>
+    <string name="edit_bank_details">బ్యాంక్ వివరాలను ఎడిట్ చేయండి</string>
+    <string name="please_try_again">దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+</resources>

@@ -1,0 +1,98 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            dimension "server"
+            buildConfigField "String", 'DYNAMIC_UI_URL', "\"https://dynamicui.staging.okcredit.io/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'DYNAMIC_UI_URL', "\"https://dynamicui.alpha.okcredit.io/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'DYNAMIC_UI_URL', "\"https://dynamicui.okcredit.io/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-dynamicview.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-dynamicview.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':fileupload')
+    implementation project(':auth')
+    implementation project(':business:contract')
+    implementation project(':shared')
+    implementation project(':app:app_contract')
+    implementation project(':dynamicview:contract')
+    implementation project(':business:contract')
+
+    implementation utility.kotlin
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+
+    implementation androidX.constraintLayout
+
+    implementation retrofit.gson
+
+    implementation moshi.core
+    kapt moshi.codegen
+    implementation moshi.adapters
+    implementation retrofit.moshiConverter
+
+    implementation view.material
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+
+    implementation utility.coroutines
+    implementation utility.coroutinesRx2
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+
+    implementation arch.room
+    implementation arch.roomRx
+    implementation arch.roomKtx
+    kapt arch.roomAnnotationProcessor
+
+    implementation view.textDrawable
+
+    implementation androidX.recyclerview
+    implementation androidX.cardview
+    implementation view.advancedMaterialTap
+}

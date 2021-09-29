@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invite_new_person">नए व्यक्ति को आमंत्रित करें</string>
+    <string name="invite_and_earn">शेयर करें &amp; कमायें</string>
+    <string name="invite_and_earn_cta">शेयर कर के कमायें</string>
+    <string name="invite_and_earn_new">शेयर करें और कमायें</string>
+    <string name="share_okcredit_app_and_get_rewards"><![CDATA[अपने दुकानदार &amp; बिजनेसमैन दोस्तों के साथ OkCredit शेयर करें। आप दोनों भी कुल <b>₹%1$s</b> तक कमा सकते हैं]]></string>
+    <string name="know_more">और जानने के लिए यहाँ क्लिक करें</string>
+    <string name="invite_from_the_list">लिस्ट में से चुनकर आमंत्रित करें!</string>
+    <string name="share_okcredit_with_your_friends_families_and_get_rewards_upto_1000"><![CDATA[अपने दोस्तों और परिवार के साथ OkCredit शेयर करें और ₹1000 तक इनाम कमायें]]></string>
+    <string name="share_okcredit_app_to_everyone">सब के साथ \nOkCredit ऐप शेयर करें</string>
+    <string name="ask_your_invites_to_install_the_app">उन को ऐप पर \nरजिस्टर करवायें</string>
+    <string name="money_will_be_ncredited_for_every_ninstallation">उन के ऐप पर रजिस्टर होने के बाद और \nऐप इस्तेमाल करने के बाद पैसे कमायें</string>
+    <string name="your_referral_link">आपकी रेफरल लिंक</string>
+    <string name="share_to_anyone">किसी के भी साथ शेयर करें</string>
+    <string name="copy_link">लिंक कॉपी करें</string>
+    <string name="invite">आमंत्रित करें</string>
+    <string name="earn">₹%1$s कमायें</string>
+    <string name="share_as_status">स्टेटस बनाकर शेयर करें</string>
+    <string name="share_referral_failure">रेफरल शेयर नहीं करे पायें। कृपया फिर से कोशिश करें</string>
+    <string name="default_referral_share_content" comment="Download OKCredit from this link and help me earn up to Rs.50">इस लिंक से OkCredit डाउनलोड करें और Rs.%1$s तक कमायें</string>
+    <string name="link_copied_toast">लिंक कॉपी की गयी</string>
+    <string name="copy_referral_failure">कॉपी नहीं कर पायें। कृपया फिर से कोशिश करें</string>
+    <string name="targeted_referral_registered_merchant">आमंत्रण स्वीकारा, आगे बढ़ें…</string>
+    <string name="targeted_referral_all_invited_title">बहुत बढ़िया! आपने सबको आमंत्रित किया है</string>
+    <string name="targeted_referral_all_invited_subtitle">रिमाइंडर भेजने के लिये एक मोबाइल नंबर चुनें</string>
+    <string name="share_app_title">नए व्यक्ति को आमंत्रित करें</string>
+    <string name="share_app_description">अपने दोस्तों और परिवार के साथ OkCredit शेयर करें</string>
+    <string name="share_apk">Apk शेयर करें</string>
+    <string name="share_app_know_more_title">आप किसी को आमंत्रित कर के पैसे कमा सकते हैं. इस तरह!</string>
+    <string name="share_app_know_more_step_1">10 अलग अलग दिन पर कम से कम 10 लेनदेन जोड़ें</string>
+    <string name="share_app_know_more_step_2">आप एक विशेष रेफरल प्रोग्राम का हिस्सा बनेंगे</string>
+    <string name="share_app_know_more_step_3">₹1000 तक कमाने का मौका पायें</string>
+    <string name="share_app_failure">ऐप शेयर नहीं करे पायें। कृपया फिर से कोशिश करें</string>
+    <string name="share_app_msg">स्मार्ट उधार खाता - प्ले स्टोर से OkCredit मुफ़्त इंस्टॉल करें @ %1$s</string>
+
+    <string name="referred_merchant_list_error">रेफरल सूचि प्राप्त नहीं कर सकें। कृपया फिर से प्रयास करें</string>
+    <string name="you_claim_rewards_menu_referral">अपने इनाम प्राप्त करने के लिए अपना बैंक एकाउंट सेटअप करें</string>
+    <string name="no_reward_error">कुछ ग़लत हुआ, 504</string>
+    <string name="how_does_this_work">यह कैसे काम करता है?</string>
+</resources>

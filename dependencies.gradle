@@ -1,0 +1,441 @@
+ext.buildVersion = [
+        buildTools: '29.0.2',
+]
+
+ext.appVersion = [
+        versionCode: 630,
+        versionName: '2.50.0',
+]
+
+ext.appSdk = [
+        minSdk    : 21,
+        compileSdk: 29,
+]
+
+ext.versions = [
+        // Gradle plugins
+        androidPlugin          : '4.1.3',
+        googleServicePlugin    : '4.3.4',
+        crashlyticsPlugin      : '2.5.2',
+        firebasePerfPlugin     : '1.3.5',
+        retrofix               : '0.3.6',
+
+        // AndroidX
+        androidxKtx            : '1.5.0',
+        androidxSupport        : '1.1.0',
+        androidxAppcompact     : '1.3.0',
+        androidxMutldex        : '2.0.1',
+        androidxExifInterface  : '1.3.2',
+        biometric              : '1.1.0',
+        //TODO can be removed if we ConstraintLayout flow
+        gridlayout             : '1.0.0',
+        sharedPreferencesKtx   : '1.1.1',
+        webkit                 : '1.1.0',
+
+
+        // GooglePlay Service
+        playServiceAuth        : '19.2.0',
+        playServiceLocation    : '18.0.0',
+        installReferrer        : '1.1',
+        googlePlayCore         : '1.10.1',
+        playServiceMap         : '17.0.1',
+        //TODO can be removed if branch is removed
+        googlePlayAds          : '20.2.0',
+
+        // Firebase
+        firebaseAnalytics      : '18.0.3',
+        firebaseMessaging      : '21.1.0',
+        //TODO use implementation instead of api
+        firebasePerf           : '20.0.2',
+        firebaseCrashlytics    : '17.4.1',
+        fireAuth               : '20.0.4',
+        fireStore              : '22.1.2',
+        uifireStore            : '7.1.1',
+        database               : '19.7.0',
+        remoteConfig           : '20.0.4',
+
+        // Retrofit
+        retrofit               : '2.9.0',
+        gson                   : '2.8.6',
+        okhttploginInterceptor : '4.9.1',
+        okhttp3                : '4.9.1',
+
+        aws                    : '2.22.6',
+
+        //Mqtt
+        hivemq                 : '1.2.2',
+        sourceforge            : '1.7.1',
+
+        // Rx
+        rxJava                 : '2.2.10',
+        rxAndroid              : '2.1.1',
+        rxRelay                : '2.1.1',
+        rxBinding              : '3.1.0',
+        rxPreferences          : '2.0.1',
+        rxdogtag               : '0.3.0',
+
+        // Image
+        photoView              : '2.3.0',
+        glide                  : '4.10.0',
+        belvedereImagePicker   : '2.3.0',
+        imageCrop              : '2.2.6',
+
+        // Dagger
+        dagger                 : '2.37',
+        inject                 : '1',
+
+        // Architecture Component
+        lifecycle              : '2.2.0',
+        room                   : '2.3.0',
+        navigation             : '2.3.5',
+        workManager            : '2.5.0',
+
+
+        // Deeplinks
+        deeplinkDispatch       : '5.2.0',
+
+        // Analytics
+        mixpanel               : '5.9.1',
+        cleverTap              : '4.1.0',
+        appsflyer              : '5.2.0',
+
+        // Views
+        constraintLayout       : '2.0.4',
+        //TODO usages to be removed
+        expandableLayout       : '1.6.0',
+        patternlockview        : '1.0.0',
+        epoxy                  : '4.1.0',
+        shimmer                : '0.5.0',
+        textDrawable           : '1.0.1',
+        calendarDateRangePicker: 'v1.2',
+        material               : '1.2.1',
+        pinview                : 'v1.8',
+        pageIndicator          : '1.0.3',
+        lottie                 : '3.4.0',
+        youtubeplayer          : 'master-SNAPSHOT',
+        mpandroidchart         : 'v3.1.0',
+        jacocoPlugin           : '0.17.0-SNAPSHOT',
+        //TODO is this required?
+        sectorprogressview     : '2.0.1',
+        exoplyer               : '2.7.2',
+        tooltip                : '2.0.4',
+        balloon                : '1.3.4',
+        //TODO is this required? Is tapatargetPrompt enough?
+        advancedMaterialTap    : '3.1.0',
+        advanceNumberPicker    : '2.4.11',
+        // Utility
+        jodaTime               : '2.10.10',
+        trueTime               : '3.4',
+        // TODO can be removed if move all code to Kotlin
+        guava                  : '28.1-android', // don't change `android`  to `jre`
+        multidex               : '2.0.1',
+        dexterRuntimePermission: '6.2.2',
+        timber                 : '5.0.1',
+        kotlin                 : '1.5.21',
+        contacts               : '1.14.1',
+        zxingAndroid           : '4.0.2',
+        zxingCore              : '3.3.0',
+        leakcanary             : '2.6',
+        flipper                : '0.105.0',
+        soLoader               : '0.10.1', // required for flipper
+        coroutines             : '1.5.2',
+        apacheCommons          : '2.6',
+        apacheCommonsCore      : '2.2.1',
+        bugfender              : '2.0.0',
+        philology              : '2.1.0',
+        viewpump               : '2.0.3',
+        truecaller             : '2.0.0',
+        moshi                  : '1.12.0',
+        viewpagerNew           : '1.0.0',
+
+
+        // Test
+        androidxTestCore        : '1.3.0',
+        androidxFragmentTesting : '1.3.4',
+        supportTestRunner       : '1.1.1',
+        robolectric             : '4.5.1',
+        jUnit                   : '4.13.2',
+        truth                   : '1.1.2',
+        mockito                 : '3.2.0',
+        mockitoKotlin           : '2.2.0',
+        mockWebServer           : '4.9.1',
+        mockk                   : '1.12.0',
+        androidJUnit            : '1.1.3',
+
+        //cameraX
+        camerax                : '1.0.1',
+        camerax_view           : '1.0.0-alpha24',
+
+        //Do not upgrade zendesk libraries till material 1.2.0 issue is resolved
+        chat                   : '2.2.0',
+        messaging              : '4.3.1',
+
+        otpview                : '2.1.0',
+        otpviewKtx             : 'v1.1.2-ktx',
+        viewpager2             : '1.0.0',
+        recyclerview           : '1.1.0',
+        cardview               : '1.0.0',
+        scratchView            : '1.3-custom-fix',
+        recyclerviewAnimators  : '4.0.2',
+        juspay                 : '2.0.2-rc.78',
+        juspayLogging          : '1.2',
+        juspaySecure           : '0.0.2.5',
+        juspayQrScanner        : '2.0.0.0',
+
+        anrwatchdog            : '1.4.0',
+        rootbeer               : '0.1.0',
+
+        browser                : '1.3.0',
+
+]
+
+ext.gradlePlugin = [
+        android           : "com.android.tools.build:gradle:$versions.androidPlugin",
+        googleService     : "com.google.gms:google-services:$versions.googleServicePlugin",
+        crashlyticsPlugin : "com.google.firebase:firebase-crashlytics-gradle:$versions.crashlyticsPlugin",
+        firebasePerf      : "com.google.firebase:perf-plugin:$versions.firebasePerfPlugin",
+        kotlin            : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+        jacocoPlugin      : "com.vanniktech:gradle-android-junit-jacoco-plugin:$versions.jacocoPlugin",
+        navigationSafeArgs: "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.navigation",
+        retrofix          : "gradle.plugin.com.github.sgtsilvio.gradle:android-retrofix:$versions.retrofix",
+]
+
+ext.unitTest = [
+        androidxTestCore        : "androidx.test:core:$versions.androidxTestCore",
+        androidxFragmentTesting : "androidx.fragment:fragment-testing:$versions.androidxFragmentTesting",
+        robolectric             : "org.robolectric:robolectric:$versions.robolectric",
+        jUnit                   : "junit:junit:$versions.jUnit",
+        truth                   : "com.google.truth:truth:$versions.truth",
+        mockitoCore             : "org.mockito:mockito-core:$versions.mockito",
+        mockitoInline           : "org.mockito:mockito-inline:$versions.mockito",
+        mockitoKotlin           : "com.nhaarman.mockitokotlin2:mockito-kotlin:$versions.mockitoKotlin",
+        mockWebServer           : "com.squareup.okhttp3:mockwebserver:$versions.mockWebServer",
+        mockk                   : "io.mockk:mockk:$versions.mockk",
+        coroutines              : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.coroutines",
+        androidJUnit            : "androidx.test.ext:junit:$versions.androidJUnit"
+]
+
+
+ext.utility = [
+        jodaTime         : "joda-time:joda-time:$versions.jodaTime",
+        trueTime         : "com.github.instacart.truetime-android:library-extension-rx:$versions.trueTime",
+        guava            : "com.google.guava:guava:$versions.guava",
+        permission       : "com.karumi:dexter:$versions.dexterRuntimePermission",
+        timber           : "com.jakewharton.timber:timber:$versions.timber",
+        kotlin           : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin",
+        coroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines",
+        coroutinesRx2    : "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$versions.coroutines",
+        contacts         : "com.github.okshrey:AndroidContacts:$versions.contacts",
+        zxingCore        : "com.google.zxing:core:$versions.zxingCore",
+        apacheCommons    : "commons-io:commons-io:$versions.apacheCommons",
+        apacheCommonsCore: "org.apache.commons:commons-jcs-core:$versions.apacheCommonsCore",
+        bugfender        : "com.bugfender.sdk:android:$versions.bugfender",
+        philology        : "com.jcminarro:Philology:$versions.philology",
+        viewpump         : "io.github.inflationx:viewpump:$versions.viewpump",
+        truecaller       : "com.truecaller.android.sdk:truecaller-sdk:$versions.truecaller",
+        moshi            : "com.squareup.moshi:moshi:$versions.moshi",
+        juspay           : "in.juspay:hypersdk:$versions.juspay",
+        juspayLogging    : "commons-logging:commons-logging:$versions.juspayLogging",
+        juspaySecureAar  : "in.juspay:secure-component-aar:$versions.juspaySecure",
+        juspaySecureSdk  : "in.juspay:secure-component-sdk:$versions.juspaySecure",
+        juspayQrScanner  : "in.juspay:qrscanner:$versions.juspayQrScanner",
+        rootbeer         : "com.scottyab:rootbeer-lib:$versions.rootbeer"
+]
+
+ext.dagger = [
+        core                      : "com.google.dagger:dagger:$versions.dagger",
+        annotationProcessor       : "com.google.dagger:dagger-compiler:$versions.dagger",
+        android                   : "com.google.dagger:dagger-android:$versions.dagger",
+        supportLibrary            : "com.google.dagger:dagger-android-support:$versions.dagger",
+        androidAnnotationProcessor: "com.google.dagger:dagger-android-processor:$versions.dagger",
+        inject                    : "javax.inject:javax.inject:$versions.inject",
+]
+
+
+ext.analytics = [
+        mixpanel : "com.mixpanel.android:mixpanel-android:$versions.mixpanel",
+        cleverTap: "com.clevertap.android:clevertap-android-sdk:$versions.cleverTap",
+        appsflyer: "com.appsflyer:af-android-sdk:$versions.appsflyer",
+]
+
+ext.rx = [
+        java         : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
+        android      : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+        binding      : "com.jakewharton.rxbinding3:rxbinding-core:$versions.rxBinding",
+        rxRelay      : "com.jakewharton.rxrelay2:rxrelay:$versions.rxRelay",
+        rxPreferences: "com.f2prateek.rx.preferences2:rx-preferences:$versions.rxPreferences",
+        rxdogtag     : "com.uber.rxdogtag:rxdogtag:$versions.rxdogtag",
+]
+
+ext.androidX = [
+        appcompact            : "androidx.appcompat:appcompat:$versions.androidxAppcompact",
+        exifInterface         : "androidx.exifinterface:exifinterface:$versions.androidxExifInterface",
+        ktx                   : "androidx.core:core-ktx:$versions.androidxKtx",
+        annotation            : "androidx.annotation:annotation:$versions.androidxSupport",
+        multidex              : "androidx.multidex:multidex:$versions.androidxMutldex",
+        constraintLayout      : "androidx.constraintlayout:constraintlayout:$versions.constraintLayout",
+        constraintLayoutSolver: "androidx.constraintlayout:constraintlayout-solver:$versions.constraintLayout",
+        biometric             : "androidx.biometric:biometric:$versions.biometric",
+        webkit                : "androidx.webkit:webkit:$versions.webkit",
+        viewpager2            : "androidx.viewpager2:viewpager2:$versions.viewpager2",
+        recyclerview          : "androidx.recyclerview:recyclerview:$versions.recyclerview",
+        sharedPreferencesKtx  : "androidx.preference:preference-ktx:$versions.sharedPreferencesKtx",
+        cardview              : "androidx.cardview:cardview:$versions.cardview",
+        browser               : "androidx.browser:browser:$versions.browser"
+]
+
+ext.view = [
+        expandableLayout       : "com.github.aakira:expandable-layout:$versions.expandableLayout",
+        patternlockview        : "com.andrognito.patternlockview:patternlockview:$versions.patternlockview",
+        patternlockviewRx      : "com.andrognito.patternlockview:patternlockview-reactive:$versions.patternlockview",
+        epoxy                  : "com.airbnb.android:epoxy:$versions.epoxy",
+        epoxyProcessor         : "com.airbnb.android:epoxy-processor:$versions.epoxy",
+        shimmer                : "com.facebook.shimmer:shimmer:$versions.shimmer",
+        textDrawable           : "com.amulyakhare:com.amulyakhare.textdrawable:$versions.textDrawable",
+        calendarDateRangePicker: "com.github.anjalsaneen:CalendarDateRangePicker:$versions.calendarDateRangePicker",
+        material               : "com.google.android.material:material:$versions.material",
+        pinview                : "com.github.anjalsaneen:Pinview:$versions.pinview",
+        pageIndicator          : "com.romandanylyk:pageindicatorview:$versions.pageIndicator",
+        lottie                 : "com.airbnb.android:lottie:$versions.lottie",
+        youtubePlayer          : "com.github.cuongnb96:android-youtube-player:$versions.youtubeplayer",
+//   Revert it back once https://github.com/PierfrancescoSoffritti/android-youtube-player/issues/461#issuecomment-550050683
+//   Original lib: "com.pierfrancescosoffritti.androidyoutubeplayer:core:$versions.youtubeplayer",
+//   IssueTracker: https://issuetracker.google.com/issues/141132133 of webview
+        gridlayout             : "androidx.gridlayout:gridlayout:$versions.gridlayout",
+        mpandroidchart         : "com.github.PhilJay:MPAndroidChart:$versions.mpandroidchart",
+        sectorprogressview     : "com.timqi.sectorprogressview:library:$versions.sectorprogressview",
+        exoplyer               : "com.google.android.exoplayer:exoplayer:$versions.exoplyer",
+        otpview                : "com.github.mukeshsolanki:android-otpview-pinview:$versions.otpview",
+        otpviewKtx             : "com.github.aabhasr1:OtpView:$versions.otpviewKtx",
+        tooltip                : "com.github.sephiroth74:android-target-tooltip:v$versions.tooltip",
+        viewPager              : "androidx.viewpager2:viewpager2:$versions.viewpagerNew",
+        balloon                : "com.github.skydoves:balloon:$versions.balloon",
+        scratchView            : "com.github.okcredit:ScratchView:$versions.scratchView",
+        recyclerviewAnimators  : "jp.wasabeef:recyclerview-animators:$versions.recyclerviewAnimators",
+        numberPicker           : "com.shawnlin:number-picker:$versions.advanceNumberPicker",
+        advancedMaterialTap    : "uk.co.samuelwall:material-tap-target-prompt:$versions.advancedMaterialTap",
+]
+
+ext.tools = [
+        leakcanary              : "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary",
+        leakcanaryrelease       : "com.squareup.leakcanary:leakcanary-android-release:$versions.leakcanary",
+        flipper                 : "com.facebook.flipper:flipper:$versions.flipper",
+        flipperNetworkPlugin    : "com.facebook.flipper:flipper-network-plugin:$versions.flipper",
+        soLoader                : "com.facebook.soloader:soloader:$versions.soLoader",
+]
+
+ext.arch = [
+        lifecycle              : "androidx.lifecycle:lifecycle-extensions:$versions.lifecycle",
+        lifecycleKtx           : "androidx.lifecycle:lifecycle-runtime-ktx:$versions.lifecycle",
+        room                   : "androidx.room:room-runtime:$versions.room",
+        roomRx                 : "androidx.room:room-rxjava2:$versions.room",
+        roomAnnotationProcessor: "androidx.room:room-compiler:$versions.room",
+        workManagerRuntime     : "androidx.work:work-runtime:$versions.workManager",
+        workManagerRuntimeKtx  : "androidx.work:work-runtime-ktx:$versions.workManager",
+        workManagerRx          : "androidx.work:work-rxjava2:$versions.workManager",
+        lifecycleCommonJava8   : "androidx.lifecycle:lifecycle-common-java8:$versions.lifecycle",
+        viewModelKtx           : "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle",
+        liveDataKtx            : "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle",
+        roomKtx                : "androidx.room:room-ktx:$versions.room",
+        roomTesing             : "androidx.room:room-testing:$versions.room",
+]
+
+ext.navigation = [
+        fragment   : "androidx.navigation:navigation-fragment:$versions.navigation",
+        fragmentKtx: "androidx.navigation:navigation-fragment-ktx:$versions.navigation",
+        ui         : "androidx.navigation:navigation-ui:$versions.navigation",
+        uiKtx      : "androidx.navigation:navigation-ui-ktx:$versions.navigation",
+]
+
+ext.retrofit = [
+        retrofit              : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+        retrofitRxAdapter     : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+        gsonConverter         : "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+        gson                  : "com.google.code.gson:gson:$versions.gson",
+        okhttp3               : "com.squareup.okhttp3:okhttp:$versions.okhttp3",
+        okhttpLoginInterceptor: "com.squareup.okhttp3:logging-interceptor:$versions.okhttploginInterceptor",
+        moshiConverter        : "com.squareup.retrofit2:converter-moshi:$versions.retrofit",
+]
+
+ext.moshi = [
+        core    : "com.squareup.moshi:moshi:$versions.moshi",
+        codegen : "com.squareup.moshi:moshi-kotlin-codegen:$versions.moshi",
+        adapters: "com.squareup.moshi:moshi-adapters:$versions.moshi",
+]
+
+
+ext.camerax_3 = [
+        camerax_camera   : "androidx.camera:camera-camera2:$versions.camerax",
+        camera_view      : "androidx.camera:camera-view:$versions.camerax_view",
+        camera_extensions: "androidx.camera:camera-extensions:$versions.camerax_view",
+        camera_lifecycle : "androidx.camera:camera-lifecycle:$versions.camerax",
+        camera_core      : "androidx.camera:camera-core:$versions.camerax",
+]
+
+// Google Play Service
+ext.playService = [
+        map               : "com.google.android.gms:play-services-maps:$versions.playServiceMap",
+        auth              : "com.google.android.gms:play-services-auth:$versions.playServiceAuth",
+        location          : "com.google.android.gms:play-services-location:$versions.playServiceLocation",
+        installReferrer   : "com.android.installreferrer:installreferrer:$versions.installReferrer",
+        googlePlayCore    : "com.google.android.play:core:$versions.googlePlayCore",
+        googlePlayCore_ktx: "com.google.android.play:core-ktx:$versions. googlePlayCore_ktx ",
+        googlePlayAds     : "com.google.android.gms:play-services-ads:$versions.googlePlayAds",
+]
+
+
+ext.imageDeps = [
+        imageCrop           : "com.github.yalantis:ucrop:$versions.imageCrop",
+        belvedereImagePicker: "com.zendesk.belvedere2:belvedere:$versions.belvedereImagePicker",
+        photoView           : "com.github.chrisbanes:PhotoView:$versions.photoView",
+        textDrawable        : "com.amulyakhare:com.amulyakhare.textdrawable:$versions.textDrawable",
+        glide               : "com.github.bumptech.glide:glide:$versions.glide",
+        glideCompiler       : "com.github.bumptech.glide:compiler:$versions.glide",
+]
+
+ext.network = [
+        retrofit              : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+        retrofitRxAdapter     : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+        gsonConverter         : "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+        gson                  : "com.google.code.gson:gson:$versions.gson",
+        okhttp3               : "com.squareup.okhttp3:okhttp:$versions.okhttp3",
+        okhttpLoginInterceptor: "com.squareup.okhttp3:logging-interceptor:$versions.okhttploginInterceptor",
+        hivemq                : "com.hivemq:hivemq-mqtt-client:$versions.hivemq",
+        sourceforgeStreams    : "net.sourceforge.streamsupport:android-retrostreams:$versions.sourceforge",
+        sourceforgeFuture     : "net.sourceforge.streamsupport:android-retrofuture:$versions.sourceforge",
+]
+
+ext.firebase = [
+        firebaseMessaging  : "com.google.firebase:firebase-messaging:$versions.firebaseMessaging",
+        firebasePerf       : "com.google.firebase:firebase-perf:$versions.firebasePerf",
+        firebaseAnalytics  : "com.google.firebase:firebase-analytics:$versions.firebaseAnalytics",
+        firebaseCrashlytics: "com.google.firebase:firebase-crashlytics-ndk:$versions.firebaseCrashlytics",
+        auth               : "com.google.firebase:firebase-auth-ktx:$versions.fireAuth",
+        firestore          : "com.google.firebase:firebase-firestore-ktx:$versions.fireStore",
+        uiFirestore        : "com.firebaseui:firebase-ui-firestore:$versions.uifireStore",
+        database           : "com.google.firebase:firebase-database-ktx:$versions.database",
+        remoteConfig       : "com.google.firebase:firebase-config-ktx:$versions.remoteConfig"
+]
+
+ext.zxing = [
+        zxingAndroid: "com.github.okcredit:zxing-android-embedded:$versions.zxingAndroid",
+        zxingCore   : "com.google.zxing:core:$versions.zxingCore",
+]
+
+ext.deeplink = [
+        deeplinkDispatch         : "com.airbnb:deeplinkdispatch:$versions.deeplinkDispatch",
+        deeplinkDispatchProcessor: "com.airbnb:deeplinkdispatch-processor:$versions.deeplinkDispatch",
+]
+
+ext.aws = [
+        awsS3: "com.amazonaws:aws-android-sdk-s3:$versions.aws",
+]
+
+ext.zendesk = [
+        chat     : "com.zendesk:chat:$versions.chat",
+        messaging: "com.zendesk:messaging:$versions.messaging",
+]
+
+ext.anrWatchDog = [
+        anrwatchdog: "com.github.anrwatchdog:anrwatchdog:$versions.anrwatchdog",
+]

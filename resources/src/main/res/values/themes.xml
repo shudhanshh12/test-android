@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <attr name="colorDivider" format="reference|color" />
+    <attr name="colorLight" format="reference|color" />
+
+    <!--Base theme -->
+    <style name="Base.OKCTheme" parent="Base.MaterialThemeBuilder">
+
+        <!--Material color attributes -->
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryAda">@color/green_ada</item>
+        <item name="colorPrimaryLite">@color/green_lite</item>
+        <item name="colorPrimaryLite1">@color/green_lite_1</item>
+        <item name="colorPrimary1">@color/green_1</item>
+
+        <item name="colorPrimaryDark">@color/green_ada</item>
+        <item name="colorPrimaryVariant">@color/green_ada</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/green_primary</item>
+        <item name="colorSecondaryVariant">@color/green_ada</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorControlNormal">@color/grey900</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorOnBackground">@color/grey900</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/grey900</item>
+        <item name="colorError">@color/red_primary</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="android:textColorLink">@color/indigo_primary</item>
+        <item name="colorDivider">@color/grey400</item>
+        <item name="colorLight">@color/grey400</item>
+
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        <item name="android:textColor">@color/grey900</item>
+        <item name="android:fontFamily">@font/app_font</item>
+
+        <!--Material type attributes-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.OKCTheme.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.OKCTheme.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.OKCTheme.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.OKCTheme.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.OKCTheme.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.OKCTheme.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.OKCTheme.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.OKCTheme.Subtitle2</item>
+        <item name="textAppearanceSubtitle3">@style/TextAppearance.OKCTheme.Subtitle3</item>
+        <item name="textAppearanceSubtitle4">@style/TextAppearance.OKCTheme.Subtitle4</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.OKCTheme.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.OKCTheme.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.OKCTheme.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.OKCTheme.Caption1</item>
+        <item name="textAppearanceCaption1">@style/TextAppearance.OKCTheme.Caption1</item>
+        <item name="textAppearanceCaption2">@style/TextAppearance.OKCTheme.Caption2</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.OKCTheme.Overline</item>
+
+        <!--Material shape attributes-->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.OKCTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.OKCTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.OKCTheme.LargeComponent</item>
+
+        <!--Component styles-->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>
+        <item name="navigationViewStyle">@style/Widget.OKCTheme.NavigationView</item>
+    </style>
+
+    <!-- Theme for SplashTheme, ActivityFullScreen and TransparentActivity -->
+    <style name="SplashTheme" parent="Base.OKCTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="Base.OKCTheme.Grey">
+        <item name="android:statusBarColor">@color/grey50</item>
+        <item name="android:windowBackground">@color/grey50</item>
+    </style>
+
+    <style name="ActivityFullScreen" parent="Base.OKCTheme">
+        <item name="android:immersive">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:ignore="NewApi" tools:targetApi="27">shortEdges
+        </item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="Theme.TransparentActivity" parent="Base.OKCTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="LightActionBarTheme" parent="Base.OKCTheme">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Builder -->
+    <style name="Base.MaterialThemeBuilder" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="alphaEmphasisHigh">@dimen/alpha_emphasis_high</item>
+        <item name="alphaEmphasisMedium">@dimen/alpha_emphasis_medium</item>
+        <item name="alphaEmphasisDisabled">@dimen/alpha_emphasis_disabled</item>
+
+        <item name="android:statusBarColor">?colorSurface</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">?colorControlHighlight</item>
+
+        <!--Remap legacy AppCompat attributes to MaterialComponent attributes-->
+        <item name="colorPrimaryDark">?colorPrimaryVariant</item>
+        <item name="colorAccent">?colorSecondary</item>
+    </style>
+
+</resources>

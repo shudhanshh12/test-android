@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okassistant_greeting">ನಮಸ್ಕಾರ 🙏 ನಾನು OkAssistant!!</string>
+    <string name="okassistant_education">ನಿಮ್ಮ ಧ್ವನಿಯನ್ನು ಗುರುತಿಸಲು ನನಗೆ ಸಹಾಯ ಬೇಕಾಗಿದೆ.\n\nದಯವಿಟ್ಟು ಮೈಕ್ ಬಟನ್ ಅನ್ನು ಒತ್ತಿ ಮತ್ತು ರೆಕಾರ್ಡ್ ಮಾಡಲು ಸ್ಪಷ್ಟು ಧ್ವನಿಯಲ್ಲಿ ಕೆಳಗಿನ ಪಠ್ಯವನ್ನು ಓದಿ.</string>
+    <string name="read_this">ಇದನ್ನು ಓದಿ</string>
+    <string name="invalid_recording">ಅಮಾನ್ಯ ರೆಕಾರ್ಡಿಂಗ್</string>
+    <string name="task_complete">ಟಾಸ್ಕ್ ಪೂರ್ಣಗೊಂಡಿದೆ</string>
+    <string name="okassistant_retry">ಮರುಪ್ರಯತ್ನಿಸಿ</string>
+    <!-- /* Bulk Add by voice -->
+    <string name="t_004_bulk_voice_txn_main_headline">ಹೇಳಿ ಹಾಗೂ ವಹಿವಾಟುಗಳನ್ನು ಆ್ಯಡ್ ಮಾಡಿ</string>
+    <string name="t_004_bulk_voice_txn_main_caption">ಕೇವಲ ಹೇಳುವ ಮೂಲಕ ವೇಗವಾಗಿ ಕಾರ್ಯ ಸಾಧಿಸಿ</string>
+    <string name="t_004_bulk_voice_txn_date_field">ವಹಿವಾಟು ದಿನಾಂಕ</string>
+    <string name="t_004_bulk_voice_txn_body_headline">ಇಂಗ್ಲಿಷ್ ಅಥವಾ ಹಿಂದಿಯಲ್ಲಿ ಹೇಳಿ</string>
+    <string name="t_004_bulk_voice_txn_body_english_example">Sameer 100 rupees credit / Sameer 100 rupees payment</string>
+    <string name="t_004_bulk_voice_txn_body_subtitle">ಅಥವಾ</string>
+    <string name="t_004_bulk_voice_txn_hinglish_example">Sameer ki 100 rupaye ki udhaari / Sameer ka 100 rupaye ka payment</string>
+    <string name="t_004_speech_eg_title">ಇಂಗ್ಲಿಷ್ ಅಥವಾ ಹಿಂದಿಯಲ್ಲಿ ಹೇಳಿ</string>
+    <string name="t_004_speech_eg_caption_credit">ಕ್ರೆಡಿಟ್ ಆ್ಯಡ್ ಮಾಡಲು, ಹೀಗೆ ಹೇಳಿ</string>
+    <string name="t_004_speech_eg_credit_desc">“Sameer 100 rupees credit” or “Sameer ki 100 rupaye ki udhaari”</string>
+    <string name="t_004_speech_eg_caption_payment">ಪೇಮೆಂಟ್ ಆ್ಯಡ್ ಮಾಡಲು, ಹೀಗೆ ಹೇಳಿ</string>
+    <string name="t_004_speech_eg_payment_desc">“Sameer 100 rupees payment” or “Sameer ka 100 rupaye ka payment”</string>
+    <string name="t_004_speech_try_again_error_desc">ಕ್ಷಮಿಸಿ, ನಮಗೆ ಅರ್ಥವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಕೆಳಗೆ ಟ್ಯಾಪ್ ಮಾಡಿ ಹಾಗೂ ಪುನಃ ಹೇಳಿ.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_processing">ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_failed">ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವಿಕೆ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_incomplete">ದಯವಿಟ್ಟು ಕಾಣೆಯಾಗಿರುವ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ</string>
+    <string name="t_004_bulk_voice_txn_voice_transcript_label">ನೀವು ಹೇಳಿರುವುದು</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_credit">ಕ್ರೆಡಿಟ್</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_payment">ಪಾವತಿ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_credit">ನೀಡಲಾಗಿದೆ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_payment">ಪಡೆಯಲಾಗಿದೆ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_txn_type">ವಹಿವಾಟು</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_add_note">ವಿವರ (ಐಚ್ಛಿಕ)</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_amount">ಮೊತ್ತ</string>
+    <string name="t_004_bulk_voice_txn_delete">ಅಳಿಸಿ</string>
+    <string name="t_004_bulk_voice_txn_update">ನವೀಕರಿಸಿ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_saved">ವಹಿವಾಟು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_deleted">ವಹಿವಾಟು ಡಿಲೀಟ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_edit_discarded">ವಹಿವಾಟು ಬದಲಾವಣೆಗಳನ್ನು ತ್ಯಜಿಸಲಾಗಿದೆ</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_load_failed">ವಹಿವಾಟುಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_title">ಹೆಸರು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_search_more">ಇನ್ನಷ್ಟು ಹೆಸರುಗಳನ್ನು ಹುಡುಕಿ</string>
+    <string name="t_004_bulk_voice_txn_select_name_hint_text">ಹೆಸರು ಆಯ್ಕೆಮಾಡಿ ಅಥವಾ ಹುಡುಕಿ</string>
+    <string name="t_004_bulk_voice_txn_confirm_save_title">ಸೇವ್ ಮಾಡುವ ಮುನ್ನ ವಹಿವಾಟುಗಳನ್ನು ವೆರಿಫೈ ಮಾಡಿ</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_date_of_txn">ವಹಿವಾಟುಗಳ ದಿನಾಂಕ - %s</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_txn_not_saved_caption">₹0 ಮೊತ್ತವಿರುವ, ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಿದ/ ವಿಫಲ ಸ್ಥಿತಿಯ ಅಥವಾ ಕಾಣೆಯಾದ ಮಾಹಿತಿ ಇರುವ ವಹಿವಾಟುಗಳನ್ನು ಉಳಿಸಲಾಗುವುದಿಲ್ಲ.</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_blocked_merchants">ನೀವು ಯಾವುದೇ ಗ್ರಾಹಕರು/ ಪೂರೈಕೆದಾರರನ್ನು ನಿರ್ಬಂಧಿಸಿದ್ದರೆ ಅಥವಾ ಯಾವುದೇ ಗ್ರಾಹಕರು/ ಪೂರೈಕೆದಾರರು ನಿಮ್ಮನ್ನು ನಿರ್ಬಂಧಿಸಿದ್ದರೆ, ವಹಿವಾಟನ್ನು ಉಳಿಸಲಾಗುವುದಿಲ್ಲ.</string>
+    <string name="t_004_bulk_voice_txn_customer_count">%1s ಕಸ್ಟಮರ್,</string>
+    <string name="t_004_bulk_voice_txn_supplier_count">%1s ಸಪ್ಲೈಯರ್</string>
+    <string name="t_004_bulk_voice_txn_transaction_saved">ವಹಿವಾಟು ಉಳಿಸಲಾಗಿದೆ</string>
+    <string name="t_004_bulk_voice_txn_transaction_cancelled">ವಹಿವಾಟು ರದ್ದುಗೊಂಡಿದೆ</string>
+    <!-- Bulk Add by voice */ -->
+</resources>

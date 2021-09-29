@@ -1,0 +1,165 @@
+apply plugin: 'com.android.library'
+apply plugin: "kotlin-android"
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation project(':shared')
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':resources')
+    implementation project(':backend')
+    implementation project(':device')
+    implementation project(':fileupload')
+    implementation project(':analytics')
+    implementation project(':suppliercredit')
+    implementation project(':rewards')
+    implementation project(':business:contract')
+    implementation project(':contacts:contract')
+    implementation project(':communication')
+    implementation project(':collection_module:contract')
+    implementation project(':app:app_contract')
+    implementation project(':frontend:contract')
+    implementation project(':feature_help:ui')
+    implementation project(':feature_help:contract')
+    implementation project(':ab'), { exclude group: 'com.google.guava', module: 'listenablefuture' }
+    implementation project(':referral:contract')
+    implementation project(':storesms')
+    implementation project(':business_health_dashboard:contract')
+    implementation project(':applock:contract')
+    implementation project(':accounting_core')
+    implementation project(':dynamicview')
+    implementation project(':backend:contract')
+    // Todo(Saket): Remove module dependency and move to contract, only used to expose language bottom sheet
+    implementation project(':onboarding')
+    implementation project(':onboarding:contract')
+    implementation project(':accounting_core:contract')
+    implementation project(':web:contract')
+    implementation project(':home:contract')
+    implementation project(':customer:contract')
+    implementation project(':user_migration:contract')
+    implementation project(':rewards:contract')
+    implementation project(':dynamicview:contract')
+    implementation project(':web_features')
+    implementation project(':account_chat:account_chat_sdk')
+    implementation project(':account_chat:account_chat_contract')
+    implementation project(':supplier')
+    implementation project(':backend')
+    implementation project(':accounting')
+    implementation project(':accounting:contract')
+    implementation project(':supplier:contract')
+    implementation project(':payment:contract')
+    implementation project(':bill_management:ui')
+    implementation project(':bill_management:sdk')
+    implementation project(':feature_help:sdk')
+    implementation project(':user-stories')
+    implementation project(':user-stories:contract')
+    implementation project(':okstream:contract')
+    implementation project(':individual:contract')
+
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    implementation view.epoxy
+    implementation project(path: ':web')
+    kapt view.epoxyProcessor
+    annotationProcessor view.epoxyProcessor
+    implementation imageDeps.textDrawable
+    implementation view.shimmer
+    implementation view.lottie
+    implementation view.youtubePlayer
+    implementation view.exoplyer
+    implementation view.tooltip
+    implementation view.balloon
+    implementation view.advancedMaterialTap
+    implementation view.recyclerviewAnimators
+
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+    implementation androidX.constraintLayout
+    implementation androidX.appcompact
+    implementation androidX.ktx
+    implementation androidX.biometric
+
+    implementation navigation.fragment
+    implementation navigation.ui
+    implementation navigation.uiKtx
+    implementation navigation.fragmentKtx
+
+    implementation utility.kotlin
+    implementation utility.coroutines
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+
+    implementation rx.java
+    implementation rx.android
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+
+    testImplementation unitTest.androidxTestCore
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockWebServer
+    testImplementation unitTest.robolectric
+    testImplementation unitTest.mockk
+    testImplementation firebase.firebaseCrashlytics
+    testImplementation unitTest.coroutines
+
+
+}

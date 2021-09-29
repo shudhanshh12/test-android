@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okcredit">OkCredit</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="resend_otp"><u>Resend OTP</u></string>
+    <string name="otp_incorrect">OTP incorrect</string>
+    <string name="otp_expired">OTP expired</string>
+    <string name="send_otp_success">OTP sent successfully</string>
+    <string name="send_otp_failure_no_internet">Could not send OTP, please check your internet connection</string>
+    <string name="send_otp_failure">Could not send OTP, please try again</string>
+    <string name="otp_verification_failure">Could not verify OTP, please try again</string>
+    <string name="otp_sent_message">We’ve sent an SMS with OTP to your phone number %1$s</string>
+    <string name="register_user_agreement">By continuing, you agree to our <![CDATA[<a href="https://www.okcredit.in/terms">Terms of service</a> and <a href="https://www.okcredit.in/privacy">Privacy Policy</a>]]></string>
+
+    <string name="t_001_login_title_enter_otp">Enter 6 digit OTP sent to %1$s</string>
+    <string name="t_001_login_cta_wrong_number">Wrong Number?</string>
+    <string name="t_001_login_otp_err_msg">Incorrect OTP</string>
+    <string name="t_001_login_cta_sms_again">Send OTP via SMS</string>
+    <string name="t_001_login_cta_whatsapp_otp">Send OTP via WhatsApp</string>
+    <string name="t_001_login_cta_call_me">Send OTP via Call</string>
+    <string name="t_001_login_toast_resend_otp_confirm">OTP requested via SMS</string>
+    <string name="t_001_login_toast_resend_otp_whatsapp_confirm">OTP requested via WhatsApp</string>
+    <string name="t_001_login_toast_resend_otp_call_confirm">OTP requested via Call</string>
+    <string name="t_001_login_toast_resend_otp_failed">Too many attempts, OTP request failed.</string>
+
+    <string name="trusted_by_businesses">Trusted by 50,00,000+ Businesses</string>
+
+    <string name="t_001_login_terms_conditions">Click “Get Started” to accept <![CDATA[<a href="https://www.okcredit.in/terms">Terms of service</a> and <a href="https://www.okcredit.in/privacy">Privacy Policy</a>]]></string>
+    <string name="t_001_login_cta_get_started">Get Started</string>
+
+    <string name="whatsapp_verification_message">I want to verify my mobile number</string>
+</resources>

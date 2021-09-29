@@ -1,0 +1,103 @@
+[
+  {
+    "target": "home_side_navigation",
+    "component": {
+      "version": "v1alpha",
+      "kind": "vertical_list",
+      "metadata": {
+        "name": "VerticalList",
+        "debug": true,
+        "lang": "ta"
+      },
+      "items": [
+        {
+          "version": "v1alpha",
+          "kind": "menu_item",
+          "metadata": {
+            "Name": "Share"
+          },
+          "event_handlers": {
+            "view": [
+              {
+                "action": "track",
+                "event": "Entry Point Viewed",
+                "properties": {
+                  "source": "Side Menu",
+                  "type": "Share"
+                }
+              }
+            ],
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://staging.okcredit.app/merchant/v1/share"
+              },
+              {
+                "action": "track",
+                "event": "Share App",
+                "properties": {
+                  "Screen": "Drawer"
+                }
+              }
+            ]
+          },
+          "title": "பகிரவும்",
+          "icon": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ic_share%404x.webp"
+        }
+      ]
+    }
+  },
+  {
+    "target": "dashboard",
+    "component": {
+      "version": "v1alpha",
+      "kind": "vertical_list",
+      "metadata": {
+        "name": "VerticalList",
+        "lang": "ta"
+      },
+      "items": [
+        {
+          "version": "v1alpha",
+          "kind": "summary_card",
+          "metadata": {
+            "name": "net_balance",
+            "lang": "ta"
+          },
+          "event_handlers": {
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://staging.okcredit.app/merchant/v1/account_statement?duration=30"
+              }
+            ]
+          },
+          "title": "லெட்ஜர்",
+          "subtitle": "நிகர இருப்பு",
+          "icon": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/ledger/drawable-xxxhdpi/icon_ledger_book.png"
+        },
+        {
+          "version": "v1alpha",
+          "kind": "advertisement",
+          "metadata": {
+            "name": "Setup Collection",
+            "lang": "ta"
+          },
+          "event_handlers": {
+            "click": [
+              {
+                "action": "navigate",
+                "url": "https://staging.okcredit.app/merchant/v1/account/collections/merchant_collection_screen?source=dashboard"
+              }
+            ]
+          },
+          "title": "ஆன்லைன் கலெக்சன் செட் செய்து ஆன்லைன் மூலம் பணத்தை வசூல் செய்யுங்கள்",
+          "subtitle": "22 லட்சத்திற்கும் மேற்பட்ட வணிகர்கள் நம்பி பயன்படுத்தும் OkCredit",
+          "icon": "",
+          "button_text": "துவங்குங்கள்",
+          "image": "https://storage.googleapis.com/prod__dynamicui__public__dataset/icons/setup/drawable-xxxhdpi/kyc_illustration.png"
+        }
+      ]
+    }
+  }
+]

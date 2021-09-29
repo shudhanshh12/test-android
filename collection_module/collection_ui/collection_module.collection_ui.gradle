@@ -1,0 +1,137 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'androidx.navigation.safeargs'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':device')
+    implementation project(':shared')
+    implementation project(':auth')
+    implementation project(':analytics')
+    implementation project(':resources')
+
+
+    implementation project(':ab'),{exclude group: 'com.google.guava', module: 'listenablefuture'}
+    implementation project(':accounting')
+    implementation project(':collection_module:collection_sdk')
+    implementation project(':backend')
+    implementation project(':fileupload')
+    implementation project(':business:contract')
+    implementation project(':communication')
+    implementation project(':collection_module:contract')
+    implementation project(':feature_help:sdk')
+    implementation project(':referral:contract')
+    implementation project(':app:app_contract')
+    implementation project(':onboarding:contract')
+    implementation project(':backend:contract')
+    implementation project(':rewards:contract')
+    implementation project(':home:contract')
+    implementation project(':web:contract')
+    implementation project(':applock:contract')
+    implementation project(':frontend:contract')
+    implementation project(':feature_help:contract')
+    implementation project(':individual:contract')
+
+    implementation androidX.appcompact
+
+    implementation firebase.firebasePerf
+
+    //arch
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+    implementation arch.viewModelKtx
+    implementation arch.liveDataKtx
+
+    // Dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    //Rx
+    implementation rx.binding
+
+    //Utility
+    implementation utility.kotlin
+    implementation utility.permission
+    implementation utility.timber
+
+    //androidx
+    implementation androidX.ktx
+    implementation androidX.constraintLayout
+    implementation androidX.constraintLayoutSolver
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+
+    implementation view.shimmer
+    implementation view.lottie
+    implementation view.mpandroidchart
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+    annotationProcessor view.epoxyProcessor
+    implementation view.textDrawable
+    implementation view.advancedMaterialTap
+    implementation view.balloon
+
+    implementation androidX.constraintLayout
+    implementation view.youtubePlayer
+
+    //Test
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation firebase.firebaseCrashlytics
+    testImplementation unitTest.robolectric
+
+    implementation navigation.fragment
+    implementation navigation.ui
+    implementation navigation.uiKtx
+    implementation navigation.fragmentKtx
+}

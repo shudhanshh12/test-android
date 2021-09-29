@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "240733913060",
+    "firebase_url": "https://okcredit-dev-42613.firebaseio.com",
+    "project_id": "okcredit-dev-42613",
+    "storage_bucket": "okcredit-dev-42613.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240733913060:android:4dd6390ce863d9693511f1",
+        "android_client_info": {
+          "package_name": "in.okcredit.merchant.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240733913060-e407uodbb45u0q937u6cc832bfdeftcu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9_nhRxTZBFaJRtIOZqiM5furo0r0wGPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240733913060-e407uodbb45u0q937u6cc832bfdeftcu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240733913060:android:33d0cb4e7182a55e3511f1",
+        "android_client_info": {
+          "package_name": "in.okcredit.merchant.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240733913060-e407uodbb45u0q937u6cc832bfdeftcu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9_nhRxTZBFaJRtIOZqiM5furo0r0wGPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240733913060-e407uodbb45u0q937u6cc832bfdeftcu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

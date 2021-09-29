@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clOuter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circular_border_on_top"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingTop="@dimen/_8dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:paddingBottom="@dimen/_8dp"
+        android:theme="@style/AppTheme">
+
+        <View
+            android:id="@+id/viewBar"
+            android:layout_width="48dp"
+            android:layout_height="4dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:background="@color/grey300"
+            app:layout_constraintBottom_toTopOf="@+id/textInputName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:text="@string/add_item"
+            android:textAppearance="?textAppearanceSubtitle2"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/textInputName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewBar" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:hint="@string/inventory_item_name"
+            android:minHeight="56dp"
+            android:textColorHint="@color/grey400"
+            app:backgroundTint="@color/green_primary"
+            app:layout_constraintBottom_toTopOf="@+id/textInputRate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textAutoComplete"
+                android:maxLength="60"
+                android:textAppearance="?textAppearanceSubtitle2">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clQuantityLayout"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/_2dp"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:background="@drawable/circle_background_green_primary_outline"
+            android:padding="@dimen/_8dp"
+            app:layout_constraintBottom_toBottomOf="@id/textInputRate"
+            app:layout_constraintEnd_toEndOf="@+id/buttonSubmit"
+            app:layout_constraintStart_toEndOf="@id/textInputRate"
+            app:layout_constraintTop_toTopOf="@id/textInputRate">
+
+            <TextView
+                android:id="@+id/textAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textAppearance="?textAppearanceSubtitle2"
+                android:textColor="@color/green_primary"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/textPlus"
+                app:layout_constraintEnd_toStartOf="@id/textPlus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textPlus" />
+
+            <ImageView
+                android:id="@+id/textMinus"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_minus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/grey400" />
+
+            <EditText
+                android:id="@+id/editTextQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:focusedByDefault="false"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="7"
+                android:text="@string/inventory_0"
+                android:textAppearance="?textAppearanceSubtitle4"
+                android:textColor="@color/green_primary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/textPlus"
+                app:layout_constraintStart_toEndOf="@id/textMinus"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/textPlus"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_plus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/green_primary" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputRate"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:backgroundTint="@color/green_primary"
+            android:hint="@string/inventory_rate"
+            android:minHeight="56dp"
+            android:textColorHint="@color/grey400"
+            app:layout_constraintBottom_toTopOf="@id/buttonSubmit"
+            app:layout_constraintEnd_toStartOf="@+id/clQuantityLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="numberDecimal"
+                android:textAppearance="?textAppearanceSubtitle2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSubmit"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:tint="@color/white"
+            android:visibility="visible"
+            app:cornerRadius="20dp"
+            app:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

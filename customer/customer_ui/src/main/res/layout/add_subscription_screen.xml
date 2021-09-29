@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/LightActionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/profile_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/due"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:textAppearance="?textAppearanceCaption2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/profile_image"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_name" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_transaction_heading"
+        style="@style/OKC.TextAppearance.Body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/subscription_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_amount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:gravity="center"
+        android:minWidth="142dp"
+        app:boxBackgroundMode="none"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_heading">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_amount"
+            style="@style/OKC.TextAppearance.Headline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="1234567890."
+            android:drawableStart="@drawable/ic_indian_rupee_symbol"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:hint="@string/zero"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@drawable/custom_credit_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/view_amount_border"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/grey300"
+        app:layout_constraintEnd_toEndOf="@+id/text_input_amount"
+        app:layout_constraintStart_toStartOf="@+id/text_input_amount"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_amount" />
+
+    <TextView
+        android:id="@+id/error_amount"
+        style="@style/OKC.TextAppearance.Caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txn_invalid_amount"
+        android:textColor="@color/error_red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_amount_border"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_amount"
+        tools:text="400+300+50" />
+
+    <ImageView
+        android:id="@+id/iv_add_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_icon_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_amount"
+        app:tint="?colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_add_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/subscription_name"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/grey600"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/tv_add_name"
+        app:layout_constraintStart_toEndOf="@id/iv_add_name"
+        app:layout_constraintTop_toTopOf="@id/iv_add_name" />
+
+    <TextView
+        android:id="@+id/tv_add_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/add_subscription_name"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        app:layout_constraintBottom_toBottomOf="@id/iv_add_name"
+        app:layout_constraintEnd_toStartOf="@id/iv_name_arrow"
+        app:layout_constraintStart_toEndOf="@id/iv_add_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_name_label" />
+
+    <ImageView
+        android:id="@+id/iv_name_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_arrow_right_grey500"
+        app:layout_constraintBottom_toBottomOf="@id/iv_add_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_add_name" />
+
+    <View
+        android:id="@+id/view_name_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey300"
+        app:layout_constraintEnd_toEndOf="@+id/iv_name_arrow"
+        app:layout_constraintStart_toStartOf="@id/tv_add_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_name" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/add_name_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="iv_add_name,tv_add_name,iv_name_arrow,view_name_divider" />
+
+
+    <ImageView
+        android:id="@+id/iv_frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_icon_repeat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_name_divider"
+        app:tint="?colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_frequency_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/repeat"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toTopOf="@+id/tv_frequency"
+        app:layout_constraintEnd_toStartOf="@id/iv_frequency_arrow"
+        app:layout_constraintStart_toEndOf="@id/iv_frequency"
+        app:layout_constraintTop_toTopOf="@id/iv_frequency" />
+
+    <TextView
+        android:id="@+id/tv_frequency"
+        style="@style/OKC.TextAppearance.Subtitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/daily"
+        app:layout_constraintBottom_toBottomOf="@id/iv_frequency"
+        app:layout_constraintEnd_toStartOf="@+id/iv_frequency_arrow"
+        app:layout_constraintStart_toEndOf="@id/iv_frequency"
+        app:layout_constraintTop_toBottomOf="@id/tv_frequency_label" />
+
+    <ImageView
+        android:id="@+id/iv_frequency_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_arrow_right_grey500"
+        app:layout_constraintBottom_toBottomOf="@id/iv_frequency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_frequency" />
+
+    <View
+        android:id="@+id/view_frequency_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey300"
+        app:layout_constraintEnd_toEndOf="@+id/iv_frequency_arrow"
+        app:layout_constraintStart_toStartOf="@id/tv_frequency"
+        app:layout_constraintTop_toBottomOf="@id/iv_frequency" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/frequency_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="iv_frequency,tv_frequency_label,tv_frequency,iv_frequency_arrow,view_frequency_divider" />
+
+    <ImageView
+        android:id="@+id/iv_add_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_frequency_divider"
+        app:tint="?colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_add_date_label"
+        style="@style/OKC.TextAppearance.Body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/start_date"
+        android:textColor="@color/grey600"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/tv_add_date"
+        app:layout_constraintStart_toEndOf="@id/iv_add_date"
+        app:layout_constraintTop_toTopOf="@id/iv_add_date" />
+
+    <TextView
+        android:id="@+id/tv_add_date"
+        style="@style/OKC.TextAppearance.Subtitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/start_date"
+        app:layout_constraintBottom_toBottomOf="@id/iv_add_date"
+        app:layout_constraintEnd_toStartOf="@+id/iv_date_arrow"
+        app:layout_constraintStart_toEndOf="@id/iv_add_date"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_date_label" />
+
+    <ImageView
+        android:id="@+id/iv_date_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_arrow_right_grey500"
+        app:layout_constraintBottom_toBottomOf="@id/iv_add_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_add_date" />
+
+    <View
+        android:id="@+id/view_date_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey300"
+        app:layout_constraintEnd_toEndOf="@+id/iv_date_arrow"
+        app:layout_constraintStart_toStartOf="@id/tv_add_date"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_date" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/add_date_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="iv_add_date,tv_add_date,tv_add_date_label,
+                iv_date_arrow,view_date_divider" />
+
+    <View
+        android:id="@+id/view_button_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/grey300"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_save"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/confirm"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/calculator_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <in.okcredit.shared.calculator.CalculatorLayout
+        android:id="@+id/calculator_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

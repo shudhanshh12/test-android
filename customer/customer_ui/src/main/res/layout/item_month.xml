@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#14a76c"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/due_Date"
+            android:textColor="@color/off_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/year_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/off_white"
+            android:textSize="14sp"
+            tools:text="2017" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/off_white"
+                android:textSize="34sp"
+                tools:text="Thu, " />
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/off_white"
+                android:textSize="34sp"
+                tools:text="Apr" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/off_white"
+                android:textSize="34sp"
+                tools:text="13" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/router"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginRight="@dimen/_16dp"
+        android:layout_marginBottom="19dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/grey900"
+            app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/full_month_name"
+            style="@style/OKC.TextAppearance.Subtitle2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/grey900"
+            tools:text="April 2017" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="-180"
+            android:tint="@color/grey900"
+            app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/router"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="@dimen/_16dp"
+        android:layout_marginBottom="24dp"
+        android:numColumns="7">
+
+        <TextView
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textColor="@color/grey900" />
+
+        <TextView
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="M"
+            android:textColor="@color/grey900" />
+
+        <TextView
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="T"
+            android:textColor="@color/grey900" />
+
+        <TextView
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="W"
+            android:textColor="@color/grey900" />
+
+        <TextView
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="T"
+            android:textColor="@color/grey900" />
+
+        <TextView
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="F"
+            android:textColor="@color/grey900" />
+
+        <TextView
+            style="@style/OKC.TextAppearance.Subtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textColor="@color/grey900" />
+
+    </GridLayout>
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/days"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginRight="@dimen/_16dp"
+        android:gravity="center"
+        android:numColumns="7"
+        tools:listitem="@layout/single_cell" />
+
+
+</RelativeLayout>

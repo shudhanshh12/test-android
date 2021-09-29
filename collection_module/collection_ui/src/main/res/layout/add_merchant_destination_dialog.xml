@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.CoordinatorLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_destination_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layoutName="Add Merchant Destination Dialog"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/circular_border_on_top"
+    android:orientation="vertical"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_add_payment_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:text="@string/add_upi_id"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="?textAppearanceSubtitle1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_switch_payment_mode"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_switch_payment_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/grid_3_half"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:background="@drawable/circle_stroke_grey_1dp"
+            android:gravity="center_vertical"
+            android:paddingStart="19dp"
+            android:paddingEnd="19dp"
+            android:text="@string/add_bank_account"
+            android:textAppearance="?textAppearanceBody2"
+            android:textColor="@color/grey900"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_switch_payment_mode"
+            android:layout_marginTop="@dimen/grid_3_half"
+            android:background="@color/grey300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_payment_title" />
+
+        <TextView
+            android:id="@+id/tv_add_payment_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_separator"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:text="@string/to_accept_online_collections"
+            android:textAppearance="?textAppearanceBody2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator" />
+
+        <RelativeLayout
+            android:id="@+id/bank_account_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_6"
+            android:layout_below="@+id/tv_add_payment_description"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_4"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/circular_corners_selected_background"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_payment_description"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/bank_icon"
+                android:layout_width="@dimen/grid_5_half"
+                android:layout_height="@dimen/grid_5_half"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/grid_3_half"
+                app:srcCompat="@drawable/ic_account_balance_bank"
+                app:tint="@color/grey800" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toStartOf="@+id/account_clear"
+                android:layout_toEndOf="@+id/bank_icon"
+                android:focusable="true"
+                android:hint="@string/account_number"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="18"
+                android:padding="0dp"
+                android:textAllCaps="true"
+                android:textAppearance="?textAppearanceBody1"
+                android:textColor="@color/grey800"
+                android:textColorHint="@color/grey400"
+                android:textSize="18sp"
+                app:backgroundTint="@color/transparent">
+
+                <requestFocus />
+            </androidx.appcompat.widget.AppCompatEditText>
+
+            <ImageView
+                android:id="@+id/account_clear"
+                android:layout_width="@dimen/grid_5"
+                android:layout_height="@dimen/grid_5"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/grid_1"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_cross" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_account_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bank_account_container"
+            android:layout_marginStart="@dimen/grid_4"
+            android:background="@color/white"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="@string/account_number"
+            android:textAppearance="?textAppearanceCaption2"
+            android:textColor="@color/green_primary"
+            android:translationY="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/bank_account_container"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/ifsc_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_6"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="@dimen/grid_3"
+            android:background="@drawable/circular_corners_unselected_background"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bank_account_container"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ifsc_icon"
+                android:layout_width="@dimen/grid_5_half"
+                android:layout_height="@dimen/grid_5_half"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/grid_3_half"
+                app:srcCompat="@drawable/ic_ifsc"
+                app:tint="@color/grey800" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ifsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_toStartOf="@+id/ifsc_clear"
+                android:layout_toEndOf="@+id/ifsc_icon"
+                android:focusable="true"
+                android:hint="@string/ifsc"
+                android:imeOptions="actionDone"
+                android:inputType="textCapCharacters"
+                android:maxLength="11"
+                android:padding="0dp"
+                android:textAppearance="?textAppearanceBody1"
+                android:textColor="@color/grey800"
+                android:textColorHint="@color/grey400"
+                android:textSize="18sp"
+                app:backgroundTint="@color/transparent"
+                app:textAllCaps="true" />
+
+            <ImageView
+                android:id="@+id/ifsc_clear"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/grid_1"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_cross"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_ifsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ifsc_container"
+            android:layout_marginStart="@dimen/grid_4"
+            android:layout_marginBottom="-36dp"
+            android:background="@color/white"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="@string/ifsc_code"
+            android:textAppearance="?textAppearanceCaption2"
+            android:translationY="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/ifsc_container"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ifsc_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ifsc_container"
+            android:layout_marginStart="@dimen/grid_2"
+            android:text="@string/invalid_ifsc"
+            android:textColor="@color/red_primary"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ifsc_container"
+            tools:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/upi_id_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_6"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="@dimen/grid_3"
+            android:background="@drawable/circular_corners_selected_background"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_payment_description"
+            tools:visibility="gone">
+
+            <ImageView
+                android:id="@+id/upi_icon"
+                android:layout_width="@dimen/grid_5_half"
+                android:layout_height="@dimen/grid_5_half"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/grid_3_half"
+                app:srcCompat="@drawable/ic_upi_icon"
+                app:tint="@color/grey800" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/upi_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/grid_1"
+                android:layout_toStartOf="@+id/iv_scan_qr"
+                android:layout_toEndOf="@+id/upi_icon"
+                android:focusable="true"
+                android:hint="@string/upi_id"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="50"
+                android:padding="0dp"
+                android:textAppearance="?textAppearanceBody1"
+                android:textColor="@color/grey800"
+                android:textColorHint="@color/grey400"
+                android:textSize="18sp"
+                app:backgroundTint="@color/transparent"
+                app:textAllCaps="true" />
+
+            <ImageView
+                android:id="@+id/iv_scan_qr"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/grid_1"
+                android:padding="@dimen/grid_1"
+                app:srcCompat="@drawable/ic_scan_qr" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_upi_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/upi_id_container"
+            android:layout_marginStart="@dimen/grid_4"
+            android:background="@color/white"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="@string/upi_id"
+            android:textAppearance="?textAppearanceCaption2"
+            android:textColor="@color/green_primary"
+            android:translationY="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/upi_id_container"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/validate_details"
+            android:layout_width="@dimen/grid_5"
+            android:layout_height="@dimen/grid_5"
+            android:layout_below="@+id/bank_account_container"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:background="@drawable/circle_background_dark_green_no_theme"
+            android:padding="@dimen/grid_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/brLeft"
+            app:layout_constraintTop_toBottomOf="@+id/bank_account_container"
+            app:srcCompat="@drawable/ic_check"
+            app:tint="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/verify_progress_bar"
+            android:layout_width="@dimen/grid_5"
+            android:layout_height="@dimen/grid_5"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:background="@drawable/circle_background_dark_green_no_theme"
+            android:indeterminateTint="@color/white"
+            android:padding="@dimen/grid_1"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/brLeft"
+            app:layout_constraintTop_toBottomOf="@+id/bank_account_container"
+            tools:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/success_check"
+            android:layout_width="@dimen/grid_6"
+            android:layout_height="@dimen/grid_6"
+            android:layout_gravity="center"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/circle_background_dark_green_no_theme"
+            android:padding="@dimen/grid_1"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_check"
+            tools:visibility="gone"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/account_added_successfully"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/success_check"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_3"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:layout_marginBottom="77dp"
+            android:gravity="center"
+            android:text="@string/linked_successfully"
+            android:textAppearance="?textAppearanceHeadline5"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/success_check"
+            tools:text="Bank Account Added Successfully Hurray"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/confirm_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_3"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textAppearance="?textAppearanceHeadline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Confirm Bank Details"
+            tools:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/payment_mode_icon"
+            android:layout_width="@dimen/grid_7"
+            android:layout_height="@dimen/grid_7"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circular_green_lite_filled_background_no_stroke"
+            android:padding="@dimen/grid_3_half"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_details"
+            app:srcCompat="@drawable/ic_account_balance_bank"
+            tools:visibility="gone"
+            app:tint="@color/green_primary" />
+
+        <TextView
+            android:id="@+id/merchant_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textAppearance="?textAppearanceSubtitle1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/payment_mode_icon"
+            tools:text="Punna Jagadeesh Babu"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/bank_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textAppearance="?textAppearanceBody1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/merchant_name"
+            tools:text="054101507917"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ifsc_or_upi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textAppearance="?textAppearanceCaption1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bank_account"
+            tools:text="ICICI Bank, Hyderabad"
+            tools:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/check_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            app:layout_constraintStart_toEndOf="@+id/ifsc_or_upi"
+            app:layout_constraintTop_toTopOf="@+id/ifsc_or_upi"
+            app:srcCompat="@drawable/ic_success_green"
+            tools:visibility="gone" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/grid_3"
+            android:background="@color/grey300"
+            app:layout_constraintTop_toBottomOf="@+id/ifsc_or_upi"
+            tools:visibility="gone" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/grid_2"
+            android:layout_marginTop="@dimen/grid_2"
+            android:layout_marginEnd="@dimen/grid_1"
+            android:layout_marginBottom="@dimen/grid_2"
+            android:background="@drawable/circle_stroke_grey_1dp"
+            android:gravity="center"
+            android:text="@string/change"
+            android:textAllCaps="false"
+            android:textAppearance="?textAppearanceButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:text="Change"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/grid_1"
+            android:layout_marginTop="@dimen/grid_2"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:layout_marginBottom="@dimen/grid_2"
+            android:background="@drawable/circle_background_dark_green_no_theme"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textAppearance="?textAppearanceButton"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/vertical_guideline"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            tools:text="Confirm"
+            tools:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/confirm"
+            app:layout_constraintEnd_toEndOf="@+id/confirm"
+            app:layout_constraintStart_toStartOf="@+id/confirm"
+            app:layout_constraintTop_toTopOf="@+id/confirm"
+            tools:visibility="gone" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/brLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="right"
+            app:constraint_referenced_ids="upi_id_container,bank_account_container"/>
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/confirm_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="merchant_name,confirm,change,divider,confirm_details,vertical_guideline,check_icon,payment_mode_icon,ifsc_or_upi"
+            tools:visibility="gone" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/success_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="account_added_successfully,success_check"
+            tools:visibility="gone" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/bank_account_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tv_account_number, tv_ifsc, bank_account_container, ifsc_container"
+            tools:visibility="gone" />
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/upi_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="upi_id_container, tv_upi_id"
+            tools:visibility="gone" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/add_method_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tv_add_payment_description, tv_switch_payment_mode, view_separator, tv_add_payment_title, validate_details"
+            tools:visibility="gone" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</in.okcredit.shared.performance.layout_perf.CoordinatorLayoutTracker>

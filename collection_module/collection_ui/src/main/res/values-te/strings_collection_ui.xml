@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_send_reminder"><![CDATA[QR మరియు ఆన్‌లైన్ చెల్లింపు లింక్‌తో Whatsappలో రిమైండర్ పంపండి]]></string>
+    <string name="title_payment_options">కస్టమర్ వివిధ రకాల చెల్లింపు ఎంపికల నుండి చెల్లించడానికి ఎంచుకోవచ్చు</string>
+    <string name="title_auto_ledger">విజయవంతమైన చెల్లింపుపై ఆటోమేటిక్ లెడ్జర్ ఎంట్రీని చూడండి</string>
+</resources>

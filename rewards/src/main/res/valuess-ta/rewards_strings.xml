@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">மெனுவிலிருந்து உங்கள் வெகுமதிகளைப் பெற உங்கள் வங்கி கணக்கை சேர்க்கவும்</string>
+    <string name="you_won_feature">நீங்கள்%1$s வென்றீர்கள்</string>
+    <string name="visit_feature">%1$s-ஐ பார்க்க</string>
+    <string name="claim_in_progress">செயலாக்குகிறது… தயவுசெய்து காத்திருங்கள்</string>
+    <string name="scratch_view_hint">வெகுமதியைக் காண ஸ்கிராட்ச் செய்யவும்</string>
+    <string name="enter_bank_details_description">இந்த கேஷ்பேக்கை பெற வங்கிக் கணக்கு விவரங்களை பதிவிடவும்.</string>
+    <string name="please_solve_this_issue">இந்த சிக்கலை சரிசெய்யவும்</string>
+    <string name="earned_due_to_activation">பரிவர்த்தனைகளைச் சேர்த்ததற்காக சம்பாதித்தது.</string>
+    <string name="better_luck_next_time">அடுத்த முறை வெல்ல வாழ்த்துக்கள்</string>
+    <string name="something_went_wrong_in_claiming_rewards">மன்னிக்கவும், நாங்கள் தொழில்நுட்ப சிக்கலை எதிர்கொள்கிறோம். சிறிது நேரம் கழித்து மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="congratulations_tell_them_add_bank_details">வாழ்த்துக்கள்!!! வெகுமதி பெற வங்கி கணக்கை அமைக்கவும்.</string>
+    <string name="reward_on_hold">நிறுத்தி வைக்கப்பட்ட வெகுமதி</string>
+    <string name="error_budged_limit_exceeded">தொழில்நுட்ப சிக்கல் காரணமாக உங்கள் வெகுமதி நிறுத்தப்பட்டுள்ளது. நாங்கள் விரைவில் சிக்கலை தீர்ப்போம். 3 நாட்களில் மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="you_won_10">you won 10</string>
+    <string name="hurray">சபாஷ்!</string>
+    <string name="oops">அடடா!</string>
+    <string name="rewarded_on_06_nov_02_38pm">06 Nov, 02:38pm -க்கு கிடைத்த வெகுமதி</string>
+    <string name="earned_for_adding_transactions_records">பரிவர்த்தனைகளைச் சேர்த்ததற்காக சம்பாதித்தது.</string>
+    <string name="setup_bank_account_to_get_reward">வெகுமதி பெற வங்கி கணக்கை அமைக்கவும்.</string>
+    <string name="step_1_how_does_it_works_roa">வெவ்வேறு நாட்களில், வாடிக்கையாளர்கள் மற்றும் குறைந்தபட்சம் 2 பரிவர்த்தனைகளை சேர்க்கவும்.</string>
+    <string name="step_2_how_does_it_works_roa">உங்கள் பரிசுகள் வெகுமதி பிரிவில் காண்பிக்கப்படும்.</string>
+    <string name="error_description_bank_valid">இந்த வங்கி கணக்கு அல்லது UPI ஏற்கனவே வேறு பயனரால் பயன்படுத்தப்படுகிறது. தயவுசெய்து சரியான விவரங்களைச் சமர்ப்பிக்கவும் அல்லது மற்றொரு கணக்கைப் பயன்படுத்தவும்.</string>
+    <string name="upi_inactive_error_msg">உங்கள் வங்கி கணக்கு இப்போது செயலில் இல்லை. தயவுசெய்து மற்றொரு கணக்கைப் பயன்படுத்தவும் அல்லது உங்கள் கணக்கை மீண்டும் ஆக்ட்டிவேட் செய்யவும்.</string>
+    <string name="payout_daily_limit_reached_error_msg">வெகுமதி உரிமைகோரலுக்கான இன்றைய வரம்பை நீங்கள் மீறிவிட்டீர்கள். மீண்டும் நாளை முயற்சிக்கவும்.</string>
+    <string name="reward_update">வெகுமதி அப்டேட்</string>
+    <string name="please_try_again_later">தயவுசெய்து பின்னர் முயற்சிக்கவும்</string>
+    <string name="payment_update">பேமெண்ட் அப்டேட்</string>
+    <string name="close">முடவும்</string>
+    <string name="processing_state">செயலாக்குகிறது…</string>
+    <string name="bank_service_unavail">வங்கி சேவை கிடைக்கவில்லை</string>
+    <string name="bank_service_unavil_error_msg">பேமெண்ட் கோரிக்கையை உங்கள் வங்கி தற்போது செயல்படுத்தவில்லை. சில மணிநேரங்களுக்குப் பிறகு மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="we_are_processing_your_reward">உங்கள் வெகுமதியை நாங்கள் செயல்படுத்துகிறோம். 3 நாட்களுக்குப் பின் மீண்டும் சரிபார்க்கவும்.</string>
+    <string name="edit_bank_details">வங்கி விவரங்களை மாற்று</string>
+    <string name="please_try_again">தயவுசெய்து மீண்டும் முயற்சிக்கவும்</string>
+</resources>

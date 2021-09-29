@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="payable_amount">Payable Amount</string>
+    <string name="please_check_or_edit_final_payable_amount">Please check or edit final payable amount</string>
+    <string name="rupee_text">₹</string>
+    <string name="juspay_pay_securely">Pay Securely</string>
+    <string name="juspay_enter_amount_to_pay">Enter amount to pay</string>
+    <string name="juspay_payment_successful">Payment Successful</string>
+    <string name="juspay_no_internet_connection">No internet connection</string>
+    <string name="juspay_something_went_wrong">Something went wrong Please try again</string>
+    <string name="juspay_please_fill_correct_amount">Please fill correct amount</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_8">
+
+    <LinearLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/handler_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/circle_shape_grey_filled_24"
+            android:padding="@dimen/spacing_8"
+            android:src="@drawable/ic_graph"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/notification_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/spacing_8">
+
+            <TextView
+                android:id="@+id/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daily_report"
+                android:textAppearance="@style/TextAppearance.Compat.Notification.Title" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

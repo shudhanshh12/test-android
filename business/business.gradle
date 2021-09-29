@@ -1,0 +1,143 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply plugin: 'kotlin-android-extensions'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.staging.okcredit.in/\""
+            buildConfigField "String", 'MERCHANT_BASE_URL', "\"https://aui.staging.okcredit.in/\""
+            buildConfigField "String", 'IDENTITY_BASE_URL', "\"https://identity.staging.okcredit.in/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.alpha.okcredit.in/\""
+            buildConfigField "String", 'MERCHANT_BASE_URL', "\"https://aui.alpha.okcredit.in/\""
+            buildConfigField "String", 'IDENTITY_BASE_URL', "\"https://identity.alpha.okcredit.in/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.okcredit.in/\""
+            buildConfigField "String", 'MERCHANT_BASE_URL', "\"https://aui.okcredit.in/\""
+            buildConfigField "String", 'IDENTITY_BASE_URL', "\"https://identity.okcredit.in/\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main.res.srcDirs = ['src/main/res-merchant']
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+}
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':shared')
+    implementation project(':auth')
+    implementation project(':analytics')
+    implementation project(':fileupload')
+
+    implementation project(':ab'), { exclude group: 'com.google.guava', module: 'listenablefuture' }
+    implementation project(':business:contract')
+    implementation project(':referral:contract')
+    implementation project(':collection_module:contract')
+    implementation project(':app:app_contract')
+    implementation project(':camera:camera_contract')
+
+    implementation project(':feature_help:ui')
+    implementation project(':feature_help:sdk')
+    implementation project(':feature_help:contract')
+    implementation project(':individual:contract')
+    implementation project(':frontend:contract')
+    implementation project(':backend:contract')
+    implementation project(':supplier:contract')
+    implementation project(':account_chat:account_chat_contract')
+    implementation project(':voice_first:contract')
+
+    implementation androidX.appcompact
+    implementation androidX.ktx
+    implementation androidX.constraintLayout
+
+    implementation arch.lifecycleKtx
+
+    implementation rx.java
+    implementation rx.android
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.gsonConverter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation utility.kotlin
+    implementation utility.timber
+    implementation utility.jodaTime
+    implementation utility.trueTime
+    implementation utility.guava
+    implementation arch.roomKtx
+
+    implementation arch.room
+    implementation arch.roomRx
+    kapt arch.roomAnnotationProcessor
+    implementation arch.roomKtx
+
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+
+    implementation imageDeps.belvedereImagePicker
+    implementation imageDeps.imageCrop
+    implementation imageDeps.glide
+    implementation imageDeps.glideCompiler
+
+    implementation view.textDrawable
+
+    // Unit testing
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+
+}

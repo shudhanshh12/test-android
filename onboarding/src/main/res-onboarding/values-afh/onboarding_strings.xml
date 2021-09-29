@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okcredit">OkCredit</string>
+    <string name="enter_otp">OTP enter karein</string>
+    <string name="resend_otp"><u>OTP resend karein</u></string>
+    <string name="otp_incorrect">Galat OTP</string>
+    <string name="otp_expired">OTP expire hua</string>
+    <string name="send_otp_success">OTP bhejna safal</string>
+    <string name="send_otp_failure_no_internet">OTP nahi bhej sakein, please apna Internet connection check karein</string>
+    <string name="send_otp_failure">OTP nahi bhej sakein, please phir se try karein</string>
+    <string name="otp_verification_failure">OTP verify nahi kar sakein. please phir se try karein</string>
+    <string name="otp_sent_message">OTP ke saath humne ek SMS aapke %1$s is phone number par bheja hai</string>
+    <string name="credibility_text"> 50cr+ business pehle hi apne naam se register kar chuke hain</string>
+    <string name="register_user_agreement">Shuru rakh kar aap hamaari <![CDATA[<a href="https://www.okcredit.in/terms">Seva ki shartein</a> aur <a href="https://www.okcredit.in/privacy">Guptata Neeti</a>]]> ko manyata de rahe hain</string>
+    <string name="credibility_business_name_1">In the last %s, %s+ businesses have registered with their names</string>
+    <string name="credibility_business_name_2">%s businesses from %s are on OkCredit now</string>
+    <string name="credibility_business_name_3">Last %s, %s+ businesses from %s have registered on OkCredit</string>
+    <string name="credibility_business_name_4_5_6_7_8">%s business pehle hi apne naam se register kar chuke hain</string>
+    <string name="credibility_business_name_9_control">5 crore + business pehle hi apne naam se register kar chuke hain</string>
+    <string name="credibility_add_customer_1">In the last %s, %s+ customers have been added by businesses</string>
+    <string name="credibility_add_customer_2">%s+ customers\' credit have been added from %s</string>
+    <string name="credibility_add_customer_3">%s+ customers from %s have been added on OkCredit last %s</string>
+    <string name="credibility_add_customer_4">%s+ worth of transactions have been added from %s</string>
+    <string name="credibility_add_customer_5">%s+ worth of transactions have been added by %s from %s</string>
+    <string name="credibility_add_customer_6">%s+ customers have been added by %s from %s</string>
+    <string name="credibility_add_customer_7">%s+ worth of transactions have been added by %s in the last %s</string>
+    <string name="credibility_add_customer_8">%s+ customers have been added by %s in the last %s</string>
+    <string name="credibility_add_customer_9_control">Dukaandaron pichhle mahine 1 crore+ customers ko OkCredit par jod diya hai</string>
+    <string name="credibility_monthly">mahina</string>
+    <string name="trusted_by_businesses">50,00,000+ Businesses ka Bharosa</string>
+    <string name="whatsapp_verification_message">Mujhe mera mobile number verify karna hai</string>
+</resources>

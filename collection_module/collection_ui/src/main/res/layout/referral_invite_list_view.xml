@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="72dp">
+
+    <ImageView
+        android:id="@+id/targetedUserImage"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account_125dp" />
+
+    <TextView
+        android:id="@+id/refereeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle3"
+        app:layout_constraintBottom_toTopOf="@id/earnPrice"
+        app:layout_constraintEnd_toStartOf="@+id/inviteBtn"
+        app:layout_constraintStart_toEndOf="@+id/targetedUserImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tool:text="Rajesh Sahu" />
+
+    <TextView
+        android:id="@+id/earnPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:drawablePadding="4dp"
+        android:layout_marginEnd="2dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textAppearance="@style/OKC.TextAppearance.Body3"
+        android:textColor="@color/indigo_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/refereeName"
+        app:layout_constraintTop_toBottomOf="@id/refereeName"
+        app:layout_constraintEnd_toStartOf="@id/inviteBtn"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintHorizontal_bias="0"
+        tool:text="Earn $300" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/inviteBtn"
+        style="@style/OKC.Button.Dark.Outline.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/invite"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_whatsapp"
+        app:iconSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/grey50" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

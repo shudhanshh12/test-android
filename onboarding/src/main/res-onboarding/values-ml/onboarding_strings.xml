@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okcredit">OkCredit</string>
+    <string name="enter_otp">OTP നൽകൂ</string>
+    <string name="resend_otp"><u>OTP വീണ്ടും അയക്കാം</u></string>
+    <string name="otp_incorrect">OTP തെറ്റാണ്</string>
+    <string name="otp_expired">OTP സമയം കഴിഞ്ഞു</string>
+    <string name="send_otp_success">OTP വിജയകരമായി അയച്ചു</string>
+    <string name="send_otp_failure_no_internet">OTP അയക്കാനായില്ല, ദയവായി നിങ്ങളുടെ ഇന്റർനെറ്റ് കണക്ഷൻ പരിശോധിക്കുക</string>
+    <string name="send_otp_failure">OTP അയക്കാനായില്ല, ദയവായി വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="otp_verification_failure">OTP പരിശോധിക്കാനായില്ല, ദയവായി വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="otp_sent_message">OTP അടങ്ങിയ SMS നിങ്ങളുടെ ഫോൺ നമ്പറായ %1$sൽ ഉടനെ ലഭിക്കുന്നതായിരിക്കും</string>
+    <string name="credibility_text"> 50 കോടിയിലധികം ബിസിനസുകൾ അവരുടെ പേരിൽ രജിസ്റ്റർ ചെയ്ത് കഴിഞ്ഞിരിക്കുന്നു</string>
+    <string name="register_user_agreement">തുടരുന്നതിലൂടെ നിങ്ങൾ ഞങ്ങളുടെ <![CDATA[<a href="https://www.okcredit.in/terms">വ്യവസ്ഥകളും</a>, <a href="https://www.okcredit.in/privacy">സ്വകാര്യതാനയവും</a>]]> അംഗീകരിക്കുന്നു</string>
+    <string name="credibility_business_name_1">കഴിഞ്ഞ %sക്കകം, %s+ ബിസിനസുകൾ അവുടെ പേരിൽ രജിസ്റ്റർ ചെയ്തിരിക്കുന്നു</string>
+    <string name="credibility_business_name_2">%s ബിസിനസുകൾ %s നിന്നും OkCredit ഉപയോഗിക്കുന്നു</string>
+    <string name="credibility_business_name_3">അവസാന %sൽ, %s+ ബിസിനസുകൾ %s നിന്നും OkCreditൽ രജിസ്റ്റർ ചെയ്തിരിക്കുന്നു</string>
+    <string name="credibility_business_name_4_5_6_7_8">%s ബിസിനസുകൾ അവരുടെ പേരിൽ രജിസ്റ്റർ ചെയ്ത് കഴിഞ്ഞിരിക്കുന്നു</string>
+    <string name="credibility_business_name_9_control">50 കോടിയിലധികം ബിസിനസുകൾ അവരുടെ പേരിൽ രജിസ്റ്റർ ചെയ്ത് കഴിഞ്ഞിരിക്കുന്നു</string>
+    <string name="credibility_add_customer_1">അവസാന %sൽ, %s+ കസ്റ്റമേഴ്സിനെ ബിസിനസുകൾ ചേർത്തിരിക്കുന്നു</string>
+    <string name="credibility_add_customer_2">%s+ കസ്റ്റമേഴ്സിന്റെ കടം വിവരങ്ങൾ %s നിന്നും ചേർത്തിരിക്കുന്നു</string>
+    <string name="credibility_add_customer_3">%s+ കസ്റ്റമേഴ്സ് %sൽ നിന്നും OkCreditൽ %s നിന്നും ചേർത്തിരിക്കുന്നു</string>
+    <string name="credibility_add_customer_4">%s+ തുകയുടെ ഇടപാടുകൾ ഇതിനോടകം %sൽ നിന്നും ചേർക്കപ്പെട്ടിരിക്കുന്നു</string>
+    <string name="credibility_add_customer_5">%s+ തുകയുടെ ഇടപാടുകൾ ഇതിനോടകം %s %sൽ നിന്നും ചേർക്കപ്പെട്ടിരിക്കുന്നു</string>
+    <string name="credibility_add_customer_6">%s+ കസ്റ്റമേഴ്‌സിനെ ഇതിനോടകം %s %sൽ നിന്നും ചേർക്കപ്പെട്ടിരിക്കുന്നു</string>
+    <string name="credibility_add_customer_7">%s+ തുകയുടെ ഇടപാടുകൾ ഇതിനോടകം %s കഴിഞ്ഞ %sക്കകം ചേർത്തിരിക്കുന്നു</string>
+    <string name="credibility_add_customer_8">%s+ കസ്റ്റമേഴ്സിനെ %s കഴിഞ്ഞ %sക്കകം ചേർത്തിരിക്കുന്നു</string>
+    <string name="credibility_add_customer_9_control">കഴിഞ്ഞ മാസം 1 കോടിയിലധികം കസ്റ്റമേഴ്സ് OkCreditൽ ചേർക്കപ്പെട്ടിരിക്കുന്നു</string>
+    <string name="credibility_monthly">മാസം</string>
+    <string name="trusted_by_businesses">50,00,000+ വ്യാപാരികളുടെ വിശ്വാസം</string>
+    <string name="whatsapp_verification_message">എനിക്ക് എന്റെ മൊബൈൽ നമ്പർ വെരിഫൈ ചെയ്യണം</string>
+</resources>

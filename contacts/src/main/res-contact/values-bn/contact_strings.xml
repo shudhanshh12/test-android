@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="save_contact">কন্টাক্ট সেভ করুন</string>
+    <string name="contact_saved">কন্টাক্ট সেভ হয়েছে</string>
+    <string name="save_contact_info">যে কোনও সময় এবং যে কোনও সমস্যার জন্য WhatsApp এ আমাদের কাছে যোগাযোগ করতে এই যোগাযোগ নম্বরটি সেভ করুন।</string>
+</resources>

@@ -1,0 +1,3040 @@
++--- androidx.databinding:viewbinding:4.1.3
+|    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
++--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0
+|    +--- org.jetbrains.kotlin:kotlin-stdlib:1.5.0
+|    |    +--- org.jetbrains:annotations:13.0 -> 16.0.3
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.0
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.5.0 (*)
++--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0
+|    \--- org.jetbrains.kotlin:kotlin-stdlib:1.5.0 (*)
++--- project :base
+|    +--- com.google.code.gson:gson:2.8.6
+|    +--- joda-time:joda-time:2.10.10
+|    +--- com.github.instacart.truetime-android:library-extension-rx:3.4
+|    |    +--- io.reactivex.rxjava2:rxjava:2.1.14 -> 2.2.19
+|    |    |    \--- org.reactivestreams:reactive-streams:1.0.3
+|    |    \--- com.github.instacart.truetime-android:library:3.4
+|    +--- com.jcminarro:Philology:2.1.0
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.50 -> 1.5.0 (*)
+|    |    +--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0
+|    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- androidx.core:core:1.5.0
+|    |    |    |    +--- androidx.annotation:annotation:1.2.0
+|    |    |    |    +--- androidx.lifecycle:lifecycle-runtime:2.0.0 -> 2.3.1
+|    |    |    |    |    +--- androidx.arch.core:core-runtime:2.1.0
+|    |    |    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    |    \--- androidx.arch.core:core-common:2.1.0
+|    |    |    |    |    |         \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    +--- androidx.lifecycle:lifecycle-common:2.3.1
+|    |    |    |    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    +--- androidx.arch.core:core-common:2.1.0 (*)
+|    |    |    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- androidx.versionedparcelable:versionedparcelable:1.1.1
+|    |    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    \--- androidx.collection:collection:1.0.0 -> 1.1.0
+|    |    |    |    |         \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    \--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    +--- androidx.cursoradapter:cursoradapter:1.0.0
+|    |    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    +--- androidx.activity:activity:1.2.3
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.lifecycle:lifecycle-runtime:2.3.1 (*)
+|    |    |    |    +--- androidx.lifecycle:lifecycle-viewmodel:2.3.1
+|    |    |    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- androidx.savedstate:savedstate:1.1.0
+|    |    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    +--- androidx.arch.core:core-common:2.0.1 -> 2.1.0 (*)
+|    |    |    |    |    \--- androidx.lifecycle:lifecycle-common:2.0.0 -> 2.3.1 (*)
+|    |    |    |    +--- androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1
+|    |    |    |    |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    |    +--- androidx.savedstate:savedstate:1.1.0 (*)
+|    |    |    |    |    +--- androidx.lifecycle:lifecycle-livedata-core:2.3.1
+|    |    |    |    |    |    +--- androidx.arch.core:core-common:2.1.0 (*)
+|    |    |    |    |    |    +--- androidx.arch.core:core-runtime:2.1.0 (*)
+|    |    |    |    |    |    \--- androidx.lifecycle:lifecycle-common:2.3.1 (*)
+|    |    |    |    |    \--- androidx.lifecycle:lifecycle-viewmodel:2.3.1 (*)
+|    |    |    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    |    \--- androidx.tracing:tracing:1.0.0
+|    |    |    |         \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- androidx.fragment:fragment:1.3.4
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- androidx.core:core:1.2.0 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.collection:collection:1.1.0 (*)
+|    |    |    |    +--- androidx.viewpager:viewpager:1.0.0
+|    |    |    |    |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |    |    |    |    \--- androidx.customview:customview:1.0.0 -> 1.1.0
+|    |    |    |    |         +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |         +--- androidx.core:core:1.3.0 -> 1.5.0 (*)
+|    |    |    |    |         \--- androidx.collection:collection:1.1.0 (*)
+|    |    |    |    +--- androidx.loader:loader:1.0.0
+|    |    |    |    |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |    |    |    |    +--- androidx.lifecycle:lifecycle-livedata:2.0.0 -> 2.2.0
+|    |    |    |    |    |    +--- androidx.arch.core:core-runtime:2.1.0 (*)
+|    |    |    |    |    |    +--- androidx.lifecycle:lifecycle-livedata-core:2.2.0 -> 2.3.1 (*)
+|    |    |    |    |    |    \--- androidx.arch.core:core-common:2.1.0 (*)
+|    |    |    |    |    \--- androidx.lifecycle:lifecycle-viewmodel:2.0.0 -> 2.3.1 (*)
+|    |    |    |    +--- androidx.activity:activity:1.2.2 -> 1.2.3 (*)
+|    |    |    |    +--- androidx.lifecycle:lifecycle-livedata-core:2.3.1 (*)
+|    |    |    |    +--- androidx.lifecycle:lifecycle-viewmodel:2.3.1 (*)
+|    |    |    |    +--- androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1 (*)
+|    |    |    |    +--- androidx.savedstate:savedstate:1.1.0 (*)
+|    |    |    |    \--- androidx.annotation:annotation-experimental:1.0.0 -> 1.1.0
+|    |    |    +--- androidx.appcompat:appcompat-resources:1.3.0
+|    |    |    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- androidx.core:core:1.0.1 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.vectordrawable:vectordrawable:1.1.0
+|    |    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    |    |    |    \--- androidx.collection:collection:1.1.0 (*)
+|    |    |    |    \--- androidx.vectordrawable:vectordrawable-animated:1.1.0
+|    |    |    |         +--- androidx.vectordrawable:vectordrawable:1.1.0 (*)
+|    |    |    |         +--- androidx.interpolator:interpolator:1.0.0
+|    |    |    |         |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |         \--- androidx.collection:collection:1.1.0 (*)
+|    |    |    +--- androidx.drawerlayout:drawerlayout:1.0.0 -> 1.1.1
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- androidx.core:core:1.2.0 -> 1.5.0 (*)
+|    |    |    |    \--- androidx.customview:customview:1.1.0 (*)
+|    |    |    +--- androidx.savedstate:savedstate:1.1.0 (*)
+|    |    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime:2.3.1 (*)
+|    |    |    \--- androidx.lifecycle:lifecycle-viewmodel:2.3.1 (*)
+|    |    \--- io.github.inflationx:viewpump:2.0.3
+|    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.21 -> 1.5.0 (*)
+|    +--- io.github.inflationx:viewpump:2.0.3 (*)
+|    +--- com.jakewharton.timber:timber:4.7.1
+|    |    \--- org.jetbrains:annotations:16.0.1 -> 16.0.3
+|    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.1.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.2.6 -> 2.2.19 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.9.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.9.1
+|    |         +--- com.squareup.okio:okio:2.8.0 -> 2.10.0
+|    |         |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.4.20 -> 1.5.0 (*)
+|    |         |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.4.20 -> 1.5.0
+|    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.4.10 -> 1.5.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.0.0 -> 2.2.19 (*)
+|    |    \--- org.reactivestreams:reactive-streams:1.0.3
+|    +--- com.squareup.retrofit2:converter-gson:2.9.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
+|    +--- com.squareup.okhttp3:okhttp:4.9.1 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:4.9.1
+|    |    +--- com.squareup.okhttp3:okhttp:4.9.1 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.10 -> 1.5.0 (*)
+|    +--- com.mixpanel.android:mixpanel-android:5.9.1
+|    +--- com.clevertap.android:clevertap-android-sdk:4.1.0
+|    |    +--- androidx.appcompat:appcompat:1.2.0 -> 1.3.0 (*)
+|    |    +--- androidx.recyclerview:recyclerview:1.1.0
+|    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    |    +--- androidx.customview:customview:1.0.0 -> 1.1.0 (*)
+|    |    |    \--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    \--- com.android.installreferrer:installreferrer:2.1
+|    +--- com.appsflyer:af-android-sdk:5.2.0
+|    +--- androidx.room:room-runtime:2.3.0
+|    |    +--- androidx.room:room-common:2.3.0
+|    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    +--- androidx.sqlite:sqlite-framework:2.1.0
+|    |    |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    \--- androidx.sqlite:sqlite:2.1.0
+|    |    |         \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    +--- androidx.sqlite:sqlite:2.1.0 (*)
+|    |    +--- androidx.arch.core:core-runtime:2.0.1 -> 2.1.0 (*)
+|    |    \--- androidx.annotation:annotation-experimental:1.1.0
+|    +--- androidx.room:room-rxjava2:2.3.0
+|    |    +--- androidx.arch.core:core-runtime:2.0.1 -> 2.1.0 (*)
+|    |    +--- androidx.room:room-common:2.3.0 (*)
+|    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.2.9 -> 2.2.19 (*)
+|    +--- androidx.work:work-runtime:2.4.0
+|    |    +--- androidx.lifecycle:lifecycle-livedata:2.1.0 -> 2.2.0 (*)
+|    |    +--- androidx.room:room-runtime:2.2.5 -> 2.3.0 (*)
+|    |    +--- androidx.sqlite:sqlite:2.1.0 (*)
+|    |    +--- androidx.sqlite:sqlite-framework:2.1.0 (*)
+|    |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    \--- androidx.lifecycle:lifecycle-service:2.1.0 -> 2.2.0
+|    |         \--- androidx.lifecycle:lifecycle-runtime:2.2.0 -> 2.3.1 (*)
+|    +--- androidx.work:work-runtime-ktx:2.4.0
+|    |    +--- androidx.work:work-runtime:2.4.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.71 -> 1.5.0 (*)
+|    |    \--- org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.4 -> 1.4.1
+|    |         +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1 -> 1.5.0
+|    |         |    \--- org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.0
+|    |         |         +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |         |         \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0
+|    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.4.0 -> 1.5.0 (*)
+|    +--- androidx.work:work-rxjava2:2.4.0
+|    |    +--- androidx.work:work-runtime:2.4.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.2.9 -> 2.2.19 (*)
+|    +--- com.google.firebase:firebase-perf:19.1.1
+|    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    +--- androidx.appcompat:appcompat:1.2.0 -> 1.3.0 (*)
+|    |    +--- com.google.android.datatransport:transport-api:2.2.1
+|    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    +--- com.google.android.gms:play-services-tasks:17.1.0
+|    |    |    \--- com.google.android.gms:play-services-basement:17.3.0
+|    |    |         +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |         +--- androidx.core:core:1.2.0 -> 1.5.0 (*)
+|    |    |         \--- androidx.fragment:fragment:1.0.0 -> 1.3.4 (*)
+|    |    +--- com.google.firebase:firebase-common:19.5.0
+|    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    \--- com.google.firebase:firebase-components:16.1.0
+|    |    |         +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |         \--- com.google.firebase:firebase-annotations:16.0.0
+|    |    +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |    +--- com.google.firebase:firebase-config:20.0.2
+|    |    |    +--- com.google.android.gms:play-services-tasks:17.0.2 -> 17.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-abt:20.0.0
+|    |    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-common:19.3.1 -> 19.5.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-components:16.0.0 -> 16.1.0 (*)
+|    |    |    |    \--- com.google.firebase:firebase-measurement-connector:18.0.0
+|    |    |    |         \--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    +--- com.google.firebase:firebase-common:19.4.0 -> 19.5.0 (*)
+|    |    |    +--- com.google.firebase:firebase-components:16.0.0 -> 16.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-installations:16.3.4 -> 16.3.5
+|    |    |    |    +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |    |    |    \--- com.google.firebase:firebase-installations-interop:16.0.1
+|    |    |    |         +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    |         \--- com.google.firebase:firebase-annotations:16.0.0
+|    |    |    +--- com.google.firebase:firebase-installations-interop:16.0.0 -> 16.0.1 (*)
+|    |    |    \--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
+|    |    +--- com.google.firebase:firebase-datatransport:17.0.11
+|    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- com.google.android.datatransport:transport-api:2.2.1 (*)
+|    |    |    +--- com.google.android.datatransport:transport-backend-cct:2.3.3
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- com.google.android.datatransport:transport-api:2.2.1 (*)
+|    |    |    |    +--- com.google.android.datatransport:transport-runtime:2.2.5 -> 2.2.6
+|    |    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    +--- com.google.android.datatransport:transport-api:2.2.1 (*)
+|    |    |    |    |    \--- javax.inject:javax.inject:1
+|    |    |    |    +--- com.google.firebase:firebase-encoders:16.1.0
+|    |    |    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    \--- com.google.firebase:firebase-encoders-json:17.1.0
+|    |    |    |         +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |         \--- com.google.firebase:firebase-encoders:16.1.0 (*)
+|    |    |    +--- com.google.android.datatransport:transport-runtime:2.2.6 (*)
+|    |    |    +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |    |    \--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |    +--- com.google.firebase:firebase-installations:16.3.5 (*)
+|    |    +--- com.google.firebase:firebase-installations-interop:16.0.1 (*)
+|    |    +--- com.google.firebase:protolite-well-known-types:17.1.1
+|    |    |    \--- com.google.protobuf:protobuf-javalite:3.14.0
+|    |    +--- com.google.protobuf:protobuf-javalite:3.14.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.9.1 (*)
+|    +--- com.google.android.gms:play-services-auth:17.0.0
+|    |    +--- androidx.fragment:fragment:1.0.0 -> 1.3.4 (*)
+|    |    +--- androidx.loader:loader:1.0.0 (*)
+|    |    +--- com.google.android.gms:play-services-auth-api-phone:17.0.0 -> 17.4.0
+|    |    |    +--- com.google.android.gms:play-services-base:17.1.0
+|    |    |    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.fragment:fragment:1.0.0 -> 1.3.4 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    |    \--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-basement:17.1.0 -> 17.3.0 (*)
+|    |    |    \--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    +--- com.google.android.gms:play-services-auth-base:17.0.0
+|    |    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-base:17.0.0 -> 17.1.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    \--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    +--- com.google.android.gms:play-services-base:17.0.0 -> 17.1.0 (*)
+|    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    +--- com.google.android.gms:play-services-location:17.0.0
+|    |    +--- com.google.android.gms:play-services-base:17.0.0 -> 17.1.0 (*)
+|    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    +--- com.google.android.gms:play-services-places-placereport:17.0.0
+|    |    |    \--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    +--- com.google.android.play:core:1.10.0
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.5.0
+|    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.5.0
+|    |    |    +--- org.reactivestreams:reactive-streams:1.0.2 -> 1.0.3
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.8 -> 2.2.19 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- commons-io:commons-io:2.6
+|    +--- org.apache.commons:commons-jcs-core:2.2.1
+|    +--- com.bugfender.sdk:android:2.0.0
+|    +--- androidx.gridlayout:gridlayout:1.0.0
+|    |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |    \--- androidx.legacy:legacy-support-core-ui:1.0.0
+|    |         +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |         +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |         +--- androidx.legacy:legacy-support-core-utils:1.0.0
+|    |         |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |         |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |         |    +--- androidx.documentfile:documentfile:1.0.0
+|    |         |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |         |    +--- androidx.loader:loader:1.0.0 (*)
+|    |         |    +--- androidx.localbroadcastmanager:localbroadcastmanager:1.0.0
+|    |         |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |         |    \--- androidx.print:print:1.0.0
+|    |         |         \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |         +--- androidx.customview:customview:1.0.0 -> 1.1.0 (*)
+|    |         +--- androidx.viewpager:viewpager:1.0.0 (*)
+|    |         +--- androidx.coordinatorlayout:coordinatorlayout:1.0.0 -> 1.1.0
+|    |         |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |         |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |         |    +--- androidx.customview:customview:1.0.0 -> 1.1.0 (*)
+|    |         |    \--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |         +--- androidx.drawerlayout:drawerlayout:1.0.0 -> 1.1.1 (*)
+|    |         +--- androidx.slidingpanelayout:slidingpanelayout:1.0.0
+|    |         |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |         |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |         |    \--- androidx.customview:customview:1.0.0 -> 1.1.0 (*)
+|    |         +--- androidx.interpolator:interpolator:1.0.0 (*)
+|    |         +--- androidx.swiperefreshlayout:swiperefreshlayout:1.0.0
+|    |         |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |         |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |         |    \--- androidx.interpolator:interpolator:1.0.0 (*)
+|    |         +--- androidx.asynclayoutinflater:asynclayoutinflater:1.0.0
+|    |         |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |         |    \--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |         \--- androidx.cursoradapter:cursoradapter:1.0.0 (*)
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :resources
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- com.google.android.material:material:1.2.1
+|    |    |    +--- androidx.annotation:annotation:1.0.1 -> 1.2.0
+|    |    |    +--- androidx.appcompat:appcompat:1.1.0 -> 1.3.0 (*)
+|    |    |    +--- androidx.cardview:cardview:1.0.0
+|    |    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    +--- androidx.coordinatorlayout:coordinatorlayout:1.1.0 (*)
+|    |    |    +--- androidx.core:core:1.2.0 -> 1.5.0 (*)
+|    |    |    +--- androidx.annotation:annotation-experimental:1.0.0 -> 1.1.0
+|    |    |    +--- androidx.fragment:fragment:1.0.0 -> 1.3.4 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime:2.0.0 -> 2.3.1 (*)
+|    |    |    +--- androidx.recyclerview:recyclerview:1.0.0 -> 1.1.0 (*)
+|    |    |    +--- androidx.transition:transition:1.2.0 -> 1.3.0
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.collection:collection:1.1.0 (*)
+|    |    |    |    \--- androidx.lifecycle:lifecycle-runtime:2.2.0 -> 2.3.1 (*)
+|    |    |    +--- androidx.vectordrawable:vectordrawable:1.1.0 (*)
+|    |    |    \--- androidx.viewpager2:viewpager2:1.0.0
+|    |    |         +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |         +--- androidx.fragment:fragment:1.1.0 -> 1.3.4 (*)
+|    |    |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
+|    |    |         +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    |         \--- androidx.collection:collection:1.1.0 (*)
+|    |    +--- com.github.sephiroth74:android-target-tooltip:v2.0.4
+|    |    |    +--- androidx.appcompat:appcompat:1.0.2 -> 1.3.0 (*)
+|    |    |    +--- androidx.core:core-ktx:1.0.1 -> 1.5.0
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.4.31 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    \--- androidx.core:core:1.5.0 (*)
+|    |    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.20 -> 1.5.0 (*)
+|    |    +--- com.airbnb.android:epoxy:4.1.0
+|    |    |    +--- com.airbnb.android:epoxy-annotations:4.1.0
+|    |    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.4.10 -> 1.5.0 (*)
+|    |    |    +--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    |    |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    +--- androidx.recyclerview:recyclerview:1.1.0 (*)
+|    |    |    +--- com.google.android.material:material:1.0.0 -> 1.2.1 (*)
+|    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10 -> 1.5.0 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4
+|    |    |    +--- androidx.appcompat:appcompat:1.2.0 -> 1.3.0 (*)
+|    |    |    +--- androidx.core:core:1.3.1 -> 1.5.0 (*)
+|    |    |    \--- androidx.constraintlayout:constraintlayout-solver:2.0.4
+|    |    \--- androidx.constraintlayout:constraintlayout-solver:2.0.4
+|    +--- project :secure_keys
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- androidx.navigation:navigation-fragment:2.3.5
+|    |    +--- androidx.fragment:fragment:1.2.4 -> 1.3.4 (*)
+|    |    \--- androidx.navigation:navigation-runtime:2.3.5
+|    |         +--- androidx.navigation:navigation-common:2.3.5
+|    |         |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |         |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |         |    \--- androidx.collection:collection:1.1.0 (*)
+|    |         +--- androidx.activity:activity:1.1.0 -> 1.2.3 (*)
+|    |         +--- androidx.lifecycle:lifecycle-viewmodel:2.2.0 -> 2.3.1 (*)
+|    |         +--- androidx.savedstate:savedstate:1.0.0 -> 1.1.0 (*)
+|    |         \--- androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0 -> 2.3.1 (*)
+|    +--- androidx.navigation:navigation-fragment-ktx:2.3.5
+|    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    +--- androidx.navigation:navigation-runtime-ktx:2.3.5
+|    |    |    +--- androidx.navigation:navigation-runtime:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-common-ktx:2.3.5
+|    |    |    |    +--- androidx.navigation:navigation-common:2.3.5 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.71 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.core:core-ktx:1.1.0 -> 1.5.0 (*)
+|    |    |    |    \--- androidx.collection:collection:1.1.0 (*)
+|    |    |    +--- androidx.activity:activity-ktx:1.1.0 -> 1.2.1
+|    |    |    |    +--- androidx.activity:activity:1.2.1 -> 1.2.3 (*)
+|    |    |    |    +--- androidx.core:core-ktx:1.1.0 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.3.0
+|    |    |    |    |    +--- androidx.lifecycle:lifecycle-runtime:2.3.0 -> 2.3.1 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.4.20 -> 1.5.0 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1 (*)
+|    |    |    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    +--- androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0
+|    |    |    |    |    +--- androidx.lifecycle:lifecycle-viewmodel:2.3.0 -> 2.3.1 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.4.20 -> 1.5.0 (*)
+|    |    |    |    |    \--- org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1 (*)
+|    |    |    |    +--- androidx.savedstate:savedstate-ktx:1.1.0
+|    |    |    |    |    +--- androidx.savedstate:savedstate:1.1.0 (*)
+|    |    |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.4.20 -> 1.5.0 (*)
+|    |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.4.20 -> 1.5.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.71 -> 1.5.0 (*)
+|    |    +--- androidx.fragment:fragment-ktx:1.2.4 -> 1.3.1
+|    |    |    +--- androidx.fragment:fragment:1.3.1 -> 1.3.4 (*)
+|    |    |    +--- androidx.activity:activity-ktx:1.2.1 (*)
+|    |    |    +--- androidx.core:core-ktx:1.1.0 -> 1.5.0 (*)
+|    |    |    +--- androidx.collection:collection-ktx:1.1.0
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.20 -> 1.5.0 (*)
+|    |    |    |    \--- androidx.collection:collection:1.1.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0
+|    |    |    |    +--- androidx.lifecycle:lifecycle-livedata-core:2.3.0 -> 2.3.1 (*)
+|    |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.4.20 -> 1.5.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0 (*)
+|    |    |    +--- androidx.savedstate:savedstate-ktx:1.1.0 (*)
+|    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.4.20 -> 1.5.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0 -> 2.3.0 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.71 -> 1.5.0 (*)
+|    +--- androidx.navigation:navigation-ui:2.3.5
+|    |    +--- androidx.navigation:navigation-runtime:2.3.5 (*)
+|    |    +--- androidx.customview:customview:1.1.0 (*)
+|    |    +--- androidx.drawerlayout:drawerlayout:1.1.1 (*)
+|    |    +--- com.google.android.material:material:1.0.0 -> 1.2.1 (*)
+|    |    \--- androidx.transition:transition:1.3.0 (*)
+|    +--- com.squareup.moshi:moshi:1.12.0
+|    |    +--- com.squareup.okio:okio:2.10.0 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.4.31 -> 1.5.0 (*)
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- com.karumi:dexter:6.2.2
+|    |    +--- androidx.appcompat:appcompat:1.0.2 -> 1.3.0 (*)
+|    |    \--- com.google.android.material:material:1.0.0 -> 1.2.1 (*)
+|    +--- androidx.lifecycle:lifecycle-common-java8:2.2.0 -> 2.3.0
+|    |    +--- androidx.lifecycle:lifecycle-common:2.3.0 -> 2.3.1 (*)
+|    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    +--- androidx.lifecycle:lifecycle-extensions:2.2.0
+|    |    +--- androidx.lifecycle:lifecycle-runtime:2.2.0 -> 2.3.1 (*)
+|    |    +--- androidx.arch.core:core-common:2.1.0 (*)
+|    |    +--- androidx.arch.core:core-runtime:2.1.0 (*)
+|    |    +--- androidx.fragment:fragment:1.2.0 -> 1.3.4 (*)
+|    |    +--- androidx.lifecycle:lifecycle-common:2.2.0 -> 2.3.1 (*)
+|    |    +--- androidx.lifecycle:lifecycle-livedata:2.2.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-process:2.2.0
+|    |    |    \--- androidx.lifecycle:lifecycle-runtime:2.2.0 -> 2.3.1 (*)
+|    |    +--- androidx.lifecycle:lifecycle-service:2.2.0 (*)
+|    |    \--- androidx.lifecycle:lifecycle-viewmodel:2.2.0 -> 2.3.1 (*)
+|    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    +--- com.google.dagger:dagger:2.36
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.google.dagger:dagger-android:2.36
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-lint-aar:2.36
+|    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.google.dagger:dagger-android-support:2.36
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-lint-aar:2.36
+|    |    +--- androidx.activity:activity:1.2.2 -> 1.2.3 (*)
+|    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    +--- androidx.appcompat:appcompat:1.2.0 -> 1.3.0 (*)
+|    |    +--- androidx.fragment:fragment:1.3.2 -> 1.3.4 (*)
+|    |    +--- androidx.lifecycle:lifecycle-common:2.3.1 (*)
+|    |    +--- androidx.lifecycle:lifecycle-viewmodel:2.3.1 (*)
+|    |    +--- androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1 (*)
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.google.firebase:firebase-analytics:18.0.3
+|    |    +--- com.google.android.gms:play-services-measurement:18.0.3
+|    |    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    +--- androidx.legacy:legacy-support-core-utils:1.0.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-ads-identifier:17.0.0
+|    |    |    |    \--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-measurement-base:18.0.3
+|    |    |    |    \--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-measurement-impl:18.0.3
+|    |    |    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-ads-identifier:17.0.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-measurement-base:18.0.3 (*)
+|    |    |    |    \--- com.google.android.gms:play-services-stats:17.0.0
+|    |    |    |         +--- androidx.legacy:legacy-support-core-utils:1.0.0 (*)
+|    |    |    |         \--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    \--- com.google.android.gms:play-services-stats:17.0.0 (*)
+|    |    +--- com.google.android.gms:play-services-measurement-api:18.0.3
+|    |    |    +--- com.google.android.gms:play-services-ads-identifier:17.0.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-measurement-base:18.0.3 (*)
+|    |    |    +--- com.google.android.gms:play-services-measurement-sdk-api:18.0.3
+|    |    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    |    \--- com.google.android.gms:play-services-measurement-base:18.0.3 (*)
+|    |    |    +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-common:19.3.0 -> 19.5.0 (*)
+|    |    |    +--- com.google.firebase:firebase-components:16.0.0 -> 16.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-installations:16.3.2 -> 16.3.5 (*)
+|    |    |    +--- com.google.firebase:firebase-installations-interop:16.0.0 -> 16.0.1 (*)
+|    |    |    \--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
+|    |    \--- com.google.android.gms:play-services-measurement-sdk:18.0.3
+|    |         +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |         +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |         +--- com.google.android.gms:play-services-measurement-base:18.0.3 (*)
+|    |         \--- com.google.android.gms:play-services-measurement-impl:18.0.3 (*)
+|    +--- com.google.firebase:firebase-messaging:21.1.0
+|    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |    +--- com.google.android.datatransport:transport-api:2.2.0 -> 2.2.1 (*)
+|    |    +--- com.google.android.datatransport:transport-backend-cct:2.3.3 (*)
+|    |    +--- com.google.android.datatransport:transport-runtime:2.2.0 -> 2.2.6 (*)
+|    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    +--- com.google.android.gms:play-services-cloud-messaging:16.0.0
+|    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    \--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    +--- com.google.android.gms:play-services-stats:17.0.0 (*)
+|    |    +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |    +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |    +--- com.google.firebase:firebase-datatransport:17.0.10 -> 17.0.11 (*)
+|    |    +--- com.google.firebase:firebase-encoders:16.1.0 (*)
+|    |    +--- com.google.firebase:firebase-encoders-json:17.1.0 (*)
+|    |    +--- com.google.firebase:firebase-iid:21.1.0
+|    |    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |    |    +--- androidx.legacy:legacy-support-core-utils:1.0.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-cloud-messaging:16.0.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-stats:17.0.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |    |    +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-iid-interop:17.1.0
+|    |    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    |    \--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-installations:16.3.5 (*)
+|    |    |    \--- com.google.firebase:firebase-installations-interop:16.0.1 (*)
+|    |    +--- com.google.firebase:firebase-iid-interop:17.1.0 (*)
+|    |    +--- com.google.firebase:firebase-installations:16.3.5 (*)
+|    |    +--- com.google.firebase:firebase-installations-interop:16.0.1 (*)
+|    |    \--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
+|    +--- com.google.firebase:firebase-crashlytics-ndk:17.4.1
+|    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |    +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |    \--- com.google.firebase:firebase-crashlytics:17.4.1
+|    |         +--- com.google.android.datatransport:transport-api:2.2.1 (*)
+|    |         +--- com.google.android.datatransport:transport-backend-cct:2.3.3 (*)
+|    |         +--- com.google.android.datatransport:transport-runtime:2.2.6 (*)
+|    |         +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |         +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |         +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |         +--- com.google.firebase:firebase-encoders:16.1.0 (*)
+|    |         +--- com.google.firebase:firebase-encoders-json:17.1.0 (*)
+|    |         +--- com.google.firebase:firebase-installations:16.3.5 (*)
+|    |         +--- com.google.firebase:firebase-installations-interop:16.0.1 (*)
+|    |         \--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
+|    +--- androidx.multidex:multidex:2.0.1
+|    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    +--- androidx.biometric:biometric:1.1.0
+|    |    +--- androidx.activity:activity:1.1.0 -> 1.2.3 (*)
+|    |    +--- androidx.appcompat:appcompat:1.2.0 -> 1.3.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-livedata-core:2.2.0 -> 2.3.1 (*)
+|    |    +--- androidx.lifecycle:lifecycle-viewmodel:2.2.0 -> 2.3.1 (*)
+|    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    +--- androidx.core:core:1.3.2 -> 1.5.0 (*)
+|    |    \--- androidx.fragment:fragment:1.2.5 -> 1.3.4 (*)
+|    +--- androidx.core:core-ktx:1.5.0 (*)
+|    +--- com.google.android.gms:play-services-maps:17.0.0
+|    |    +--- androidx.fragment:fragment:1.0.0 -> 1.3.4 (*)
+|    |    +--- com.google.android.gms:play-services-base:17.0.0 -> 17.1.0 (*)
+|    |    \--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    +--- com.google.guava:guava:28.1-android
+|    |    +--- com.google.guava:failureaccess:1.0.1
+|    |    +--- com.google.code.findbugs:jsr305:3.0.2
+|    |    +--- org.checkerframework:checker-compat-qual:2.5.5
+|    |    +--- com.google.errorprone:error_prone_annotations:2.3.2 -> 2.3.4
+|    |    +--- com.google.j2objc:j2objc-annotations:1.3
+|    |    \--- org.codehaus.mojo:animal-sniffer-annotations:1.18
+|    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.7 -> 2.2.19 (*)
+|    |    \--- androidx.annotation:annotation:1.0.2 -> 1.2.0
+|    +--- uk.co.samuelwall:material-tap-target-prompt:3.1.0
+|    |    +--- androidx.annotation:annotation:[1.1.0,) -> 1.2.0
+|    |    \--- androidx.lifecycle:lifecycle-extensions:[2.2.0,) -> 2.2.0 (*)
+|    +--- com.github.bumptech.glide:glide:4.10.0
+|    |    +--- com.github.bumptech.glide:gifdecoder:4.10.0
+|    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    +--- com.github.bumptech.glide:disklrucache:4.10.0
+|    |    +--- com.github.bumptech.glide:annotations:4.10.0
+|    |    +--- androidx.fragment:fragment:1.0.0 -> 1.3.4 (*)
+|    |    \--- androidx.vectordrawable:vectordrawable-animated:1.0.0 -> 1.1.0 (*)
+|    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    +--- com.google.android.exoplayer:exoplayer:2.7.2
+|    |    +--- com.google.android.exoplayer:exoplayer-core:2.7.2
+|    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    +--- com.google.android.exoplayer:exoplayer-dash:2.7.2
+|    |    |    +--- com.google.android.exoplayer:exoplayer-core:2.7.2 (*)
+|    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    +--- com.google.android.exoplayer:exoplayer-hls:2.7.2
+|    |    |    +--- com.google.android.exoplayer:exoplayer-core:2.7.2 (*)
+|    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    +--- com.google.android.exoplayer:exoplayer-smoothstreaming:2.7.2
+|    |    |    +--- com.google.android.exoplayer:exoplayer-core:2.7.2 (*)
+|    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    \--- com.google.android.exoplayer:exoplayer-ui:2.7.2
+|    |         +--- com.google.android.exoplayer:exoplayer-core:2.7.2 (*)
+|    |         \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    +--- com.airbnb.android:lottie:3.4.0
+|    |    +--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    |    \--- com.squareup.okio:okio:1.17.4 -> 2.10.0 (*)
+|    \--- com.github.ChuckerTeam.Chucker:library-no-op:3.1.2
+|         +--- com.squareup.okhttp3:okhttp:3.12.6 -> 4.9.1 (*)
+|         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.61 -> 1.5.0 (*)
++--- project :backend
+|    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    +--- androidx.room:room-runtime:2.3.0 (*)
+|    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    +--- com.zendesk.belvedere2:belvedere:2.3.0
+|    |    +--- com.zendesk.belvedere2:belvedere-core:2.3.0
+|    |    |    +--- androidx.legacy:legacy-support-core-utils:1.0.0 (*)
+|    |    |    \--- androidx.fragment:fragment:1.0.0 -> 1.3.4 (*)
+|    |    +--- com.sebchlan.picassocompat:picassocompat:1.1.0 -> 1.2.1
+|    |    |    +--- com.sebchlan.picassocompat:picassocompat-252:1.2.1
+|    |    |    |    +--- com.sebchlan.picassocompat:picassocompat-parent:1.2.1
+|    |    |    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    \--- com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0
+|    |    |    |         +--- com.squareup.picasso:picasso:2.5.2
+|    |    |    |         \--- com.squareup.okhttp3:okhttp:3.4.1 -> 4.9.1 (*)
+|    |    |    +--- com.sebchlan.picassocompat:picassocompat-271828:1.2.1
+|    |    |    |    \--- com.sebchlan.picassocompat:picassocompat-parent:1.2.1 (*)
+|    |    |    +--- com.squareup.picasso:picasso:2.5.2
+|    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    +--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    |    +--- androidx.cardview:cardview:1.0.0 (*)
+|    |    \--- com.google.android.material:material:1.0.0 -> 1.2.1 (*)
+|    +--- com.github.chrisbanes:PhotoView:2.3.0
+|    |    \--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    +--- com.google.code.gson:gson:2.8.6
+|    +--- com.squareup.okhttp3:okhttp:4.9.1 (*)
+|    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1
+|    |    \--- io.reactivex.rxjava2:rxjava:2.2.2 -> 2.2.19 (*)
+|    +--- com.mixpanel.android:mixpanel-android:5.9.1
+|    +--- com.clevertap.android:clevertap-android-sdk:4.1.0 (*)
+|    +--- com.appsflyer:af-android-sdk:5.2.0
+|    +--- com.google.android.material:material:1.2.1 (*)
+|    +--- com.romandanylyk:pageindicatorview:1.0.3
+|    +--- joda-time:joda-time:2.10.10
+|    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    +--- com.karumi:dexter:6.2.2 (*)
+|    +--- com.google.guava:guava:28.1-android (*)
+|    +--- com.github.okcredit:zxing-android-embedded:4.0.2
+|    |    +--- com.google.zxing:core:3.3.2
+|    |    \--- androidx.legacy:legacy-support-v4:1.0.0
+|    |         +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |         +--- androidx.media:media:1.0.0
+|    |         |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |         |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |         |    \--- androidx.versionedparcelable:versionedparcelable:1.0.0 -> 1.1.1 (*)
+|    |         +--- androidx.legacy:legacy-support-core-utils:1.0.0 (*)
+|    |         +--- androidx.legacy:legacy-support-core-ui:1.0.0 (*)
+|    |         \--- androidx.fragment:fragment:1.0.0 -> 1.3.4 (*)
+|    +--- com.google.zxing:core:3.3.0 -> 3.3.2
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :accounting
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :shared
+|    |    |    +--- project :communication_inappnotification:contract
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    |    \--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.5.0 (*)
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :analytics
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- project :base (*)
+|    |    |    |    +--- project :resources (*)
+|    |    |    |    +--- project :okstream:contract
+|    |    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    |    \--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    |    +--- javax.inject:javax.inject:1
+|    |    |    |    +--- com.mixpanel.android:mixpanel-android:5.9.1
+|    |    |    |    +--- com.clevertap.android:clevertap-android-sdk:4.1.0 (*)
+|    |    |    |    +--- com.appsflyer:af-android-sdk:5.2.0
+|    |    |    |    +--- com.google.firebase:firebase-analytics:18.0.3 (*)
+|    |    |    |    +--- com.google.firebase:firebase-crashlytics-ndk:17.4.1 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    |    |    \--- com.google.guava:guava:28.1-android (*)
+|    |    |    +--- project :auth
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- project :base (*)
+|    |    |    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- project :app:app_contract
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- project :camera:camera_contract
+|    |    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    \--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    |    +--- project :accounting_core:contract
+|    |    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    |    \--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    \--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    +--- project :camera:camera_contract (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    |    +--- androidx.viewpager2:viewpager2:1.0.0 (*)
+|    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout-solver:2.0.4
+|    |    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    +--- androidx.camera:camera-view:1.0.0-alpha24
+|    |    |    |    +--- androidx.lifecycle:lifecycle-common:2.0.0 -> 2.3.1 (*)
+|    |    |    |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    +--- androidx.camera:camera-core:1.0.0-rc04 -> 1.1.0-alpha04
+|    |    |    |    |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    |    +--- androidx.lifecycle:lifecycle-livedata:2.1.0 -> 2.2.0 (*)
+|    |    |    |    |    +--- androidx.annotation:annotation-experimental:1.1.0-rc01 -> 1.1.0
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.4.32 -> 1.5.0 (*)
+|    |    |    |    |    +--- androidx.exifinterface:exifinterface:1.0.0 -> 1.3.2
+|    |    |    |    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    |    |    |    +--- androidx.concurrent:concurrent-futures:1.0.0
+|    |    |    |    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    |    +--- androidx.lifecycle:lifecycle-common:2.1.0 -> 2.3.1 (*)
+|    |    |    |    |    \--- com.google.auto.value:auto-value-annotations:1.6.3
+|    |    |    |    +--- androidx.camera:camera-lifecycle:1.0.0-rc04 -> 1.0.0
+|    |    |    |    |    +--- androidx.lifecycle:lifecycle-common:2.1.0 -> 2.3.1 (*)
+|    |    |    |    |    +--- androidx.camera:camera-core:1.0.0 -> 1.1.0-alpha04 (*)
+|    |    |    |    |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    |    |    |    \--- com.google.auto.value:auto-value-annotations:1.6.3
+|    |    |    |    +--- androidx.annotation:annotation-experimental:1.1.0-rc01 -> 1.1.0
+|    |    |    |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.concurrent:concurrent-futures:1.0.0 (*)
+|    |    |    |    +--- com.google.auto.value:auto-value-annotations:1.6.3
+|    |    |    |    \--- androidx.appcompat:appcompat:1.1.0 -> 1.3.0 (*)
+|    |    |    +--- androidx.camera:camera-camera2:1.0.0 -> 1.1.0-alpha04
+|    |    |    |    +--- androidx.camera:camera-core:1.1.0-alpha04 (*)
+|    |    |    |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    +--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.concurrent:concurrent-futures:1.0.0 (*)
+|    |    |    |    \--- com.google.auto.value:auto-value-annotations:1.6.3
+|    |    |    +--- androidx.camera:camera-extensions:1.0.0-alpha24
+|    |    |    |    +--- androidx.camera:camera-core:1.1.0-alpha04 (*)
+|    |    |    |    +--- androidx.camera:camera-camera2:1.1.0-alpha04 (*)
+|    |    |    |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.concurrent:concurrent-futures:1.0.0 (*)
+|    |    |    |    \--- com.google.auto.value:auto-value-annotations:1.6.3
+|    |    |    +--- androidx.camera:camera-lifecycle:1.0.0 (*)
+|    |    |    +--- androidx.camera:camera-core:1.0.0 -> 1.1.0-alpha04 (*)
+|    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    +--- javax.inject:javax.inject:1
+|    |    |    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    |    |    +--- androidx.webkit:webkit:1.1.0
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    \--- androidx.core:core:1.1.0 -> 1.5.0 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui-ktx:2.3.5
+|    |    |    |    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    |    |    +--- androidx.navigation:navigation-runtime-ktx:2.3.5 (*)
+|    |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.71 -> 1.5.0 (*)
+|    |    |    +--- androidx.biometric:biometric:1.1.0 (*)
+|    |    |    +--- com.facebook.shimmer:shimmer:0.5.0
+|    |    |    |    \--- androidx.annotation:annotation:1.0.1 -> 1.2.0
+|    |    |    +--- com.github.anjalsaneen:CalendarDateRangePicker:v1.2
+|    |    |    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    |    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    |    +--- com.github.cuongnb96:android-youtube-player:master-SNAPSHOT
+|    |    |    |    +--- com.github.cuongnb96.android-youtube-player:chromecast-sender:master-SNAPSHOT
+|    |    |    |    |    +--- com.github.cuongnb96.android-youtube-player:core:master-SNAPSHOT
+|    |    |    |    |    |    +--- androidx.annotation:annotation:1.0.2 -> 1.2.0
+|    |    |    |    |    |    +--- androidx.lifecycle:lifecycle-runtime:2.1.0 -> 2.3.1 (*)
+|    |    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 -> 1.5.0 (*)
+|    |    |    |    |    |    +--- androidx.appcompat:appcompat:1.1.0 -> 1.3.0 (*)
+|    |    |    |    |    |    \--- androidx.recyclerview:recyclerview:1.0.0 -> 1.1.0 (*)
+|    |    |    |    |    +--- com.google.android.gms:play-services-cast-framework:16.1.2
+|    |    |    |    |    |    +--- com.google.android.gms:play-services-base:16.0.1 -> 17.1.0 (*)
+|    |    |    |    |    |    +--- com.google.android.gms:play-services-basement:16.0.1 -> 17.3.0 (*)
+|    |    |    |    |    |    +--- com.google.android.gms:play-services-cast:16.1.2
+|    |    |    |    |    |    |    +--- com.google.android.gms:play-services-base:16.0.1 -> 17.1.0 (*)
+|    |    |    |    |    |    |    +--- com.google.android.gms:play-services-basement:16.0.1 -> 17.3.0 (*)
+|    |    |    |    |    |    |    +--- com.google.android.gms:play-services-flags:16.0.1
+|    |    |    |    |    |    |    |    +--- com.google.android.gms:play-services-base:16.0.1 -> 17.1.0 (*)
+|    |    |    |    |    |    |    |    \--- com.google.android.gms:play-services-basement:16.0.1 -> 17.3.0 (*)
+|    |    |    |    |    |    |    +--- com.google.android.gms:play-services-tasks:16.0.1 -> 17.1.0 (*)
+|    |    |    |    |    |    |    \--- androidx.mediarouter:mediarouter:1.0.0-alpha5
+|    |    |    |    |    |    |         +--- androidx.media2:media2:1.0.0-alpha02
+|    |    |    |    |    |    |         |    +--- androidx.media:media:1.0.0-rc01 -> 1.0.0 (*)
+|    |    |    |    |    |    |         |    \--- androidx.versionedparcelable:versionedparcelable:1.0.0-rc01 -> 1.1.1 (*)
+|    |    |    |    |    |    |         +--- androidx.appcompat:appcompat:1.0.0-rc01 -> 1.3.0 (*)
+|    |    |    |    |    |    |         +--- androidx.palette:palette:1.0.0-rc01
+|    |    |    |    |    |    |         |    +--- androidx.core:core:1.0.0-rc01 -> 1.5.0 (*)
+|    |    |    |    |    |    |         |    \--- androidx.legacy:legacy-support-core-utils:1.0.0-rc01 -> 1.0.0 (*)
+|    |    |    |    |    |    |         \--- androidx.recyclerview:recyclerview:1.0.0-rc01 -> 1.1.0 (*)
+|    |    |    |    |    |    +--- androidx.mediarouter:mediarouter:1.0.0-alpha5 (*)
+|    |    |    |    |    |    \--- androidx.recyclerview:recyclerview:1.0.0 -> 1.1.0 (*)
+|    |    |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 -> 1.5.0 (*)
+|    |    |    |    \--- com.github.cuongnb96.android-youtube-player:core:master-SNAPSHOT (*)
+|    |    |    +--- com.github.PhilJay:MPAndroidChart:v3.1.0
+|    |    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    |    +--- com.google.firebase:firebase-analytics:18.0.3 (*)
+|    |    |    +--- com.google.firebase:firebase-messaging:21.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-crashlytics-ndk:17.4.1 (*)
+|    |    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0
+|    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    |    +--- com.jakewharton.rxbinding3:rxbinding:3.1.0
+|    |    |    |    |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.41 -> 1.5.0 (*)
+|    |    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    |    |    |    \--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.41 -> 1.5.0 (*)
+|    |    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    |    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    |    |    +--- com.google.android.gms:play-services-location:17.0.0 (*)
+|    |    |    +--- com.google.android.gms:play-services-maps:17.0.0 (*)
+|    |    |    +--- commons-io:commons-io:2.6
+|    |    |    +--- org.apache.commons:commons-jcs-core:2.2.1
+|    |    |    +--- com.jcminarro:Philology:2.1.0 (*)
+|    |    |    +--- io.github.inflationx:viewpump:2.0.3 (*)
+|    |    |    +--- com.truecaller.android.sdk:truecaller-sdk:2.0.0
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.3.61 -> 1.5.0 (*)
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- com.squareup.retrofit2:retrofit:2.6.0 -> 2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:converter-gson:2.6.0 -> 2.9.0 (*)
+|    |    |    |    +--- com.squareup.okhttp3:logging-interceptor:3.12.1 -> 4.9.1 (*)
+|    |    |    |    +--- androidx.legacy:legacy-support-v4:1.0.0 (*)
+|    |    |    |    \--- com.google.android.gms:play-services-auth-api-phone:17.3.0 -> 17.4.0 (*)
+|    |    |    +--- com.zendesk:chat:2.2.0
+|    |    |    |    +--- com.zendesk:chat-providers:2.2.0
+|    |    |    |    |    +--- com.zendesk:chat-visitor-client:7.1.0
+|    |    |    |    |    |    \--- com.zendesk:chat-socket-client:5.0.0
+|    |    |    |    |    |         +--- com.google.code.gson:gson:2.8.5 -> 2.8.6
+|    |    |    |    |    |         +--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.9.1 (*)
+|    |    |    |    |    |         +--- com.zendesk:java-common:1.14
+|    |    |    |    |    |         \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    |    +--- com.squareup.okhttp3:logging-interceptor:3.12.1 -> 4.9.1 (*)
+|    |    |    |    |    +--- com.google.dagger:dagger:2.23.2 -> 2.36 (*)
+|    |    |    |    |    +--- com.squareup.retrofit2:retrofit:2.3.0 -> 2.9.0 (*)
+|    |    |    |    |    +--- com.squareup.retrofit2:converter-gson:2.3.0 -> 2.9.0 (*)
+|    |    |    |    |    \--- com.google.code.gson:gson:2.8.2 -> 2.8.6
+|    |    |    |    +--- com.zendesk:messaging-api:4.3.1
+|    |    |    |    |    +--- com.zendesk:sdk-configurations:1.0.1
+|    |    |    |    |    |    +--- com.zendesk:java-common:1.14
+|    |    |    |    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    |    +--- com.zendesk:java-common:1.14
+|    |    |    |    |    \--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |    |    +--- com.zendesk:sdk-configurations:1.0.1 (*)
+|    |    |    |    +--- com.google.dagger:dagger:2.23.2 -> 2.36 (*)
+|    |    |    |    +--- com.sebchlan.picassocompat:picassocompat:1.2.1 (*)
+|    |    |    |    +--- androidx.lifecycle:lifecycle-extensions:2.0.0 -> 2.2.0 (*)
+|    |    |    |    \--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    |    |    +--- com.zendesk:messaging:4.3.1
+|    |    |    |    +--- com.zendesk:messaging-api:4.3.1 (*)
+|    |    |    |    +--- com.zendesk:common-ui:3.0.1
+|    |    |    |    |    +--- com.zendesk:java-common:1.14
+|    |    |    |    |    +--- com.zendesk.belvedere2:belvedere:2.3.0 (*)
+|    |    |    |    |    +--- com.sebchlan.picassocompat:picassocompat:1.2.1 (*)
+|    |    |    |    |    +--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    |    |    |    |    +--- com.google.android.material:material:1.0.0 -> 1.2.1 (*)
+|    |    |    |    |    \--- androidx.cardview:cardview:1.0.0 (*)
+|    |    |    |    +--- com.google.dagger:dagger:2.23.2 -> 2.36 (*)
+|    |    |    |    +--- com.zendesk.belvedere2:belvedere:2.3.0 (*)
+|    |    |    |    +--- com.sebchlan.picassocompat:picassocompat:1.2.1 (*)
+|    |    |    |    +--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    |    |    |    \--- com.google.android.material:material:1.0.0 -> 1.2.1 (*)
+|    |    |    +--- com.timqi.sectorprogressview:library:2.0.1
+|    |    |    +--- com.google.android.exoplayer:exoplayer:2.7.2 (*)
+|    |    |    +--- androidx.gridlayout:gridlayout:1.0.0 (*)
+|    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    |    \--- com.squareup.okhttp3:okhttp:4.9.1 (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :base (*)
+|    |    +--- project :analytics (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    +--- com.google.code.gson:gson:2.8.6
+|    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    +--- com.facebook.shimmer:shimmer:0.5.0 (*)
+|    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    +--- com.github.anjalsaneen:CalendarDateRangePicker:v1.2
+|    |    \--- com.airbnb.android:epoxy:4.1.0 (*)
+|    +--- project :accounting:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- project :device
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :base (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :analytics (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    +--- com.google.code.gson:gson:2.8.6
+|    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    +--- joda-time:joda-time:2.10.10
+|    |    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    +--- com.scottyab:rootbeer-lib:0.1.0
+|    |    \--- com.google.android.gms:play-services-ads:18.3.0
+|    |         +--- androidx.browser:browser:1.0.0
+|    |         |    +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |         |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |         |    +--- androidx.interpolator:interpolator:1.0.0 (*)
+|    |         |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |         |    \--- androidx.legacy:legacy-support-core-ui:1.0.0 (*)
+|    |         +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |         +--- androidx.core:core:1.0.0 -> 1.5.0 (*)
+|    |         +--- com.google.android.gms:play-services-ads-base:18.3.0
+|    |         +--- com.google.android.gms:play-services-ads-identifier:17.0.0 (*)
+|    |         +--- com.google.android.gms:play-services-ads-lite:18.3.0
+|    |         |    +--- com.google.android.gms:play-services-ads-base:18.3.0
+|    |         |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |         |    \--- com.google.android.gms:play-services-measurement-sdk-api:17.1.0 -> 18.0.3 (*)
+|    |         +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |         \--- com.google.android.gms:play-services-gass:18.3.0
+|    |              +--- com.google.android.gms:play-services-ads-base:18.3.0
+|    |              +--- com.google.android.gms:play-services-ads-lite:18.3.0 (*)
+|    |              +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |              \--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    +--- project :resources (*)
+|    +--- project :fileupload
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :base (*)
+|    |    +--- project :analytics (*)
+|    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    +--- androidx.exifinterface:exifinterface:1.3.2 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- com.amazonaws:aws-android-sdk-s3:2.22.6
+|    |    |    +--- com.amazonaws:aws-android-sdk-core:2.22.6
+|    |    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- com.amazonaws:aws-android-sdk-kms:2.22.6
+|    |    |    |    \--- com.amazonaws:aws-android-sdk-core:2.22.6 (*)
+|    |    |    \--- androidx.appcompat:appcompat:1.2.0 -> 1.3.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    \--- com.squareup.moshi:moshi:1.12.0 (*)
+|    +--- project :analytics (*)
+|    +--- project :suppliercredit
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :base (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :ab
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :device (*)
+|    |    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- project :fileupload (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :accounting (*)
+|    |    +--- project :accounting:contract (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    +--- com.google.code.gson:gson:2.8.6
+|    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    +--- joda-time:joda-time:2.10.10
+|    |    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    \--- androidx.room:room-rxjava2:2.3.0 (*)
+|    +--- project :collection_module:collection_sdk
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :base (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :ab (*)
+|    |    +--- project :collection_module:contract
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :resources (*)
+|    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    +--- joda-time:joda-time:2.10.10
+|    |    |    +--- com.github.PhilJay:MPAndroidChart:v3.1.0 (*)
+|    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    \--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- project :backend:contract
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :merchant:contract
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- project :base (*)
+|    |    |    |    +--- project :shared (*)
+|    |    |    |    +--- project :referral:contract
+|    |    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    |    +--- project :base (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    |    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    |    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0
+|    |    |    |    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    |    |    |    \--- com.squareup.moshi:moshi:1.8.0 -> 1.12.0 (*)
+|    |    |    |    |    \--- com.google.code.gson:gson:2.8.6
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    +--- joda-time:joda-time:2.10.10
+|    |    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    |    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    |    +--- javax.inject:javax.inject:1
+|    |    |    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    |    |    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    |    |    |    +--- androidx.room:room-ktx:2.3.0
+|    |    |    |    |    +--- androidx.room:room-common:2.3.0 (*)
+|    |    |    |    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.4.31 -> 1.5.0 (*)
+|    |    |    |    |    \--- org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1 (*)
+|    |    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- project :accounting_core
+|    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- project :base (*)
+|    |    |    |    +--- project :auth (*)
+|    |    |    |    +--- project :shared (*)
+|    |    |    |    +--- project :ab (*)
+|    |    |    |    +--- project :analytics (*)
+|    |    |    |    +--- project :fileupload (*)
+|    |    |    |    +--- project :accounting_core:contract (*)
+|    |    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    |    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    |    |    +--- com.squareup.okhttp3:okhttp:4.9.1 (*)
+|    |    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    |    +--- javax.inject:javax.inject:1
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    |    |    +--- joda-time:joda-time:2.10.10
+|    |    |    |    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    |    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    |    |    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    |    |    |    +--- androidx.room:room-ktx:2.3.0 (*)
+|    |    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    |    +--- com.amazonaws:aws-android-sdk-s3:2.22.6 (*)
+|    |    |    |    \--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    |    +--- project :secure_keys (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    \--- com.google.code.gson:gson:2.8.6
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    +--- com.google.code.gson:gson:2.8.6
+|    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    +--- joda-time:joda-time:2.10.10
+|    |    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    \--- androidx.room:room-rxjava2:2.3.0 (*)
+|    +--- project :collection_module:contract (*)
+|    +--- project :rewards
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :base (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :device (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :fileupload (*)
+|    |    +--- project :communication
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :device (*)
+|    |    |    +--- project :resources (*)
+|    |    |    +--- project :backend:contract (*)
+|    |    |    +--- project :frontend:contract
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    |    \--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    +--- com.google.firebase:firebase-analytics:18.0.3 (*)
+|    |    |    +--- com.google.firebase:firebase-messaging:21.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-perf:19.1.1 (*)
+|    |    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- com.zendesk:chat:2.2.0 (*)
+|    |    |    +--- com.zendesk:messaging:4.3.1 (*)
+|    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- project :ab (*)
+|    |    +--- project :rewards:contract
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :referral:contract (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    |    +--- joda-time:joda-time:2.10.10
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- project :collection_module:contract (*)
+|    |    +--- project :referral:contract (*)
+|    |    +--- project :app:app_contract (*)
+|    |    +--- project :merchant:contract (*)
+|    |    +--- project :feature_help:ui
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :merchant:contract (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :ab (*)
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :device (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :app:app_contract (*)
+|    |    |    +--- project :supplier:contract
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    \--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    |    +--- project :resources (*)
+|    |    |    +--- project :fileupload (*)
+|    |    |    +--- project :feature_help:sdk
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- project :base (*)
+|    |    |    |    +--- project :analytics (*)
+|    |    |    |    +--- project :app:app_contract (*)
+|    |    |    |    +--- project :feature_help:contract
+|    |    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    |    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    |    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    |    |    |    \--- javax.inject:javax.inject:1
+|    |    |    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- project :backend:contract (*)
+|    |    |    +--- project :communication (*)
+|    |    |    +--- project :feature_help:contract (*)
+|    |    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    |    +--- com.github.cuongnb96:android-youtube-player:master-SNAPSHOT (*)
+|    |    |    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    |    |    +--- com.zendesk.belvedere2:belvedere:2.3.0 (*)
+|    |    |    +--- com.github.chrisbanes:PhotoView:2.3.0 (*)
+|    |    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.5.0 (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    +--- javax.inject:javax.inject:1
+|    |    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- com.zendesk:chat:2.2.0 (*)
+|    |    |    +--- com.zendesk:messaging:4.3.1 (*)
+|    |    |    +--- joda-time:joda-time:2.10.10
+|    |    |    \--- com.google.firebase:firebase-messaging:21.1.0 (*)
+|    |    +--- project :feature_help:sdk (*)
+|    |    +--- project :feature_help:contract (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- androidx.recyclerview:recyclerview:1.1.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    +--- com.google.code.gson:gson:2.8.6
+|    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    +--- joda-time:joda-time:2.10.10
+|    |    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    +--- com.github.bumptech.glide:compiler:4.10.0
+|    |    |    \--- com.github.bumptech.glide:annotations:4.10.0
+|    |    +--- com.github.okcredit:ScratchView:1.3-custom-fix
+|    |    |    \--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    |    \--- androidx.room:room-ktx:2.3.0 (*)
+|    +--- project :merchant:contract (*)
+|    +--- project :camera
+|    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.5.0 (*)
+|    |    +--- com.google.android.gms:play-services-ads:18.3.0 (*)
+|    |    +--- joda-time:joda-time:2.10.10
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- com.google.firebase:firebase-perf:19.1.1 (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :resources (*)
+|    |    +--- project :base (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :ab (*)
+|    |    +--- project :fileupload (*)
+|    |    +--- project :camera:camera_contract (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- androidx.legacy:legacy-support-v4:1.0.0 (*)
+|    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    +--- androidx.viewpager2:viewpager2:1.0.0 (*)
+|    |    +--- androidx.camera:camera-view:1.0.0-alpha24 (*)
+|    |    +--- androidx.camera:camera-camera2:1.0.0 -> 1.1.0-alpha04 (*)
+|    |    +--- androidx.camera:camera-extensions:1.0.0-alpha24 (*)
+|    |    +--- androidx.camera:camera-lifecycle:1.0.0 (*)
+|    |    +--- androidx.camera:camera-core:1.0.0 -> 1.1.0-alpha04 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    +--- com.google.firebase:firebase-auth-ktx:20.0.4
+|    |    |    +--- com.google.firebase:firebase-auth:20.0.4
+|    |    |    |    +--- androidx.browser:browser:1.0.0 (*)
+|    |    |    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    |    +--- androidx.fragment:fragment:1.0.0 -> 1.3.4 (*)
+|    |    |    |    +--- androidx.localbroadcastmanager:localbroadcastmanager:1.0.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-auth-api-phone:17.4.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-base:17.1.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-safetynet:17.0.0
+|    |    |    |    |    +--- com.google.android.gms:play-services-base:17.0.0 -> 17.1.0 (*)
+|    |    |    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    |    |    \--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-auth-interop:19.0.0 -> 19.0.2
+|    |    |    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    |    |    +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    |    |    +--- com.google.firebase:firebase-annotations:16.0.0
+|    |    |    |    |    \--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-common:19.4.0 -> 19.5.0 (*)
+|    |    |    |    \--- com.google.firebase:firebase-components:16.0.1 -> 16.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-common:19.4.0 -> 19.5.0 (*)
+|    |    |    +--- com.google.firebase:firebase-common-ktx:19.4.0 -> 19.5.0
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72 -> 1.5.0 (*)
+|    |    |    +--- com.google.firebase:firebase-components:16.0.1 -> 16.1.0 (*)
+|    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 -> 1.5.0 (*)
+|    |    +--- com.google.firebase:firebase-firestore-ktx:22.1.2
+|    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |    |    +--- com.google.firebase:firebase-common-ktx:19.5.0 (*)
+|    |    |    +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |    |    +--- com.google.firebase:firebase-firestore:22.1.2
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- com.google.android.gms:play-services-base:17.0.0 -> 17.1.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-auth-interop:19.0.2 (*)
+|    |    |    |    +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-database-collection:17.0.1
+|    |    |    |    |    \--- com.google.android.gms:play-services-base:17.0.0 -> 17.1.0 (*)
+|    |    |    |    +--- com.google.firebase:protolite-well-known-types:17.1.1 (*)
+|    |    |    |    +--- com.squareup.okhttp:okhttp:2.7.5
+|    |    |    |    |    \--- com.squareup.okio:okio:1.6.0 -> 2.10.0 (*)
+|    |    |    |    +--- io.grpc:grpc-android:1.28.0
+|    |    |    |    |    \--- io.grpc:grpc-core:1.28.0
+|    |    |    |    |         +--- io.grpc:grpc-api:1.28.0
+|    |    |    |    |         |    +--- io.grpc:grpc-context:1.28.0
+|    |    |    |    |         |    +--- com.google.errorprone:error_prone_annotations:2.3.4
+|    |    |    |    |         |    +--- com.google.code.findbugs:jsr305:3.0.2
+|    |    |    |    |         |    +--- org.codehaus.mojo:animal-sniffer-annotations:1.18
+|    |    |    |    |         |    \--- com.google.guava:guava:28.1-android (*)
+|    |    |    |    |         +--- com.google.code.gson:gson:2.8.6
+|    |    |    |    |         +--- com.google.android:annotations:4.1.1.4
+|    |    |    |    |         +--- com.google.errorprone:error_prone_annotations:2.3.4
+|    |    |    |    |         \--- io.perfmark:perfmark-api:0.19.0
+|    |    |    |    |              \--- com.google.code.findbugs:jsr305:3.0.2
+|    |    |    |    +--- io.grpc:grpc-okhttp:1.28.0
+|    |    |    |    |    +--- io.grpc:grpc-core:1.28.0 (*)
+|    |    |    |    |    +--- com.squareup.okio:okio:1.13.0 -> 2.10.0 (*)
+|    |    |    |    |    \--- com.squareup.okhttp:okhttp:2.7.4 -> 2.7.5 (*)
+|    |    |    |    +--- io.grpc:grpc-protobuf-lite:1.28.0
+|    |    |    |    |    +--- io.grpc:grpc-api:1.28.0 (*)
+|    |    |    |    |    +--- com.google.protobuf:protobuf-javalite:3.11.0 -> 3.14.0
+|    |    |    |    |    \--- com.google.guava:guava:28.1-android (*)
+|    |    |    |    \--- io.grpc:grpc-stub:1.28.0
+|    |    |    |         \--- io.grpc:grpc-api:1.28.0 (*)
+|    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72 -> 1.5.0 (*)
+|    |    +--- com.firebaseui:firebase-ui-firestore:7.1.1
+|    |    |    +--- com.google.firebase:firebase-bom:26.0.0
+|    |    |    |    +--- com.google.firebase:firebase-perf:19.0.9 -> 19.1.1 (c)
+|    |    |    |    +--- com.google.firebase:firebase-crashlytics-ndk:17.2.2 -> 17.4.1 (c)
+|    |    |    |    +--- com.google.firebase:firebase-encoders:16.0.0 -> 16.1.0 (c)
+|    |    |    |    +--- com.google.firebase:firebase-analytics:18.0.0 -> 18.0.3 (c)
+|    |    |    |    +--- com.google.firebase:firebase-auth:20.0.0 -> 20.0.4 (c)
+|    |    |    |    +--- com.google.firebase:firebase-iid:21.0.0 -> 21.1.0 (c)
+|    |    |    |    +--- com.google.firebase:firebase-firestore:22.0.0 -> 22.1.2 (c)
+|    |    |    |    +--- com.google.firebase:firebase-database-ktx:19.5.1 -> 19.7.0 (c)
+|    |    |    |    +--- com.google.firebase:firebase-config:20.0.0 -> 20.0.2 (c)
+|    |    |    |    +--- com.google.firebase:firebase-common-ktx:19.3.1 -> 19.5.0 (c)
+|    |    |    |    +--- com.google.firebase:firebase-firestore-ktx:22.0.0 -> 22.1.2 (c)
+|    |    |    |    +--- com.google.firebase:firebase-messaging:21.0.0 -> 21.1.0 (c)
+|    |    |    |    +--- com.google.firebase:firebase-auth-ktx:20.0.0 -> 20.0.4 (c)
+|    |    |    |    +--- com.google.firebase:firebase-crashlytics:17.2.2 -> 17.4.1 (c)
+|    |    |    |    +--- com.google.firebase:firebase-common:19.3.1 -> 19.5.0 (c)
+|    |    |    |    +--- com.google.firebase:firebase-installations:16.3.3 -> 16.3.5 (c)
+|    |    |    |    \--- com.google.firebase:firebase-database:19.5.1 -> 19.7.0 (c)
+|    |    |    +--- com.firebaseui:firebase-ui-common:7.1.1
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- androidx.lifecycle:lifecycle-runtime:2.2.0 -> 2.3.1 (*)
+|    |    |    |    \--- androidx.lifecycle:lifecycle-viewmodel:2.2.0 -> 2.3.1 (*)
+|    |    |    +--- com.google.firebase:firebase-firestore -> 22.1.2 (*)
+|    |    |    +--- androidx.legacy:legacy-support-v4:1.0.0 (*)
+|    |    |    \--- androidx.recyclerview:recyclerview:1.1.0 (*)
+|    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    \--- com.google.firebase:firebase-database-ktx:19.7.0
+|    |         +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |         +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |         +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |         +--- com.google.firebase:firebase-common-ktx:19.5.0 (*)
+|    |         +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |         +--- com.google.firebase:firebase-database:19.7.0
+|    |         |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |         |    +--- com.google.android.gms:play-services-base:17.0.0 -> 17.1.0 (*)
+|    |         |    +--- com.google.android.gms:play-services-basement:17.0.0 -> 17.3.0 (*)
+|    |         |    +--- com.google.android.gms:play-services-tasks:17.0.0 -> 17.1.0 (*)
+|    |         |    +--- com.google.firebase:firebase-auth-interop:19.0.2 (*)
+|    |         |    +--- com.google.firebase:firebase-common:19.5.0 (*)
+|    |         |    +--- com.google.firebase:firebase-components:16.1.0 (*)
+|    |         |    \--- com.google.firebase:firebase-database-collection:17.0.1 (*)
+|    |         \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72 -> 1.5.0 (*)
+|    +--- project :communication (*)
+|    +--- project :contacts:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    +--- project :bill_management:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    +--- project :home:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    \--- project :base (*)
+|    +--- project :base (*)
+|    +--- project :auth (*)
+|    +--- project :ab (*)
+|    +--- project :referral:contract (*)
+|    +--- project :shared (*)
+|    +--- project :accounting_core (*)
+|    +--- project :accounting_core:contract (*)
+|    +--- project :backend:contract (*)
+|    +--- project :onboarding:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :shared (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    +--- project :feature_help:sdk (*)
+|    +--- project :device:installedpackges
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :base (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :merchant:contract (*)
+|    |    +--- project :ab (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    |    +--- com.google.code.gson:gson:2.8.6
+|    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    +--- joda-time:joda-time:2.10.10
+|    |    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    |    \--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    +--- project :camera:camera_contract (*)
+|    +--- project :rewards:contract (*)
+|    +--- project :dynamicview:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    +--- project :customer:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    +--- project :user-stories:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    \--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    +--- project :cashback:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :rewards:contract (*)
+|    |    \--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    +--- project :okstream:contract (*)
+|    +--- project :payment:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- project :collection_module:contract (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    \--- androidx.appcompat:appcompat:1.3.0 (*)
+|    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    +--- androidx.core:core-ktx:1.5.0 (*)
+|    +--- androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0 -> 2.3.0 (*)
+|    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    +--- androidx.work:work-runtime-ktx:2.4.0 (*)
+|    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    +--- com.google.dagger:dagger:2.36 (*)
+|    +--- com.google.dagger:dagger-android:2.36 (*)
+|    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    +--- javax.inject:javax.inject:1
+|    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    +--- com.google.firebase:firebase-analytics:18.0.3 (*)
+|    +--- com.google.firebase:firebase-messaging:21.1.0 (*)
+|    +--- com.google.firebase:firebase-crashlytics-ndk:17.4.1 (*)
+|    +--- com.google.firebase:firebase-auth-ktx:20.0.4 (*)
+|    +--- com.google.firebase:firebase-firestore-ktx:22.1.2 (*)
+|    +--- com.amazonaws:aws-android-sdk-s3:2.22.6 (*)
+|    \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
++--- project :frontend
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :base (*)
+|    +--- project :auth (*)
+|    +--- project :accounting (*)
+|    +--- project :ab (*)
+|    +--- project :backend (*)
+|    +--- project :resources (*)
+|    +--- project :fileupload (*)
+|    +--- project :analytics (*)
+|    +--- project :suppliercredit (*)
+|    +--- project :collection_module:collection_sdk (*)
+|    +--- project :rewards (*)
+|    +--- project :expense
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :base (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :device (*)
+|    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- project :merchant
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :base (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :fileupload (*)
+|    |    +--- project :ab (*)
+|    |    +--- project :merchant:contract (*)
+|    |    +--- project :referral:contract (*)
+|    |    +--- project :collection_module:contract (*)
+|    |    +--- project :app:app_contract (*)
+|    |    +--- project :camera:camera_contract (*)
+|    |    +--- project :feature_help:ui (*)
+|    |    +--- project :feature_help:sdk (*)
+|    |    +--- project :feature_help:contract (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    +--- com.google.code.gson:gson:2.8.6
+|    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    +--- joda-time:joda-time:2.10.10
+|    |    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    +--- androidx.room:room-ktx:2.3.0 (*)
+|    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    +--- com.zendesk.belvedere2:belvedere:2.3.0 (*)
+|    |    +--- com.github.yalantis:ucrop:2.2.6
+|    |    |    +--- androidx.appcompat:appcompat:1.1.0 -> 1.3.0 (*)
+|    |    |    +--- androidx.exifinterface:exifinterface:1.1.0-beta01 -> 1.3.2 (*)
+|    |    |    +--- androidx.transition:transition:1.2.0-rc01 -> 1.3.0 (*)
+|    |    |    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.9.1 (*)
+|    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    +--- com.github.bumptech.glide:compiler:4.10.0 (*)
+|    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    \--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    +--- project :merchant:contract (*)
+|    +--- project :camera (*)
+|    +--- project :device (*)
+|    +--- project :shared (*)
+|    +--- project :referral
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :base (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :device (*)
+|    |    +--- project :resources (*)
+|    |    +--- project :fileupload (*)
+|    |    +--- project :merchant:contract (*)
+|    |    +--- project :referral:contract (*)
+|    |    +--- project :app:app_contract (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :ab (*)
+|    |    +--- project :communication (*)
+|    |    +--- project :rewards (*)
+|    |    +--- project :collection_module:contract (*)
+|    |    +--- project :rewards:contract (*)
+|    |    +--- project :feature_help:ui (*)
+|    |    +--- project :feature_help:sdk (*)
+|    |    +--- project :feature_help:contract (*)
+|    |    +--- project :backend:contract (*)
+|    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    |    +--- androidx.navigation:navigation-ui-ktx:2.3.5 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    |    +--- com.google.code.gson:gson:2.8.6
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.amazonaws:aws-android-sdk-s3:2.22.6 (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    +--- com.github.bumptech.glide:compiler:4.10.0 (*)
+|    |    \--- com.airbnb.android:epoxy:4.1.0 (*)
+|    +--- project :referral:contract (*)
+|    +--- project :communication (*)
+|    +--- project :app:app_contract (*)
+|    +--- project :frontend:contract (*)
+|    +--- project :camera:camera_contract (*)
+|    +--- project :collection_module:contract (*)
+|    +--- project :contacts:contract (*)
+|    +--- project :home
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :base (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :resources (*)
+|    |    +--- project :backend (*)
+|    |    +--- project :device (*)
+|    |    +--- project :fileupload (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :suppliercredit (*)
+|    |    +--- project :rewards (*)
+|    |    +--- project :merchant:contract (*)
+|    |    +--- project :contacts:contract (*)
+|    |    +--- project :communication (*)
+|    |    +--- project :collection_module:contract (*)
+|    |    +--- project :app:app_contract (*)
+|    |    +--- project :frontend:contract (*)
+|    |    +--- project :feature_help:ui (*)
+|    |    +--- project :feature_help:contract (*)
+|    |    +--- project :ab (*)
+|    |    +--- project :referral (*)
+|    |    +--- project :referral:contract (*)
+|    |    +--- project :applock:contract
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    |    \--- javax.inject:javax.inject:1
+|    |    +--- project :accounting_core (*)
+|    |    +--- project :dynamicview
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :fileupload (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :merchant:contract (*)
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :app:app_contract (*)
+|    |    |    +--- project :dynamicview:contract (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    +--- com.squareup.moshi:moshi-adapters:1.12.0
+|    |    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.4.31 -> 1.5.0 (*)
+|    |    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    |    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.5.0 (*)
+|    |    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    |    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    |    |    +--- androidx.room:room-ktx:2.3.0 (*)
+|    |    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    |    +--- androidx.recyclerview:recyclerview:1.1.0 (*)
+|    |    |    +--- androidx.cardview:cardview:1.0.0 (*)
+|    |    |    \--- uk.co.samuelwall:material-tap-target-prompt:3.1.0 (*)
+|    |    +--- project :backend:contract (*)
+|    |    +--- project :onboarding
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :merchant:contract (*)
+|    |    |    +--- project :app:app_contract (*)
+|    |    |    +--- project :backend:contract (*)
+|    |    |    +--- project :frontend:contract (*)
+|    |    |    +--- project :feature_help:contract (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :onboarding:contract (*)
+|    |    |    +--- project :device (*)
+|    |    |    +--- project :resources (*)
+|    |    |    +--- project :ab (*)
+|    |    |    +--- project :home:contract (*)
+|    |    |    +--- project :accounting (*)
+|    |    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- com.truecaller.android.sdk:truecaller-sdk:2.0.0 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    |    +--- com.scottyab:rootbeer-lib:0.1.0
+|    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui-ktx:2.3.5 (*)
+|    |    |    +--- com.github.anjalsaneen:Pinview:v1.8
+|    |    |    |    \--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    |    |    +--- com.romandanylyk:pageindicatorview:1.0.3
+|    |    |    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    |    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    |    \--- com.github.mukeshsolanki:android-otpview-pinview:2.1.0
+|    |    |         \--- androidx.appcompat:appcompat:1.1.0 -> 1.3.0 (*)
+|    |    +--- project :onboarding:contract (*)
+|    |    +--- project :accounting_core:contract (*)
+|    |    +--- project :web:contract
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    \--- project :resources (*)
+|    |    +--- project :home:contract (*)
+|    |    +--- project :customer:contract (*)
+|    |    +--- project :user_migration
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :ab (*)
+|    |    |    +--- project :backend:contract (*)
+|    |    |    +--- project :merchant:contract (*)
+|    |    |    +--- project :user_migration:contract
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- project :base (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    |    |    |    \--- com.google.code.gson:gson:2.8.6
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :app:app_contract (*)
+|    |    |    +--- project :resources (*)
+|    |    |    +--- project :fileupload (*)
+|    |    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui-ktx:2.3.5 (*)
+|    |    |    +--- com.facebook.shimmer:shimmer:0.5.0 (*)
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    \--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    +--- project :rewards:contract (*)
+|    |    +--- project :dynamicview:contract (*)
+|    |    +--- project :web_features
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- androidx.core:core-ktx:1.3.1 -> 1.5.0 (*)
+|    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :merchant:contract (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    +--- javax.inject:javax.inject:1
+|    |    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    |    \--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- project :account_chat:account_chat_sdk
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :ab (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :device (*)
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :merchant:contract (*)
+|    |    |    +--- project :suppliercredit (*)
+|    |    |    +--- project :account_chat:account_chat_contract
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- project :auth (*)
+|    |    |    |    +--- project :base (*)
+|    |    |    |    +--- project :analytics (*)
+|    |    |    |    +--- project :device (*)
+|    |    |    |    +--- project :shared (*)
+|    |    |    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-auth-ktx:20.0.4 (*)
+|    |    |    |    +--- com.google.firebase:firebase-firestore-ktx:22.1.2 (*)
+|    |    |    |    +--- com.firebaseui:firebase-ui-firestore:7.1.1 (*)
+|    |    |    |    +--- com.google.firebase:firebase-database-ktx:19.7.0 (*)
+|    |    |    |    \--- com.google.android.material:material:1.2.1 (*)
+|    |    |    +--- project :communication (*)
+|    |    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    +--- com.google.firebase:firebase-auth-ktx:20.0.4 (*)
+|    |    |    +--- com.google.firebase:firebase-firestore-ktx:22.1.2 (*)
+|    |    |    +--- com.firebaseui:firebase-ui-firestore:7.1.1 (*)
+|    |    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    |    \--- com.google.firebase:firebase-database-ktx:19.7.0 (*)
+|    |    +--- project :account_chat:account_chat_contract (*)
+|    |    +--- project :supplier
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :resources (*)
+|    |    |    +--- project :collection_module:contract (*)
+|    |    |    +--- project :suppliercredit (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :accounting (*)
+|    |    |    +--- project :accounting:contract (*)
+|    |    |    +--- project :ab (*)
+|    |    |    +--- project :payment:contract (*)
+|    |    |    +--- project :communication (*)
+|    |    |    +--- project :backend (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :merchant:contract (*)
+|    |    |    +--- project :account_chat:account_chat_sdk (*)
+|    |    |    +--- project :account_chat:account_chat_contract (*)
+|    |    |    +--- project :app:app_contract (*)
+|    |    |    +--- project :supplier:contract (*)
+|    |    |    +--- project :fileupload (*)
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    +--- javax.inject:javax.inject:1
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    |    +--- com.squareup.moshi:moshi-adapters:1.12.0 (*)
+|    |    |    +--- com.google.firebase:firebase-crashlytics-ndk:17.4.1 (*)
+|    |    |    +--- com.zendesk:chat:2.2.0 (*)
+|    |    |    +--- com.zendesk:messaging:4.3.1 (*)
+|    |    |    \--- com.google.firebase:firebase-messaging:21.1.0 (*)
+|    |    +--- project :accounting (*)
+|    |    +--- project :accounting:contract (*)
+|    |    +--- project :supplier:contract (*)
+|    |    +--- project :payment:contract (*)
+|    |    +--- project :bill_management:ui
+|    |    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :merchant (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :ab (*)
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :app:app_contract (*)
+|    |    |    +--- project :resources (*)
+|    |    |    +--- project :bill_management:sdk
+|    |    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    |    +--- project :auth (*)
+|    |    |    |    +--- project :ab (*)
+|    |    |    |    +--- project :base (*)
+|    |    |    |    +--- project :analytics (*)
+|    |    |    |    +--- project :device (*)
+|    |    |    |    +--- project :shared (*)
+|    |    |    |    +--- project :merchant:contract (*)
+|    |    |    |    +--- project :suppliercredit (*)
+|    |    |    |    +--- project :communication (*)
+|    |    |    |    +--- project :fileupload (*)
+|    |    |    |    +--- project :camera:camera_contract (*)
+|    |    |    |    +--- project :bill_management:contract (*)
+|    |    |    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    |    +--- javax.inject:javax.inject:1
+|    |    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    |    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    |    |    +--- joda-time:joda-time:2.10.10
+|    |    |    |    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    |    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    |    +--- com.google.firebase:firebase-auth-ktx:20.0.4 (*)
+|    |    |    |    +--- com.google.firebase:firebase-firestore-ktx:22.1.2 (*)
+|    |    |    |    +--- com.firebaseui:firebase-ui-firestore:7.1.1 (*)
+|    |    |    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    |    |    +--- com.google.firebase:firebase-database-ktx:19.7.0 (*)
+|    |    |    |    +--- com.google.android.gms:play-services-ads:18.3.0 (*)
+|    |    |    |    +--- com.amazonaws:aws-android-sdk-s3:2.22.6 (*)
+|    |    |    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    |    |    \--- androidx.room:room-rxjava2:2.3.0 (*)
+|    |    |    +--- project :bill_management:contract (*)
+|    |    |    +--- project :backend (*)
+|    |    |    +--- project :suppliercredit (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :backend:contract (*)
+|    |    |    +--- project :camera:camera_contract (*)
+|    |    |    +--- project :fileupload (*)
+|    |    |    +--- project :camera (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    |    +--- androidx.appcompat:appcompat:1.2.0 -> 1.3.0 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout:2.0.1 -> 2.0.4 (*)
+|    |    |    +--- com.github.cuongnb96:android-youtube-player:master-SNAPSHOT (*)
+|    |    |    +--- com.github.sephiroth74:android-target-tooltip:v2.0.4 (*)
+|    |    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    +--- javax.inject:javax.inject:1
+|    |    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    |    +--- com.google.android.gms:play-services-ads:18.3.0 (*)
+|    |    |    +--- joda-time:joda-time:2.10.10
+|    |    |    +--- com.google.firebase:firebase-auth-ktx:20.0.4 (*)
+|    |    |    +--- com.google.firebase:firebase-firestore-ktx:22.1.2 (*)
+|    |    |    +--- com.firebaseui:firebase-ui-firestore:7.1.1 (*)
+|    |    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    |    +--- com.google.firebase:firebase-database-ktx:19.7.0 (*)
+|    |    |    +--- androidx.camera:camera-view:1.0.0-alpha24 (*)
+|    |    |    +--- androidx.camera:camera-camera2:1.0.0 -> 1.1.0-alpha04 (*)
+|    |    |    +--- androidx.camera:camera-extensions:1.0.0-alpha24 (*)
+|    |    |    +--- androidx.camera:camera-lifecycle:1.0.0 (*)
+|    |    |    +--- androidx.camera:camera-core:1.0.0 -> 1.1.0-alpha04 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    |    |    \--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    +--- project :bill_management:sdk (*)
+|    |    +--- project :feature_help:sdk (*)
+|    |    +--- project :user-stories
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :ab (*)
+|    |    |    +--- project :fileupload (*)
+|    |    |    +--- project :device (*)
+|    |    |    +--- project :resources (*)
+|    |    |    +--- project :camera (*)
+|    |    |    +--- project :camera:camera_contract (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :merchant:contract (*)
+|    |    |    +--- project :user-stories:contract (*)
+|    |    |    +--- project :backend:contract (*)
+|    |    |    +--- project :contacts:contract (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    +--- javax.inject:javax.inject:1
+|    |    |    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui-ktx:2.3.5 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    |    +--- com.karumi:dexter:6.2.2 (*)
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    |    +--- com.github.bumptech.glide:compiler:4.10.0 (*)
+|    |    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    |    \--- androidx.room:room-rxjava2:2.3.0 (*)
+|    |    +--- project :user-stories:contract (*)
+|    |    +--- project :okstream:contract (*)
+|    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    +--- com.facebook.shimmer:shimmer:0.5.0 (*)
+|    |    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    |    +--- com.github.cuongnb96:android-youtube-player:master-SNAPSHOT (*)
+|    |    +--- com.google.android.exoplayer:exoplayer:2.7.2 (*)
+|    |    +--- com.github.sephiroth74:android-target-tooltip:v2.0.4 (*)
+|    |    +--- com.github.skydoves:balloon:1.3.4
+|    |    |    +--- androidx.databinding:viewbinding:4.1.1 -> 4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.4.20 -> 1.5.0 (*)
+|    |    |    +--- androidx.appcompat:appcompat:1.2.0 -> 1.3.0 (*)
+|    |    |    +--- androidx.fragment:fragment-ktx:1.3.1 (*)
+|    |    |    \--- androidx.lifecycle:lifecycle-common-java8:2.3.0 (*)
+|    |    +--- uk.co.samuelwall:material-tap-target-prompt:3.1.0 (*)
+|    |    +--- jp.wasabeef:recyclerview-animators:4.0.2
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.21 -> 1.5.0 (*)
+|    |    |    \--- androidx.recyclerview:recyclerview:1.1.0 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout-solver:2.0.4
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- androidx.biometric:biometric:1.1.0 (*)
+|    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    +--- androidx.navigation:navigation-ui-ktx:2.3.5 (*)
+|    |    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    \--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    +--- project :home:contract (*)
+|    +--- project :collection_module:collection_ui
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :base (*)
+|    |    +--- project :device (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :resources (*)
+|    |    +--- project :ab (*)
+|    |    +--- project :accounting (*)
+|    |    +--- project :collection_module:collection_sdk (*)
+|    |    +--- project :backend (*)
+|    |    +--- project :fileupload (*)
+|    |    +--- project :merchant:contract (*)
+|    |    +--- project :communication (*)
+|    |    +--- project :collection_module:contract (*)
+|    |    +--- project :feature_help:sdk (*)
+|    |    +--- project :referral:contract (*)
+|    |    +--- project :app:app_contract (*)
+|    |    +--- project :onboarding:contract (*)
+|    |    +--- project :backend:contract (*)
+|    |    +--- project :rewards:contract (*)
+|    |    +--- project :payment
+|    |    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    |    +--- project :analytics (*)
+|    |    |    +--- project :app:app_contract (*)
+|    |    |    +--- project :base (*)
+|    |    |    +--- project :shared (*)
+|    |    |    +--- project :resources (*)
+|    |    |    +--- project :auth (*)
+|    |    |    +--- project :merchant:contract (*)
+|    |    |    +--- project :collection_module:contract (*)
+|    |    |    +--- project :payment:contract (*)
+|    |    |    +--- project :cashback:contract (*)
+|    |    |    +--- project :rewards:contract (*)
+|    |    |    +--- project :web:contract (*)
+|    |    |    +--- project :suppliercredit (*)
+|    |    |    +--- project :communication (*)
+|    |    |    +--- project :backend (*)
+|    |    |    +--- project :ab (*)
+|    |    |    +--- project :fileupload (*)
+|    |    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    |    +--- javax.inject:javax.inject:1
+|    |    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    |    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    |    |    +--- com.google.code.gson:gson:2.8.6
+|    |    |    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    |    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    |    +--- androidx.constraintlayout:constraintlayout-solver:2.0.4
+|    |    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-ui-ktx:2.3.5 (*)
+|    |    |    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    |    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    |    +--- com.karumi:dexter:6.2.2 (*)
+|    |    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    |    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    |    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    |    \--- in.juspay:hypersdk:2.0.2-rc.78
+|    |    |         +--- in.juspay:mystique:0.2.55
+|    |    |         |    +--- androidx.annotation:annotation:1.0.0 -> 1.2.0
+|    |    |         |    +--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    |    |         |    +--- androidx.legacy:legacy-support-v4:1.0.0 (*)
+|    |    |         |    \--- com.google.android.material:material:1.0.0 -> 1.2.1 (*)
+|    |    |         +--- in.juspay:visa-sensory-branding:1.0.1
+|    |    |         +--- com.google.android.gms:play-services-safetynet:17.0.0 (*)
+|    |    |         +--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
+|    |    |         +--- com.google.android.gms:play-services-auth-api-phone:17.3.0 -> 17.4.0 (*)
+|    |    |         \--- in.juspay.juspayppsafemode:pp-salvator:1.21.1.21
+|    |    +--- project :home:contract (*)
+|    |    +--- project :web:contract (*)
+|    |    +--- project :applock:contract (*)
+|    |    +--- project :frontend:contract (*)
+|    |    +--- project :feature_help:contract (*)
+|    |    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    |    +--- com.google.firebase:firebase-perf:19.1.1 (*)
+|    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0 -> 2.3.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-livedata-ktx:2.2.0
+|    |    |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.5.0 (*)
+|    |    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0 -> 1.5.0 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-livedata:2.2.0 (*)
+|    |    |    \--- androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0 -> 2.3.0 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.karumi:dexter:6.2.2 (*)
+|    |    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout-solver:2.0.4
+|    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    +--- com.facebook.shimmer:shimmer:0.5.0 (*)
+|    |    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    |    +--- com.github.PhilJay:MPAndroidChart:v3.1.0 (*)
+|    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    +--- uk.co.samuelwall:material-tap-target-prompt:3.1.0 (*)
+|    |    +--- com.github.skydoves:balloon:1.3.4 (*)
+|    |    +--- com.github.cuongnb96:android-youtube-player:master-SNAPSHOT (*)
+|    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    +--- androidx.navigation:navigation-ui-ktx:2.3.5 (*)
+|    |    \--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    +--- project :sales_module:sales_sdk
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :base (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :device (*)
+|    |    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    |    +--- com.google.guava:guava:28.1-android (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    |    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- project :sales_module:sales_ui
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :merchant:contract (*)
+|    |    +--- project :contacts:contract (*)
+|    |    +--- project :base (*)
+|    |    +--- project :ab (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :app:app_contract (*)
+|    |    +--- project :resources (*)
+|    |    +--- project :sales_module:sales_sdk (*)
+|    |    +--- project :communication (*)
+|    |    +--- project :auth (*)
+|    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    +--- com.github.cuongnb96:android-youtube-player:master-SNAPSHOT (*)
+|    |    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    |    +--- androidx.gridlayout:gridlayout:1.0.0 (*)
+|    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    \--- joda-time:joda-time:2.10.10
+|    +--- project :dynamicview (*)
+|    +--- project :accounting_core (*)
+|    +--- project :onboarding (*)
+|    +--- project :backend:contract (*)
+|    +--- project :onboarding:contract (*)
+|    +--- project :feature_help:ui (*)
+|    +--- project :feature_help:sdk (*)
+|    +--- project :feature_help:contract (*)
+|    +--- project :account_chat:account_chat_sdk (*)
+|    +--- project :account_chat:account_chat_ui
+|    |    +--- joda-time:joda-time:2.10.10
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :merchant:contract (*)
+|    |    +--- project :base (*)
+|    |    +--- project :ab (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :app:app_contract (*)
+|    |    +--- project :resources (*)
+|    |    +--- project :account_chat:account_chat_sdk (*)
+|    |    +--- project :backend (*)
+|    |    +--- project :suppliercredit (*)
+|    |    +--- project :communication (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :backend:contract (*)
+|    |    +--- project :fileupload (*)
+|    |    +--- project :account_chat:account_chat_contract (*)
+|    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    +--- com.github.cuongnb96:android-youtube-player:master-SNAPSHOT (*)
+|    |    +--- com.github.sephiroth74:android-target-tooltip:v2.0.4 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    +--- com.google.firebase:firebase-auth-ktx:20.0.4 (*)
+|    |    +--- com.google.firebase:firebase-firestore-ktx:22.1.2 (*)
+|    |    +--- com.firebaseui:firebase-ui-firestore:7.1.1 (*)
+|    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    \--- com.google.firebase:firebase-database-ktx:19.7.0 (*)
+|    +--- project :bill_management:ui (*)
+|    +--- project :bill_management:contract (*)
+|    +--- project :bill_management:sdk (*)
+|    +--- project :accounting_core:contract (*)
+|    +--- project :customer:customer_ui
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :base (*)
+|    |    +--- project :accounting (*)
+|    |    +--- project :backend (*)
+|    |    +--- project :backend:contract (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :app:app_contract (*)
+|    |    +--- project :suppliercredit (*)
+|    |    +--- project :supplier:contract (*)
+|    |    +--- project :communication (*)
+|    |    +--- project :collection_module:contract (*)
+|    |    +--- project :user_migration:contract (*)
+|    |    +--- project :accounting_core (*)
+|    |    +--- project :merchant:contract (*)
+|    |    +--- project :fileupload (*)
+|    |    +--- project :camera (*)
+|    |    +--- project :camera:camera_contract (*)
+|    |    +--- project :ab (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :home:contract (*)
+|    |    +--- project :customer:contract (*)
+|    |    +--- project :applock:contract (*)
+|    |    +--- project :feature_help:sdk (*)
+|    |    +--- project :feature_help:ui (*)
+|    |    +--- project :feature_help:contract (*)
+|    |    +--- project :onboarding:contract (*)
+|    |    +--- project :contacts:contract (*)
+|    |    +--- project :accounting_core:contract (*)
+|    |    +--- project :referral:contract (*)
+|    |    +--- project :payment:contract (*)
+|    |    +--- project :referral (*)
+|    |    +--- project :rewards:contract (*)
+|    |    +--- project :bill_management:contract (*)
+|    |    +--- project :account_chat:account_chat_contract (*)
+|    |    +--- project :cashback:contract (*)
+|    |    +--- project :okstream:contract (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    |    +--- androidx.room:room-ktx:2.3.0 (*)
+|    |    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- androidx.core:core-ktx:1.5.0 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout-solver:2.0.4
+|    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    +--- com.facebook.shimmer:shimmer:0.5.0 (*)
+|    |    +--- com.github.anjalsaneen:CalendarDateRangePicker:v1.2
+|    |    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    |    +--- com.github.skydoves:balloon:1.3.4 (*)
+|    |    +--- uk.co.samuelwall:material-tap-target-prompt:3.1.0 (*)
+|    |    +--- com.shawnlin:number-picker:2.4.11
+|    |    |    \--- androidx.appcompat:appcompat:1.2.0 -> 1.3.0 (*)
+|    |    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    |    \--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    +--- project :web:contract (*)
+|    +--- project :rewards:contract (*)
+|    +--- project :dynamicview:contract (*)
+|    +--- project :customer
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    \--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :supplier (*)
+|    +--- project :supplier:contract (*)
+|    +--- project :payment:contract (*)
+|    +--- project :cashback:contract (*)
+|    +--- project :user-stories:contract (*)
+|    +--- project :account_chat:account_chat_contract (*)
+|    +--- project :applock:contract (*)
+|    +--- project :okstream:contract (*)
+|    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    +--- androidx.webkit:webkit:1.1.0 (*)
+|    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    +--- androidx.navigation:navigation-ui-ktx:2.3.5 (*)
+|    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    +--- androidx.core:core-ktx:1.5.0 (*)
+|    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    +--- androidx.constraintlayout:constraintlayout-solver:2.0.4
+|    +--- androidx.biometric:biometric:1.1.0 (*)
+|    +--- com.facebook.shimmer:shimmer:0.5.0 (*)
+|    +--- com.github.anjalsaneen:CalendarDateRangePicker:v1.2
+|    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    +--- com.github.cuongnb96:android-youtube-player:master-SNAPSHOT (*)
+|    +--- com.github.PhilJay:MPAndroidChart:v3.1.0 (*)
+|    +--- uk.co.samuelwall:material-tap-target-prompt:3.1.0 (*)
+|    +--- com.github.skydoves:balloon:1.3.4 (*)
+|    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    +--- com.google.dagger:dagger:2.36 (*)
+|    +--- com.google.dagger:dagger-android:2.36 (*)
+|    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    +--- javax.inject:javax.inject:1
+|    +--- com.google.firebase:firebase-analytics:18.0.3 (*)
+|    +--- com.google.firebase:firebase-messaging:21.1.0 (*)
+|    +--- com.google.firebase:firebase-crashlytics-ndk:17.4.1 (*)
+|    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    +--- com.google.android.gms:play-services-location:17.0.0 (*)
+|    +--- com.google.android.gms:play-services-maps:17.0.0 (*)
+|    +--- commons-io:commons-io:2.6
+|    +--- org.apache.commons:commons-jcs-core:2.2.1
+|    +--- com.jcminarro:Philology:2.1.0 (*)
+|    +--- io.github.inflationx:viewpump:2.0.3 (*)
+|    +--- com.truecaller.android.sdk:truecaller-sdk:2.0.0 (*)
+|    +--- androidx.camera:camera-view:1.0.0-alpha24 (*)
+|    +--- androidx.camera:camera-camera2:1.0.0 -> 1.1.0-alpha04 (*)
+|    +--- androidx.camera:camera-extensions:1.0.0-alpha24 (*)
+|    +--- androidx.camera:camera-lifecycle:1.0.0 (*)
+|    +--- androidx.camera:camera-core:1.0.0 -> 1.1.0-alpha04 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.5.0 (*)
+|    +--- com.zendesk:chat:2.2.0 (*)
+|    +--- com.zendesk:messaging:4.3.1 (*)
+|    +--- com.timqi.sectorprogressview:library:2.0.1
+|    +--- com.google.android.exoplayer:exoplayer:2.7.2 (*)
+|    +--- androidx.gridlayout:gridlayout:1.0.0 (*)
+|    \--- jp.wasabeef:recyclerview-animators:4.0.2 (*)
++--- project :resources (*)
++--- project :fileupload (*)
++--- project :analytics (*)
++--- project :suppliercredit (*)
++--- project :collection_module:collection_sdk (*)
++--- project :rewards (*)
++--- project :merchant (*)
++--- project :merchant:contract (*)
++--- project :camera (*)
++--- project :device (*)
++--- project :dynamicview (*)
++--- project :shared (*)
++--- project :expense (*)
++--- project :communication (*)
++--- project :accounting_core (*)
++--- project :app:app_contract (*)
++--- project :referral:contract (*)
++--- project :collection_module:contract (*)
++--- project :frontend:contract (*)
++--- project :contacts
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :base (*)
+|    +--- project :analytics (*)
+|    +--- project :auth (*)
+|    +--- project :resources (*)
+|    +--- project :device (*)
+|    +--- project :shared (*)
+|    +--- project :contacts:contract (*)
+|    +--- project :feature_help:contract (*)
+|    +--- com.google.dagger:dagger:2.36 (*)
+|    +--- com.google.dagger:dagger-android:2.36 (*)
+|    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    +--- javax.inject:javax.inject:1
+|    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- com.github.okshrey:AndroidContacts:1.14.1
+|    +--- com.f2prateek.rx.preferences2:rx-preferences:2.0.1 (*)
+|    +--- com.google.guava:guava:28.1-android (*)
+|    +--- androidx.room:room-runtime:2.3.0 (*)
+|    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    +--- androidx.room:room-ktx:2.3.0 (*)
+|    \--- com.google.android.material:material:1.2.1 (*)
++--- project :contacts:contract (*)
++--- project :home (*)
++--- project :collection_module:collection_ui (*)
++--- project :sales_module:sales_sdk (*)
++--- project :sales_module:sales_ui (*)
++--- project :onboarding (*)
++--- project :home:contract (*)
++--- project :web
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :base (*)
+|    +--- project :auth (*)
+|    +--- project :resources (*)
+|    +--- project :backend:contract (*)
+|    +--- project :analytics (*)
+|    +--- project :merchant:contract (*)
+|    +--- project :contacts:contract (*)
+|    +--- project :communication (*)
+|    +--- project :shared (*)
+|    +--- project :ab (*)
+|    +--- project :web:contract (*)
+|    +--- project :app:app_contract (*)
+|    +--- project :device (*)
+|    +--- androidx.webkit:webkit:1.1.0 (*)
+|    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    +--- androidx.constraintlayout:constraintlayout-solver:2.0.4
+|    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    +--- androidx.navigation:navigation-ui-ktx:2.3.5 (*)
+|    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    +--- androidx.core:core-ktx:1.5.0 (*)
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    +--- com.google.dagger:dagger:2.36 (*)
+|    +--- com.google.dagger:dagger-android:2.36 (*)
+|    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    +--- javax.inject:javax.inject:1
+|    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    \--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
++--- project :web:contract (*)
++--- project :communication_inappnotification
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :communication_inappnotification:contract (*)
+|    +--- project :base (*)
+|    +--- project :auth (*)
+|    +--- project :shared (*)
+|    +--- project :analytics (*)
+|    +--- project :resources (*)
+|    +--- project :fileupload (*)
+|    +--- project :device (*)
+|    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    +--- androidx.core:core-ktx:1.5.0 (*)
+|    +--- com.github.skydoves:balloon:1.3.4 (*)
+|    +--- uk.co.samuelwall:material-tap-target-prompt:3.1.0 (*)
+|    +--- com.google.android.material:material:1.2.1 (*)
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    +--- com.google.code.gson:gson:2.8.6
+|    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    +--- com.squareup.moshi:moshi-adapters:1.12.0 (*)
+|    +--- com.google.dagger:dagger:2.36 (*)
+|    +--- com.google.dagger:dagger-android:2.36 (*)
+|    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    +--- javax.inject:javax.inject:1
+|    +--- com.jakewharton.timber:timber:4.7.1 (*)
+|    +--- joda-time:joda-time:2.10.10
+|    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    +--- com.google.guava:guava:28.1-android (*)
+|    +--- androidx.room:room-runtime:2.3.0 (*)
+|    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    +--- androidx.room:room-ktx:2.3.0 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.5.0 (*)
+|    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    +--- androidx.constraintlayout:constraintlayout-solver:2.0.4
+|    \--- com.github.bumptech.glide:glide:4.10.0 (*)
++--- project :supplier:contract (*)
++--- project :camera:camera_contract (*)
++--- project :customer:contract (*)
++--- project :gamification
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    \--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
++--- project :gamification:ipl
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :base (*)
+|    +--- project :analytics (*)
+|    +--- project :auth (*)
+|    +--- project :fileupload (*)
+|    +--- project :merchant:contract (*)
+|    +--- project :shared (*)
+|    +--- project :resources (*)
+|    +--- project :app:app_contract (*)
+|    +--- project :web (*)
+|    +--- project :accounting_core:contract (*)
+|    +--- project :rewards:contract (*)
+|    +--- project :collection_module:contract (*)
+|    +--- project :referral:contract (*)
+|    +--- project :backend:contract (*)
+|    +--- project :voice_first
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :base (*)
+|    |    +--- project :auth (*)
+|    |    +--- project :fileupload (*)
+|    |    +--- project :merchant:contract (*)
+|    |    +--- project :shared (*)
+|    |    +--- project :resources (*)
+|    |    +--- project :analytics (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.5.0 (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android:2.36 (*)
+|    |    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    |    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    |    +--- com.google.code.gson:gson:2.8.6
+|    |    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    |    +--- com.google.android.material:material:1.2.1 (*)
+|    |    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    |    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    |    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    |    \--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.5.0 (*)
+|    +--- com.github.instacart.truetime-android:library-extension-rx:3.4 (*)
+|    +--- com.github.okshrey:AndroidContacts:1.14.1
+|    +--- com.google.dagger:dagger:2.36 (*)
+|    +--- com.google.dagger:dagger-android:2.36 (*)
+|    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    +--- com.google.code.gson:gson:2.8.6
+|    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    +--- com.airbnb.android:epoxy:4.1.0 (*)
+|    +--- com.github.skydoves:balloon:1.3.4 (*)
+|    +--- uk.co.samuelwall:material-tap-target-prompt:3.1.0 (*)
+|    +--- com.google.android.material:material:1.2.1 (*)
+|    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    +--- com.google.firebase:firebase-firestore-ktx:22.1.2 (*)
+|    +--- com.github.bumptech.glide:glide:4.10.0 (*)
+|    +--- com.amulyakhare:com.amulyakhare.textdrawable:1.0.1
+|    +--- com.facebook.shimmer:shimmer:0.5.0 (*)
+|    +--- com.github.okcredit:ScratchView:1.3-custom-fix (*)
+|    +--- com.github.cuongnb96:android-youtube-player:master-SNAPSHOT (*)
+|    \--- jp.wasabeef:recyclerview-animators:4.0.2 (*)
++--- project :auth (*)
++--- project :ab (*)
++--- project :referral (*)
++--- project :backend:contract (*)
++--- project :onboarding:contract (*)
++--- project :feature_help:ui (*)
++--- project :feature_help:sdk (*)
++--- project :feature_help:contract (*)
++--- project :accounting_core:contract (*)
++--- project :customer:customer_ui (*)
++--- project :payment (*)
++--- project :cashback
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :base (*)
+|    +--- project :auth (*)
+|    +--- project :ab (*)
+|    +--- project :shared (*)
+|    +--- project :resources (*)
+|    +--- project :backend:contract (*)
+|    +--- project :rewards (*)
+|    +--- project :rewards:contract (*)
+|    +--- project :cashback:contract (*)
+|    +--- androidx.appcompat:appcompat:1.3.0 (*)
+|    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    +--- androidx.core:core-ktx:1.5.0 (*)
+|    +--- androidx.recyclerview:recyclerview:1.1.0 (*)
+|    +--- io.reactivex.rxjava2:rxjava:2.2.10 -> 2.2.19 (*)
+|    +--- io.reactivex.rxjava2:rxandroid:2.1.1 (*)
+|    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    +--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
+|    +--- com.google.code.gson:gson:2.8.6
+|    +--- com.squareup.okhttp3:logging-interceptor:4.9.1 (*)
+|    +--- com.google.dagger:dagger:2.36 (*)
+|    +--- com.google.dagger:dagger-android:2.36 (*)
+|    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    +--- javax.inject:javax.inject:1
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- com.google.guava:guava:28.1-android (*)
+|    \--- com.squareup.moshi:moshi:1.12.0 (*)
++--- project :supplier (*)
++--- project :device:installedpackges (*)
++--- project :user_migration (*)
++--- project :dynamicview:contract (*)
++--- project :web_features (*)
++--- project :account_chat:account_chat_ui (*)
++--- project :account_chat:account_chat_sdk (*)
++--- project :account_chat:account_chat_contract (*)
++--- project :payment:contract (*)
++--- project :cashback:contract (*)
++--- project :applock
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :base (*)
+|    +--- project :ab (*)
+|    +--- project :shared (*)
+|    +--- project :device (*)
+|    +--- project :analytics (*)
+|    +--- project :app:app_contract (*)
+|    +--- project :resources (*)
+|    +--- project :merchant:contract (*)
+|    +--- project :onboarding (*)
+|    +--- project :auth (*)
+|    +--- project :backend:contract (*)
+|    +--- project :applock:contract (*)
+|    +--- androidx.navigation:navigation-fragment:2.3.5 (*)
+|    +--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)
+|    +--- androidx.navigation:navigation-ui:2.3.5 (*)
+|    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    +--- androidx.core:core-ktx:1.5.0 (*)
+|    +--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.5.0 (*)
+|    +--- com.google.dagger:dagger:2.36 (*)
+|    +--- com.google.dagger:dagger-android:2.36 (*)
+|    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    +--- javax.inject:javax.inject:1
+|    +--- com.jakewharton.rxbinding3:rxbinding-core:3.1.0 (*)
+|    +--- com.jakewharton.rxrelay2:rxrelay:2.1.1 (*)
+|    +--- com.airbnb.android:lottie:3.4.0 (*)
+|    +--- com.github.mukeshsolanki:android-otpview-pinview:2.1.0 (*)
+|    +--- com.github.anjalsaneen:Pinview:v1.8 (*)
+|    \--- androidx.biometric:biometric:1.1.0 (*)
++--- project :accounting (*)
++--- project :accounting:contract (*)
++--- project :bill_management:ui (*)
++--- project :bill_management:sdk (*)
++--- project :bill_management:contract (*)
++--- project :applock:contract (*)
++--- project :user_migration:contract (*)
++--- project :user-stories (*)
++--- project :user-stories:contract (*)
++--- project :ok-doc
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :auth (*)
+|    +--- project :ab (*)
+|    +--- project :base (*)
+|    +--- project :analytics (*)
+|    +--- project :ok-doc:contract
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- com.google.code.gson:gson:2.8.6
+|    |    \--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    +--- com.google.dagger:dagger:2.36 (*)
+|    +--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
+|    +--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
+|    +--- com.google.dagger:dagger-android:2.36 (*)
+|    +--- com.google.dagger:dagger-android-support:2.36 (*)
+|    +--- javax.inject:javax.inject:1
+|    +--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0 (*)
+|    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
+|    +--- com.squareup.retrofit2:converter-gson:2.9.0 (*)
+|    +--- com.google.code.gson:gson:2.8.6
+|    +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (*)
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
++--- project :ok-doc:contract (*)
++--- project :secure_keys (*)
++--- project :voice_first (*)
++--- project :okstream
+|    +--- project :okstream:sdk
+|    |    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    |    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    |    +--- project :base (*)
+|    |    +--- project :okstream:contract (*)
+|    |    +--- project :analytics (*)
+|    |    +--- project :auth (*)
+|    |    +--- com.google.dagger:dagger:2.36 (*)
+|    |    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
+|    |    +--- androidx.room:room-runtime:2.3.0 (*)
+|    |    +--- androidx.room:room-rxjava2:2.3.0 (*)
+|    |    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    |    +--- com.hivemq:hivemq-mqtt-client:1.2.2
+|    |    |    +--- io.netty:netty-buffer:4.1.48.Final
+|    |    |    |    \--- io.netty:netty-common:4.1.48.Final
+|    |    |    +--- io.netty:netty-codec:4.1.48.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.48.Final
+|    |    |    |    +--- io.netty:netty-buffer:4.1.48.Final (*)
+|    |    |    |    \--- io.netty:netty-transport:4.1.48.Final
+|    |    |    |         +--- io.netty:netty-common:4.1.48.Final
+|    |    |    |         +--- io.netty:netty-buffer:4.1.48.Final (*)
+|    |    |    |         \--- io.netty:netty-resolver:4.1.48.Final
+|    |    |    |              \--- io.netty:netty-common:4.1.48.Final
+|    |    |    +--- io.netty:netty-common:4.1.48.Final
+|    |    |    +--- io.netty:netty-handler:4.1.48.Final
+|    |    |    |    +--- io.netty:netty-common:4.1.48.Final
+|    |    |    |    +--- io.netty:netty-resolver:4.1.48.Final (*)
+|    |    |    |    +--- io.netty:netty-buffer:4.1.48.Final (*)
+|    |    |    |    +--- io.netty:netty-transport:4.1.48.Final (*)
+|    |    |    |    \--- io.netty:netty-codec:4.1.48.Final (*)
+|    |    |    +--- io.netty:netty-transport:4.1.48.Final (*)
+|    |    |    +--- org.jctools:jctools-core:2.1.2
+|    |    |    +--- org.jetbrains:annotations:16.0.3
+|    |    |    +--- com.google.dagger:dagger:2.27 -> 2.36 (*)
+|    |    |    +--- io.reactivex.rxjava2:rxjava:2.2.19 (*)
+|    |    |    \--- org.reactivestreams:reactive-streams:1.0.3
+|    |    +--- net.sourceforge.streamsupport:android-retrostreams:1.7.1
+|    |    \--- net.sourceforge.streamsupport:android-retrofuture:1.7.1
+|    |         \--- net.sourceforge.streamsupport:android-retrostreams:1.7.1
+|    +--- androidx.databinding:viewbinding:4.1.3 (*)
+|    +--- org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.0 (*)
+|    +--- project :base (*)
+|    +--- project :auth (*)
+|    +--- project :merchant:contract (*)
+|    +--- project :device (*)
+|    +--- project :okstream:contract (*)
+|    +--- com.google.dagger:dagger:2.36 (*)
+|    +--- com.squareup.moshi:moshi:1.12.0 (*)
+|    +--- androidx.annotation:annotation:1.1.0 -> 1.2.0
+|    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.0 (*)
++--- project :okstream:contract (*)
++--- androidx.core:core-ktx:1.5.0 (*)
++--- androidx.constraintlayout:constraintlayout:2.0.4 (*)
++--- project :rewards:contract (*)
++--- project :customer (*)
++--- com.android.installreferrer:installreferrer:1.1 -> 2.1
++--- androidx.lifecycle:lifecycle-extensions:2.2.0 (*)
++--- androidx.lifecycle:lifecycle-runtime-ktx:2.2.0 -> 2.3.0 (*)
++--- com.google.dagger:dagger:2.36 (*)
++--- com.google.dagger:dagger-android:2.36 (*)
++--- com.google.dagger:dagger-android-support:2.36 (*)
++--- javax.inject:javax.inject:1
++--- com.uber.rxdogtag:rxdogtag:0.3.0
+|    \--- io.reactivex.rxjava2:rxjava:2.2.2 -> 2.2.19 (*)
++--- com.google.android.gms:play-services-maps:17.0.0 (*)
++--- com.jcminarro:Philology:2.1.0 (*)
++--- io.github.inflationx:viewpump:2.0.3 (*)
++--- com.zendesk:chat:2.2.0 (*)
++--- com.zendesk:messaging:4.3.1 (*)
++--- com.airbnb:deeplinkdispatch:4.1.0
+|    +--- com.airbnb:deeplinkdispatch-base:4.1.0
+|    |    +--- com.squareup.okio:okio:1.13.0 -> 2.10.0 (*)
+|    |    \--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- com.squareup.okio:okio:1.13.0 -> 2.10.0 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-beta01 -> 1.0.0 (*)
+|    \--- androidx.appcompat:appcompat:1.0.0-beta01 -> 1.3.0 (*)
++--- com.google.firebase:firebase-analytics:18.0.3 (*)
++--- com.google.firebase:firebase-messaging:21.1.0 (*)
++--- com.google.firebase:firebase-crashlytics-ndk:17.4.1 (*)
++--- com.google.firebase:firebase-auth-ktx:20.0.4 (*)
++--- com.google.firebase:firebase-firestore-ktx:22.1.2 (*)
++--- com.firebaseui:firebase-ui-firestore:7.1.1 (*)
++--- com.google.firebase:firebase-database-ktx:19.7.0 (*)
++--- com.appsflyer:af-android-sdk:5.2.0
++--- com.github.anrwatchdog:anrwatchdog:1.4.0
++--- androidx.multidex:multidex:2.0.1
++--- com.scottyab:rootbeer-lib:0.1.0
++--- com.amazonaws:aws-android-sdk-s3:2.22.6 (*)
++--- com.github.yalantis:ucrop:2.2.6 (*)
++--- com.github.aakira:expandable-layout:1.6.0
+|    \--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
++--- com.andrognito.patternlockview:patternlockview:1.0.0
+|    \--- androidx.appcompat:appcompat:1.0.0 -> 1.3.0 (*)
++--- com.andrognito.patternlockview:patternlockview-reactive:1.0.0
+|    +--- com.andrognito.patternlockview:patternlockview:1.0.0 (*)
+|    +--- io.reactivex.rxjava2:rxjava:2.0.2 -> 2.2.19 (*)
+|    \--- io.reactivex.rxjava2:rxandroid:2.0.0 -> 2.1.1 (*)
++--- com.github.anjalsaneen:Pinview:v1.8 (*)
++--- com.airbnb.android:lottie:3.4.0 (*)
++--- com.google.android.material:material:1.2.1 (*)
++--- com.airbnb.android:epoxy:4.1.0 (*)
++--- com.squareup.moshi:moshi:1.12.0 (*)
++--- com.squareup.moshi:moshi-adapters:1.12.0 (*)
++--- com.squareup.retrofit2:converter-moshi:2.9.0 (*)
++--- com.github.cuongnb96:android-youtube-player:master-SNAPSHOT (*)
++--- androidx.navigation:navigation-fragment:2.3.5 (*)
++--- androidx.navigation:navigation-ui:2.3.5 (*)
++--- androidx.navigation:navigation-ui-ktx:2.3.5 (*)
+\--- androidx.navigation:navigation-fragment-ktx:2.3.5 (*)

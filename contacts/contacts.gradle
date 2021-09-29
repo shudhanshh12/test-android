@@ -1,0 +1,110 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.staging.okcredit.in/v1.0/\""
+            buildConfigField "String", 'CONTACT_BASE_URL', "\"https://contact.staging.okcredit.io/v1.0/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.alpha.okcredit.in/v1.0/\""
+            buildConfigField "String", 'CONTACT_BASE_URL', "\"https://contact.alpha.okcredit.io/v1.0/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'BASE_URL', "\"https://api.okcredit.in/v1.0/\""
+            buildConfigField "String", 'CONTACT_BASE_URL', "\"https://contact.okcredit.io/v1.0/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main.res.srcDirs = [
+                'src/main/res-contact'
+        ]
+    }
+
+}
+
+dependencies {
+    // base
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':auth')
+    implementation project(':resources')
+    implementation project(':device')
+    implementation project(':shared')
+    implementation project(':contacts:contract')
+    implementation project(':feature_help:contract')
+    implementation project(':business:contract')
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    // retrofit
+    implementation retrofit.retrofit
+    implementation retrofit.gsonConverter
+    implementation retrofit.retrofitRxAdapter
+
+    // androidx
+    implementation androidX.annotation
+    implementation androidX.constraintLayout
+    implementation androidX.appcompact
+    implementation arch.lifecycleKtx
+
+    // kotlin
+    implementation utility.kotlin
+
+    //misc
+    implementation utility.contacts
+    implementation utility.guava
+
+    //room
+    implementation arch.room
+    implementation arch.roomRx
+    implementation arch.roomKtx
+    kapt arch.roomAnnotationProcessor
+
+    implementation view.material
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockk
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.coroutines
+
+}

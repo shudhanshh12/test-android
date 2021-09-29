@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invite_new_person">പുതിയ ഒരാളെ ക്ഷണിക്കൂ</string>
+    <string name="invite_and_earn">ഷെയർ ചെയ്യൂ, പണം നേടൂ</string>
+    <string name="invite_and_earn_cta">ഷെയർ ചെയ്യൂ പണം നേടൂ</string>
+    <string name="invite_and_earn_new">ഷെയർ ചെയ്യൂ, സമ്പാദിക്കൂ</string>
+    <string name="share_okcredit_app_and_get_rewards"><![CDATA[വ്യാപാരികളും കച്ചവടം ചെയ്യുന്ന സുഹൃത്തുക്കളുമായി OkCredit ഷെയർ ചെയ്യൂ. നിങ്ങൾ രണ്ടുപേർക്കും മൊത്തം <b>₹%1$s</b> വരെ നേടാം]]></string>
+    <string name="know_more">കൂടുതൽ അറിയാം</string>
+    <string name="invite_from_the_list">ലിസ്റ്റിൽ നിന്ന് ക്ഷണിക്കൂ!</string>
+    <string name="share_okcredit_with_your_friends_families_and_get_rewards_upto_1000"><![CDATA[നിങ്ങളുടെ കൂട്ടുകാരും കുടുംബവുമായി OkCredit ഷെയർ ചെയ്യൂ, ₹1000 വരെ പ്രതിഫലം നേടൂ]]></string>
+    <string name="share_okcredit_app_to_everyone">OkCredit ആപ്പ്\nഎല്ലാവരുമായി ഷെയർ ചെയ്യൂ</string>
+    <string name="ask_your_invites_to_install_the_app">അവരെ ആപ്പിൽ രജിസ്റ്റർ\nചെയ്യിക്കൂ</string>
+    <string name="money_will_be_ncredited_for_every_ninstallation">അവർ രജിസ്റ്റർ ചെയ്ത്\nആപ്പ് ഉപയോഗിച്ച് തുടങ്ങിയ ശേഷം പണം നേടൂ</string>
+    <string name="your_referral_link">നിങ്ങളുടെ റെഫെറൽ ലിങ്ക്</string>
+    <string name="share_to_anyone">ആർക്കും ഷെയർ ചെയ്യാം</string>
+    <string name="copy_link">ലിങ്ക് കോപ്പി ചെയ്യാം</string>
+    <string name="invite">ക്ഷണിക്കാം</string>
+    <string name="earn">നേടൂ ₹%1$s</string>
+    <string name="share_as_status">സ്റ്റാറ്റസ് ആയി ഷെയർ ചെയ്യൂ</string>
+    <string name="share_referral_failure">റെഫെറൽ ഷെയർ ചെയ്യാനായില്ല. ദയവായി വീണ്ടും ശ്രമിക്കൂ</string>
+    <string name="default_referral_share_content" comment="Download OKCredit from this link and help me earn up to Rs.50">ഈ ലിങ്ക് വഴി OkCredit App ഡൗൺലോഡ് ചെയ്ത് എന്നെ Rs.%1$s വരെ നേടാൻ സഹായിക്കൂ</string>
+    <string name="link_copied_toast">ലിങ്ക് കോപ്പി ചെയ്തിരിക്കുന്നു</string>
+    <string name="copy_referral_failure">പകർത്താനായില്ല. ദയവായി വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="targeted_referral_registered_merchant">ക്ഷണം സ്വീകരിച്ചു, അടുത്ത പടികൾ ശ്രദ്ധിക്കുക…</string>
+    <string name="targeted_referral_all_invited_title">സബാഷ്! നിങ്ങൾ എല്ലാവരെയും ക്ഷണിച്ചിരിക്കുന്നു</string>
+    <string name="targeted_referral_all_invited_subtitle">ഓർമ്മപ്പെടുത്തൽ അയക്കാൻ ഒരു ഫോൺ നമ്പർ തിരഞ്ഞെടുക്കുക</string>
+    <string name="share_app_title">പുതിയ ഒരാളെ ക്ഷണിക്കൂ</string>
+    <string name="share_app_description">നിങ്ങളുടെ സുഹൃത്തുക്കളും കുടുംബവുമായി OkCredit ഷെയർ ചെയ്യൂ</string>
+    <string name="share_apk">Apk ഷെയർ ചെയ്യൂ</string>
+    <string name="share_app_know_more_title">മറ്റുള്ളവരെ ക്ഷണിച്ച് പണം നേടാം. എങ്ങനെയെന്ന് നോക്കൂ!</string>
+    <string name="share_app_know_more_step_1">10 വ്യത്യസ്ത ദിനങ്ങളിൽ ചുരുങ്ങിയത് 10 ഇടപാടുകൾ ചേർക്കുക</string>
+    <string name="share_app_know_more_step_2">നിങ്ങൾ ഒരു പ്രത്യേക റെഫെറൽ പ്രക്രിയയുടെ ഭാഗമാകും</string>
+    <string name="share_app_know_more_step_3">₹1000 വരെ സമ്പാദിക്കാനുള്ള അവസരം</string>
+    <string name="share_app_failure">ആപ്പ് ഷെയർ ചെയ്യാനായില്ല. ദയവായി വീണ്ടും ശ്രമിക്കൂ</string>
+    <string name="share_app_msg">ഇൻസ്റ്റാൾ ചെയ്യൂ ഇന്ത്യയിലെ No. 1 ഡിജിറ്റൽ പണമിടപാട് മാനേജ്‌മന്റ് ആപ്പ് OkCredit. ഇന്ത്യയിൽ നിർമ്മിതം @ %1$s</string>
+    <string name="referred_merchant_list_error">റെഫർ ചെയ്ത കച്ചവടക്കാരുടെ ലിസ്റ്റ് ലഭ്യമല്ല. ദയവായി വീണ്ടും ശ്രമിക്കൂ</string>
+    <string name="you_claim_rewards_menu_referral">പ്രതിഫലം കരസ്ഥമാക്കാൻ ബാങ്ക് അക്കൗണ്ട് സെറ്റപ്പ് ചെയ്യുക</string>
+    <string name="no_reward_error">എന്തോ തകരാർ സംഭവിച്ചു, 504</string>
+    <string name="how_does_this_work">ഇത് എങ്ങനെയാണ് പ്രവർത്തിക്കുന്നത്?</string>
+</resources>

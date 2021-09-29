@@ -1,0 +1,129 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+        }
+
+        alpha {
+            dimension "server"
+        }
+
+        prod {
+            dimension "server"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':business:contract')
+    implementation project(':base')
+    implementation project(':ab')
+    implementation project(':shared')
+    implementation project(':analytics')
+    implementation project(':app:app_contract')
+    implementation project(':resources')
+    implementation project(':bill_management:sdk')
+    implementation project(':bill_management:contract')
+    implementation project(':backend')
+    implementation project(':suppliercredit')
+    implementation project(':auth')
+    implementation project(':backend:contract')
+    implementation project(':camera:camera_contract')
+    implementation project(':fileupload')
+    implementation project(':camera')
+
+    //arch
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    // Views
+    implementation view.epoxy
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    kapt view.epoxyProcessor
+    annotationProcessor view.epoxyProcessor
+    implementation view.youtubePlayer
+    implementation view.tooltip
+
+    //androidX
+    implementation androidX.ktx
+    implementation androidX.constraintLayout
+
+    // Dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    //Rx
+    implementation rx.binding
+    api rx.rxRelay
+
+    // kotlin
+    implementation utility.kotlin
+    implementation imageDeps.glide
+    implementation view.textDrawable
+
+    // playservice
+    implementation playService.googlePlayAds
+
+    // Utility
+    implementation utility.jodaTime
+    implementation firebase.auth
+    implementation firebase.firestore
+    implementation firebase.uiFirestore
+    implementation view.material
+    implementation firebase.database
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation firebase.firebaseCrashlytics
+
+    //CameraX
+    implementation camerax_3.camera_view
+    implementation camerax_3.camerax_camera
+    implementation camerax_3.camera_extensions
+    implementation camerax_3.camera_lifecycle
+    implementation camerax_3.camera_core
+
+    // navigation
+    implementation navigation.fragment
+    implementation navigation.fragmentKtx
+    implementation navigation.ui
+}

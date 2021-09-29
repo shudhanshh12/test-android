@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okcredit">OkCredit</string>
+    <string name="enter_otp">OTP ನಮೂದಿಸಿ</string>
+    <string name="resend_otp"><u>OTP ಮರುಕಳುಹಿಸಿ</u></string>
+    <string name="otp_incorrect">OTP ತಪ್ಪಾಗಿದೆ</string>
+    <string name="otp_expired">OTP ಅವಧಿ ಮೀರಿದೆ</string>
+    <string name="send_otp_success">OTP ಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಕಳುಹಿಸಲಾಗಿದೆ</string>
+    <string name="send_otp_failure_no_internet">OTP ಕಳುಹಿಸಲಾಗುತ್ತಿಲ್ಲ, ನಿಮ್ಮ ಇಂಟರ್‌ನೆಟ್‌ ಸಂಪರ್ಕವನ್ನು ದಯವಿಟ್ಟು ಪರಿಶೀಲಿಸಿ</string>
+    <string name="send_otp_failure">OTP ಕಳುಹಿಸಲಾಗುತ್ತಿಲ್ಲ, ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="otp_verification_failure">OTP ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿಲ್ಲ, ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="otp_sent_message">ನಿಮ್ಮ ಫೋನ್‌ ನಂಬರ್‌ಗೆ SMS ನಲ್ಲಿ ನಾವು OTP ಕಳುಹಿಸಿದ್ದೇವೆ %1$s</string>
+    <string name="credibility_text"> 50cr+ ವ್ಯವಹಾರಗಳು ಈಗಾಗಲೇ ತಮ್ಮ ಹೆಸರುಗಳೊಂದಿಗೆ ನೋಂದಾಯಿಸಿಕೊಂಡಿವೆ</string>
+    <string name="register_user_agreement">ಮುಂದುವರಿಸುವ ಮೂಲಕ, ನೀವು ನಮ್ಮ <![CDATA[<a href="https://www.okcredit.in/terms">ಸೇವಾ ನಿಯಮಗಳು</a>ಮತ್ತು <a href="https://www.okcredit.in/privacy">ಗೌಪ್ಯತಾ ನೀತಿ</a>]]> ಗೆ ಸಮ್ಮತಿಸಿರುವಿರಿ</string>
+    <string name="credibility_business_name_1">ಕೊನೆಯಲ್ಲಿ%s, %s+ ವ್ಯವಹಾರಗಳು ತಮ್ಮ ಹೆಸರುಗಳೊಂದಿಗೆ ನೋಂದಾಯಿಸಿಕೊಂಡಿವೆ</string>
+    <string name="credibility_business_name_2">%s ನಿಂದ %s ವ್ಯವಹಾರಗಳು ಇದೀಗ OkCredit ನಲ್ಲಿವೆ</string>
+    <string name="credibility_business_name_3">%s ನಿಂದ ಕೊನೆಯ %s, %s+ ವ್ಯವಹಾರಗಳು OkCredit ನಲ್ಲಿ ನೋಂದಾಯಿಸಿಕೊಂಡಿವೆ</string>
+    <string name="credibility_business_name_4_5_6_7_8">%s ವ್ಯವಹಾರಗಳು ಈಗಾಗಲೇ ತಮ್ಮ ಹೆಸರುಗಳೊಂದಿಗೆ ನೋಂದಾಯಿಸಿಕೊಂಡಿವೆ</string>
+    <string name="credibility_business_name_9_control">5 ಕೋಟಿ+ ವ್ಯವಹಾರಗಳು ಈಗಾಗಲೇ ತಮ್ಮ ಹೆಸರುಗಳೊಂದಿಗೆ ನೋಂದಾಯಿಸಿಕೊಂಡಿವೆ</string>
+    <string name="credibility_add_customer_1">ಕೊನೆಯ %s, %s+ಗ್ರಾಹಕರನ್ನು ವ್ಯವಹಾರಗಳ ಮೂಲಕ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="credibility_add_customer_2">%s+ ಗ್ರಾಹಕರ ಕ್ರೆಡಿಟ್ ಅನ್ನು %s ನಿಂದ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="credibility_add_customer_3">%s ನಿಂದ %s+ ಗ್ರಾಹಕರನ್ನು OkCredit ಕೊನೆಯ %s ನಲ್ಲಿ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="credibility_add_customer_4">%s+ ಬೆಲೆಯ ವಹಿವಾಟುಗಳನ್ನು %s ನಿಂದ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="credibility_add_customer_5">%s+ ಬೆಲೆಯ ವಹಿವಾಟುಗಳನ್ನು %s ನಿಂದ %s ಮೂಲಕ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="credibility_add_customer_6">%s+ ಗ್ರಾಹಕರನ್ನು %s ನಿಂದ %s ಮೂಲಕ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="credibility_add_customer_7">%s+ ಬೆಲೆಯ ವಹಿವಾಟುಗಳನ್ನು %s ಮೂಲಕ ಕೊನೆಯ %s ನಲ್ಲಿ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="credibility_add_customer_8">%s+ ಗ್ರಾಹಕರನ್ನು %s ಮೂಲಕ ಕೊನೆಯ %s ನಲ್ಲಿ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="credibility_add_customer_9_control">1 crore+ ಗ್ರಾಹಕರನ್ನು ಕಳೆದ ತಿಂಗಳು ವ್ಯವಹಾರಗಳ ಮೂಲಕ OkCredit ನಲ್ಲಿ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="credibility_monthly">ತಿಂಗಳು</string>
+    <string name="trusted_by_businesses">50,00,000+ ವ್ಯವಹಾರಗಳ ಮೂಲಕ ವಿಶ್ವಾಸಾರ್ಹವಾಗಿದೆ</string>
+    <string name="whatsapp_verification_message">ನಾನು ನನ್ನ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ಪರಿಶೀಲಿಸಲು ಬಯಸುತ್ತೇನೆ</string>
+</resources>

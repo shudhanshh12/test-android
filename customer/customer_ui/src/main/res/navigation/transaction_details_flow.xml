@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--##############################################
+# Account Statement Flow
+##################################################-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transaction_details_flow"
+    app:startDestination="@id/txDetailsScreen">
+
+    <fragment
+        android:id="@+id/txDetailsScreen"
+        android:name="in.okcredit.merchant.customer_ui.ui.transaction_details.TransactionFragment"
+        android:label="TransactionDetailsScreen"
+        tools:layout="@layout/transaction_fragment">
+
+    </fragment>
+
+</navigation>

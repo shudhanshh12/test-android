@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:alpha="0.24"
+        app:srcCompat="@drawable/live_sales_tutorial_v2" />
+
+    <TextView
+        android:id="@+id/empty_tx_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/all_your_qr_payments_will_appear_here"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textAppearance="?textAppearanceBody2" />
+
+</LinearLayout>

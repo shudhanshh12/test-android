@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvBatsmanScoreCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBatsman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvBestBatsmanGuess"
+            style="@style/TextAppearance.OKCTheme.Caption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_curved_indigo"
+            android:text="@string/best_batsman_guess"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBatmanName"
+            style="@style/OKC.TextAppearance.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBestBatsmanGuess"
+            tools:text="MS Dhvdvds" />
+
+        <TextView
+            android:id="@+id/tvBatsmanStatus"
+            style="@style/TextAppearance.OKCTheme.Caption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_layout"
+            android:gravity="end"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/tvBestBatsmanGuess"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/status_batting"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvBatsmanScore"
+            style="@style/OKC.TextAppearance.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBestBatsmanGuess"
+            tools:text="Runs 79 | Balls 61" />
+
+        <TextView
+            android:id="@+id/tvMatchVs"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="start"
+            android:textColor="@color/grey600"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBatmanName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvNiceChoice"
+        style="@style/OKC.TextAppearance.Subtitle1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="46dp"
+        android:drawablePadding="24dp"
+        android:gravity="center"
+        android:text="@string/nice_choice"
+        android:visibility="gone"
+        app:drawableTopCompat="@drawable/bg_nice_choice" />
+
+</androidx.cardview.widget.CardView>

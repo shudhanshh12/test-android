@@ -1,0 +1,120 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/config.gradle"
+
+android {
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            dimension "server"
+            buildConfigField "String", 'IPL_BASE_URL', "\"https://okpl.staging.okcredit.in/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'IPL_BASE_URL', "\"https://okpl.alpha.okcredit.in/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'IPL_BASE_URL', "\"https://okpl.okcredit.in/\""
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-gamifiaction-ipl.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-gamifiaction-ipl.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':base')
+    implementation project(':analytics')
+    implementation project(':auth')
+    implementation project(':fileupload')
+    implementation project(':business:contract')
+    implementation project(':shared')
+    implementation project(':resources')
+    implementation project(':app:app_contract')
+    implementation project(':web')
+    implementation project(':accounting_core:contract')
+    implementation project(':rewards:contract')
+    implementation project(':collection_module:contract')
+    implementation project(':analytics')
+    implementation project(':referral:contract')
+    implementation project(':backend:contract')
+    implementation project(':customer:contract')
+    implementation project(':voice_first')
+
+    implementation utility.kotlin
+    implementation utility.coroutines
+    implementation utility.coroutinesRx2
+    implementation utility.trueTime
+    implementation utility.contacts
+
+
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+
+    implementation androidX.constraintLayout
+
+    implementation retrofit.gson
+
+    implementation view.lottie
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+    annotationProcessor view.epoxyProcessor
+    implementation view.balloon
+    implementation view.advancedMaterialTap
+    implementation view.material
+
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    implementation firebase.firestore
+
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+    implementation imageDeps.textDrawable
+
+    implementation view.shimmer
+    implementation view.scratchView
+    implementation view.youtubePlayer
+
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+
+    implementation view.recyclerviewAnimators
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+}

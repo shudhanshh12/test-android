@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.okcredit.user_migration">
+
+    <application>
+        <activity
+            android:name="in.okcredit.user_migration.presentation.ui.UserMigrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.OKCTheme"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

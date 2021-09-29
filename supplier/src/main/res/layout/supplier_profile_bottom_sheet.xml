@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="?textAppearanceSubtitle1"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        tool:text="Bob Dylan" />
+
+
+    <TextView
+        android:id="@+id/balance_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceSubtitle4"
+        app:layout_constraintEnd_toStartOf="@+id/last_payment_date"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tool:text="Advance: $50"
+        tool:visibility="gone" />
+
+    <TextView
+        android:id="@+id/last_payment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="@+id/balance_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/balance_info"
+        app:layout_constraintTop_toTopOf="@+id/balance_info"
+        app:layout_constraintVertical_bias="0.0"
+        tool:text="(Last Payment: 02 Jun, 2020)" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/grey300"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/last_payment_date" />
+
+    <ImageButton
+        android:id="@+id/callIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/ic_call"
+        android:tint="@color/primary"
+        app:layout_constraintEnd_toStartOf="@+id/whatsappIcon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/callText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="@string/call"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="@+id/callIcon"
+        app:layout_constraintStart_toStartOf="@+id/callIcon"
+        app:layout_constraintTop_toBottomOf="@+id/callIcon" />
+
+    <ImageButton
+        android:id="@+id/whatsappIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/ic_whatsapp"
+        android:tint="@color/primary"
+        app:layout_constraintEnd_toStartOf="@id/chatIcon"
+        app:layout_constraintStart_toEndOf="@+id/callIcon"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/whatsappText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="@string/whatsapp"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="@+id/whatsappIcon"
+        app:layout_constraintStart_toStartOf="@+id/whatsappIcon"
+        app:layout_constraintTop_toBottomOf="@+id/whatsappIcon" />
+
+
+    <ImageButton
+        android:id="@+id/chatIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/supplier_ic_chat"
+        android:tint="@color/primary"
+        app:layout_constraintEnd_toStartOf="@+id/ivPayOnline"
+        app:layout_constraintStart_toEndOf="@+id/whatsappIcon"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/chatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="@string/supplier_chat"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="@+id/chatIcon"
+        app:layout_constraintStart_toStartOf="@+id/chatIcon"
+        app:layout_constraintTop_toBottomOf="@+id/chatIcon" />
+
+
+    <ImageButton
+        android:id="@+id/ivPayOnline"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/supplier_ic_collections"
+        android:tint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chatIcon"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tvPayOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="@string/supplier_pay_online"
+        android:textAppearance="?textAppearanceCaption2"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="@+id/ivPayOnline"
+        app:layout_constraintStart_toStartOf="@+id/ivPayOnline"
+        app:layout_constraintTop_toBottomOf="@+id/ivPayOnline" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/grpCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="callIcon,callText" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/grpWhatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="whatsappIcon,whatsappText" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/grpChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="chatIcon,chatText" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/grpPayOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="ivPayOnline,tvPayOnline" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "in.okcredit.merchant.debug",
+    "sha256_cert_fingerprints":
+    ["52:A8:C0:5C:A8:19:B6:79:D1:31:2C:50:5C:0F:59:8C:F1:B8:91:69:83:F0:5E:99:2F:67:41:BE:66:99:B6:0D"]
+  }
+}]

@@ -1,0 +1,52 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "b9dc7cc65eeac5c04360a3d8283dcda0",
+    "entities": [
+      {
+        "tableName": "CustomerAdditionalInfo",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`customer_id` TEXT NOT NULL, `collectionContextualEnabled` INTEGER NOT NULL, `txnIdForCollectionTrigger` TEXT, `txnCountOnPaymentIntentTrigger` INTEGER NOT NULL, PRIMARY KEY(`customer_id`))",
+        "fields": [
+          {
+            "fieldPath": "customer_id",
+            "columnName": "customer_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "collectionContextualEnabled",
+            "columnName": "collectionContextualEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "txnIdForCollectionTrigger",
+            "columnName": "txnIdForCollectionTrigger",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "txnCountOnPaymentIntentTrigger",
+            "columnName": "txnCountOnPaymentIntentTrigger",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "customer_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'b9dc7cc65eeac5c04360a3d8283dcda0')"
+    ]
+  }
+}

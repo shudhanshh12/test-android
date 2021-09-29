@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:theme="@style/AppTheme">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:theme="@style/LightActionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:navigationIcon="?attr/homeAsUpIndicator">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/TextAppearance.OKCTheme.Subtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/share"
+                    android:textColor="@color/grey900" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.OKCTheme.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:drawableTop="@drawable/ic_reward"
+            android:drawablePadding="24dp"
+            android:gravity="center"
+            android:text="@string/share_app_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbar" />
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/share_app_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/share_on_whatsapp"
+            style="@style/OKC.Button.Dark.Solid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:minWidth="248dp"
+            android:text="@string/share_as_status"
+            app:icon="@drawable/ic_whatsapp"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description" />
+
+
+
+        <View
+            android:id="@+id/know_more_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_orange_lite_corner_radius_8dp_stroke_orange_lite_1"
+            app:layout_constraintBottom_toBottomOf="@id/know_more_barrier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/share_on_whatsapp"
+            tools:layout_constraintBottom_toBottomOf="@id/bottom_margin" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/start_guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="28dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/end_guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="28dp" />
+
+        <TextView
+            android:id="@+id/know_more_title"
+            style="@style/TextAppearance.OKCTheme.Subtitle2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/share_app_know_more_title"
+            android:textColor="@color/orange_ada"
+            app:layout_constraintEnd_toEndOf="@id/end_guideline"
+            app:layout_constraintStart_toStartOf="@id/start_guideline"
+            app:layout_constraintTop_toTopOf="@id/know_more_background" />
+
+        <ImageView
+            android:id="@+id/know_more_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="@id/end_guideline"
+            app:layout_constraintTop_toBottomOf="@id/know_more_title"
+            app:srcCompat="@drawable/ic_reward_small" />
+
+        <View
+            android:id="@+id/bottom_margin"
+            android:layout_width="0dp"
+            android:layout_height="12dp"
+            app:layout_constraintEnd_toEndOf="@id/know_more_background"
+            app:layout_constraintStart_toStartOf="@id/know_more_background"
+            app:layout_constraintTop_toBottomOf="@id/know_more_image" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/know_more_barrier"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="bottom_margin,step_3" />
+
+        <TextView
+            android:id="@+id/step_1"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:text="@string/share_app_know_more_step_1"
+            app:drawableStartCompat="@drawable/ic_plus_small"
+            app:layout_constraintEnd_toStartOf="@id/know_more_image"
+            app:layout_constraintStart_toStartOf="@id/start_guideline"
+            app:layout_constraintTop_toBottomOf="@id/know_more_title"
+            tools:drawableStart="@drawable/ic_plus_small" />
+
+        <TextView
+            android:id="@+id/step_2"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:text="@string/share_app_know_more_step_2"
+            app:drawableStartCompat="@drawable/ic_lending"
+            app:layout_constraintEnd_toStartOf="@id/know_more_image"
+            app:layout_constraintStart_toStartOf="@id/start_guideline"
+            app:layout_constraintTop_toBottomOf="@id/step_1"
+            tools:drawableStart="@drawable/ic_lending" />
+
+        <TextView
+            android:id="@+id/step_3"
+            style="@style/TextAppearance.OKCTheme.Caption2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:text="@string/share_app_know_more_step_3"
+            app:drawableStartCompat="@drawable/ic_reward_badge"
+            app:layout_constraintEnd_toStartOf="@id/know_more_image"
+            app:layout_constraintStart_toStartOf="@id/start_guideline"
+            app:layout_constraintTop_toBottomOf="@id/step_2"
+            tools:drawableStart="@drawable/ic_reward_badge" />
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/referral_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="know_more_background,know_more_title,step_1,step_2,step_3,know_more_image"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

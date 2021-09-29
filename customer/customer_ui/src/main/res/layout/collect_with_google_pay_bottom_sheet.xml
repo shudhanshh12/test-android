@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top">
+
+    <View
+        android:layout_width="52dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/payment_bg_round_rec_corners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:padding="12dp"
+        android:src="@drawable/ic_close_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEnterAmountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_amount_to_collect"
+        android:textAppearance="@style/OKC.TextAppearance.Caption1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCross" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_amount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:gravity="center"
+        android:minWidth="142dp"
+        app:boxBackgroundMode="none"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterAmountTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_amount"
+            style="@style/OKC.TextAppearance.Headline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="1234567890"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:hint="@string/zero"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:textCursorDrawable="@drawable/ic_cursor"
+            app:drawableStartCompat="@drawable/ic_indian_rupee_symbol"
+            app:drawableTint="@color/green_primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/view_amount_border"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/green_primary"
+        app:layout_constraintEnd_toEndOf="@+id/text_input_amount"
+        app:layout_constraintStart_toStartOf="@+id/text_input_amount"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_amount" />
+
+    <TextView
+        android:id="@+id/error_amount"
+        style="@style/OKC.TextAppearance.Caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txn_invalid_amount"
+        android:textColor="@color/error_red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/text_input_amount"
+        app:layout_constraintStart_toStartOf="@+id/text_input_amount"
+        app:layout_constraintTop_toBottomOf="@+id/view_amount_border"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvSendTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/amount_receive_in"
+        android:textAppearance="@style/TextAppearance.OKCTheme.Caption2"
+        android:textColor="@color/grey600"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/vwBgAccountDetails"
+        app:layout_constraintStart_toStartOf="@id/vwBgAccountDetails"
+        app:layout_constraintTop_toBottomOf="@+id/view_amount_border" />
+
+    <View
+        android:id="@+id/vwBgAccountDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_white_corner_radius_8dp_stroke_grey200"
+        app:layout_constraintBottom_toBottomOf="@id/phBottom"
+        app:layout_constraintTop_toTopOf="@id/phTop" />
+
+    <androidx.constraintlayout.widget.Placeholder
+        android:id="@+id/phTop"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        app:layout_constraintBottom_toTopOf="@id/tvAccountName" />
+
+    <TextView
+        android:id="@+id/tvAccountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:textAppearance="@style/TextAppearance.OKCTheme.Caption2"
+        android:textColor="@color/grey700"
+        app:layout_constraintBottom_toTopOf="@id/tvAccountId"
+        app:layout_constraintStart_toStartOf="@id/vwBgAccountDetails"
+        tools:text="Poonam Parth" />
+
+    <ImageView
+        android:id="@+id/image_verified"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="7dp"
+        android:background="@drawable/payment_ic_success_green"
+        app:layout_constraintBottom_toBottomOf="@id/tvAccountName"
+        app:layout_constraintStart_toEndOf="@id/tvAccountName"
+        app:layout_constraintTop_toTopOf="@id/tvAccountName" />
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:src="@drawable/ic_due_edit"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/vwBgAccountDetails"
+        app:layout_constraintTop_toTopOf="@id/vwBgAccountDetails" />
+
+    <TextView
+        android:id="@+id/tvAccountId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:textAppearance="@style/TextAppearance.OKCTheme.Subtitle3"
+        android:textColor="@color/grey700"
+        app:layout_constraintBottom_toTopOf="@id/tvAccountIfsc"
+        app:layout_constraintStart_toStartOf="@id/vwBgAccountDetails"
+        tools:text="910010050209155" />
+
+    <TextView
+        android:id="@+id/tvAccountIfsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/payment_bg_account_ifsc"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="4dp"
+        android:textAppearance="@style/TextAppearance.OKCTheme.Caption2"
+        android:textColor="@color/grey700"
+        app:layout_constraintBottom_toTopOf="@id/phBottom"
+        app:layout_constraintStart_toStartOf="@id/vwBgAccountDetails"
+        tools:text="ICICI00123456" />
+
+    <androidx.constraintlayout.widget.Placeholder
+        android:id="@+id/phBottom"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/vwDividerBottom" />
+
+    <View
+        android:id="@+id/vwDividerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/grey300"
+        app:layout_constraintBottom_toTopOf="@id/mbProceed" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbProceed"
+        style="@style/OKC.Button.Dark.Solid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/cta_send_collection_request"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLoading"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:translationZ="3dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/mbProceed"
+        app:layout_constraintEnd_toEndOf="@id/mbProceed"
+        app:layout_constraintStart_toStartOf="@id/mbProceed"
+        app:layout_constraintTop_toTopOf="@id/mbProceed"
+        app:srcCompat="@drawable/payment_ic_loader" />
+
+    <ImageView
+        android:id="@+id/image_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/payment_ic_success_green"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_success"
+        style="@style/OKC.TextAppearance.Subtitle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/request_sent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_success" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tvEnterAmountTitle,text_input_amount,view_amount_border,tvSendTo,tvAccountName,
+        vwBgAccountDetails,tvAccountName,tvAccountId,mbProceed,tvAccountIfsc,phBottom,vwDividerBottom,image_verified,error_amount,ivCross" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

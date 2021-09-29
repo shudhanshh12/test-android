@@ -1,0 +1,150 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply plugin: "androidx.navigation.safeargs.kotlin"
+apply from: "$rootDir/config.gradle"
+
+android {
+
+    sourceSets {
+        androidTest.assets.srcDirs +=
+                files("$projectDir/schemas".toString())
+    }
+
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'RISK_URL', "\"https://risk-engine-v2.staging.okcredit.in/\""
+            buildConfigField "String", 'ZENDESK_ACCOUNT_KEY', "\"9HZ4WrbXh5IfpUykRhavL5FpeIuhbK6Y\""
+            buildConfigField "String", 'ZENDESK_APP_ID', "\"193443988381343745\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'RISK_URL', "\"https://risk-engine-v2.alpha.okcredit.in/\""
+            buildConfigField "String", 'ZENDESK_ACCOUNT_KEY', "\"9HZ4WrbXh5IfpUykRhavL5FpeIuhbK6Y\""
+            buildConfigField "String", 'ZENDESK_APP_ID', "\"193443988381343745\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'RISK_URL', "\"https://risk-engine-v2.okcredit.in/\""
+            buildConfigField "String", 'ZENDESK_ACCOUNT_KEY', "\"9HZ4WrbXh5IfpUykRhavL5FpeIuhbK6Y\""
+            buildConfigField "String", 'ZENDESK_APP_ID', "\"193443988381343745\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules.pro'
+
+        }
+    }
+
+    kapt {
+        correctErrorTypes = true
+    }
+
+}
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':shared')
+    implementation project(':resources')
+    implementation project(':collection_module:contract')
+    implementation project(':suppliercredit')
+    implementation project(':suppliercredit:contract')
+    implementation project(':analytics')
+    implementation project(':accounting')
+    implementation project(':accounting:contract')
+    implementation project(':ab')
+    implementation project(':analytics')
+    implementation project(':payment:contract')
+    implementation project(':communication')
+    implementation project(':backend')
+    implementation project(':auth')
+    implementation project(':business:contract')
+    implementation project(':account_chat:account_chat_sdk')
+    implementation project(':account_chat:account_chat_contract')
+    implementation project(':app:app_contract')
+    implementation project(':supplier:contract')
+    implementation project(':fileupload')
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.moshiConverter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+
+    implementation navigation.fragment
+    implementation navigation.ui
+    implementation arch.lifecycle
+
+    implementation moshi.core
+    kapt moshi.codegen
+
+    implementation imageDeps.glide
+    kapt imageDeps.glideCompiler
+    implementation imageDeps.textDrawable
+
+    implementation rx.binding
+    implementation rx.rxRelay
+
+    implementation navigation.fragment
+    implementation navigation.fragmentKtx
+    implementation navigation.ui
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    implementation dagger.core
+
+
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation utility.kotlin
+    implementation utility.timber
+
+    implementation androidX.constraintLayout
+    implementation androidX.ktx
+
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+
+    implementation moshi.core
+    kapt moshi.codegen
+    implementation moshi.adapters
+    implementation retrofit.moshiConverter
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    implementation firebase.firebaseCrashlytics
+
+    //zendesk
+    implementation zendesk.chat
+    implementation zendesk.messaging
+    implementation firebase.firebaseMessaging
+}

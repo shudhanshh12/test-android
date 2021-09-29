@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okassistant_greeting">Namaskar 🙏 Main hoon OkAssistant !!</string>
+    <string name="okassistant_education">Aapki aawaaz pehchanane me mujhe thodi madad chahiye.\n\nKripaya mic ka button dabaayein aur neeche di gayi lines spasht aawaaz me padh kar record karein.</string>
+    <string name="read_this">Yeh padhein</string>
+    <string name="invalid_recording">Amanya recording</string>
+    <string name="task_complete">Poora hua</string>
+    <string name="okassistant_retry">Retry</string>
+    <!-- /* Bulk Add by voice -->
+    <string name="t_004_bulk_voice_txn_main_headline">Bolein aur Transactions Jodein</string>
+    <string name="t_004_bulk_voice_txn_main_caption">Sirf bol kar tezi se kaam poora karein</string>
+    <string name="t_004_bulk_voice_txn_date_field">Transaction Date</string>
+    <string name="t_004_bulk_voice_txn_body_headline">English ya Hindi me Bolein</string>
+    <string name="t_004_bulk_voice_txn_body_english_example">Sameer 100 rupees credit / Sameer 100 rupees payment</string>
+    <string name="t_004_bulk_voice_txn_body_subtitle">YA</string>
+    <string name="t_004_bulk_voice_txn_hinglish_example">Sameer ki 100 rupaye ki udhaari / Sameer ka 100 rupaye ka payment</string>
+    <string name="t_004_speech_eg_title">English ya Hindi me Bolein</string>
+    <string name="t_004_speech_eg_caption_credit">Udhaar jodne ke liye, bolein</string>
+    <string name="t_004_speech_eg_credit_desc">“Sameer 100 rupees credit” or “Sameer ki 100 rupaye ki udhaari”</string>
+    <string name="t_004_speech_eg_caption_payment">Payment jodne ke liye, bolein</string>
+    <string name="t_004_speech_eg_payment_desc">“Sameer 100 rupees payment” or “Sameer ka 100 rupaye ka payment”</string>
+    <string name="t_004_speech_try_again_error_desc">Maaf karein, samajh nahi paayein. Kripaya mic button daba kar dobara bolein.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_processing">Process ho raha hai…</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_failed">Processing asafal! Kripaya dobara koshish karein.</string>
+    <string name="t_004_bulk_voice_txn_intermediate_state_incomplete">Kripaya poore details jodein</string>
+    <string name="t_004_bulk_voice_txn_voice_transcript_label">Aapne yeh kahaa</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_credit">Udhaar</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_supplier_payment">Payment</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_credit">Diya Hua</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_customer_payment">Prapt hua</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_txn_type">Transaction</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_add_note">Note (Optional)</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_amount">Amount</string>
+    <string name="t_004_bulk_voice_txn_delete">Delete</string>
+    <string name="t_004_bulk_voice_txn_update">Update</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_saved">Transaction update hua</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_deleted">Transaction hataaya gaya</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_edit_discarded">Transaction me kiye gaye changes save nahi huye</string>
+    <string name="t_004_bulk_voice_txn_edit_screen_draft_load_failed">Transactions load nahi kar pa rahe hain</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_title">Naam Chunein</string>
+    <string name="t_004_bulk_voice_txn_select_name_bottomsheet_search_more">Aur naam khojein</string>
+    <string name="t_004_bulk_voice_txn_select_name_hint_text">Naam Chunein ya Khojein</string>
+    <string name="t_004_bulk_voice_txn_confirm_save_title">Save karne se pehle transactions check karein</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_date_of_txn">Transactions ki date - %s</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_txn_not_saved_caption">₹0 rakam, process ho rahe/ asafal ya adhuri jaankari wale transactions save nahi honge.</string>
+    <string name="t_004_bulk_voice_txn_save_bottomsheet_blocked_merchants">Agar aapane kisi customer/ supplier ko block kiya ho, ya agar aapko kisi customer/ supplier ne a block kiya ho, toh joda gaya transaction save nahin hoga.</string>
+    <string name="t_004_bulk_voice_txn_customer_count">%1s Customer,</string>
+    <string name="t_004_bulk_voice_txn_supplier_count">%1s Supplier</string>
+    <string name="t_004_bulk_voice_txn_transaction_saved">Transaction Save Hua</string>
+    <string name="t_004_bulk_voice_txn_transaction_cancelled">Transaction Cancel Hua</string>
+    <!-- Bulk Add by voice */ -->
+</resources>

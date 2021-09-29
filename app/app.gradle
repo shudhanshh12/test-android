@@ -1,0 +1,363 @@
+def taskName = gradle.startParameter.taskRequests.toString()
+
+// toLowerCase because it might be assembleDebug
+apply plugin: 'com.android.application'
+if (!taskName.toLowerCase().contains("debug")) {
+    apply plugin: 'com.github.sgtsilvio.gradle.android-retrofix'
+}
+apply plugin: 'kotlin-android'
+if (!taskName.toLowerCase().contains("debug")) {
+    apply plugin: 'com.google.firebase.firebase-perf'
+}
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: "kotlin-kapt"
+apply from: "$rootDir/commons.gradle"
+apply from: "$rootDir/flavors.gradle"
+apply plugin: "androidx.navigation.safeargs"
+apply from: "$rootDir/config.gradle"
+
+def apkFileName = loadApkFileName()
+def config = loadConfig()
+String apkSource = loadApkSource()
+
+ext {
+    ci = System.getenv("CI") == "true"
+}
+
+android {
+
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+        exclude 'META-INF/*.kotlin_module'
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/io.netty.versions.properties'
+        exclude "**/module-info.class"
+    }
+
+    signingConfigs {
+        defaultConfig {
+            keyAlias config['signing_keyAlias']
+            keyPassword config['signing_keyPassword']
+            storeFile rootProject.file(config['signing_storeFile'])
+            storePassword config['signing_storePassword']
+        }
+        release {
+            keyAlias config['signing_keyAlias']
+            keyPassword config['signing_keyPassword']
+            storeFile rootProject.file(config['signing_storeFile'])
+            storePassword config['signing_storePassword']
+            firebaseCrashlytics {
+                // Enable processing and uploading of native symbols to Crashlytics servers.
+                // By default, this is disabled to improve build speeds.
+                // This flag must be enabled to see properly-symbolicated native
+                // stack traces in the Crashlytics dashboard.
+                nativeSymbolUploadEnabled true
+            }
+        }
+    }
+
+    defaultConfig {
+        applicationId "in.okcredit.merchant"
+
+        resConfigs "en", "ach", "afh", "bn", "gu", "hi", "kn", "ml", "mr", "pa", "ta", "te"
+    }
+
+    with flavorConfig
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+
+            manifestPlaceholders = [
+                    appName              : "OkC Staging",
+                    trueCallerPartnerKey : "Lo9n144ed71bf437c49599fb601776afc3d1a",
+                    deepLinkBaseUrl      : "staging.okcredit.app",
+                    isTest               : "true",
+                    apkSource            : apkSource
+            ]
+
+            debuggable true
+            shrinkResources false
+            minifyEnabled false
+
+            ext.alwaysUpdateBuildId = false
+            multiDexEnabled true
+            testCoverageEnabled project.hasProperty('coverage')
+            signingConfig signingConfigs.defaultConfig
+        }
+
+        qa {
+            applicationIdSuffix ".qa"
+
+            manifestPlaceholders = [
+                    appName              : "OkC Alpha",
+                    trueCallerPartnerKey : "GD9k2f413a55faf814cb5bae35cd9e87f9f50",
+                    deepLinkBaseUrl      : "okcredit.app",
+                    isTest               : "false",
+                    apkSource            : apkSource
+            ]
+
+            debuggable true
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules-app.pro'
+            signingConfig signingConfigs.defaultConfig
+        }
+
+        release {
+            manifestPlaceholders = [
+                    appName              : "OkCredit",
+                    trueCallerPartnerKey : "xrwxmfdf04c1558d74b03be136d336f46c5c2",
+                    deepLinkBaseUrl      : "okcredit.app",
+                    isTest               : "false",
+                    apkSource            : apkSource
+            ]
+            debuggable false
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules-app.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    bundle {
+        density {
+            enableSplit true
+        }
+        abi {
+            enableSplit true
+        }
+        language {
+            enableSplit false
+        }
+    }
+
+    configurations {
+        all {
+            exclude group: 'com.google.guava', module: 'listenablefuture'
+            exclude module: 'httpclient'
+            exclude module: 'commons-logging'
+            exclude module: 'protobuf-lite'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            if (apkFileName == "") {
+                outputFileName = "merchant" + "-${apkSource}" + "-${variant.name}" + "-${variant.versionName}" + ".apk"
+            } else {
+                outputFileName = apkFileName + ".apk"
+            }
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries !ci
+    }
+
+    lintOptions {
+        // Disable lintVital. Not needed since lint is run on CI
+        checkReleaseBuilds false
+        // Ignore any tests
+        ignoreTestSources true
+        // Do not need to check dependencies
+        checkDependencies false
+    }
+
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // modules
+    implementation project(':base')
+    implementation project(':backend')
+    implementation project(':frontend')
+    implementation project(':resources')
+    implementation project(':fileupload')
+    implementation project(':analytics')
+    implementation project(':suppliercredit')
+    implementation project(':suppliercredit:contract')
+    implementation project(':collection_module:collection_sdk')
+    implementation project(':rewards')
+    implementation project(':business')
+    implementation project(':business:contract')
+    implementation project(':camera')
+    implementation project(':device')
+    implementation project(':dynamicview')
+    implementation project(':shared')
+    implementation project(':expense')
+    implementation project(':communication')
+    implementation project(':accounting_core')
+    implementation project(':app:app_contract')
+    implementation project(':referral:contract')
+    implementation project(':collection_module:contract')
+    implementation project(':frontend:contract')
+    implementation project(':contacts')
+    implementation project(':contacts:contract')
+    implementation project(':home')
+    implementation project(':collection_module:collection_ui')
+    implementation project(':sales_module:sales_sdk')
+    implementation project(':sales_module:sales_ui')
+    implementation project(':onboarding')
+    implementation project(':home:contract')
+    implementation project(':web')
+    implementation project(':web:contract')
+    implementation project(':communication_inappnotification')
+    implementation project(':supplier:contract')
+    implementation project(':camera:camera_contract')
+    implementation project(':customer:contract')
+    implementation project(":gamification")
+    implementation project(":gamification:ipl")
+
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':ab'),{exclude group: 'com.google.guava', module: 'listenablefuture'}
+    implementation project(':referral')
+
+    implementation project(':backend:contract')
+    implementation project(':onboarding:contract')
+    implementation project(':feature_help:ui')
+    implementation project(':feature_help:sdk')
+    implementation project(':feature_help:contract')
+    implementation project(':accounting_core:contract')
+    implementation project(':customer:customer_ui')
+    implementation project(':payment')
+    implementation project(':cashback')
+    implementation project(':business_health_dashboard')
+    implementation project(':business_health_dashboard:contract')
+    implementation project(':supplier')
+    implementation project(':supplier:contract')
+    implementation project(':device:installedpackges')
+    implementation project(':user_migration')
+    implementation project(':dynamicview:contract')
+    implementation project(':web_features')
+    implementation project(':account_chat:account_chat_ui')
+    implementation project(':account_chat:account_chat_sdk')
+    implementation project(':account_chat:account_chat_contract')
+    implementation project(':payment:contract')
+    implementation project(':cashback:contract')
+    implementation project(':applock')
+    implementation project(':accounting')
+    implementation project(':accounting:contract')
+    implementation project(':bill_management:ui')
+    implementation project(':bill_management:sdk')
+    implementation project(':bill_management:contract')
+    implementation project(':applock:contract')
+    implementation project(':user_migration:contract')
+    implementation project(':user-stories')
+    implementation project(':user-stories:contract')
+    implementation project(':ok-doc')
+    implementation project(":ok-doc:contract")
+    implementation project(":secure_keys")
+    implementation project(":voice_first")
+    implementation project(":voice_first:contract")
+
+
+    implementation project(':okstream')
+    implementation project(':okstream:contract')
+    implementation project(':individual')
+    implementation project(':individual:contract')
+
+    //androidx
+    implementation androidX.ktx
+    implementation androidX.constraintLayout
+
+    // Analytics
+    implementation project(':rewards:contract')
+    implementation project(':customer')
+
+    implementation project(':storesms')
+
+    implementation playService.installReferrer
+
+    //arch
+    implementation arch.lifecycle
+    implementation arch.lifecycleKtx
+
+    // Dagger
+    implementation dagger.core
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    // Rx
+    implementation rx.rxdogtag
+
+    //google play service
+    implementation playService.map
+
+    implementation utility.philology
+    implementation utility.viewpump
+
+    //zendesk
+    implementation zendesk.chat
+    implementation zendesk.messaging
+
+    // Deep links
+    implementation deeplink.deeplinkDispatch
+    kapt deeplink.deeplinkDispatchProcessor
+
+    //Firebase
+    implementation firebase.firebaseAnalytics
+    implementation firebase.firebaseMessaging
+    implementation firebase.firebaseCrashlytics
+    implementation firebase.auth
+    implementation firebase.firestore
+    implementation firebase.uiFirestore
+    implementation firebase.database
+
+    implementation analytics.appsflyer
+    implementation anrWatchDog.anrwatchdog
+
+    debugImplementation tools.leakcanary
+
+    implementation androidX.multidex
+
+    implementation utility.rootbeer
+
+    implementation aws.awsS3
+
+    implementation imageDeps.imageCrop
+
+    // Views
+    implementation view.expandableLayout
+    implementation view.patternlockview
+    implementation view.patternlockviewRx
+    implementation view.pinview
+    implementation view.lottie
+    implementation view.material
+    implementation view.epoxy
+    kapt view.epoxyProcessor
+
+    implementation moshi.core
+    kapt moshi.codegen
+    implementation moshi.adapters
+    implementation retrofit.moshiConverter
+
+    implementation view.youtubePlayer
+
+    implementation navigation.fragment
+    implementation navigation.ui
+    implementation navigation.uiKtx
+    implementation navigation.fragmentKtx
+
+
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.androidxTestCore
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockk
+    testImplementation unitTest.robolectric
+    testImplementation firebase.firebaseCrashlytics
+
+}
+
+apply plugin: 'com.google.gms.google-services'

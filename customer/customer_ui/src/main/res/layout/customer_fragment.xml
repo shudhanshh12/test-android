@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    app:layoutName="Customer Fragment">
+
+    <include
+        android:id="@+id/customer_screen_toolbar"
+        layout="@layout/customer_screen_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sort_transactions_by_label"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="@string/t_001_filter_sort_by_title"
+        android:textAllCaps="true"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/grey600"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recycler_view" />
+
+    <TextView
+        android:id="@+id/tv_sort_transactions_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/round_corner_24_400"
+        android:drawablePadding="12dp"
+        android:elevation="2dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/t_001_filter_sort_by_bill_date"
+        android:textAppearance="?textAppearanceSubtitle4"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:drawableEndCompat="@drawable/ic_sort_by"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sort_transactions_by_label"
+        app:layout_constraintEnd_toEndOf="@id/tv_sort_transactions_by_label"
+        app:layout_constraintTop_toTopOf="@id/tv_sort_transactions_by_label" />
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/referralTransactionRewardEpoxy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_screen_toolbar"
+        android:isScrollContainer="false"
+        android:nestedScrollingEnabled="false"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customer_screen_toolbar"
+        tool:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/registered_customer_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/orange_lite"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/referralTransactionRewardEpoxy">
+
+        <ImageView
+            android:id="@+id/iv_comment_account"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            app:srcCompat="@drawable/ic_common_ledger" />
+
+        <TextView
+            android:id="@+id/comment_account_text"
+            style="@style/OKC.TextAppearance.Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="4dp"
+            tool:text="This text will change later. This text will change later. This text will change later" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/common_ledger_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/orange_lite_1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registered_customer_container" />
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/send_or_receive_payment_barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/common_ledger_divider" />
+
+    <View
+        android:id="@+id/pre_network_bg"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/background_orange_lite_corner_radius_8dp_stroke_orange_lite_1"
+        app:layout_constraintBottom_toTopOf="@id/total_amount_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pre_network_caption"
+        style="@style/OKC.TextAppearance.Body4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:gravity="center"
+        android:text="@string/t_001_pre_nw_onboarding_warning_inactive_acc"
+        app:layout_constraintBottom_toBottomOf="@id/pre_network_bg"
+        app:layout_constraintEnd_toEndOf="@id/pre_network_bg"
+        app:layout_constraintStart_toStartOf="@id/pre_network_bg"
+        app:layout_constraintTop_toTopOf="@id/pre_network_bg" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/pre_network_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="pre_network_caption, pre_network_bg "
+        tool:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/btn_scroll_to_bottom"
+        android:src="@drawable/ic_scroll_to_bottom"
+        android:scaleType="centerInside"
+        android:padding="4dp"
+        android:visibility="gone"
+        android:elevation="2dp"
+        android:background="@drawable/rounded_bitmap_drawable"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@id/total_amount_container"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/total_amount_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:background="@drawable/background_grey50_corner_radius_8dp"
+        app:layout_constraintBottom_toTopOf="@+id/send_or_receive_payment_barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tool:layout_constraintBottom_toTopOf="@+id/send_or_receive_payment_ab">
+
+        <TextView
+            android:id="@+id/balance_text"
+            style="?textAppearanceBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:paddingBottom="6dp"
+            android:text="@string/balance"
+            app:layout_constraintBottom_toTopOf="@+id/barrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="@dimen/spacing_4"
+            android:gravity="end"
+            android:paddingBottom="6dp"
+            android:textAppearance="?textAppearanceHeadline4"
+            android:textColor="@color/tx_credit"
+            app:layout_constraintBottom_toTopOf="@+id/barrier"
+            app:layout_constraintEnd_toStartOf="@id/arrow_icon"
+            app:layout_constraintStart_toEndOf="@id/balance_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginEnd="@dimen/_16dp"
+            tool:text="$2322" />
+
+        <ImageView
+            android:id="@+id/arrow_icon"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:src="@drawable/arrow_right_icon"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/barrier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/total"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/grey900" />
+
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="balance_text,total" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextCashback"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.OKCTheme.Caption2"
+            android:drawableStart="@drawable/ic_confetti"
+            app:layout_constraintTop_toBottomOf="@id/total"
+            android:background="@color/orange_lite"
+            android:drawableEnd="@drawable/ic_cross_20dp"
+            android:drawablePadding="10dp"
+            android:text="@string/SU2_Cashback_Discovery_body_1"
+            android:visibility="gone"
+            tool:visibility="visible"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/due_date_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_balance_layout_bottom"
+            android:paddingBottom="@dimen/_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/materialTextCashback">
+
+
+            <TextView
+                android:id="@+id/due_date_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:paddingStart="16dp"
+                android:textAppearance="?textAppearanceHeadline5"
+                android:textColor="@color/green_primary"
+                app:layout_constraintBottom_toTopOf="@+id/due_month"
+                app:layout_constraintEnd_toEndOf="@+id/due_month"
+                app:layout_constraintStart_toStartOf="@+id/due_month"
+                app:layout_constraintTop_toTopOf="parent"
+                tool:text="30" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/due_date_informal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:checkable="false"
+                android:clickable="false"
+                android:textAppearance="?textAppearanceSubtitle4"
+                app:chipBackgroundColor="@color/white"
+                app:chipCornerRadius="4dp"
+                app:chipMinHeight="20dp"
+                app:chipMinTouchTargetSize="0dp"
+                app:chipStrokeWidth="1dp"
+                app:layout_constraintBottom_toBottomOf="@+id/due_info_title"
+                app:layout_constraintStart_toEndOf="@+id/due_info_title"
+                app:layout_constraintTop_toTopOf="@+id/due_info_title"
+                tool:text="Today">
+
+            </com.google.android.material.chip.Chip>
+
+            <TextView
+                android:id="@+id/due_info_subtitle"
+                style="?textAppearanceCaption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/due_month"
+                app:layout_constraintStart_toEndOf="@+id/due_month"
+                app:layout_constraintTop_toTopOf="@+id/due_month"
+                app:layout_constraintVertical_bias="0.0"
+                tool:text="A sms will be sent " />
+
+            <TextView
+                android:id="@+id/due_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:textAppearance="?textAppearanceHeadline6"
+                app:layout_constraintBaseline_toBaselineOf="@+id/due_date_text_view"
+                app:layout_constraintBottom_toBottomOf="@+id/due_date_text_view"
+                app:layout_constraintStart_toStartOf="@+id/due_info_subtitle"
+                app:layout_constraintTop_toTopOf="@+id/due_date_text_view"
+                tool:text="Upcoming Due" />
+
+            <TextView
+                android:id="@+id/due_month"
+                style="?textAppearanceBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:textAllCaps="true"
+                android:textColor="@color/green_primary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/due_date_text_view"
+                tool:text="JAN" />
+
+
+            <ImageView
+                android:id="@+id/edit_due_date"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:paddingEnd="16dp"
+                android:src="@drawable/ic_due_edit"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/due_info_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/due_info_title"
+                app:tint="@color/primary"
+                tool:visibility="visible" />
+
+
+            <tech.okcredit.android.base.utils.ManagedGroup
+                android:id="@+id/due_info_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="?selectableItemBackground"
+                app:constraint_referenced_ids="due_date_informal,due_info_subtitle,
+                due_info_title,due_month,edit_due_date,due_date_text_view"
+                app:layout_constraintBottom_toBottomOf="@+id/due_info_subtitle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tool:layout_editor_absoluteX="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/due_action_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:gravity="center"
+                android:padding="@dimen/_2dp"
+                android:stateListAnimator="@null"
+                android:text="@string/change_reminder_date"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceButton"
+                android:textColor="@color/grey900"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="24dp"
+                app:icon="@drawable/ic_collection_due"
+                app:iconGravity="textStart"
+                app:iconTint="@color/grey900"
+                app:layout_constraintBottom_toTopOf="@+id/cashbackMessageTextView"
+                app:layout_constraintEnd_toStartOf="@+id/collect_gpay"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/due_month"
+                app:rippleColor="@color/grey50"
+                app:strokeColor="@color/grey400"
+                app:strokeWidth="1dp"
+                tool:text="@string/change_reminder_date"
+                tool:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/collect_gpay"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:gravity="center"
+                android:padding="@dimen/_2dp"
+                android:stateListAnimator="@null"
+                android:text="@string/collect_with"
+                android:textAllCaps="false"
+                android:textColor="@color/grey900"
+                android:textSize="12sp"
+                app:cornerRadius="24dp"
+                app:icon="@drawable/ic_gpay"
+                app:iconGravity="textEnd"
+                app:layout_constraintEnd_toStartOf="@+id/discount_button"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@+id/due_action_text"
+                app:layout_constraintTop_toBottomOf="@+id/due_month"
+                app:strokeColor="@color/grey400" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/discount_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:gravity="center"
+                android:padding="@dimen/_2dp"
+                android:stateListAnimator="@null"
+                android:text="@string/give_discount"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceButton"
+                android:textColor="@color/grey900"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="24dp"
+                app:icon="@drawable/ic_discount"
+                app:iconGravity="textStart"
+                app:iconTint="@color/grey900"
+                app:layout_constraintEnd_toStartOf="@id/space"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@+id/collect_gpay"
+                app:layout_constraintTop_toBottomOf="@+id/due_month"
+                app:rippleColor="@color/grey50"
+                app:strokeColor="@color/grey400"
+                app:strokeWidth="1dp"
+                tool:text="@string/give_discount"
+                tool:visibility="visible" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@id/reminder_action"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@+id/discount_button"
+                app:layout_constraintTop_toBottomOf="@+id/due_month" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/reminder_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:padding="@dimen/_2dp"
+                android:stateListAnimator="@null"
+                android:text="@string/t002_customer_ledger_remind"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceButton"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:cornerRadius="24dp"
+                app:icon="@drawable/ic_whatsapp"
+                app:iconGravity="textStart"
+                app:iconPadding="6dp"
+                app:layout_constraintBottom_toTopOf="@+id/cashbackMessageTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@+id/space"
+                app:layout_constraintTop_toBottomOf="@+id/due_month"
+                app:rippleColor="@color/white"
+                app:strokeColor="@color/green_primary"
+                tool:text="remind"
+                tool:visibility="gone" />
+
+            <!--Must have android:visibility="gone"-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pay_online"
+                style="@style/OKC.Button.Light.Outline.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="@string/customer_pay_online"
+                android:textAllCaps="false"
+                android:textAppearance="?textAppearanceButton"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:cornerRadius="24dp"
+                app:iconGravity="textStart"
+                app:iconPadding="6dp"
+                app:layout_constraintBottom_toTopOf="@+id/cashbackMessageTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@+id/space"
+                app:layout_constraintTop_toBottomOf="@+id/due_month"
+                app:rippleColor="@color/white"
+                app:strokeColor="@color/green_primary"
+                tool:text="Pay online"
+                tool:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivPayOnlineLoading"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:translationZ="3dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/pay_online"
+                app:layout_constraintEnd_toEndOf="@id/pay_online"
+                app:layout_constraintStart_toStartOf="@id/pay_online"
+                app:layout_constraintTop_toTopOf="@id/pay_online"
+                app:srcCompat="@drawable/supplier_ic_loader" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/send_payment_link_container"
+                style="@style/OKC.TextAppearance.Subtitle2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="@string/setup_collection"
+                android:textColor="@color/green_dark"
+                android:visibility="gone"
+                app:backgroundTint="@color/green_lite_1"
+                app:icon="@drawable/ic_link"
+                app:iconGravity="textStart"
+                app:iconTint="@color/green_dark"
+                app:layout_constraintBottom_toTopOf="@+id/cashbackMessageTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/due_action_text"
+                tool:text="Send"
+                tool:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cashbackMessageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_5dp"
+                android:paddingStart="12dp"
+                android:paddingTop="@dimen/_10dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/orange_ada"
+                app:drawableStartCompat="@drawable/ic_icon_discount"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tool:text="Get ₹50 cashback on your first online payment" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <include
+        android:id="@+id/warning_customer_immutable"
+        layout="@layout/warning_customer_immutable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_hand_sales"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/send_or_receive_payment_ab"
+        app:layout_constraintEnd_toEndOf="@id/send_or_receive_payment_ab"
+        app:layout_constraintStart_toStartOf="@id/send_or_receive_payment_ab"
+        app:tint="@color/green_primary"
+        tool:visibility="visible" />
+
+    <include
+        android:id="@+id/send_or_receive_payment_ab"
+        layout="@layout/send_or_receive_payment_layout_ab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/send_or_receive_payment_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="send_or_receive_payment_ab" />
+
+    <FrameLayout
+        android:id="@+id/block_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/_8dp"
+        android:visibility="gone" />
+
+</in.okcredit.shared.performance.layout_perf.ConstraintLayoutTracker>

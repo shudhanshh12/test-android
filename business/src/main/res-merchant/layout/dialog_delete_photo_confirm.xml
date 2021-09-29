@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_16dp">
+
+
+        <TextView
+            android:id="@+id/tvConfirmMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:gravity="start"
+            android:text="@string/confirm_delete"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/_16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirmMessage"
+            android:background="@color/divider"
+            android:layout_height="2dp"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mvDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="?selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mvCancel"
+            app:layout_constraintRight_toLeftOf="@+id/mvCancel"
+            app:layout_constraintTop_toTopOf="@+id/mvCancel"
+            app:strokeColor="@color/grey500"
+            app:strokeWidth="1px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textAllCaps="true"
+                android:textColor="@color/grey700"
+                android:textSize="@dimen/text_size_14" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="?selectableItemBackground"
+            app:cardBackgroundColor="?colorPrimary"
+            app:cardCornerRadius="18dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirmMessage"
+            app:strokeColor="@color/grey500">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

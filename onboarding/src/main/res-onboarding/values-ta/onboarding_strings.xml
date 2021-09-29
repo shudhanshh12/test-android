@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okcredit">OkCredit</string>
+    <string name="enter_otp">OTP உள்ளிடவும்</string>
+    <string name="resend_otp"><u>OTP-ஐ மீண்டும் அனுப்பு </u></string>
+    <string name="otp_incorrect">தவறான OTP</string>
+    <string name="otp_expired">OTP காலாவதியானது</string>
+    <string name="send_otp_success">OTP அனுப்பப்பட்டது</string>
+    <string name="send_otp_failure_no_internet">OTP அனுப்ப இயலவில்லை, இண்டர்நெட் இணைப்பை சரிப்பாருங்கள்</string>
+    <string name="send_otp_failure">OTP அனுப்ப இயலவில்லை, மீண்டும் முயற்சிக்கவும்</string>
+    <string name="otp_verification_failure">OTP அனுப்ப இயலவில்லை, மீண்டும் முயற்சிக்கவும்</string>
+    <string name="otp_sent_message">OTP கொண்ட SMS உங்கள் %1$s மொபைல் எண்ணுக்கு அனுப்பட்டுள்ளது</string>
+    <string name="credibility_text"> 50 கோடி+ வணிகங்கள் ஏற்கனவே தங்கள் பெயர்களுடன் பதிவு செய்யப்பட்டுள்ளன</string>
+    <string name="register_user_agreement">மேலும் தொடர, எங்களுடைய <![CDATA[<a href="https://www.okcredit.in/terms">சேவை விதிமுறைகள்</a> மற்றும் <a href="https://www.okcredit.in/privacy">தனியுரிமைக் கொள்கை-ஐ நீங்கள் ஏற்கிறீர்கள்</a>]]></string>
+    <string name="credibility_business_name_1">கடந்த %s, %s+ வணிகங்கள் தங்கள் பெயர்களுடன் பதிவு செய்யப்பட்டுள்ளன</string>
+    <string name="credibility_business_name_2">%s businesses from %s are on OkCredit now</string>
+    <string name="credibility_business_name_3">Last %s, %s+ businesses from %s have registered on OkCredit</string>
+    <string name="credibility_business_name_4_5_6_7_8">%s வணிகங்கள் ஏற்கனவே தங்கள் பெயர்களுடன் பதிவு செய்யப்பட்டுள்ளன</string>
+    <string name="credibility_business_name_9_control">50 கோடி+ வணிகங்கள் ஏற்கனவே தங்கள் பெயர்களுடன் பதிவு செய்யப்பட்டுள்ளன</string>
+    <string name="credibility_add_customer_1">In the last %s, %s+ customers have been added by businesses</string>
+    <string name="credibility_add_customer_2">%s+ customers\' credit have been added from %s</string>
+    <string name="credibility_add_customer_3">%s+ customers from %s have been added on OkCredit last %s</string>
+    <string name="credibility_add_customer_4">%s+ worth of transactions have been added from %s</string>
+    <string name="credibility_add_customer_5">%s+ worth of transactions have been added by %s from %s</string>
+    <string name="credibility_add_customer_6">%s+ customers have been added by %s from %s</string>
+    <string name="credibility_add_customer_7">%s+ worth of transactions have been added by %s in the last %s</string>
+    <string name="credibility_add_customer_8">%s+ customers have been added by %s in the last %s</string>
+    <string name="credibility_add_customer_9_control">1 கோடி+ வாடிக்கையாளர்கள் கடந்த மாதத்தில் வணிகர்களால் OkCredit இல் சேர்க்கப்பட்டுள்ளனர்</string>
+    <string name="credibility_monthly">மாதம்</string>
+    <string name="trusted_by_businesses">50,00,000+ வணிகர்களின் நம்பிக்கை</string>
+    <string name="whatsapp_verification_message">எனது மொபைல் எண்ணை சரிபார்க்க விரும்புகிறேன்</string>
+</resources>

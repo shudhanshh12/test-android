@@ -1,0 +1,112 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+apply from: "$rootDir/config.gradle"
+
+android {
+
+    flavorDimensions "server"
+    productFlavors {
+
+        staging {
+            getIsDefault().set(true)
+            dimension "server"
+            buildConfigField "String", 'COLLECTION_URL', "\"https://collection.staging.okcredit.io/\""
+            buildConfigField "String", 'RISK_URL', "\"https://risk-engine-v2.staging.okcredit.in/v2/\""
+            buildConfigField "String", 'STAFF_LINK', "\"https://staff-link.staging.okcredit.io/\""
+        }
+
+        alpha {
+            dimension "server"
+            buildConfigField "String", 'COLLECTION_URL', "\"https://collection.alpha.okcredit.io/\""
+            buildConfigField "String", 'RISK_URL', "\"https://risk-engine-v2.alpha.okcredit.in/v2/\""
+            buildConfigField "String", 'STAFF_LINK', "\"https://staff-link.alpha.okcredit.io/\""
+        }
+
+        prod {
+            dimension "server"
+            buildConfigField "String", 'COLLECTION_URL', "\"https://collection.okcredit.io/\""
+            buildConfigField "String", 'RISK_URL', "\"https://risk-engine-v2.okcredit.in/v2/\""
+            buildConfigField "String", 'STAFF_LINK', "\"https://staff-link.okcredit.io/\""
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled project.hasProperty('coverage')
+        }
+        qa {
+            debuggable true
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-collection-sdk.pro'
+        }
+
+        release {
+            debuggable false
+            minifyEnabled true
+            consumerProguardFiles 'consumer-rules-collection-sdk.pro'
+        }
+    }
+
+    sourceSets {
+        test.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+
+}
+
+dependencies {
+
+    implementation project(':base')
+    implementation project(':auth')
+    implementation project(':ab'),{exclude group: 'com.google.guava', module: 'listenablefuture'}
+    implementation project(':collection_module:contract')
+    implementation project(':backend:contract')
+    implementation project(':accounting:contract')
+    implementation project(':business:contract')
+
+    implementation androidX.appcompact
+    implementation androidX.ktx
+    implementation androidX.ktx
+
+    api rx.java
+    api rx.android
+
+    implementation retrofit.retrofit
+    implementation retrofit.retrofitRxAdapter
+    implementation retrofit.gsonConverter
+    implementation retrofit.gson
+    implementation retrofit.okhttpLoginInterceptor
+
+    implementation dagger.core
+    implementation project(path: ':analytics')
+    kapt dagger.annotationProcessor
+    implementation dagger.android
+    implementation dagger.supportLibrary
+    kapt dagger.androidAnnotationProcessor
+    implementation dagger.inject
+
+    implementation utility.kotlin
+    implementation utility.timber
+    implementation utility.jodaTime
+    implementation utility.trueTime
+    implementation utility.guava
+
+    implementation arch.room
+    implementation arch.roomRx
+    kapt arch.roomAnnotationProcessor
+
+    //Test
+    testImplementation unitTest.jUnit
+    testImplementation unitTest.truth
+    testImplementation unitTest.mockitoCore
+    testImplementation unitTest.mockitoInline
+    testImplementation unitTest.mockitoKotlin
+    testImplementation unitTest.mockWebServer
+    testImplementation unitTest.mockk
+    testImplementation arch.roomTesing
+    testImplementation unitTest.androidxTestCore
+    testImplementation unitTest.robolectric
+    testImplementation unitTest.androidJUnit
+}

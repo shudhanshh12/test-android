@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <View
+        android:id="@+id/vwIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="@id/vwIcon"
+        app:layout_constraintEnd_toEndOf="@id/vwIcon"
+        app:layout_constraintStart_toStartOf="@id/vwIcon"
+        app:layout_constraintTop_toTopOf="@id/vwIcon"
+        app:srcCompat="@drawable/ic_contacts_placeholder" />
+
+
+    <ImageView
+        android:id="@+id/existing_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/vwIcon"
+        app:layout_constraintEnd_toEndOf="@id/vwIcon"
+        app:srcCompat="@drawable/ic_ok_credit_tag"
+        tool:visibility="visible" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?textAppearanceSubtitle1"
+        app:layout_constraintBottom_toTopOf="@id/mobile"
+        app:layout_constraintEnd_toStartOf="@id/tvBalance"
+        app:layout_constraintStart_toEndOf="@id/vwIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tool:text="Paul Pogba" />
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?textAppearanceCaption1"
+        android:textColor="@color/grey600"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vwIcon"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        tool:text="91213989020" />
+
+    <TextView
+        android:id="@+id/relationshipType"
+        style="@style/TextAppearance.OKCTheme.Caption3.normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/background_greenlite_radius_4dp_stroke"
+        android:paddingStart="5dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="1dp"
+        android:textColor="@color/grey900"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/mobile"
+        app:layout_constraintStart_toEndOf="@id/mobile"
+        app:layout_constraintTop_toTopOf="@id/mobile"
+        tool:text="Customer"
+        tool:visibility="visible" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/name" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="?textAppearanceSubtitle1"
+        android:textColor="@color/red_primary"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name"
+        tool:text="Rs 32"
+        tool:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvBalanceStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:gravity="end"
+        android:textAllCaps="true"
+        android:textAppearance="?textAppearanceCaption1"
+        android:textColor="@color/grey600"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBalance"
+        app:layout_constraintVertical_bias="0"
+        tool:text="ADVANCE"
+        tool:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="0dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:text="@string/was_the_content_helpful"
+        android:textAppearance="?textAppearanceSubtitle3"
+        android:textColor="@color/grey900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_dislike"
+        android:layout_width="@dimen/spacing_32"
+        android:layout_height="@dimen/spacing_32"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/spacing_24"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/tv_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"
+        app:srcCompat="@drawable/ic_like" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/view"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="@dimen/spacing_32"
+        android:layout_height="@dimen/spacing_32"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/spacing_24"
+        app:layout_constraintEnd_toEndOf="@+id/tv_content"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"
+        app:srcCompat="@drawable/ic_like" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circular_border_on_top"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_2"
+        android:layout_marginLeft="@dimen/grid_2"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginEnd="@dimen/grid_2"
+        android:layout_marginRight="@dimen/grid_2"
+        android:lines="1"
+        android:text="@string/send_statement_to_customer"
+        android:textAppearance="?textAppearanceHeadline6"
+        tools:text="Send Statement to Customer" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/grid_2"
+        android:background="@color/black_transparent_10" />
+
+    <LinearLayout
+        android:id="@+id/mini_statement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_7"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/grid_2"
+        android:paddingRight="@dimen/grid_2">
+
+        <ImageView
+            android:layout_width="@dimen/grid_3"
+            android:layout_height="@dimen/grid_3"
+            android:layout_gravity="top"
+            android:layout_marginTop="15dp"
+            android:tint="?colorPrimary"
+            app:srcCompat="@drawable/ic_statement" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/grid_2"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:lines="1"
+            android:text="@string/whatsapp_mini_statement"
+            android:textAppearance="?textAppearanceBody2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/grid_7"
+        android:background="@color/black_transparent_10" />
+
+    <LinearLayout
+        android:id="@+id/monthly_report"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_7"
+        android:layout_marginBottom="14dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/grid_2"
+        android:paddingRight="@dimen/grid_2">
+
+        <ImageView
+            android:layout_width="@dimen/grid_3"
+            android:layout_height="@dimen/grid_3"
+            android:layout_gravity="top"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_calendar_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/grid_2"
+            android:gravity="start"
+            android:maxLines="1"
+            android:text="@string/whatsapp_monthly_statement"
+            android:textAppearance="?textAppearanceBody2" />
+
+    </LinearLayout>
+
+</LinearLayout>

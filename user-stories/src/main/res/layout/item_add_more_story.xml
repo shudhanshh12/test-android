@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="73dp"
+    android:layout_height="73dp"
+    android:layout_marginStart="8dp"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/camera_container"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/black_40"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null">
+
+            <ImageView
+                android:id="@+id/add_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:tint="@color/white"
+                android:src="@drawable/ic_camera_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_bill"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?textAppearanceSubtitle4"
+                android:text="@string/add_more"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

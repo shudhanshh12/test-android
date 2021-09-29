@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_navigation_flow">
+    <dialog
+        android:id="@+id/juspay_payment_bottom_sheet"
+        android:name="in.okcredit.payment.ui.juspay.juspay_payment_bottom_sheet.PaymentEditAmountBottomSheet" />
+    <fragment
+        android:id="@+id/supplier_payment_result_flow"
+        android:name="in.okcredit.payment.ui.payment_result.PaymentResultFragment">
+        <action
+            android:id="@+id/action_supplier_payment_result_flow_to_supplier_error_flow"
+            app:destination="@id/paymentErrorScreen" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/payment_blind_pay_flow"
+        android:name="in.okcredit.payment.ui.payment_blind_pay.PaymentBlindPayFragment" />
+
+    <fragment
+        android:id="@+id/paymentErrorScreen"
+        android:name="in.okcredit.payment.ui.payment_error_screen.PaymentErrorFragment" />
+    <fragment
+        android:id="@+id/paymentLoaderFragment"
+        android:name="in.okcredit.payment.ui.payment_loader_screen.PaymentLoaderFragment"
+        tools:layout="@layout/payment_loader_fragment" />
+    <action
+        android:id="@+id/action_to_supplier_payment_result"
+        app:destination="@id/supplier_payment_result_flow"
+        app:enterAnim="@anim/enter_from_right"
+        app:exitAnim="@anim/exit_to_left"
+        app:popEnterAnim="@anim/enter_from_left"
+        app:popExitAnim="@anim/exit_to_right">
+        <argument
+            android:name="account_id"
+            app:argType="string" />
+        <argument
+            android:name="payment_id"
+            app:argType="string" />
+        <argument
+            android:name="payment_type"
+            app:argType="string" />
+        <argument
+            android:name="risk_type"
+            app:argType="string" />
+        <argument
+            android:name="txn_cancelled"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="payment_address"
+            app:argType="string" />
+        <argument
+            android:name="destination_type"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="mobile"
+            app:argType="string" />
+        <argument
+            android:name="account_type"
+            app:argType="string" />
+        <argument
+            android:name="blind_pay_flow"
+            app:argType="boolean" />
+    </action>
+
+    <action
+        android:id="@+id/action_to_error_screen"
+        app:destination="@id/paymentErrorScreen"
+        app:enterAnim="@anim/enter_from_right"
+        app:exitAnim="@anim/exit_to_left"
+        app:popEnterAnim="@anim/enter_from_left"
+        app:popExitAnim="@anim/exit_to_right">
+        <argument
+            android:name="supplier_id"
+            app:argType="string" />
+        <argument
+            android:name="error_type"
+            app:argType="string" />
+    </action>
+
+    <action
+        android:id="@+id/action_to_loader_screen"
+        app:destination="@id/paymentLoaderFragment"
+        app:enterAnim="@anim/enter_from_right"
+        app:exitAnim="@anim/exit_to_left"
+        app:popEnterAnim="@anim/enter_from_left"
+        app:popExitAnim="@anim/exit_to_right"
+        app:popUpTo="@id/paymentErrorScreen"
+        app:popUpToInclusive="true" />
+</navigation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/help_home_flow"
+    app:startDestination="@id/help_home_screen">
+    <fragment
+        android:id="@+id/help_home_screen"
+        android:name="tech.okcredit.help.helpHome.HelpHomeFragment"
+        android:label="HelpScreen"
+        tools:layout="@layout/help_home_fragment">
+
+        <action
+            android:id="@+id/action_startHelpMainScreen"
+            app:destination="@id/help_screen">
+        </action>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/help_screen"
+        android:name="tech.okcredit.help.help_main.HelpFragment"
+        android:label="HelpMainScreen"
+        tools:layout="@layout/help_fragment">
+
+        <argument
+            android:name="filterHelpIds"
+            app:argType="string[]"
+            app:nullable="false"/>
+        <argument
+            android:name="source"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+
+        <action
+            android:id="@+id/action_startHelpDetailScreen"
+            app:destination="@id/helpdetails_screen">
+        </action>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/helpdetails_screen"
+        android:name="tech.okcredit.help.help_details.HelpDetailsFragment"
+        android:label="HelpDetailsScreen"
+        tools:layout="@layout/helpdetails_screen">
+
+        <action
+            android:id="@+id/startYoutubePlayer"
+            app:destination="@id/youtube_full_screen"/>
+        <argument
+            android:name="help_item_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="source"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/youtube_full_screen"
+        android:name="tech.okcredit.help.help_details.dialog.YouTubeBottomSheetDialog"
+        android:label="youTube Full Screen"
+        tools:layout="@layout/bottomsheet_fullscreen_video" >
+        <argument
+            android:name="videoUrl"
+            app:argType="string"
+            android:defaultValue="Video_Url" />
+    </dialog>
+</navigation>

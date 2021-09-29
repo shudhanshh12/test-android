@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="t_001_multi_acc_cta_edit_profile">சுயவிவரத்தை திருத்து</string>
+    <string name="t_001_multi_acc_title_new_biz">புதிய வணிகத்தை உருவாக்கு</string>
+    <string name="t_001_multi_acc_input_biz_name">வணிகம் / கடையின் பெயர்</string>
+    <string name="t_001_multi_acc_net_bal">மொத்த பேலன்ஸ்:</string>
+    <string name="t_001_multi_acc_net_bal_due">நிலுவை</string>
+    <string name="t_001_multi_acc_net_bal_advance">அட்வான்ஸ்</string>
+    <string name="t_001_multi_acc_title_select_biz">வணிகத்தை தேர்ந்தெடு</string>
+    <string name="t_001_multi_acc_msg_biz_added">புதிய வணிகம் வெற்றிகரமாக உருவாக்கப்பட்டது</string>
+    <string name="t_001_multi_acc_msg_biz_count_max_limit_reached">வணிகத்தை உருவாக்க முடியவில்லை. அதிகபட்ச வணிக வரம்பை எட்டிவிட்டீர்கள்</string>
+</resources>

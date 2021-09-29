@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_claim_rewards_menu">મેનુમાંથી તમારું ઇનામ મેળવવા માટે તમારું બેંક અકાઉન્ટ સેટઅપ કરો</string>
+    <string name="you_won_feature">તમે %1$s જીત્યા</string>
+    <string name="visit_feature">%1$s જુઓ</string>
+    <string name="claim_in_progress">પ્રકિયા ચાલુ છે.. કૃપા કરી ને રાહ જુઓ</string>
+    <string name="scratch_view_hint">ઇનામ જોવા માટે સ્ક્રેચ કરો</string>
+    <string name="enter_bank_details_description">આ કેશબેકનો લાભ ઉઠાવવા માટે તમારો બૅન્ક અકાઉન્ટ નંબર વગેરે લખો.</string>
+    <string name="please_solve_this_issue">કૃપા કરીને આ સમસ્યાને હલ કરો</string>
+    <string name="earned_due_to_activation">વ્યવહાર જોડવા માટે મળ્યા.</string>
+    <string name="better_luck_next_time">કઈ વાંઘો નહિ! \nકદાચ આવતી વખતે આપ જીતી જશો</string>
+    <string name="something_went_wrong_in_claiming_rewards">માફ કરશો, કંઈક તકનીકી સમસ્યા આવી ગઈ છે. કૃપા કરીને થોડા સમય બાદ પુન: પ્રયાસ કરો.</string>
+    <string name="congratulations_tell_them_add_bank_details">અભિનંદન!!! ઇનામ મેળવવા માટે બેંક અકાઉન્ટ સેટઅપ કરો.</string>
+    <string name="reward_on_hold">ઇનામ રોકવામાં આવેલ છે</string>
+    <string name="error_budged_limit_exceeded">કેટલીક ટેક્નીકલ સમસ્યાને કારણે તમારું ઇનામ રોકી દેવામાં આવ્યું છે. અમારી ટીમ ટૂંક સમયમાં આ સમસ્યાને હલ કરશે. કૃપા કરીને 3 દિવસ પછી ઇનામ પાછું મેળવો.</string>
+    <string name="you_won_10">you won 10</string>
+    <string name="hurray">અભિનંદન!</string>
+    <string name="oops">ઓહ!</string>
+    <string name="rewarded_on_06_nov_02_38pm">06 નવે, બપોરે 02:38 વાગ્યે ઇનામ મળ્યું</string>
+    <string name="earned_for_adding_transactions_records">વ્યવહાર જોડવા માટે મળ્યા.</string>
+    <string name="setup_bank_account_to_get_reward">ઇનામ મેળવવા માટે બેંક અકાઉન્ટ સેટઅપ કરો.</string>
+    <string name="step_1_how_does_it_works_roa">અલગ અલગ દિવસે ગ્રાહકો અને ઓછામાં ઓછા 2 વ્યવહારો ઉમેરો.</string>
+    <string name="step_2_how_does_it_works_roa">તમારું ઇનામ તમારા ઇનામ વિભાગમાં જોઈ શકશો.</string>
+    <string name="error_description_bank_valid">આ બૅન્ક એકાઉન્ટ કે UPI પહેલેથી જ કોઈ અન્ય વપરાશકર્તા સાથે વપરાશમાં છે. કૃપા કરીને સાચી વિગતો ભરો અથવા બીજું એકાઉન્ટ વાપરો.</string>
+    <string name="upi_inactive_error_msg">તમારું બૅન્ક ઍકાઉન્ટ એક્ટિવ નથી. કૃપા કરીને તમારૂ બૅન્ક ઍકાઉન્ટ ફરીથી એક્ટિવ કરો અથવા અન્ય ઍકાઉન્ટ વાપરો.</string>
+    <string name="payout_daily_limit_reached_error_msg">You have exceeded the reward claim limit for today. Please claim again in 3 days.</string>
+    <string name="reward_update">ઇનામની સૂચના</string>
+    <string name="please_try_again_later">કૃપા કરીને થોડીવાર બાદ ફરી પ્રયત્ન કરો</string>
+    <string name="payment_update">પેમેન્ટ અપડેટ</string>
+    <string name="close">બંધ</string>
+    <string name="processing_state">પ્રોસેસ થઇ રહ્યું છે…</string>
+    <string name="bank_service_unavail">બૅન્ક સેવા બંધ છે</string>
+    <string name="bank_service_unavil_error_msg">તમારી બૅન્ક હાલમાં પેમેન્ટ પ્રોસેસ કરી રહી નથી. કૃપા કરીને થોડા કલાક પછી ફરીથી પ્રયાસ કરો.</string>
+    <string name="we_are_processing_your_reward">અમે તમારા ઇનામ ની પ્રોસેસ કરી રહ્યા છીએ. કૃપા કરીને 3 દિવસ બાદ ફરી તપાસો.</string>
+    <string name="edit_bank_details">બેંક વિગતો સુધારો</string>
+    <string name="please_try_again">કૃપા કરીને ફરી પ્રયત્ન કરો</string>
+</resources>

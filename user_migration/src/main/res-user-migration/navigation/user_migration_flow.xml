@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_migration"
+    app:defaultNavHost="true"
+    app:startDestination="@id/upload_list">
+
+
+    <fragment
+        android:id="@+id/upload_list"
+        android:name="in.okcredit.user_migration.presentation.ui.file_pick.screen.FilePickerFragment"
+        android:label="Upload Files"
+        tools:layout="@layout/fragment_file_manager">
+
+        <argument
+            android:name="file_type"
+            app:argType="string" />
+        <action
+            android:id="@+id/goToShowProgressUpload"
+            app:destination="@id/file_upload_status"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/file_upload_status"
+        android:name="in.okcredit.user_migration.presentation.ui.upload_status.screen.UploadFileStatusFragment"
+        android:label="File Upload Status"
+        tools:layout="@layout/file_uploading_fragment">
+        <argument
+            android:name="list_of_files"
+            app:argType="in.okcredit.user_migration.presentation.ui.upload_status.model.ListFilesPath" />
+
+        <action
+            android:id="@+id/goToDisplayParsedDataScreen"
+            app:destination="@id/display_parsed_data"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/display_parsed_data"
+        android:name="in.okcredit.user_migration.presentation.ui.display_parsed_data.DisplayParsedDataFragment"
+        android:label="Display Parsed Data"
+        tools:layout="@layout/fragment_show_parse_data">
+        <argument
+            android:name="list_of_files"
+            app:argType="in.okcredit.user_migration.presentation.ui.upload_status.model.ListFilesPath" />
+        <argument
+            android:name="list_of_fileNames"
+            app:argType="in.okcredit.user_migration.presentation.ui.upload_status.model.ListFilesPath" />
+        <action
+            android:id="@+id/goToEditDetailsBottomsheet"
+            app:destination="@id/edit_details_bottomsheet" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/edit_details_bottomsheet"
+        android:name="in.okcredit.user_migration.presentation.ui.edit_details_bottomsheet.EditDetailsBottomSheet"
+        android:label="Edit Option BottomSheet"
+        tools:layout="@layout/edit_details_bottomsheet">
+        <argument
+            android:name="customer"
+            app:argType="in.okcredit.user_migration.presentation.ui.display_parsed_data.models.CustomerUiTemplate" />
+    </dialog>
+
+</navigation>

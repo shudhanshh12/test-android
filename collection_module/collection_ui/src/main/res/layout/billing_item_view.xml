@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="72dp">
+
+    <TextView
+        android:id="@+id/textItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@id/textAmount"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle3"
+        app:layout_constraintBottom_toTopOf="@id/textTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tool:text="Rajesh Sahu" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="2dp"
+        android:drawablePadding="4dp"
+        tool:text="12.40 pm"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="@style/OKC.TextAppearance.Caption2"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toTopOf="@id/textSharedWith"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/textItem"
+        app:layout_constraintTop_toBottomOf="@id/textItem"
+        app:layout_constraintWidth_default="wrap"
+        app:drawableEndCompat="@drawable/billing_dot" />
+
+    <TextView
+        android:id="@+id/textItemCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textAppearance="@style/OKC.TextAppearance.Caption2"
+        android:textColor="@color/grey600"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/textTime"
+       app:layout_constraintTop_toTopOf="@id/textTime"
+        app:layout_constraintBottom_toBottomOf="@id/textTime"
+        app:layout_constraintWidth_default="wrap"
+        tool:text="4 items" />
+
+    <TextView
+        android:id="@+id/textSharedWith"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="4dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="@style/OKC.TextAppearance.Caption2"
+        android:textColor="@color/grey600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/textItem"
+        app:layout_constraintTop_toBottomOf="@id/textTime"
+        app:layout_constraintWidth_default="wrap"
+        android:visibility="gone"
+        tool:text="Earn $300" />
+
+
+    <TextView
+        android:id="@+id/textAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:textAppearance="@style/OKC.TextAppearance.Subtitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textItem"
+        app:layout_constraintVertical_chainStyle="packed"
+        tool:text="2000" />
+
+    <TextView
+        android:id="@+id/textQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/inventory_quantity"
+        android:visibility="gone"
+        android:textAppearance="@style/OKC.TextAppearance.Caption2"
+        android:textColor="@color/grey600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAmount"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

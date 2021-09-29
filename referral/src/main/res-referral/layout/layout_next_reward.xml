@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey50"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/trophyImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toStartOf="@id/nextTextView"
+        app:layout_constraintEnd_toEndOf="@id/nextTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trophy" />
+
+    <TextView
+        android:id="@+id/nextTextView"
+        style="@style/TextAppearance.OKCTheme.Caption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/next"
+        android:layout_marginTop="2dp"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trophyImageView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/nextRewardTitleTextView"
+        style="@style/TextAppearance.OKCTheme.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="24dp"
+        android:paddingEnd="8dp"
+        android:text="@string/add_transaction"
+        app:layout_constraintBottom_toTopOf="@id/nextRewardDescriptionTextView"
+        app:layout_constraintEnd_toStartOf="@id/nextRewardAmountTextView"
+        app:layout_constraintStart_toEndOf="@id/trophyImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/nextRewardDescriptionTextView"
+        style="@style/TextAppearance.OKCTheme.Caption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="24dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/nextRewardAmountTextView"
+        app:layout_constraintStart_toEndOf="@id/trophyImageView"
+        app:layout_constraintTop_toBottomOf="@id/nextRewardTitleTextView"
+        tools:text="Ask person to add 2 transactions" />
+
+    <TextView
+        android:id="@+id/nextRewardAmountTextView"
+        style="@style/TextAppearance.OKCTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Rs. 50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

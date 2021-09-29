@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_qr">Share QR</string>
+    <string name="save_qr">Save QR</string>
+    <string name="update_account_bank_or_upi">"Update Account (UPI / Bank)"</string>
+    <string name="online_collection_statement">Online Collection Statement</string>
+    <string name="merchant_qr_saved_successfully">File saved Successfully in Pictures folder</string>
+    <string name="unable_to_save_merchant_qr">Unable to save Merchant QR, Try Again!</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="if_you_delete_account">You will not be able to collect payments online if you remove account.</string>
+    <string name="if_you_delete_account_kyc">If you delete the account, you will not be able to collect payments online. In that case, you have to redo KYC.</string>
+    <string name="invalid_address_please_check">Invalid Address. Please try again</string>
+    <string name="no_upi_input_err_msg">Please Enter UPI ID</string>
+    <string name="no_bank_input_err_msg">Please Enter Bank Details</string>
+    <string name="invalid_bank_input_err_msg">Please Enter valid Bank Details</string>
+    <string name="limit_reached">Limit Reached!</string>
+    <string name="start_kyc">Start KYC</string>
+    <string name="increase_collection_limits_and_npayment_options">Increase collection limits and\npayment options</string>
+    <string name="things_you_need_to_complete_kyc">Things you need to complete KYC</string>
+    <string name="pan_card">PAN Card</string>
+    <string name="aadhaar_card_drivers_license">Aadhaar Card</string>
+    <string name="complete_kyc">Complete KYC</string>
+    <string name="kyc_alert_text">Please select all boxes above!</string>
+    <string name="share_qr_and_link">Share QR &amp; Link</string>
+    <string name="move_to_ledger">View Ledger Entry</string>
+    <string name="real_time_contextual_popup_text_1">Have a lot of pending dues  &amp; want to collect faster?</string>
+    <string name="real_time_contextual_popup_text_2">Send a Reminder on WhatsApp with QR and Online Payment link</string>
+    <string name="real_time_contextual_popup_text_3">Customer can choose to pay from variety of payment options</string>
+    <string name="real_time_contextual_popup_text_4">On successful payment the transaction will be added automatically</string>
+
+    <string name="title_send_reminder">Send a Reminder on Whatsapp with QR &amp; online payment Link</string>
+    <string name="title_payment_options">Customer can choose to pay from  variety of payment options</string>
+    <string name="title_auto_ledger">View automatic ledger entry on  successful payment</string>
+
+    <string name="online_payment_new_count">%1d New</string>
+    <string name="online_payment_last_payment">Last Payment: %1s</string>
+
+    <string name="t_003_transaction_history_btn_add2_khata">Add transaction</string>
+    <string name="t_003_transaction_history_added">Transaction added</string>
+
+    <string name="t_003_transaction_history_title">Transaction History</string>
+    <string name="t_003_transaction_history_payment_given">Payments Given</string>
+    <string name="t_003_transaction_history_payments_received">Payments Received</string>
+    <string name="t_003_transaction_history_all_transactions">All Payments</string>
+    <string name="t_003_transaction_history_filter_list_by">Filter list by</string>
+    <string name="t_003_transaction_history_subtitle">%1$s: ₹%2$s</string>
+    <string name="t_003_transaction_history_no_result">No online payment transactions were recorded for the selected time period</string>
+    <string name="view_qr">View QR</string>
+
+    <string name="new_payment">New Payment</string>
+    <string name="t_002_payments_dashboard_empty_title2">Online Payments</string>
+    <string name="t_002_payments_dashboard_empty_body2">By clicking below, you can send money and receive money. All the payment records will be visible here</string>
+    <string name="t_002_payments_receive_money">Receive</string>
+    <string name="order_qr">Order QR</string>
+
+    <string name="t_002_payments_onboarding_edu_1">Send &amp; Receive money using multiple payment options at 0% fee</string>
+    <string name="t_002_payments_onboarding_edu_2">Find all payments paid or received via QR &amp; link at one place</string>
+    <string name="t_002_payments_onboarding_edu_3">Forget cash box and ledger books, adopt OkCredit digital payments</string>
+
+    <string name="t_002_payments_scan_pay">Scan and pay using any UPI app</string>
+    <string name="t_002_payments_MQR_Unlocked_trial"><![CDATA[Your trial limit for payments is up to ₹%1$s. Start <font color=\'#0574e3\'>sending</font> and <font color=\'#0574e3\'>receiving</font> money!]]></string>
+    <string name="t_002_payments_MQR_Unlocked_daily"><![CDATA[Your daily limit for payments is up to ₹%1$s. Start <font color=\'#0574e3\'>sending</font> and <font color=\'#0574e3\'>receiving</font> money!]]></string>
+    <string name="t_002_payments_MQR_Unlocked_trial_limit_reached"><![CDATA[Payment limit reached! KYC is required to settle remaining payments. <u><font color=\'#0574e3\'>Increase Limits</font></u>]]></string>
+    <string name="t_002_payments_MQR_Unlocked_daily_limit_reached"><![CDATA[Payment limit reached! KYC is required to settle remaining payments today. <u><font color=\'#0574e3\'>Increase Limits</font></u>]]></string>
+    <string name="t_002_payments_MQR_Unlocked_kyc_submitted"><![CDATA[KYC Pending, You will be notified in 48 hours. For more help <u><font color=\'#0574e3\'>Contact Us</font></u>]]></string>
+    <string name="t_002_payments_MQR_Unlocked_kyc_rejected"><![CDATA[The documents submitted for KYC are rejected. Please make sure documents are readable and have same name on them. <u><font color=\'#0574e3\'>Try Again</font></u>]]></string>
+    <string name="t_002_payments_MQR_daily_limit_reached">Payment limit reached! Remaining payments will be settled tomorrow</string>
+    <string name="t_002_payments_MQR_settlement_blocked"><![CDATA[Your settlement is blocked, please update bank details to get your payment. <u><font color=\'#0574e3\'>Add bank details</font></u>]]></string>
+    <string name="link_order_qr" translatable="false">https://account.okcredit.in/merchant-address-details</string>
+</resources>

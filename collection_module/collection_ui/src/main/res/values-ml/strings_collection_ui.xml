@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_send_reminder"><![CDATA[QR അല്ലെങ്കിൽ ഓൺലൈൻ പേയ്മെന്റ് ലിങ്ക് അടങ്ങിയ ഓർമ്മപ്പെടുത്തൽ WhatsApp വഴി അയക്കുക]]></string>
+    <string name="title_payment_options">കസ്റ്റമർക്ക് വിവിധ പേയ്മെന്റ് ഓപ്ഷനുകളിൽ നിന്നും ഏതും തിരഞ്ഞെടുത്ത് പണം അയക്കാം</string>
+    <string name="title_auto_ledger">ഓരോ പേയ്മെന്റിനും കൃത്യമായ കണക്ക് ഓട്ടോമാറ്റിക് ആയി ചേർക്കപ്പെടുന്നത് കാണാം</string>
+</resources>
